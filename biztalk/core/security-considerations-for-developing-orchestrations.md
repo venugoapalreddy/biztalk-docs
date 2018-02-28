@@ -25,7 +25,7 @@ When designing your orchestrations, you should consider potential security issue
 ## Avoid subscriptions based on content from untrusted messages  
  To ensure that a low-privilege message does not initiate an orchestration instance that could potentially create subscriptions based on the message content or context, it is highly recommended that your orchestrations do not create their message subscriptions based on the content or context of a message that is not trusted.  
   
- For information about security in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], see [Securing BizTalk Server](../core/securing-biztalk-server.md).  
+ For information about security in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], see [Securing BizTalk Server](../core/securing-biztalk-server.md).  
   
 ## See Also  
  [Creating Orchestrations](../core/creating-orchestrations.md)   

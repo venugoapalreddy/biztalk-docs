@@ -58,7 +58,7 @@ The following table contains a list of registry keys that may be useful for conf
   
  You can also add a registry key named StaticSupport as mentioned in [Invoking Static Members of a Class](../core/invoking-static-members-of-a-class.md).  
   
- The registry settings are global for all applications that host a rule engine instance. You can override these registry settings at an application level by using the application configuration file. For [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applications, the host application is the BTSNTSvc.exe and the configuration file is the BTSNTSvc.exe.config, which you can find in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation directory.  You need to specify the values for the configuration parameters that you want to override in the application configuration file as show below:  
+ The registry settings are global for all applications that host a rule engine instance. You can override these registry settings at an application level by using the application configuration file. For [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applications, the host application is the BTSNTSvc.exe and the configuration file is the BTSNTSvc.exe.config, which you can find in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installation directory.  You need to specify the values for the configuration parameters that you want to override in the application configuration file as show below:  
   
 ```  
 <configuration>  

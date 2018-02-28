@@ -18,10 +18,12 @@ manager: "anneta"
 ---
 # ReceivePortCollection Node
 The ReceivePortCollection node of a binding file is the parent node for all of the ReceivePort nodes which contain specific information about a receive port that is exported with the binding file.  
-  
+
 ## Nodes in the ReceivePortCollection node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[ReceivePort](../core/receiveport-receiveportcollection-node.md)|Record|ReceivePort (ComplexType)|Specifies information about a receive port that is exported with the binding file.|Not required|Default value: none|
+
+
+|                      <strong>Name</strong>                       | <strong>Node Type</strong> | <strong>Data Type</strong> |                            <strong>Description</strong>                            | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|------------------------------------------------------------------|----------------------------|----------------------------|------------------------------------------------------------------------------------|-------------------------------|---------------------------|
+| [ReceivePort](../core/receiveport-receiveportcollection-node.md) |           Record           | ReceivePort (ComplexType)  | Specifies information about a receive port that is exported with the binding file. |         Not required          |    Default value: none    |
+

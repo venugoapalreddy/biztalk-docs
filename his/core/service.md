@@ -15,27 +15,27 @@ manager: "anneta"
 ---
 # service
 The service element defines the configuration for the DrdaService1 service.  
-  
+
  \<hostIntegration.drdaAs.drdaService>  
 \<services>  
-  
+
 ## Syntax  
-  
+
 ```  
-<hostIntegration.drdaAs.drdaService>        <services>                <service>                </service>        </services></hostIntegration.drdaAs.drdaService>  
+<hostIntegration.drdaAs.drdaService>        <services>                <service>                </service>        </services></hostIntegration.drdaAs.drdaService>  
 ```  
-  
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
-  
+
 ### Attributes  
-  
+
 |Attribute|Type|Description|Required|Default Value|  
 |---------------|----------|-----------------|--------------|-------------------|  
 |name|xs:string|The service name DrdaService1 defines the single runtime instance of the DRDA Server.|true|n/a|  
-  
+
 ### Child Elements  
-  
+
 |Element|Description|Occurrence Constraint|  
 |-------------|-----------------|---------------------------|  
 ||The applicationEncodings element contains applicationEncoding elements for specifying default application-level encoding schemes on a per-database basis.|0 to 1|  
@@ -49,9 +49,10 @@ The service element defines the configuration for the DrdaService1 service.
 ||The packageBindListeners element contains one or more packageBindListener elements to instruct the DRDA Server to send bind package with bind SQL statement output to optional custom bind listeners.|0 to 1|  
 ||The securityManager element contains the security settings|1 to 1|  
 ||The sqlApplicationManager element contains the application settings for managing out-bound SQL client connections.|1 to 1|  
-  
+
 ### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-||The services element contains the specifications for all services the application hosts.|
+
+| Element |                                       Description                                        |
+|---------|------------------------------------------------------------------------------------------|
+|         | The services element contains the specifications for all services the application hosts. |
+

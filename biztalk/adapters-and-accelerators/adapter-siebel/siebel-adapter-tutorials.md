@@ -17,9 +17,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Siebel Adapter Tutorials
-The first of the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] tutorials contains a step-by-step demonstration of how to present data from a Siebel system on a Microsoft SharePoint portal. The second [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] tutorial contains detailed instructions on how to migrate BizTalk projects created using the previous version of the Siebel adapter to use the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
+The first of the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] tutorials contains a step-by-step demonstration of how to present data from a Siebel system on a Microsoft SharePoint portal. The second [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] tutorial contains detailed instructions on how to migrate BizTalk projects created using the previous version of the Siebel adapter to use the WCF-based [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
   
- Also, the topics in the [Developing BizTalk Server Applications](../../core/developing-biztalk-server-applications.md) section provide detailed instructions on how to use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
+ Also, the topics in the [Developing BizTalk Server Applications](../../core/developing-biztalk-server-applications.md) section provide detailed instructions on how to use the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
 ## In This Section  
   

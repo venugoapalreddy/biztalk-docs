@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Creating a Custom Itinerary Service
-You can modify and/or extend the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] itinerary services and components to suit your specific requirements. There are two ways in which you can create a custom itinerary service:  
+You can modify and/or extend the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] itinerary services and components to suit your specific requirements. There are two ways in which you can create a custom itinerary service:  
   
 -   [Creating a Custom Itinerary Service Using a BizTalk Orchestration](../esb-toolkit/creating-a-custom-itinerary-service-using-a-biztalk-orchestration.md)  
   

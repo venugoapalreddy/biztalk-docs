@@ -64,7 +64,7 @@ BizTalk Server includes BAM activities that have been created for EDI and AS2 st
 |MicAlgorithmType|Unknown type = -1<br /><br /> SHA1 = 1<br /><br /> MD5 = 2|  
   
 ## BusinessMessageJournal BAM Activity  
- The BusinessMessageJournal BAM activity enables [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to correlate a received EDI interchange containing a transaction set with an outgoing batched interchange that contains the same transaction set. For more information, see [Correlating an Incoming Transaction Set with an Outgoing Batch](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md).  
+ The BusinessMessageJournal BAM activity enables [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to correlate a received EDI interchange containing a transaction set with an outgoing batched interchange that contains the same transaction set. For more information, see [Correlating an Incoming Transaction Set with an Outgoing Batch](../core/correlating-an-incoming-transaction-set-with-an-outgoing-batch.md).  
   
 ##  <a name="BKMK_Query"></a> Querying the EdiMessageContent Table  
  The EdiMessageContent table in the BizTalkDTADb database stores the message payload, along with message metadata. From a custom status report, you can query the EdiMessageContent table to display the message contents. This is similar to how some of the status reports in the product enable you to display message contents, for example, how the AS2 Message and Correlated MDN status report enables you to display the message wire format.  

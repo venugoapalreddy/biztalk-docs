@@ -27,7 +27,7 @@ A pipeline is a piece of software infrastructure that contains a set of .NET or 
  ![Stages and components in a BizTalk pipeline](../core/media/ebiz-pipe-stages02.gif "ebiz_pipe_stages02")  
 Illustrates stages and components in a BizTalk pipeline.  
   
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] contains a set of pipeline templates, pipeline components, and default pipelines. You can create and configure pipelines by using the Pipeline Designer user interface; you implement pipelines by using the API in the **Microsoft.BizTalk.Component.Interop** namespace. You cannot modify the pipeline templates.  
+ Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] contains a set of pipeline templates, pipeline components, and default pipelines. You can create and configure pipelines by using the Pipeline Designer user interface; you implement pipelines by using the API in the <strong>Microsoft.BizTalk.Component.Interop</strong> namespace. You cannot modify the pipeline templates.  
   
 ## In This Section  
   

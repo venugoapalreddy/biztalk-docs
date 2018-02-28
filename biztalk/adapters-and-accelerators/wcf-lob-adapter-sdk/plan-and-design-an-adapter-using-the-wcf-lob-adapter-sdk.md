@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Plan and design an adapter using the WCF LOB Adapter SDK
-This section contains information to help you plan your adapter and understand the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
+This section contains information to help you plan your adapter and understand the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)].  
   
 ## In This Section  
   

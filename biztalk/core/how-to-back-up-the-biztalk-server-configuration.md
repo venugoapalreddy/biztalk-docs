@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Back Up The BizTalk Server Configuration
-As part of backing up [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you should back up the configuration settings associated with the computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Having a copy of the original configuration file greatly simplifies the restoration process if you have a hardware failure that requires you to replace the computer.  
+As part of backing up [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you should back up the configuration settings associated with the computer running [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Having a copy of the original configuration file greatly simplifies the restoration process if you have a hardware failure that requires you to replace the computer.  
   
- The configuration settings for each computer running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are stored in an XML file created by the BizTalk Server Configuration Manager. Any time you change the configuration of your BizTalk servers, you should export the updated configuration file to your backup location. This helps to ensure that the configuration file is available if you have to replace your BizTalk server.  
+ The configuration settings for each computer running [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are stored in an XML file created by the BizTalk Server Configuration Manager. Any time you change the configuration of your BizTalk servers, you should export the updated configuration file to your backup location. This helps to ensure that the configuration file is available if you have to replace your BizTalk server.  
   
 ## Prerequisites  
  You must be logged on as a member of the BizTalk Server Administrators group to perform this procedure.  

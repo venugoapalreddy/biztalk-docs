@@ -20,7 +20,7 @@ The **sepdcrec** function gets configuration information. The application calls 
   
 ```  
   
-USHORT sepdcrec(   
+USHORT sepdcrec(   
 UCHAR *pBuffer,  
 USHORT length,  
 USHORT *numbytes  
@@ -80,8 +80,8 @@ USHORT *numbytes
  On successful return, the buffer contains pointers to the appropriate 3270 user record and the diagnostics record, followed by the records themselves. It is formatted as follows:  
   
 ```  
-TECWRKUS *pUserRecord,   
-TEDIAGNS *pDiagRecord   
+TECWRKUS *pUserRecord,   
+TEDIAGNS *pDiagRecord   
 );  
 ```  
   

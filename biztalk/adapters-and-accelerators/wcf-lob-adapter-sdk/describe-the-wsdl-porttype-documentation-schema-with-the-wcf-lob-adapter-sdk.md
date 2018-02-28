@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Describe the WSDL PortType Documentation Schema with the WCF LOB Adapter SDK
-The WSDL that the  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] generates contains additional descriptive information for each portType. The schema for this additional information is described in this topic.  
+The WSDL that the  [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] generates contains additional descriptive information for each portType. The schema for this additional information is described in this topic.  
   
 ## Documentation XML Schema  
  The operation documentation is implemented using annotation of the portType to add a node that represents the adapter documentation for the operation. This node contains subnodes that further describe the operation and parameters. This schema is defined as follows.  

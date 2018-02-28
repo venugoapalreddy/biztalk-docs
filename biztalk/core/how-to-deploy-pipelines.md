@@ -45,51 +45,51 @@ Pipelines are compiled and deployed as part of the solution build and deploy pro
   
  Per-instance pipeline configuration does not support the following:  
   
--   Rearranging stages within the pipeline  
+- Rearranging stages within the pipeline  
   
--   Adding or removing stages  
+- Adding or removing stages  
   
--   Rearranging components within stages  
+- Rearranging components within stages  
   
--   Adding or removing components  
+- Adding or removing components  
   
- The only supported changes are in the configuration of pipeline components. Per-instance configuration of a pipeline component overrides the common pipeline component configuration. If a parameter of a component is not specified in per-instance pipeline configuration, the common configuration for that parameter (as configured in Pipeline Designer) is used.  
+  The only supported changes are in the configuration of pipeline components. Per-instance configuration of a pipeline component overrides the common pipeline component configuration. If a parameter of a component is not specified in per-instance pipeline configuration, the common configuration for that parameter (as configured in Pipeline Designer) is used.  
   
- The following is an example of per-instance configuration data.  
+  The following is an example of per-instance configuration data.  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
 <Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  
-    <Stages>  
-        <Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6">  
-            <Components>  
-                <Component Name=Microsoft Microsoft.BizTalk.Component.MIME_SMIME_Decoder>  
-                    <Properties>  
-                        <AllowNonMIMEMessage vt=11>true</AllowNonMIMEMessage>  
-                    </Properties>  
-                </Component>  
-            </Components>  
-        </Stage>  
-        <Stage CategoryId="9d0e4105-4cce-4536-83fa-4a5040674ad6">  
-            <Components>  
-                <Component Name=Microsoft.BizTalk.Component.XmlDasmComp>  
-                    <Properties>  
-                        <EnvelopeSpecNames vt=8>MySchemas.EnvelopeSpecNames</EnvelopeSpecNames>  
-                        <AllowUnrecognizedMessage vt=11>false</AllowUnrecognizedMessage>  
-                    </Properties>  
-                </Component>  
-            </Components>  
-        </Stage>  
-        <Stage CategoryId="9d0e410d-4cce-4536-83fa-4a5040674ad6" ExecutionSequence="2">  
-            <Components>  
-                 <Component Name=Microsoft.BizTalk.Component.XmlValidator >  
-                    <Properties>  
-                        <DocumentSpecName vt=8>MySchemas.DocspecName</DocumentSpecName>  
-                    </Properties>  
-                </Component>  
-            </Components>  
-        </Stage>  
-    </Stages>  
+    <Stages>  
+        <Stage CategoryId="9d0e4103-4cce-4536-83fa-4a5040674ad6">  
+            <Components>  
+                <Component Name=Microsoft Microsoft.BizTalk.Component.MIME_SMIME_Decoder>  
+                    <Properties>  
+                        <AllowNonMIMEMessage vt=11>true</AllowNonMIMEMessage>  
+                    </Properties>  
+                </Component>  
+            </Components>  
+        </Stage>  
+        <Stage CategoryId="9d0e4105-4cce-4536-83fa-4a5040674ad6">  
+            <Components>  
+                <Component Name=Microsoft.BizTalk.Component.XmlDasmComp>  
+                    <Properties>  
+                        <EnvelopeSpecNames vt=8>MySchemas.EnvelopeSpecNames</EnvelopeSpecNames>  
+                        <AllowUnrecognizedMessage vt=11>false</AllowUnrecognizedMessage>  
+                    </Properties>  
+                </Component>  
+            </Components>  
+        </Stage>  
+        <Stage CategoryId="9d0e410d-4cce-4536-83fa-4a5040674ad6" ExecutionSequence="2">  
+            <Components>  
+                 <Component Name=Microsoft.BizTalk.Component.XmlValidator >  
+                    <Properties>  
+                        <DocumentSpecName vt=8>MySchemas.DocspecName</DocumentSpecName>  
+                    </Properties>  
+                </Component>  
+            </Components>  
+        </Stage>  
+    </Stages>  
 </Root>  
 ```  
   

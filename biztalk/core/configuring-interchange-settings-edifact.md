@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring Interchange Settings (EDIFACT)
-EDIFACT interchange processing properties define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process the envelope of an EDIFACT-encoded interchange received from a party.  
+EDIFACT interchange processing properties define how [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process the envelope of an EDIFACT-encoded interchange received from a party.  
   
 ## In This Section  
   

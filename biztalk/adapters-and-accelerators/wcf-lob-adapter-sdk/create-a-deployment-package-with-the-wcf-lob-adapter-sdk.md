@@ -24,9 +24,9 @@ During the development cycle, you can build, debug, and run your adapter within 
   
  Whenever new projects are added to your solution you must remember to update and configure the deployment project to ensure that the output of the new project is included within the .msi file and that any project-specific installation steps are performed.  
   
- It is not enough to just install the output of the adapter project on the user's computer. The adapter needs to be installed in global assembly cache (GAC) and the machine.config file needs to be updated to register the adapter with [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].  
+ It is not enough to just install the output of the adapter project on the user's computer. The adapter needs to be installed in global assembly cache (GAC) and the machine.config file needs to be updated to register the adapter with [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].  
   
- Following is a sample custom action that can be used to register or unregister an adapter with [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].  
+ Following is a sample custom action that can be used to register or unregister an adapter with [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)].  
   
 ```  
 using System;  

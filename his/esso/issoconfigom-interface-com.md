@@ -19,4 +19,4 @@ The **ISSOConfigOM** grants access to the Single Sign-On (SSO) object model for 
 ## Requirements  
  **Type Library**: SSOConfigOM 1.0 Type Library (SSOConfigOM.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]

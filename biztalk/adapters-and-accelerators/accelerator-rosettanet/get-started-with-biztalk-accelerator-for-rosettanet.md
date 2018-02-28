@@ -19,9 +19,9 @@ ms.author: "mandia"
 
 ---
 # Get started with BizTalk Accelerator for RosettaNet
-The Microsoft BizTalk Accelerator for RosettaNet (BTARN) streamlines the development and deployment of RosettaNet standards-based integration solutions. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] supports the RosettaNet Implementation Framework (RNIF) versions 1.1 and 2.0.01. RNIF is an open network application framework that enables business partners to collaboratively run RosettaNet Partner Interface Processes (PIPs). See [GS1 US](http://go.microsoft.com/fwlink/?LinkID=33859) for more information about RosettaNet standard.
+The Microsoft BizTalk Accelerator for RosettaNet (BTARN) streamlines the development and deployment of RosettaNet standards-based integration solutions. [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] supports the RosettaNet Implementation Framework (RNIF) versions 1.1 and 2.0.01. RNIF is an open network application framework that enables business partners to collaboratively run RosettaNet Partner Interface Processes (PIPs). See [GS1 US](http://go.microsoft.com/fwlink/?LinkID=33859) for more information about RosettaNet standard.
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] also supports the exchange of Chemical Data Exchange (CIDX) Chem eStandards.  
+ [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] also supports the exchange of Chemical Data Exchange (CIDX) Chem eStandards.  
   
 This section provides role-specific information about how you can use BizTalk Server and the RosettaNet accelerator in your company for enterprise application integration (EAI), and among business partners to automate business-to-business procurement solutions.  
 

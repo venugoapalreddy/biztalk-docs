@@ -15,12 +15,12 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Run an Insert Operation on a Table in SQL using the WCF Channel Model
-The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] discovers a set of basic Insert, Select, Update, and Delete operations on SQL Server database tables and views. By using these operations, you can perform simple SQL Insert, Select, Update, and Delete statements qualified by a Where clause on a target table or view. This topic provides instructions on how to perform an Insert operation on a SQL Server database table using the WCF channel model.  
+The [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] discovers a set of basic Insert, Select, Update, and Delete operations on SQL Server database tables and views. By using these operations, you can perform simple SQL Insert, Select, Update, and Delete statements qualified by a Where clause on a target table or view. This topic provides instructions on how to perform an Insert operation on a SQL Server database table using the WCF channel model.  
   
  For more information on how the adapter supports these operations, see [Insert, Update, Delete, and Select Operations on Tables and Views with the SQL adapter](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md). For more information about how to perform operations on SQL Server using the WCF Channel model, see [Overview of the WCF channel model with the SQL adapter](../../adapters-and-accelerators/adapter-sql/overview-of-the-wcf-channel-model-with-the-sql-adapter.md).  
   
 ## About the Examples Used in this Topic  
- The example in this topic performs operations on the Employee table. The Employee table is created by running the SQL script provided with the samples. For more information about samples, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md). A sample, **EmployeeInsertOp**, which is based on this topic, is also provided with the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] samples.  
+ The example in this topic performs operations on the Employee table. The Employee table is created by running the SQL script provided with the samples. For more information about samples, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md). A sample, <strong>EmployeeInsertOp</strong>, which is based on this topic, is also provided with the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] samples.  
   
 ## The Insert Message  
  To perform operations on the SQL Server database using the WCF channel model, you must have the request message specific to the operation. The request message to perform an Insert operation on the Employee table in the SQL Server database resembles the following:  
@@ -45,7 +45,7 @@ Designation = Manager
 Salary = 500000  
 ```  
   
- You must copy the message to a file, e.g. InsertRequest.xml. This file is used in this example to send the request message to SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]. For more information about the message schema for operations on table, see [Message Schemas for Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md).  
+ You must copy the message to a file, e.g. InsertRequest.xml. This file is used in this example to send the request message to SQL Server using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)]. For more information about the message schema for operations on table, see [Message Schemas for Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md).  
   
 ## Creating a WCF Channel Application  
  This section provides instructions on how to create a WCF channel application to perform an Insert operation on the Employee table.  

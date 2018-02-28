@@ -1,1 +1,1 @@
-​Trading Partner Management (TPM)
+ Trading Partner Management (TPM)

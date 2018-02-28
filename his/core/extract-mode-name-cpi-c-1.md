@@ -20,7 +20,7 @@ The **Extract_Mode_Name** call (function name **cmemn**) returns the mode name a
   
 ```  
   
-CM_ENTRY Extract_Mode_Name(   
+CM_ENTRY Extract_Mode_Name(   
   unsigned char FAR *conversation_ID,    
   unsigned char FAR *mode_name,      
   CM_INT32 FAR *mode_name_length,    

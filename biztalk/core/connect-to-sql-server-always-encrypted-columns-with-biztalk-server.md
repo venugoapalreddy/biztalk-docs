@@ -15,17 +15,19 @@ ms.author: mandia
 manager: "anneta"
 ---
 # Connect to SQL Server Always Encrypted columns with BizTalk Server
-Enable Always Encrypted in the WCF-SQL adapter in [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] to query encrypted columns.  
+Enable Always Encrypted in the WCF-SQL adapter in [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] to query encrypted columns.  
 
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, the WCF-SQL adapter can query encrypted columns in [!INCLUDE[btsSQLServerNoVersion_md](../includes/btssqlservernoversion-md.md)]. The `ColumnEncryptionSetting` binding property is used to enable or disable the functionality to get decrypted/encrypted column values from an Always Encrypted database.
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/connect-to-sql-server-always-encrypted-columns-with-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --> <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[featurepack1](../includes/featurepack1.md)]: Path(D:/a/1/s/target_repo/biztalk/core/connect-to-sql-server-always-encrypted-columns-with-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[featurepack1](../includes/featurepack1.md)]<!--END ERROR INCLUDE --></strong>, the WCF-SQL adapter can query encrypted columns in [!INCLUDE [btsSQLServerNoVersion_md](../includes/btssqlservernoversion-md.md)]. The `ColumnEncryptionSetting` binding property is used to enable or disable the functionality to get decrypted/encrypted column values from an Always Encrypted database.
 
-This topic shows you how to enable or disable this feature in [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
+This topic shows you how to enable or disable this feature in [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
 
-> [!TIP] 
-> [Always Encrypted (Database Engine)](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) is a great resource to understand and learn more about this [!INCLUDE[btsSQLServerNoVersion_md](../includes/btssqlservernoversion-md.md)] feature.
+> [!TIP]
+> [Always Encrypted (Database Engine)](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine) is a great resource to understand and learn more about this [!INCLUDE [btsSQLServerNoVersion_md](../includes/btssqlservernoversion-md.md)] feature.
 
 ## Prerequisites
-Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
+Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
 
 ## Enable Always Encrypted
 

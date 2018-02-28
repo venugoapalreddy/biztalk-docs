@@ -27,7 +27,7 @@ public: __value struct SPasswordChangeComplete
 ## Requirements  
  **Type Library:** SSOLookup 1.0 Type Library (SSOLookup.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SPasswordChangeComplete Members](../esso/spasswordchangecomplete-members.md)   

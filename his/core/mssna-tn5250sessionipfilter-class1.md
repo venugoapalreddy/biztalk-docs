@@ -32,13 +32,13 @@ class MsSna_TN5250SessionIPFilter : MsSna_Config
 ```  
   
 ## Properties  
- **Name**  
- Data Type: **String**Qualifiers: **Key, MAXLEN(15)**Access Type: Read-Only  
+ <strong>Name</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>Key, MAXLEN(15)</strong>Access Type: Read-Only  
   
  The IP address or name of the computer assigned to the TN5250 session.  
   
- **AS400**  
- Data Type: **String**Qualifiers: **Key, MAXLEN(8)**Access Type: Read-Only  
+ <strong>AS400</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>Key, MAXLEN(8)</strong>Access Type: Read-Only  
   
  The AS/400 definition.  
   

@@ -22,7 +22,7 @@ In BizTalk Editor, the top of the schema hierarchy is always the **Schema** node
 > [!NOTE]
 >  In BizTalk Editor, the **Schema** node is represented with the string \<Schema\> in the schema tree view.  
   
- In general, the properties of the **Schema** node correspond to the attributes of the **schema** element in the XSD representation of the schema. For general information about node properties, see [Node Properties](../core/node-properties.md). For reference information about the properties of the **Schema** node, see the **Schema Node Properties** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ In general, the properties of the <strong>Schema</strong> node correspond to the attributes of the <strong>schema</strong> element in the XSD representation of the schema. For general information about node properties, see [Node Properties](../core/node-properties.md). For reference information about the properties of the <strong>Schema</strong> node, see the <strong>Schema Node Properties</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
  When you create a new XML schema in BizTalk Editor, the **Schema** node and one **Root** node are created automatically.  
   

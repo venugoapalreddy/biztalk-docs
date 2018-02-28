@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure Functoid Script** dialog box, correct the syntax error(s).
+ Select the indicated <strong>Scripting</strong> functoid, click the ellipsis (<strong>...</strong>) button associated with the <strong>Script</strong> property in the Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the <strong>Configure Functoid Script</strong> dialog box, correct the syntax error(s).

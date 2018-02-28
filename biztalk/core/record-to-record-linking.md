@@ -17,7 +17,7 @@ manager: "anneta"
 # Record-to-Record Linking
 
 ## Overview
-In Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can use BizTalk Mapper to create multiple links between similar portions of the source and destination schemas at the same time. In previous versions of BizTalk Server, you had to create such links individually, one at a time. There are two distinct types of record-to-record linking, each appropriate to different scenarios based on the degree of similarity of the structures of the source and destination schema records being linked, as follows:  
+In Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can use BizTalk Mapper to create multiple links between similar portions of the source and destination schemas at the same time. In previous versions of BizTalk Server, you had to create such links individually, one at a time. There are two distinct types of record-to-record linking, each appropriate to different scenarios based on the degree of similarity of the structures of the source and destination schema records being linked, as follows:  
   
 -   **Structure linking.** Use structure linking when the structure of the records being linked in your source and destination schemas are the same or very similar.  
   

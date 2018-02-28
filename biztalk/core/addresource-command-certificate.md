@@ -22,7 +22,7 @@ To add a security certificate to a BizTalk application, you use the **AddResourc
  When you install the application, the certificate is imported into the Other People certificate store on the local computer.  
   
 ## Usage  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Certificate** [**/Overwrite**] **/Thumbprint:"***value***"** [**/Server:***value*] [**/Database:***value*]  
+ <strong>BTSTask AddResource</strong> [<strong>/ApplicationName:</strong><em>value</em>] <strong>/Type:System.BizTalk:Certificate</strong> [<strong>/Overwrite</strong>] <strong>/Thumbprint:"</strong><em>value</em><strong>"</strong> [<strong>/Server:</strong><em>value</em>] [<strong>/Database:</strong><em>value</em>]  
   
 ## Parameters  
   

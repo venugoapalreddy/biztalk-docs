@@ -17,9 +17,9 @@ manager: "anneta"
 # Disable New Message Publication
 
 ## Overview
-You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console or Windows Management Instrumentation (WMI) to disable new message publication. You disable new message publication in the MessageBox database to stop the receipt of new messages by the MessageBox database. In some BizTalk Server environments, you can improve performance if you disable new message publication for the master MessageBox database. Disabling new message publication does not affect existing messages in the MessageBox database or service instances that are in progress.  
+You can use the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console or Windows Management Instrumentation (WMI) to disable new message publication. You disable new message publication in the MessageBox database to stop the receipt of new messages by the MessageBox database. In some BizTalk Server environments, you can improve performance if you disable new message publication for the master MessageBox database. Disabling new message publication does not affect existing messages in the MessageBox database or service instances that are in progress.  
   
- For information about using WMI to disable new message publication, see the **MSBTS_MsgBoxSetting.DisableNewMessagePublication Property (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For information about using WMI to disable new message publication, see the <strong>MSBTS_MsgBoxSetting.DisableNewMessagePublication Property (WMI)</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 > [!IMPORTANT]
 >  You must disable the publication of new messages before you delete a MessageBox database. For information about deleting a MessageBox database, see [How to Delete a MessageBox Database](../core/how-to-delete-a-messagebox-database.md).  
@@ -33,13 +33,13 @@ You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserve
   
 ## Disable steps
   
-1.  Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.  
+1. Click <strong>Start</strong>, click <strong>All Programs</strong>, click [!INCLUDE [btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click <strong>BizTalk Server Administration</strong>.  
   
-2.  In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, click **Platform Settings**, and then click **Message Boxes**.  
+2. In the console tree, expand [!INCLUDE [btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, click <strong>Platform Settings</strong>, and then click <strong>Message Boxes</strong>.  
   
-3.  In the details pane, right-click the MessageBox database you want to disable, and then click **Properties**.  
+3. In the details pane, right-click the MessageBox database you want to disable, and then click **Properties**.  
   
-4.  In the **Message Box Properties** dialog box, select the **Disable new message publication** check box, and then click **OK**.  
+4. In the **Message Box Properties** dialog box, select the **Disable new message publication** check box, and then click **OK**.  
   
 ## See Also  
  [Managing MessageBox Databases](../core/managing-messagebox-databases.md)   

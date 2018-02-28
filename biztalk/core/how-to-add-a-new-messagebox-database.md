@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Add a New MessageBox Database
-You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console to add a new MessageBox database to your BizTalk Server deployment. MessageBox databases are the basis for load-balancing work items across servers that do cooperative processing. To increase the number of messages that your system can process, you may need to add additional MessageBox databases.  
+You can use the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console to add a new MessageBox database to your BizTalk Server deployment. MessageBox databases are the basis for load-balancing work items across servers that do cooperative processing. To increase the number of messages that your system can process, you may need to add additional MessageBox databases.  
   
  You cannot create a new MessageBox database and have enlisted orchestrations, send ports, or send port groups at the same time. Enlisted orchestrations, send ports, or send port groups access data that BizTalk Server must copy to the new MessageBox database. While this data is being accessed, BizTalk Server cannot copy it into the new MessageBox database.  
   
@@ -37,20 +37,20 @@ You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserve
   
 ### To add a new MessageBox database  
   
-1.  Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.  
+1. Click <strong>Start</strong>, click <strong>All Programs</strong>, click [!INCLUDE [btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click <strong>BizTalk Server Administration</strong>.  
   
-2.  In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, and then click **Platform Settings**.  
+2. In the console tree, expand [!INCLUDE [btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, and then click <strong>Platform Settings</strong>.  
   
-3.  Right-click **Message Boxes**, click **New**, and then click **Message Box**.  
+3. Right-click **Message Boxes**, click **New**, and then click **Message Box**.  
   
-4.  In the **Message Box Properties** dialog box, do the following, and then click **OK**:  
+4. In the **Message Box Properties** dialog box, do the following, and then click **OK**:  
   
-    |Use this|To do this|  
-    |--------------|----------------|  
-    |**SQL Server**|Displays the name of the SQL server that hosts the MessageBox database.|  
-    |**Database**|Displays the name of the MessageBox database.|  
-    |**Master subscription message box**|Indicates whether the selected MessageBox database is the master. If the current MessageBox database is the master, this check box is selected and unavailable. The first MessageBox database created when you run the Configuration Wizard is the master by default.|  
-    |**Disable new message publication**|Select this check box to specify that you do not want this MessageBox database to receive activation messages.|  
+   |Use this|To do this|  
+   |--------------|----------------|  
+   |**SQL Server**|Displays the name of the SQL server that hosts the MessageBox database.|  
+   |**Database**|Displays the name of the MessageBox database.|  
+   |**Master subscription message box**|Indicates whether the selected MessageBox database is the master. If the current MessageBox database is the master, this check box is selected and unavailable. The first MessageBox database created when you run the Configuration Wizard is the master by default.|  
+   |**Disable new message publication**|Select this check box to specify that you do not want this MessageBox database to receive activation messages.|  
   
 ## See Also  
  [Managing MessageBox Databases](../core/managing-messagebox-databases.md)   

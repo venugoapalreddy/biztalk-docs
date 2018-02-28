@@ -69,7 +69,7 @@ As Variant
 |E_INVALIDARG|An invalid parameter was detected.|  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapper Interface (COM)](../esso/issomapper-interface-com.md)   

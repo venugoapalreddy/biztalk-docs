@@ -17,7 +17,7 @@ manager: "anneta"
 # Overriding EDI Headers
 When sending an EDI-encoded interchange, the EDI envelope applied to the message is normally based upon the EDI properties of the receiving agreement, or the fallback agreement properties. However it is often useful to set the EDI envelope properties based on runtime generated values.  
   
- In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can use the EdiOverride context properties to specify the values used to generate the EDI envelope on outbound documents.  
+ In [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can use the EdiOverride context properties to specify the values used to generate the EDI envelope on outbound documents.  
   
 ## Using EdiOverride Context Properties  
  The EdiOverride context properties provide a way to override all, or part, of the values used to generate the EDI envelope. The EDI send pipeline will use EdiOverride context property that contains a valid value to construct the envelope. If a property is not populated, the pipeline will use the value specified in agreement properties or fallback agreement properties, if an agreement is not defined. If a property contains an invalid value, the pipeline will suspend the message and report a validation error.  

@@ -52,7 +52,7 @@ Administrators can modify certain elements of the BAM alert framework. This topi
 7.  Press **ENTER**.  
   
 ### Notification Service configuration tips  
- If you configure BAM Alerts in such a way as to place the Alerts databases on a remote computer running [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], then the Notification Services Database Components must be installed on the SQL Server instance. If these components are not present on the SQL instance, then configuration of BAM Alerts will fail with an error indicating that permissions could not be granted to the Notification Services Extended Stored Procedures. For more information on installing the Notification Services component, see [http://go.microsoft.com/fwlink/?LinkId=61999](http://go.microsoft.com/fwlink/?LinkId=61999).  
+ If you configure BAM Alerts in such a way as to place the Alerts databases on a remote computer running [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)], then the Notification Services Database Components must be installed on the SQL Server instance. If these components are not present on the SQL instance, then configuration of BAM Alerts will fail with an error indicating that permissions could not be granted to the Notification Services Extended Stored Procedures. For more information on installing the Notification Services component, see [http://go.microsoft.com/fwlink/?LinkId=61999](http://go.microsoft.com/fwlink/?LinkId=61999).  
   
  BAM allows you to change the account that BAM uses to access the Notification Services. If you change this account in any way other than running NSControl, you will receive an error informing you to use the NSControl to change the account.  
   
@@ -63,28 +63,28 @@ Administrators can modify certain elements of the BAM alert framework. This topi
   
 ##### To change NS user account for BAM  
   
-1.  Use NSControl to update the user account.  
+1. Use NSControl to update the user account.  
   
-2.  Grant the NS user read, write, and change permissions to the BAM Alerts File Location share.  
+2. Grant the NS user read, write, and change permissions to the BAM Alerts File Location share.  
   
-3.  Add the NS user as a member of NSRunService role in both the BAMAlerts instance and application databases.  
+3. Add the NS user as a member of NSRunService role in both the BAMAlerts instance and application databases.  
   
-4.  Grant the NS User rights on the local machine using the documentation at [http://go.microsoft.com/fwlink/?LinkId=62005](http://go.microsoft.com/fwlink/?LinkId=62005).  
+4. Grant the NS User rights on the local machine using the documentation at [http://go.microsoft.com/fwlink/?LinkId=62005](http://go.microsoft.com/fwlink/?LinkId=62005).  
   
-5.  Grant the NS rights to the NS database according to [http://go.microsoft.com/fwlink/?LinkId=62008](http://go.microsoft.com/fwlink/?LinkId=62008).  
+5. Grant the NS rights to the NS database according to [http://go.microsoft.com/fwlink/?LinkId=62008](http://go.microsoft.com/fwlink/?LinkId=62008).  
   
-6.  Grant the NS user login rights to SQL server and database access to the Primary Import database.  
+6. Grant the NS user login rights to SQL server and database access to the Primary Import database.  
   
-7.  Add the NS user to the BAM_ManagmentNSReader SQL role.  
+7. Add the NS user to the BAM_ManagmentNSReader SQL role.  
   
-8.  Add the NS user to the "BAM Alerts" role in BamAnalysis database.  
+8. Add the NS user to the "BAM Alerts" role in BamAnalysis database.  
   
- If you modify the file drop location for alerts delivered by file. You must restart the SQL Notifications Services.  
+   If you modify the file drop location for alerts delivered by file. You must restart the SQL Notifications Services.  
   
- If the NS service is not restarted, alerts will continue being delivered to the original file drop location.  
+   If the NS service is not restarted, alerts will continue being delivered to the original file drop location.  
   
- The file drop location is changed by modifying the following line of the BAM configuration file and using the BAM manangement utility update-config command.  
+   The file drop location is changed by modifying the following line of the BAM configuration file and using the BAM manangement utility update-config command.  
   
- \<Property Name="FileDropUNC"\>\\\\<computer name\>\alerts\</Property\>  
+   \<Property Name="FileDropUNC"\>\\\\<computer name\>\alerts\</Property\>  
   
- For more information on the BAM Management utility, see [BAM Management Utility](../core/bam-management-utility.md).
+   For more information on the BAM Management utility, see [BAM Management Utility](../core/bam-management-utility.md).

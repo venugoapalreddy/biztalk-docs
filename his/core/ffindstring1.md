@@ -20,7 +20,7 @@ The **fFindString** function is used to determine if a string exists within a st
   
 ```  
   
-          BOOL fFindString(   
+          BOOL fFindString(   
 LPSTRszStringBuffer,  
 LPSTRszSearchString);  
 ```  

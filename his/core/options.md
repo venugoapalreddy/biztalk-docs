@@ -15,20 +15,20 @@ manager: "anneta"
 ---
 # options
 The Options element contains a set of optional attributes used for binding custom static SQL packages  
-  
+
  \<hostIntegration.staticSql>  
-  
+
 ## Syntax  
-  
+
 ```  
-<hostIntegration.staticSql>        <options>        </options></hostIntegration.staticSql>  
+<hostIntegration.staticSql>        <options>        </options></hostIntegration.staticSql>  
 ```  
-  
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
-  
+
 ### Attributes  
-  
+
 |Attribute|Type|Description|Required|Default Value|  
 |---------------|----------|-----------------|--------------|-------------------|  
 |bindCheck|xs:boolean|Bind Existence Checking (BNDCHKEXS) String controls whether the relational database (RDB) treats the absence of a named RDB object (table, view, and so on) on an SQL statement or the requester not being authorized to a named RDB object as an error. If the RDB treats the absence or the lack of authorization to a named RDB object as an error and the BGNBND command is being executed, then the package may or may not be created depending on the value specified for the Bind Package Creation Control (BNDCRTCTL) parameter. If the RDB treats the absence or the lack of authorization to a named RDB object as an error and the REBIND command is being executed, then the package is not rebound.|false|n/a|  
@@ -53,12 +53,13 @@ The Options element contains a set of optional attributes used for binding custo
 |statementDecimalDelimiter|drdaar:OptionsStatementDecimalDelimiter|Statement String Delimiter (STTSTRDEL) specifies which separate characters delimit character strings and delimited SQL identifiers in SQL statements. Valid values are|false|n/a|  
 |statementStringDelimiter|drdaar:OptionsStatementStringDelimiter|Statement String Delimiter (STTSTRDEL) specifies which separate characters delimit character strings and delimited SQL identifiers in SQL statements. Valid values are|false|n/a|  
 |statementTimeFormat|drdaar:OptionsStatementTimeFormat|The Statement Time Format (STTTIMFMT) String specifies the time format used in the SQL statements. The ISOTIMFMT and EURTIMFMT specify a common time format. They are kept separate for reporting purposes and to keep the encoding consistent with the statement date format (STTDATFMT) which is different. Valid values are|false|n/a|  
-  
+
 ### Child Elements  
  None  
-  
+
 ### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-||TBD|
+
+| Element | Description |
+|---------|-------------|
+|         |     TBD     |
+

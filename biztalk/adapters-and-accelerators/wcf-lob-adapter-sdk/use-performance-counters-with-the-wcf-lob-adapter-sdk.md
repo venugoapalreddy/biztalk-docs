@@ -15,17 +15,17 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Use performance counters with the WCF LOB Adapter SDK
-You can use the performance tool to automatically collect performance data from local or remote computers that are running the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. You can define start and stop times for automatic log generation, manage multiple logging sessions from a single console window, and set an alert on a computer that enables a message to be sent or a log to be started when your criteria are met. This topic discusses the performance counters for the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
+You can use the performance tool to automatically collect performance data from local or remote computers that are running the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)]. You can define start and stop times for automatic log generation, manage multiple logging sessions from a single console window, and set an alert on a computer that enables a message to be sent or a log to be started when your criteria are met. This topic discusses the performance counters for the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)].  
   
 ## Performance Objects and Counters  
- When you install the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], a single performance object named "ServiceModel Adapters" is installed. The performance object contains a number of different performance counters. A performance object measures the activity for a given resource, application, or service. Performance objects and counters obtain performance data from the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], features, and services on your computer as they are used. This performance data is typically named for the component that generates the data. Performance counters are used for gathering specific information or data for a given performance object.  
+ When you install the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)], a single performance object named "ServiceModel Adapters" is installed. The performance object contains a number of different performance counters. A performance object measures the activity for a given resource, application, or service. Performance objects and counters obtain performance data from the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)], features, and services on your computer as they are used. This performance data is typically named for the component that generates the data. Performance counters are used for gathering specific information or data for a given performance object.  
   
  When selecting counters from the ServiceModel Adapters performance object, you can choose to only monitor information specific adapter instances by selecting the instance from the Select Instances list. Each adapter instance will be listed in the format of \<ProcessId\>@\<ConnectionString\>. For example, 115@echo:&#124;&#124;host&#124;temp?echoprefix=pre indicates the echo adapter instance running in process 115.  
   
  For information about performance counters in WCF, see [WCF Performance Counters](https://msdn.microsoft.com/library/ms735098.aspx).
   
 ### ServiceModel Adapters Metadata Cache Performance Counters  
- The following table summarizes the cache performance counters that can be used to monitor the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
+ The following table summarizes the cache performance counters that can be used to monitor the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)].  
   
 |Counter|Description|  
 |-------------|-----------------|  
@@ -34,7 +34,7 @@ You can use the performance tool to automatically collect performance data from 
 |% Cache full|Percentage of the cache size limit in use.|  
   
 ### ServiceModel Adapters Connection Performance Counters  
- The following table summarizes the connection performance counters that can be used to monitor the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
+ The following table summarizes the connection performance counters that can be used to monitor the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)].  
   
 |Counter|Description|  
 |-------------|-----------------|  
@@ -45,7 +45,7 @@ You can use the performance tool to automatically collect performance data from 
 |Pending Connection Requests|Number of pending target system connection requests.|  
   
 ### ServiceModel Adapters Message Exchange Performance Counters  
- The following table summarizes the message exchange performance counters that can be used to monitor the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
+ The following table summarizes the message exchange performance counters that can be used to monitor the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)].  
   
 |Counter|Description|  
 |-------------|-----------------|  

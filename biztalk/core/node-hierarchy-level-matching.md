@@ -30,7 +30,7 @@ manager: "anneta"
 # Node-Hierarchy Level Matching
 BizTalk Mapper enables you to configure a link property to control how the compiler matches node hierarchies between the source and destination schemas. When you create a link from a field in the source schema to a field in the destination schema, BizTalk Mapper automatically adds compiler links. These compiler links depend on the matching you select.  
   
- When you select a link in the displayed grid page, one of the properties displayed in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window is the **Target Links** property. You can choose among the following possible values for each link in your map:  
+ When you select a link in the displayed grid page, one of the properties displayed in the [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window is the <strong>Target Links</strong> property. You can choose among the following possible values for each link in your map:  
   
 -   **Flatten links.** Use this value to flatten all source hierarchies to the parent record in the destination schema node.  
   

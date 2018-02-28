@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Tracing for TN5250
-You can enable or disable tracing for TN5250 using the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace application. Host Integration Server Trace provides API, internal, and message tracing.  
+You can enable or disable tracing for TN5250 using the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace application. Host Integration Server Trace provides API, internal, and message tracing.  
   
  The Host Integration Server Trace application places trace files for TN5250 in the \Host Integration Server\Tracesfolder by default.  
   

@@ -22,8 +22,8 @@ The **CMDSemRequest** function requests a RAM semaphore.
   
 USHORT FAR CMDSemRequest(  
 ULONG FAR   
-*ramSem,   
-ULONG timeOut   
+*ramSem,   
+ULONG timeOut   
 );  
 ```  
   

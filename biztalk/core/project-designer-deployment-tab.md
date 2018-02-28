@@ -49,10 +49,10 @@ The **Deployment** property tab of the Project Designer allows you to configure 
  You use the **Redeploy** property to determine whether to delete the existing configuration and re-create the configuration each time you deploy the assembly. The default value is `True`.  
   
 ## Install to Global Assembly Cache  
- You use the **Install to Global Assembly Cache** property to indicate if [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] needs to install the BizTalk assembly to the global assembly cache (GAC).  
+ You use the <strong>Install to Global Assembly Cache</strong> property to indicate if [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] needs to install the BizTalk assembly to the global assembly cache (GAC).  
   
 ## Restart Host Instances  
- If you set **Restart Host Instances** to **True**, the host instances on the local computer will be restarted when the project is deployed by [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. This is useful during the development cycle when you are making changes and frequently redeploying; you will not have to manually restart related host instances.  
+ If you set <strong>Restart Host Instances</strong> to <strong>True</strong>, the host instances on the local computer will be restarted when the project is deployed by [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. This is useful during the development cycle when you are making changes and frequently redeploying; you will not have to manually restart related host instances.  
   
  If you do not restart related host instances, your latest changes may not be reflected in your BizTalk application because the old version may still be cached. Restarting the host instance purges cached assemblies.  
   

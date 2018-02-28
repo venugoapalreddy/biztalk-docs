@@ -46,7 +46,7 @@ We recommend backing up your BAM artifacts before undeploying.
   
     > [!NOTE]
     >  * Stop and undeploy the BizTalk artifacts created by BTARN by using the [BtarnClean](btarnclean.md) utility.
-	>  * Remove any additional artifacts that you deployed. See [Undeploying BizTalk Applications](../../core/undeploying-biztalk-applications.md) .
+    >  * Remove any additional artifacts that you deployed. See [Undeploying BizTalk Applications](../../core/undeploying-biztalk-applications.md) .
   
 3.  From the BTARN Setup, locate the MSI\Program Files\Microsoft BizTalk Accelerator for RosettaNet\SDK folder. In the SDK folder, double-click **BTARNClean.exe**, and then select **Y** to continue, or **N** to cancel running the utility.  
   

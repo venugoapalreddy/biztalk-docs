@@ -16,12 +16,12 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Start a Host Instance
-You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console or Windows Management Instrumentation (WMI) to start host instances. After you add or stop a host instance, you must start it so that it is running and routing messages to the MessageBox databases.  
+You can use the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console or Windows Management Instrumentation (WMI) to start host instances. After you add or stop a host instance, you must start it so that it is running and routing messages to the MessageBox databases.  
   
 > [!IMPORTANT]
 >  The service account that you specify for a host instance should be a member of the Windows group for the associated host. Otherwise, the host instance may not have the appropriate permissions or authentication at run time. In addition, for security reasons, the account should have minimum privileges because orchestrations hosted by the host instance might execute potentially malicious custom code.  
   
- For more information about host instances, see [Host Instances](../core/host-instances.md). For information about using WMI to start a host instance, see **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For more information about host instances, see [Host Instances](../core/host-instances.md). For information about using WMI to start a host instance, see <strong>MSBTS_HostInstance (WMI)</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Prerequisites  
  To perform this procedure, you must be logged on as a member of the Administrators group and the BizTalk Server Administrators group.  
@@ -43,15 +43,15 @@ You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserve
   
 ## Steps
   
-1.  Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.  
+1. Click <strong>Start</strong>, click <strong>All Programs</strong>, click [!INCLUDE [btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click <strong>BizTalk Server Administration</strong>.  
   
-2.  In the console tree, expand **BizTalk Server Administration**, expand the BizTalk group, click **Platform Settings**, and then click **Host Instances**.  
+2. In the console tree, expand **BizTalk Server Administration**, expand the BizTalk group, click **Platform Settings**, and then click **Host Instances**.  
   
-3.  In the details pane, right-click the host instance you want to start, and then click **Start**.  
+3. In the details pane, right-click the host instance you want to start, and then click **Start**.  
   
-     The status of the host instance changes to **Start pending**. After the host instance initiates, the status changes to **Running**.  
+    The status of the host instance changes to **Start pending**. After the host instance initiates, the status changes to **Running**.  
   
- After you start a host instance, you can stop it to prevent it from routing messages to the MessageBox database. You must stop a host instance before you can remove BizTalk Server from a given computer. For information about stopping a host instance, see [How to Stop a Host Instance](../core/how-to-stop-a-host-instance.md).  
+   After you start a host instance, you can stop it to prevent it from routing messages to the MessageBox database. You must stop a host instance before you can remove BizTalk Server from a given computer. For information about stopping a host instance, see [How to Stop a Host Instance](../core/how-to-stop-a-host-instance.md).  
   
 ## See Also  
  [Managing BizTalk Hosts and Host Instances](../core/managing-biztalk-hosts-and-host-instances.md)   

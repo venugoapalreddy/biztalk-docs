@@ -23,7 +23,7 @@ The **Set_Processing_Mode** call (function name **cmspm**) specifies for the con
   
 ```  
   
-CM_ENTRY Set_Processing_Mode(   
+CM_ENTRY Set_Processing_Mode(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *receive_type,            
   CM_INT32 FAR *return_code              

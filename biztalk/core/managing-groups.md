@@ -22,7 +22,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Managing Groups
-This section provides procedures for managing a BizTalk group. You use the BizTalk Server group to represent a unit of organization—such as an enterprise, department, or hub—that requires a contained Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implementation. The BizTalk Management (BizTalkMgmtDb) database stores configuration information for the BizTalk group and the servers in that group. For more information about the BizTalk group, see [BizTalk Groups](../core/biztalk-groups.md).  
+This section provides procedures for managing a BizTalk group. You use the BizTalk Server group to represent a unit of organization—such as an enterprise, department, or hub—that requires a contained Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implementation. The BizTalk Management (BizTalkMgmtDb) database stores configuration information for the BizTalk group and the servers in that group. For more information about the BizTalk group, see [BizTalk Groups](../core/biztalk-groups.md).  
   
 ## In This Section  
   

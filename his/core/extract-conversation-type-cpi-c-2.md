@@ -20,7 +20,7 @@ The **Extract_Conversation_Type** call (function name **cmect**) returns the con
   
 ```  
   
-CM_ENTRY Extract_Conversation_Type(   
+CM_ENTRY Extract_Conversation_Type(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *conversation_type,    
     CM_INT32 FAR *return_code           
@@ -34,12 +34,12 @@ CM_ENTRY Extract_Conversation_Type( 
  *conversation_type*  
  Returned parameter. Specifies the conversation type. Possible values are:  
   
--   CM_BASIC_CONVERSATION  
+- CM_BASIC_CONVERSATION  
   
--   CM_MAPPED_CONVERSATION  
+- CM_MAPPED_CONVERSATION  
   
- *return_code*  
- The code returned from this call. The valid return codes are listed later in this topic.  
+  *return_code*  
+  The code returned from this call. The valid return codes are listed later in this topic.  
   
 ## Return Codes  
  CM_OK  

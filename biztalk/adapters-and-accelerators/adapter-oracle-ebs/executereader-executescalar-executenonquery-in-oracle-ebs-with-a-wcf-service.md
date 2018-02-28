@@ -15,15 +15,15 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # ExecuteReader, ExecuteScalar, or ExecuteNonQuery operations in Oracle E-Business Suite using the WCF service model
-The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] exposes generic operations such as **ExecuteNonQuery**, **ExecuteReader**, and **ExecuteScalar**. You can use these operations to execute any statement on Oracle E-Business Suite. These operations differ based on the kind of response you get for the statement. For more information about how the adapter supports these operations, see [Support for ExecuteNonQuery, ExecuteReader, and ExecuteScalar Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md).  
+The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] exposes generic operations such as <strong>ExecuteNonQuery</strong>, <strong>ExecuteReader</strong>, and <strong>ExecuteScalar</strong>. You can use these operations to execute any statement on Oracle E-Business Suite. These operations differ based on the kind of response you get for the statement. For more information about how the adapter supports these operations, see [Support for ExecuteNonQuery, ExecuteReader, and ExecuteScalar Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md).  
   
- This topic demonstrates how to perform an **ExecuteReader** operation using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] using the WCF service model. You can follow the same set of procedures described in this topic to perform **ExecuteNonQuery** and **ExecuteScalar** operations.  
+ This topic demonstrates how to perform an <strong>ExecuteReader</strong> operation using the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] using the WCF service model. You can follow the same set of procedures described in this topic to perform <strong>ExecuteNonQuery</strong> and <strong>ExecuteScalar</strong> operations.  
   
 ## About the Examples Used in this Topic  
- The example in this topic performs an **ExecuteReader** operation to perform a SELECT operation on the MS_SAMPLE_EMPLOYEE interface table. The table is created by running the script provided with the samples. For more information about samples, see [Samples for the Oracle EBS adapter](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md). A sample, **ExecuteReader**, which is based on this topic, is also provided with the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] samples.  
+ The example in this topic performs an <strong>ExecuteReader</strong> operation to perform a SELECT operation on the MS_SAMPLE_EMPLOYEE interface table. The table is created by running the script provided with the samples. For more information about samples, see [Samples for the Oracle EBS adapter](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md). A sample, <strong>ExecuteReader</strong>, which is based on this topic, is also provided with the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] samples.  
   
 ## The WCF Client Class  
- The name of the WCF client generated for invoking generic operations (ExecuteNonQuery, ExecuteReader, or ExecuteScalar) using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is listed in the following table.  
+ The name of the WCF client generated for invoking generic operations (ExecuteNonQuery, ExecuteReader, or ExecuteScalar) using the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is listed in the following table.  
   
 |Operations|WCF Client Name|  
 |----------------|---------------------|  
@@ -59,63 +59,63 @@ public partial class GenericOperation_Client : System.ServiceModel.ClientBase<Ge
   
 #### To create a WCF client to invoke ExecuteReader operation  
   
-1.  Create a Visual C# project in Visual Studio. For this topic, create a console application.  
+1. Create a Visual C# project in Visual Studio. For this topic, create a console application.  
   
-2.  Generate the WCF client class for the **ExecuteReader** generic operation. This operation is available under the root node when you connect to the Oracle E-Business Suite using the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. For more information about generating a WCF client class, see [Generate a WCF client or a WCF service contract for Oracle E-Business Suite solution artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).  
+2. Generate the WCF client class for the <strong>ExecuteReader</strong> generic operation. This operation is available under the root node when you connect to the Oracle E-Business Suite using the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. For more information about generating a WCF client class, see [Generate a WCF client or a WCF service contract for Oracle E-Business Suite solution artifacts](../../adapters-and-accelerators/adapter-oracle-ebs/create-a-wcf-client-or-wcf-service-contract-for-oracle-ebs-solution-artifacts.md).  
   
-    > [!IMPORTANT]
-    >  Before generating the WCF client class, make sure you set the **EnableBizTalkCompatibilityMode** binding property to false.  
+   > [!IMPORTANT]
+   >  Before generating the WCF client class, make sure you set the **EnableBizTalkCompatibilityMode** binding property to false.  
   
-3.  In the Solution Explorer, add reference to `Microsoft.Adapters.OracleEBS` and `Microsoft.ServiceModel.Channels`.  
+3. In the Solution Explorer, add reference to `Microsoft.Adapters.OracleEBS` and `Microsoft.ServiceModel.Channels`.  
   
-4.  Open the Program.cs file and add the following namespaces:  
+4. Open the Program.cs file and add the following namespaces:  
   
-    -   `Microsoft.Adapters.OracleEBS`  
+   -   `Microsoft.Adapters.OracleEBS`  
   
-    -   `System.ServiceModel`  
+   -   `System.ServiceModel`  
   
-5.  In the Program.cs file, create a client as described in the snippet below.  
+5. In the Program.cs file, create a client as described in the snippet below.  
   
-    ```  
-    OracleEBSBinding binding = new OracleEBSBinding();  
-    EndpointAddress address = new EndpointAddress("oracleebs://ebs-72-11");  
-    GenericOperation_Client client = new GenericOperation_Client(binding, address);  
-    ```  
+   ```  
+   OracleEBSBinding binding = new OracleEBSBinding();  
+   EndpointAddress address = new EndpointAddress("oracleebs://ebs-72-11");  
+   GenericOperation_Client client = new GenericOperation_Client(binding, address);  
+   ```  
   
-     In this snippet, `GenericOperation_Client` is the WCF client defined in OracleEBSBindingClient.cs. This file is generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
+    In this snippet, `GenericOperation_Client` is the WCF client defined in OracleEBSBindingClient.cs. This file is generated by the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
   
-    > [!NOTE]
-    >  In this snippet, you explicitly specify the binding and endpoint address in your application code. You can use these values from the application configuration file, app.config, also generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. For more information about the different ways of specifying client binding, see [Configure a client binding for the Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md).  
+   > [!NOTE]
+   >  In this snippet, you explicitly specify the binding and endpoint address in your application code. You can use these values from the application configuration file, app.config, also generated by the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. For more information about the different ways of specifying client binding, see [Configure a client binding for the Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-client-binding-for-the-oracle-e-business-suite.md).  
   
-6.  Set the credentials for the client.  
+6. Set the credentials for the client.  
   
-    ```  
-    client.ClientCredentials.UserName.UserName = "myuser";  
-    client.ClientCredentials.UserName.Password = "mypassword";  
-    ```  
+   ```  
+   client.ClientCredentials.UserName.UserName = "myuser";  
+   client.ClientCredentials.UserName.Password = "mypassword";  
+   ```  
   
-7.  Because you are performing an operation on an interface table, you must set the application context. In this example, to set the application context, you specify the **OracleUserName**, **OraclePassword**, and **OracleEBSResponsibilityName** binding properties. For more information about application context, see [Set application context](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md).  
+7. Because you are performing an operation on an interface table, you must set the application context. In this example, to set the application context, you specify the **OracleUserName**, **OraclePassword**, and **OracleEBSResponsibilityName** binding properties. For more information about application context, see [Set application context](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md).  
   
-    ```  
-    binding.OracleUserName = "myOracleEBSUserName";  
-    binding.OraclePassword = "myOracleEBSPassword";  
-    binding.OracleEBSResponsibilityName = "myOracleEBSResponsibility";  
-    ```  
+   ```  
+   binding.OracleUserName = "myOracleEBSUserName";  
+   binding.OraclePassword = "myOracleEBSPassword";  
+   binding.OracleEBSResponsibilityName = "myOracleEBSResponsibility";  
+   ```  
   
-8.  Open the client as described in the snippet below:  
+8. Open the client as described in the snippet below:  
   
-    ```  
-    try  
-    {  
-       Console.WriteLine("Opening Client...");  
-       client.Open();  
-    }  
-    catch (Exception ex)  
-    {  
-       Console.WriteLine("Exception: " + ex.Message);  
-       throw;  
-    }  
-    ```  
+   ```  
+   try  
+   {  
+      Console.WriteLine("Opening Client...");  
+      client.Open();  
+   }  
+   catch (Exception ex)  
+   {  
+      Console.WriteLine("Exception: " + ex.Message);  
+      throw;  
+   }  
+   ```  
   
 9. Invoke the **ExecuteReader** operation for performing the SELECT operation on MS_SAMPLE_EMPLOYEE table. Before you invoke the ExecuteReader operation, you must add the `System.Data` namespace to your code.  
   

@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # SQL adapter FAQs
-The following are some frequently asked questions (FAQs) related to [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] and the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] in general.  
+The following are some frequently asked questions (FAQs) related to [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] and the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] in general.  
   
 ## How can I use the SQL adapter to communicate with the SQL Server database?  
  You can use the SQL adapter to communicate with the SQL Server database either by developing BizTalk applications, using the WCF service model or using the WCF channel model. For more information, see [Overview of BizTalk Adapter for SQL Server](../../adapters-and-accelerators/adapter-sql/overview-of-biztalk-adapter-for-sql-server.md).  
@@ -40,18 +40,18 @@ The following are some frequently asked questions (FAQs) related to [!INCLUDE[ad
   
  For more information about:  
   
--   Data security in the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Secure your SQL applications](../../adapters-and-accelerators/adapter-sql/secure-your-sql-applications.md).  
+- Data security in the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Secure your SQL applications](../../adapters-and-accelerators/adapter-sql/secure-your-sql-applications.md).  
   
--   Best practices to ensure data security in the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Best practices to secure the SQL adapter](../../adapters-and-accelerators/adapter-sql/best-practices-to-secure-the-sql-adapter.md).  
+- Best practices to ensure data security in the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Best practices to secure the SQL adapter](../../adapters-and-accelerators/adapter-sql/best-practices-to-secure-the-sql-adapter.md).  
   
 ## Is there a GUI provided by the SQL adapter to view and perform operations on the artifacts in my underlying SQL Server database?  
  The Consume Adapter Service BizTalk Project Add-in and the Add Adapter Service Reference Visual Studio Plug-in provide a dialog box where you can view and perform operations on the artifacts in the underlying SQL Server database. For more information about the GUI provided by the SQL adapter, see [Browse, search, and get metadata for SQL operations using the SQL adapter](../../adapters-and-accelerators/adapter-sql/browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter.md).  
   
 ## What are binding properties in the SQL adapter? Where can I find information about all the binding properties in SQL adapter?  
- Adapter clients can use binding properties in the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to configure and control the adapter’s behavior. For information about all the binding properties surfaced in the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).  
+ Adapter clients can use binding properties in the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] to configure and control the adapter’s behavior. For information about all the binding properties surfaced in the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).  
   
 ## What is MSDTC? Do I need to bother about it before using SQL adapter?  
- MSDTC stands for Microsoft Distributed Transaction Coordinator. MSDTC coordinates various transactions among multiple resource managers such as databases, file systems, and message queues. To use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must enable MSDTC. For detailed information about configuring MSDTC, see [Configure MSDTC on SQL Server and adapter client](../../adapters-and-accelerators/adapter-sql/configure-msdtc-on-sql-server-and-adapter-client.md).  
+ MSDTC stands for Microsoft Distributed Transaction Coordinator. MSDTC coordinates various transactions among multiple resource managers such as databases, file systems, and message queues. To use the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you must enable MSDTC. For detailed information about configuring MSDTC, see [Configure MSDTC on SQL Server and adapter client](../../adapters-and-accelerators/adapter-sql/configure-msdtc-on-sql-server-and-adapter-client.md).  
   
 ## Where can I find information about the SQL Server data types that are supported in the SQL adapter?  
  To know about the SQL Server data types that are supported in the SQL adapter, see [Basic SQL Server Data Types](../../adapters-and-accelerators/adapter-sql/basic-sql-server-data-types.md).  

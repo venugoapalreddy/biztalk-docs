@@ -17,7 +17,7 @@ manager: "anneta"
 # BatchTerminator Utility
 The BatchTerminator utility enables you to terminate all live batching orchestrations being used to batch EDI interchanges. This utility could prove useful if you have a large number of batching orchestration instances running, and you need to terminate all the batches in order to perform maintenance on the BizTalk server system.  
   
- The BatchTerminator utility is located in the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Utilities\MicrosoftEDI\BatchTerminator folder. When you run the utility to terminate the batching orchestration instances, the utility will log the results in the batchterminator.log file in the \<*drive*\>:\Documents and Settings\\<*user name*\>\Application Data folder.  
+ The BatchTerminator utility is located in the [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Utilities\MicrosoftEDI\BatchTerminator folder. When you run the utility to terminate the batching orchestration instances, the utility will log the results in the batchterminator.log file in the \<<em>drive</em>\>:\Documents and Settings\\<<em>user name</em>\>\Application Data folder.  
   
 > [!NOTE]
 >  The BatchTerminator utility is only supported on 32 bit systems.  BatchTerminator uses components in the Microsoft.BizTalk.ExplorerOM namespace, which is only supported if used from a 32 bit process.  
@@ -76,11 +76,11 @@ BatchTerminator /<switch>
   
 ### To run the BatchTerminator utility  
   
-1.  In Windows Explorer, move to the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Utilities\MicrosoftEDI\BatchTerminator folder.  
+1. In Windows Explorer, move to the [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Utilities\MicrosoftEDI\BatchTerminator folder.  
   
-2.  Enter **BatchTerminator**, including any desired switches, and then click **Enter**.  
+2. Enter **BatchTerminator**, including any desired switches, and then click **Enter**.  
   
-3.  In Windows Explorer, move to \<*drive*\>:\Documents and Settings\\<*user name*\>\Application Data folder, and open the batchterminator.log file to see a log of the results.  
+3. In Windows Explorer, move to \<*drive*\>:\Documents and Settings\\<*user name*\>\Application Data folder, and open the batchterminator.log file to see a log of the results.  
   
 ## See Also  
  [Utilities in the SDK](../core/utilities-in-the-sdk.md)

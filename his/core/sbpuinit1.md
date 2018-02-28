@@ -20,11 +20,11 @@ The **sbpuinit** function initializes the DL-BASE.
   
 ```  
   
-USHORT sbpuinit(   
-HANDLE *sema4ptr,   
-USHORT proctype,   
-USHORT servtype,   
-UCHAR *uname   
+USHORT sbpuinit(   
+HANDLE *sema4ptr,   
+USHORT proctype,   
+USHORT servtype,   
+UCHAR *uname   
 );  
 ```  
   

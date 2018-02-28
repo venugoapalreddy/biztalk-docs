@@ -44,4 +44,4 @@ The following table describes the COM and .NET Framework interfaces that make up
 ||SAdapter Structure (COM)|Describes a specific adapter.|
 
 ## See also
-See the SSO COM objects [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
+See the SSO COM objects [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 

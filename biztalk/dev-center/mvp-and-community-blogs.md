@@ -105,4 +105,4 @@ Steef-Jan is all in on Azure, integration, and data science, and has over 15 yea
 ## Sjoukje Zaal
 [Blog](http://sjoukjezaal.com/)  |  [Twitter](https://twitter.com/sjoukjezaal)
 
-Sjoukje's blog is all about Azure, and focuses on Azure security, and application integration. Also a co-founder for [SP&C NL](http://spcnl.nl/), a Dutch community website with articles on Azure, Office 365, and SharePoint. 
+Sjoukje's blog is all about Azure, and focuses on Azure security, and application integration. Also a co-founder for [SP&C NL](http://spcnl.nl/), a Dutch community website with articles on Azure, Office 365, and SharePoint. 

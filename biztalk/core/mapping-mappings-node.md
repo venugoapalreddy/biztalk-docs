@@ -18,12 +18,14 @@ manager: "anneta"
 ---
 # Mapping (Mappings Node)
 The Mapping node of a binding file describes the mapping between a party port and role port type operation for the enlisted party.  
-  
+
 ## Nodes in the Mapping node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|PortTypeName|Attribute|xs:string|Specifies the name of the port type.|Not required|Default value: empty|  
-|OperationName|Attribute|xs:string|Specifies the operation belonging to this port type.|Not required|Default value: empty|  
-|[SendPortRef](../core/sendportref-mapping-node.md)|Record|SendPortRef (ComplexType)|Container node for the list of send ports associated with a mapping.|Not required|Default value: none|
+
+
+|               <strong>Name</strong>                | <strong>Node Type</strong> | <strong>Data Type</strong> |                     <strong>Description</strong>                     | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|----------------------------------------------------|----------------------------|----------------------------|----------------------------------------------------------------------|-------------------------------|---------------------------|
+|                    PortTypeName                    |         Attribute          |         xs:string          |                 Specifies the name of the port type.                 |         Not required          |   Default value: empty    |
+|                   OperationName                    |         Attribute          |         xs:string          |         Specifies the operation belonging to this port type.         |         Not required          |   Default value: empty    |
+| [SendPortRef](../core/sendportref-mapping-node.md) |           Record           | SendPortRef (ComplexType)  | Container node for the list of send ports associated with a mapping. |         Not required          |    Default value: none    |
+

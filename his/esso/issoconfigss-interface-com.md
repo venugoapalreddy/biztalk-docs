@@ -19,4 +19,4 @@ The **ISSOConfigSS** interface configures the secret server.
 ## Requirements  
  **Type Library**: SSOConfigSS 1.0 Type Library (SSOConfigSS.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]

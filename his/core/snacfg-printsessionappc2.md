@@ -31,8 +31,8 @@ manager: "anneta"
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of APPC print sessions.  
@@ -40,8 +40,8 @@ manager: "anneta"
  **/print**  
  Displays a list of the configuration settings of a print session. The displayed command does not contain the word **snacfg**, so that it can be redirected to a command file. Command files are discussed earlier in this section.  
   
- **/add**  
- Adds a print session to the Host Print Service. To configure the print session, you must specify the server name and the configured APPC local LU alias name after the **/add**. The required options are **/server:***servername*and **/localLUalias:***localLUname*  
+ <strong>/add</strong>  
+ Adds a print session to the Host Print Service. To configure the print session, you must specify the server name and the configured APPC local LU alias name after the <strong>/add</strong>. The required options are <strong>/server:</strong><em>servername</em>and <strong>/localLUalias:</strong><em>localLUname</em>  
   
  **/delete**  
  Deletes the printer session. To delete the print session, you must specify the server name and the configured local LU alias after the **/delete**.  
@@ -56,7 +56,7 @@ manager: "anneta"
  **/codepage: {Country &#124; Custom}**  
  This defines the host code page language in which the print jobs are printed. The default is **Country** and the default language is **English (United States) [037]**. To change the default language, provide the number of the host code page of the country/region you want using the **/country** option.  
   
- If you want to use a custom file for the host code page, you must use **/customfile:***text,* where the text value is the name of the file containing the specifications.  
+ If you want to use a custom file for the host code page, you must use <strong>/customfile:</strong><em>text,</em> where the text value is the name of the file containing the specifications.  
   
  **/collate:{ yes &#124; no }**  
  Adds an option to collate pages sequentially.  
@@ -103,7 +103,7 @@ manager: "anneta"
  **/paperlength:** *value*  
  Specifies the length of the paper for printing. The values for paperlength and paperwidth are in tenths of a millimeter, and override the papersize setting.  
   
- **/paperwidth:**v *alue*  
+ <strong>/paperwidth:</strong>v <em>alue</em>  
  Specifies the width of the paper. The values for paperlength and paperwidth are in tenths of a millimeter, and override the papersize setting.  
   
  **/pdtfile:**" *text*"  

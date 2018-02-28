@@ -48,7 +48,7 @@ public string Whitespace(string param1)
  If you link a source element to the input of this script and a target element as the output, when the map is executed, the output element will contain 5 whitespace characters.  
   
 > [!NOTE]
->  If you view the output using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], the element will appear empty. This is because the XML viewer treats elements containing whitespace only as empty. To see the whitespace, right-click the XML view and select **View Source**.  
+>  If you view the output using [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], the element will appear empty. This is because the XML viewer treats elements containing whitespace only as empty. To see the whitespace, right-click the XML view and select <strong>View Source</strong>.  
   
 ## See Also  
  [How to Edit Link Properties](../core/how-to-edit-link-properties.md)

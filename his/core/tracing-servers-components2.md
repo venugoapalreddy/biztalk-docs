@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Tracing Servers Components
-The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace application can be started locally or remotely for a Host Integration Server computer. For a client computer, the Host Integration Server Trace application can only be started locally.  
+The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace application can be started locally or remotely for a Host Integration Server computer. For a client computer, the Host Integration Server Trace application can only be started locally.  
   
 > [!IMPORTANT]
 >  All procedures listed in this section assume that Trace is running on a computer that has Host Integration Server installed and configured.  

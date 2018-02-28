@@ -20,7 +20,7 @@ The **WinRUIStartup** function enables an application using Request Unit Interfa
   
 ```  
   
-          int WINAPI WinRUIStartup(   
+          int WINAPI WinRUIStartup(   
 WORD wVersionRequired,    
   LUADATA FAR *lpLuaData  );  
 ```  

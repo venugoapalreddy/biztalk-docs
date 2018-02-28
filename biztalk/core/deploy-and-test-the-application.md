@@ -18,7 +18,7 @@ manager: "anneta"
 > [!NOTE]
 >  This tutorial applies to BizTalk Server only.  
   
- In this topic, we build, deploy, configure, and test the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
+ In this topic, we build, deploy, configure, and test the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
   
 ## Build and deploy the application  
   
@@ -31,47 +31,47 @@ manager: "anneta"
 4.  After project builds successfully, in the Solution Explorer, right-click the solution name, and then click **Deploy Solution**.  
   
 ## Configure the application  
- To configure the application, in [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], create the send and receive ports and then bind them to the orchestration and the logical send/receive ports created as part of the orchestration.  
+ To configure the application, in [!INCLUDE [btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], create the send and receive ports and then bind them to the orchestration and the logical send/receive ports created as part of the orchestration.  
   
-1.  Create a receive port through which a JSON purchase order is received by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
+1. Create a receive port through which a JSON purchase order is received by the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
   
-    1.  In [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **BizTalk Application 1**, right-click **Receive Ports**, point to **New**, and then click **One-way Receive Port**.  
+   1. In [!INCLUDE [btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand <strong>BizTalk Application 1</strong>, right-click <strong>Receive Ports</strong>, point to <strong>New</strong>, and then click <strong>One-way Receive Port</strong>.  
   
-    2.  Provide a name for the receive port, and then from the left pan, click **Receive Locations**. In the **Receive Locations** tab, click **New**.  
+   2. Provide a name for the receive port, and then from the left pan, click **Receive Locations**. In the **Receive Locations** tab, click **New**.  
   
-    3.  Specify a name for the receive location, select the port type as **FILE**, and then click **Configure**.  
+   3. Specify a name for the receive location, select the port type as **FILE**, and then click **Configure**.  
   
-    4.  Provide the folder location from where the receive location will pick the incoming JSON purchase order. Specify `*.json` as the file mask and then click **OK**.  
+   4. Provide the folder location from where the receive location will pick the incoming JSON purchase order. Specify `*.json` as the file mask and then click **OK**.  
   
-    5.  From the **Receive Pipeline** drop-down, select **JSONToXml**. You created this custom receive pipeline in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application. Right-click the ellipsis **(…)** button next to the pipeline, and then under **Stage 1 – Deocde Component**, provide the following values:  
+   5. From the <strong>Receive Pipeline</strong> drop-down, select <strong>JSONToXml</strong>. You created this custom receive pipeline in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application. Right-click the ellipsis <strong>(…)</strong> button next to the pipeline, and then under <strong>Stage 1 – Deocde Component</strong>, provide the following values:  
   
-        -   RootNode - `ROOT`  
+      - RootNode - `ROOT`  
   
-        -   RootNodeNamespace –`http://BTSJSON`.  
+      - RootNodeNamespace –`http://BTSJSON`.  
   
-         These values represent the target namespace and the root node name of the XML purchase order schema that was generated from the JSON purchase order using the JSON schema wizard.  
+        These values represent the target namespace and the root node name of the XML purchase order schema that was generated from the JSON purchase order using the JSON schema wizard.  
   
-    6.  Click **OK** until you exit all open dialog boxes.  
+   6. Click **OK** until you exit all open dialog boxes.  
   
-2.  Create a send port for sending out JSON invoice messages.  
+2. Create a send port for sending out JSON invoice messages.  
   
-    1.  In [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **BizTalk Application 1**, right-click **Send Ports**, point to **New**, and then click **Static One-way Send Port**.  
+   1. In [!INCLUDE [btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand <strong>BizTalk Application 1</strong>, right-click <strong>Send Ports</strong>, point to <strong>New</strong>, and then click <strong>Static One-way Send Port</strong>.  
   
-    2.  Specify a name for the send port, select the port type as **FILE**, and then click **Configure**.  
+   2. Specify a name for the send port, select the port type as **FILE**, and then click **Configure**.  
   
-    3.  Provide the folder location where the send port copies the outgoing JSON invoice. Specify `%MessageID%.json` as the file name and then click **OK**.  
+   3. Provide the folder location where the send port copies the outgoing JSON invoice. Specify `%MessageID%.json` as the file name and then click **OK**.  
   
-    4.  From the **Send Pipeline** drop-down, select **XmlToJSON**, and then click **OK**.  
+   4. From the **Send Pipeline** drop-down, select **XmlToJSON**, and then click **OK**.  
   
-    5.  Click **OK** until you exit all open dialog boxes.  
+   5. Click **OK** until you exit all open dialog boxes.  
   
-3.  Finally, bind the logical ports you created as part of the orchestration to the physical ports you created now to configure the application.  
+3. Finally, bind the logical ports you created as part of the orchestration to the physical ports you created now to configure the application.  
   
-    1.  Right-click **BizTalk Application 1**, and then click **Configure**.  
+   1. Right-click **BizTalk Application 1**, and then click **Configure**.  
   
-    2.  From the left pane, click **ProcessPO**. From the right pane, associate a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] host, map the logical ports to the physical ports, and then click **OK**.  
+   2. From the left pane, click <strong>ProcessPO</strong>. From the right pane, associate a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] host, map the logical ports to the physical ports, and then click <strong>OK</strong>.  
   
-    3.  Right-click **BizTalk Application 1**, and then click **Start**.  
+   3. Right-click **BizTalk Application 1**, and then click **Start**.  
   
 ## Test the application  
   

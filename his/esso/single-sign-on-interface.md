@@ -15,7 +15,7 @@ manager: "anneta"
 ---
 # Single Sign-On Interface
 The following table describes the COM and .NET Framework interfaces that make up the Single Sign-On interface.  
-  
+
 |.NET|COM|Description|  
 |----------|---------|-----------------|  
 |Microsoft.EnterpriseSingleSignOn.Interop.ISSOAdmin|[ISSOAdmin Interface (COM)](../esso/issoadmin-interface-com.md)|Creates, updates, and deletes an SSO application. Also performs other administration functions.|  
@@ -25,15 +25,17 @@ The following table describes the COM and .NET Framework interfaces that make up
 |Microsoft.EnterpriseSingleSignOn.Interop.ISSOMapper|[ISSOMapper Interface (COM)](../esso/issomapper-interface-com.md)|Enables you to set the external credentials for the current user for a specified application.|  
 |Microsoft.EnterpriseSingleSignOn.Interop.ISSOMapping|[ISSOMapping Interface (COM)](../esso/issomapping-interface-com.md)|Creates and maintains the mapping between users and affiliated applications.|  
 |Microsoft.EnterpriseSingleSignOn.Interop.ISSOTicket|[ISSOTicket Interface (COM)](../esso/issoticket-interface-com.md)|Creates the ticket that contains the appropriate security information. This ticket is then sent on with the appropriate message from your application.|  
-  
+
  In addition, Host Integration Server supports the Password Sync Helper (PS Helper) component. You can use PS Helper when you design password synchronization components. The following table describes the COM and .NET Framework interfaces exposed by PS Helper.  
-  
-|.NET|COM|Description|  
-|----------|---------|-----------------|  
-|Microsoft.EnterpriseSingleSignOn.Interop.ISSOPSWrapper|[ISSONotification Interface (COM)](../esso/issonotification-interface-com.md)|Handles password changes to and from non-Windows operating systems.|  
-||[SExternalAccount Structure](../esso/sexternalaccount-structure.md)|Describes an external account.|  
-||[SPasswordChange Structure (COM)](../esso/spasswordchange-structure-com.md)|Describes a password change.|  
-||[SPasswordChangeComplete Structure (COM)](../esso/spasswordchangecomplete-structure-com.md)|Describes the completion of a password change.|  
-||[SStatus Structure (COM)](../esso/sstatus-structure-com.md)|Describes an error or event.|  
-||[SAdapterInGroup Structure (COM)](../esso/sadapteringroup-structure-com.md)|Describes the adapters in a given group.|  
-||[SAdapter Structure (COM)](../esso/sadapter-structure-com.md)|Describes a specific adapter.|
+
+
+|                          .NET                          |                                             COM                                             |                             Description                             |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Microsoft.EnterpriseSingleSignOn.Interop.ISSOPSWrapper |        [ISSONotification Interface (COM)](../esso/issonotification-interface-com.md)        | Handles password changes to and from non-Windows operating systems. |
+|                                                        |             [SExternalAccount Structure](../esso/sexternalaccount-structure.md)             |                   Describes an external account.                    |
+|                                                        |         [SPasswordChange Structure (COM)](../esso/spasswordchange-structure-com.md)         |                    Describes a password change.                     |
+|                                                        | [SPasswordChangeComplete Structure (COM)](../esso/spasswordchangecomplete-structure-com.md) |           Describes the completion of a password change.            |
+|                                                        |                 [SStatus Structure (COM)](../esso/sstatus-structure-com.md)                 |                    Describes an error or event.                     |
+|                                                        |         [SAdapterInGroup Structure (COM)](../esso/sadapteringroup-structure-com.md)         |              Describes the adapters in a given group.               |
+|                                                        |                [SAdapter Structure (COM)](../esso/sadapter-structure-com.md)                |                    Describes a specific adapter.                    |
+

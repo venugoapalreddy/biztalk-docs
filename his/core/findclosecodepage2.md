@@ -20,7 +20,7 @@ The SNA National Language Support (SNANLS) **FindCloseCodePage** function closes
   
 ```  
   
-BOOL WINAPI FindCloseCodePage(   
+BOOL WINAPI FindCloseCodePage(   
         const HANDLEhInfo  
 );  
 ```  

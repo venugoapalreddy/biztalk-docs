@@ -19,9 +19,9 @@ manager: "anneta"
   
  **Time to complete:** 7 minutes  
   
- **Objective:** In this step, you create the schema for the message [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends back to the warehouse if the business process rejects the inventory replenishment request.  
+ <strong>Objective:</strong> In this step, you create the schema for the message [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends back to the warehouse if the business process rejects the inventory replenishment request.  
   
- **Purpose:** The schema defines the data and the structure of the request decline message. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the schema to identify and interact with the data in the message.  
+ <strong>Purpose:</strong> The schema defines the data and the structure of the request decline message. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the schema to identify and interact with the data in the message.  
   
 ## Prerequisites  
  Note the following requirements before you begin this step:  
@@ -56,7 +56,7 @@ manager: "anneta"
 9. On the **File** menu, click **Save All**.  
   
 ## What did I just do?  
- In this step, you created the schema for the message that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends back to the warehouse if the business process rejects the inventory request.  
+ In this step, you created the schema for the message that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] sends back to the warehouse if the business process rejects the inventory request.  
   
 ## Next Steps  
  You create the map needed by the orchestration to create request decline message by reformatting request message.  

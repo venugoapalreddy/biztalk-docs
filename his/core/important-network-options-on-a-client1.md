@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Important Network Options on a Client
-For [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] client software, several key options supply the information a client must have for locating Host Integration Server computers. These options specify which protocol the client uses to communicate with Host Integration Server computers if more than one protocol is available on the client, and which domain or server names the client will direct SNA requests to.  
+For [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] client software, several key options supply the information a client must have for locating Host Integration Server computers. These options specify which protocol the client uses to communicate with Host Integration Server computers if more than one protocol is available on the client, and which domain or server names the client will direct SNA requests to.  
   
  When a client makes an SNA request, the client must direct that request to a domain or to one or more Host Integration Server computers. The appropriate way for a client to direct requests depends on the protocol used and the relative location of clients and servers. The following table lists the ways clients direct SNA requests, and the information that will be requested by setup during client installation. For more detail about how a client directs requests and locates Host Integration Server computers, see the section about the appropriate type of client (for example, [Clients Using TCP/IP](../core/tcp-ip-clients2.md)).  
   

@@ -20,7 +20,7 @@ String containing the adapter name.
  You must free the string after use.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SAdapter Structure (COM)](../esso/sadapter-structure-com.md)   

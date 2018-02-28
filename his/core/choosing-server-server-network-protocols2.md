@@ -14,15 +14,15 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Choosing Server/Server Network Protocols
-[!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers communicate with each other using mailslot messages or directed datagrams over a network. Host Integration Server enables you to make choices concerning these broadcasts.  
+[!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers communicate with each other using mailslot messages or directed datagrams over a network. Host Integration Server enables you to make choices concerning these broadcasts.  
   
  You can select among the following protocols for server broadcasts: Microsoft Networking (Named Pipes), and TCP/IP.  
   
 > [!IMPORTANT]
->  You must make sure that at least one protocol is available on all [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers in the subdomain, and that this protocol is used for server/server communication and client/server communication.  
-  
+>  You must make sure that at least one protocol is available on all [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers in the subdomain, and that this protocol is used for server/server communication and client/server communication.  
+> 
 > [!NOTE]
->  For example, if all [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers in a subdomain use TCP/IP, the protocol used for server/server communication must be TCP/IP, and all servers must use TCP/IP for client/server communication as well.  
+>  For example, if all [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers in a subdomain use TCP/IP, the protocol used for server/server communication must be TCP/IP, and all servers must use TCP/IP for client/server communication as well.  
   
  Using multiple server/server transport protocols can add significantly to network overhead. This is because every server broadcast must be sent out through all protocols selected in the Host Integration Server management console.  
   

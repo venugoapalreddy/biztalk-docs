@@ -65,21 +65,21 @@ BizTalk Server can receive files from a File Transfer Protocol (FTP) server and 
 ### Transferring data to and from a secure FTP server  
  The FTP adapter supports file transfers from an FTPS server over Secure Sockets Layer (SSL)/Transport Level Security (TLS). SSL/TLS ensures data confidentiality through encryption. You must enable the secure mode by configuring SSL-specific properties provided by the adapter. Because the adapter allows for both reading and writing data from a secure FTP server, the SSL-specific properties are available when configuring send handlers/ports and also with receive handlers/locations.  
 
-Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], the FTP adapter no longer requires the SYST command: 
+Starting with [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], the FTP adapter no longer requires the SYST command: 
 
 - **FTP Server Type** property – Set this property to use a server that doesn't require the SYST command.
    
- The following options are available for configuring the SSL-specific properties:  
+  The following options are available for configuring the SSL-specific properties:  
 
--   **Use SSL** property – Set this property so that FTP adapter must use SSL for each transfer session.  
+- **Use SSL** property – Set this property so that FTP adapter must use SSL for each transfer session.  
   
--   **Enable Data Protection** property – Set this property to turn on data encryption. The security policies of the FTPS server must allow for secure SSL connections with the adapter in order for this setting to work.  
+- **Enable Data Protection** property – Set this property to turn on data encryption. The security policies of the FTPS server must allow for secure SSL connections with the adapter in order for this setting to work.  
   
--   **FTPS Connection Mode** property – Set this property to determine when security is activated:  
+- **FTPS Connection Mode** property – Set this property to determine when security is activated:  
   
-    -   In **Implicit** mode, security is automatically turned on as soon as the adapter connects to the server.  
+  -   In **Implicit** mode, security is automatically turned on as soon as the adapter connects to the server.  
   
-    -   In **Explicit** mode, the adapter sends a command to initiate a secure control channel.  
+  -   In **Explicit** mode, the adapter sends a command to initiate a secure control channel.  
   
 > [!NOTE]
 >  The FTP adapter does not support revocation checks on the server certificates.  

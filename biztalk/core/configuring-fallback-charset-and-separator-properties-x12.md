@@ -15,46 +15,46 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring Fallback Charset and Separator Properties (X12)
-In the fallback agreement, you can specify the character set that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to validate party properties when creating the envelope for an outgoing X12 message. You can also specify what separators and terminators will be used for the segments in the interchange.  
+In the fallback agreement, you can specify the character set that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to validate party properties when creating the envelope for an outgoing X12 message. You can also specify what separators and terminators will be used for the segments in the interchange.  
   
 > [!NOTE]
 >  The settings described here also apply to HIPAA interchanges.  
   
 ## Prerequisites  
- You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.  
+ You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.  
   
 ### To configure the character set and separators  
   
-1.  In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Parties** node, and then click **X12 Fallback Settings**.  
+1. In the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the <strong>Parties</strong> node, and then click <strong>X12 Fallback Settings</strong>.  
   
-2.  In the **X12 Fallback Settings** dialog box, in the **X12 Agreement Pages** tab, under the **Interchange Settings** section, click **Charset and Separators**.  
+2. In the **X12 Fallback Settings** dialog box, in the **X12 Agreement Pages** tab, under the **Interchange Settings** section, click **Charset and Separators**.  
   
-3.  From the **Character set to be used** drop-down list, select the X12 character set to be used to validate the properties that you enter for the agreement.  
+3. From the **Character set to be used** drop-down list, select the X12 character set to be used to validate the properties that you enter for the agreement.  
   
-    > [!NOTE]
-    >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] only uses this setting to validate the values entered for the related agreement properties. The receive pipeline or send pipeline will ignore this character-set property when performing run-time processing.  
+   > [!NOTE]
+   >  [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] only uses this setting to validate the values entered for the related agreement properties. The receive pipeline or send pipeline will ignore this character-set property when performing run-time processing.  
   
-4.  For **Data element**, enter a single character that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to separate composite data elements consisting of two or more simple data elements, and simple data elements that are not part of a composite element. Select **Char** for a character data element or **Hex** for a hexadecimal data element. The character you entered will automatically change when you change the format from **Char** to **Hex** or vice-versa.  
+4. For <strong>Data element</strong>, enter a single character that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to separate composite data elements consisting of two or more simple data elements, and simple data elements that are not part of a composite element. Select <strong>Char</strong> for a character data element or <strong>Hex</strong> for a hexadecimal data element. The character you entered will automatically change when you change the format from <strong>Char</strong> to <strong>Hex</strong> or vice-versa.  
   
-5.  For **Component element separator (ISA16)**, enter a single character that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to separate simple data elements within composite data elements. Select **Char** for a character data element or **Hex** for a hexadecimal data element. The character you entered will automatically change when you change the format from **Char** to **Hex** or vice-versa.  
+5. For <strong>Component element separator (ISA16)</strong>, enter a single character that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to separate simple data elements within composite data elements. Select <strong>Char</strong> for a character data element or <strong>Hex</strong> for a hexadecimal data element. The character you entered will automatically change when you change the format from <strong>Char</strong> to <strong>Hex</strong> or vice-versa.  
   
-6.  For **Segment terminator**, enter a single character that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to indicate the end of an EDI segment. Select **Char** for a character data element or **Hex** for a hexadecimal data element. The character you entered will automatically change when you change the format from **Char** to **Hex** or vice-versa.  
+6. For <strong>Segment terminator</strong>, enter a single character that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use to indicate the end of an EDI segment. Select <strong>Char</strong> for a character data element or <strong>Hex</strong> for a hexadecimal data element. The character you entered will automatically change when you change the format from <strong>Char</strong> to <strong>Hex</strong> or vice-versa.  
   
-7.  For **Suffix**, select the character that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use with the Segment identifier, either **None**, **CR** (carriage return), **LF** (line feed), or **CR LF** (carriage return/line feed). If you designate a suffix, the segment terminator data element can be empty. If the segment terminator is left empty, you must designate a suffix. The combination of the segment terminator and suffix can be any of the following:  
+7. For <strong>Suffix</strong>, select the character that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will use with the Segment identifier, either <strong>None</strong>, <strong>CR</strong> (carriage return), <strong>LF</strong> (line feed), or <strong>CR LF</strong> (carriage return/line feed). If you designate a suffix, the segment terminator data element can be empty. If the segment terminator is left empty, you must designate a suffix. The combination of the segment terminator and suffix can be any of the following:  
   
-    -   Segment terminator  
+   -   Segment terminator  
   
-    -   Segment terminator + carriage return  
+   -   Segment terminator + carriage return  
   
-    -   Segment terminator + carriage return/line feed  
+   -   Segment terminator + carriage return/line feed  
   
-    -   Carriage return  
+   -   Carriage return  
   
-    -   Line feed  
+   -   Line feed  
   
-    -   Carriage return/line feed  
+   -   Carriage return/line feed  
   
-8.  If the payload data contains characters that are also used as data, segment, or component separators, check **Replace separators in payload with** and specify a replacement character. When generating the outbound X12 message, all instances of separator characters in the payload data will be replaced with the specified character. Select **Char** for a character data element or **Hex** for a hexadecimal data element. The character you entered will automatically change when you change the format from **Char** to **Hex** or vice-versa.  
+8. If the payload data contains characters that are also used as data, segment, or component separators, check **Replace separators in payload with** and specify a replacement character. When generating the outbound X12 message, all instances of separator characters in the payload data will be replaced with the specified character. Select **Char** for a character data element or **Hex** for a hexadecimal data element. The character you entered will automatically change when you change the format from **Char** to **Hex** or vice-versa.  
   
 9. Click **Apply** to accept the changes before continuing with the configuration, or click **OK** to validate the changes and then close the dialog box.  
   

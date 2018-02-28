@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Execute stored procedures in SQL Server using BizTalk Server
-The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the procedures in SQL Server database as operations. Adapter clients can invoke the procedures by using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information about how the adapter supports these operations, see [Execute Stored Procedures in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md). For information about the structure of the SOAP message for these operations, see [Message Schemas for Procedures and Functions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md).  
+The [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] surfaces the procedures in SQL Server database as operations. Adapter clients can invoke the procedures by using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information about how the adapter supports these operations, see [Execute Stored Procedures in SQL Server using the SQL adapter](../../adapters-and-accelerators/adapter-sql/execute-stored-procedures-in-sql-server-using-the-sql-adapter.md). For information about the structure of the SOAP message for these operations, see [Message Schemas for Procedures and Functions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md).  
   
- The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] also enables adapter clients to invoke:  
+ The [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] also enables adapter clients to invoke:  
   
 -   Scalar functions in SQL Server database. See [Invoke Scalar Functions in SQL Server using BizTalk Server](../../adapters-and-accelerators/adapter-sql/invoke-scalar-functions-in-sql-server-using-biztalk-server.md).  
   
@@ -27,24 +27,24 @@ The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the procedu
 >  If you are performing operation on tables that have columns of user-defined types, make sure you refer to [Operations on Tables and Views with User-Defined Types using the SQL adapter](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md) before you start developing your application.  
   
 ## How to Invoke Procedures in SQL Server Database  
- Performing an operation on SQL Server database using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Building blocks to develop BizTalk applications with the SQL adapter](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md). To invoke a procedure in SQL Server database, these tasks are:  
+ Performing an operation on SQL Server database using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Building blocks to develop BizTalk applications with the SQL adapter](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md). To invoke a procedure in SQL Server database, these tasks are:  
   
--   Create a BizTalk project, and generate schema for the procedure you want to invoke in SQL Server database.  
+- Create a BizTalk project, and generate schema for the procedure you want to invoke in SQL Server database.  
   
--   Create messages in the BizTalk project for sending and receiving messages to and from SQL Server database.  
+- Create messages in the BizTalk project for sending and receiving messages to and from SQL Server database.  
   
--   Create an orchestration to invoke the procedure in SQL Server database.  
+- Create an orchestration to invoke the procedure in SQL Server database.  
   
--   Build and deploy the BizTalk project.  
+- Build and deploy the BizTalk project.  
   
--   Configure the BizTalk application by creating physical send and receive ports.  
+- Configure the BizTalk application by creating physical send and receive ports.  
   
--   Start the BizTalk application.  
+- Start the BizTalk application.  
   
- This topic provides instructions to perform these tasks.  
+  This topic provides instructions to perform these tasks.  
   
 ## Sample Based on This Topic  
- A sample, ExecuteStoredProcedure, based on this topic is provided with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md).  
+ A sample, ExecuteStoredProcedure, based on this topic is provided with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md).  
   
 ## Generating Schema  
  This topic demonstrates how to invoke a procedure, by invoking the ADD_EMP_DETAILS procedure. This procedure is created by running the scripts provided with the samples. The ADD_EMP_DETAILS procedure takes certain parameters, inserts a record into the EMPLOYEE table, and returns an employee ID for the inserted record. For information about the samples and the SQL scripts, see [Schema Samples](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md).  
@@ -79,7 +79,7 @@ The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the procedu
     |Message Type|From the drop-down list, expand **Schemas**, and then select *ExecProcedure.Procedure_dbo.ADD_EMP_DETAILSResponse*.|  
   
 ## Setting up the Orchestration  
- You must create a BizTalk orchestration to use [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for performing an operation on SQL Server. In this orchestration, you drop a request message at a defined receive location. The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] consumes this message and passes it on to SQL Server. The response from SQL Server is saved to another location. You must include Send and Receive shapes to send messages to SQL Server and receive responses, respectively. A sample orchestration for invoking a procedure resembles the following:  
+ You must create a BizTalk orchestration to use [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for performing an operation on SQL Server. In this orchestration, you drop a request message at a defined receive location. The [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] consumes this message and passes it on to SQL Server. The response from SQL Server is saved to another location. You must include Send and Receive shapes to send messages to SQL Server and receive responses, respectively. A sample orchestration for invoking a procedure resembles the following:  
   
  ![Orchestration for invoking procedures](../../adapters-and-accelerators/adapter-sql/media/698730c1-6aa9-49f3-97b3-adb5e6537300.gif "698730c1-6aa9-49f3-97b3-adb5e6537300")  
   
@@ -114,25 +114,25 @@ The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the procedu
   
  After you have specified these properties, the message shapes and ports are connected and your orchestration is complete.  
   
- You must now build the BizTalk solution and deploy it to a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).
+ You must now build the BizTalk solution and deploy it to a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).
   
 ## Configuring the BizTalk Application  
- After you have deployed the BizTalk project, the orchestration you created earlier is listed under the Orchestrations pane in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. You must use the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to configure the application. For a walkthrough, see [Walkthrough: Deploying a Basic BizTalk Application](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md).
+ After you have deployed the BizTalk project, the orchestration you created earlier is listed under the Orchestrations pane in the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. You must use the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to configure the application. For a walkthrough, see [Walkthrough: Deploying a Basic BizTalk Application](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md).
   
  Configuring an application involves:  
   
--   Selecting a host for the application.  
+- Selecting a host for the application.  
   
--   Mapping the ports that you created in your orchestration to physical ports in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. For this orchestration you must:  
+- Mapping the ports that you created in your orchestration to physical ports in the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. For this orchestration you must:  
   
-    -   Define a location on the hard disk and a corresponding file port where you will drop a request message. The BizTalk orchestration will consume the request message and send it to SQL Server database.  
+  - Define a location on the hard disk and a corresponding file port where you will drop a request message. The BizTalk orchestration will consume the request message and send it to SQL Server database.  
   
-    -   Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response message containing the response from SQL Server database.  
+  - Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response message containing the response from SQL Server database.  
   
-    -   Define a physical WCF-Custom or WCF-SQL send port to send messages to SQL Server database. You must also specify the action in the send port. For information about how to create ports, see [Manually configure a physical port binding to the SQL adapter](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md).
+  - Define a physical WCF-Custom or WCF-SQL send port to send messages to SQL Server database. You must also specify the action in the send port. For information about how to create ports, see [Manually configure a physical port binding to the SQL adapter](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md).
   
-        > [!NOTE]
-        >  Generating the schema using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file that contains information about the ports and the actions to be set for those ports. You can import this binding file from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to use the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).
+    > [!NOTE]
+    >  Generating the schema using the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file that contains information about the ports and the actions to be set for those ports. You can import this binding file from the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to use the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).
   
 ## Starting the Application  
  You must start the BizTalk application for invoking procedures in SQL Server database. For instructions on starting a BizTalk application, see [How to Start an Orchestration](../../core/how-to-start-an-orchestration.md).
@@ -158,7 +158,7 @@ The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces the procedu
 </ADD_EMP_DETAILS>  
 ```  
   
- See [Message Schemas for Procedures and Functions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md) for more information about the request message schema for invoking procedures in SQL Server database using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
+ See [Message Schemas for Procedures and Functions](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md) for more information about the request message schema for invoking procedures in SQL Server database using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
   
  The orchestration consumes the message and sends it to SQL Server database. The response from SQL Server database is saved at the other FILE location defined as part of the orchestration. For example, the response from SQL Server database for the preceding request message is:  
   

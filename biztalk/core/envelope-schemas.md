@@ -31,7 +31,7 @@ You can create an envelope schema in all of the same ways that you can create an
   
 -   Regardless of whether an envelope schema has a single root or multiple roots, setting the **[Root Reference** property is not required.  
 
-More details on these properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+More details on these properties [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## See Also  
  [Different Types of BizTalk Schemas](../core/different-types-of-biztalk-schemas.md)   

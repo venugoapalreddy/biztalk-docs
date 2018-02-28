@@ -45,7 +45,7 @@ Advanced functoids fall into five groups, according to their use:
 * Value Mapping Functoid
 * Value Mapping (Flattening) Functoid
 
-More details on these functoids are in the **Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+More details on these functoids are in the <strong>Functoid Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Next steps
   

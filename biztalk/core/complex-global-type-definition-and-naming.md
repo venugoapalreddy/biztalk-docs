@@ -27,7 +27,7 @@ Within BizTalk Editor, you begin to define a complex global type by defining the
     <xs:complexType>  
       <xs:sequence>  
         <xs:element name="ShippingAddress">  
-        [address structure initially defined here.]  
+        [address structure initially defined here.]  
         </xs:element>  
       </xs:sequence>  
     </xs:complexType>  
@@ -47,7 +47,7 @@ Within BizTalk Editor, you begin to define a complex global type by defining the
     </xs:complexType>  
   </xs:element>  
   <xs:complexType name="GlobalAddrType">  
-  [address structure now defined globally here.]  
+  [address structure now defined globally here.]  
   </xs:complexType>  
 </xs:schema>  
 ```  

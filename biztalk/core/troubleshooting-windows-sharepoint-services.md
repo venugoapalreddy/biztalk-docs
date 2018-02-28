@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshooting Windows SharePoint Services
-Microsoft [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] is used by the Windows SharePoint Services adapter. This topic describes some known issues that may be encountered with Windows SharePoint Services and possible resolutions to these issues.  
+Microsoft [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] is used by the Windows SharePoint Services adapter. This topic describes some known issues that may be encountered with Windows SharePoint Services and possible resolutions to these issues.  
   
 ## Known Issues  
   
@@ -78,7 +78,7 @@ Microsoft [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnov
  Unable to connect to the WSS configuration database STS_Config  
   
 ##### Cause  
- This error occurs when the SharePoint Timer service fails to contact the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] database after rebooting. The SharePoint Timer service is used to send notifications and perform scheduled tasks for [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]. The most common reason that the SharePoint Timer service fails to start is that the account used to run the service is configured with an identity for which the user name and/or password are no longer valid.  
+ This error occurs when the SharePoint Timer service fails to contact the [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] database after rebooting. The SharePoint Timer service is used to send notifications and perform scheduled tasks for [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)]. The most common reason that the SharePoint Timer service fails to start is that the account used to run the service is configured with an identity for which the user name and/or password are no longer valid.  
   
 ##### Resolution  
  Ensure that the user name and password specified for the SharePoint Timer service logon account are correct and that the service has been started.  

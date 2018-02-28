@@ -22,7 +22,7 @@ manager: "anneta"
 # Configuring Native Pipeline Components
 Pipeline components can expose their own custom properties at design time. Any public property defined in the component will be rendered in Pipeline Designer providing that read and write accessors for that property are implemented. Pipeline Designer will display the component properties in accordance with their declaration; for example, if the property is declared as read-only, it will be displayed as such in Pipeline Designer.  
   
- Custom pipeline components must implement the **IPersistPropertyBag** interface to enable the creation of these custom properties. Properties created with the **IPersistPropertyBag** interface can be set in the Properties window of Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], just like all the properties of the native pipeline components. This section contains procedures for configuring each of the included pipeline components.  
+ Custom pipeline components must implement the <strong>IPersistPropertyBag</strong> interface to enable the creation of these custom properties. Properties created with the <strong>IPersistPropertyBag</strong> interface can be set in the Properties window of Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], just like all the properties of the native pipeline components. This section contains procedures for configuring each of the included pipeline components.  
   
 ## In This Section  
   

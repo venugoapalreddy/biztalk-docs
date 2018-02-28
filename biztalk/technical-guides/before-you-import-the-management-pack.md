@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Before You Import the Management Pack
-As a best practice, you should import the Windows Server Management Pack for the operating system that you are using. Before you import the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack, take the following actions:  
+As a best practice, you should import the Windows Server Management Pack for the operating system that you are using. Before you import the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Management Pack, take the following actions:  
   
 -   Ensure that Operations Manager 2007 R2/2012 is installed.  
   

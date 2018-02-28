@@ -20,7 +20,7 @@ The Resolver and Adapter Provider Framework supports itinerary, transformation, 
   
  Both the ESB Dispatcher and ESB Dispatcher Disassemble pipeline components use the Resolver and Adapter Provider Framework by passing the connection string from either the itinerary SOAP header or the pipeline configuration to the Resolver Manager.  
   
- The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] configuration contains details of all registered resolvers and adapter providers. At run time, the resolver managers and adapter managers read details of the registered resolvers and adapter providers from the configuration files, load the appropriate assemblies, and store them in a BizTalk host–level cache. This caching technique removes the requirement for repeated reading of configuration files and loading of assemblies for every submitted message.  
+ The [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] configuration contains details of all registered resolvers and adapter providers. At run time, the resolver managers and adapter managers read details of the registered resolvers and adapter providers from the configuration files, load the appropriate assemblies, and store them in a BizTalk host–level cache. This caching technique removes the requirement for repeated reading of configuration files and loading of assemblies for every submitted message.  
   
  For more information about how the Resolver and Adapter Provider Framework works and how you can extend it by creating custom resolvers and adapter providers, see [Modifying and Extending the BizTalk ESB Toolkit](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md).  
   
@@ -31,121 +31,121 @@ The Resolver and Adapter Provider Framework supports itinerary, transformation, 
   
  The following are examples of connection strings:  
   
--   **STATIC**  
+- **STATIC**  
   
-     STATIC:\\\TransportType=;  
+   STATIC:\\\TransportType=;  
   
-     TransportLocation=http://localhost/ESB.CanadianServices/SubmitPOService.asmx;  
+   TransportLocation=<http://localhost/ESB.CanadianServices/SubmitPOService.asmx>;  
   
-     Action=;  
+   Action=;  
   
-     EndPointConfig=;  
+   EndPointConfig=;  
   
-     JaxRpcResponse=false;  
+   JaxRpcResponse=false;  
   
-     MessageExchangePattern=;  
+   MessageExchangePattern=;  
   
-     TargetNamespace=http://globalbank.esb.dynamicresolution.com/canadianservices/;  
+   TargetNamespace=<http://globalbank.esb.dynamicresolution.com/canadianservices/>;  
   
-     TransformType=;  
+   TransformType=;  
   
--   **UDDI**  
+- **UDDI**  
   
-     UDDI:\\\serverUrl=http://localhost:9901/rmengine;  
+   UDDI:\\\serverUrl=<http://localhost:9901/rmengine>;  
   
-     serviceName=OrderPurchaseWebService;  
+   serviceName=OrderPurchaseWebService;  
   
-     serviceProvider=Microsoft Practices ESB  
+   serviceProvider=Microsoft Practices ESB  
   
--   **XPATH**  
+- **XPATH**  
   
-     \\\TransportType=;  
+   \\\TransportType=;  
   
-     TransportLocation=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='ID' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
+   TransportLocation=/<em>[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/</em>[local-name()='ID' and namespace-uri()='<http://globalbank.esb.dynamicresolution.com/northamericanservices/>'];  
   
-     Action=;  
+   Action=;  
   
-     EndPointConfig=;  
+   EndPointConfig=;  
   
-     JaxRpcResponse=;  
+   JaxRpcResponse=;  
   
-     MessageExchangePattern=;  
+   MessageExchangePattern=;  
   
-     TargetNamespace=/*[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/*[local-name()='customerName' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/'];  
+   TargetNamespace=/<em>[local-name()='OrderDoc' and namespace-uri()='http://globalbank.esb.dynamicresolution.com/northamericanservices/']/</em>[local-name()='customerName' and namespace-uri()='<http://globalbank.esb.dynamicresolution.com/northamericanservices/>'];  
   
-     TransformType=;  
+   TransformType=;  
   
--   **BRE**  
+- **BRE**  
   
-     BRE:\\\policy=GetCanadaEndPoint;  
+   BRE:\\\policy=GetCanadaEndPoint;  
   
-     version=;  
+   version=;  
   
-     useMsg=;  
+   useMsg=;  
   
--   **BRI**  
+- **BRI**  
   
-     BRI:\\\policy=ResolveItinerary;  
+   BRI:\\\policy=ResolveItinerary;  
   
-     version=;  
+   version=;  
   
-     useMsg=;  
+   useMsg=;  
   
--   **ITINERARY**  
+- **ITINERARY**  
   
-     ITINERARY:\\\name=TwoWayTestItinerary;  
+   ITINERARY:\\\name=TwoWayTestItinerary;  
   
-     version=;  
+   version=;  
   
--   **ITINERARY-STATIC**  
+- **ITINERARY-STATIC**  
   
-     ITINERARY-STATIC:\\\name=TwoWayTestItinerary;  
+   ITINERARY-STATIC:\\\name=TwoWayTestItinerary;  
   
-     version=;  
+   version=;  
   
--   **LDAP**  
+- **LDAP**  
   
-     LDAP:\\\TransportType=SMTP;  
+   LDAP:\\\TransportType=SMTP;  
   
-     TransportLocation={mail}  
+   TransportLocation={mail}  
   
-     Filter=(&amp;(objectClass=User)(&#124;(userPrincipalName=yourname@domain.com)));  
+   Filter=(&amp;(objectClass=User)(&#124;(userPrincipalName=yourname@domain.com)));  
   
-     SearchRoot=;  
+   SearchRoot=;  
   
-     SearchScope=Subtree;  
+   SearchScope=Subtree;  
   
-     EndpointConfig=Subject=Itinerary Test Message to {mail}&amp;  
+   EndpointConfig=Subject=Itinerary Test Message to {mail}&amp;  
   
-     SMTPAuthenticate=0&amp;  
+   SMTPAuthenticate=0&amp;  
   
-     SMTPHost=127.0.0.1&amp;  
+   SMTPHost=127.0.0.1&amp;  
   
-     From=test@globalbank.com&amp;  
+   From=test@globalbank.com&amp;  
   
-     DeliveryReceipt=false&amp;  
+   DeliveryReceipt=false&amp;  
   
-     MessagePartsAttachments=0&amp;  
+   MessagePartsAttachments=0&amp;  
   
-     ReadReceipt=false;  
+   ReadReceipt=false;  
   
-     ThrowErrorIfNotFound=false;  
+   ThrowErrorIfNotFound=false;  
   
-     Action=;  
+   Action=;  
   
-     JaxRpcResponse=false;  
+   JaxRpcResponse=false;  
   
-     MessageExchangePattern=;  
+   MessageExchangePattern=;  
   
-     TargetNamespace=;  
+   TargetNamespace=;  
   
-     TransformType=;  
+   TransformType=;  
   
- Not all attributes in the connection string are mandatory. In addition, **EndPointConfig** is a special attribute that any resolver can populate and return. Optionally, the resolver can store the name/value pairs that correspond to specific BizTalk Adapter Context properties, which it can, in turn, write to the context of the BizTalk message.  
+  Not all attributes in the connection string are mandatory. In addition, **EndPointConfig** is a special attribute that any resolver can populate and return. Optionally, the resolver can store the name/value pairs that correspond to specific BizTalk Adapter Context properties, which it can, in turn, write to the context of the BizTalk message.  
   
- In this case, the **ResolverDictionary** instance that contains all the resolved properties returned from the resolution process then passes to the adapter manager. The adapter manager passes the dictionary to the specific adapter provider that will set all the adapter-specific and endpoint-specific BizTalk Context properties for the message. The resolvers look for the **EndPointConfig** property, extract the name/value pairs that correspond to their respective adapter properties, and then set these values on the message.  
+  In this case, the **ResolverDictionary** instance that contains all the resolved properties returned from the resolution process then passes to the adapter manager. The adapter manager passes the dictionary to the specific adapter provider that will set all the adapter-specific and endpoint-specific BizTalk Context properties for the message. The resolvers look for the **EndPointConfig** property, extract the name/value pairs that correspond to their respective adapter properties, and then set these values on the message.  
   
 ## Supported Adapter Providers  
- The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes the following built-in adapter providers: **FILE, FTP, SMTP,MQSeries, WCF-BasicHttp, WCF-WSHttp,** and **WCF-Custom**. The name of each adapter provider is identical to the name of the associated adapter (transport type) in BizTalk Server.  
+ The [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] includes the following built-in adapter providers: <strong>FILE, FTP, SMTP,MQSeries, WCF-BasicHttp, WCF-WSHttp,</strong> and <strong>WCF-Custom</strong>. The name of each adapter provider is identical to the name of the associated adapter (transport type) in BizTalk Server.  
   
  A major advantage of the Resolver and Adapter Provider Framework is that you can extend it by creating and registering your own custom resolvers to resolve endpoint information and custom adapter providers to set specific properties of registered BizTalk adapters. For more information, see [Modifying and Extending the BizTalk ESB Toolkit](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md).

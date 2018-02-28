@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshooting Log Shipping
-This section describes troubleshooting scenarios related to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] log shipping.  
+This section describes troubleshooting scenarios related to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] log shipping.  
   
 ## In This Section  
   

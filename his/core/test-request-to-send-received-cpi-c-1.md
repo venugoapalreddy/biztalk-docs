@@ -20,7 +20,7 @@ The **Test_Request_To_Send_Received** call (function name **cmtrts**) determines
   
 ```  
   
-CM_ENTRY Test_Request_To_Send_Received(   
+CM_ENTRY Test_Request_To_Send_Received(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *request_to_send_received,    
   CM_INT32 FAR *return_code              

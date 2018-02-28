@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshooting and known issues in HL7
-Troubleshooting issues, resolutions, and known issues with the [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)].  
+Troubleshooting issues, resolutions, and known issues with the [!INCLUDE [HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)].  
   
 ## In this section  
   

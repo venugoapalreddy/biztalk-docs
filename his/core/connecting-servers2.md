@@ -14,15 +14,15 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Connecting Servers
-After you have determined a suitable deployment model and subdomain configuration, you must choose how to connect [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers to the host system, to client workstations, and to other [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers.  
+After you have determined a suitable deployment model and subdomain configuration, you must choose how to connect [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers to the host system, to client workstations, and to other [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers.  
   
  This section explores how to choose:  
   
--   Connections between Host Integration Server computers and the host  
+- Connections between Host Integration Server computers and the host  
   
--   Network protocols for Host Integration Server computers and clients  
+- Network protocols for Host Integration Server computers and clients  
   
- To understand the connectivity options, you should first examine the different physical connections and network protocols that [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] supports.  
+  To understand the connectivity options, you should first examine the different physical connections and network protocols that [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] supports.  
   
 ## In This Section  
  [Connection Methods](../core/connection-methods2.md)  

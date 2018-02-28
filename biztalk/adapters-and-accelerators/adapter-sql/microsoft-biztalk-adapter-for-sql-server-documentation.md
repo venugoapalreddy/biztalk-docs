@@ -16,7 +16,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Microsoft BizTalk Adapter for SQL Server documentation
-The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, learn to create applications, and more.
+The [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, learn to create applications, and more.
   
 ## Get started 
 ![Getting started icon](../../adapters-and-accelerators/adapter-oracle-database/media/f397b0c1-6fe1-4247-a868-9efcab4a5f55.gif "f397b0c1-6fe1-4247-a868-9efcab4a5f55") [Get started with the BizTalk adapter for SQL](../../adapters-and-accelerators/adapter-sql/get-started-with-the-biztalk-adapter-for-sql.md) includes the steps install the adapter as a stand-alone adapter, lists any limitations, and explains how the adapter works with SQL Server. 

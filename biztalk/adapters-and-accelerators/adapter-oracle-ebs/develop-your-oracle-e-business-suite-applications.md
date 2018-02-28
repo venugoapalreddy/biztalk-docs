@@ -18,21 +18,21 @@ manager: "anneta"
 # Develop your Oracle E-Business Suite applications
 
 ## Overview
-The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] is a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] binding. Client applications can consume the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to invoke operations on Oracle E-Business Suite artifacts. The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] can be consumed:  
+The [!INCLUDE [adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] is a [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] binding. Client applications can consume the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] to invoke operations on Oracle E-Business Suite artifacts. The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] can be consumed:  
   
--   Through a physical port binding in a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.  
+- Through a physical port binding in a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.  
   
--   By invoking methods on an instance of a client proxy.  
+- By invoking methods on an instance of a client proxy.  
   
--   By sending SOAP messages over a channel instance in code that uses the WCF channel model.  
+- By sending SOAP messages over a channel instance in code that uses the WCF channel model.  
 
 ## BizTalk vs WCF service vs WCF channel 
   
  The following table:  
   
--   Lists the different operations that can be performed on Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].  
+- Lists the different operations that can be performed on Oracle E-Business Suite using the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].  
   
--   Provides links to the topics containing information about performing the task using the chosen approach ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], WCF service model or WCF channel model).  
+- Provides links to the topics containing information about performing the task using the chosen approach ([!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], WCF service model or WCF channel model).  
   
 |Operation|BizTalk Server|WCF Service Model|WCF Channel Model|  
 |---|---|---|---|  
@@ -46,7 +46,7 @@ The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinessl
 |Receiving database change notifications from Oracle E-Business Suite|[Receive Oracle Database Change Notifications Using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/receive-oracle-database-change-notifications-using-biztalk-server.md)|[Receive Oracle E-Business Suite database change notifications using the WCF service model](../../adapters-and-accelerators/adapter-oracle-ebs/receive-oracle-ebs-database-change-notifications-using-the-wcf-service-model.md)|[Poll Oracle E-Business Suite using SELECT statement with the WCF channel model](../../adapters-and-accelerators/adapter-oracle-ebs/poll-oracle-e-business-suite-using-select-statement-with-the-wcf-channel-model.md)|  
 
 ## Next steps  
- The topics in this section provide information, procedures, and examples to help you develop applications that consume the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] in both [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and .NET programming solutions. 
+ The topics in this section provide information, procedures, and examples to help you develop applications that consume the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] in both [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and .NET programming solutions. 
   
 -   [Create a connection to Oracle EBS](create-a-connection-to-oracle-e-business-suite.md)
 -   [Get metadata for Oracle EBS operations in Visual Studio](get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)

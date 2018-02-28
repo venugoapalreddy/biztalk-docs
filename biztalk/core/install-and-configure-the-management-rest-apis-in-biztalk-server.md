@@ -18,14 +18,16 @@ manager: "anneta"
 # Install and configure the management REST APIs in BizTalk Server
 
 ## What are management data APIs
-Management data APIs are endpoints that let you remotely update, add, and query the status of different artifacts in your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environment. The endpoints are added using REST, and come with a swagger definition. 
+Management data APIs are endpoints that let you remotely update, add, and query the status of different artifacts in your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environment. The endpoints are added using REST, and come with a swagger definition. 
 
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, there's a Windows PowerShell script that installs these REST APIs, and their swagger definitions. These APIs make REST calls to remotely manage ports, orchestrations, partners, agreements, pipelines, and more. 
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/install-and-configure-the-management-rest-apis-in-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --> <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[featurepack1](../includes/featurepack1.md)]: Path(D:/a/1/s/target_repo/biztalk/core/install-and-configure-the-management-rest-apis-in-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[featurepack1](../includes/featurepack1.md)]<!--END ERROR INCLUDE --></strong>, there's a Windows PowerShell script that installs these REST APIs, and their swagger definitions. These APIs make REST calls to remotely manage ports, orchestrations, partners, agreements, pipelines, and more. 
 
 ## Prerequisites
-* Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 
-* Install IIS on the [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. In most [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environments, IIS is already installed. See [Hardware and Software Requirements for BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md). Confirm IIS is installed on the BizTalk Server by opening **Internet Information Services Manager**. 
+* Install IIS on the [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. In most [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environments, IIS is already installed. See [Hardware and Software Requirements for BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md). Confirm IIS is installed on the BizTalk Server by opening <strong>Internet Information Services Manager</strong>. 
 
 ## Step 1: Install the REST APIs
 

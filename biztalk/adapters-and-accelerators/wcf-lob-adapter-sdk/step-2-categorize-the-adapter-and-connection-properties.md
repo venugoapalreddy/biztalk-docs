@@ -19,7 +19,7 @@ manager: "anneta"
   
  **Time to complete:** 30 minutes  
   
- In this step, you update the **EchoAdapterBindingElement** and **EchoAdapterBindingElementExtensionElement** classes to assign a category to your adapter and connection properties. By doing so, properties are logically grouped by category in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] tools. For example, if you want the **Application**, **EnableAuthentication**, and **Hostname** properties to appear under the **Connection** category as shown below, you need to assign the Connection category to each of the Application, EnableAuthentication, and Hostname properties.  
+ In this step, you update the <strong>EchoAdapterBindingElement</strong> and <strong>EchoAdapterBindingElementExtensionElement</strong> classes to assign a category to your adapter and connection properties. By doing so, properties are logically grouped by category in the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] tools. For example, if you want the <strong>Application</strong>, <strong>EnableAuthentication</strong>, and <strong>Hostname</strong> properties to appear under the <strong>Connection</strong> category as shown below, you need to assign the Connection category to each of the Application, EnableAuthentication, and Hostname properties.  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/c7c0c013-6651-4c32-9f8b-b546a68a0267.gif "c7c0c013-6651-4c32-9f8b-b546a68a0267")  
   

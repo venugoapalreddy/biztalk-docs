@@ -235,7 +235,7 @@ A pattern assignment rule specifies a regular expression and an app domain name.
 ## Throttling Messages Per Orchestration  
  This property, specified in the btsntsvc.exe.config file, will prevent an orchestration from consuming too much memory by limiting the number of outstanding messages it can have. All messages will continue to be delivered to the MessageBox; however, queued messages will not be delivered to the orchestration until it processes some of its outstanding messages.  
   
- To specify this property in the btsntsvc.exe.config file (located in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] root directory), add the following parameter under Application node:  
+ To specify this property in the btsntsvc.exe.config file (located in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] root directory), add the following parameter under Application node:  
   
 ```  
 <configuration>  

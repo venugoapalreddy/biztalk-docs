@@ -20,8 +20,8 @@ The **sepdgetinfo** function returns a structure containing the version number o
   
 ```  
   
-USHORT sepdgetinfo(   
-struct cs_info *pCSInfo   
+USHORT sepdgetinfo(   
+struct cs_info *pCSInfo   
 );  
 ```  
   

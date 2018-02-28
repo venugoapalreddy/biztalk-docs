@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for the Composite Operation
-The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] enables you to execute composite operations in Oracle E-Business Suite. A composite operation can contain multiple operations, and in any order. For information about which operations can be included in a composite operation, see [Support for Composite Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md).  
+The [!INCLUDE [adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] enables you to execute composite operations in Oracle E-Business Suite. A composite operation can contain multiple operations, and in any order. For information about which operations can be included in a composite operation, see [Support for Composite Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md).  
   
- For information about how to perform composite operations using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], see [Run Composite Operations on Oracle Database using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/run-composite-operations-on-oracle-database-using-biztalk-server.md).  
+ For information about how to perform composite operations using the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], see [Run Composite Operations on Oracle Database using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/run-composite-operations-on-oracle-database-using-biztalk-server.md).  
   
 ## Message Structure for the Composite Operation  
  Since a composite operation contains multiple individual operations; the message structure of a composite operation contains message structures of the individual operations. The composite operation message follows a request-response message exchange pattern.  

@@ -25,7 +25,7 @@ The **fRemoveRegistryEntry** function is used to remove a registry key from the 
             (  
             HKEY *  
             hGlobalKey,  
-    char *szRegistryKey   
+    char *szRegistryKey   
 );  
 ```  
   

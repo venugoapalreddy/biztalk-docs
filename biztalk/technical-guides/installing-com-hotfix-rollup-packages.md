@@ -19,19 +19,19 @@ manager: "anneta"
   
  You should install the last version of the Windows Server 2003 COM+ hotfix rollup package and latest version of the Distributed Transaction Coordinator (DTC) rollup package. This is because the packages include many performance and stability fixes.  
   
- You should install these rollups on all computers running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and on all computers running SQL Server. The rollups are especially important for your BizTalk solution to perform well in high-throughput scenarios.  
+ You should install these rollups on all computers running [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and on all computers running SQL Server. The rollups are especially important for your BizTalk solution to perform well in high-throughput scenarios.  
   
  The DTC issues that have been fixed are as follows:  
   
--   Unexpected DTC shutdown  
+- Unexpected DTC shutdown  
   
--   Memory fragmentation issues  
+- Memory fragmentation issues  
   
--   DTC may stop responding under load  
+- DTC may stop responding under load  
   
--   DTC may leak memory or stop responding when used with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
+- DTC may leak memory or stop responding when used with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
--   Performance of DTC under load has been improved  
+- Performance of DTC under load has been improved  
   
 ## Installing the COM+ Rollup Package  
  COM+ is no longer releasing rollup packages. Follow this information to install the last COM+ package:  

@@ -20,7 +20,7 @@ The **PrtFilterFree** function is called to indicate that a data buffer obtained
   
 ```  
   
-            void WINAPI PrtFilterFree(   
+            void WINAPI PrtFilterFree(   
   void *pBuf    
 );  
 ```  

@@ -45,7 +45,7 @@ Sub Disable()
 |E_INVALIDARG|An invalid parameter was detected.|  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapping Interface (COM)](../esso/issomapping-interface-com.md)   

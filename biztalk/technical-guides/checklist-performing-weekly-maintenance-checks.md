@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Checklist: Performing Weekly Maintenance Checks
-This topic describes the steps involved in performing weekly maintenance checks of the reliability, administration, security, and performance of a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.  
+This topic describes the steps involved in performing weekly maintenance checks of the reliability, administration, security, and performance of a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.  
   
 |Steps|Reference|  
 |-----------|---------------|  

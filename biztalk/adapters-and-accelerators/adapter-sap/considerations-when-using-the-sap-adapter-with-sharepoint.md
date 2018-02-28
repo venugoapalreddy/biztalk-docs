@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Considerations when using the SAP adapter with SharePoint
-This topic contains information about the issues you might encounter while using the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] with Microsoft Office SharePoint Server, along with resolutions. The issues are divided into two categories:  
+This topic contains information about the issues you might encounter while using the [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)] with Microsoft Office SharePoint Server, along with resolutions. The issues are divided into two categories:  
   
 -   General issues  
   
@@ -45,7 +45,7 @@ This topic contains information about the issues you might encounter while using
  **Resolution**: Use the Business Data Catalog Definition Editor to limit the number of fields of the complex type parameter to less than or equal to 300. Depending on your requirement, you can delete the fields of the complex type parameter in the Business Data Catalog Definition Editor that you do not require to be displayed in Microsoft Office SharePoint Server.  Alternatively, you can also export the application definition file from Business Data Catalog Definition Editor with all the fields, and then modify the application definition file in a notepad or any XML authoring application to delete the fields that are not required in order to limit the number of fields to 300.  
   
 ##  <a name="Custom_Web_Part"></a> Issues Involving Custom Web Parts  
- This section contains issues that require the use of custom Web Part for a resolution. For detailed information about using a custom Web Part to resolve issues that might come up while working with [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] and Microsoft Office SharePoint Server, see [Use a Custom Web Part with the SAP adapter](../../adapters-and-accelerators/adapter-sap/use-a-custom-web-part-with-the-sap-adapter.md).  
+ This section contains issues that require the use of custom Web Part for a resolution. For detailed information about using a custom Web Part to resolve issues that might come up while working with [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] and Microsoft Office SharePoint Server, see [Use a Custom Web Part with the SAP adapter](../../adapters-and-accelerators/adapter-sap/use-a-custom-web-part-with-the-sap-adapter.md).  
   
 ###  <a name="Issue1"></a> Issue 1: Limitation with displaying a single record in Microsoft Office SharePoint Server based on multiple values  
  **Explanation**: If you want to display a single record in Microsoft Office SharePoint Server based on multiple values (input parameters) from an SAP system, you cannot use any of the three Web Parts (Business Data List, Business Data Item, and Business Data Related List) specified in [Step 3: Create a SharePoint Application to Retrieve Data from SAP](../../adapters-and-accelerators/adapter-sap/step-3-create-a-sharepoint-application-to-retrieve-data-from-sap.md) in [Tutorial 1: Presenting Data from an SAP System on a SharePoint Site](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md).  
@@ -151,7 +151,7 @@ namespace CustomWebPart
 ```  
   
 ### Issue 3: Limitation with specifying NULL values to complex type parameters  
- **Explanation**: If you do not specify any value for a complex type parameter from a Web Part in Microsoft Office SharePoint Server, NULL should be passed on as the value for the complex type parameter to the WCF service. However, a non-NULL value is passed for the complex type parameter, and NULL is passed for its children elements (of simple type). This causes a mismatch between the expected message schema and the message schema that is passed on to the WCF service. As a result, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] might display an error message.  
+ <strong>Explanation</strong>: If you do not specify any value for a complex type parameter from a Web Part in Microsoft Office SharePoint Server, NULL should be passed on as the value for the complex type parameter to the WCF service. However, a non-NULL value is passed for the complex type parameter, and NULL is passed for its children elements (of simple type). This causes a mismatch between the expected message schema and the message schema that is passed on to the WCF service. As a result, the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] might display an error message.  
   
 > [!NOTE]
 >  To find out the default value of a complex type parameter when no value is passed from a Web Part in Microsoft Office SharePoint Server, use step 2 in the code sample mentioned in “Issue 1: Limitation with displaying a single record in Microsoft Office SharePoint Server based on multiple values.”  

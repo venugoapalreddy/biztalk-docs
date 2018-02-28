@@ -32,7 +32,7 @@ manager: "anneta"
 * Hexadecimal
 * Octal
 
-These functoids are described [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
+These functoids are described [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
 
 ## See Also  
  [How to Add Basic Functoids to a Map](../core/how-to-add-basic-functoids-to-a-map.md)   

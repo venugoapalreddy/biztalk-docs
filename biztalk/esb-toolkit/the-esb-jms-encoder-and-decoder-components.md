@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # The ESB JMS Encoder and Decoder Components
-Some integration solutions involve Java Message Service (JMS) and SOAP messages sent to or from IBM WebSphere MQ; [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes two JMS pipeline components written in managed code for use in these situations. The components read or write the JMS portion of the MQ message header using the values of context properties associated with the message. Currently, there are more than 60 different types of JMS headers in use with WebSphere MQ Series systems; the ESB JMS components work only with MQRFH2 headers.  
+Some integration solutions involve Java Message Service (JMS) and SOAP messages sent to or from IBM WebSphere MQ; [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] includes two JMS pipeline components written in managed code for use in these situations. The components read or write the JMS portion of the MQ message header using the values of context properties associated with the message. Currently, there are more than 60 different types of JMS headers in use with WebSphere MQ Series systems; the ESB JMS components work only with MQRFH2 headers.  
   
 ## Installation  
  Installing the ESB Core automatically installs the JMS Encoder and JMS Decoder components in the BizTalk Server Pipeline Components folder.  

@@ -18,22 +18,22 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Acknowledgment Error Conditions
-The following conditions will result in a fatal error condition when [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) is processing acknowledgment (ACK) messages:  
+The following conditions will result in a fatal error condition when [!INCLUDE [btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) is processing acknowledgment (ACK) messages:  
   
--   Missing required fields in MSH9  
+- Missing required fields in MSH9  
   
--   Missing required fields in MSH12  
+- Missing required fields in MSH12  
   
- The following conditions result in a non-fatal error condition. In this situation, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] generates the ACK, but also suspends the ACK:  
+  The following conditions result in a non-fatal error condition. In this situation, [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] generates the ACK, but also suspends the ACK:  
   
--   Missing a required field in MSH11  
+- Missing a required field in MSH11  
   
--   Missing a MSH10 value  
+- Missing a MSH10 value  
   
--   Enumeration type errors for optional fields in the header.  
+- Enumeration type errors for optional fields in the header.  
   
 > [!NOTE]
->  For enumeration type errors found in the header when MSH 15 is set to AL or ER, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] generates a commit ACK with the status **MSA_1=CR**.  
+>  For enumeration type errors found in the header when MSH 15 is set to AL or ER, [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] generates a commit ACK with the status <strong>MSA_1=CR</strong>.  
   
 ## See Also  
  [Creating and Processing Acknowledgments](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   

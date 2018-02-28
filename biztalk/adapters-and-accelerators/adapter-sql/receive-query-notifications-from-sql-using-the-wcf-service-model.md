@@ -15,13 +15,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Receive Query Notifications from SQL using the WCF Service Model
-This topic demonstrates how to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive query notification messages from a SQL Server database. To demonstrate notifications, consider a table, Employee, with a “Status” column. When a new record is inserted to this table, the value of the Status column is set to 0. You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have Status column as “0.” You can do so by specifying the SQL statement for the **NotificationStatement** binding property. After the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the SQL Server database. In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the Status column as “0.”  
+This topic demonstrates how to configure the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive query notification messages from a SQL Server database. To demonstrate notifications, consider a table, Employee, with a “Status” column. When a new record is inserted to this table, the value of the Status column is set to 0. You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have Status column as “0.” You can do so by specifying the SQL statement for the <strong>NotificationStatement</strong> binding property. After the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the SQL Server database. In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the Status column as “0.”  
   
 > [!NOTE]
 >  If you are performing operation on tables that have columns of user-defined types, make sure you refer to [Operations on tables and views with user-defined types using the SQL adapter](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md) topic before you start developing your application.  
   
 ## Configuring Notifications with the SQL Adapter Binding Properties  
- The following table summarizes the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] binding properties that you use to configure receiving notifications from SQL Server. You must specify these binding properties while running the .NET application to receive the notifications from a SQL Server database.  
+ The following table summarizes the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] binding properties that you use to configure receiving notifications from SQL Server. You must specify these binding properties while running the .NET application to receive the notifications from a SQL Server database.  
   
 |Binding Property|Description|  
 |----------------------|-----------------|  
@@ -29,24 +29,24 @@ This topic demonstrates how to configure the [!INCLUDE[adaptersqlshort](../../in
 |**NotificationStatement**|Specifies the SQL statement (SELECT or EXEC \<*stored procedure*\>) used to register for query notifications. The adapter gets a notification message from SQL Server only when the result set for the specified SQL statement changes.|  
 |**NotifyOnListenerStart**|Specifies whether the adapter sends a notification to the adapter clients when the listener is started.|  
   
- For a more complete description of these properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). For a complete description of how to use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive notifications from SQL Server, read further.  
+ For a more complete description of these properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). For a complete description of how to use the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive notifications from SQL Server, read further.  
   
 ## Configuring Notifications Using the WCF Service Model  
  To receive the notifications using the WCF service model, you must:  
   
-1.  Generate a WCF service contract (interface) for the **Notification** operation from the metadata exposed by the adapter. To do this, you could use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
+1. Generate a WCF service contract (interface) for the <strong>Notification</strong> operation from the metadata exposed by the adapter. To do this, you could use the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
   
-2.  Generate a WCF client for the **Select** operation on the Employee table. To do this, you could use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
+2. Generate a WCF client for the <strong>Select</strong> operation on the Employee table. To do this, you could use the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
   
-3.  Implement a WCF service from this interface.  
+3. Implement a WCF service from this interface.  
   
-4.  Host this WCF service using a service host (**System.ServiceModel.ServiceHost**).  
+4. Host this WCF service using a service host (**System.ServiceModel.ServiceHost**).  
   
 ## About the Examples Used in this Topic  
- The examples in this topic receive notification for the Employee table. A script to generate the table is supplied with the samples. For more information about the samples, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md). A sample, **Notification_ServiceModel**, which is based on this topic, is also provided with the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] samples.  
+ The examples in this topic receive notification for the Employee table. A script to generate the table is supplied with the samples. For more information about the samples, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md). A sample, <strong>Notification_ServiceModel</strong>, which is based on this topic, is also provided with the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] samples.  
   
 ## The WCF Service Contract and Class  
- You can use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to create a WCF service contract (interface) and supporting classes for the **Notification** operation. For more information about generating a WCF service contract, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).  
+ You can use the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to create a WCF service contract (interface) and supporting classes for the <strong>Notification</strong> operation. For more information about generating a WCF service contract, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).  
   
 ### The WCF Service Contract (Interface)  
  The following code shows the WCF service contract (interface) generated for the **Notification** operation.  
@@ -93,7 +93,7 @@ public partial class Notification {
 ```  
   
 ### WCF Service Class  
- The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] also generates a file that has a stub for the WCF service class implemented from the service contract (interface). The name of the file is SqlAdapterBindingService.cs. You can insert the logic to process the **Notification** operation directly into this class. The following code shows the WCF service class generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
+ The [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] also generates a file that has a stub for the WCF service class implemented from the service contract (interface). The name of the file is SqlAdapterBindingService.cs. You can insert the logic to process the <strong>Notification</strong> operation directly into this class. The following code shows the WCF service class generated by the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
   
 ```  
 namespace SqlAdapterBindingNamespace {  
@@ -110,186 +110,186 @@ namespace SqlAdapterBindingNamespace {
 ```  
   
 ## Receiving Query Notifications Using WCF Service Model  
- This section provides instructions on how to write a .NET application to receive query notifications using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
+ This section provides instructions on how to write a .NET application to receive query notifications using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
   
 #### To receive query notifications  
   
-1.  Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF client for **Select** operation on the **Employee** table. You will use this client to perform Select operations after receiving a notification message. Add a new class, TableOperation.cs to your project and add the following code snippet to perform a Select operation.  
+1. Use the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF client for <strong>Select</strong> operation on the <strong>Employee</strong> table. You will use this client to perform Select operations after receiving a notification message. Add a new class, TableOperation.cs to your project and add the following code snippet to perform a Select operation.  
   
-    ```  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Linq;  
-    using System.Text;  
+   ```  
+   using System;  
+   using System.Collections.Generic;  
+   using System.Linq;  
+   using System.Text;  
   
-    namespace Notification_ServiceModel  
-    {  
-        public class TableOperation  
-        {  
-            public void TableOp()  
-            {  
-                ///////////////////////////////////////////////////////////////////////  
-                // CREATING THE CLIENT  
-                ///////////////////////////////////////////////////////////////////////  
+   namespace Notification_ServiceModel  
+   {  
+       public class TableOperation  
+       {  
+           public void TableOp()  
+           {  
+               ///////////////////////////////////////////////////////////////////////  
+               // CREATING THE CLIENT  
+               ///////////////////////////////////////////////////////////////////////  
   
-                TableOp_dbo_EmployeeClient client = new TableOp_dbo_EmployeeClient("SqlAdapterBinding_TableOp_dbo_Employee");  
+               TableOp_dbo_EmployeeClient client = new TableOp_dbo_EmployeeClient("SqlAdapterBinding_TableOp_dbo_Employee");  
   
-                client.ClientCredentials.UserName.UserName = "<Enter user name here>";  
-                client.ClientCredentials.UserName.Password = "<Enter password here>";  
+               client.ClientCredentials.UserName.UserName = "<Enter user name here>";  
+               client.ClientCredentials.UserName.Password = "<Enter password here>";  
   
-                ///////////////////////////////////////////////////////////////////////  
-                // OPENING THE CLIENT  
-                ///////////////////////////////////////////////////////////////////////  
+               ///////////////////////////////////////////////////////////////////////  
+               // OPENING THE CLIENT  
+               ///////////////////////////////////////////////////////////////////////  
   
-                try  
-                {  
-                    Console.WriteLine("Opening Client...");  
-                    client.Open();  
-                }  
-                catch (Exception ex)  
-                {  
-                    Console.WriteLine("Exception: " + ex.Message);  
-                    throw;  
-                }  
+               try  
+               {  
+                   Console.WriteLine("Opening Client...");  
+                   client.Open();  
+               }  
+               catch (Exception ex)  
+               {  
+                   Console.WriteLine("Exception: " + ex.Message);  
+                   throw;  
+               }  
   
-                ///////////////////////////////////////////////////////////////////////  
-                // SELECTING THE LAST INSERTED RECORD FROM THE TABLE  
-                ///////////////////////////////////////////////////////////////////////  
-                schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee[] selectRecords;  
+               ///////////////////////////////////////////////////////////////////////  
+               // SELECTING THE LAST INSERTED RECORD FROM THE TABLE  
+               ///////////////////////////////////////////////////////////////////////  
+               schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee[] selectRecords;  
   
-                try  
-                {  
-                    selectRecords = client.Select("*", "where Status=0");  
-                }  
+               try  
+               {  
+                   selectRecords = client.Select("*", "where Status=0");  
+               }  
   
-                catch (Exception ex)  
-                {  
-                    Console.WriteLine("Exception: " + ex.Message);  
-                    throw;  
-                }  
+               catch (Exception ex)  
+               {  
+                   Console.WriteLine("Exception: " + ex.Message);  
+                   throw;  
+               }  
   
-                Console.WriteLine("The details of the newly added employee are:");  
-                Console.WriteLine("********************************************");  
-                for (int i = 0; i < selectRecords.Length; i++)  
-                {  
-                    Console.WriteLine("Employee Name      : " + selectRecords[i].Name);  
-                    Console.WriteLine("Employee Designation: " + selectRecords[i].Designation);  
-                    Console.WriteLine("Employee Status    : " + selectRecords[i].Status);  
-                    Console.WriteLine();  
-                }  
-                Console.WriteLine("********************************************");  
+               Console.WriteLine("The details of the newly added employee are:");  
+               Console.WriteLine("********************************************");  
+               for (int i = 0; i < selectRecords.Length; i++)  
+               {  
+                   Console.WriteLine("Employee Name      : " + selectRecords[i].Name);  
+                   Console.WriteLine("Employee Designation: " + selectRecords[i].Designation);  
+                   Console.WriteLine("Employee Status    : " + selectRecords[i].Status);  
+                   Console.WriteLine();  
+               }  
+               Console.WriteLine("********************************************");  
   
-    ```  
+   ```  
   
-    > [!IMPORTANT]
-    >  Because this code snippet performs operations on the Employee table that contains a Point UDT column, make sure you put the UDT DLL under the project’s \bin\Debug folder while running the application.  
+   > [!IMPORTANT]
+   >  Because this code snippet performs operations on the Employee table that contains a Point UDT column, make sure you put the UDT DLL under the project’s \bin\Debug folder while running the application.  
   
-2.  Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF service contract (interface) and helper classes for the **Notification** operation.  
+2. Use the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF service contract (interface) and helper classes for the <strong>Notification</strong> operation.  
   
-     For more information, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md). You can optionally specify the binding properties while generating the service contract and helper classes. This guarantees that they are properly set in the generated configuration file.  
+    For more information, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md). You can optionally specify the binding properties while generating the service contract and helper classes. This guarantees that they are properly set in the generated configuration file.  
   
-3.  Implement a WCF service from the interface and helper classes generated in step 2. The **Notification** method of this class can throw an exception to abort the operation, if an error is encountered processing the data received from the **Notification** operation; otherwise the method does not return anything. You must attribute the WCF service class as follows:  
+3. Implement a WCF service from the interface and helper classes generated in step 2. The **Notification** method of this class can throw an exception to abort the operation, if an error is encountered processing the data received from the **Notification** operation; otherwise the method does not return anything. You must attribute the WCF service class as follows:  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
-    ```  
+   ```  
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+   ```  
   
-     Within the **Notification** method, you can implement your application logic directly. This class can be found in SqlAdapterBindingService.cs. This code in this example sub-classes the **SqlAdapterBindingService** class. In this code, the notification message received is written to the console. Additionally, the **TableOp** method within the **TableOperation** class is invoked to perform the Select operation.  
+    Within the **Notification** method, you can implement your application logic directly. This class can be found in SqlAdapterBindingService.cs. This code in this example sub-classes the **SqlAdapterBindingService** class. In this code, the notification message received is written to the console. Additionally, the **TableOp** method within the **TableOperation** class is invoked to perform the Select operation.  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+   ```  
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
   
-    public class NotificationService : SqlAdapterBindingNamespace.SqlAdapterBindingService  
-    {  
-        public override void Notification(Notification request)  
-        {  
-            Console.WriteLine("\nNew Notification Received");  
-            Console.WriteLine("*************************************************");  
-            Console.WriteLine(request.Info);  
-            Console.WriteLine(request.Source);  
-            Console.WriteLine(request.Type);  
-            Console.WriteLine("*************************************************");  
+   public class NotificationService : SqlAdapterBindingNamespace.SqlAdapterBindingService  
+   {  
+       public override void Notification(Notification request)  
+       {  
+           Console.WriteLine("\nNew Notification Received");  
+           Console.WriteLine("*************************************************");  
+           Console.WriteLine(request.Info);  
+           Console.WriteLine(request.Source);  
+           Console.WriteLine(request.Type);  
+           Console.WriteLine("*************************************************");  
   
-            // Invoke th TableOp method in the TableOperation class  
-            TableOperation Ops = new TableOperation();  
-            Ops.TableOp();  
-        }  
-    }  
-    ```  
+           // Invoke th TableOp method in the TableOperation class  
+           TableOperation Ops = new TableOperation();  
+           Ops.TableOp();  
+       }  
+   }  
+   ```  
   
-4.  Because the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] does not accept credentials as part of the connection URI, you must implement the following class to pass credentials for the SQL Server database. In the latter part of the application, you will instantiate this class to pass on the SQL Server credentials.  
+4. Because the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] does not accept credentials as part of the connection URI, you must implement the following class to pass credentials for the SQL Server database. In the latter part of the application, you will instantiate this class to pass on the SQL Server credentials.  
   
-    ```  
-    class NotificationCredentials : ClientCredentials, IServiceBehavior  
-    {  
-        public void AddBindingParameters(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase, Collection<ServiceEndpoint> endpoints, BindingParameterCollection bindingParameters)  
-        {  
-            bindingParameters.Add(this);  
-        }  
+   ```  
+   class NotificationCredentials : ClientCredentials, IServiceBehavior  
+   {  
+       public void AddBindingParameters(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase, Collection<ServiceEndpoint> endpoints, BindingParameterCollection bindingParameters)  
+       {  
+           bindingParameters.Add(this);  
+       }  
   
-        public void ApplyDispatchBehavior(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
-        { }  
+       public void ApplyDispatchBehavior(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
+       { }  
   
-        public void Validate(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
-        { }  
+       public void Validate(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
+       { }  
   
-        protected override ClientCredentials CloneCore()  
-        {  
-            ClientCredentials clone = new NotificationCredentials();  
-            clone.UserName.UserName = this.UserName.UserName;  
-            clone.UserName.Password = this.UserName.Password;  
-            return clone;  
-        }  
-    }  
-    ```  
+       protected override ClientCredentials CloneCore()  
+       {  
+           ClientCredentials clone = new NotificationCredentials();  
+           clone.UserName.UserName = this.UserName.UserName;  
+           clone.UserName.Password = this.UserName.Password;  
+           return clone;  
+       }  
+   }  
+   ```  
   
-5.  Create a **SqlAdapterBinding** and configure the adapter to receive query notifications by specifying the binding properties. You can do this either explicitly in code or declaratively in configuration. At a minimum, you must specify the **InboundOperationType** and **NotificationStatement** binding properties.  
+5. Create a **SqlAdapterBinding** and configure the adapter to receive query notifications by specifying the binding properties. You can do this either explicitly in code or declaratively in configuration. At a minimum, you must specify the **InboundOperationType** and **NotificationStatement** binding properties.  
   
-    ```  
-    SqlAdapterBinding binding = new SqlAdapterBinding();  
-    binding.InboundOperationType = InboundOperation.Notification;  
-    binding.NotificationStatement = "SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0";  
-    binding.NotifyOnListenerStart = true;  
-    ```  
+   ```  
+   SqlAdapterBinding binding = new SqlAdapterBinding();  
+   binding.InboundOperationType = InboundOperation.Notification;  
+   binding.NotificationStatement = "SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0";  
+   binding.NotifyOnListenerStart = true;  
+   ```  
   
-6.  Specify SQL Server database credentials by instantiating the **NotificationCredentials** class you created in Step 4.  
+6. Specify SQL Server database credentials by instantiating the **NotificationCredentials** class you created in Step 4.  
   
-    ```  
-    NotificationCredentials credentials = new NotificationCredentials();  
-    credentials.UserName.UserName = "<Enter user name here>";  
-    credentials.UserName.Password = "<Enter password here>";  
-    ```  
+   ```  
+   NotificationCredentials credentials = new NotificationCredentials();  
+   credentials.UserName.UserName = "<Enter user name here>";  
+   credentials.UserName.Password = "<Enter password here>";  
+   ```  
   
-7.  Create an instance of the WCF service created in step 3.  
+7. Create an instance of the WCF service created in step 3.  
   
-    ```  
-    // create service instance  
-    NotificationService service = new NotificationService();  
-    ```  
+   ```  
+   // create service instance  
+   NotificationService service = new NotificationService();  
+   ```  
   
-8.  Create an instance of **System.ServiceModel.ServiceHost** by using the WCF service and a base connection URI. You must also specify the credentials here.  
+8. Create an instance of **System.ServiceModel.ServiceHost** by using the WCF service and a base connection URI. You must also specify the credentials here.  
   
-    ```  
-    // Enable service host  
-    Uri[] baseUri = new Uri[] { new Uri("mssql://mysqlserver//mydatabase") };  
-    ServiceHost serviceHost = new ServiceHost(service, baseUri);  
-    serviceHost.Description.Behaviors.Add(credentials);  
+   ```  
+   // Enable service host  
+   Uri[] baseUri = new Uri[] { new Uri("mssql://mysqlserver//mydatabase") };  
+   ServiceHost serviceHost = new ServiceHost(service, baseUri);  
+   serviceHost.Description.Behaviors.Add(credentials);  
   
-    ```  
+   ```  
   
 9. Add a service endpoint to the service host. To do this:  
   
-    -   Use the binding created in step 5.  
+   - Use the binding created in step 5.  
   
-    -   Specify a connection URI that contains credentials and, if required, an inbound ID.  
+   - Specify a connection URI that contains credentials and, if required, an inbound ID.  
   
-    -   Specify the contract as "NotificationOperation".  
+   - Specify the contract as "NotificationOperation".  
   
-    ```  
-    // Add service endpoint: be sure to specify NotificationOperation as the contract  
-    Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?");  
-    serviceHost.AddServiceEndpoint("NotificationOperation", binding, ConnectionUri);  
-    ```  
+     ```  
+     // Add service endpoint: be sure to specify NotificationOperation as the contract  
+     Uri ConnectionUri = new Uri("mssql://mysqlserver//mydatabase?");  
+     serviceHost.AddServiceEndpoint("NotificationOperation", binding, ConnectionUri);  
+     ```  
   
 10. To receive notification message, open the service host.  
   

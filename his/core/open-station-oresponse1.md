@@ -15,9 +15,9 @@ manager: "anneta"
 ---
 # Open(STATION) OResponse
 Flow : DLC ------> NODE  
-  
+
 ### Header  
-  
+
 |Field|Type|Description|  
 |-----------|----------|-----------------|  
 |nxtqptr|PTRBFHDR|Pointer to next buffer header in a queue|  
@@ -35,14 +35,15 @@ Flow : DLC ------> NODE
 |ophdr.opresid|INTEGER|Resource identifier|  
 |ophdr.icreditr|INTEGER|Initial Credit for flow DLC –> NODE|  
 |ophdr.icredits|INTEGER|Initial Credit for flow NODE –> DLC|  
-  
+
 ### Element  
-  
-|Field|Type|Description|  
-|-----------|----------|-----------------|  
-|hdreptr–>elteptr|PTRBFELT|Pointer to next buffer element (NULL is only one element)|  
-|hdreptr–>startd|INTEGER|Index to start of data in this buffer element's data array: 1|  
-|hdreptr–>endd|INTEGER|Index to last byte of data in this buffer element's data array|  
-|hdreptr–>dataru|CHAR[SNANBEDA]|Defined as follows, where s = startd–1|  
-|dataru[s..s+9]|Not applicable|Source name—same as destination name from **Open(STATION) Request**|  
-|dataru[s+10..s+19]|Not applicable|Destination name—name of local node; same as source name from **Open(STATION) Request**|
+
+|       Field        |      Type      |                                             Description                                              |
+|--------------------|----------------|------------------------------------------------------------------------------------------------------|
+|  hdreptr–>elteptr  |    PTRBFELT    |                      Pointer to next buffer element (NULL is only one element)                       |
+|  hdreptr–>startd   |    INTEGER     |                    Index to start of data in this buffer element's data array: 1                     |
+|   hdreptr–>endd    |    INTEGER     |                    Index to last byte of data in this buffer element's data array                    |
+|  hdreptr–>dataru   | CHAR[SNANBEDA] |                                Defined as follows, where s = startd–1                                |
+|   dataru[s..s+9]   | Not applicable |           Source name—same as destination name from <strong>Open(STATION) Request</strong>           |
+| dataru[s+10..s+19] | Not applicable | Destination name—name of local node; same as source name from <strong>Open(STATION) Request</strong> |
+

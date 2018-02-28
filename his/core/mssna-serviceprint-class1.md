@@ -41,8 +41,8 @@ class MsSna_ServicePrint : MsSna_Service
 ```  
   
 ## Properties  
- **Name**  
- Data Type: **String**Qualifiers: **Key, MAXLEN(16)**Access Type: Read/Write  
+ <strong>Name</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>Key, MAXLEN(16)</strong>Access Type: Read/Write  
   
  The Host Print service name. **Name** is the same as the machine name.  
   

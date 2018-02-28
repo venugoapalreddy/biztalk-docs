@@ -20,8 +20,8 @@ The application calls the **sbpiberl** function to release a buffer element from
   
 ```  
   
-VOID sbpiberl(   
-PTRBFELT *eltptr   
+VOID sbpiberl(   
+PTRBFELT *eltptr   
 );  
 ```  
   

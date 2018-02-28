@@ -23,8 +23,8 @@ The **fRemoveRegistryValue** function is used to remove a registry value from th
             BOOL fRemoveRegistryValue (  
             HKEY *   
             hGlobalKey,  
-    char *szRegistryKey,   
-    char *szRegistryValue   
+    char *szRegistryKey,   
+    char *szRegistryValue   
 );  
 ```  
   

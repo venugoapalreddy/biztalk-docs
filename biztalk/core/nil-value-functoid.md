@@ -20,4 +20,4 @@ manager: "anneta"
 The **Nil Value** functoid sets a destination element to **Nil**. This functoid is useful when you want to include empty elements in the output message. It can be combined with other functoids to produce a **Nil** value based on specific conditions.  
   
 ## See Also  
- **Nil Value Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ <strong>Nil Value Functoid Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

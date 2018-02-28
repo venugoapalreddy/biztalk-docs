@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Important Network Options on a Host Integration Server Computer
-When [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] network options are specified correctly on a [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer, the server will use the appropriate protocol(s) for communicating with clients. Servers supporting TCP/IP or Microsoft Networking will have the correct domain name so that clients can locate the Host Integration Server computers.  
+When [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] network options are specified correctly on a [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer, the server will use the appropriate protocol(s) for communicating with clients. Servers supporting TCP/IP or Microsoft Networking will have the correct domain name so that clients can locate the Host Integration Server computers.  
   
 > [!IMPORTANT]
 >  These changes do not take effect until the server is restarted. Do not change these settings while the server has active users.  

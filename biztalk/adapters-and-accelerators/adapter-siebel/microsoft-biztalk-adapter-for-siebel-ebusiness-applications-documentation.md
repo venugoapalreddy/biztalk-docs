@@ -16,7 +16,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Microsoft BizTalk Adapter for Siebel eBusiness Applications documentation
-The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, and more.
+The [!INCLUDE [adaptersiebel](../../includes/adaptersiebel-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, and more.
   
 ## Get started 
 ![Getting started icon](../../adapters-and-accelerators/adapter-oracle-database/media/f397b0c1-6fe1-4247-a868-9efcab4a5f55.gif "f397b0c1-6fe1-4247-a868-9efcab4a5f55") [Get started](../../adapters-and-accelerators/adapter-siebel/get-started-with-the-biztalk-adapter-for-siebel-ebusiness-applications.md) lists the steps to install custom RFCs, provides an overview of the adapter including features and limitations, and also has some tutorials to get you some hands-on experience with the adapter.

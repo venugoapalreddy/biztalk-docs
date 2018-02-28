@@ -18,10 +18,12 @@ manager: "anneta"
 ---
 # Services (ModuleRef Node)
 The Services node of a binding file contains specific information about each service that is exported with the binding file.  
-  
+
 ## Nodes in the Services node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[Service](../core/service-services-node.md)|Record|ServiceRef (ComplexType)|Container node for nodes that describe this service.|Not required|Default value: None|
+
+
+|            <strong>Name</strong>            | <strong>Node Type</strong> | <strong>Data Type</strong> |             <strong>Description</strong>             | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|---------------------------------------------|----------------------------|----------------------------|------------------------------------------------------|-------------------------------|---------------------------|
+| [Service](../core/service-services-node.md) |           Record           |  ServiceRef (ComplexType)  | Container node for nodes that describe this service. |         Not required          |    Default value: None    |
+

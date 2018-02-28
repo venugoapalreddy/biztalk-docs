@@ -15,9 +15,9 @@ manager: "anneta"
 ---
 # Host File Transfer Utility
 As in any standard Microsoft Windows application, you can use keyboard shortcuts in Host File Transfer Utility to access commands that are otherwise available by using menus. The following table describes the available keyboard shortcuts.  
-  
+
 ## File menu keyboard shortcuts  
-  
+
 |||  
 |-|-|  
 |**Menu Action**|**Shortcut**|  
@@ -26,9 +26,9 @@ As in any standard Microsoft Windows application, you can use keyboard shortcuts
 |Save settings in a Host FTP Utility configuration file|ALT+F,S|  
 |Save settings to a different Host FTP Utility configuration file|ALT+F,A|  
 |Exit Host FTP Utility program|ALT+F,X|  
-  
+
 ## Host menu keyboard shortcuts  
-  
+
 |||  
 |-|-|  
 |**Menu Action**|**Shortcut**|  
@@ -37,19 +37,20 @@ As in any standard Microsoft Windows application, you can use keyboard shortcuts
 |Host port|ALT+O,H,P|  
 |Host User ID|ALT+O,H,U|  
 |Host password|ALT+O,H,A|  
-  
+
 ## Transfer menu keyboard shortcuts  
-  
+
 |||  
 |-|-|  
 |**Menu Action**|**Shortcut**|  
 |Transfer to upload file|ALT+R,U|  
 |Transfer to download fie|ALT+R,D|  
-  
+
 ## Tools menu keyboard shortcuts  
-  
-|||  
-|-|-|  
-|**Menu Action**|**Shortcut**|  
-|Tools delete file|ALT+T,D|  
-|Tools file transfer options|ALT+T,O|
+
+|                              |                           |
+|------------------------------|---------------------------|
+| <strong>Menu Action</strong> | <strong>Shortcut</strong> |
+|      Tools delete file       |          ALT+T,D          |
+| Tools file transfer options  |          ALT+T,O          |
+

@@ -32,13 +32,13 @@ manager: "anneta"
 # Developing Custom Pipeline Components
 This section describes how to develop a pipeline component. You can create three types of pipeline components: general, assembling, and disassembling. Each of the three types can additionally implement probing functionality. Each type of pipeline component has an associated interface that must be implemented for the component to be plugged into the BizTalk Messaging Engine; the pipeline interfaces that distinguish the types of components are **IComponent**, **IAssemblerComponent**, and **IDisassemblerComponent**. For probing components, you must implement the **IProbeMessage** interface.  
   
- Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] contains a sample pipeline component that you can reference when creating your own component. The sample component demonstrates how to append data to the end of a message and add data at the beginning of the message. For more information about the sample pipeline component, see [CustomComponent (BizTalk Server Sample)](../core/customcomponent-biztalk-server-sample.md).  
+ Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] contains a sample pipeline component that you can reference when creating your own component. The sample component demonstrates how to append data to the end of a message and add data at the beginning of the message. For more information about the sample pipeline component, see [CustomComponent (BizTalk Server Sample)](../core/customcomponent-biztalk-server-sample.md).  
   
 > [!CAUTION]
->  If you reference a custom pipeline component from a pipeline in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], a compile-time error may occur. To correct the error, close Pipeline Designer and reopen it before compiling. Alternatively, you can remove the component, and then add it.  
-  
+>  If you reference a custom pipeline component from a pipeline in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], a compile-time error may occur. To correct the error, close Pipeline Designer and reopen it before compiling. Alternatively, you can remove the component, and then add it.  
+> 
 > [!IMPORTANT]
->  When upgrading to BizTalk Server, ensure that any string variables in your existing custom pipeline components do not contain any newline characters such as ‘\n’. Otherwise, a “newline in constant” error will occur when compiling this component in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+>  When upgrading to BizTalk Server, ensure that any string variables in your existing custom pipeline components do not contain any newline characters such as ‘\n’. Otherwise, a “newline in constant” error will occur when compiling this component in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
 ## In This Section  
   

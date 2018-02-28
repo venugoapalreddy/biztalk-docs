@@ -28,7 +28,7 @@ You create a pipeline by dragging components (shapes) from the Toolbox to the de
   
  If you drag a valid component onto a stage that is collapsed, pause the mouse over the stage for a few seconds to expand it, and then drop the component into the stage.  
   
- Adding a custom component to the Toolbox in Pipeline Designer is similar to the standard Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] procedure.  
+ Adding a custom component to the Toolbox in Pipeline Designer is similar to the standard Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] procedure.  
   
  **Start and End Shapes**  
   

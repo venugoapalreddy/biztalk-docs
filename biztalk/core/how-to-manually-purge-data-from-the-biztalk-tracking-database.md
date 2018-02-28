@@ -22,36 +22,36 @@ manager: "anneta"
 The DTA Archive and Purge SQL Server Agent job reduces the need to manually purge data from the BizTalk Tracking (BizTalkDTADb) database due to continuous purging of the database and compaction of stored tracking data. You might need to manually purge data if your BizTalk Tracking (BizTalkDTADb) database has grown so much that sustained performance degradation is occurring and the DTA Archive and Purge job is unable to keep up with the database growth.  
   
 > [!CAUTION]
->  Performing this procedure deletes all tracking data for completed instances from the BizTalk Tracking (BizTalkDTADb) database regardless of completion time. Before performing this procedure, you should archive the BizTalk Tracking (BizTalkDTADb) database separately from the other [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.  
+>  Performing this procedure deletes all tracking data for completed instances from the BizTalk Tracking (BizTalkDTADb) database regardless of completion time. Before performing this procedure, you should archive the BizTalk Tracking (BizTalkDTADb) database separately from the other [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.  
   
 ## Prerequisites  
  You must be logged on with an account that is a member of the SQL Server sysadmin fixed server role to perform this procedure.  
   
 ### To manually purge data from the BizTalk Tracking database  
   
-1.  Backup your BizTalk Server databases.  
+1. Backup your BizTalk Server databases.  
   
-2.  Archive the BizTalk Tracking (BizTalkDTADb) database.  
+2. Archive the BizTalk Tracking (BizTalkDTADb) database.  
   
-3.  Open the Services console. Click **Start**, click **Run**, and then type **services.msc**. If a **User Account Control** dialog is displayed, click **Continue**.  
+3. Open the Services console. Click **Start**, click **Run**, and then type **services.msc**. If a **User Account Control** dialog is displayed, click **Continue**.  
   
-4.  When the Services console appears, locate and then stop each of the following services. To stop a service, right-click the service row in the **Services** pane, and then click **Stop**.  
+4. When the Services console appears, locate and then stop each of the following services. To stop a service, right-click the service row in the **Services** pane, and then click **Stop**.  
   
-    -   BizTalkServiceBizTalkGroup : BizTalkServerApplication  
+   -   BizTalkServiceBizTalkGroup : BizTalkServerApplication  
   
-    -   Enterprise Single Sign-On Service  
+   -   Enterprise Single Sign-On Service  
   
-         If the BizTalkServiceBizTalkGroup : BizTalkServerApplication service is running when you try to shut down the Enterprise Singe Sign-On Service, a **Stop Other Services** dialog will be displayed. Click **Yes**.  
+        If the BizTalkServiceBizTalkGroup : BizTalkServerApplication service is running when you try to shut down the Enterprise Singe Sign-On Service, a **Stop Other Services** dialog will be displayed. Click **Yes**.  
   
-    -   Rule Engine Update Service  
+   -   Rule Engine Update Service  
   
-5.  Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**. If a **User Account Control** dialog is displayed, verify that the action described is what you want, and then click **Continue**.  
+5. Click <strong>Start</strong>, click <strong>All Programs</strong>, click [!INCLUDE [btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click <strong>BizTalk Server Administration</strong>. If a <strong>User Account Control</strong> dialog is displayed, verify that the action described is what you want, and then click <strong>Continue</strong>.  
   
-6.  In the **BizTalk Server Administration Console** in the explorer pane on the left side of the window, double-click **BizTalk Group** to expand the list below it, then double-click **Platform Settings**, and then click **Host Instances**. This will display a list of host instances (the **Host Instances** pane) and related properties, on the right side of the screen.  
+6. In the **BizTalk Server Administration Console** in the explorer pane on the left side of the window, double-click **BizTalk Group** to expand the list below it, then double-click **Platform Settings**, and then click **Host Instances**. This will display a list of host instances (the **Host Instances** pane) and related properties, on the right side of the screen.  
   
-7.  In the **Host Instances** pane, right-click each running host instance, and then click **Stop**.  
+7. In the **Host Instances** pane, right-click each running host instance, and then click **Stop**.  
   
-8.  Click **Start**, go to **Run**, type **cmd**, and then click **OK**.  
+8. Click **Start**, go to **Run**, type **cmd**, and then click **OK**.  
   
 9. At the command prompt, type:  
   
@@ -89,7 +89,7 @@ The DTA Archive and Purge SQL Server Agent job reduces the need to manually purg
   
     -   Rule Engine Update Service  
   
-17. Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.  
+17. Click <strong>Start</strong>, click <strong>All Programs</strong>, click [!INCLUDE [btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click <strong>BizTalk Server Administration</strong>.  
   
 18. In the **BizTalk Server Administration Console**, double-click the **BizTalk Group**, double-click **Platform Settings**, and then click **Host Instances**.  
   

@@ -20,7 +20,7 @@ The **fConnectRegistry** function is used to connect to a remote computer's regi
   
 ```  
   
-          BOOL fConnectRegistry(   
+          BOOL fConnectRegistry(   
 HKEY *hGlobalKey,  
 LPSTR *szComputerName);  
 ```  

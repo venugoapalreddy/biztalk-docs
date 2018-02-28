@@ -22,15 +22,17 @@ manager: "anneta"
 ---
 # Party Aliases Tab
 You use the **Party Aliases** tab to view information about the selected party.  
-  
+
 > [!NOTE]
 >  You use BizTalk Explorer to create parties.  
-  
+
  For more information about creating parties, see "Managing Parties Using BizTalk Explorer" in BizTalk Server Help.  
-  
+
  In the **BTAHL7 Configuration Explorer** dialog box, on the **Party Aliases** tab, do the following:  
-  
-|Use this|To do this|  
-|--------------|----------------|  
-|**Name**|View the name of the party organization.|  
-|**Value**|View the value of the party ID.|
+
+
+|        Use this        |                To do this                |
+|------------------------|------------------------------------------|
+| <strong>Name</strong>  | View the name of the party organization. |
+| <strong>Value</strong> |     View the value of the party ID.      |
+

@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Appendix A: Optimizations Applied to Computers in Test Environment
-This section describes the performance optimizations that were applied to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment before testing.  
+This section describes the performance optimizations that were applied to the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment before testing.  
   
 ## In This Section  
   

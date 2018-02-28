@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Resource Security
-This section describes accessing [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] resources, including Display LUs, Printer LUs, and LU pools.  
+This section describes accessing [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] resources, including Display LUs, Printer LUs, and LU pools.  
   
 ## In This Section  
  [3270 Terminal Access](../core/3270-terminal-access2.md)  

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Understanding Connectivity
-After you have completed [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] installation, you are ready to configure your installation. This section provides the concepts and procedures for configuring [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+After you have completed [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] installation, you are ready to configure your installation. This section provides the concepts and procedures for configuring [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
 ## In This Section  
  [Host Integration Server 3270 Connectivity](../core/host-integration-server-3270-connectivity2.md)  

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Host Integration Server Status
-The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] SNA Manager provides valuable status information for Host Integration Server computers within a SNA subdomain. You can view the status of connections, LUs, and print sessions.  
+The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] SNA Manager provides valuable status information for Host Integration Server computers within a SNA subdomain. You can view the status of connections, LUs, and print sessions.  
   
 ## In This Section  
  [Status Information](../core/status-information2.md)  

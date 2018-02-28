@@ -16,19 +16,19 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshoot Operational Issues with the Siebel adapter
-This section provides a centralized location for information about operational issues you might encounter when using the [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].  
+This section provides a centralized location for information about operational issues you might encounter when using the [!INCLUDE [adaptersiebel](../../includes/adaptersiebel-md.md)].  
   
 ## Enabling Tracing  
- For information about tracing support in the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], see [Diagnostic Tracing and Message Logging for the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/diagnostic-tracing-and-message-logging-for-the-siebel-adapter.md).  
+ For information about tracing support in the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)], see [Diagnostic Tracing and Message Logging for the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/diagnostic-tracing-and-message-logging-for-the-siebel-adapter.md).  
   
 ## Known Issues  
- The following are some issues and recommended solutions that you might encounter while using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
+ The following are some issues and recommended solutions that you might encounter while using the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
   
   
 ###  <a name="BKMK_SiebelBindingError"></a> Error in loading the adapter bindings  
  **Problem**  
   
- When you try to start the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the GUI gives the following error:  
+ When you try to start the [!INCLUDE [addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the GUI gives the following error:  
   
 ```  
 There was an error loading the binding, <binding name>, from your system configuration.  
@@ -37,35 +37,35 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  **Cause**  
   
- When you start the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], WCF loads the adapter bindings for all the installed adapters. In turn, the adapter bindings are dependent on the specific enterprise application client software. So, you could face this issue for one or both of the following reasons:  
+ When you start the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], WCF loads the adapter bindings for all the installed adapters. In turn, the adapter bindings are dependent on the specific enterprise application client software. So, you could face this issue for one or both of the following reasons:  
   
--   The required LOB client software is not installed on the computer where you installed the adapter.  
+- The required LOB client software is not installed on the computer where you installed the adapter.  
   
--   You did a "Typical" or "Complete" installation of the adapter, which installs all the adapters in the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. However, the client libraries might be installed for only one enterprise application. As a result, the GUI fails to load the bindings for the other adapters.  
+- You did a "Typical" or "Complete" installation of the adapter, which installs all the adapters in the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. However, the client libraries might be installed for only one enterprise application. As a result, the GUI fails to load the bindings for the other adapters.  
   
- **Resolution**  
+  **Resolution**  
   
--   Make sure the required client versions are installed on the computer where you installed the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].  
+- Make sure the required client versions are installed on the computer where you installed the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].  
   
--   Make sure you do a custom installation of the adapters to install only the adapter you need.  
+- Make sure you do a custom installation of the adapters to install only the adapter you need.  
   
 ###  <a name="BKMK_SiebelDispAdap"></a> The Siebel adapter does not display in the list of adapters in BizTalk Server Administration console  
  **Problem**  
   
- Unlike the earlier version of the adapters that shipped with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] that shipped with [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] does not show up in the list of adapters in the BizTalk Server Administration console.  
+ Unlike the earlier version of the adapters that shipped with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] that shipped with [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] does not show up in the list of adapters in the BizTalk Server Administration console.  
   
  **Cause**  
   
- The latest [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] is a WCF custom binding. So, although the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console displays the [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)], it does not display the WCF custom bindings and hence, does not display the WCF-based [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
+ The latest [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] is a WCF custom binding. So, although the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console displays the [!INCLUDE [wcfadapter_short](../../includes/wcfadapter-short-md.md)], it does not display the WCF custom bindings and hence, does not display the WCF-based [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
   
  **Resolution**  
   
- You can explicitly add the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console by following the steps mentioned in [Add the Siebel Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md).  
+ You can explicitly add the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] to the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console by following the steps mentioned in [Add the Siebel Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-siebel/add-the-siebel-adapter-to-biztalk-server-administration-console.md).  
   
 ###  <a name="BKMK_SiebelConnecting"></a> Error while connecting to the Siebel system  
  **Problem**  
   
- The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] gives the following error when you try to connect to the Siebel system:  
+ The [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] gives the following error when you try to connect to the Siebel system:  
   
 ```  
 Connecting to the system LOB has failed. Retrieving the COM class factory for component with CLSID {ID} failed due to the following error: 80040154  
@@ -77,7 +77,7 @@ Connecting to the system LOB has failed. Retrieving the COM class factory for co
   
  **Resolution**  
   
- Make sure the supported version of the Siebel Web client is installed on the computer. Refer to the installation guide for supported client and server versions for Siebel. The installation guide is available at \<system drive\>:\Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
+ Make sure the supported version of the Siebel Web client is installed on the computer. Refer to the installation guide for supported client and server versions for Siebel. The installation guide is available at \<system drive\>:\Program Files\Microsoft [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
   
 ###  <a name="BKMK_SiebelXMLRetrieve"></a> Error while retrieving XMLs with more than 65536 nodes  
  **Problem**  
@@ -97,21 +97,21 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
  You can fix this issue by setting the `maxItemsInObjectGraph` parameter. You can set this in any of the following two ways:  
   
--   Set this parameter by changing the `maxItemsInObjectGraph` parameter in the `ServiceBehavior` attribute on your service class.  
+- Set this parameter by changing the `maxItemsInObjectGraph` parameter in the `ServiceBehavior` attribute on your service class.  
   
--   Add the following to your application's app.config file.  
+- Add the following to your application's app.config file.  
   
-    ```  
-    <behaviors>  
-      <endpointBehaviors>  
-        <behavior name="NewBehavior">  
-          <dataContractSerializer maxItemsInObjectGraph="65536000" />  
-        </behavior>  
-      </endpointBehaviors>  
-    </behaviors>  
-    ```  
+  ```  
+  <behaviors>  
+    <endpointBehaviors>  
+      <behavior name="NewBehavior">  
+        <dataContractSerializer maxItemsInObjectGraph="65536000" />  
+      </behavior>  
+    </endpointBehaviors>  
+  </behaviors>  
+  ```  
   
- A sample app.config will look like:  
+  A sample app.config will look like:  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -135,7 +135,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
 ###  <a name="BKMK_SiebelConnURI"></a> Error while specifying a connection URI for a WCF-Custom port in BizTalk  
  **Problem**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] gives the following error when you specify a connection URI to connect to the Siebel system.  
+ [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] gives the following error when you specify a connection URI to connect to the Siebel system.  
   
 ```  
 Error saving properties.  
@@ -155,21 +155,21 @@ Error saving properties.
 ###  <a name="BKMK_SiebelPerfOps"></a> Error while performing operation on the Siebel system  
  **Problem**  
   
- The adapter gives the following error when performing any operation on the Siebel system using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
+ The adapter gives the following error when performing any operation on the Siebel system using [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
--   **For BizTalk Server**  
+- **For BizTalk Server**  
   
-    ```  
-    System.ArgumentNullException: Value cannot be null.  
-    ```  
+  ```  
+  System.ArgumentNullException: Value cannot be null.  
+  ```  
   
- **Cause**  
+  **Cause**  
   
- The WCF action for the message is not specified. WCF requires a SOAP action to be specified for every operation, which informs the adapter about the operation to be performed on the LOB application.  
+  The WCF action for the message is not specified. WCF requires a SOAP action to be specified for every operation, which informs the adapter about the operation to be performed on the LOB application.  
   
- **Resolution**  
+  **Resolution**  
   
- Specify the SOAP action in the send port or as a message context property in a BizTalk orchestration. For instructions, see [Configure the SOAP action for Siebel](../../adapters-and-accelerators/adapter-siebel/configure-the-soap-action-for-siebel.md). See [Messages and message schemas](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md) for a list of actions for each operation.  
+  Specify the SOAP action in the send port or as a message context property in a BizTalk orchestration. For instructions, see [Configure the SOAP action for Siebel](../../adapters-and-accelerators/adapter-siebel/configure-the-soap-action-for-siebel.md). See [Messages and message schemas](messages-and-message-schemas-for-siebel-adapter-in-biztalk.md) for a list of actions for each operation.  
   
 ###  <a name="BKMK_SiebelXmlParsing"></a> XmlReaderParsingException due to an incorrect operation name in the specified action  
  **Problem**  
@@ -185,7 +185,7 @@ Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argume
   
  **Cause**  
   
- If you configure a WCF-Custom port by importing the port binding file created by the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the action in the port is specified in the following format:  
+ If you configure a WCF-Custom port by importing the port binding file created by the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the action in the port is specified in the following format:  
   
 ```  
 <BtsActionMapping>  
@@ -193,16 +193,16 @@ Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argume
 </BtsActionMapping>  
 ```  
   
- In the preceding format, the operation name is governed by the operation you chose while generating the schema. For example, if you generated schema for a Query operation on a Siebel business component, the operation name in the action will be "Query". However, the operation name in the logical port created in the BizTalk orchestration in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] might be different.  
+ In the preceding format, the operation name is governed by the operation you chose while generating the schema. For example, if you generated schema for a Query operation on a Siebel business component, the operation name in the action will be "Query". However, the operation name in the logical port created in the BizTalk orchestration in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] might be different.  
   
  **Resolution**  
   
- Make sure the operation names in both the logical port (in the BizTalk orchestration in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]) and the physical port (in BizTalk Server Administration console) are the same.  
+ Make sure the operation names in both the logical port (in the BizTalk orchestration in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]) and the physical port (in BizTalk Server Administration console) are the same.  
   
 ###  <a name="BKMK_SiebelTerminate"></a> Application using the Siebel adapter does not terminate  
  **Problem**  
   
- An application that uses the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Siebel client version 7.5 does not terminate.  
+ An application that uses the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Siebel client version 7.5 does not terminate.  
   
  **Cause**  
   
@@ -215,16 +215,16 @@ Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argume
 ###  <a name="BKMK_SiebelHang"></a> Siebel adapter may hang if the Siebel server is restarted  
  **Problem**  
   
- If the Siebel server is restarted while the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] is sending a message to the Siebel server using, the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] may hang.  
+ If the Siebel server is restarted while the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] is sending a message to the Siebel server using, the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] may hang.  
   
  **Resolution**  
   
- Restart the BizTalk application host instance. To do so from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, in the console tree expand **BizTalk Group**, expand **Platform Settings**, and then click **Host Instances**. From the right pane, right-click the host name, and then select **Restart**.  
+ Restart the BizTalk application host instance. To do so from the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, in the console tree expand <strong>BizTalk Group</strong>, expand <strong>Platform Settings</strong>, and then click <strong>Host Instances</strong>. From the right pane, right-click the host name, and then select <strong>Restart</strong>.  
   
 ###  <a name="BKMK_SiebelAction"></a> The adapter does not recognize the action on the physical port even though you use the binding file generated by the Consume Adapter Service add-in to create the ports  
  **Problem**  
   
- After you use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] to generate schema for a specific operation on the Siebel system, the add-in also creates a port binding file. You can import this binding file using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create physical ports in BizTalk Server. However, when you send messages to the Siebel system using such ports, the adapter fails to understand the action specified on the port and gives an error similar to the following:  
+ After you use the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] to generate schema for a specific operation on the Siebel system, the add-in also creates a port binding file. You can import this binding file using the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create physical ports in BizTalk Server. However, when you send messages to the Siebel system using such ports, the adapter fails to understand the action specified on the port and gives an error similar to the following:  
   
 ```  
 Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect Action   
@@ -235,7 +235,7 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
   
  **Cause**  
   
- When you create logical ports in a BizTalk orchestration, you specify certain names for the operations on those ports or you just use the default names like Operation_1, Operation_2, etc. However, in the binding file generated by the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], the operation name is same as the name of the operation for which you generate metadata. For example, if you generate metadata for Insert operation on the Account business component, the action will be set to the following:  
+ When you create logical ports in a BizTalk orchestration, you specify certain names for the operations on those ports or you just use the default names like Operation_1, Operation_2, etc. However, in the binding file generated by the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], the operation name is same as the name of the operation for which you generate metadata. For example, if you generate metadata for Insert operation on the Account business component, the action will be set to the following:  
   
 ```  
 <Operation Name="Insert" Action="http://Microsoft.LobServices.Siebel/2007/03/BusinessObjects/Account/Account/Insert" />  
@@ -258,7 +258,7 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
 ###  <a name="BKMK_SiebelXMLEncode"></a> Siebel adapter does not handle Siebel objects with XML encoded strings in the name  
  **Problem**  
   
- The [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] cannot perform operations involving Siebel objects (business objects, business components, business services, picklist, methods, fields, arguments, etc) that have XML encoded strings in their name. For example, the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] will not be able to invoke a business service method with the name Time_x0020_Stamp.  
+ The [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] cannot perform operations involving Siebel objects (business objects, business components, business services, picklist, methods, fields, arguments, etc) that have XML encoded strings in their name. For example, the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] will not be able to invoke a business service method with the name Time_x0020_Stamp.  
   
  **Resolution**  
   
@@ -267,7 +267,7 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
 ###  <a name="BKMK_SiebelRootNode"></a> Error with RootNode TypeName in BizTalk Projects  
  **Problem**  
   
- In a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], if the schemas generated from the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] contains invalid characters or reserved words for the **RootNode TypeName** property, the following error will occur while compiling the project:  
+ In a BizTalk project in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], if the schemas generated from the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] contains invalid characters or reserved words for the <strong>RootNode TypeName</strong> property, the following error will occur while compiling the project:  
   
 ```  
 Node <node reference> - Specify a valid .NET type name for this root node.  
@@ -291,7 +291,7 @@ The element 'bindings' has invalid child element 'siebelBinding'. List of possib
   
  **Cause**  
   
- This warning appears because the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] binding, `siebelBinding`, is not a standard binding shipped with the [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)].  
+ This warning appears because the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] binding, `siebelBinding`, is not a standard binding shipped with the [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)].  
   
  **Resolution**  
   

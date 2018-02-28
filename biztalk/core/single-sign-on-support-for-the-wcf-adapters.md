@@ -22,10 +22,10 @@ You can configure Enterprise Single Sign-On (SSO) for use with a WCF receive loc
   
  In an enterprise environment, where a user interacts with various systems and applications, it is likely that the environment does not maintain the user context through multiple processes, products, and computers. This user context is crucial to providing single sign-on capabilities, because it is necessary to verify who initiated the original request. To overcome this problem Enterprise Single Sign-On (SSO) provides an SSO ticket (not a Kerberos ticket) that applications can use to get the credentials that correspond to the user who made the original request.  
   
- When a receive adapter gets a message, the adapter can request an SSO ticket from an SSO server. This encrypted ticket contains the [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] identity of the user that made the request and a time-out period. After the ticket is acquired, it is added as a property to the incoming message. When a send adapter transmits a message, the adapter contacts an SSO server with the issued SSO ticket and an affiliate application name for which the adapter is trying to retrieve a credential. The SSO server looks up the user credential for the target affiliate application, and then returns the credential to the send adapter, which uses it to send an appropriately authenticated message to the affiliate application.  
+ When a receive adapter gets a message, the adapter can request an SSO ticket from an SSO server. This encrypted ticket contains the [!INCLUDE [btsWinNoVersion](../includes/btswinnoversion-md.md)] identity of the user that made the request and a time-out period. After the ticket is acquired, it is added as a property to the incoming message. When a send adapter transmits a message, the adapter contacts an SSO server with the issued SSO ticket and an affiliate application name for which the adapter is trying to retrieve a credential. The SSO server looks up the user credential for the target affiliate application, and then returns the credential to the send adapter, which uses it to send an appropriately authenticated message to the affiliate application.  
   
 ## Single Sign-On Support for the WCF Receive Locations  
- The applied security settings combined with the type of a WCF adapter used for a receive location decide whether the WCF receive adapter can issue SSO tickets. For the WCF receive adapter to issue an SSO token, WCF clients have to send a credential that the adapter can impersonate. Impersonation is the ability of a server application to take on the identity of the client. The credential must map to a valid [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] user account for proper impersonation.  
+ The applied security settings combined with the type of a WCF adapter used for a receive location decide whether the WCF receive adapter can issue SSO tickets. For the WCF receive adapter to issue an SSO token, WCF clients have to send a credential that the adapter can impersonate. Impersonation is the ability of a server application to take on the identity of the client. The credential must map to a valid [!INCLUDE [btsWinNoVersion](../includes/btswinnoversion-md.md)] user account for proper impersonation.  
   
 > [!NOTE]
 >  For the security settings and the WCF adapters that do not demand the clients to send credentials for impersonation, you can issue SSO tickets with any type of credentials that the clients send in a custom receive pipeline component. For more information about how to handle SSO tickets in receive pipeline components, see the sample pipeline component, InPipelineComp, included in [File Inventory for the Service Oriented Solution](../core/file-inventory-for-the-service-oriented-solution.md).  
@@ -35,7 +35,7 @@ You can configure Enterprise Single Sign-On (SSO) for use with a WCF receive loc
  The WCF-BasicHttp receive adapter can issue an SSO ticket from the SSO server only in the security configurations shown in the following table.  
   
 > [!NOTE]
->  For more information about mapping a certificate to a [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] user account, see "Mapping certificates to user accounts" at [http://go.microsoft.com/fwlink/?LinkId=87478](http://go.microsoft.com/fwlink/?LinkId=87478).  
+>  For more information about mapping a certificate to a [!INCLUDE [btsWinNoVersion](../includes/btswinnoversion-md.md)] user account, see "Mapping certificates to user accounts" at [http://go.microsoft.com/fwlink/?LinkId=87478](http://go.microsoft.com/fwlink/?LinkId=87478).  
   
 |Security mode|Transport client credential type|Message client credential type|  
 |-------------------|--------------------------------------|------------------------------------|  
@@ -109,7 +109,7 @@ You can configure Enterprise Single Sign-On (SSO) for use with a WCF receive loc
 |Message|N/A|UserName|  
   
 > [!NOTE]
->  For a WCF send port to validate and redeem an SSO ticket properly, the **SSOTicket** and **OriginatorSID** context properties must be available in a message to be sent. A receive location with Single Sign-On enabled can promote these properties from a sender's [!INCLUDE[btsWinNoVersion](../includes/btswinnoversion-md.md)] account.  
+>  For a WCF send port to validate and redeem an SSO ticket properly, the <strong>SSOTicket</strong> and <strong>OriginatorSID</strong> context properties must be available in a message to be sent. A receive location with Single Sign-On enabled can promote these properties from a sender's [!INCLUDE [btsWinNoVersion](../includes/btswinnoversion-md.md)] account.  
   
 ## See Also  
  [Enterprise Single Sign-On](../core/enterprise-single-sign-on2.md)

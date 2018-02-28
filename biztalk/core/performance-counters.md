@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Performance Counters
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes performance counters that you can use to detect bottlenecks. These performance counters are described in this section.  
+Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes performance counters that you can use to detect bottlenecks. These performance counters are described in this section.  
   
 ## In This Section  
   

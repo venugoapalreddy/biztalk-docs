@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How the EDI Assembler Works
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] performs most processing of EDI-encoded interchanges to be sent in the EDI Send Pipeline (`Microsoft.BizTalk.DefaultPipelines.EDISendPipeline`). This pipeline includes the EDI assembler pipeline component, which performs the following processing:  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] performs most processing of EDI-encoded interchanges to be sent in the EDI Send Pipeline (`Microsoft.BizTalk.DefaultPipelines.EDISendPipeline`). This pipeline includes the EDI assembler pipeline component, which performs the following processing:  
   
 -   Serializes the EDI interchange, converting XML-encoded messages into EDI transaction sets in the interchange.  
   
@@ -94,7 +94,7 @@ manager: "anneta"
 |Group control number|GS6|UNG5|  
 |Transaction set control number (X12)<br /><br /> Transaction set reference number (EDIFACT)|ST2|UNH1|  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will set the interchange control number for the next interchange sent based on the range of values that you entered in the **Interchange control number (ISA13)** property on the **Local Host Settings** page (under **Interchange Settings**) of the one-way agreement tab in the **Agreement Properties** dialog box. It will increment this number for each subsequent interchange, until the maximum value is reached.  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will set the interchange control number for the next interchange sent based on the range of values that you entered in the <strong>Interchange control number (ISA13)</strong> property on the <strong>Local Host Settings</strong> page (under <strong>Interchange Settings</strong>) of the one-way agreement tab in the <strong>Agreement Properties</strong> dialog box. It will increment this number for each subsequent interchange, until the maximum value is reached.  
   
  If the interchange control number is specified using the EdiOverride context properties, the value specified will be used for this interchange and will not affect the interchange control number specified in agreement.  
   
@@ -107,22 +107,22 @@ manager: "anneta"
  If no agreement is defined, the numbers are taken from the same pages in the fallback agreement. The send pipeline stores the last-used control number, and then enters an incremented number for the next interchange, group, and transaction set.  
   
 > [!NOTE]
->  If any control number reaches the maximum value of the specified range, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will raise an error and suspend the interchange. You can manually reset the control number, or configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to automatically reset to the lower limit, in the **Local Host Settings** page in the **Agreement Properties** dialog box for both X12 and EDIFACT messages.  
-  
+>  If any control number reaches the maximum value of the specified range, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will raise an error and suspend the interchange. You can manually reset the control number, or configure [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to automatically reset to the lower limit, in the <strong>Local Host Settings</strong> page in the <strong>Agreement Properties</strong> dialog box for both X12 and EDIFACT messages.  
+> 
 > [!NOTE]
 >  Control numbers are saved in the dbo.EdiSequenceNumbers table of the BizTalk MessageBox database. You should manage this database table by purging the control numbers from the table or archiving the control numbers, as appropriate.  
   
  In EDIFACT, the control numbers consist of alphanumeric values. The following formats are supported:  
   
--   Numbers (for example, "1")  
+- Numbers (for example, "1")  
   
--   PrefixNumbersSuffix (for example, "WA1A")  
+- PrefixNumbersSuffix (for example, "WA1A")  
   
--   PrefixNumbers (for example, "AA1")  
+- PrefixNumbers (for example, "AA1")  
   
--   NumbersSuffix (for example, "1AA")  
+- NumbersSuffix (for example, "1AA")  
   
- In these formats, the number characters can be from "0" to "9", and the prefix and suffix characters can be any characters other than numbers. Only the number will be incremented to reach the maximum value.  
+  In these formats, the number characters can be from "0" to "9", and the prefix and suffix characters can be any characters other than numbers. Only the number will be incremented to reach the maximum value.  
   
 #### Count of segments  
  For each transaction set in an interchange, the EDI send pipeline will verify the count of segments in the transaction set, as indicated in the SE01 data element for X12 and the UNT01 data element for EDIFACT. If the value of the appropriate data element does not match the actual count, the send pipeline will update the count to reflect the actual number of segments. The transaction set will not be rejected because of an erroneous count. The update of the count will be logged in a warning in the event viewer. This does not apply to the processing of preserved batches.  

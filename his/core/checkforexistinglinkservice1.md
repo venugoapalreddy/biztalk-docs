@@ -20,7 +20,7 @@ The **CheckForExistingLinkService** function is used to check to see if a link s
   
 ```  
   
-          BOOL bCreateService(   
+          BOOL bCreateService(   
 HKEY *hGlobalKey,  
 LPSTRszLinkRegistryRoot,  
 LPSTRszTitle);  

@@ -16,7 +16,7 @@ manager: "anneta"
 # How to Associate 3270 Printer LUs with 3270 Display LUs
 Users who have host applications with direct relationships between display LUs and printer LUs can associate printers with the LUs.  
   
- You can associate a printer LU with a display LU. This feature is designed to support specialized host applications that have hard-coded associations between display LUs and printer LUs. When a 3270 display LU is configured to have an associated printer and then subsequently assigned to a user or group, users will see both the display LU and a special printer LU named ASSOCPRT. When users connect to the display LU, they can then open the ASSOCPRT LU, which [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] maps to the defined associated printer LU.  
+ You can associate a printer LU with a display LU. This feature is designed to support specialized host applications that have hard-coded associations between display LUs and printer LUs. When a 3270 display LU is configured to have an associated printer and then subsequently assigned to a user or group, users will see both the display LU and a special printer LU named ASSOCPRT. When users connect to the display LU, they can then open the ASSOCPRT LU, which [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] maps to the defined associated printer LU.  
   
  You can also add display LUs with associated printer LUs to LU pools. The LU pools can then be assigned to users and groups.  
   

@@ -15,10 +15,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for Insert, Update, Delete, and Select Operations on Tables and Views
-The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces Insert, Update, Delete, and Select operations for each table and view in the SQL Server database. These operations perform the appropriate SQL statement qualified by a WHERE clause. The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] uses strongly-typed records and record sets in these operations.  
+The [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] surfaces Insert, Update, Delete, and Select operations for each table and view in the SQL Server database. These operations perform the appropriate SQL statement qualified by a WHERE clause. The [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] uses strongly-typed records and record sets in these operations.  
   
 ## Message Structure for Table Operations  
- The following table shows the XML message structure for the basic table operations exposed by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] on SQL Server database tables. The target table for an operation is specified in the message action and also appears in the target namespace.  
+ The following table shows the XML message structure for the basic table operations exposed by the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] on SQL Server database tables. The target table for an operation is specified in the message action and also appears in the target namespace.  
   
 |Operation|XML Message|Description|SQL Executed by the Adapter|  
 |---------------|-----------------|-----------------|---------------------------------|  
@@ -49,7 +49,7 @@ The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces Insert, Upd
 >  The message structure for the basic table operations on views is the same as that on tables except that the view replaces the table: `Insert xmlns="[VERSION]/ViewOp/[SCHEMA]/[VIEW_NAME]"`.  
   
 ## Message Actions for Basic Table Operations  
- The following table shows the message actions that are used by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] for the basic table operations on tables. The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] uses the table name specified in the message action to determine the target table of the operation.  
+ The following table shows the message actions that are used by the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] for the basic table operations on tables. The [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] uses the table name specified in the message action to determine the target table of the operation.  
   
 |Operation|Message Action|Example|  
 |---------------|--------------------|-------------|  

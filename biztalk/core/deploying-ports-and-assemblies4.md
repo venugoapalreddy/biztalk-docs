@@ -5,7 +5,7 @@ redirect_document_id: TRUE
 ROBOTS: NOINDEX
 --- 
 # Deploying Ports and Assemblies
-Using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can duplicate ports and assemblies on a target computer. BizTalk Server exports the send ports/receive location configuration into an XML file.  
+Using [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can duplicate ports and assemblies on a target computer. BizTalk Server exports the send ports/receive location configuration into an XML file.  
   
  You can use BizTalk Server to do the following tasks:  
   

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Table of Parameters for AS/400 Communication
-The following table summarizes details about configuring [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] for the AS/400 environment. In addition, for an X.25 connection using permanent virtual circuit (PVC), specify the PVC Alias.  
+The following table summarizes details about configuring [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] for the AS/400 environment. In addition, for an X.25 connection using permanent virtual circuit (PVC), specify the PVC Alias.  
   
 |SNA<br /><br /> Server<br /><br /> element|Parameter<br /><br /> name in<br /><br /> Host Integration Server|Instructions for configuring<br /><br /> for the AS/400 environment|  
 |--------------------------------|-------------------------------------------------------|------------------------------------------------------------------|  

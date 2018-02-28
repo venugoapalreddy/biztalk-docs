@@ -1,1 +1,1 @@
-Trading Partner Management​
+Trading Partner Management 

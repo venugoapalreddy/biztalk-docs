@@ -18,7 +18,7 @@ manager: "anneta"
 # Accessibility for People with Disabilities
 
 ## Overview
-Microsoft is committed to making its products and services easier for everyone to use. Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] contains features that make them more accessible for people with disabilities.  
+Microsoft is committed to making its products and services easier for everyone to use. Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] contains features that make them more accessible for people with disabilities.  
   
 > [!NOTE]
 >  For general information about accessibility features and services from Microsoft, see the Microsoft Accessibility Web site at [http://go.microsoft.com/fwlink/?LinkId=56272](http://go.microsoft.com/fwlink/?LinkId=56272).  

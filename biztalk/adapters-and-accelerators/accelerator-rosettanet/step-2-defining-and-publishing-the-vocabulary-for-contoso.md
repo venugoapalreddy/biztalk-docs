@@ -18,17 +18,17 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Step 2: Defining and Publishing the Vocabulary for Contoso
-In this scenario, Contoso implements a business policy that makes sure that inventory is always on hand if an emergency occurs. You create business policies using the Business Rule Composer in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. In this step, you create the vocabulary to use when you define the business policy.  
+In this scenario, Contoso implements a business policy that makes sure that inventory is always on hand if an emergency occurs. You create business policies using the Business Rule Composer in [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. In this step, you create the vocabulary to use when you define the business policy.  
   
 ### To add a new vocabulary  
   
-1.  Click **Start**, point to **All Programs**, point to **Microsoft**[!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)], and then click **Business Rule Composer**.  
+1. Click <strong>Start</strong>, point to <strong>All Programs</strong>, point to <strong>Microsoft</strong>[!INCLUDE [btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)], and then click <strong>Business Rule Composer</strong>.  
   
-2.  In the Open Rule Store dialog box, click **OK**.  
+2. In the Open Rule Store dialog box, click **OK**.  
   
-3.  In the Facts Explorer pane, on the **Vocabularies** tab, right-click **Vocabularies**, and then click **Add New Vocabulary**.  
+3. In the Facts Explorer pane, on the **Vocabularies** tab, right-click **Vocabularies**, and then click **Add New Vocabulary**.  
   
-4.  Name the vocabulary **3A2PriceAvailabilityVocabulary**, and then press **Enter**.  
+4. Name the vocabulary **3A2PriceAvailabilityVocabulary**, and then press **Enter**.  
   
 ### To define a constant vocabulary value  
   

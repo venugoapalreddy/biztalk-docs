@@ -42,7 +42,7 @@ Local APPC LUs can be independent or dependent.
  **Member of Default Outgoing Local APPC LU Pool**  
  If you want this LU to be available for use by a 5250 user or invoking TP not specifying a local LU, select this check box.  
   
- When a request comes from an invoking TP, and the request does not specify a local LU for the invoking TP to use, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] first checks the user record of the user who started the TP, and tries to use the default local APPC LU assigned to that user or group. If this does not succeed, Host Integration Server tries to find a free LU in the pool of Default Outgoing Local APPC LUs. If this in turn does not succeed, the request is rejected.  
+ When a request comes from an invoking TP, and the request does not specify a local LU for the invoking TP to use, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] first checks the user record of the user who started the TP, and tries to use the default local APPC LU assigned to that user or group. If this does not succeed, Host Integration Server tries to find a free LU in the pool of Default Outgoing Local APPC LUs. If this in turn does not succeed, the request is rejected.  
   
  Local LUs only support the number of sessions configured for the mode being used. The default for QPCSUPP is 64 sessions. If you need more than that number of sessions, then you need to configure multiple local LUs or increase the session limits in the mode definition for each mode used. To simplify user configuration, you can make all of these local APPC LUs part of the default pool by checking the **Member of Default Outgoing Local LU Pool.** This allows any user who does not specify a local APPC LU to get an available session from any local APPC LU in the default pool. This also enables load balancing among local APPC LUs. In addition, to ensure proper load balancing, do not specify a **Default Local LU Alias** for users or groups. However, if you want to have certain users or groups default to a certain local APPC LU, then you should specify that local APPC LU as the **Default Local LU Alias** in the user or group properties.  
   
@@ -77,19 +77,19 @@ Local APPC LUs can be independent or dependent.
   
  **To explicitly partner LUs**  
   
-1.  In **SNA Manager**, click the **APPC Modes** folder.  
+1. In **SNA Manager**, click the **APPC Modes** folder.  
   
-2.  Right-click **RSYNPRTN**, and then click **Properties**.  
+2. Right-click **RSYNPRTN**, and then click **Properties**.  
   
-3.  Select the **Partner** tab.  
+3. Select the **Partner** tab.  
   
-4.  Click **Add**, and then follow the directions in the dialog box.  
+4. Click **Add**, and then follow the directions in the dialog box.  
   
- If you would like the Resync Service to use a different mode name, you can specify a new name with the following registry key:  
+   If you would like the Resync Service to use a different mode name, you can specify a new name with the following registry key:  
   
- HKLM\Software\Microsoft\Host Integration Server\UN2  
+   HKLM\Software\Microsoft\Host Integration Server\UN2  
   
- REG_SZ: modename  
+   REG_SZ: modename  
   
 ## See Also  
  [SNA Manager Help](../core/sna-manager-help1.md)

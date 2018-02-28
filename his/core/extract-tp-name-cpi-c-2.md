@@ -20,7 +20,7 @@ The **Extract_TP_Name** call (function name **cmetpn**) returns the *TP_name* ch
   
 ```  
   
-CM_ENTRY Extract_TP_Name(   
+CM_ENTRY Extract_TP_Name(   
   unsigned char FAR *conversation_ID,    
   unsigned char FAR *TP_name,            
   CM_INT32 FAR *TP_name_length,          

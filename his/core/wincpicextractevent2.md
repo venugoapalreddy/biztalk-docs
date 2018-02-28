@@ -20,7 +20,7 @@ The **WinCPICExtractEvent** function provides a method for an application to det
   
 ```  
   
-        VOID WINAPI WinCPICExtractEvent(   
+        VOID WINAPI WinCPICExtractEvent(   
 unsigned char FAR*conversation_ID,HANDLE FAR*event_handle,    CM_INT32 FAR*return_code);  
 ```  
   

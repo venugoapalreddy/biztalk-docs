@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring X12 Fallback Agreement Properties for Interchange Processing
-X12 interchange processing properties define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the envelope of an X12-encoded interchange received from a party.  
+X12 interchange processing properties define how [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the envelope of an X12-encoded interchange received from a party.  
   
 ## In This Section  
   

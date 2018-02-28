@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # MSMQ Adapter
-The MSMQ adapter lets you use Message Queuing 4.0 from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Integrating Message Queuing technology with BizTalk Server enables applications that are running at different times to communicate across heterogeneous networks and systems that may be temporarily offline.  
+The MSMQ adapter lets you use Message Queuing 4.0 from [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Integrating Message Queuing technology with BizTalk Server enables applications that are running at different times to communicate across heterogeneous networks and systems that may be temporarily offline.  
   
  The MSMQ adapter features include the following:  
   

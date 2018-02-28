@@ -20,7 +20,7 @@ The **WinCSVStartup** function allows an application to specify the version of W
   
 ```  
   
-int WINAPI WinCSVStartup(   
+int WINAPI WinCSVStartup(   
 WORD wVersionRequired,  
 LPWCSVDATA lpwcsvdata  
 );  

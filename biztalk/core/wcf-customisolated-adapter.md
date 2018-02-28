@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # WCF-CustomIsolated Adapter
-The WCF-CustomIsolated adapter is an isolated adapter to allow configuring receive locations over the HTTP transport with any binding and behavior settings for Windows Communication Foundation (WCF) that are applicable to [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. You can use the WCF-CustomIsolated adapter for scenarios that the standard WCF adapters do not support. The WCF-CustomIsolated adapter also enables you to use the WCF extensibility points in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+The WCF-CustomIsolated adapter is an isolated adapter to allow configuring receive locations over the HTTP transport with any binding and behavior settings for Windows Communication Foundation (WCF) that are applicable to [!INCLUDE [btsCoName](../includes/btsconame-md.md)][!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. You can use the WCF-CustomIsolated adapter for scenarios that the standard WCF adapters do not support. The WCF-CustomIsolated adapter also enables you to use the WCF extensibility points in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  The WCF-CustomIsolated adapter is used for the receive location running in an isolated host. To use the WCF-CustomIsolated adapter, you must use the BizTalk WCF Service Publishing Wizard to create in Microsoft Internet Information Services (IIS) the virtual directory corresponding to this receive location.  
   

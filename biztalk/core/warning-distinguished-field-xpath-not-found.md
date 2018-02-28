@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- You can keep this warning from appearing by changing the XPath for the promoted property in the **Edit Instance XPath** dialog box, which you can access from cells in the **Node Path** column of the table on the **Distinguished Fields** tab in the **Promote Properties** dialog box. You can access the **Promote Properties** dialog box from the **Promote Properties** property of the **Schema** node in the Microsoft® [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window.
+ You can keep this warning from appearing by changing the XPath for the promoted property in the <strong>Edit Instance XPath</strong> dialog box, which you can access from cells in the <strong>Node Path</strong> column of the table on the <strong>Distinguished Fields</strong> tab in the <strong>Promote Properties</strong> dialog box. You can access the <strong>Promote Properties</strong> dialog box from the <strong>Promote Properties</strong> property of the <strong>Schema</strong> node in the Microsoft® [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window.

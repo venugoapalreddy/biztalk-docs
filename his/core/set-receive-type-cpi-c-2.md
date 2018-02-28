@@ -22,7 +22,7 @@ The **Set_Receive_Type** call (function name **cmsrt**) specifies how the progra
   
 ```  
   
-CM_ENTRY Set_Receive_Type(   
+CM_ENTRY Set_Receive_Type(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *receive_type,            
   CM_INT32 FAR *return_code              

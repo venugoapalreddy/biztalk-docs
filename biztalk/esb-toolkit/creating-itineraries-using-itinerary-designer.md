@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Creating Itineraries Using Itinerary Designer
-You can use the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Itinerary Designer to create ESB mediation policies, named itineraries, used at run time for itinerary-based routing. The tool provides several shapes, or model elements, that correspond to different actions that you may perform while designing an itinerary.  
+You can use the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] Itinerary Designer to create ESB mediation policies, named itineraries, used at run time for itinerary-based routing. The tool provides several shapes, or model elements, that correspond to different actions that you may perform while designing an itinerary.  
   
  This section provides conceptual information and guidelines to help you understand how to develop itineraries using the Itinerary Designer. It includes the following topics:  
   

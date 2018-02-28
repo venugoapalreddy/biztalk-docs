@@ -17,15 +17,15 @@ manager: "anneta"
 # Unable to create one or more BizTalk receive locations
 ## Details  
   
-|||  
-|-|-|  
-|Product Name|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|Product Version|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|Event ID|0|  
-|Event Source|0|  
-|Component|0|  
-|Symbolic Name|0|  
-|Message Text|Unable to create one or more BizTalk receive locations.|  
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+|  Product Name   | [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| Product Version |             [!INCLUDE [btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    Event ID     |                                          0                                          |
+|  Event Source   |                                          0                                          |
+|    Component    |                                          0                                          |
+|  Symbolic Name  |                                          0                                          |
+|  Message Text   |               Unable to create one or more BizTalk receive locations.               |
   
 ## Explanation  
  This error indicates that the BizTalk WCF Publishing Wizard failed to create receive locations hosting an isolated WCF adapter.  
@@ -33,7 +33,7 @@ manager: "anneta"
 ## User Action  
  Make sure that BizTalk instance is started.  
   
- For additional information on creating receive locations, see the following resources in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] documentation:  
+ For additional information on creating receive locations, see the following resources in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] documentation:  
   
 -   [Publishing WCF Services with the Isolated WCF Receive Adapters](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   

@@ -18,7 +18,7 @@ The **SNALinkInitialize** function initializes the SNALink. The Base calls this 
   
 ```  
 VOID SNALinkInitializer(  
-HANDLE event   
+HANDLE event   
 );  
 ```  
   

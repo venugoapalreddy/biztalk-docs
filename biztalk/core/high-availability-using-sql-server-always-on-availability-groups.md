@@ -17,9 +17,9 @@ manager: "anneta"
 # High Availability using SQL Server Always On Availability Groups
 Configure high availability using SQL Server AlwaysOn availability groups.
 
-> [!TIP] 
-[Setting up BizTalk Server 2016 using availability groups LAB](https://skastberg.wordpress.com/2017/02/22/setting-up-my-biztalk-server-2016-using-availability-groups-lab/) provides a step-by-step guide written by a Microsoft field engineer. It is based on a lab environment, and includes some observations. Check it out.  
-
+> [!TIP]
+> [Setting up BizTalk Server 2016 using availability groups LAB](https://skastberg.wordpress.com/2017/02/22/setting-up-my-biztalk-server-2016-using-availability-groups-lab/) provides a step-by-step guide written by a Microsoft field engineer. It is based on a lab environment, and includes some observations. Check it out.  
+> 
 > [!IMPORTANT]
 > * Always On Availability Groups is available starting with SQL Server 2016. If you are using a previous SQL Server version, this topic does not apply to you. 
 > * BizTalk Server 2016 supports synchronous-commit mode; asynchronous-commit mode is not supported. For disaster recovery, it is recommended to configure the Backup BizTalk Server job, and use log shipping. See [Backing Up and Restoring BizTalk Server Databases](../core/backing-up-and-restoring-biztalk-server-databases.md) for specific details.
@@ -94,30 +94,30 @@ If you have created additional hosts or will create additional hosts later, ther
 The following SQL Server Agent jobs are associated with BizTalk Server. The jobs installed on each server are different depending on which features are installed and configured. Most of these jobs are created during BizTalk Server configuration. Several are created when configuring log shipping. These jobs need to be replicated on each instance of SQL Server hosting replica of their corresponding BizTalk database. This must be performed manually. 
 
 - BizTalkMgmtDb jobs: 
-	- Backup BizTalk Server (BizTalkMgmtDb) 
-	- CleanupBTFExpiredEntriesJob_BizTalkMgmtDb 
-	- Monitor BizTalk Server (BizTalkMgmtDb) 
+    - Backup BizTalk Server (BizTalkMgmtDb) 
+    - CleanupBTFExpiredEntriesJob_BizTalkMgmtDb 
+    - Monitor BizTalk Server (BizTalkMgmtDb) 
 - BizTalkMsgBoxDb jobs: 
-	- MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb 
-	- MessageBox_Message_Cleanup_BizTalkMsgBoxDb MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb MessageBox_Parts_Cleanup_BizTalkMsgBoxDb 
-	- MessageBox_UpdateStats_BizTalkMsgBoxDb 
-	- Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb 
-	- PurgeSubscriptionsJob_BizTalkMsgBoxDb 
-	- TrackedMessages_Copy_BizTalkMsgBoxDb 
+    - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb 
+    - MessageBox_Message_Cleanup_BizTalkMsgBoxDb MessageBox_Message_ManageRefCountLog_BizTalkMsgBoxDb MessageBox_Parts_Cleanup_BizTalkMsgBoxDb 
+    - MessageBox_UpdateStats_BizTalkMsgBoxDb 
+    - Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb 
+    - PurgeSubscriptionsJob_BizTalkMsgBoxDb 
+    - TrackedMessages_Copy_BizTalkMsgBoxDb 
 - Jobs on additional msgboxes
 - BizTalkDTADb job: 
-	- DTA Purge and Archive (BizTalkDTADb) 
+    - DTA Purge and Archive (BizTalkDTADb) 
 - BizTalkRulesEngineDb job: 
-	- Rules_Database_Cleanup_BizTalkRuleEngineDb 
+    - Rules_Database_Cleanup_BizTalkRuleEngineDb 
 - BAMAlertsApplication job: 
-	- 0 or more DelAlertHistJob 
+    - 0 or more DelAlertHistJob 
 
 Unlike SQL Failover Clustering Instances, in Availability Groups all replicas are active, running, and available. When SQL Agent jobs are duplicated on each replica for failover, they run against the corresponding replica, irrespective of whether it is currently in primary role or secondary role. To make sure these jobs are executed only on the current primary replica, every step in every job must be enclosed within an IF block, as shown: 
 
-	IF (sys.fn_hadr_is_primary_replica(‘dbname’) = 1)  
-	BEGIN  
-	…  
-	END
+    IF (sys.fn_hadr_is_primary_replica(‘dbname’) = 1)  
+    BEGIN  
+    …  
+    END
   
 Replace `‘dbname’` with the corresponding database name against which the job is configured to run. The following example shows this change for TrackedMessages_Copy_BizTalkMsgBoxDb on BizTalkMsgBoxDb: 
  
@@ -126,73 +126,73 @@ Replace `‘dbname’` with the corresponding database name against which the jo
 ### Configure BizTalk Server when Availability Groups are already set up
 
 1. Check your OS requirements: 
-* On all **Windows Server 2012 R2** computers, install the [3090973 MSDTC hotfix](https://support.microsoft.com/kb/3090973) (opens a KB article)
-* On all **Windows Server 2016** computers, enable the [RemoteAccessEnabled registry key](https://support.microsoft.com/kb/3182294) (opens a KB article)
-2. Make sure to have at least four different SQL instances which will host the various BizTalk databases. The secondary replicas should also be set up on different SQL instances. This results in a minimum of 8 SQL instances (1 primary and 1 secondary replica for each of the 4 instances), and a minimum of 4 Availability Groups. See the above illustration for this Availability Group configuration. Make sure Availability Groups are created with the **Per Database DTC Support** option as this cannot be changed later. 
-3. When configuring BizTalk Server and specifying the SQL server name, use the Availability Group’s listener name instead of the actual machine name. This creates the BizTalk databases, logins, and SQL Agent jobs on the current primary replica. 
-4. Stop BizTalk processing (Host Instances, SSO Service, IIS, Rules Engine Update Service, BAMAlerts Service, and so on), and stop the SQL Agent Jobs. 
-5. Now add BIzTalk databases to the respective Availability Groups. 
-6. Enclose body of SQL Agent job steps within `IF` block (mentioned previously) to make sure they run only if the target is the primary replica. 
-7. Script Logins and SQL Agent Jobs to replicate them on corresponding replica. 
-8. Replicate SQL DBMail Profile and Account for BAM Alerts on corresponding SQL instances hosting the secondary replica. 
-9. If you are adding an additional message box database or deploying a new BAM activity/view later, then new SQL jobs are created for new message box databases or BAM Alerts database on the current primary replica. Make sure to edit it on primary replica, and then create them manually on the corresponding secondary replicas. 
+2. On all **Windows Server 2012 R2** computers, install the [3090973 MSDTC hotfix](https://support.microsoft.com/kb/3090973) (opens a KB article)
+3. On all **Windows Server 2016** computers, enable the [RemoteAccessEnabled registry key](https://support.microsoft.com/kb/3182294) (opens a KB article)
+4. Make sure to have at least four different SQL instances which will host the various BizTalk databases. The secondary replicas should also be set up on different SQL instances. This results in a minimum of 8 SQL instances (1 primary and 1 secondary replica for each of the 4 instances), and a minimum of 4 Availability Groups. See the above illustration for this Availability Group configuration. Make sure Availability Groups are created with the **Per Database DTC Support** option as this cannot be changed later. 
+5. When configuring BizTalk Server and specifying the SQL server name, use the Availability Group’s listener name instead of the actual machine name. This creates the BizTalk databases, logins, and SQL Agent jobs on the current primary replica. 
+6. Stop BizTalk processing (Host Instances, SSO Service, IIS, Rules Engine Update Service, BAMAlerts Service, and so on), and stop the SQL Agent Jobs. 
+7. Now add BIzTalk databases to the respective Availability Groups. 
+8. Enclose body of SQL Agent job steps within `IF` block (mentioned previously) to make sure they run only if the target is the primary replica. 
+9. Script Logins and SQL Agent Jobs to replicate them on corresponding replica. 
+10. Replicate SQL DBMail Profile and Account for BAM Alerts on corresponding SQL instances hosting the secondary replica. 
+11. If you are adding an additional message box database or deploying a new BAM activity/view later, then new SQL jobs are created for new message box databases or BAM Alerts database on the current primary replica. Make sure to edit it on primary replica, and then create them manually on the corresponding secondary replicas. 
 
 This configuration can also be done using the SQL Instances hosting the primary replica. In this case, after the BizTalk configuration, run the `UpdateDatabase.vbs` and `UpdateRegistry.vbs` scripts on the BizTalk machines after the above steps. This is discussed in more detail in the next section.  
  
 ### Move BizTalk Server databases of an existing BizTalk system to Availability Groups
 
 1. Check your OS requirements: 
-* On all **Windows Server 2012 R2** computers, install the [3090973 MSDTC hotfix](https://support.microsoft.com/kb/3090973) (opens a KB article)
-* On all **Windows Server 2016** computers, enable the [RemoteAccessEnabled registry key](https://support.microsoft.com/kb/3182294) (opens a KB article)
-2. Make sure to have at least four different SQL instances which will host the various BizTalk databases. The secondary replicas should also be set up on different SQL instances. This results in a minimum of 8 SQL instances (1 primary and 1 secondary replica for each of the 4 instances), and a minimum of 4 Availability Groups. See the above illustration for this Availability Group configuration. Make sure Availability Groups are created with **Per Database DTC Support** option as this cannot be changed later.  
-3. Stop BizTalk processing and SQL Agent Jobs. 
-4. Perform full backup of all BizTalk Databases. 
-5. Restore BizTalk databases on the SQL instances currently in the primary role in the Availability Group. 
-6. Script Logins and SQL Agent jobs on corresponding SQL Instances currently in the primary role in the Availability Group.  
-7. Run the `UpdateDatabase.vbs` and `UpdateRegistry.vbs` scripts on the BizTalk machines using the following steps. Enter the Availability Group Listener as the new server name in the input update info xml.  
-	1. Stop all BizTalk services and Enterprise SSO services on BizTalk Server. Stop SQL Agent Service on SQL Server. 
-	2. On BizTalk Server, edit SampleUpdateInfo.xml in the following folder: 
+2. On all **Windows Server 2012 R2** computers, install the [3090973 MSDTC hotfix](https://support.microsoft.com/kb/3090973) (opens a KB article)
+3. On all **Windows Server 2016** computers, enable the [RemoteAccessEnabled registry key](https://support.microsoft.com/kb/3182294) (opens a KB article)
+4. Make sure to have at least four different SQL instances which will host the various BizTalk databases. The secondary replicas should also be set up on different SQL instances. This results in a minimum of 8 SQL instances (1 primary and 1 secondary replica for each of the 4 instances), and a minimum of 4 Availability Groups. See the above illustration for this Availability Group configuration. Make sure Availability Groups are created with **Per Database DTC Support** option as this cannot be changed later.  
+5. Stop BizTalk processing and SQL Agent Jobs. 
+6. Perform full backup of all BizTalk Databases. 
+7. Restore BizTalk databases on the SQL instances currently in the primary role in the Availability Group. 
+8. Script Logins and SQL Agent jobs on corresponding SQL Instances currently in the primary role in the Availability Group.  
+9. Run the `UpdateDatabase.vbs` and `UpdateRegistry.vbs` scripts on the BizTalk machines using the following steps. Enter the Availability Group Listener as the new server name in the input update info xml.  
+    1. Stop all BizTalk services and Enterprise SSO services on BizTalk Server. Stop SQL Agent Service on SQL Server. 
+    2. On BizTalk Server, edit SampleUpdateInfo.xml in the following folder: 
  
-		32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
+        32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
  
-		64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore`
+        64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore`
  
-			1. Replace "SourceServer" with the source server name (old SQL Server hosting old databases).  
-			2. Replace "DestinationServer" with the name of the destination server, which should be the availability group listener name.  
-			3. If you have the BAMAnalysis, BAM databases or RuleEngineDB, uncomment the appropriate sections. 
+            1. Replace "SourceServer" with the source server name (old SQL Server hosting old databases).  
+            2. Replace "DestinationServer" with the name of the destination server, which should be the availability group listener name.  
+            3. If you have the BAMAnalysis, BAM databases or RuleEngineDB, uncomment the appropriate sections. 
 
-	3. Open a command prompt, and go to: 
+    3. Open a command prompt, and go to: 
  
-		32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
+        32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
  
-		64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
+        64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
  
-		At the command prompt, run:  
-	`cscript UpdateDatabase.vbs SampleUpdateInfo.xml`  
+        At the command prompt, run:  
+    `cscript UpdateDatabase.vbs SampleUpdateInfo.xml`  
  
-		Run UpdateDatabase.vbs on only one server in the BizTalk group. 
+        Run UpdateDatabase.vbs on only one server in the BizTalk group. 
 
-	4. Copy the edited SampleUpdateInfo.xml file to the following folder on every BizTalk Server computer in this BizTalk group: 
+    4. Copy the edited SampleUpdateInfo.xml file to the following folder on every BizTalk Server computer in this BizTalk group: 
  
-		32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
+        32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore` 
  
-		64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
+        64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
  
-	5. On each computer in the BizTalk Server group, open a command prompt, and go to: 
+    5. On each computer in the BizTalk Server group, open a command prompt, and go to: 
  
-		32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
+        32-bit computer: `%SystemRoot%\Program Files\Microsoft BizTalk Server 20xx\Schema\Restore`
  
-		64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
+        64-bit computer: `%SystemRoot%\Program Files (x86)\Microsoft BizTalk Server 20xx\Bins32\Schema\Restore` 
  
-		At the command prompt, run:  
-	`cscript UpdateRegistry.vbs SampleUpdateInfo.xml` 
+        At the command prompt, run:  
+    `cscript UpdateRegistry.vbs SampleUpdateInfo.xml` 
  
-		Run UpdateRegistry.vbs on every server in the BizTalk group. 
+        Run UpdateRegistry.vbs on every server in the BizTalk group. 
  
-8. Now move the databases to their respective Availability Groups. 
-9. Replicate the SQL DBMail Profile and Account for BAM Alerts on the SQL instances hosting the replica of the BAMAlerts database. 
-10. Enclose the body of SQL Agent job steps within an IF block to make sure they run only if the target is the primary. 
-11. Script Logins and SQL Agent Jobs to replicate them on the corresponding replica. The UpdateDatabase script also updates the server name in the Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb and TrackedMessages_Copy_BizTalkMsgBoxDb jobs. So script the SQL Agent Jobs only after running the UpdateDatabase script. 
+10. Now move the databases to their respective Availability Groups. 
+11. Replicate the SQL DBMail Profile and Account for BAM Alerts on the SQL instances hosting the replica of the BAMAlerts database. 
+12. Enclose the body of SQL Agent job steps within an IF block to make sure they run only if the target is the primary. 
+13. Script Logins and SQL Agent Jobs to replicate them on the corresponding replica. The UpdateDatabase script also updates the server name in the Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb and TrackedMessages_Copy_BizTalkMsgBoxDb jobs. So script the SQL Agent Jobs only after running the UpdateDatabase script. 
 
 ## Requirements 
 * BizTalk Server 2016 Enterprise
@@ -220,11 +220,11 @@ If the BizTalk Server databases are unavailable, then an in-process instance of 
 #### Behavior of Isolated Host Instances During SQL Server Failover 
 If the BizTalk Server databases are unavailable, then an isolated instance of a BizTalk Server host pauses, and an error similar to the following is generated in the BizTalk Server Application log: 
 
-	All receive locations are being temporarily disabled because either the MessageBox or Configuration database is not available. When these databases become available, the receive locations will be automatically enabled.
+    All receive locations are being temporarily disabled because either the MessageBox or Configuration database is not available. When these databases become available, the receive locations will be automatically enabled.
  
 Once the connection to the SQL Server databases is restored, an informational message similar to the following is written to the BizTalk Server Application log, and then document processing resumes normally: 
 
-	All receive locations are being enabled because both the MessageBox and Configuration databases are back online.
+    All receive locations are being enabled because both the MessageBox and Configuration databases are back online.
 
 #### BizTalk Server Log Shipping for Disaster Recovery 
 BizTalk Server implements database standby capabilities through the use of database log shipping. BizTalk Server log shipping automates the backup and restore of databases and their transaction log files, allowing a standby server to resume database processing in the event that the production database server fails. 

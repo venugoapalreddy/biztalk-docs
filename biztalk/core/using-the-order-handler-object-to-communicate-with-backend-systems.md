@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using the Order Handler Object to Communicate with Backend Systems
-There are many ways in which the business process management solution could communicate with the legacy back-end order system, the cable provisioning system that receives the final orders. The solution uses the .NET remoting facilities found in Microsoft [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] to communicate with the provisioning system.  
+There are many ways in which the business process management solution could communicate with the legacy back-end order system, the cable provisioning system that receives the final orders. The solution uses the .NET remoting facilities found in Microsoft [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] to communicate with the provisioning system.  
   
  The solution uses a common technique of using an interface to define the access object to the back-end system. By putting the interface in a separate assembly the client assembly can have access to the remote object without having to have access to the compiled assembly.  
   

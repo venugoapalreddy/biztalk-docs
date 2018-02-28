@@ -54,7 +54,7 @@ bstrWindowsPassword As String
 |E_NOTIMPL|The method is not implemented.|  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapper Interface (COM)](../esso/issomapper-interface-com.md)   

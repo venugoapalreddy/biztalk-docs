@@ -18,7 +18,7 @@ manager: "anneta"
 # Node types and IDs for the SAP adapter
 
 ## Metadata node types and IDs
-The following table lists the node type and node ID for the SAP artifacts that the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] surfaces. The node ID is the absolute path of the node that is used in the **IMetadataRetrievalContractBrowse**, **Search**, and **GetMetadata** methods.  
+The following table lists the node type and node ID for the SAP artifacts that the [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)] surfaces. The node ID is the absolute path of the node that is used in the <strong>IMetadataRetrievalContractBrowse</strong>, <strong>Search</strong>, and <strong>GetMetadata</strong> methods.  
   
 |Artifact Display Name|Node Type|Node ID|  
 |---------------------------|---------------|-------------|  
@@ -82,7 +82,7 @@ The following table lists the node type and node ID for the SAP artifacts that t
  [IDOC_REL_NO] = The IDOC release number; for example 46A, 46B, or 620.  
   
 ## Metadata Search Node IDs  
- Metadata search is a powerful feature that the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] surfaces as part of its **IMetadataRetrievalContract** interface. The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] uses this feature to support searching the following SAP artifacts.  
+ Metadata search is a powerful feature that the [!INCLUDE [afproductnamelong](../../includes/afproductnamelong-md.md)] surfaces as part of its <strong>IMetadataRetrievalContract</strong> interface. The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] uses this feature to support searching the following SAP artifacts.  
   
 |Artifact Display Name|Node ID|Description|  
 |---------------------------|-------------|-----------------|  
@@ -93,7 +93,7 @@ The following table lists the node type and node ID for the SAP artifacts that t
 |/BAPI|[VERSION]/BAPISECTION|Return all BAPIs that match the search expression.|  
 |/IDOC|[VERSION]/IDOCSECTION|Return all IDOCs that match the search expression.|  
   
- The following table lists the wildcard characters that the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports in search expressions.  
+ The following table lists the wildcard characters that the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] supports in search expressions.  
   
 |Special Character|Interpretation|  
 |-----------------------|--------------------|  
@@ -101,7 +101,7 @@ The following table lists the node type and node ID for the SAP artifacts that t
 |asterisk (*)|Matches zero or more characters; for example, “A*” matches “A”, “AB”, “ABC”, and so on.|  
   
 ## Metadata Retrieval Node IDs  
- The following table summarizes the metadata characteristics returned by [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+ The following table summarizes the metadata characteristics returned by [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
 |Artifact|Metadata Characteristics|  
 |--------------|------------------------------|  
@@ -110,5 +110,5 @@ The following table lists the node type and node ID for the SAP artifacts that t
 |BAPI|-   Name of business object<br />-   Name of business object method<br />-   Same as RFC characteristics|  
 |IDOC|IDOC Type<br /><br /> CIMType<br /><br /> IDOC release number<br /><br /> IDOC version<br /><br /> IDOC control record fields mapped to an EDI_DC complex type<br /><br /> IDOC data record segments and segment fields mapped to an EDI_DD complex type<br /><br /> Segment parent-child relationships<br /><br /> IDOC segment mandatory parameter mapped to minOccurs  = 1<br /><br /> IDOC segment optional parameter mapped to minOccurs  = 0<br /><br /> IDOC segment header field name<br /><br /> IDOC segment header field data type<br /><br /> IDOC segment field name<br /><br /> IDOC segment field data type<br /><br /> IDOC segment field value enumerations<br /><br /> IDOC segment field min, max values (ranges) **Note:**  When an IDOC segment field contains a list of min values, it is surfaced as an enumeration. If the IDOC segment field contains both min and max values, it is surfaced as a string without any enumeration or range constructs.|  
   
- For detailed information about the format of the metadata that the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] exposes for specific artifacts and operations on the SAP system, see [Messages and Message Schemas for BizTalk Adapter for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md).  
+ For detailed information about the format of the metadata that the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] exposes for specific artifacts and operations on the SAP system, see [Messages and Message Schemas for BizTalk Adapter for mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/messages-and-message-schemas-for-biztalk-adapter-for-mysap-business-suite.md).  
   

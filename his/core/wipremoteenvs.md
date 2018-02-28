@@ -43,9 +43,9 @@ All Remote Environments include the following:
 * **Is Default** - default is false
 * **Timeout** - default is 10 (seconds)
 * **Code Page** - default is 37
-	
+    
 Other parameters are available depending upon the programming model:
-	 
+     
 * **ESSO Affiliate Application** - default is null
 * **Security from Client Context** - default is False
 * **Certificate Common Name** - if using SSL, default is null
@@ -69,6 +69,6 @@ Other parameters are available depending upon the programming model:
 * **Allow Explicit Sync Point** - used by APPC to CICS - default is False
 * **Mirror Transaction Id** - used by APPC to CICS Link - default is null
 * **Override SNA Source Transaction Program** - used by APPC to CICS Link - default is False
-		
+        
 ## Related Sections
 [Choosing the Appropriate Programming Model](../core/choosing-the-appropriate-programming-model1.md)

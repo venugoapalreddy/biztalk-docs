@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # EDI Schemas
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 uses the following types of schemas to process incoming messages and generate outgoing messages:  
+Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 uses the following types of schemas to process incoming messages and generate outgoing messages:  
   
 -   Document schemas that define the message body  
   

@@ -21,7 +21,7 @@ The **LogonExternalUser** method logs on an external user.
 ```cpp#  
   
 Int GetCredentials(  
-BSTR bstrApplicationName,   
+BSTR bstrApplicationName,   
 BSTR bstrUserName,  
 LONG lFlags,  
 Array ppsaCredentials  
@@ -70,7 +70,7 @@ As Integer
  A windows handle.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOLookup2 Interface (COM)](../esso/issolookup2-interface-com.md)   

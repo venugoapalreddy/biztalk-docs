@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # SSO for Native Adapters
-Enterprise Single Sign-On (SSO) enables you to sign on only once when interoperating with different computer systems or Web sites. This feature of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables BizTalk adapters to provide the appropriate user ID and credentials to multiple applications within your network that use a common authentication mechanism based on your Microsoft Windows credentials. After Windows authenticates your credentials, you do not need to provide additional credentials to connect to the applications.  
+Enterprise Single Sign-On (SSO) enables you to sign on only once when interoperating with different computer systems or Web sites. This feature of Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables BizTalk adapters to provide the appropriate user ID and credentials to multiple applications within your network that use a common authentication mechanism based on your Microsoft Windows credentials. After Windows authenticates your credentials, you do not need to provide additional credentials to connect to the applications.  
   
  SSO is available for the HTTP and SOAP adapters, although it is disabled by default. For the HTTP adapter, you can configure the send port and receive location to use SSO; for the SOAP adapter, you can configure only the receive location to use SSO. For both adapters, you use the BizTalk Server Administration console to configure SSO.  
   

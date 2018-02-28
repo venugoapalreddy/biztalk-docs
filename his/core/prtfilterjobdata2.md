@@ -20,7 +20,7 @@ The **PrtFilterJobData** function is called to give the user DLL the opportunity
   
 ```  
   
-          void WINAPI PrtFilterJobData(   
+          void WINAPI PrtFilterJobData(   
 void *UniqueID,   
 char **pBufPtr,   
 DWORD *pBufLen  );  

@@ -20,7 +20,7 @@ The **WinAPPCStartup** function allows an application to specify the version of 
   
 ```  
   
-            int WINAPI WinAPPCStartup(   
+            int WINAPI WinAPPCStartup(   
         WORDwVersionRequired,  
         LPWAPPCDATAlpAPPCData  
 );  

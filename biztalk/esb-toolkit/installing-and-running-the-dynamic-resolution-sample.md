@@ -17,7 +17,7 @@ manager: "anneta"
 The Dynamic Resolution sample demonstrates typical usage scenarios for the ESB Dispatcher and ESB Dispatcher Disassembler pipeline components. It demonstrates how you can use the components to dynamically resolve endpoint location, set routing properties, and resolve and execute Microsoft BizTalk maps at the messaging level without using an orchestration. It also demonstrates both one-way and two-way messaging patterns.  
   
 > [!NOTE]
->  For optimum results when familiarizing yourself with the resolution mechanism within the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)], you should run the [Installing and Running the Resolver Service Sample](../esb-toolkit/installing-and-running-the-resolver-service-sample.md) before you run the Dynamic Resolution sample.  
+>  For optimum results when familiarizing yourself with the resolution mechanism within the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)], you should run the [Installing and Running the Resolver Service Sample](../esb-toolkit/installing-and-running-the-resolver-service-sample.md) before you run the Dynamic Resolution sample.  
   
  The sample application contains two receive locations and two dynamic send ports, which the sample uses to demonstrate multiple use cases for the dynamic resolution components. Each use case shows how the resolvers and adapter providers in the Resolution and Adapter Provider Framework, when used in combination, can provide the basis for a variety of loosely coupled messaging solutions.  
   
@@ -39,38 +39,38 @@ The Dynamic Resolution sample demonstrates typical usage scenarios for the ESB D
 ## Sample Dependencies  
  The Dynamic Resolution sample has dependencies on a number of assemblies that are part of the core ESB installation. These assemblies are the following:  
   
--   **Microsoft.Practices.ESB.PipelineComponents.dll**. This contains the ESB Dispatcher Pipeline component.  
+- **Microsoft.Practices.ESB.PipelineComponents.dll**. This contains the ESB Dispatcher Pipeline component.  
   
--   **Microsoft.Practices.ESB.Resolver.dll**. This implements the Resolver Manager called by the pipeline.  
+- **Microsoft.Practices.ESB.Resolver.dll**. This implements the Resolver Manager called by the pipeline.  
   
--   **Microsoft.Practices.ESB.Resolver.BRE.dll**. This implements the Business Rules Engine Resolver.  
+- **Microsoft.Practices.ESB.Resolver.BRE.dll**. This implements the Business Rules Engine Resolver.  
   
--   **Microsoft.Practices.ESB.Resolver.STATIC.dll**. This implements the STATIC Resolver.  
+- **Microsoft.Practices.ESB.Resolver.STATIC.dll**. This implements the STATIC Resolver.  
   
--   **Microsoft.Practices.ESB.Resolver.UDDI.dll**. This implements the UDDI Resolver.  
+- **Microsoft.Practices.ESB.Resolver.UDDI.dll**. This implements the UDDI Resolver.  
   
--   **Microsoft.Practices.ESB.Resolver.UDDI3.dll**. This implements the UDDI3 Resolver.  
+- **Microsoft.Practices.ESB.Resolver.UDDI3.dll**. This implements the UDDI3 Resolver.  
   
--   **Microsoft.Practices.ESB.Resolver.XPATH.dll**. This implements the XPATH Resolver.  
+- **Microsoft.Practices.ESB.Resolver.XPATH.dll**. This implements the XPATH Resolver.  
   
--   **Microsoft.Practices.ESB.Resolver.Schemas.dll**. This contains the resolver schemas.  
+- **Microsoft.Practices.ESB.Resolver.Schemas.dll**. This contains the resolver schemas.  
   
--   **Microsoft.Practices.ESB.Adapter.dll**. This implements the adapter manager.  
+- **Microsoft.Practices.ESB.Adapter.dll**. This implements the adapter manager.  
   
--   **Microsoft.Practices.ESB.Adapter.FTP.dll**. This implements the FTP adapter provider.  
+- **Microsoft.Practices.ESB.Adapter.FTP.dll**. This implements the FTP adapter provider.  
   
--   **Microsoft.Practices.ESB.Adapter.FILE.dll**. This implements the FILE adapter provider.  
+- **Microsoft.Practices.ESB.Adapter.FILE.dll**. This implements the FILE adapter provider.  
   
--   **Microsoft.Practices.ESB.Adapter.MQSeries.dll**. This implements the MQSeries adapter provider.  
+- **Microsoft.Practices.ESB.Adapter.MQSeries.dll**. This implements the MQSeries adapter provider.  
   
--   **Microsoft.Practices.ESB.Adapter.WcfBasicHttp.dll**. This implements the WCF-BasicHttp adapter provider.  
+- **Microsoft.Practices.ESB.Adapter.WcfBasicHttp.dll**. This implements the WCF-BasicHttp adapter provider.  
   
--   **Microsoft.Practices.ESB.Adapter.WcfWSHttp.dll**. This implements the WCF-WSHttp adapter provider.  
+- **Microsoft.Practices.ESB.Adapter.WcfWSHttp.dll**. This implements the WCF-WSHttp adapter provider.  
   
- The Dynamic Resolution sample is also dependent on correct configuration of the preceding resolvers and adapters. Make sure that you complete the process for configuring these, as described in Installing the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+  The Dynamic Resolution sample is also dependent on correct configuration of the preceding resolvers and adapters. Make sure that you complete the process for configuring these, as described in Installing the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)].  
   
- This section contains the following topics:  
+  This section contains the following topics:  
   
--   [Installing the Dynamic Resolution Sample](../esb-toolkit/installing-the-dynamic-resolution-sample.md)  
+- [Installing the Dynamic Resolution Sample](../esb-toolkit/installing-the-dynamic-resolution-sample.md)  
   
--   [Running the Dynamic Resolution Sample](../esb-toolkit/running-the-dynamic-resolution-sample.md)
+- [Running the Dynamic Resolution Sample](../esb-toolkit/running-the-dynamic-resolution-sample.md)

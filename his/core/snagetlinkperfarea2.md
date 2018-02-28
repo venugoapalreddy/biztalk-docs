@@ -20,9 +20,9 @@ The **SNAGetLinkPerfArea** function returns a pointer to the shared data area us
   
 ```  
   
-            ADAPTERPERFDATA * SNAGetLinkPerfArea(   
+            ADAPTERPERFDATA * SNAGetLinkPerfArea(   
 HANDLEshrlockmutx,  
-ADAPTERPERFDATA *shrptr   
+ADAPTERPERFDATA *shrptr   
 );  
 ```  
   

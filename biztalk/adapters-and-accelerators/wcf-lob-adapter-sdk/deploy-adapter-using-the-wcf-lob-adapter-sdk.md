@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Deploy adapter using the WCF LOB Adapter SDK
-This section describes steps for deploying and undeploying an adapter using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. It also describes how to create a deployment package for installation in test and production environments.  
+This section describes steps for deploying and undeploying an adapter using the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)]. It also describes how to create a deployment package for installation in test and production environments.  
   
 ## In This Section  
   

@@ -28,10 +28,10 @@ SWIFT uses the terms client and server to describe sending and receiving. A SWIF
   
 ```  
 Main:  
-  Initialize SNL API  
-  Repeat  
-    Call SwCall API  
-  Until shutdown  
+  Initialize SNL API  
+  Repeat  
+    Call SwCall API  
+  Until shutdown  
 ```  
   
  SNL client applications must run in a dedicated process, because SNL references the client context by process ID. SNL synchronizes calls that use Tuxedo resources to SwCall. As a result, only a single client thread at a time can effectively execute a SwCall.  
@@ -43,13 +43,13 @@ Main:
   
 ```  
 Main:  
-  Initialize SNL API  
-  Call SwRegisterSwCallback, registering the Callback function  
-  Call SwServer, block and receive callbacks  
+  Initialize SNL API  
+  Call SwRegisterSwCallback, registering the Callback function  
+  Call SwServer, block and receive callbacks  
   
 Callback(Request):  
-  Process Request  
-  Return Response  
+  Process Request  
+  Return Response  
 ```  
   
  The server application can call the SwCall API while in the callback function. In some cases it must call SwCall to be able to produce the desired result or response. However, a server application can never initiate a communication over the network. A server application can never be a client application.  

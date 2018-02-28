@@ -20,9 +20,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Security Case Studies: Company B
-Company B is a software company. Its business model relies on electronic transactions with key customers and suppliers. Company B uses a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implementation for its transactions.  
+Company B is a software company. Its business model relies on electronic transactions with key customers and suppliers. Company B uses a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implementation for its transactions.  
   
- Company B uses [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to manage transactions and communications between internal and external applications. Company B communicates with approximately 85 internal applications and 2300 trading partners. It currently processes approximately 2.5 million documents per month, and estimates that it will process 6 million documents per month by the end of 2007.  
+ Company B uses [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to manage transactions and communications between internal and external applications. Company B communicates with approximately 85 internal applications and 2300 trading partners. It currently processes approximately 2.5 million documents per month, and estimates that it will process 6 million documents per month by the end of 2007.  
   
 ## Potential Threats and Security Concerns  
  Company B wants to make sure that it receives and processes only messages from authenticated sources. Company B also wants to make sure that it can receive and retrieve documents from outside its corporate network as safely as possible. The firewall that separates Company B's corporate network from the Internet only lets through traffic from port 80 and port 443. The firewall rejects all other traffic.  

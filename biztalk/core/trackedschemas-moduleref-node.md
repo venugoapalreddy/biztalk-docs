@@ -18,10 +18,12 @@ manager: "anneta"
 ---
 # TrackedSchemas (ModuleRef Node)
 The TrackedSchemas node of a binding file is the parent node for all of the Schema nodes which describe the schemas bound to the service that is exported with the binding file.  
-  
+
 ## Nodes in the TrackedSchemas node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[Schema](../core/schema-trackedschemas-node.md)|Record|ArrayOfSchema (ComplexType)|Container node for the schemas that are bound to the service that is exported with the binding file.|Not required|Default value: none|
+
+
+|              <strong>Name</strong>              | <strong>Node Type</strong> | <strong>Data Type</strong>  |                                     <strong>Description</strong>                                     | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|-------------------------------------------------|----------------------------|-----------------------------|------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------|
+| [Schema](../core/schema-trackedschemas-node.md) |           Record           | ArrayOfSchema (ComplexType) | Container node for the schemas that are bound to the service that is exported with the binding file. |         Not required          |    Default value: none    |
+

@@ -14,4 +14,4 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Troubleshooting IP-DLC Link Services
-IP-DLC uses the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace Utility.
+IP-DLC uses the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace Utility.

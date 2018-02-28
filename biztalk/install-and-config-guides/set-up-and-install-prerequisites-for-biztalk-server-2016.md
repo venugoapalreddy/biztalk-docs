@@ -23,19 +23,19 @@ Set up the server, and install and configure the software prerequisites.
 ## Join the Administrators Group
 To install and configure BizTalk Server, sign in to the server using an administrator account on the local computer. Add any user accounts that are administering the BizTalk Server to the local Administrators group:
 
-1.	In the Start menu, open **Computer Management**.
+1.  In the Start menu, open **Computer Management**.
 
     * Or, open **Administrative Tools**, and then select **Computer Management**.
     * Or, open **Server Manager**, select **Tools**, and then select **Computer Management**.
   
-2.	Expand **Local Users and Groups**, and select **Groups**.
-3.	Right-click the **Administrators** group, and select **Add to Group**. **Add** your accounts, and select **OK** to save your changes. 
+2.  Expand **Local Users and Groups**, and select **Groups**.
+3.  Right-click the **Administrators** group, and select **Add to Group**. **Add** your accounts, and select **OK** to save your changes. 
 
 ## Change the computer name (optional)
 If your computer name is longer than 15 characters, then BizTalk Server configuration fails. To change the computer name to less than 15 characters:
 
-1.	In **Server Manager** > **Dashboard**, select **Local Server**. 
-2.	In **Properties**, select the Computer name property to change it.
+1.  In **Server Manager** > **Dashboard**, select **Local Server**. 
+2.  In **Properties**, select the Computer name property to change it.
 3. Restart the computer. 
 
 **SEE ALSO** : Windows PowerShell [Rename-Computer](https://technet.microsoft.com/library/hh849792.aspx)
@@ -85,8 +85,8 @@ When using Edge, the following message displays:
 To allow Edge to open using the built-in administrator account:
 
 1. In the Start menu, open **Local Security Policy**. Or, open **Server Manager**, select **Tools**, and then select **Local Security Policy**.
-2.	Expand **Local Policies**, and select **Security Options**. 
-3.	Go to the **User Account Control: Admin Approval Mode for the Built-in Administrator account** policy, and **Enable** the policy. 
+2.  Expand **Local Policies**, and select **Security Options**. 
+3.  Go to the **User Account Control: Admin Approval Mode for the Built-in Administrator account** policy, and **Enable** the policy. 
 4. Select **OK**, and restart your computer.
 
 ## Install Windows Updates
@@ -112,26 +112,26 @@ IIS is included with the operating system as a **Role** or a **Feature**, depend
 2. Select **Internet Information Services** or **Web Server (IIS)**. In addition to the default checked options, also select the following: 
 
     **Windows 10**
-    - In **Web Management Tools**, also check:  
-        - IIS 6 Management Compatibility
-        - IIS 6 Management Console
-        - IIS 6 Scripting Tools (Installs adsutil.vbs)
-        - IIS Metabase and IIS 6 configuration compatibility
-        - IIS Management Console
-    - In **World Wide Web Services**, expand **Security** and also check:
-        - Basic Authentication
-        - Windows Authentication	
+   - In **Web Management Tools**, also check:  
+       - IIS 6 Management Compatibility
+       - IIS 6 Management Console
+       - IIS 6 Scripting Tools (Installs adsutil.vbs)
+       - IIS Metabase and IIS 6 configuration compatibility
+       - IIS Management Console
+   - In **World Wide Web Services**, expand **Security** and also check:
+       - Basic Authentication
+       - Windows Authentication    
 
-    **Windows Server**
-    - In **Security**, also check: 
-        - Basic Authentication
-        - Windows Authentication	
-    - In **Management Tools**, also check:  
-        - IIS Management Console
-        - IIS 6 Management Compatibility
-        - IIS 6 Metabase compatibility
-        - IIS 6 Management Console
-        - IIS 6 Scripting Tools (Installs adsutil.vbs)
+     **Windows Server**
+   - In **Security**, also check: 
+       - Basic Authentication
+       - Windows Authentication    
+   - In **Management Tools**, also check:  
+       - IIS Management Console
+       - IIS 6 Management Compatibility
+       - IIS 6 Metabase compatibility
+       - IIS 6 Management Console
+       - IIS 6 Scripting Tools (Installs adsutil.vbs)
 
 3. Continue with the installation, and restart the computer if prompted. 
 
@@ -144,17 +144,17 @@ If you don't use the BAM portal, then you can skip this section.
 The BAM Portal runs in 32-bit mode. If you are using Internet Information Services (IIS) in a 64-bit environment, then set the application pool to run in 32-bit mode. 
 
 #### Using adsutil.vbs
-1.	Open a command prompt as administrator. 
-2.	In the command prompt, type:  
+1.  Open a command prompt as administrator. 
+2.  In the command prompt, type:  
     `cscript c:\inetpub\adminscripts\adsutil.vbs SET W3SVC/AppPools/Enable32bitAppOnWin64 1`
 3. Select Enter.
 
 #### Using IIS Manager
 1. In the Start menu, open "inetmgr".
-2.	Expand the computer name, and select **Application Pools**.
-3.	Right-click **DefaultAppPool**, and select **Advanced Settings**. 
-4.	Change the value of **Enable 32-bit Applications** to **True**. 
-5.	Select **OK**.
+2.  Expand the computer name, and select **Application Pools**.
+3.  Right-click **DefaultAppPool**, and select **Advanced Settings**. 
+4.  Change the value of **Enable 32-bit Applications** to **True**. 
+5.  Select **OK**.
 
 ## Install Windows Identity Foundation (WIF) (optional)
 If you use the SharePoint Services adapter, BizTalk Server requires WIF. If you don't use the SharePoint Services adapter, you can skip this section.
@@ -215,8 +215,8 @@ Office 2016 is installed using "Click-to-Run" or "C2R Installer". The C2R instal
     </Add>
     </Configuration>
     ```
-	
-  	Replace “SourcePath” with the location of your Office 2016 ISO file.
+    
+    Replace “SourcePath” with the location of your Office 2016 ISO file.
 4. In the folder with the Office 2016 Deployment Tool files, hold down the **SHIFT** key, and right-click an empty area in the folder. Select **Open command window here**. 
 5. Start the Excel installation by entering the following:  
   `setup.exe /configure configuration.xml`
@@ -257,8 +257,8 @@ Visual Studio Enterprise Edition is recommended, but Professional and Community 
 > [!IMPORTANT]
 > - If you install Visual Studio before installing BizTalk Server, and then upgrade to Visual Studio Team Explorer, you may need to repair your BizTalk Server installation.
 > - Visual Studio automatically installs Microsoft SQL Server Express; which is not used by BizTalk Server. Uninstall Microsoft SQL Server Express. You can also uninstall Microsoft SQL Server Compact.  
-> - The BizTalk Server development tools are based on Visual Studio. At a minimum, install the Microsoft Visual C#® .NET component before you install the BizTalk Server Developer Tools and SDK.
-> - The BizTalk Server runtime requires .NET Framework 4.6. If the Windows Communication Foundation (WCF) adapter or WCF Interceptor is installed, then .NET Framework 3.0 is required
+> - The BizTalk Server development tools are based on Visual Studio. At a minimum, install the Microsoft Visual C#® .NET component before you install the BizTalk Server Developer Tools and SDK.
+> - The BizTalk Server runtime requires .NET Framework 4.6. If the Windows Communication Foundation (WCF) adapter or WCF Interceptor is installed, then .NET Framework 3.0 is required
 
 #### Uninstall SQL Server Express
 1. In the Start menu, open **Programs and Features**. Or, open the **Control Panel**, and select **Uninstall a program**.
@@ -266,7 +266,7 @@ Visual Studio Enterprise Edition is recommended, but Professional and Community 
     - Microsoft SQL Server 2014 Express LocalDb
     - Microsoft SQL Server Compact 4.0 SP1 x64 ENU
     - Microsoft SQL Server 2016 LocalDB (SQL Server 2016 Express LocalDB)
-	
+    
 3. Continue with the uninstall, and restart your computer if prompted. 
 
 ## Install SQL Server 2016
@@ -282,18 +282,18 @@ BizTalk Server requires SQL Server. SQL Server can be installed on the same comp
 
 1. Start the SQL Server installation. 
 2. During the Feature setup, select the following:
-    - Database Engine Services
-        - SQL Server Replication
-        - R Services (in-Database) (**optional**; info at [SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services))
-        - Full-Text and Semantic Extractions for Search
-    - Analysis Services
-    - Reporting Services - Native
-    - Shared Features
-        - Client Tools Connectivity
-        - Integration Services
+   - Database Engine Services
+       - SQL Server Replication
+       - R Services (in-Database) (**optional**; info at [SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services))
+       - Full-Text and Semantic Extractions for Search
+   - Analysis Services
+   - Reporting Services - Native
+   - Shared Features
+       - Client Tools Connectivity
+       - Integration Services
 
-    > [!NOTE]
-    > **SQL Server Data Tools** is not included in the default installation of SQL Server. It is not required, but can be downloaded at [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt). Download [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) that works with all supported versions of SQL Server, including Azure SQL Database. 
+     > [!NOTE]
+     > **SQL Server Data Tools** is not included in the default installation of SQL Server. It is not required, but can be downloaded at [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt). Download [**SQL Server Management Studio (SSMS)**](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) that works with all supported versions of SQL Server, including Azure SQL Database. 
 
 3. Continue with the installation, and restart the computer if prompted.
 
@@ -329,8 +329,8 @@ If you use BAM Alerts, BizTalk Server requires SQL Server Database Mail. If you 
 
    
 To send a test email: 
-1.	Right-click **Database Mail**, and select **Send Test E-Mail**. 
-2.	Enter a **To:** email address, and select **Send Test E-Mail**.  
+1.  Right-click **Database Mail**, and select **Send Test E-Mail**. 
+2.  Enter a **To:** email address, and select **Send Test E-Mail**.  
  
 If the **To:** recipient receives the email, then Database Mail is configured. 
 

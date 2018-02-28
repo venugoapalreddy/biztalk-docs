@@ -19,4 +19,4 @@ The **ISSOAdmin2** interface provides additional administration functions for th
 ## Requirements  
  **Type Library**: SSOAdmin 1.0 Type Library (SSOAdmin.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]

@@ -26,9 +26,9 @@ manager: "anneta"
 > [!IMPORTANT]
 >  This topic is relevant only if you are using tnsnames.ora to connect to the Oracle database.  
   
- The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] connects to the Oracle database through the Oracle client installed on your computer. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] passes the net service name that you specify in the connection URI to the Oracle client to establish a connection to the Oracle database. The net service name is an alias that the Oracle client uses to acquire connection information for the target Oracle database service.  
+ The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] connects to the Oracle database through the Oracle client installed on your computer. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] passes the net service name that you specify in the connection URI to the Oracle client to establish a connection to the Oracle database. The net service name is an alias that the Oracle client uses to acquire connection information for the target Oracle database service.  
   
- The Oracle client resolves the net service name according to the naming method that it is configured to use. You use the Oracle Net Configuration Assistant to configure the naming methods to be used by the Oracle client. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports the Local Naming method for connecting to the Oracle database. This method uses a local file, tnsnames.ora, to resolve the net service name.  
+ The Oracle client resolves the net service name according to the naming method that it is configured to use. You use the Oracle Net Configuration Assistant to configure the naming methods to be used by the Oracle client. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports the Local Naming method for connecting to the Oracle database. This method uses a local file, tnsnames.ora, to resolve the net service name.  
   
  The tnsnames.ora file associates net service names with connect descriptors that contain the information the Oracle client needs to establish a connection to a specific Oracle database service (instance). The following is a sample entry from tnsnames.ora.  
   

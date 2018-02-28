@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Static Adapter IStaticAdapterConfig Interface
-A static design-time adapter must implement the **IStaticAdapterConfig** interface. This allows it to interact with the Add Adapter Metadata Wizard and obtain service organizations and individual service descriptions from the adapter. The wizard calls the **GetServiceOrganization** and **GetServiceDescription** methods to pull in metadata information with which the adapter interacts and add it to a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+A static design-time adapter must implement the <strong>IStaticAdapterConfig</strong> interface. This allows it to interact with the Add Adapter Metadata Wizard and obtain service organizations and individual service descriptions from the adapter. The wizard calls the <strong>GetServiceOrganization</strong> and <strong>GetServiceDescription</strong> methods to pull in metadata information with which the adapter interacts and add it to a BizTalk project in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
  The **GetServiceOrganization** method obtains an XML instance document that represents the hierarchical organization of the adapter's exposed services. This structure generates the service organization tree that you see on the **Select Services to Import** page in the Add Adapter Metadata Wizard.  
   

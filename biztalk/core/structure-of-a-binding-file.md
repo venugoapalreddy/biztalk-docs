@@ -18,9 +18,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Structure of a Binding File
-The structure of binding files exported from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console adheres to a schema that is used to describe all binding files.  
+The structure of binding files exported from the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console adheres to a schema that is used to describe all binding files.  
   
- This topic should be used as a reference when manually modifying binding files that were exported with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.  
+ This topic should be used as a reference when manually modifying binding files that were exported with the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.  
   
 ## In This Section  
   

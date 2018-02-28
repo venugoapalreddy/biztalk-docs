@@ -19,7 +19,7 @@ manager: "anneta"
   
  **Time to complete:** 45 minutes  
   
- In this step, you implement the inbound capability of the echo adapter. This capability allows the adapter to listen for data or events from the target system. According to the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], you only need to implement the `Microsoft.ServiceModel.Channels.Common.IInboundHandler` interface, when your adapter supports inbound capability. The [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdpterInboundHandler for you.  
+ In this step, you implement the inbound capability of the echo adapter. This capability allows the adapter to listen for data or events from the target system. According to the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)], you only need to implement the `Microsoft.ServiceModel.Channels.Common.IInboundHandler` interface, when your adapter supports inbound capability. The [!INCLUDE [afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdpterInboundHandler for you.  
   
  In the following section, you update the EchoAdpterInboundHandler class to get a better understanding on how to implement this interface. When you complete this step, you have a working inbound handler for the echo adapter.  
   

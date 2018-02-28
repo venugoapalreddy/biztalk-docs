@@ -18,15 +18,15 @@ Give users and groups access to the mainframe environment, install connections, 
   
 ## Install HIS
   
--   Verify Host connection information.  
+- Verify Host connection information.  
   
--   Verify Windows Server configuration information.  
+- Verify Windows Server configuration information.  
   
--   Verify Host Integration Server SNA service configuration information  
+- Verify Host Integration Server SNA service configuration information  
   
--   Install [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+- Install [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
--   Install appropriate link services.  
+- Install appropriate link services.  
   
 ## Configure HIS
   
@@ -45,7 +45,7 @@ Give users and groups access to the mainframe environment, install connections, 
 -   [Testing Connections with the 5250 Client](../core/testing-connections-with-the-5250-client2.md)  
 
 ## Things to consider
-For a connection to be established successfully, a number of software settings and hardware characteristics must work together. The following table outlines items to consider when configuring a connection with [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+For a connection to be established successfully, a number of software settings and hardware characteristics must work together. The following table outlines items to consider when configuring a connection with [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
 |Element|Considerations|  
 |-------------|--------------------|  

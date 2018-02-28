@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Certificate Wizard Utility
-You use the CertWizard utility to import a certificate from a .pfx or .cer file into a private or public store for use with Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+You use the CertWizard utility to import a certificate from a .pfx or .cer file into a private or public store for use with Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  The source code for the Certificate Wizard can be found in the **C:\Program Files\Microsoft BizTalk Server \<version\>\SDK\Utilities\Certificate Wizard** folder. With a 64-bit operating system and version of BizTalk Server, it will be in the **C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\SDK\Utilities\Certificate Wizard** folder. To use the Certificate Wizard you will first have to build it using Visual Studio.  
   
@@ -60,18 +60,18 @@ CertWizard /Rootkey <filename>.cer [/Thumbprint <thumbprint>]
 ## Prerequisites  
  The following are prerequisites for performing the procedures in this topic:  
   
--   You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
+- You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
   
 ### To run the certificate wizard  
   
-1.  Open a command prompt.  
+1. Open a command prompt.  
   
-2.  Move to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Utilities.  
+2. Move to [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Utilities.  
   
-3.  At the command prompt, type **CertWizard**, type the required and appropriate switches, and then press **Enter**.  
+3. At the command prompt, type **CertWizard**, type the required and appropriate switches, and then press **Enter**.  
   
-    > [!NOTE]
-    >  If you do not give the full command at the command prompt, CertWizard will prompt you to provide the required values.  
+   > [!NOTE]
+   >  If you do not give the full command at the command prompt, CertWizard will prompt you to provide the required values.  
   
 ## See Also  
  [Utilities in the SDK](../core/utilities-in-the-sdk.md)

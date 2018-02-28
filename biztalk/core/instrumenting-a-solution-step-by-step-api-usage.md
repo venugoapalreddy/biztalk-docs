@@ -20,7 +20,7 @@ This topic describes how to instrument an application using the key BAM API clas
  The following code snippet demonstrates how you create a new [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/Microsoft.BizTalk.Bam.EventObservation.EventStream.aspx) object, specifically a [Microsoft.BizTalk.Bam.EventObservation.DirectEventStream](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.directeventstream.aspx). In this snippet, the first parameter specifies the connection string to the data store of the BAM Primary Import database and the second parameter specifies the frequency with which the events are written to the data store.  
   
 > [!NOTE]
->  BAM supports connections only to [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] data stores. The sample connection string represents the minimal connection string required to establish a connection. Your configuration may require additional parameters to be specified in the connection string.  
+>  BAM supports connections only to [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] data stores. The sample connection string represents the minimal connection string required to establish a connection. Your configuration may require additional parameters to be specified in the connection string.  
   
  A *FlushThreshold* value of 0 specifies that events are not automatically written and that you must call the Flush method to write the events. A value of one causes each event to be written when it occurs. Values of greater than one specify that events are written when a batch of the specified accumulation has occurred. Using a value of greater than one can be useful to enhance performance.  
   

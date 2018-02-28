@@ -22,7 +22,7 @@ The **Set_Prepare_To_Receive_Type** call (function name **cmsptr**) specifies ho
   
 ```  
   
-CM_ENTRY Set_Prepare_To_Receive_Type(   
+CM_ENTRY Set_Prepare_To_Receive_Type(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *prepare_to_receive_type,    
   CM_INT32 FAR *return_code              
@@ -57,12 +57,12 @@ CM_ENTRY Set_Prepare_To_Receive_Type( 
  CM_PROGRAM_PARAMETER_CHECK  
  Primary return code; one of the following occurred:  
   
--   The value specified by *prepare_to_receive_type* or *conversation_ID* is invalid.  
+- The value specified by *prepare_to_receive_type* or *conversation_ID* is invalid.  
   
--   The *prepare_to_receive_type* parameter is set to CM_PREP_TO_RECEIVE_CONFIRM, but the conversations synchronization level is set to CM_NONE.  
+- The *prepare_to_receive_type* parameter is set to CM_PREP_TO_RECEIVE_CONFIRM, but the conversations synchronization level is set to CM_NONE.  
   
- CM_PRODUCT_SPECIFIC_ERROR  
- Primary return code; a product-specific error occurred and has been logged in the products error log.  
+  CM_PRODUCT_SPECIFIC_ERROR  
+  Primary return code; a product-specific error occurred and has been logged in the products error log.  
   
 ## State Changes  
  The conversation can be in any state except RESET.  

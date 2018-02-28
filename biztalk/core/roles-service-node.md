@@ -18,10 +18,12 @@ manager: "anneta"
 ---
 # Roles (Service Node)
 The Roles node of a binding file is the parent node for all of the Role nodes which provide specific information about each role bound to a service that is exported with the binding file.  
-  
+
 ## Nodes in the Roles node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[Role](../core/role-roles-node.md)|Record|RoleRef (ComplexType)|Specifies information about a role that is bound to a service that is exported with the binding file.|Not required|Default value: none|
+
+
+|       <strong>Name</strong>        | <strong>Node Type</strong> | <strong>Data Type</strong> |                                     <strong>Description</strong>                                      | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|------------------------------------|----------------------------|----------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------|
+| [Role](../core/role-roles-node.md) |           Record           |   RoleRef (ComplexType)    | Specifies information about a role that is bound to a service that is exported with the binding file. |         Not required          |    Default value: none    |
+

@@ -63,7 +63,7 @@ SAFEARRAY BSTR
  To access this method, you must be an SSO Administrator, SSO Affiliate Administrator, or an Application Administrator.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOTicket Interface (COM)](../esso/issoticket-interface-com.md)   

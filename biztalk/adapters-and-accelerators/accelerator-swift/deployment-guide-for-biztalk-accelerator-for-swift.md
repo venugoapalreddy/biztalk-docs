@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Deployment Guide for BizTalk Accelerator for SWIFT
-This guide provides information about deploying [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].  
+This guide provides information about deploying [!INCLUDE [A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)].  
   
  This section provides guidelines for deploying network, hardware, and software requirements to support transactions that comply with the SWIFT standards.  
   

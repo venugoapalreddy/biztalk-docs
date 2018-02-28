@@ -17,30 +17,30 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Insert, update, delete, or select operations using BizTalk Server with Oracle Database
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set of standard operations on Oracle database tables and views. These are called data manipulation language operations (DML) operations using which you can perform simple INSERT, UPDATE, SELECT, and DELETE statements qualified by a WHERE clause on tables and views. For more information about how the adapter supports these operations, see [Insert, Update, Delete, and Select Operations on Oracle Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/insert-update-delete-and-select-operations-on-oracle-tables-and-views.md). For information about the structure of the SOAP message for DML operations, see [Message Schemas for the Basic Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md).  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set of standard operations on Oracle database tables and views. These are called data manipulation language operations (DML) operations using which you can perform simple INSERT, UPDATE, SELECT, and DELETE statements qualified by a WHERE clause on tables and views. For more information about how the adapter supports these operations, see [Insert, Update, Delete, and Select Operations on Oracle Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/insert-update-delete-and-select-operations-on-oracle-tables-and-views.md). For information about the structure of the SOAP message for DML operations, see [Message Schemas for the Basic Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md).  
   
 > [!NOTE]
->  To perform more complex operations, for example running a parameterized SQL SELECT query, you can use the SQLEXECUTE operation. For more information about using the SQLEXECUTE operation with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Run SQLEXECUTE Operation by Using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-biztalk-server.md).  
+>  To perform more complex operations, for example running a parameterized SQL SELECT query, you can use the SQLEXECUTE operation. For more information about using the SQLEXECUTE operation with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Run SQLEXECUTE Operation by Using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-biztalk-server.md).  
   
 ## How to Perform Basic Operations on an Oracle Database?  
- Performing an operation on an Oracle database using [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Developing BizTalk Applications](../../core/developing-biztalk-server-applications.md). To perform Insert, Update, Delete, or Select operations on tables and views in an Oracle database, these tasks are:  
+ Performing an operation on an Oracle database using [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Developing BizTalk Applications](../../core/developing-biztalk-server-applications.md). To perform Insert, Update, Delete, or Select operations on tables and views in an Oracle database, these tasks are:  
   
-1.  Create a BizTalk project and generate schema for the operation you want to invoke on an Oracle database table or view.  
+1. Create a BizTalk project and generate schema for the operation you want to invoke on an Oracle database table or view.  
   
-2.  Create messages in the BizTalk project for sending and receiving messages from the Oracle database.  
+2. Create messages in the BizTalk project for sending and receiving messages from the Oracle database.  
   
-3.  Create an orchestration to invoke the operation on the Oracle database table or view.  
+3. Create an orchestration to invoke the operation on the Oracle database table or view.  
   
-4.  Build and deploy the BizTalk project.  
+4. Build and deploy the BizTalk project.  
   
-5.  Configure the BizTalk application by creating physical send and receive ports.  
+5. Configure the BizTalk application by creating physical send and receive ports.  
   
-6.  Start the BizTalk application.  
+6. Start the BizTalk application.  
   
- This topic provides instructions to perform these tasks.  
+   This topic provides instructions to perform these tasks.  
   
 ## Sample Based On This Topic  
- A sample, SelectAccTable, based on this topic is also provided with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Adapter Samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).  
+ A sample, SelectAccTable, based on this topic is also provided with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Adapter Samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).  
   
 ## Generating Schema  
  In this topic, to demonstrate how to perform basic DML operations, we will select records from the ACCOUNTACTIVITY table under the SCOTT schema in the Oracle database. This table is created under the SCOTT schema by running the SQL scripts provided with the samples. To know more about the samples, see [Adapter samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).  
@@ -77,19 +77,19 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set
     |Message Type|From the drop-down list, expand **Schemas**, and then select *SelectAccTable.OracleDBBindingSchema.SelectResponse*.|  
   
 ## Setting up the Orchestration  
- You must create a BizTalk orchestration to use [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for performing an operation on the Oracle database. In this orchestration, you drop a request message at a defined receive location. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] consumes this message and passes it on to the Oracle database via ODP. The response from the Oracle database is saved to another location. A typical orchestration for performing basic table operations on Oracle database would contain:  
+ You must create a BizTalk orchestration to use [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for performing an operation on the Oracle database. In this orchestration, you drop a request message at a defined receive location. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] consumes this message and passes it on to the Oracle database via ODP. The response from the Oracle database is saved to another location. A typical orchestration for performing basic table operations on Oracle database would contain:  
   
--   Send and Receive shapes to send messages to Oracle database and receive responses.  
+- Send and Receive shapes to send messages to Oracle database and receive responses.  
   
--   A one-way receive port to receive request messages to send to the Oracle database.  
+- A one-way receive port to receive request messages to send to the Oracle database.  
   
--   A two-way send port to send request messages to Oracle database and receive responses.  
+- A two-way send port to send request messages to Oracle database and receive responses.  
   
--   A one-way send port to send the responses from Oracle database to a folder.  
+- A one-way send port to send the responses from Oracle database to a folder.  
   
- A sample orchestration for the Select operation resembles the following:  
+  A sample orchestration for the Select operation resembles the following:  
   
- ![Orchestration for Select operation on Oracle](../../adapters-and-accelerators/adapter-oracle-database/media/444149d7-536d-40a8-8db4-e1410bb4689b.gif "444149d7-536d-40a8-8db4-e1410bb4689b")  
+  ![Orchestration for Select operation on Oracle](../../adapters-and-accelerators/adapter-oracle-database/media/444149d7-536d-40a8-8db4-e1410bb4689b.gif "444149d7-536d-40a8-8db4-e1410bb4689b")  
   
 ### Adding Message Shapes  
  Make sure you specify the following properties for each of the message shapes. The names listed in the Shape column are the names of the message shapes as displayed in the just-mentioned orchestration.  
@@ -122,25 +122,25 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set
   
  After you have specified these properties, the message shapes and ports are connected and your orchestration is complete.  
   
- You must now build the BizTalk solution and deploy it to a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).  
+ You must now build the BizTalk solution and deploy it to a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).  
   
 ## Configuring the BizTalk Application  
  After you have deployed the BizTalk project, the orchestration you created earlier is listed under the **Orchestrations** pane in the BizTalk Server Administration console. You must use the BizTalk Server Administration console to configure the application. For a walkthrough, see [Walkthrough: Deploying a Basic BizTalk Application](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md).  
   
  Configuring an application involves:  
   
--   Selecting a host for the application.  
+- Selecting a host for the application.  
   
--   Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
+- Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
   
-    -   Define a location on the hard disk and a corresponding file port where you will drop a request message. The BizTalk orchestration will consume the request message and send it to the Oracle database.  
+  - Define a location on the hard disk and a corresponding file port where you will drop a request message. The BizTalk orchestration will consume the request message and send it to the Oracle database.  
   
-    -   Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response message containing the response from the Oracle database.  
+  - Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response message containing the response from the Oracle database.  
   
-    -   Define a physical WCF-Custom or WCF-OracleDB send port to send messages to the Oracle database. You must also specify the action in the send port. For information about how to create WCF-Custom or WCF-OracleDB ports, see [Manually configure a physical port binding to the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md).  
+  - Define a physical WCF-Custom or WCF-OracleDB send port to send messages to the Oracle database. You must also specify the action in the send port. For information about how to create WCF-Custom or WCF-OracleDB ports, see [Manually configure a physical port binding to the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md).  
   
-        > [!NOTE]
-        >  Generating the schema using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file that contains information about the ports and the actions to be set for those ports. You can import this binding file from the BizTalk Server Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md).  
+    > [!NOTE]
+    >  Generating the schema using the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file that contains information about the ports and the actions to be set for those ports. You can import this binding file from the BizTalk Server Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md).  
   
 ## Starting the Application  
  You must start the BizTalk application for selecting records from an Oracle database table. For instructions on starting a BizTalk application, see [How to Start an Orchestration](../../core/how-to-start-an-orchestration.md).  
@@ -165,7 +165,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set
 </Select>  
 ```  
   
- See [Message Schemas for the Basic Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md) for more information about the request message schema for performing basic DML operations on Oracle database tables and views using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
+ See [Message Schemas for the Basic Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md) for more information about the request message schema for performing basic DML operations on Oracle database tables and views using the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
   
  The orchestration consumes the message and sends it to the Oracle database. The response from the Oracle database is saved at the other FILE location defined as part of the orchestration. For example, the response from Oracle database for the above request message is:  
   
@@ -192,7 +192,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set
 ```  
   
 ## Possible Exceptions  
- For information about the exceptions you might encounter while performing a DML operation using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Exceptions and error handling](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md).  
+ For information about the exceptions you might encounter while performing a DML operation using [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Exceptions and error handling](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md).  
   
 ## Best Practices  
  After you have deployed and configured the BizTalk project, you can export configuration settings to an XML file called the bindings file. Once you generate a bindings file, you can import the configuration settings from the file so that you do not need to create the send ports, receive ports, etc. for the same orchestration. For more information about binding files, see [Reuse Oracle Database Adapter bindings](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md).

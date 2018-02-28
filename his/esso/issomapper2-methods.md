@@ -15,9 +15,10 @@ manager: "anneta"
 ---
 # ISSOMapper2 Methods
 The following table shows the **ISSOMapper2** methods.  
-  
+
 ## Public Methods  
-  
-|Method|Description|  
-|------------|-----------------|  
-|[ISSOMapper2.GetApplications2 Method](../esso/issomapper2-getapplications2-method.md)|Retrieves the available applications for a Microsoft® Windows® user.|
+
+|                                        Method                                         |                             Description                              |
+|---------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [ISSOMapper2.GetApplications2 Method](../esso/issomapper2-getapplications2-method.md) | Retrieves the available applications for a Microsoft® Windows® user. |
+

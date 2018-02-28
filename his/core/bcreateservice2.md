@@ -20,7 +20,7 @@ The **bCreateService** function is used to create a service on a computer for a 
   
 ```  
   
-          BOOL bCreateService(   
+          BOOL bCreateService(   
 LPSTRszComputerName,  
 LPSTRszServiceName,  
 LPSTRszServicePath,  

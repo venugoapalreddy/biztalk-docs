@@ -14,9 +14,9 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # How to Configure Active Directory During Host Integration Server Installation
-[!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] participation in Active Directory is accomplished by the SNA Gateway service and the Host Integration Server WMI (Windows Management Instrumentation) provider.  
+[!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] participation in Active Directory is accomplished by the SNA Gateway service and the Host Integration Server WMI (Windows Management Instrumentation) provider.  
   
- With [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], there are two mechanisms that will deliver SNA client resource location. One is sponsor connections, which are based on direct communication with a Host Integration Server. The second uses Windows Active Directory.  
+ With [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], there are two mechanisms that will deliver SNA client resource location. One is sponsor connections, which are based on direct communication with a Host Integration Server. The second uses Windows Active Directory.  
   
  If you want to use Active Directory instead of SNA subdomains, you must add the Host Integration Server schema to the Windows domain schema before installing Host Integration Server.  
   

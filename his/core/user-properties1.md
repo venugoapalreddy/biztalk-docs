@@ -25,8 +25,8 @@ manager: "anneta"
  **Comment**  
  Optionally, type a comment of up to 25 characters.  
   
- **Use Client/Server Encryption**  
- Check this box to enable encryption between the client system and [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+ <strong>Use Client/Server Encryption</strong>  
+ Check this box to enable encryption between the client system and [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
  **Allow Access To Dynamically Created Remote APPC LUs**  
  Check this box to let this user or group use dynamically created APPC LUs.  

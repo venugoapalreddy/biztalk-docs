@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Network Integration User&#39;s Guide
-The topics in this section provide an overview of network communication in a [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] environment and describe the services you can use to manage it.  
+The topics in this section provide an overview of network communication in a [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] environment and describe the services you can use to manage it.  
   
 ## In This Section  
  [IP-DLC Link Service](../core/ip-dlc-link-service2.md)  

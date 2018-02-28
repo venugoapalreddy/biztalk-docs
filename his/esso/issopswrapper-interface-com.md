@@ -19,7 +19,7 @@ The ISSOPSWrapper interface allows developers to create password sync adapters i
 ## Requirements  
  **Type Library:** SSOPSHelper 1.0 Type Library (SSOPSHelper.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## Remarks  
  ISSOPSWrapper implements the same methods as ISSONotification but does not use structures.  

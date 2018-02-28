@@ -17,11 +17,11 @@ manager: "anneta"
 # Using the Adapter Framework Tools
 The BizTalk Adapter Framework uses the following tools and views to manage and develop custom adapters:  
   
--   **BizTalk Server Administration console.** This is an independent application available from the **Start** menu. It is used to manage almost everything about your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installations. It allows you to install new adapters; manage their associated receive and send handlers; and manage ports, assemblies, and orchestrations.  
+- <strong>BizTalk Server Administration console.</strong> This is an independent application available from the <strong>Start</strong> menu. It is used to manage almost everything about your [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installations. It allows you to install new adapters; manage their associated receive and send handlers; and manage ports, assemblies, and orchestrations.  
   
--   **Add Adapter Metadata Wizard.** This wizard is available from within a BizTalk project in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. It is available by right-clicking the project name in the Solution Explorer window in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], and then clicking **Add Generated Items**. The Add Adapter Metadata Wizard is available for developers that want to communicate with application adapters. Use this wizard to pull schemas corresponding to these application adapters into your project.  
+- <strong>Add Adapter Metadata Wizard.</strong> This wizard is available from within a BizTalk project in Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. It is available by right-clicking the project name in the Solution Explorer window in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], and then clicking <strong>Add Generated Items</strong>. The Add Adapter Metadata Wizard is available for developers that want to communicate with application adapters. Use this wizard to pull schemas corresponding to these application adapters into your project.  
   
--   **Adapter property pages.** These are available through the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. Use these pages to configure receive handlers, receive locations, send handlers, and send ports for your adapter.  
+- <strong>Adapter property pages.</strong> These are available through the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. Use these pages to configure receive handlers, receive locations, send handlers, and send ports for your adapter.  
   
 ## See Also  
  [What Is the Adapter Framework?](../core/what-is-the-adapter-framework.md)

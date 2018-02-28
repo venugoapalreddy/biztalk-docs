@@ -17,9 +17,9 @@ manager: "anneta"
 # Stop a Host Instance
 
 ## Overview
-You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console or Windows Management Instrumentation (WMI) to stop host instances. You must stop a host instance before you can delete it or remove BizTalk Server from a computer. You can stop a host instance that is installed and started. For more information about host instances, see [Host Instances](../core/host-instances.md).  
+You can use the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console or Windows Management Instrumentation (WMI) to stop host instances. You must stop a host instance before you can delete it or remove BizTalk Server from a computer. You can stop a host instance that is installed and started. For more information about host instances, see [Host Instances](../core/host-instances.md).  
   
- For information about using WMI to stop a host instance, see **MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For information about using WMI to stop a host instance, see <strong>MSBTS_HostInstance (WMI)</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Prerequisites  
  To perform this procedure, you must be logged on as a member of the Administrators group and the BizTalk Server Administrators group.  
@@ -41,15 +41,15 @@ You can use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserve
   
 ## Steps
   
-1.  Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.  
+1. Click <strong>Start</strong>, click <strong>All Programs</strong>, click [!INCLUDE [btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click <strong>BizTalk Server Administration</strong>.  
   
-2.  In the console tree, expand **BizTalk Server Administration**, expand the BizTalk group, click **Platform Settings**, and then click **Host Instances**.  
+2. In the console tree, expand **BizTalk Server Administration**, expand the BizTalk group, click **Platform Settings**, and then click **Host Instances**.  
   
-3.  In the details pane, right-click the host instance you want to stop, and then click **Stop**.  
+3. In the details pane, right-click the host instance you want to stop, and then click **Stop**.  
   
-     The status of the host instance changes to **Stopped**.  
+    The status of the host instance changes to **Stopped**.  
   
- After you stop a host instance, you can start it, delete it, or remove BizTalk Server from the computer. For information about starting a host instance, see [How to Start a Host Instance](../core/how-to-start-a-host-instance.md). For information about deleting a host instance, see [How to Delete a Host Instance](../core/how-to-delete-a-host-instance.md).  
+   After you stop a host instance, you can start it, delete it, or remove BizTalk Server from the computer. For information about starting a host instance, see [How to Start a Host Instance](../core/how-to-start-a-host-instance.md). For information about deleting a host instance, see [How to Delete a Host Instance](../core/how-to-delete-a-host-instance.md).  
   
 ## See Also  
  [Managing BizTalk Hosts and Host Instances](../core/managing-biztalk-hosts-and-host-instances.md)   

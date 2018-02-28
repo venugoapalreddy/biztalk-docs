@@ -23,12 +23,12 @@ manager: "anneta"
 ---
 # Using Facts Explorer
 The Facts Explorer contains four tabs: **Vocabularies**, **XML Schemas**, **Databases**, and **.NET Classes**.  
-  
+
 ## Vocabularies tab  
  Use the **Vocabularies** tab in the Facts Explorer to manage vocabulary versions and definitions.  
-  
+
  Use the shortcut menu to access the following options.  
-  
+
 |Use this|To do this|  
 |--------------|----------------|  
 |**Add New Vocabulary**|Create a new vocabulary.|  
@@ -41,21 +41,23 @@ The Facts Explorer contains four tabs: **Vocabularies**, **XML Schemas**, **Data
 |**Reload**|Reload the selected vocabulary version and its definitions, with the option to discard any current changes made in that version and restore the contents from the rule store.|  
 |**Modify**|Launch the Vocabulary Definition Wizard to change the selected definition. Note that you cannot modify a definition that is part of a published vocabulary version.|  
 |**Go to source fact**|For the selected definition, go to the corresponding source fact in a .NET assembly, XML schema, or database table.|  
-  
+
 ## XML Schemas tab  
  Browse through XSD schemas for the definitions of XML elements and attributes. You can drag items onto unpublished vocabulary versions on the **Vocabulary** tab to create definitions, or you can drag items to the Conditions Editor or Actions Editor to define predicates, actions, and arguments.  
-  
+
 |Use this|To do this|  
 |--------------|----------------|  
 |**Select Root Node**|Select a root node to load from an XML schema that contains multiple root notes.|  
-  
+
 ## Databases tab  
  Browse through database servers for databases and table definitions. You can drag items onto unpublished vocabulary versions on the **Vocabulary** tab to create definitions, or you can drag items to the Conditions Editor or Actions Editor to define predicates, actions, and arguments.  
-  
+
 ## .NET Classes tab  
  Browse through .NET assemblies for public .NET class definitions. You can drag items onto unpublished vocabulary versions on the **Vocabulary** tab to create definitions, or you can drag items to the Conditions Editor or Actions Editor to define predicates, actions, and arguments.  
-  
-|Use this|To do this|  
-|--------------|----------------|  
-|**Browse**|Load a .NET assembly from the global assembly cache|  
-|**Remove**|Remove a .NET assembly|
+
+
+|        Use this         |                     To do this                      |
+|-------------------------|-----------------------------------------------------|
+| <strong>Browse</strong> | Load a .NET assembly from the global assembly cache |
+| <strong>Remove</strong> |               Remove a .NET assembly                |
+

@@ -20,7 +20,7 @@ The SNA National Language Support (SNANLS) **GetCodePage** function copies the c
   
 ```  
   
-BOOL WINAPI GetCodePage(   
+BOOL WINAPI GetCodePage(   
         Int nKey  
 struct CodePage *pPage  
 );  

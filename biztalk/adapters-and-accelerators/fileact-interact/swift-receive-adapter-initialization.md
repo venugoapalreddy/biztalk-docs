@@ -17,7 +17,7 @@ manager: "anneta"
 # SWIFT Receive Adapter Initialization
 The initialization process for the SWIFT server application is similar to that for the SWIFT client application. The initialization arguments are passed as command line parameters to the receiver executable. The application name, configured in the receive location during design time, is passed as a command line argument. This application name is used to construct the receive location URI to retrieve the configured properties.  
   
- For information about using the command line argument, see the "How to Configure the Receive Adapter Environment" topic in Microsoft [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] Installation and Configuration Guide.  
+ For information about using the command line argument, see the "How to Configure the Receive Adapter Environment" topic in Microsoft [!INCLUDE [swift_adapter](../../includes/swift-adapter-md.md)] Installation and Configuration Guide.  
   
 ## See Also  
  [SWIFT Receive Adapter Architecture](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-architecture.md)   

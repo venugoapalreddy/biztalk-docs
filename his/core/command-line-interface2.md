@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Command-Line Interface
-In addition to the graphical user interfaces provided by [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Setup and the SNA Manager, Host Integration Server offers a command-line interface. The command-line interface can be useful in certain situations, such as when you want to view a configuration setting quickly without starting the graphical interface, or when you want to store configuration commands in a command file so that they can be carried out easily in the future.  
+In addition to the graphical user interfaces provided by [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Setup and the SNA Manager, Host Integration Server offers a command-line interface. The command-line interface can be useful in certain situations, such as when you want to view a configuration setting quickly without starting the graphical interface, or when you want to store configuration commands in a command file so that they can be carried out easily in the future.  
   
  Before using the command-line interface, you must install Host Integration Server and run the SNA Manager at least once. This initializes important elements of the Host Integration Server configuration that cannot be controlled with the command-line interface.  
   

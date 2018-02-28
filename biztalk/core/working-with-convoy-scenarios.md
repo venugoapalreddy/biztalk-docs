@@ -43,7 +43,7 @@ A *convoy* exists any time that multiple single messages must be related to achi
   
  Scenarios other than convoys can also generate zombies. For example, suppose that an orchestration instance is expecting one response message from a business process, and for some reason, it receives two matching subscription response messages. In this case, the second response message becomes a zombie. Another example is when you have a **Listen** shape with a **Receive** shape at one branch and a **Delay** shape at the other branch. If a message arrives at the same time that the time-out occurs, the message becomes a zombie.  
   
- For more information about how to manage zombies, see **Removing Suspended Service Instances** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For more information about how to manage zombies, see <strong>Removing Suspended Service Instances</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Next steps
  [Sequential Convoys](../core/sequential-convoys.md)  

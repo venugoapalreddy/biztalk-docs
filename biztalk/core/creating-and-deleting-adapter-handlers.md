@@ -18,7 +18,7 @@ manager: "anneta"
 # Create and Delete Adapter Handlers
 
 ## Overview
-This section describes how to create and delete adapter handlers in the BizTalk Server Administration Console. The procedures provided in this section are generic to multiple native adapters. This section does not contain procedures specific to a single adapter. For more information, see **Creating an FTP Receive Handler Using WMI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+This section describes how to create and delete adapter handlers in the BizTalk Server Administration Console. The procedures provided in this section are generic to multiple native adapters. This section does not contain procedures specific to a single adapter. For more information, see <strong>Creating an FTP Receive Handler Using WMI</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Next steps
   

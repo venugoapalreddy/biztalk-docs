@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Sample VTAM Parameters
-VTAM parameters on host connections need to correspond to settings in [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. Each connection needs its own specified values.  
+VTAM parameters on host connections need to correspond to settings in [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. Each connection needs its own specified values.  
   
 ## In This Section  
  [Sample VTAM Parameters for a Token Ring Connection](../core/sample-vtam-parameters-for-a-token-ring-connection2.md)  

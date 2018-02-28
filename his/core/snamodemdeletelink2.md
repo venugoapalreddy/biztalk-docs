@@ -20,7 +20,7 @@ The **SNAModemDeleteLink** function should be called when a link is terminating 
   
 ```  
   
-            void SNAModemDeleteLink(   
+            void SNAModemDeleteLink(   
 MODEM_STATUS *pModemStatus);  
 ```  
   

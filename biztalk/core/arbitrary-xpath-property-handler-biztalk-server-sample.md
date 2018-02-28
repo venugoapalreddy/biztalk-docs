@@ -18,24 +18,24 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Arbitrary XPath Property Handler (BizTalk Server Sample)
-The Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample) demonstrates how to write a custom pipeline component to promote specific properties on an XML document that is submitted to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. You can use functionality contained in the sample to create custom regular, assembler, and disassembler components to evaluate XPath expressions.  
+The Arbitrary XPath Property Handler ([!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample) demonstrates how to write a custom pipeline component to promote specific properties on an XML document that is submitted to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. You can use functionality contained in the sample to create custom regular, assembler, and disassembler components to evaluate XPath expressions.  
   
 ## What This Sample Does  
  The sample includes a purchase order (PO) XML document to process, DocInstance.xml. The sample uses the following steps to process DocInstance.xml:  
   
-1.  DocInstance.xml is retrieved by a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive port and processed by a custom pipeline component called Arbitrary XPath Property Handler.  
+1. DocInstance.xml is retrieved by a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive port and processed by a custom pipeline component called Arbitrary XPath Property Handler.  
   
-2.  The arbitrary XPath property handler component promotes all \<Price\> and \<Quantity\> elements with an arbitrary XPath expression as defined in the PO schema. The XPath expression also contains the position construct for use with ambiguous child elements of the PO document root element.  
+2. The arbitrary XPath property handler component promotes all \<Price\> and \<Quantity\> elements with an arbitrary XPath expression as defined in the PO schema. The XPath expression also contains the position construct for use with ambiguous child elements of the PO document root element.  
   
-3.  The arbitrary XPath property handler component determines the message type and promotes it into the message context.  
+3. The arbitrary XPath property handler component determines the message type and promotes it into the message context.  
   
-4.  The component then sends the XML document with the promoted elements to an orchestration for further processing.  
+4. The component then sends the XML document with the promoted elements to an orchestration for further processing.  
   
-5.  The orchestration accesses the promoted elements in the PO document and calculates the total number of items in the PO.  
+5. The orchestration accesses the promoted elements in the PO document and calculates the total number of items in the PO.  
   
-6.  The orchestration creates a new PO document that contains the information from the original PO as well as the updated total.  
+6. The orchestration creates a new PO document that contains the information from the original PO as well as the updated total.  
   
-7.  The new PO document is written to a file in the \Output directory.  
+7. The new PO document is written to a file in the \Output directory.  
   
 ## Where to Find This Sample  
  *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
@@ -61,7 +61,7 @@ The Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../in
 |DocInstance.xml|Sample purchase order instance.|  
   
 ## Building and Initializing This Sample  
- This sample is designed to run in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment with [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] running on the same machine. If your environment does not match this configuration, you must modify the Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample) to point to the correct SQL Server computer.  
+ This sample is designed to run in a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment with [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] running on the same machine. If your environment does not match this configuration, you must modify the Arbitrary XPath Property Handler ([!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample) to point to the correct SQL Server computer.  
   
 > [!IMPORTANT]
 >  Setup.bat assumes your Microsoft Windows installation directory is C:\Windows. If your Windows installation is in another directory, you must modify the ArbitraryXPathPropertyHandler.csproj file to reflect the location of the Microsoft.BizTalk.Component.Utilities assembly in the global assembly cache. In the Reference element, change \<SYSTEMROOT\> to the location where Windows is installed (for example, C:\WINNT\\).  
@@ -74,38 +74,38 @@ The Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../in
 />  
 ```  
   
- Use the following procedure to build and initialize the Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample).  
+ Use the following procedure to build and initialize the Arbitrary XPath Property Handler ([!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample).  
   
 #### To build and initialize this sample  
   
-1.  In a command window, change directories (**cd**) to the following folder:  
+1. In a command window, change directories (**cd**) to the following folder:  
   
-     *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
+    *\<Samples Path\>*\Pipelines\ArbitraryXPathPropertyHandler  
   
-2.  Run the file Setup.bat, which performs the following actions:  
+2. Run the file Setup.bat, which performs the following actions:  
   
-    -   Builds the Arbitrary XPath Property Handler pipeline component.  
+   - Builds the Arbitrary XPath Property Handler pipeline component.  
   
-    -   Copies built pipeline component to the *\<Installation Path\>*\Pipeline Components directory.  
+   - Copies built pipeline component to the *\<Installation Path\>*\Pipeline Components directory.  
   
-    -   Creates the send and receive ports.  
+   - Creates the send and receive ports.  
   
-    -   Creates the input and output directories used in the sample.  
+   - Creates the input and output directories used in the sample.  
   
-    -   Installs the sample [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration ArbitraryXPathSample.  
+   - Installs the sample [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration ArbitraryXPathSample.  
   
-    -   Binds the ports to the sample orchestration.  
+   - Binds the ports to the sample orchestration.  
   
-    -   Starts the orchestration.  
+   - Starts the orchestration.  
   
-    > [!NOTE]
-    >  No errors should be reported during the build and initialization. If any errors occur, make sure that you have all necessary software installed and that Microsoft build tools are available on the path.  
-  
-    > [!NOTE]
-    >  To undo changes made by Setup.bat, you must first stop and restart the host instance from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. Next, run Cleanup.bat. You must run Cleanup.bat before running Setup.bat a second time.  
+   > [!NOTE]
+   >  No errors should be reported during the build and initialization. If any errors occur, make sure that you have all necessary software installed and that Microsoft build tools are available on the path.  
+   > 
+   > [!NOTE]
+   >  To undo changes made by Setup.bat, you must first stop and restart the host instance from the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. Next, run Cleanup.bat. You must run Cleanup.bat before running Setup.bat a second time.  
   
 ## Running This Sample  
- Use the following procedure to run the Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample).  
+ Use the following procedure to run the Arbitrary XPath Property Handler ([!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Sample).  
   
 #### To run this sample  
   
@@ -116,7 +116,7 @@ The Arbitrary XPath Property Handler ([!INCLUDE[btsBizTalkServerNoVersion](../in
 ## Comments  
  Canonical XPath expressions are simple expressions such as "/*[local-name()='element-name' and namespaceURI()='http://MyUri.org']/\*[local-name()='element-name']/@\*[local-name='attribute-name']".  
   
- An arbitrary XPath expression can be as complex as "//element-name//*[local-name()='element-name' and position()=2]". If fact, you will receive a run-time error stating that non-canonical XPath expressions are not supported by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] if your schema has a non-canonical XPath used in the XPath body or an XPath property. A solution to support arbitrary XPath expressions is to create custom disassembler and assembler components that support an arbitrary XPath body as well as arbitrary XPath property expressions.  
+ An arbitrary XPath expression can be as complex as "//element-name//*[local-name()='element-name' and position()=2]". If fact, you will receive a run-time error stating that non-canonical XPath expressions are not supported by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] if your schema has a non-canonical XPath used in the XPath body or an XPath property. A solution to support arbitrary XPath expressions is to create custom disassembler and assembler components that support an arbitrary XPath body as well as arbitrary XPath property expressions.  
   
  This sample uses the following sequence of steps in the custom pipeline component when **IComponent.Execute** is implemented:  
   

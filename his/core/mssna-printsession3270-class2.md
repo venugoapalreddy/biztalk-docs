@@ -74,8 +74,8 @@ class MsSna_PrintSession3270 : MsSna_PrintSession
   
  **true** to indicate that a custom transparency byte, such as one other than the IBM standard of 0x35, will be used; otherwise, **false**.  
   
- **CustomTRNChar**  
- Data Type: **sint32** Qualifiers: **MINVALUE(0),MAXVALUE(255)**Access Type: Read/Write  
+ <strong>CustomTRNChar</strong>  
+ Data Type: <strong>sint32</strong> Qualifiers: <strong>MINVALUE(0),MAXVALUE(255)</strong>Access Type: Read/Write  
   
  The custom transparency byte—use this with 'CustomTRN' set to **true**.  
   

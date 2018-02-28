@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Install the FileAct and InterAct Adapter
-This section provides instructions to install [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] – for SWIFT. Before you install the adapters, you must install the prerequisite software.  
+This section provides instructions to install [!INCLUDE [swift_adapter](../../includes/swift-adapter-md.md)] – for SWIFT. Before you install the adapters, you must install the prerequisite software.  
   
 ## Prerequisites  
 
@@ -27,7 +27,7 @@ This section provides instructions to install [!INCLUDE[swift_adapter](../../inc
 
 2. Configure [BizTalk Server](../../install-and-config-guides/configure-biztalk-server.md), and configure Business Activity Monitoring (BAM).
   
-3. Make sure you have enough security privileges to access the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. [Minimum Security Rights for BizTalk Server](http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx) is a great resource.
+3. Make sure you have enough security privileges to access the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. [Minimum Security Rights for BizTalk Server](http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx) is a great resource.
   
 ## Step 2: Install BizTalk Accelerator for SWIFT (A4SWIFT)  
 
@@ -43,24 +43,24 @@ See [https://www.swift.com/our-solutions/interfaces-and-integration/alliance-gat
   
 1. Run the **Setup.exe** as administrator to start the installation.  
   
-2.  Select **Install**.  
+2. Select **Install**.  
   
-3.  Enter your user name and organization name, and then select **Next**.  
+3. Enter your user name and organization name, and then select **Next**.  
   
-4.  **Accept** the license agreement.
+4. **Accept** the license agreement.
   
-5.  On the **Installation Options** page, do one of the following:  
+5. On the **Installation Options** page, do one of the following:  
   
-    -   Select the **Complete** option to install all components of the FileAct and InterAct adapters.  
+   - Select the **Complete** option to install all components of the FileAct and InterAct adapters.  
   
-    -   Select the **Custom** option to choose which components to install.  
+   - Select the **Custom** option to choose which components to install.  
   
      Verify the installation location, or select **Browse** to select a different installation location. Select **Next**.  
   
-6.  On the **Summary** page, select **Install** to install the listed components.  
+6. On the **Summary** page, select **Install** to install the listed components.  
   
-    > [!NOTE]
-    >  When **Run Configuration Wizard** is selected (the default), the **Microsoft BizTalk FileAct and InterAct Adapter Configuration** wizard runs automatically when you select **Finish**.  
+   > [!NOTE]
+   >  When **Run Configuration Wizard** is selected (the default), the **Microsoft BizTalk FileAct and InterAct Adapter Configuration** wizard runs automatically when you select **Finish**.  
   
 7. When the installation completes, select **Finish**. 
 

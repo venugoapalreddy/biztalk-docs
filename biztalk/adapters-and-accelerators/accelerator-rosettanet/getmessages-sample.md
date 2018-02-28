@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # GetMessages Sample
-This topic provides sample code that you can use to retrieve messages from one of the message non-repudiation tables or one of the line-of-business (LOB) tables in a readable form. The message non-repudiation tables include MessageStorageIn and MessageStorageOut in the [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Archive database; the LOB tables include MessageFromLOB and MessageToLOB in the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA database.  
+This topic provides sample code that you can use to retrieve messages from one of the message non-repudiation tables or one of the line-of-business (LOB) tables in a readable form. The message non-repudiation tables include MessageStorageIn and MessageStorageOut in the [!INCLUDE [BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]Archive database; the LOB tables include MessageFromLOB and MessageToLOB in the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA database.  
   
  Use `GetMessages` for either troubleshooting or development. By default, the code returns a base 64 string.  
   
@@ -69,92 +69,92 @@ using Microsoft.Solutions.BTARN.Shared;
 namespace Microsoft.Solutions.BTARN.Admin  
 {  
   
-      /// <summary>  
-      /// Summary description for GetMessages.  
-      /// </summary>  
-      class GetMessages  
-      {  
-            /// <summary>  
-            /// The main entry point for the application.  
-            /// </summary>  
-            [STAThread]  
-            static void Main(string[] args)  
-            {  
-                  Console.WriteLine(GetLOBMessage("MessagesFromLOB", "bce5b580daf543a990a4f37331f31e42"));  
-                  Console.WriteLine(GetLOBMessage("MessagesToLOB", "bce5b580daf543a990a4f37331f31e42"));  
-                  Console.WriteLine(GetNRMessage("MessageStorageIn", "dc06e9cfecd746a889dd6ea7beb3ba21"));  
-                  Console.WriteLine(GetNRMessage("MessageStorageOut", "dc06e9cfecd746a889dd6ea7beb3ba21"));  
-            }  
+      /// <summary>  
+      /// Summary description for GetMessages.  
+      /// </summary>  
+      class GetMessages  
+      {  
+            /// <summary>  
+            /// The main entry point for the application.  
+            /// </summary>  
+            [STAThread]  
+            static void Main(string[] args)  
+            {  
+                  Console.WriteLine(GetLOBMessage("MessagesFromLOB", "bce5b580daf543a990a4f37331f31e42"));  
+                  Console.WriteLine(GetLOBMessage("MessagesToLOB", "bce5b580daf543a990a4f37331f31e42"));  
+                  Console.WriteLine(GetNRMessage("MessageStorageIn", "dc06e9cfecd746a889dd6ea7beb3ba21"));  
+                  Console.WriteLine(GetNRMessage("MessageStorageOut", "dc06e9cfecd746a889dd6ea7beb3ba21"));  
+            }  
   
-            /// <summary>  
-            /// Retrieve a message from the LOB tables in the BTARNDATA database  
-            /// </summary>  
-            /// <param name="sMessageSource">Can be either MessagesFromLOB or MessagesToLOB</param>  
-            /// <param name="sMessageID">The value of the MessageID field in the database</param>  
-            /// <returns>Returns a string that contains the retrieved message</returns>        
-            private static string GetLOBMessage(string sMessageSource, string sMessageID)  
-            {  
-                  SqlDataReader localReader = null;  
-                  SqlConnection sqlConnection = null;  
-                  SqlCommand sqlCommand = null;  
-                  string sReturnedMessage="";              
-                  string sQuery;  
+            /// <summary>  
+            /// Retrieve a message from the LOB tables in the BTARNDATA database  
+            /// </summary>  
+            /// <param name="sMessageSource">Can be either MessagesFromLOB or MessagesToLOB</param>  
+            /// <param name="sMessageID">The value of the MessageID field in the database</param>  
+            /// <returns>Returns a string that contains the retrieved message</returns>        
+            private static string GetLOBMessage(string sMessageSource, string sMessageID)  
+            {  
+                  SqlDataReader localReader = null;  
+                  SqlConnection sqlConnection = null;  
+                  SqlCommand sqlCommand = null;  
+                  string sReturnedMessage="";              
+                  string sQuery;  
   
-                  sqlConnection = new SqlConnection(RuntimeGlobal.DataDbConnectionString);  
-                  sQuery = "SELECT ServiceContent from " + sMessageSource + " WHERE MessageID=N'" + sMessageID +"'";  
+                  sqlConnection = new SqlConnection(RuntimeGlobal.DataDbConnectionString);  
+                  sQuery = "SELECT ServiceContent from " + sMessageSource + " WHERE MessageID=N'" + sMessageID +"'";  
   
-                  sqlCommand = new SqlCommand(sQuery, sqlConnection);  
-                  sqlConnection.Open();  
+                  sqlCommand = new SqlCommand(sQuery, sqlConnection);  
+                  sqlConnection.Open();  
   
-                  localReader = sqlCommand.ExecuteReader();  
+                  localReader = sqlCommand.ExecuteReader();  
   
-                  if (localReader.Read())  
-                        sReturnedMessage=localReader.GetString(0);  
+                  if (localReader.Read())  
+                        sReturnedMessage=localReader.GetString(0);  
   
-                  localReader.Close();  
-                  sqlConnection.Close();        
-                  return sReturnedMessage;              
-            }  
+                  localReader.Close();  
+                  sqlConnection.Close();        
+                  return sReturnedMessage;              
+            }  
   
-            /// <summary>  
-            /// Retrieve a message from the non-repudiation tables in the BTARNArchive database  
-            /// </summary>  
-            /// <param name="sMessageSource">Can be either MessageStorageIn or MessageStorageOut</param>  
-            /// <param name="sMessageID">The value of the RecordID field in the database</param>  
-            /// <returns>Returns a string that contains the retrieved message</returns>  
-            private static string GetNRMessage(string sMessageSource, string sMessageID)  
-            {  
-                  SqlDataReader localReader = null;  
-                  SqlConnection sqlConnection = null;  
-                  SqlCommand sqlCommand = null;  
-                  string sReturnedMessage="";              
-                  string sQuery;  
+            /// <summary>  
+            /// Retrieve a message from the non-repudiation tables in the BTARNArchive database  
+            /// </summary>  
+            /// <param name="sMessageSource">Can be either MessageStorageIn or MessageStorageOut</param>  
+            /// <param name="sMessageID">The value of the RecordID field in the database</param>  
+            /// <returns>Returns a string that contains the retrieved message</returns>  
+            private static string GetNRMessage(string sMessageSource, string sMessageID)  
+            {  
+                  SqlDataReader localReader = null;  
+                  SqlConnection sqlConnection = null;  
+                  SqlCommand sqlCommand = null;  
+                  string sReturnedMessage="";              
+                  string sQuery;  
   
-                  sqlConnection = new SqlConnection(RuntimeGlobal.ArchiveDbConnectionString);  
-                  sQuery = "SELECT Content from " + sMessageSource + " WHERE RecordID=N'" + sMessageID +"'";  
+                  sqlConnection = new SqlConnection(RuntimeGlobal.ArchiveDbConnectionString);  
+                  sQuery = "SELECT Content from " + sMessageSource + " WHERE RecordID=N'" + sMessageID +"'";  
   
-                  sqlCommand = new SqlCommand(sQuery, sqlConnection);  
-                  sqlConnection.Open();  
+                  sqlCommand = new SqlCommand(sQuery, sqlConnection);  
+                  sqlConnection.Open();  
   
-                  localReader = sqlCommand.ExecuteReader();  
+                  localReader = sqlCommand.ExecuteReader();  
   
-                  if (localReader.Read())  
-                  {  
-                        //Determine the size of the field in bytes and create a new byte array  
-                        byte[] bData= new byte[localReader.GetBytes(0, 0, null, 0, 0)];  
+                  if (localReader.Read())  
+                  {  
+                        //Determine the size of the field in bytes and create a new byte array  
+                        byte[] bData= new byte[localReader.GetBytes(0, 0, null, 0, 0)];  
   
-                        //Read the value of the field into bData  
-                        localReader.GetBytes(0, 0, bData, 0, bData.Length);  
+                        //Read the value of the field into bData  
+                        localReader.GetBytes(0, 0, bData, 0, bData.Length);  
   
-                        //Convert the byte array into a string  
-                        sReturnedMessage=Encoding.ASCII.GetString(bData);  
-                  }  
+                        //Convert the byte array into a string  
+                        sReturnedMessage=Encoding.ASCII.GetString(bData);  
+                  }  
   
-                  localReader.Close();  
-                  sqlConnection.Close();        
-                  return sReturnedMessage;              
-            }  
-      }  
+                  localReader.Close();  
+                  sqlConnection.Close();        
+                  return sReturnedMessage;              
+            }  
+      }  
 }  
 ```  
   

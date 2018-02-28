@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- Select the indicated **Cumulative** functoid, click the ellipsis (**...**) button associated with the **Order Functoid Inputs** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure \<Functoid\> Functoid** dialog box, ensure that the second input parameter, if any, is a positive integer.
+ Select the indicated <strong>Cumulative</strong> functoid, click the ellipsis (<strong>...</strong>) button associated with the <strong>Order Functoid Inputs</strong> property in the Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the <strong>Configure \<Functoid\> Functoid</strong> dialog box, ensure that the second input parameter, if any, is a positive integer.

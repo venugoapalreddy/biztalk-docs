@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # EXECQUERY command options in SAP
-The [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] enables clients to invoke SAP queries from ADO.NET applications by using the EXECQUERY command. This section provides information on the syntax of EXECQUERY command and how to use it. This section also provides information on how to frame EXECQUERY syntax by looking at the definition of the query in the SAP system.  
+The [!INCLUDE [adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] enables clients to invoke SAP queries from ADO.NET applications by using the EXECQUERY command. This section provides information on the syntax of EXECQUERY command and how to use it. This section also provides information on how to frame EXECQUERY syntax by looking at the definition of the query in the SAP system.  
   
 ## In This Section  
   

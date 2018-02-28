@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # BizTalk Server Architecture
-This section provides detailed information on the architecture and internal workings of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This section provides detailed information on the architecture and internal workings of Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## In This Section  
   

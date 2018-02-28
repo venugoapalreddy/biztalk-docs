@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # SiebelClientFactory class in the Siebel adapter
-An ADO.NET client accesses the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] using generic ADO.NET classes and interfaces. To enable this feature, the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] inherits the **System.Data.Common.DbProviderFactory** class. The client program consumes the client as follows:  
+An ADO.NET client accesses the [!INCLUDE [adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] using generic ADO.NET classes and interfaces. To enable this feature, the [!INCLUDE [adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] inherits the <strong>System.Data.Common.DbProviderFactory</strong> class. The client program consumes the client as follows:  
   
 ```  
   

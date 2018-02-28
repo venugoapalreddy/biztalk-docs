@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- Select the indicated **Field Element** node, and then in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, change the **Data Type** property to one of the indicated data types.
+ Select the indicated <strong>Field Element</strong> node, and then in the Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, change the <strong>Data Type</strong> property to one of the indicated data types.

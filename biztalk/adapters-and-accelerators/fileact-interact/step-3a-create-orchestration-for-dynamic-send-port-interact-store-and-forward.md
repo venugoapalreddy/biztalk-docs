@@ -50,7 +50,7 @@ Before you begin the steps in this section, you must complete the steps in the [
     PullMessage.LoadXml(@"<Sw-PullSnFRequest/>");  
     PullRequest = PullMessage;  
   
-    DynamicPull(Microsoft.XLANGs.BaseTypes.Address) = "INTERACT://<machine  
+    DynamicPull(Microsoft.XLANGs.BaseTypes.Address) = "INTERACT://<machine  
      name>/" + QueueName + "/" + SessionMode + "/" + ForceAcquire + "/" +   
     OrderBy + "/" + RecoveryMode + "/" + MessageFormat;  
     ```  

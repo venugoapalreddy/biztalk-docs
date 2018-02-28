@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Checklist: Performing Daily Maintenance Checks
-This topic describes some of the items that you should check on a daily basis to help monitor the status of a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system. You must perform most of these checks consistently and archive the results over a period of time to obtain the greatest benefit. We recommend that you automate routine maintenance checks whenever possible.  
+This topic describes some of the items that you should check on a daily basis to help monitor the status of a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system. You must perform most of these checks consistently and archive the results over a period of time to obtain the greatest benefit. We recommend that you automate routine maintenance checks whenever possible.  
   
 |Steps|Reference|  
 |-----------|---------------|  

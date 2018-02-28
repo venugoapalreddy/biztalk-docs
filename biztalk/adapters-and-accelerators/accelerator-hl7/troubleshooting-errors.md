@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshooting Errors
-This section addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] generated errors.  
+This section addresses issues related to [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] generated errors.  
   
 ## The MLLP adapter can run only on a single host instance  
   
@@ -49,9 +49,9 @@ This section addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](.
   
 `Exception of type System.OutOfMemoryException has thrown an error.`
   
-**Possible Cause** : While processing a large number of messages, some [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] engine components may exhibit memory leaks.  
+<strong>Possible Cause</strong> : While processing a large number of messages, some [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] engine components may exhibit memory leaks.  
   
-**Resolution** : Restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
+<strong>Resolution</strong> : Restart [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
 ## Header serialization generates an error in the Event Viewer  
   
@@ -60,16 +60,16 @@ This section addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](.
   
 `An error happened in the header during serialization.`
   
-**Possible Cause** : The message header transformation value is not set correctly in [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
+<strong>Possible Cause</strong> : The message header transformation value is not set correctly in [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
   
-**Resolution** : Verify MSH map values in [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
+<strong>Resolution</strong> : Verify MSH map values in [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
   
 ## Duplicate Event ID 4133 serializer errors are logged  
   
 ### Symptom  
  Event ID 4133 – "Error happened in header during serialization" occurs twice for every instance of a message with a MSH11 value that is not valid.  
   
-**Possible Cause** : An error occurred while processing two acknowledgments (Commit and Application ACKs) without duplicate errors in the Event Log. Instead, you receive one Event ID 4133 for each of the two ACKs. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] creates a log entry for each ACK it generates.  
+<strong>Possible Cause</strong> : An error occurred while processing two acknowledgments (Commit and Application ACKs) without duplicate errors in the Event Log. Instead, you receive one Event ID 4133 for each of the two ACKs. [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] creates a log entry for each ACK it generates.  
   
 **Resolution** : Ensure that your messages have a correctly formatted and populated MSH11 field.  
   
@@ -80,7 +80,7 @@ This section addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](.
   
 `There was a failure executing the send pipeline: "[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XPipelines.[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XSendPipeline" Source: "[!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)].HL72fAsm" Send Port: "<*host name: port number*>" Reason: Message does not contain a part with name MSHSegment.`
   
-**Possible Cause** : The receiving application does not respond with an Acknowledgment and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is expecting a response from the receiving application.  
+<strong>Possible Cause</strong> : The receiving application does not respond with an Acknowledgment and [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] is expecting a response from the receiving application.  
   
 **Resolution** : This is by design, and you can ignore the error message.  
   

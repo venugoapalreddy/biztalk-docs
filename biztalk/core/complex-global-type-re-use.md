@@ -34,7 +34,7 @@ To use a complex global type as is, in another location in the schema tree, begi
             </xs:complexType>  
         </xs:element>  
         <xs:complexType name="GlobalAddrType">  
-        [Address structure defined globally here.]  
+        [Address structure defined globally here.]  
         </xs:complexType>  
     </xs:schema>  
     ```  
@@ -52,7 +52,7 @@ To use a complex global type as is, in another location in the schema tree, begi
             </xs:complexType>  
         </xs:element>  
         <xs:complexType name="GlobalAddrType">  
-        [Address structure defined globally here.]  
+        [Address structure defined globally here.]  
         </xs:complexType>  
     </xs:schema>  
     ```  

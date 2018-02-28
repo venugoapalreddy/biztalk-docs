@@ -20,9 +20,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Insert, update, delete, or select operations in Oracle Database using the WCF Service Model
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set of basic Insert, Update, Delete, and Select operations on Oracle database tables and views. By using these operations, you can perform simple SQL INSERT, UPDATE, SELECT, and DELETE statements qualified by a WHERE clause on a target table or view. To perform more complex operations, for example a SQL SELECT query that uses the JOIN operator, you can use the SQLEXECUTE operation. For more information about the SQLEXECUTE operation, see [Performing a SQLEXECUTE Operation in Oracle Database Using the WCF Service Model](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md).  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set of basic Insert, Update, Delete, and Select operations on Oracle database tables and views. By using these operations, you can perform simple SQL INSERT, UPDATE, SELECT, and DELETE statements qualified by a WHERE clause on a target table or view. To perform more complex operations, for example a SQL SELECT query that uses the JOIN operator, you can use the SQLEXECUTE operation. For more information about the SQLEXECUTE operation, see [Performing a SQLEXECUTE Operation in Oracle Database Using the WCF Service Model](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md).  
   
- The following table summarizes the basic SQL operations that the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces on tables and views. For a complete description of these operations, see [Message Schemas for the Basic Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md).  
+ The following table summarizes the basic SQL operations that the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces on tables and views. For a complete description of these operations, see [Message Schemas for the Basic Insert, Update, Delete, and Select Operations on Tables and Views](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md).  
   
 |Operation|Description|  
 |---------------|-----------------|  
@@ -35,7 +35,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces a set
  The examples in this topic use the /SCOTT/ACCOUNTACTIVITY table. A script to generate this table is supplied with the SDK samples. For more information about the SDK samples, see [Samples in the SDK](../../core/samples-in-the-sdk.md).  
   
 ## The WCF Client Class  
- The name of the WCF client generated for the basic SQL operations that the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces is based on the name of the table or view, as in the following table.  
+ The name of the WCF client generated for the basic SQL operations that the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces is based on the name of the table or view, as in the following table.  
   
 |Oracle Database Artifact|WCF Client Name|  
 |------------------------------|---------------------|  
@@ -81,15 +81,15 @@ public partial class SCOTTTableACCOUNTACTIVITYClient : System.ServiceModel.Clien
 ## Invoking the Basic SQL Operations  
  To invoke the basic SQL operations on a table or view by using a WCF client, perform the following steps.  
   
-1.  Generate a WCF client class for the target table or view. This class should contain methods for the operations that you will invoke on the target artifact.  
+1. Generate a WCF client class for the target table or view. This class should contain methods for the operations that you will invoke on the target artifact.  
   
-2.  Create an instance of the WCF client class and invoke its methods to perform operations on the table or view.  
+2. Create an instance of the WCF client class and invoke its methods to perform operations on the table or view.  
   
- For more detailed information about how to create a WCF client class and invoke operations on the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Overview of the WCF Service Model with the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md).  
+   For more detailed information about how to create a WCF client class and invoke operations on the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Overview of the WCF Service Model with the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md).  
   
- The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] executes each operation inside of a transaction on the Oracle database. You can control the isolation level of this transaction by setting the **TransactionIsolationLevel** binding property. For more information about the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties, see [Working with BizTalk Adapter for Oracle Database Binding Properties](https://msdn.microsoft.com/library/dd788467.aspx).  
+   The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] executes each operation inside of a transaction on the Oracle database. You can control the isolation level of this transaction by setting the <strong>TransactionIsolationLevel</strong> binding property. For more information about the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties, see [Working with BizTalk Adapter for Oracle Database Binding Properties](https://msdn.microsoft.com/library/dd788467.aspx).  
   
- The following sections provide details about how to invoke each basic SQL operation in your code.  
+   The following sections provide details about how to invoke each basic SQL operation in your code.  
   
 ###  <a name="BKMK_InsertOperation"></a> Insert Operation  
  The following table shows how to set parameters for multiple record Insert and bulk Insert operations.  
@@ -108,81 +108,81 @@ public partial class SCOTTTableACCOUNTACTIVITYClient : System.ServiceModel.Clien
   
 ```  
 // Insert records  
-                using (SCOTTTableACCOUNTACTIVITYClient aaTableClient =   
-                    new SCOTTTableACCOUNTACTIVITYClient("OracleDBBinding_SCOTT.Table.ACCOUNTACTIVITY"))  
-                {  
-                    long recsInserted;  
+                using (SCOTTTableACCOUNTACTIVITYClient aaTableClient =   
+                    new SCOTTTableACCOUNTACTIVITYClient("OracleDBBinding_SCOTT.Table.ACCOUNTACTIVITY"))  
+                {  
+                    long recsInserted;  
   
-                    aaTableClient.ClientCredentials.UserName.UserName = "SCOTT";  
-                    aaTableClient.ClientCredentials.UserName.Password = "TIGER";  
+                    aaTableClient.ClientCredentials.UserName.UserName = "SCOTT";  
+                    aaTableClient.ClientCredentials.UserName.Password = "TIGER";  
   
-                    try  
-                    {  
-                        aaTableClient.Open();  
-                    }  
-                    catch (Exception ex)  
-                    {  
-                        // handle exception  
-                        Console.WriteLine("Exception: " + ex.Message);  
-                        throw;  
-                    }  
+                    try  
+                    {  
+                        aaTableClient.Open();  
+                    }  
+                    catch (Exception ex)  
+                    {  
+                        // handle exception  
+                        Console.WriteLine("Exception: " + ex.Message);  
+                        throw;  
+                    }  
   
-                    // Do a multiple record Insert of 2 records for account 100001  
+                    // Do a multiple record Insert of 2 records for account 100001  
   
-                    microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[] insertRecs =  
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[2];  
+                    microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[] insertRecs =  
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[2];  
   
-                                  TID__COMPLEX_TYPE tid = new TID__COMPLEX_TYPE();  
-                                  tid.InlineValue = "tidSequence.NextVal()";  
+                                  TID__COMPLEX_TYPE tid = new TID__COMPLEX_TYPE();  
+                                  tid.InlineValue = "tidSequence.NextVal()";  
   
-                                  ACCOUNT__COMPLEX_TYPE account = new ACCOUNT__COMPLEX_TYPE();  
-                                  account.Value = 100001;  
+                                  ACCOUNT__COMPLEX_TYPE account = new ACCOUNT__COMPLEX_TYPE();  
+                                  account.Value = 100001;  
   
-                    AMOUNT__COMPLEX_TYPE amount = new AMOUNT__COMPLEX_TYPE();  
-                    amount.Value = 400;  
+                    AMOUNT__COMPLEX_TYPE amount = new AMOUNT__COMPLEX_TYPE();  
+                    amount.Value = 400;  
   
-                    TRANSDATE__COMPLEX_TYPE transdate = new TRANSDATE__COMPLEX_TYPE();  
-                    transdate.Value = DateTime.Now.Date;  
+                    TRANSDATE__COMPLEX_TYPE transdate = new TRANSDATE__COMPLEX_TYPE();  
+                    transdate.Value = DateTime.Now.Date;  
   
-                    PROCESSED__COMPLEX_TYPE processed = new PROCESSED__COMPLEX_TYPE();  
-                    processed.Value = "n";  
+                    PROCESSED__COMPLEX_TYPE processed = new PROCESSED__COMPLEX_TYPE();  
+                    processed.Value = "n";  
   
-                    DESCRIPTION__COMPLEX_TYPE description1 = new DESCRIPTION__COMPLEX_TYPE();  
-                    description1.Value = "Inserted Record #1";  
+                    DESCRIPTION__COMPLEX_TYPE description1 = new DESCRIPTION__COMPLEX_TYPE();  
+                    description1.Value = "Inserted Record #1";  
   
-                    DESCRIPTION__COMPLEX_TYPE description2 = new DESCRIPTION__COMPLEX_TYPE();  
-                    description2.Value = "Inserted Record #2";  
+                    DESCRIPTION__COMPLEX_TYPE description2 = new DESCRIPTION__COMPLEX_TYPE();  
+                    description2.Value = "Inserted Record #2";  
   
-                    insertRecs[0] =   
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
-                    insertRecs[0].TID = tid;  
-                    insertRecs[0].ACCOUNT = account;  
-                    insertRecs[0].AMOUNT = amount;  
-                    insertRecs[0].TRANSDATE = transdate;  
-                    insertRecs[0].DESCRIPTION = description1;  
-                    insertRecs[0].PROCESSED = processed;  
+                    insertRecs[0] =   
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
+                    insertRecs[0].TID = tid;  
+                    insertRecs[0].ACCOUNT = account;  
+                    insertRecs[0].AMOUNT = amount;  
+                    insertRecs[0].TRANSDATE = transdate;  
+                    insertRecs[0].DESCRIPTION = description1;  
+                    insertRecs[0].PROCESSED = processed;  
   
-                    insertRecs[1] =   
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
-                    insertRecs[1].TID = tid;  
-                    insertRecs[1].ACCOUNT = account;  
-                    insertRecs[1].AMOUNT = amount;  
-                    insertRecs[1].TRANSDATE = transdate;  
-                    insertRecs[1].DESCRIPTION = description2;  
-                    insertRecs[1].PROCESSED = processed;  
+                    insertRecs[1] =   
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
+                    insertRecs[1].TID = tid;  
+                    insertRecs[1].ACCOUNT = account;  
+                    insertRecs[1].AMOUNT = amount;  
+                    insertRecs[1].TRANSDATE = transdate;  
+                    insertRecs[1].DESCRIPTION = description2;  
+                    insertRecs[1].PROCESSED = processed;  
   
-                    try  
-                    {  
-                        recsInserted = aaTableClient.Insert(insertRecs, null, null);  
-                    }  
-                    catch (Exception ex)  
-                    {  
-                        // handle exception  
-                        Console.WriteLine("Exception: " + ex.Message);  
-                        throw;  
-                    }  
+                    try  
+                    {  
+                        recsInserted = aaTableClient.Insert(insertRecs, null, null);  
+                    }  
+                    catch (Exception ex)  
+                    {  
+                        // handle exception  
+                        Console.WriteLine("Exception: " + ex.Message);  
+                        throw;  
+                    }  
   
-                    Console.WriteLine("Insert Done: {0} records inserted", recsInserted);  
+                    Console.WriteLine("Insert Done: {0} records inserted", recsInserted);  
 ```  
   
 ### Select Operation  
@@ -307,25 +307,25 @@ Console.WriteLine("{0} records deleted", recsDeleted);
 ##  <a name="BKMK_LimitationsInvoking"></a> Limitations of Invoking the Basic SQL Operations by Using the WCF Service Model  
  The following limitations exist when you invoke the basic SQL operations by using a WCF client:  
   
--   **Insert operation.** The record set used in a multiple record Insert operation is strongly-typed and therefore includes all row columns. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a null value in a record to mean that the column should be excluded from the Insert operation; however, non-nillable columns cannot be excluded because you cannot set them to a null value. Therefore, you must specify values for non-nillable columns when you perform a multiple record Insert operation.  
+- <strong>Insert operation.</strong> The record set used in a multiple record Insert operation is strongly-typed and therefore includes all row columns. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a null value in a record to mean that the column should be excluded from the Insert operation; however, non-nillable columns cannot be excluded because you cannot set them to a null value. Therefore, you must specify values for non-nillable columns when you perform a multiple record Insert operation.  
   
--   **Insert operation.** The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a **DbNull** value in a nillable data column to mean that the column should be excluded from a multiple record Insert operation. This means that you cannot set a nillable column to **DbNull** on the Oracle database in a multiple record Insert operation.  
+- <strong>Insert operation.</strong> The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a <strong>DbNull</strong> value in a nillable data column to mean that the column should be excluded from a multiple record Insert operation. This means that you cannot set a nillable column to <strong>DbNull</strong> on the Oracle database in a multiple record Insert operation.  
   
--   **Insert operation.** There is no streaming support for multiple record insert operations that involve a large record set.  
+- **Insert operation.** There is no streaming support for multiple record insert operations that involve a large record set.  
   
--   **Update operation.** The template record used in an Update operation is strongly-typed and therefore includes all row columns. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a null value in this record to mean that the column should be excluded from the Update operation; however, non-nillable columns cannot be excluded because you cannot them to a null value. Therefore, you must specify values for non-nillable columns when you perform an Update operation.  
+- <strong>Update operation.</strong> The template record used in an Update operation is strongly-typed and therefore includes all row columns. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a null value in this record to mean that the column should be excluded from the Update operation; however, non-nillable columns cannot be excluded because you cannot them to a null value. Therefore, you must specify values for non-nillable columns when you perform an Update operation.  
   
--   **Update operation.** The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a **DbNull** value in a nillable data column in the template record to mean that the column should be excluded from the operation. This means that you cannot set a nillable column to **DbNull** on the Oracle database by using the Update operation.  
+- <strong>Update operation.</strong> The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] interprets a <strong>DbNull</strong> value in a nillable data column in the template record to mean that the column should be excluded from the operation. This means that you cannot set a nillable column to <strong>DbNull</strong> on the Oracle database by using the Update operation.  
   
--   **Select operation.** There is no streaming support for SELECT queries that return a large record set.  
+- **Select operation.** There is no streaming support for SELECT queries that return a large record set.  
   
- For scenarios where these limitations present challenges, you can invoke the operation by using the WCF channel model because:  
+  For scenarios where these limitations present challenges, you can invoke the operation by using the WCF channel model because:  
   
--   By using the WCF channel model, you can exclude specific data columns from Update and Insert operations.  
+- By using the WCF channel model, you can exclude specific data columns from Update and Insert operations.  
   
--   The WCF channel model provides node-level streaming support for the basic SQL operations that the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] exposes.  
+- The WCF channel model provides node-level streaming support for the basic SQL operations that the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] exposes.  
   
- For more information about using the WCF channel model with the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Develop Oracle Database Applications Using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md).  
+  For more information about using the WCF channel model with the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Develop Oracle Database Applications Using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md).  
   
 ## See Also  
  [Develop Oracle Database Applications Using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)

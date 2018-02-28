@@ -30,7 +30,7 @@ Field justification concerns whether the data characters in a field occur before
   
 ## See Also  
 - [Field Considerations](../core/field-considerations.md)   
-- More info on the following properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]:  
+- More info on the following properties [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]:  
     - Justification (Node Property of Flat File Schemas)  
     - Positional Offset (Node Property of Flat File Schemas)  
     - Positional Length (Node Property of Flat File Schemas)

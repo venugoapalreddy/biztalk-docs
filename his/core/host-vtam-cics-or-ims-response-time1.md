@@ -25,7 +25,7 @@ The host response time, also called the unit of work (UOW) or host processing ti
  If you are using IMS, verify that IMS has sufficient message processing regions to handle the expected load.  
   
 ## Troubleshooting Suggestions  
- Capture a [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] data link control (DLC) message trace of the throughput test and analyze the host response time observed on the LU 6.2 sessions.  
+ Capture a [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] data link control (DLC) message trace of the throughput test and analyze the host response time observed on the LU 6.2 sessions.  
   
  Within a Host Integration Server DLC message trace, a unique LU 6.2 session is distinguished by a unique Originating Address Field (OAF), Destination Address Field (DAF), and OAF/DAF Assignor Indicator (ODAI) values. The OAF and DAF specified in a Host Integration Server session request will alternate on the host response.  
   

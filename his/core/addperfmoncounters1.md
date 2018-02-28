@@ -20,7 +20,7 @@ The **AddPerfmonCounters** function is used to add Perfmon counters to a link se
   
 ```  
   
-          void AddPerfmonCounters(   
+          void AddPerfmonCounters(   
 LPSTRpszComputerName,  
 LPSTRpszService);  
 ```  

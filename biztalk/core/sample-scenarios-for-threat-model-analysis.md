@@ -22,19 +22,19 @@ manager: "anneta"
 # Sample Scenarios for Threat Model Analysis
 This section provides the steps and results of a threat model analysis (TMA) for each usage scenario for the sample architecture identified in [Sample Architectures for Small & Medium-Sized Companies](../core/sample-architectures-for-small-medium-sized-companies.md). The purpose of this section is to show you the steps of a TMA. This helps you understand how a TMA works, and describes for you the potential threats we identified for the sample architecture and how we recommend that you reduce their effect.  
   
- We categorize the usage scenarios based on the different adapters you can use with Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and the use of Enterprise Single-Sign On.  
+ We categorize the usage scenarios based on the different adapters you can use with Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and the use of Enterprise Single-Sign On.  
   
  For each scenario, we followed these steps to complete the Threat Model Analysis:  
   
--   Collect background information  
+- Collect background information  
   
--   Create and analyze the threat model  
+- Create and analyze the threat model  
   
--   Review threats  
+- Review threats  
   
--   Identify mitigation techniques and technologies  
+- Identify mitigation techniques and technologies  
   
- For more information Threat Model Analysis, see [Threat Model Analysis](../core/threat-model-analysis.md).  
+  For more information Threat Model Analysis, see [Threat Model Analysis](../core/threat-model-analysis.md).  
   
 ## In This Section  
   

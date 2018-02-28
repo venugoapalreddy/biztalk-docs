@@ -20,7 +20,7 @@ manager: "anneta"
 # Programmers guide, FRR NAK sample, and tools
 
 ## Overiview
-This Software Development Kit (SDK) provides information for developers who are creating applications using any of the tools in Microsoft® [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)], the public application programming interfaces (API), or the samples and utilities provided in the A4SWIFT SDK.  
+This Software Development Kit (SDK) provides information for developers who are creating applications using any of the tools in Microsoft® [!INCLUDE [A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)], the public application programming interfaces (API), or the samples and utilities provided in the A4SWIFT SDK.  
   
 #### Tips for using Help in a developer environment
   

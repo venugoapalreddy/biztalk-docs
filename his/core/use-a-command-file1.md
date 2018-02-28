@@ -14,21 +14,21 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Use a Command File
-If you want to run a series of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] configuration commands, you can remove the word **snacfg** from each command, place the new commands in a file called a command file, then use a single **snacfg** command to run the entire command file. This is similar to the way a batch file works; however, a command file opens and closes the configuration file fewer times than a batch file. When a command file is run, the configuration file is opened only once, at the beginning. Then all the commands are carried out, and the configuration file is closed. In contrast, when a batch file containing **snacfg** commands is run, the configuration file is opened and closed multiple times, once for every command in the file.  
+If you want to run a series of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] configuration commands, you can remove the word <strong>snacfg</strong> from each command, place the new commands in a file called a command file, then use a single <strong>snacfg</strong> command to run the entire command file. This is similar to the way a batch file works; however, a command file opens and closes the configuration file fewer times than a batch file. When a command file is run, the configuration file is opened only once, at the beginning. Then all the commands are carried out, and the configuration file is closed. In contrast, when a batch file containing <strong>snacfg</strong> commands is run, the configuration file is opened and closed multiple times, once for every command in the file.  
   
  When creating a command file, do not include the following:  
   
--   The word **snacfg**  
+- The word **snacfg**  
   
--   A path for a configuration file  
+- A path for a configuration file  
   
--   A command path for another command file  
+- A command path for another command file  
   
--   A backslash inside the text string for a comment  
+- A backslash inside the text string for a comment  
   
- Also, you can include long, multiline commands in a command file by ending lines with a backslash ( \ ). The backslash indicates that the string in the next line should be appended to the current command.  
+  Also, you can include long, multiline commands in a command file by ending lines with a backslash ( \ ). The backslash indicates that the string in the next line should be appended to the current command.  
   
- There are two steps for using a command file. First, create the file, either by typing the configuration commands into a plain text file, or by using the **/print** option as described in the next section. Then run the command file from the command prompt by typing a line with the following syntax:  
+  There are two steps for using a command file. First, create the file, either by typing the configuration commands into a plain text file, or by using the **/print** option as described in the next section. Then run the command file from the command prompt by typing a line with the following syntax:  
   
 ```  
   

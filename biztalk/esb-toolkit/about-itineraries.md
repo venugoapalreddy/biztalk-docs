@@ -14,10 +14,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # About Itineraries
-An itinerary is a representation of an ESB mediation policy for executing a sequence of processing instructions based on the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] extensible format. An itinerary can be viewed as a high-level mediation language that describes a sequence of declarative itinerary services that are associated with mediation components by configuration of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine. You can design mediation flows to describe how messages should be processed, and you can organize the entire flow as a visual drawing. At run time, the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] core engine executes the itinerary produced by Itinerary Designer.  
+An itinerary is a representation of an ESB mediation policy for executing a sequence of processing instructions based on the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] extensible format. An itinerary can be viewed as a high-level mediation language that describes a sequence of declarative itinerary services that are associated with mediation components by configuration of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] core engine. You can design mediation flows to describe how messages should be processed, and you can organize the entire flow as a visual drawing. At run time, the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] core engine executes the itinerary produced by Itinerary Designer.  
   
 ## The Itinerary Designer Surface  
- The Itinerary Designer surface is a visual designer that is used to create [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] itineraries and to export these itineraries into run-time format. It is a canvas to which you can drag items from the Toolbox, as illustrated in Figure 1.  
+ The Itinerary Designer surface is a visual designer that is used to create [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] itineraries and to export these itineraries into run-time format. It is a canvas to which you can drag items from the Toolbox, as illustrated in Figure 1.  
   
  ![Itinerary Designer](../esb-toolkit/media/ch5-itinerarydesigner.gif "Ch5-ItineraryDesigner")  
   
@@ -45,21 +45,21 @@ An itinerary is a representation of an ESB mediation policy for executing a sequ
 ## Steps in Itinerary Development  
  To develop an itinerary, which represents ESB mediation flow, you should typically perform the following actions:  
   
--   Add model elements to represent the message processing steps for your itinerary. The Itinerary Designer provides a toolbox that contains shapes used to represent different actions or key abstractions.  
+- Add model elements to represent the message processing steps for your itinerary. The Itinerary Designer provides a toolbox that contains shapes used to represent different actions or key abstractions.  
   
--   Specify itinerary model properties, which include a connection string to the Microsoft BizTalk Server management database and model exporter configuration.  
+- Specify itinerary model properties, which include a connection string to the Microsoft BizTalk Server management database and model exporter configuration.  
   
--   Bind on-ramp and off-ramp model elements to physical BizTalk receive locations and send ports by associating these model elements with corresponding technology extenders.  
+- Bind on-ramp and off-ramp model elements to physical BizTalk receive locations and send ports by associating these model elements with corresponding technology extenders.  
   
--   Associate itinerary services model elements with extenders and define technology-specific properties required by an extender. These properties may vary for a particular type of the extender; they can represent itinerary mediation service properties and BizTalk-specific properties associated with its run-time components and artifacts.  
+- Associate itinerary services model elements with extenders and define technology-specific properties required by an extender. These properties may vary for a particular type of the extender; they can represent itinerary mediation service properties and BizTalk-specific properties associated with its run-time components and artifacts.  
   
--   Identify custom components that you might want to reference as itinerary mediation services. For example, you may develop an orchestration as the itinerary service.  
+- Identify custom components that you might want to reference as itinerary mediation services. For example, you may develop an orchestration as the itinerary service.  
   
--   Verify resolver model element settings against [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] run-time configuration by invoking resolver service from the designer surface.  
+- Verify resolver model element settings against [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] run-time configuration by invoking resolver service from the designer surface.  
   
--   Validate and export the itinerary run-time policy using an exporter. The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides two exporters with the Itinerary Designer: file exporter and database exporter. Alternatively, you can implement a custom exporter.  
+- Validate and export the itinerary run-time policy using an exporter. The [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] provides two exporters with the Itinerary Designer: file exporter and database exporter. Alternatively, you can implement a custom exporter.  
   
--   Test your itinerary using test client applications or BizUnit framework.  
+- Test your itinerary using test client applications or BizUnit framework.  
   
 ## Security Considerations for Developing Itineraries  
  When you design itineraries, you should consider potential security issues:  

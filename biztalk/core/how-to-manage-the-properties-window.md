@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Manage the Properties Window
-BizTalk Editor uses the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window to display the values of the properties associated with nodes in the schema tree view, and provides an interface for changing those values. This topic provides step-by-step instructions for managing certain characteristics of the Properties window.  
+BizTalk Editor uses the Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window to display the values of the properties associated with nodes in the schema tree view, and provides an interface for changing those values. This topic provides step-by-step instructions for managing certain characteristics of the Properties window.  
   
 ### To turn property descriptions on and off  
   

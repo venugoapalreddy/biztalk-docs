@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # AS2 Security
-The native AS2 feature of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to help secure AS2 messages using encryption keys, digital signatures, and certificates. This requires the correct configuration of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and the correct configuration of certificates.  
+The native AS2 feature of Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to help secure AS2 messages using encryption keys, digital signatures, and certificates. This requires the correct configuration of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and the correct configuration of certificates.  
   
  For information about the structure of an AS2 message that is signed and/or encrypted, see [AS2 Messages](../core/as2-messages.md).  
   

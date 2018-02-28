@@ -70,13 +70,13 @@ manager: "anneta"
 ## A4SWIFT database requires archiving  
   
 ### Symptom  
- The [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database is growing too large.  
+ The [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database is growing too large.  
   
 ### Possible Cause  
- The History table in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database is not automatically archived. This table stores data about message repair and new submission, including who performed which tasks and data about orchestration processes. This table will continue to grow as you perform message repair and new submission operations.  
+ The History table in the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database is not automatically archived. This table stores data about message repair and new submission, including who performed which tasks and data about orchestration processes. This table will continue to grow as you perform message repair and new submission operations.  
   
 ### Solution  
- To limit growth of the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, routinely archive data out of the History table, using your standard archiving procedures.  
+ To limit growth of the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, routinely archive data out of the History table, using your standard archiving procedures.  
   
 ## See Also  
  [Troubleshooting: Issues and Resolutions](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

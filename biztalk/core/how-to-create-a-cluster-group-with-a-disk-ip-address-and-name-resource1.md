@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Create a Cluster Group with a Disk, IP Address, and Name Resource
-For clustered [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] components and dependencies to be accessible over the network via NetBIOS, a clustered **Network Name** resource must be created in same cluster group. For a clustered Network Name resource to be accessible via the TCP/IP protocol, an **IP Address** resource must be created in the same cluster group as well. Some [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dependencies also require the use of a clustered **Physical Disk** resource to function correctly. To create a cluster group with a **Physical Disk**, **IP Address** and **Network Name** resource follow these steps:  
+For clustered [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] components and dependencies to be accessible over the network via NetBIOS, a clustered <strong>Network Name</strong> resource must be created in same cluster group. For a clustered Network Name resource to be accessible via the TCP/IP protocol, an <strong>IP Address</strong> resource must be created in the same cluster group as well. Some [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] dependencies also require the use of a clustered <strong>Physical Disk</strong> resource to function correctly. To create a cluster group with a <strong>Physical Disk</strong>, <strong>IP Address</strong> and <strong>Network Name</strong> resource follow these steps:  
   
 ### To create a service or application with a Physical Disk, IP Address, and Network Name resource  
   

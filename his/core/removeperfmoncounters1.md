@@ -20,7 +20,7 @@ The **RemovePerfmonCounters** function is used to remove counters from a link se
   
 ```  
   
-          void RemovePerfmonCounters(   
+          void RemovePerfmonCounters(   
 LPSTRpszComputerName,  
 LPSTRpszService);  
 ```  

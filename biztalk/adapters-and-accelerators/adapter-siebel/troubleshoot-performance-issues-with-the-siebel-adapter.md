@@ -18,14 +18,14 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshoot Performance Issues with the Siebel adapter
-This section discusses using troubleshooting techniques to resolve performance issues that you might encounter when using [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)].  
+This section discusses using troubleshooting techniques to resolve performance issues that you might encounter when using [!INCLUDE [adaptersiebel](../../includes/adaptersiebel-md.md)].  
   
 ## Known Issues  
   
 ###  Slowdown or stall in throughput when using the adapter with BizTalk Server  
  **Problem**  
   
- When using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the number of messages sent or received by the adapter slows down or comes to a stall.  
+ When using the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the number of messages sent or received by the adapter slows down or comes to a stall.  
   
  **Cause**  
   

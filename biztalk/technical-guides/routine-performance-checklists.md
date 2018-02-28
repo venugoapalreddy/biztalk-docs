@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Routine Performance Checklists
-This section lists the performance checks that should be performed on a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system on a routine basis as part of a preventive maintenance program. Performing these checks will help you determine whether there are any bottlenecks in your application setup or any performance issues with the system.  
+This section lists the performance checks that should be performed on a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system on a routine basis as part of a preventive maintenance program. Performing these checks will help you determine whether there are any bottlenecks in your application setup or any performance issues with the system.  
   
  The topics in this section provide links to performance related topics, both inside and outside this document, for the performance checks.  
   

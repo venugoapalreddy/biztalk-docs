@@ -20,7 +20,7 @@ The SNA National Language Support (SNANLS) **IsInstalledCodePage** function dete
   
 ```  
   
-BOOL WINAPI IsInstalledCodePage(   
+BOOL WINAPI IsInstalledCodePage(   
 UINTCodePage,  
 HKEYKeyHandle  
 );  

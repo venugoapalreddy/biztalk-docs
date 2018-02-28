@@ -38,7 +38,7 @@ When mapping from an element, a typical Extensible Stylesheet Language Transform
   
  If the element **BCT01** contains mixed content, the use of text() makes it possible to access the first text only up to the point of the first subelement, if any. If text() were not used in this XSLT statement, the result would be that all text content, plus any text content of subelements, would be mapped as one string of text. Configuring the **Source Links** property for a link allows you to control the source of the data that is copied into the structure defined by the destination schema.  
   
- When you select a link in the displayed grid page, one of the properties displayed in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window is the **Source Links** property. You can choose between the following possible values for each link in your map:  
+ When you select a link in the displayed grid page, one of the properties displayed in the [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window is the <strong>Source Links</strong> property. You can choose between the following possible values for each link in your map:  
   
 -   **Copy text value.** Use this value, which is the default, to copy the value of the element or attribute in the input instance message. For example, if the relevant element is BoldExample, as follows:  
   

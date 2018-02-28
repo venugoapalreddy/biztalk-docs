@@ -42,7 +42,7 @@ This topic discusses the **Execution Mode** property and stage affinity.
  Note that each stage can have its own **Execution Mode** setting, so different stages within a pipeline can have different execution modes.  
   
 > [!NOTE]
->  In this release of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], all the stages in a send pipeline and all stages except Disassemble in a receive pipeline have the value of the **Execution Mode** property set to **All**. The value of the **Execution Mode** property in the Disassemble stage is set to **FirstMatch**. You cannot change the **Execution Mode** property of a stage.  
+>  In this release of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], all the stages in a send pipeline and all stages except Disassemble in a receive pipeline have the value of the <strong>Execution Mode</strong> property set to <strong>All</strong>. The value of the <strong>Execution Mode</strong> property in the Disassemble stage is set to <strong>FirstMatch</strong>. You cannot change the <strong>Execution Mode</strong> property of a stage.  
   
 #### To read pipeline stage properties  
   

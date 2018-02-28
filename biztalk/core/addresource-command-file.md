@@ -18,7 +18,7 @@ manager: "anneta"
 To add a file to a BizTalk application, you use the **AddResource** command and specify **System.BizTalk:File** for the Type parameter. Running this command adds the file to the BizTalk Management database. The file is also displayed in the BizTalk Administration console, in the Resources folder of the application to which you added it. In addition, the file is listed when you use the [ListApp Command](../core/listapp-command.md).  
   
 ## Usage  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:File** [**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Server:***value*] [**/Database:***value*]  
+ <strong>BTSTask AddResource</strong> [<strong>/ApplicationName:</strong><em>value</em>] <strong>/Type:System.BizTalk:File</strong> [<strong>/Overwrite</strong>] <strong>/Source:</strong><em>value</em> [<strong>/Destination:</strong><em>value</em>] [<strong>/Server:</strong><em>value</em>] [<strong>/Database:</strong><em>value</em>]  
   
 ## Parameters  
   

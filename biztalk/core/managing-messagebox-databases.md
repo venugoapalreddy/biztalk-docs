@@ -25,7 +25,7 @@ The MessageBox database has three essential functions. It stores subscriptions a
   
  If you use Windows Server 2003, you must enable the distributed transaction coordinator (DTC) on the MessageBox database. You must also enable network clients for multicomputer deployments. For more information, see [Ports for the Administration Server](../core/ports-for-the-administration-server.md).  
   
- This section contains procedural information about managing MessageBox databases in your environment. For conceptual information about MessageBox databases and the subscription model Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses to process messages, see [The MessageBox Database](../core/the-messagebox-database.md).  
+ This section contains procedural information about managing MessageBox databases in your environment. For conceptual information about MessageBox databases and the subscription model Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses to process messages, see [The MessageBox Database](../core/the-messagebox-database.md).  
   
 ## In This Section  
   

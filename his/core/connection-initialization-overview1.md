@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Connection Initialization Overview
-Connection Initialization occurs in a sequential fashion. Each step builds upon the preceding step. After all steps have completed correctly, an Active connection is established between [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and a remote host, either an AS/400 or a mainframe.  
+Connection Initialization occurs in a sequential fashion. Each step builds upon the preceding step. After all steps have completed correctly, an Active connection is established between [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and a remote host, either an AS/400 or a mainframe.  
   
  Every connection requires that a number of parameters match between the two platforms. Throughout this overview, these parameters, indicated in bold type, are displayed using the actual field names used by Host Integration Server and a remote host (that is, upper/lower case is preserved).  
   

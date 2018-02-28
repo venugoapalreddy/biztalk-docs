@@ -22,6 +22,6 @@ In this use case, a message contains an itinerary service step that specifies mo
   
  **Implementing the Scatter-Gather pattern for multiple Web service invocations**  
   
- The Scatter-Gather sample included with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] demonstrates this use case.  
+ The Scatter-Gather sample included with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] demonstrates this use case.  
   
  For more information, see [Installing and Running the Scatter-Gather Sample](../esb-toolkit/installing-and-running-the-scatter-gather-sample.md).

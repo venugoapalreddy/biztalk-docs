@@ -20,7 +20,7 @@ The **Specify_Windows_Handle** call (function name **xchwnd**) sets the Microsof
   
 ```  
   
-CM_ENTRY Specify_Windows_Handle(   
+CM_ENTRY Specify_Windows_Handle(   
   HWND hwndNotify,             
   CM_INT32 FAR *return_code    
 );  

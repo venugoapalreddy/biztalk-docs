@@ -20,7 +20,7 @@ Pointer to a SafeArray of adapter names in the group.
  This **SafeArray** must be destroyed after use.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SAdapterInGroup Structure (COM)](../esso/sadapteringroup-structure-com.md)   

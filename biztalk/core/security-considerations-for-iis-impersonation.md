@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Security Considerations for IIS Impersonation
-To use the BAM [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] interceptor with IIS impersonation, follow the guidelines in [How to Determine and Set Event Writer Roles for Activities](../core/how-to-determine-and-set-event-writer-roles-for-activities.md).  
+To use the BAM [!INCLUDE [firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] interceptor with IIS impersonation, follow the guidelines in [How to Determine and Set Event Writer Roles for Activities](../core/how-to-determine-and-set-event-writer-roles-for-activities.md).  
   
 > [!IMPORTANT]
 >  You must be a member of the BizTalk Application Users group.  

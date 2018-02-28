@@ -21,7 +21,7 @@ manager: "anneta"
 This section provides instructions on creating, configuring, and managing receive locations for a BizTalk application by using the BizTalk Server Administration console. A receive location consists of an address at which inbound messages arrive and the messaging pipeline that processes the message received at that address. For background information, see [Receive Locations](../core/receive-locations.md).  
   
 > [!NOTE]
->  You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks. For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
+>  You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks. For information about using WMI, see the <strong>WMI Class Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
   
 ## Next steps 
   

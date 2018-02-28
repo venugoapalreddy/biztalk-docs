@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Receive Polling Messages Across Multiple Receive Ports from SQL using BizTalk Server
-Consider a scenario where you want to create a BizTalk application that includes two polling operations. Each polling operation polls separate tables, Employee and Customer, from the same database. When you deploy such an application in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you will need to create two receive ports. The connection URI for each receive port will be:  
+Consider a scenario where you want to create a BizTalk application that includes two polling operations. Each polling operation polls separate tables, Employee and Customer, from the same database. When you deploy such an application in [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you will need to create two receive ports. The connection URI for each receive port will be:  
   
 ```  
 mssql://<server_name>/<database_instance_name>/<datbase_name>  
@@ -23,7 +23,7 @@ mssql://<server_name>/<database_instance_name>/<datbase_name>
   
  Because both receive ports are receiving polling messages from the same database on the same server, the connection URI for both will be the same. However, a BizTalk application cannot have two receive ports with the same connection URI.  
   
- To enable adapter clients to have two receive ports that poll the same database (or even the same table in a database) in a BizTalk application, the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] provides a connection property, **InboundID**. You can specify any value for this connection property. By adding the inbound ID, a connection URI becomes unique. For example:  
+ To enable adapter clients to have two receive ports that poll the same database (or even the same table in a database) in a BizTalk application, the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] provides a connection property, <strong>InboundID</strong>. You can specify any value for this connection property. By adding the inbound ID, a connection URI becomes unique. For example:  
   
  The connection URI for the port receiving polling messages for the Employee table can be:  
   

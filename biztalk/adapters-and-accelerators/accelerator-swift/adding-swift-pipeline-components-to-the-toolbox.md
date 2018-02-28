@@ -18,11 +18,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Adding SWIFT Pipeline Components to the Toolbox
-You must add the SWIFT pipeline components to the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Toolbox, so that you can create custom pipelines using these components. This is required to create pipelines for either Message Repair and New Submission or FIN Response Reconciliation.  
+You must add the SWIFT pipeline components to the [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Toolbox, so that you can create custom pipelines using these components. This is required to create pipelines for either Message Repair and New Submission or FIN Response Reconciliation.  
   
  **Summary**  
   
- Add the following SWIFT pipeline components to the [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Toolbox:  
+ Add the following SWIFT pipeline components to the [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Toolbox:  
   
 -   SWIFT Assembler (for Message Repair and New Submission or FIN Response Reconciliation (FRR))  
   

@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # BizTalk Project Properties Window
-The project properties window for a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] contains the following properties:  
+The project properties window for a BizTalk project in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] contains the following properties:  
   
 ## BPEL Compliance  
  Specifies whether to generate Business Process Execution Language (BPEL) compliance output.  

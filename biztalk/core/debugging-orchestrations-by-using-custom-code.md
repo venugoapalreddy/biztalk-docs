@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Debugging Orchestrations by using Custom Code
-If your orchestration is going to be exercised in a test environment or you are creating a prototype and want to modify the values of message fields and orchestration variables, you can write the output to the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] console by using the following code in an **Expression** shape:  
+If your orchestration is going to be exercised in a test environment or you are creating a prototype and want to modify the values of message fields and orchestration variables, you can write the output to the [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] console by using the following code in an <strong>Expression</strong> shape:  
   
 ```  
 System.Diagnostics.Debug.WriteLine(iResult);  
@@ -35,23 +35,23 @@ System.Diagnostics.Debug.WriteLine(iResult);
 ## To Debug a .NET component called by an Orchestration  
  The following steps demonstrate how to debug a .NET component called by an Orchestration:  
   
-1.  Open the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for your component.  
+1. Open the [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] project for your component.  
   
-2.  Set a breakpoint in your component on the method that is called by the orchestration.  
+2. Set a breakpoint in your component on the method that is called by the orchestration.  
   
-3.  Click the **Debug** menu and select **Attach to Process…** to display the **Attach to Process** dialog.  
+3. Click the **Debug** menu and select **Attach to Process…** to display the **Attach to Process** dialog.  
   
-4.  Click the **Select…** button next to the **Attach to:** text box to display the **Select Code Type** dialog.  
+4. Click the **Select…** button next to the **Attach to:** text box to display the **Select Code Type** dialog.  
   
-5.  Click to select the option to **Debug these code types:** and select **Managed** and then click the **OK** button.  
+5. Click to select the option to **Debug these code types:** and select **Managed** and then click the **OK** button.  
   
-6.  Click to select the **BTSNTSvc.exe** process from **Available Processes** and then click the **Attach** button.  
+6. Click to select the **BTSNTSvc.exe** process from **Available Processes** and then click the **Attach** button.  
   
-7.  Send a message to your orchestration through a receive port.  
+7. Send a message to your orchestration through a receive port.  
   
-8.  The .NET component should be stopped in the breakpoint.  
+8. The .NET component should be stopped in the breakpoint.  
   
-9. You can perform debugging as usual with [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+9. You can perform debugging as usual with [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
     > [!NOTE]
     >  For best results, the .NET component should be registered in the Global Assembly Cache (GAC).  

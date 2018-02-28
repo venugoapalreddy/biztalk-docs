@@ -18,13 +18,13 @@ manager: "anneta"
 
 ## Get started with BizTalk Server 2016
 
-[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] is the latest on-premises release. With this new version, you can expect closer integration with Azure using the new Logic Apps adapter, and connect to Azure resources using the File and WCF-SQL adapters. 
+[!INCLUDE [bts2016_md](../includes/bts2016-md.md)] is the latest on-premises release. With this new version, you can expect closer integration with Azure using the new Logic Apps adapter, and connect to Azure resources using the File and WCF-SQL adapters. 
 
 One of the biggest changes is support for SQL Server 2016 AlwaysOn Availability Groups (AG). This support covers using BizTalk Server on-premises, and using BizTalk Server Azure virtual machines. With AlwaysOn, you can now have a highly-available solution using Azure virtual machines.
 
 There have also been updates to SHA-2 support, import and export binding options for parties, Administration console improvements, and much much more. 
 
-In this [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] set of topics, we focus on the specific documentation for [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], including what's changed, and the installation. So, if you want to read about high availability, monitoring your BIzTalk environment, and more, then go to the [BizTalk Server core documentation](../core/biztalk-server-core-documentation.md). If you want to configure BizTalk Server, then go [Configure BizTalk Server](../install-and-config-guides/configure-biztalk-server.md). If you want to read about what's new, and install [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], then get started with the following links:  
+In this [!INCLUDE [bts2016_md](../includes/bts2016-md.md)] set of topics, we focus on the specific documentation for [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], including what's changed, and the installation. So, if you want to read about high availability, monitoring your BIzTalk environment, and more, then go to the [BizTalk Server core documentation](../core/biztalk-server-core-documentation.md). If you want to configure BizTalk Server, then go [Configure BizTalk Server](../install-and-config-guides/configure-biztalk-server.md). If you want to read about what's new, and install [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], then get started with the following links:  
 
 * [What's New](../install-and-config-guides/what-s-new-in-biztalk-server-2016.md)  
 * [Hardware and Software Requirements](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  

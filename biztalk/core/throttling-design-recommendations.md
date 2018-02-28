@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Throttling Design Recommendations
-This section provides recommendations on how to design a solution to take advantage of throttling. The throttling engine enhancements in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may significantly impact the performance of BizTalk Server  
+This section provides recommendations on how to design a solution to take advantage of throttling. The throttling engine enhancements in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may significantly impact the performance of BizTalk Server  
   
 ## In This Section  
   

@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Develop or create your adapter using the WCF LOB Adapter SDK
-This section contains information for developers who are creating adapters using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. Once the adapter has been developed, it is usually consumed by either .NET or [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] developers as a way to access operations and data in a desired target line-of-business system.  
+This section contains information for developers who are creating adapters using the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)]. Once the adapter has been developed, it is usually consumed by either .NET or [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] developers as a way to access operations and data in a desired target line-of-business system.  
   
 ## In This Section  
   

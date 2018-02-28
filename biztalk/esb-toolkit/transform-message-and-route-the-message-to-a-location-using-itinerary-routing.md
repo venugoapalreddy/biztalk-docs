@@ -15,7 +15,7 @@ manager: "anneta"
 ---
 # How to: Transform a Message and Route the Resulting Message to a File Location Using an Itinerary Routing Slip
 ## Goal  
- This section demonstrates how to use the ESB Designer domain-specific language (DSL) to create an itinerary that implements message transformation by invoking a BizTalk map, and then it routes the messages using the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] FILE adapter.  
+ This section demonstrates how to use the ESB Designer domain-specific language (DSL) to create an itinerary that implements message transformation by invoking a BizTalk map, and then it routes the messages using the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] FILE adapter.  
   
  In this How-to topic, you will complete the following steps:  
   

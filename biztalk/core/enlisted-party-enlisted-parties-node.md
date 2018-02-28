@@ -18,11 +18,13 @@ manager: "anneta"
 ---
 # Enlisted Party (Enlisted Parties Node)
 The Enlisted Party node of a binding file contains specific information about an enlisted party associated with a role that is exported with the binding file.  
-  
+
 ## Nodes in the Enlisted Party node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|Name|Attribute|xs:string|Specifies the name of the enlisted party|Not required|Default value: empty|  
-|[Mappings](../core/mappings-enlisted-party-node.md)|Record|ArrayOfEnlistedPartyMapping (ComplexType)|Container node for the mappings between party ports and role port type operations.|Not required|Default value: none|
+
+
+|                <strong>Name</strong>                | <strong>Node Type</strong> |        <strong>Data Type</strong>         |                            <strong>Description</strong>                            | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|-----------------------------------------------------|----------------------------|-------------------------------------------|------------------------------------------------------------------------------------|-------------------------------|---------------------------|
+|                        Name                         |         Attribute          |                 xs:string                 |                      Specifies the name of the enlisted party                      |         Not required          |   Default value: empty    |
+| [Mappings](../core/mappings-enlisted-party-node.md) |           Record           | ArrayOfEnlistedPartyMapping (ComplexType) | Container node for the mappings between party ports and role port type operations. |         Not required          |    Default value: none    |
+

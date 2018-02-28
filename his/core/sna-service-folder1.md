@@ -16,7 +16,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # SNA Service Folder
-This folder contains the SNA service installed on this [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer. Each Host Integration Server computer can have a maximum of four SNA services installed and active at one time.  
+This folder contains the SNA service installed on this [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer. Each Host Integration Server computer can have a maximum of four SNA services installed and active at one time.  
   
  Select **SNA Service**, then right-click to perform various tasks, including:  
   

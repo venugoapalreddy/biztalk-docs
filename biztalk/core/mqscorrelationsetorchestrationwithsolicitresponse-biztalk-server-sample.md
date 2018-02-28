@@ -22,7 +22,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # MQSCorrelationSetOrchestrationWithSolicitResponse (BizTalk Server Sample)
-The MQSCorrelationSetOrchestrationWithSolicitResponse sample demonstrates how to use a correlation identifier produced by the MQSeries Server instead of by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+The MQSCorrelationSetOrchestrationWithSolicitResponse sample demonstrates how to use a correlation identifier produced by the MQSeries Server instead of by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## What This Sample Does  
  The orchestration sends a message with an empty value for the **MQMD_MsgID** property in the message header. MQSeries generates the MessageID and CorrelationID and returns a message with a value assigned to **MQMD_MsgID** and **MQMD_CorrelId** as part of the response in the solicit-response send port of the adapter. The orchestration uses the generated correlation identifier to initialize the correlation set and follows the correlation set in a subsequent receive location by checking the **MQMD_CorrelId** property of the message. The adapter also assigns the correlation identifier to **BizTalk_CorrelationID**, which you could also use in an orchestration. For more information about using correlation identifiers with the adapter, see [Correlating Messages Using Request-Reply](../core/correlating-messages-using-request-reply.md).  
@@ -45,21 +45,21 @@ The MQSCorrelationSetOrchestrationWithSolicitResponse sample demonstrates how to
 ## How to Use This Sample  
  To create the application, you must complete the following steps:  
   
--   Create two MQSeries queues.  
+- Create two MQSeries queues.  
   
--   Set up a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location and send port.  
+- Set up a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location and send port.  
   
--   Enable the receive location.  
+- Enable the receive location.  
   
--   Start the send port.  
+- Start the send port.  
   
--   Create the appropriate folders.  
+- Create the appropriate folders.  
   
--   Modify the orchestration.  
+- Modify the orchestration.  
   
--   Deploy, bind and start the orchestration.  
+- Deploy, bind and start the orchestration.  
   
- If you have the required permissions to the MQSeries Server for Windows installation, you can create the MQSeries queue through the adapter dialog boxes, and can skip the next procedure. If you do not have such access, you can create the queue using the IBM WebSphere MQ Explorer. To create the queues through the WebSphere MQ Explorer, complete the following steps.  
+  If you have the required permissions to the MQSeries Server for Windows installation, you can create the MQSeries queue through the adapter dialog boxes, and can skip the next procedure. If you do not have such access, you can create the queue using the IBM WebSphere MQ Explorer. To create the queues through the WebSphere MQ Explorer, complete the following steps.  
   
 ## Creating the MQSeries Queues Through the WebSphere MQ Explorer  
   
@@ -165,7 +165,7 @@ The MQSCorrelationSetOrchestrationWithSolicitResponse sample demonstrates how to
 ||  
 |-|  
 |To modify the Orchestration used by the application|  
-|- In Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], double-click the solution file, **MQSCorrelationSolicitResponse.sln**, to open the solution.<br /><br /> - From the Solution Explorer pane, double-click the orchestration **MQSCorrelationSolicitResponse.odx** to view the orchestration.<br /><br /> - Double-click the message assignment shape **MessageAssignment_1** to launch the BizTalk Expression Editor.<br /><br /> - Enter the appropriate MQSeries queue manager name for the following expression:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_ReplyToQMgr) = "QM_<machine_name>";`<br /><br /> - If you would like for the response message sent from BizTalk to contain the entire contents of the original message instead of only the first 100 bytes, modify the following line in the BizTalk Expression Editor.<br /><br /> - Original line:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 768;`<br /><br /> Change to:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 1792;`<br /><br /> - In the BizTalk Expression Editor, click **OK** to save the modified expression.<br /><br /> - In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], select **File**, and then select **Save All**.|  
+|- In Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], double-click the solution file, <strong>MQSCorrelationSolicitResponse.sln</strong>, to open the solution.<br /><br /> - From the Solution Explorer pane, double-click the orchestration <strong>MQSCorrelationSolicitResponse.odx</strong> to view the orchestration.<br /><br /> - Double-click the message assignment shape <strong>MessageAssignment_1</strong> to launch the BizTalk Expression Editor.<br /><br /> - Enter the appropriate MQSeries queue manager name for the following expression:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_ReplyToQMgr) = "QM_<machine_name>";`<br /><br /> - If you would like for the response message sent from BizTalk to contain the entire contents of the original message instead of only the first 100 bytes, modify the following line in the BizTalk Expression Editor.<br /><br /> - Original line:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 768;`<br /><br /> Change to:<br /><br /> `MQSeriesRequestSendMessage(MQSeries.MQMD_Report) = 1792;`<br /><br /> - In the BizTalk Expression Editor, click <strong>OK</strong> to save the modified expression.<br /><br /> - In [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], select <strong>File</strong>, and then select <strong>Save All</strong>.|  
   
 ## Building and Deploying the Sample  
  This procedure builds and deploys the solution that contains the orchestration used in this application.  
@@ -226,16 +226,16 @@ The MQSCorrelationSetOrchestrationWithSolicitResponse sample demonstrates how to
   
 #### To test the application  
   
-1.  Put a file in the **C:\Temp\Pickup2** folder.  
+1. Put a file in the **C:\Temp\Pickup2** folder.  
   
-2.  Examine the files in the **C:\Temp\Dropit2** folder and the **C:\Temp\Moveit**folder.  
+2. Examine the files in the **C:\Temp\Dropit2** folder and the **C:\Temp\Moveit**folder.  
   
-    -   The **C:\Temp\Dropit2** folder should contain a copy of the message that was originally picked up by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+   - The <strong>C:\Temp\Dropit2</strong> folder should contain a copy of the message that was originally picked up by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
-    -   The **C:\Temp\Moveit**folder should contain a response document with the message identifier (MQMD_MsgId) and the correlation identifier (MQMD_CorrelId).  
+   - The **C:\Temp\Moveit**folder should contain a response document with the message identifier (MQMD_MsgId) and the correlation identifier (MQMD_CorrelId).  
   
-    > [!NOTE]
-    >  If you disable the **MQReply** receive location, you can examine the message in WebSphere MQ Explorer and see that the message and correlation identifiers are set. To do this, launch the **WebSphere MQ Explorer** and examine the message placed in the **REPLYTOQ** queue. The message and correlation identifiers are displayed on the **Identifiers** tab of the **Messageproperties** dialog box.  
+   > [!NOTE]
+   >  If you disable the **MQReply** receive location, you can examine the message in WebSphere MQ Explorer and see that the message and correlation identifiers are set. To do this, launch the **WebSphere MQ Explorer** and examine the message placed in the **REPLYTOQ** queue. The message and correlation identifiers are displayed on the **Identifiers** tab of the **Messageproperties** dialog box.  
   
 ## See Also  
  [Correlating Messages Using Request-Reply](../core/correlating-messages-using-request-reply.md)   

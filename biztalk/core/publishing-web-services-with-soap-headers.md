@@ -32,15 +32,15 @@ You add SOAP headers to your Web services when you run the BizTalk Web Services 
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-       <soap:Header>  
-             <OrigDest xmlns="http://SOAPHeaderWS.ItemAvailability">  
-                    <Origination>Work</Origination>  
-                    <Destination>Home</Destination>  
-             </OrigDest>  
-       </soap:Header>  
-       <soap:Body>  
+       <soap:Header>  
+             <OrigDest xmlns="http://SOAPHeaderWS.ItemAvailability">  
+                    <Origination>Work</Origination>  
+                    <Destination>Home</Destination>  
+             </OrigDest>  
+       </soap:Header>  
+       <soap:Body>  
   
-       </soap:Body>  
+       </soap:Body>  
 </soap:Envelope>  
 ```  
   

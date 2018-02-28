@@ -18,7 +18,7 @@ The **SNAReleaseElement** function is called by an application to release a buff
   
 ```  
 VOID SNAReleaseElement(  
-PTRBFELT *eltptr   
+PTRBFELT *eltptr   
 );  
 ```  
   

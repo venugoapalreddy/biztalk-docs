@@ -20,7 +20,7 @@ The **RemoveLinkService** function is used to remove a link service. This functi
   
 ```  
   
-          __declspec(dllexport) BOOL WINAPI RemoveLinkService(   
+          __declspec(dllexport) BOOL WINAPI RemoveLinkService(   
 LPSTRszComputerName,  
 LPSTRszLinkServiceTitle);  
 ```  

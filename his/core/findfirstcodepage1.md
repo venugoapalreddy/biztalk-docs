@@ -20,7 +20,7 @@ The SNA National Language Support (SNANLS) **FindFirstCodePage** function finds 
   
 ```  
   
-const HANDLE WINAPI FindFirstCodePage(   
+const HANDLE WINAPI FindFirstCodePage(   
         DWORDdwEnumOption,  
         struct CodePage *pPage  
 );  

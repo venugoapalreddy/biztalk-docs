@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for Request Sets
-Each request set in an Oracle application in Oracle E-Business Suite is surfaced as an operation in [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].  
+Each request set in an Oracle application in Oracle E-Business Suite is surfaced as an operation in [!INCLUDE [adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)].  
   
 ## Message Structure of Request Set Operation  
  The operations surfaced for request set follow a request-response message exchange pattern. The following table shows the structure of these request and response messages.  
@@ -37,7 +37,7 @@ Each request set in an Oracle application in Oracle E-Business Suite is surfaced
  [CONCURRENT_PROGRAM_NAME] = Concurrent program included in the request set.  
   
 ## Message Actions for Request Sets  
- The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the following message actions for request sets.  
+ The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the following message actions for request sets.  
   
 > [!NOTE]
 >  See entity descriptions after the table.  

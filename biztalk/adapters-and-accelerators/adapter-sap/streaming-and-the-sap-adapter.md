@@ -22,7 +22,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Streaming and the SAP Adapter
-The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports message streaming between itself and a client application. With the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] operations are invoked and responses are returned by exchanging SOAP messages. A SOAP message body is composed of XML nodes.  
+The [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)] supports message streaming between itself and a client application. With the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] operations are invoked and responses are returned by exchanging SOAP messages. A SOAP message body is composed of XML nodes.  
   
  There are two kinds of message streaming that are supported by the adapter:  
   
@@ -31,7 +31,7 @@ The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports message str
 -   **Node-value streaming**. In node-value streaming the actual value of the node can be streamed in chunks between the client and the adapter. Node-value streaming is useful for sending or receiving large IDOCs using the SendIdoc or the ReceiveIdoc operations. This is because the entire IDOC is contained in a single node. (As opposed to a strongly-typed Send or Receive operation in which the IDOC data is broken into many nodes).  
   
 > [!IMPORTANT]
->  Node-value streaming is only supported between the adapter and a client application. The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] does not support end-to-end node-value streaming with the SAP system. This is because this functionality is not supported by the SAP client library.  
+>  Node-value streaming is only supported between the adapter and a client application. The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] does not support end-to-end node-value streaming with the SAP system. This is because this functionality is not supported by the SAP client library.  
   
  Both of these streaming modes rely on support for node streaming and node-value streaming on messages in WCF. For this reason, streaming is tied closely to how messages are created and consumed both by the adapter and by a client application. One result of this is that support for message streaming is not the same across all programming models.  
   
@@ -42,7 +42,7 @@ The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports message str
 -   Information about how message streaming is supported when you use the adapter in each programming model.  
   
 ## Streaming Fundamentals  
- The support for streaming implemented by the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] is a combination of:  
+ The support for streaming implemented by the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] is a combination of:  
   
 -   Message streaming support in WCF.  
   
@@ -53,19 +53,19 @@ The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports message str
 ### Message Streaming Support in WCF  
  How WCF supports streaming on a message depends both on how the message is created and how the message is consumed.  
   
--   A WCF message is created by using the static **Create** method of **System.ServiceModel.Channels.Message**. This method has several overloads that support different ways of passing the message body. A WCF message can be created by passing the message body using:  
+- A WCF message is created by using the static **Create** method of **System.ServiceModel.Channels.Message**. This method has several overloads that support different ways of passing the message body. A WCF message can be created by passing the message body using:  
   
-    -   A **System.Xml.XmlReader**, or  
+  -   A **System.Xml.XmlReader**, or  
   
-    -   A **System.ServiceModel.Channels.BodyWriter**.  
+  -   A **System.ServiceModel.Channels.BodyWriter**.  
   
--   A WCF message can be consumed using  
+- A WCF message can be consumed using  
   
-    -   An **XmlReader** by calling **Message.GetReaderAtBodyContents()**, or  
+  -   An **XmlReader** by calling **Message.GetReaderAtBodyContents()**, or  
   
-    -   An **XmlDictionaryWriter** by calling **Message.WriteBodyContents(XmlDictionaryWriter)**.  
+  -   An **XmlDictionaryWriter** by calling **Message.WriteBodyContents(XmlDictionaryWriter)**.  
   
- The following table shows how WCF behaves for different combinations of creating and consuming messages.  
+  The following table shows how WCF behaves for different combinations of creating and consuming messages.  
   
 |Message Created With|Message Consumed With|WCF Behavior|  
 |--------------------------|---------------------------|------------------|  
@@ -75,7 +75,7 @@ The [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] supports message str
 |**XmlReader**|**XmlReader**|**Node streaming** is supported. WCF internally buffers the **XmlReader**.|  
   
 ### Streaming Support in the SAP Client Library  
- The SAP client library does not support streaming. Therefore end-to-end node-value streaming is not supported by the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+ The SAP client library does not support streaming. Therefore end-to-end node-value streaming is not supported by the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
 ### Internal Message Handling by the Adapter  
  The adapter supports streaming in the following manner:  

@@ -18,19 +18,19 @@ manager: "anneta"
 > [!IMPORTANT]
 >  For the sake of brevity, this topic only describes how to receive notifications incrementally. In business scenarios, the orchestration must ideally include the logic to extract the kind of notification message received and then perform any subsequent operations. In other words, the orchestration described in this topic must be built on top of the orchestration described in [Process notification messages to complete specific tasks in SQL using BizTalk Server](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md).  
   
- This topic demonstrates how to configure the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive incremental query notification messages from a SQL Server database. To demonstrate incremental notifications, consider a table, Employee, with a “Status” column. When a new record is inserted to this table, the value of the Status column is set to 0. You can configure the adapter to receive incremental notifications by doing the following:  
+ This topic demonstrates how to configure the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive incremental query notification messages from a SQL Server database. To demonstrate incremental notifications, consider a table, Employee, with a “Status” column. When a new record is inserted to this table, the value of the Status column is set to 0. You can configure the adapter to receive incremental notifications by doing the following:  
   
--   Register for notifications using a SQL statement that retrieves all records that have Status column as 0. You can do so by specifying the SQL statement for the **NotificationStatement** binding property.  
+- Register for notifications using a SQL statement that retrieves all records that have Status column as 0. You can do so by specifying the SQL statement for the **NotificationStatement** binding property.  
   
--   For rows for which notification messages have been received, update the Status column to 1.  
+- For rows for which notification messages have been received, update the Status column to 1.  
   
- This topic demonstrates how to create a BizTalk orchestration and configure a BizTalk application to achieve this.  
+  This topic demonstrates how to create a BizTalk orchestration and configure a BizTalk application to achieve this.  
   
 ## Configuring Notifications with the SQL Adapter Binding Properties  
- The following table summarizes the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] binding properties that you use to configure receiving notifications from SQL Server. You must specify these binding properties while configuring the receive port in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.  
+ The following table summarizes the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] binding properties that you use to configure receiving notifications from SQL Server. You must specify these binding properties while configuring the receive port in the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.  
   
 > [!NOTE]
->  You may choose to specify these binding properties when generating the schema for the **Notification** operation, even though it is not mandatory. If you do so, the port binding file that the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] generates as part of the metadata generation also contains the values you specify for the binding properties. You can later import this binding file in the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create the WCF-custom or WCF-SQL receive port with the binding properties already set. For more information about creating a port using the binding file, see [Configure a physical port binding using a port binding file to use the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).  
+>  You may choose to specify these binding properties when generating the schema for the <strong>Notification</strong> operation, even though it is not mandatory. If you do so, the port binding file that the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] generates as part of the metadata generation also contains the values you specify for the binding properties. You can later import this binding file in the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create the WCF-custom or WCF-SQL receive port with the binding properties already set. For more information about creating a port using the binding file, see [Configure a physical port binding using a port binding file to use the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).  
   
 |Binding Property|Description|  
 |----------------------|-----------------|  
@@ -38,10 +38,10 @@ manager: "anneta"
 |**NotificationStatement**|Specifies the SQL statement (SELECT or EXEC \<stored procedure\>) used to register for query notifications. The adapter gets a notification message from SQL Server only when the result set for the specified SQL statement changes.|  
 |**NotifyOnListenerStart**|Specifies whether the adapter sends a notification to the adapter clients when the listener is started.|  
   
- For a more complete description of these properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). For a complete description of how to use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive notifications from SQL Server, read further.  
+ For a more complete description of these properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md). For a complete description of how to use the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] to receive notifications from SQL Server, read further.  
   
 ## How This Topic Demonstrates Receiving Notification Messages  
- To demonstrate how the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] supports receiving notification messages from SQL Server, this topic will demonstrate how to configure the adapter to receive notifications for changes to an Employee table. Assume that the Employee table has columns Employee_ID, Name, and Status. Whenever a new employee is added, the value of the Status column is set to 0.  
+ To demonstrate how the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] supports receiving notification messages from SQL Server, this topic will demonstrate how to configure the adapter to receive notifications for changes to an Employee table. Assume that the Employee table has columns Employee_ID, Name, and Status. Whenever a new employee is added, the value of the Status column is set to 0.  
   
  To demonstrate receiving notifications, do the following:  
   
@@ -70,35 +70,35 @@ manager: "anneta"
          In this message, as part of the `<Query>` element, you specify the UPDATE statement to update the Status column. Note that this operation must be executed after receiving the notification messages so that the processed rows are updated. To do away with the overhead of waiting to get the notification response and then manually dropping a request message to update the rows, you will generate the request message for updating the rows within the orchestration itself. You can do so by using the **Construct Message** shape within an orchestration.  
   
 ## How to Receive Notification Messages from the SQL Server Database  
- Performing an operation on the SQL Server database using [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves the procedural tasks described in [Building blocks to develop BizTalk applications with the SQL adapter](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md). To configure the adapter to receive notification messages, these tasks are:  
+ Performing an operation on the SQL Server database using [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves the procedural tasks described in [Building blocks to develop BizTalk applications with the SQL adapter](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md). To configure the adapter to receive notification messages, these tasks are:  
   
-1.  Create a BizTalk project, and then generate schema for the **Notification** (inbound operation) and **Select** (outbound operation) on the Employee table. Optionally, you can specify values for the **InboundOperationType** and **NotificationStatement** binding properties.  
+1. Create a BizTalk project, and then generate schema for the **Notification** (inbound operation) and **Select** (outbound operation) on the Employee table. Optionally, you can specify values for the **InboundOperationType** and **NotificationStatement** binding properties.  
   
-2.  Create a message in the BizTalk project for receiving notification from the SQL Server database.  
+2. Create a message in the BizTalk project for receiving notification from the SQL Server database.  
   
-3.  Create messages in the BizTalk project for performing the Select information on the SQL Server database and receiving response messages.  
+3. Create messages in the BizTalk project for performing the Select information on the SQL Server database and receiving response messages.  
   
-4.  Create an orchestration that does the following:  
+4. Create an orchestration that does the following:  
   
-    -   Receives notification message from SQL Server.  
+   -   Receives notification message from SQL Server.  
   
-    -   Creates a message to select and update the rows for which notification is received.  
+   -   Creates a message to select and update the rows for which notification is received.  
   
-    -   Sends this message to the SQL Server to update the rows and receives a response.  
+   -   Sends this message to the SQL Server to update the rows and receives a response.  
   
-5.  Build and deploy the BizTalk project.  
+5. Build and deploy the BizTalk project.  
   
-6.  Configure the BizTalk application by creating physical send and receive ports.  
+6. Configure the BizTalk application by creating physical send and receive ports.  
   
-    > [!NOTE]
-    >  For inbound operations, like receiving notification messages, you must only configure a one-way WCF-Custom or WCF-SQL receive port. Two-way WCF-Custom or WCF-SQL receive ports are not supported for inbound operations.  
+   > [!NOTE]
+   >  For inbound operations, like receiving notification messages, you must only configure a one-way WCF-Custom or WCF-SQL receive port. Two-way WCF-Custom or WCF-SQL receive ports are not supported for inbound operations.  
   
-7.  Start the BizTalk application.  
+7. Start the BizTalk application.  
   
- This topic provides instructions to perform these tasks.  
+   This topic provides instructions to perform these tasks.  
   
 ## Sample Based on This Topic  
- A sample, IncrementalNotification, based on this topic is provided with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md).  
+ A sample, IncrementalNotification, based on this topic is provided with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Samples for the SQL adapter](../../adapters-and-accelerators/adapter-sql/samples-for-the-sql-adapter.md).  
   
 ## Generating Schema  
  You must generate the schema for the **Notification** operation and **Select** operation on Employee table. See [Get metadata for SQL Server operations in Visual Studio using the SQL adapter](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md) for more information about how to generate the schema. Perform the following tasks when generating the schema. Skip the first step if you do not want to specify the binding properties at design time.  
@@ -145,23 +145,23 @@ manager: "anneta"
     |SelectResponse|*SQLNotify.TableOperation_dbo_Employee.SelectResponse*|  
   
 ## Setting up the Orchestration  
- You must create a BizTalk orchestration to use [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for receiving notification messages from the SQL Server database and then updating the rows for which notification was received. In this orchestration, the adapter receives the notification message based on the SELECT statement specified for the **NotificationStatement** binding property. The notification message is received at a FILE location. Once the response is received, the orchestration constructs a message that will be used to update the rows for which notification is received. The response for this message is also received at the same FILE location.  
+ You must create a BizTalk orchestration to use [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for receiving notification messages from the SQL Server database and then updating the rows for which notification was received. In this orchestration, the adapter receives the notification message based on the SELECT statement specified for the <strong>NotificationStatement</strong> binding property. The notification message is received at a FILE location. Once the response is received, the orchestration constructs a message that will be used to update the rows for which notification is received. The response for this message is also received at the same FILE location.  
   
  So, your orchestration must contain the following:  
   
--   A one-way receive port to receive notification messages.  
+- A one-way receive port to receive notification messages.  
   
--   A two-way send port to send messages to update rows and receive response for the same.  
+- A two-way send port to send messages to update rows and receive response for the same.  
   
--   A **Construct Message** shape to construct messages, to execute the Update operation, within the orchestration.  
+- A **Construct Message** shape to construct messages, to execute the Update operation, within the orchestration.  
   
--   A FILE send port to save the response for the Update operation.  
+- A FILE send port to save the response for the Update operation.  
   
--   Receive and send shapes.  
+- Receive and send shapes.  
   
- A sample orchestration resembles the following.  
+  A sample orchestration resembles the following.  
   
- ![Orchestration to receive SQL Server notifications](../../adapters-and-accelerators/adapter-sql/media/f13ad3b8-8161-42e5-a521-424bbf549ad5.gif "f13ad3b8-8161-42e5-a521-424bbf549ad5")  
+  ![Orchestration to receive SQL Server notifications](../../adapters-and-accelerators/adapter-sql/media/f13ad3b8-8161-42e5-a521-424bbf549ad5.gif "f13ad3b8-8161-42e5-a521-424bbf549ad5")  
   
 ### Adding Message Shapes  
  Make sure you specify the following properties for each of the message shapes. The names listed in the Shape column are the names of the message shapes as displayed in the just-mentioned orchestration.  
@@ -246,36 +246,36 @@ Select(WCF.Action) = "TableOp/Select/dbo/Employee";
   
  After you have specified these properties, the message shapes and ports are connected and your orchestration is complete.  
   
- You must now build the BizTalk solution and deploy it to a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).
+ You must now build the BizTalk solution and deploy it to a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).
   
 ## Configuring the BizTalk Application  
  After you have deployed the BizTalk project, the orchestration you created earlier is listed under the **Orchestrations** pane in the BizTalk Server Administration console. You must use the BizTalk Server Administration console to configure the application. For a walkthrough, see [Walkthrough: Deploying a Basic BizTalk Application](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md).
   
  Configuring an application involves:  
   
--   Selecting a host for the application.  
+- Selecting a host for the application.  
   
--   Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
+- Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
   
-    -   Define a physical WCF-Custom or WCF-SQL one-way receive port. This port listens for notifications coming from the SQL Server database. For information about how to create ports, see [Manually configure a physical port binding to the SQL adapter](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md). Make sure you specify the following binding properties for the receive port.  
+  - Define a physical WCF-Custom or WCF-SQL one-way receive port. This port listens for notifications coming from the SQL Server database. For information about how to create ports, see [Manually configure a physical port binding to the SQL adapter](../../adapters-and-accelerators/adapter-sql/manually-configure-a-physical-port-binding-to-the-sql-adapter.md). Make sure you specify the following binding properties for the receive port.  
   
-        > [!IMPORTANT]
-        >  You do not need to perform this step if you specified the binding properties at design time. In such a case, you can create a WCF-custom or WCF-SQL receive port, with the required binding properties set, by importing the binding file created by the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. For more information see [Configure a physical port binding using a port binding file to use the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).  
+    > [!IMPORTANT]
+    >  You do not need to perform this step if you specified the binding properties at design time. In such a case, you can create a WCF-custom or WCF-SQL receive port, with the required binding properties set, by importing the binding file created by the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. For more information see [Configure a physical port binding using a port binding file to use the SQL adapter](../../adapters-and-accelerators/adapter-sql/configure-a-physical-port-binding-using-a-port-binding-file-to-sql-adapter.md).  
   
-        |Binding Property|Value|  
-        |----------------------|-----------|  
-        |**InboundOperationType**|Set this to **Notification**.|  
-        |**NotificationStatement**|Set this to:<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **Note:** You must specifically specify the column names in the statement as shown in this SELECT statement. Also, you must always specify the table name along with the schema name. For example, `dbo.Employee`.|  
-        |**NotifyOnListenerStart**|Set this to **True**.|  
+    |Binding Property|Value|  
+    |----------------------|-----------|  
+    |**InboundOperationType**|Set this to **Notification**.|  
+    |**NotificationStatement**|Set this to:<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **Note:** You must specifically specify the column names in the statement as shown in this SELECT statement. Also, you must always specify the table name along with the schema name. For example, `dbo.Employee`.|  
+    |**NotifyOnListenerStart**|Set this to **True**.|  
   
-         For more information about the different binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).  
+     For more information about the different binding properties, see [Read about the BizTalk Adapter for SQL Server adapter binding properties](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md).  
   
-        > [!NOTE]
-        >  We recommend configuring the transaction isolation level and the transaction timeout while performing inbound operations using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]. You can do so by adding the service behavior while configuring the WCF-Custom or WCF-SQL receive port. For instruction on how to add the service behavior, see [Configure Transaction Isolation Level and Transaction Timeout with SQL](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md).  
+    > [!NOTE]
+    >  We recommend configuring the transaction isolation level and the transaction timeout while performing inbound operations using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)]. You can do so by adding the service behavior while configuring the WCF-Custom or WCF-SQL receive port. For instruction on how to add the service behavior, see [Configure Transaction Isolation Level and Transaction Timeout with SQL](../../adapters-and-accelerators/adapter-sql/configure-transaction-isolation-level-and-transaction-timeout-with-sql.md).  
   
-    -   Define a physical WCF-Custom or WCF-SQL send port to send messages to the SQL Server database. You must also specify the action in the send port.  
+  - Define a physical WCF-Custom or WCF-SQL send port to send messages to the SQL Server database. You must also specify the action in the send port.  
   
-    -   Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the messages from the SQL Server database. These will be the notification messages received from SQL Server and messages for the Select and Update operation you perform through the WCF-Custom or WCF-SQL send port.  
+  - Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the messages from the SQL Server database. These will be the notification messages received from SQL Server and messages for the Select and Update operation you perform through the WCF-Custom or WCF-SQL send port.  
   
 ## Starting the Application  
  You must start the BizTalk application for receiving notification messages from the SQL Server database and for performing the subsequent Select and Update operations. For instructions on starting a BizTalk application, see [How to Start an Orchestration](../../core/how-to-start-an-orchestration.md).

@@ -23,7 +23,7 @@ To act as an RFC server and receive operations invoked by the SAP system (such a
   
  A channel listener (**System.ServiceModel.Channels.IChannelListener**) is a WCF communication object that can be used to receive messages from specific WCF endpoints. The channel listener functions as a factory from which you can create channels over which messages invoked by a client (the SAP system) can be received by your service. You create a channel listener by from a **Microsoft.Adapters.SAP.SAPBinding** object by invoking the **BuildChannelListener** method. You supply an SAP connection URI that specifies the SAP Program ID from which inbound operations will be received to this method.  
   
- The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports the **IReplyChannel** channel shape. **IReplyChannel** channels support an inbound request-response message exchange pattern. That is, a pattern in which an external program sends a request message over the channel and your program returns a response.  
+ The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] supports the <strong>IReplyChannel</strong> channel shape. <strong>IReplyChannel</strong> channels support an inbound request-response message exchange pattern. That is, a pattern in which an external program sends a request message over the channel and your program returns a response.  
   
  For an overview of how to receive operations using an **IReplyChannel** in WCF, see [Service Channel-Level Programming](https://msdn.microsoft.com/library/ms789029.aspx).
   
@@ -40,15 +40,15 @@ To act as an RFC server and receive operations invoked by the SAP system (such a
 ## How Do I Filter Operations Using the Channel Listener?  
   
 ### Using an InboundActionCollection to Filter Operations  
- The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] provides the **Microsoft.ServiceModel.Channels.InboundActionCollection** class to enable you to filter operations that are received by a channel listener and passed to your application code. To filter for specific operations, you create an instance of this class by using the listener endpoint URI. Then you add the (request) message action for each target operation to the collection. Finally, you add the inbound action collection to a **System.ServiceModel.Channels.BindingParameterCollection** object and then pass this binding parameter collection into the call to create the channel listener.  
+ The [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] provides the <strong>Microsoft.ServiceModel.Channels.InboundActionCollection</strong> class to enable you to filter operations that are received by a channel listener and passed to your application code. To filter for specific operations, you create an instance of this class by using the listener endpoint URI. Then you add the (request) message action for each target operation to the collection. Finally, you add the inbound action collection to a <strong>System.ServiceModel.Channels.BindingParameterCollection</strong> object and then pass this binding parameter collection into the call to create the channel listener.  
   
  If the SAP system invokes an operation that is not in the inbound action collection:  
   
--   The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] returns an EXCEPTION exception to the caller on the SAP system with the following message: "The incoming RFC call [RFC_NAME] on the Rfc Server is not handled". In this message, [RFC_NAME] is the name of the RFC (for example, IDOC_INBOUND_ASYNCHRONOUS).  
+- The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] returns an EXCEPTION exception to the caller on the SAP system with the following message: "The incoming RFC call [RFC_NAME] on the Rfc Server is not handled". In this message, [RFC_NAME] is the name of the RFC (for example, IDOC_INBOUND_ASYNCHRONOUS).  
   
--   The adapter throws a **Microsoft.ServiceModel.Channels.Common.AdapterException** with a message that indicates the operation that was received. For an example of how to use this exception, see the example at the end of this topic.  
+- The adapter throws a **Microsoft.ServiceModel.Channels.Common.AdapterException** with a message that indicates the operation that was received. For an example of how to use this exception, see the example at the end of this topic.  
   
- The following code example shows how to use an **InboundActionCollection** to create a channel listener that filters for a single RFC, Z_RFC_MKD_DIV.  
+  The following code example shows how to use an **InboundActionCollection** to create a channel listener that filters for a single RFC, Z_RFC_MKD_DIV.  
   
 ```  
 // The connection Uri must specify listener parameters (or an R-type destination in saprfc.ini)  
@@ -79,15 +79,15 @@ listener = binding.BuildChannelListener<IReplyChannel>(listeneraddress, bpcol);
   
  There may also be scenarios in which you want to filter an operation based on its content. For example if you are receiving IDOCs in:  
   
--   String format (the **ReceiveIDocFormat** binding property is **String**); all IDOCs are received using the ReceiveIdoc operation.  
+- String format (the **ReceiveIDocFormat** binding property is **String**); all IDOCs are received using the ReceiveIdoc operation.  
   
--   Rfc format (the **ReceiveIDocFormat** binding property is **Rfc**); all IDOCs are received using either the IDOC_INBOUND_ASYNCHRONOUS RFC or the INBOUND_IDOC_PROCESS RFC.  
+- Rfc format (the **ReceiveIDocFormat** binding property is **Rfc**); all IDOCs are received using either the IDOC_INBOUND_ASYNCHRONOUS RFC or the INBOUND_IDOC_PROCESS RFC.  
   
- In this scenario you may want to implement filtering based on specific IDOC parameters (such as the IDOC type) in your code.  
+  In this scenario you may want to implement filtering based on specific IDOC parameters (such as the IDOC type) in your code.  
   
- When you filter operations manually, you can return a fault to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] for operations that you don't handle. This will raise the EXCEPTION exception to the caller on the SAP System. You can also return an empty response if you don't want to raise an exception on SAP.  
+  When you filter operations manually, you can return a fault to the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] for operations that you don't handle. This will raise the EXCEPTION exception to the caller on the SAP System. You can also return an empty response if you don't want to raise an exception on SAP.  
   
- The following code shows how to filter manually for the Z_RFC_MKD_DIV operation.  
+  The following code shows how to filter manually for the Z_RFC_MKD_DIV operation.  
   
 ```  
 // Get the message from the channel  
@@ -111,9 +111,9 @@ else
 ```  
   
 ## How Do I Raise an Exception on the SAP System?  
- To indicate an error to the caller on the SAP system you can reply to a request message with a SOAP fault. When you return a SOAP fault to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], the adapter returns an EXCEPTION exception to the caller on the SAP system. The exception message is created from the elements of the SOAP fault.  
+ To indicate an error to the caller on the SAP system you can reply to a request message with a SOAP fault. When you return a SOAP fault to the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)], the adapter returns an EXCEPTION exception to the caller on the SAP system. The exception message is created from the elements of the SOAP fault.  
   
- The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] creates the message for the SAP EXCEPTION according to the following order of precedence:  
+ The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] creates the message for the SAP EXCEPTION according to the following order of precedence:  
   
 1.  If the SOAP fault contains a detail object, the adapter serializes the detail to a string and the exception message is set to this string.  
   
@@ -126,9 +126,9 @@ else
   
  WCF provides the **System.ServiceModel.Channels.MessageFault** class to encapsulate an in-memory representation of a SOAP fault. You can use any of the static, overloaded **MessageFault.CreateFault** methods to create a new SOAP fault from which you can then create a fault message by invoking the appropriate **Message.CreateMessage** overload. WCF also provides overloads of **CreateMessage** that create a fault message without using a **MessageFault** object.  
   
- You use the **System.ServiceModel.Channels.RequestContext.Reply** method to return the fault message to the adapter. The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] ignores the message action for fault messages, so you can set the message action to any value.  
+ You use the <strong>System.ServiceModel.Channels.RequestContext.Reply</strong> method to return the fault message to the adapter. The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] ignores the message action for fault messages, so you can set the message action to any value.  
   
- The following example shows how to return a fault message to the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]. This example omits the steps to create the channel listener and channel.  
+ The following example shows how to return a fault message to the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)]. This example omits the steps to create the channel listener and channel.  
   
 ```  
 RequestContext rc = channel.ReceiveRequest();  
@@ -145,7 +145,7 @@ rc.Reply(faultMessage);
 ```  
   
 ## Streaming Inbound Flat-File IDOCs from the SAP Adapter  
- You receive flat-file (string) IDOCs from the adapter in the inbound ReceiveIdoc operation. The IDOC data is represented as a string under a single node in this operation. For this reason, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] supports node-value streaming on the request message. To perform node-value streaming, you must consume the request message for the ReceiveIdoc operation by invoking the **Message.WriteBodyContents** method with a **System.Xml.XmlDictionaryWriter** that is capable of streaming the IDOC data. For information about how to do this, see [Streaming Flat-File IDOCs in SAP using the WCF Channel Model](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md).  
+ You receive flat-file (string) IDOCs from the adapter in the inbound ReceiveIdoc operation. The IDOC data is represented as a string under a single node in this operation. For this reason, the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] supports node-value streaming on the request message. To perform node-value streaming, you must consume the request message for the ReceiveIdoc operation by invoking the <strong>Message.WriteBodyContents</strong> method with a <strong>System.Xml.XmlDictionaryWriter</strong> that is capable of streaming the IDOC data. For information about how to do this, see [Streaming Flat-File IDOCs in SAP using the WCF Channel Model](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md).  
   
 ## How Do I Receive Operations from a SAP System Using an IReplyChannel?  
  To receive operations from a SAP system by using the WCF channel model, perform the following steps.  

@@ -20,7 +20,7 @@ The **Wait_For_Conversation** call (function name **cmwait**) waits for an opera
   
 ```  
   
-CM_ENTRY Wait_For_Conversation(   
+CM_ENTRY Wait_For_Conversation(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *conversation_return_code,    
   CM_INT32 FAR *return_code              

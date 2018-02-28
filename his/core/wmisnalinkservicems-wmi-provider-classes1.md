@@ -15,8 +15,10 @@ manager: "anneta"
 ---
 # WmiSnaLinkServiceMS WMI Provider Classes
 The following table describes the Common Information Model (CIM) classes used by the **WmiSnaLinkService** instance and method Windows Management Instrumentation (WMI) provider.  
-  
-|Class|Description|  
-|-----------|-----------------|  
-|[MsSna_LinkService](../core/mssna-linkservice-class1.md)|SNA Link service base class.|  
-|[MsSna_LinkService_IpDlc](../core/mssna-linkservice-ipdlc-class1.md)|SNA IP-DLC link service.|
+
+
+|                                Class                                 |         Description          |
+|----------------------------------------------------------------------|------------------------------|
+|       [MsSna_LinkService](../core/mssna-linkservice-class1.md)       | SNA Link service base class. |
+| [MsSna_LinkService_IpDlc](../core/mssna-linkservice-ipdlc-class1.md) |   SNA IP-DLC link service.   |
+

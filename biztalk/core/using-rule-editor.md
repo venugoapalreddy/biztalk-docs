@@ -22,12 +22,12 @@ manager: "anneta"
 ---
 # Using Rule Editor
 Use the Rule Editor to view and edit conditions in the Conditions Editor and actions in the Actions Editor for the selected rule.  
-  
+
 ## Conditions Editor  
  Use the Conditions Editor (part of the Rule Editor) to view and edit conditions for firing rules. You can add built-in predicates by using the shortcut menu, drag items from the Facts Explorer to define arguments and predicates, and enter argument values inline by clicking an argument link.  
-  
+
  Use the shortcut menu to access the following options.  
-  
+
 |Use this|To do this|  
 |--------------|----------------|  
 |**Add logical AND**|Add an operator to combine two or more predicates to form a logical **AND** expression.|  
@@ -55,10 +55,10 @@ Use the Rule Editor to view and edit conditions in the Conditions Editor and act
 |**Reset argument**|Delete the selected argument (and any nested arguments), and restore the initial definition.|  
 |**Set to null**|Replace the selected argument with a null constant definition.|  
 |**Set to empty string**|Replace the selected argument with an empty string value.|  
-  
+
 ## Actions Editor  
  Use the Actions Editor (part of the Rule Editor) to view and edit actions to execute when a rule is fired. You can add built-in actions by using the shortcut menu, drag items from the Facts Explorer to define actions and arguments, and enter argument values inline by clicking an argument link.  
-  
+
 |Use this|To do this|  
 |--------------|----------------|  
 |**Delete action**|Delete the selected action.|  
@@ -76,15 +76,17 @@ Use the Rule Editor to view and edit conditions in the Conditions Editor and act
 |**Clear**|Reset the working memory and agenda of the rule engine instance.|  
 |**Halt**|Terminate the rule processing.|  
 |**Update**|Update a fact in the working memory of the rule engine instance.|  
-  
+
 ## Output window  
  Use the Output window to view results of test execution for a selected policy version.  
-  
+
  Use the shortcut menu to access the following options.  
-  
-|Use this|To do this|  
-|--------------|----------------|  
-|**Clear All**|Clear all text from the Output window.|  
-|**Copy**|Copy the selected text in the Output window to the Clipboard.|  
-|**Select All**|Select all the text contained in the Output window.|  
-|**Save to File**|Save the text contained in the Output window to a specified file.|
+
+
+|           Use this            |                            To do this                             |
+|-------------------------------|-------------------------------------------------------------------|
+|  <strong>Clear All</strong>   |              Clear all text from the Output window.               |
+|     <strong>Copy</strong>     |   Copy the selected text in the Output window to the Clipboard.   |
+|  <strong>Select All</strong>  |        Select all the text contained in the Output window.        |
+| <strong>Save to File</strong> | Save the text contained in the Output window to a specified file. |
+

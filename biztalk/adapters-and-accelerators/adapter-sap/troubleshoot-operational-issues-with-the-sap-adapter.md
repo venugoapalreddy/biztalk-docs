@@ -16,15 +16,15 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshoot Operational Issues with the SAP adapter
-This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)].  
+This section discusses using troubleshooting techniques to resolve operational errors that you might encounter when using [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)].  
   
 ### Enable tracing  
- For information about tracing support in the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], see [Diagnostic Tracing and Message Logging for the SAP adapter](../../adapters-and-accelerators/adapter-sap/diagnostic-tracing-and-message-logging-for-the-sap-adapter.md).  
+ For information about tracing support in the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)], see [Diagnostic Tracing and Message Logging for the SAP adapter](../../adapters-and-accelerators/adapter-sap/diagnostic-tracing-and-message-logging-for-the-sap-adapter.md).  
   
 ##  <a name="client_dll"></a> Error loading the binding  
  **Problem**  
   
- When you try to start the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]or the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the GUI gives the following error:  
+ When you try to start the [!INCLUDE [addadapterservreflong](../../includes/addadapterservreflong-md.md)]or the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the GUI gives the following error:  
   
 ```  
 There was an error loading the binding, <binding name>, from your system configuration.  
@@ -33,43 +33,43 @@ ConfigurationErrorsException: Exception has been thrown by the target of an invo
   
  **Cause**  
   
- When you start the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] loads the adapter bindings for all the installed adapters. In turn, the adapter bindings are dependent on the specific client software for the enterprise application. You might face this issue for one or both of the following reasons:  
+ When you start the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] or the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] loads the adapter bindings for all the installed adapters. In turn, the adapter bindings are dependent on the specific client software for the enterprise application. You might face this issue for one or both of the following reasons:  
   
--   The required LOB client software is not installed on the computer where you installed the adapter.  
+- The required LOB client software is not installed on the computer where you installed the adapter.  
   
--   You did a Typical or Complete installation of the adapter, which installs all the adapters contained in the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. However, the LOB client libraries might be installed for only one enterprise application. As a result, the GUI fails to load the bindings for the other adapters.  
+- You did a Typical or Complete installation of the adapter, which installs all the adapters contained in the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. However, the LOB client libraries might be installed for only one enterprise application. As a result, the GUI fails to load the bindings for the other adapters.  
   
- **Resolution**  
+  **Resolution**  
   
--   Make sure you do a Custom installation of the adapters to install only the adapter you need.  
+- Make sure you do a Custom installation of the adapters to install only the adapter you need.  
   
--   Make sure the required LOB client versions are installed on the computer where you installed the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. [Supported LOB systems](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx) lists the supported versions. The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] also requires certain DLLs to interface with the SAP system. For more information about the DLLs required by the adapter, see [Install Custom RFCs for the Data Provider for SAP](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md).
+- Make sure the required LOB client versions are installed on the computer where you installed the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. [Supported LOB systems](https://social.technet.microsoft.com/wiki/contents/articles/17631.biztalk-server-supported-line-of-business-lob-and-enterprise-systems.aspx) lists the supported versions. The [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] also requires certain DLLs to interface with the SAP system. For more information about the DLLs required by the adapter, see [Install Custom RFCs for the Data Provider for SAP](../../adapters-and-accelerators/adapter-sap/install-custom-rfcs-for-the-data-provider-for-sap.md).
   
 ##  <a name="BKMK_SAPDisplay"></a> The SAP adapter is missing in BizTalk Administration console  
  **Problem**  
   
-The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] included with [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] does not show up in the list of adapters in the BizTalk Server Administration console.  
+The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] included with [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] does not show up in the list of adapters in the BizTalk Server Administration console.  
   
  **Cause**  
   
- The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] is a WCF custom binding. So, although the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console displays the [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)], it does not display the WCF custom bindings and hence, does not display the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+ The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] is a WCF custom binding. So, although the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console displays the [!INCLUDE [wcfadapter_short](../../includes/wcfadapter-short-md.md)], it does not display the WCF custom bindings and hence, does not display the WCF-based [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
  **Resolution**  
   
- You can explicitly add the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console by following the steps mentioned in [Add the SAP Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md).  
+ You can explicitly add the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] to the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console by following the steps mentioned in [Add the SAP Adapter to BizTalk Server Administration Console](../../adapters-and-accelerators/adapter-sap/add-the-sap-adapter-to-biztalk-server-administration-console.md).  
   
 ##  <a name="BKMK_SAPConnOpen"></a> DLLs are missing error opening a connection to SAP  
  **Problem**  
   
- When you try to open a connection to the SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], a dialog box appears in the SAP system, informing that some DLLs are missing.  
+ When you try to open a connection to the SAP system using the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)], a dialog box appears in the SAP system, informing that some DLLs are missing.  
   
  **Cause**  
   
- The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] uses librfc32u.dll to establish a connection with the SAP system. The librfc32u.dll, in turn, requires a set of DLLs to function. You get this error if these supporting DLLs are not added to the PATH variable on the computer where the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] is installed.  
+ The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] uses librfc32u.dll to establish a connection with the SAP system. The librfc32u.dll, in turn, requires a set of DLLs to function. You get this error if these supporting DLLs are not added to the PATH variable on the computer where the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] is installed.  
   
  **Resolution**  
   
- Refer to the table provided as a resolution to the [Error in loading the adapter bindings](#client_dll) issue. The table lists the supporting DLLs required to interface with the SAP system using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+ Refer to the table provided as a resolution to the [Error in loading the adapter bindings](#client_dll) issue. The table lists the supporting DLLs required to interface with the SAP system using the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
 ##  <a name="BKMK_SAPXmlRetrieve"></a> Error retrieving XML with more than 65,536 nodes  
  **Problem**  
@@ -89,21 +89,21 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
   
  You can fix this issue by setting the `maxItemsInObjectGraph` parameter in either of the following two ways:  
   
--   Set this parameter by changing the `maxItemsInObjectGraph` parameter in the `ServiceBehavior` attribute on your service class.  
+- Set this parameter by changing the `maxItemsInObjectGraph` parameter in the `ServiceBehavior` attribute on your service class.  
   
--   Add the following to your application's app.config file.  
+- Add the following to your application's app.config file.  
   
-    ```  
-    <behaviors>  
-      <endpointBehaviors>  
-        <behavior name="NewBehavior">  
-          <dataContractSerializer maxItemsInObjectGraph="65536000" />  
-        </behavior>  
-      </endpointBehaviors>  
-    </behaviors>  
-    ```  
+  ```  
+  <behaviors>  
+    <endpointBehaviors>  
+      <behavior name="NewBehavior">  
+        <dataContractSerializer maxItemsInObjectGraph="65536000" />  
+      </behavior>  
+    </endpointBehaviors>  
+  </behaviors>  
+  ```  
   
- A sample app.config will look like the following.  
+  A sample app.config will look like the following.  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -127,7 +127,7 @@ Change the object graph or increase the MaxItemsInObjectGraph quota.
 ##  <a name="BKMK_SAPConnURI"></a> Error entering a connection URI for a WCF-Custom port in BizTalk Server  
  **Problem**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] gives the following error when you specify a connection URI to connect to the SAP system.  
+ [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] gives the following error when you specify a connection URI to connect to the SAP system.  
   
 ```  
 Error saving properties.  
@@ -147,7 +147,7 @@ Error saving properties.
 ##  <a name="BKMK_SAPOperate"></a> System.ArgumentNullException error while completing an operation on SAP  
  **Problem**  
   
- The adapter gives the following error when performing any operation on the SAP system using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
+ The adapter gives the following error when performing any operation on the SAP system using [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
 ```  
 System.ArgumentNullException: Value cannot be null.  
@@ -175,7 +175,7 @@ Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argume
   
  **Cause**  
   
- If you configure a WCF-Custom port by importing the port binding file created by the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the action in the port is specified in the following format:  
+ If you configure a WCF-Custom port by importing the port binding file created by the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], the action in the port is specified in the following format:  
   
 ```  
 <BtsActionMapping>  
@@ -183,11 +183,11 @@ Microsoft.ServiceModel.Channels.Common.XmlReaderParsingException: Invalid argume
 </BtsActionMapping>  
 ```  
   
- In the above format, the operation name is governed by the operation you chose while generating the schema. For example, if you generated schema for RFC_CUSTOMER_GET, the operation name in the action will be "RFC_CUSTOMER_GET". However, the operation name in the logical port created in the BizTalk orchestration in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] might be different.  
+ In the above format, the operation name is governed by the operation you chose while generating the schema. For example, if you generated schema for RFC_CUSTOMER_GET, the operation name in the action will be "RFC_CUSTOMER_GET". However, the operation name in the logical port created in the BizTalk orchestration in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] might be different.  
   
  **Resolution**  
   
- Make sure the operation names in both the logical port (in the BizTalk orchestration in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]) and the physical port (in BizTalk Server Administration Console) are same.  
+ Make sure the operation names in both the logical port (in the BizTalk orchestration in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]) and the physical port (in BizTalk Server Administration Console) are same.  
   
 ##  <a name="BKMK_SAPHundredCons"></a> Error opening more than 100 connections to SAP  
  **Problem**  
@@ -209,16 +209,16 @@ ERROR       max no of 100 conversations exceeded
   
  To increase the maximum number of connections, you must create an environment variable on the computer that has the SAP client libraries installed and set it to a numeric value. The value you specify for this environment variable is the maximum number of connections that can be made into the SAP system. Create the environment variable with the following details:  
   
--   **Variable name**: CPIC_MAX_CONV  
+- **Variable name**: CPIC_MAX_CONV  
   
--   **Variable value**: any positive numeric value. For example, to enable 200 connections into the SAP system, specify the value as 200.  
+- **Variable value**: any positive numeric value. For example, to enable 200 connections into the SAP system, specify the value as 200.  
   
- For instructions on creating an environment variable, see "How To Create System Variables in Windows 2000" at [http://go.microsoft.com/fwlink/?LinkId=95020](http://go.microsoft.com/fwlink/?LinkId=95020).  
+  For instructions on creating an environment variable, see "How To Create System Variables in Windows 2000" at [http://go.microsoft.com/fwlink/?LinkId=95020](http://go.microsoft.com/fwlink/?LinkId=95020).  
   
 ##  <a name="BKMK_SAPIDOCMetadata"></a> Error generating or retrieving metadata for IDOCs  
  **Problem**  
   
- While generating metadata for the **Receive** operation for an IDOC in an SAP system, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] gives the following error.  
+ While generating metadata for the <strong>Receive</strong> operation for an IDOC in an SAP system, the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] gives the following error.  
   
 ```  
 Error while retrieving or generating the WSDL.  
@@ -229,7 +229,7 @@ AdapterErrorMessage=Error returned by RfcCallReceiveEx while calling RFC: IDOCTY
   
  **Cause**  
   
- The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] uses the IDOCTYPE_READ_COMPLETE RFC to retrieve the metadata for the **Receive** operation for an IDOC. Invoking this RFC requires specific user permissions in the SAP system. To generate metadata, if you have connected to the SAP system using a credential that does not have permission to invoke the IDOCTYPE_READ_COMPLETE RFC, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] gives an error.  
+ The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] uses the IDOCTYPE_READ_COMPLETE RFC to retrieve the metadata for the <strong>Receive</strong> operation for an IDOC. Invoking this RFC requires specific user permissions in the SAP system. To generate metadata, if you have connected to the SAP system using a credential that does not have permission to invoke the IDOCTYPE_READ_COMPLETE RFC, the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] gives an error.  
   
  **Resolution**  
   
@@ -244,11 +244,11 @@ AdapterErrorMessage=Error returned by RfcCallReceiveEx while calling RFC: IDOCTY
 ##  <a name="BKMK_SAPIDOCReceive"></a> Error sending or receiving IDOCs that have unreleased segments  
  **Problem**  
   
- The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] gives an XmlReaderParsingException while sending IDOCs (using **Send** operation) or receiving IDOCs (using **Receive** operation) that have unreleased segments.  
+ The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] gives an XmlReaderParsingException while sending IDOCs (using <strong>Send</strong> operation) or receiving IDOCs (using <strong>Receive</strong> operation) that have unreleased segments.  
   
  **Cause**  
   
- IDOCs are constituted of segments. While generating metadata, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] retrieves all the released segments that are present in the SAP system. However, when the adapter client uses the metadata to perform an operation such as receiving an IDOC, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] gives an XmlReaderParsingException. This occurs because when the IDOC is received, the SAP system might have sent some unreleased segments as well, the metadata for which was not generated by the adapter.  
+ IDOCs are constituted of segments. While generating metadata, the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] retrieves all the released segments that are present in the SAP system. However, when the adapter client uses the metadata to perform an operation such as receiving an IDOC, the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] gives an XmlReaderParsingException. This occurs because when the IDOC is received, the SAP system might have sent some unreleased segments as well, the metadata for which was not generated by the adapter.  
   
  **Resolution**  
   
@@ -282,25 +282,25 @@ System.Exception: Loading property information list by namespace failed or prope
   
  **Cause**  
   
- If the binding property **EnableBizTalkCompatibilityMode** is set to **true**, you must add the BizTalk property schema DLL for the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] as a resource in your BizTalk application, that is, the application in which your project is deployed.  
+ If the binding property <strong>EnableBizTalkCompatibilityMode</strong> is set to <strong>true</strong>, you must add the BizTalk property schema DLL for the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] as a resource in your BizTalk application, that is, the application in which your project is deployed.  
   
  **Resolution**  
   
- The name for the BizTalk property schema for the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] is *Microsoft.Adapters.SAP.BiztalkPropertySchema.dll*. This is installed by the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup under \<installation drive\>:\ Program Files\Microsoft BizTalk Adapter Pack\bin. Perform the following tasks to add this assembly as a resource in your BizTalk application.  
+ The name for the BizTalk property schema for the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] is <em>Microsoft.Adapters.SAP.BiztalkPropertySchema.dll</em>. This is installed by the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup under \<installation drive\>:\ Program Files\Microsoft BizTalk Adapter Pack\bin. Perform the following tasks to add this assembly as a resource in your BizTalk application.  
   
 #### Add an assembly as a resource in BizTalk application  
   
-1.  Start the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.  
+1. Start the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.  
   
-2.  In the console tree, expand **BizTalk Group**, expand **Applications**, and then the application to which you want to add a BizTalk assembly.  
+2. In the console tree, expand **BizTalk Group**, expand **Applications**, and then the application to which you want to add a BizTalk assembly.  
   
-3.  Expand **Applications** and the application to which you want to add a BizTalk assembly.  
+3. Expand **Applications** and the application to which you want to add a BizTalk assembly.  
   
-4.  Right-click **Resources**, point to **Add**, and then click **BizTalk Assemblies**.  
+4. Right-click **Resources**, point to **Add**, and then click **BizTalk Assemblies**.  
   
-5.  Click **Add**, navigate to the folder containing the BizTalk assembly file, select the BizTalk assembly file, and then click **Open**.  
+5. Click **Add**, navigate to the folder containing the BizTalk assembly file, select the BizTalk assembly file, and then click **Open**.  
   
-6.  In **Options**, specify the options for installing the BizTalk assembly to the GAC, and then click **OK**.  
+6. In **Options**, specify the options for installing the BizTalk assembly to the GAC, and then click **OK**.  
   
 ##  <a name="BKMK_SAPIDOCValidate"></a> Error in validation while receiving IDOCs from an SAP system  
  **Problem**  
@@ -335,14 +335,14 @@ Reason: The document failed to validate because of the following error:
   
  In the schema used to convert the flat-file to XML and vice-versa, within the "Send" or "Receive" node definition, do the following:  
   
-1.  Set the **suppress_empty_nodes** property to **false** and set the **generate_empty_nodes** property to **true**. By default, the **suppress_empty_nodes** property is set to **true** and the **generate_empty_nodes** property is set to **false**, and hence all empty nodes are not reflected in the XML.  
+1. Set the **suppress_empty_nodes** property to **false** and set the **generate_empty_nodes** property to **true**. By default, the **suppress_empty_nodes** property is set to **true** and the **generate_empty_nodes** property is set to **false**, and hence all empty nodes are not reflected in the XML.  
   
-2.  The flat-file may contain an extra carriage return at the end. You can set the **suppress_trailing_delimiters** property to **Yes** to avoid this extra carriage return. This property is also exposed as the **Suppress Trailing Delimiters** property if you open the schema in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].  
+2. The flat-file may contain an extra carriage return at the end. You can set the <strong>suppress_trailing_delimiters</strong> property to <strong>Yes</strong> to avoid this extra carriage return. This property is also exposed as the <strong>Suppress Trailing Delimiters</strong> property if you open the schema in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].  
   
 ##  <a name="BKMK_SAPAction"></a> Incorrect Action error using a physical port creating with a binding file  
  **Problem**  
   
- After you use the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] to generate schema for a specific operation on the SAP system, the add-in also creates a port binding file. You can import this binding file using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create physical ports in BizTalk Server. However, when you send messages to the SAP system using such ports, the adapter fails to understand the action specified on the port and gives an error similar to the following:  
+ After you use the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] to generate schema for a specific operation on the SAP system, the add-in also creates a port binding file. You can import this binding file using the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console to create physical ports in BizTalk Server. However, when you send messages to the SAP system using such ports, the adapter fails to understand the action specified on the port and gives an error similar to the following:  
   
 ```  
 Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect Action   
@@ -353,7 +353,7 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
   
  **Cause**  
   
- When you create logical ports in a BizTalk orchestration, you specify certain names for the operations on those ports or you just use the default names like Operation_1, Operation_2, etc. However, in the binding file generated by the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], the operation name is same as the name of the operation for which you generate metadata. For example, if you generate metadata for RFC_CUSTOMER_GET, the action will be set to the following:  
+ When you create logical ports in a BizTalk orchestration, you specify certain names for the operations on those ports or you just use the default names like Operation_1, Operation_2, etc. However, in the binding file generated by the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], the operation name is same as the name of the operation for which you generate metadata. For example, if you generate metadata for RFC_CUSTOMER_GET, the action will be set to the following:  
   
 ```  
 <Operation Name="RFC_CUSTOMER_GET" Action="http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET" />  
@@ -376,16 +376,16 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
 ##  <a name="BKMK_SAPTableParams"></a> The response message for an operation ran on SAP does not contain any table parameters  
  **Cause**  
   
- If you use the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] to execute an operation on the SAP system that returns a large number of tables, and each table has a large number of records, that will amount to a large dataset being returned as part of the response message from the SAP system. So, by default, the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] does not return any table parameters as part of the response message.  
+ If you use the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] to execute an operation on the SAP system that returns a large number of tables, and each table has a large number of records, that will amount to a large dataset being returned as part of the response message from the SAP system. So, by default, the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] does not return any table parameters as part of the response message.  
   
  **Resolution**  
   
- You can request the tables that you want [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] to return as part of the response. You can do so by providing an empty table parameter as part of the request message that you send to the SAP system. For example, `<table_parameter_name />`.  
+ You can request the tables that you want [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] to return as part of the response. You can do so by providing an empty table parameter as part of the request message that you send to the SAP system. For example, `<table_parameter_name />`.  
   
 ##  <a name="BKMK_SAPIncorrectCreds"></a> Adapter Clients do not receive the response from SAP
  **Problem**  
   
- When using the adapters with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], if the credentials on the WCF-custom send port are incorrect, the request messages are not processed. After you specify the correct credentials, the message is sent to the SAP system and a response is received. However, the response message is not available to the out port.  
+ When using the adapters with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], if the credentials on the WCF-custom send port are incorrect, the request messages are not processed. After you specify the correct credentials, the message is sent to the SAP system and a response is received. However, the response message is not available to the out port.  
   
  **Resolution**  
   
@@ -394,12 +394,12 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
 ##  <a name="BKMK_SAPInboundConn"></a> Connectivity issues receiving an inbound message from the SAP server  
  **Problem**  
   
- You get the following error only while receiving an inbound message from the SAP server using a WCF-Custom receive port for the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+ You get the following error only while receiving an inbound message from the SAP server using a WCF-Custom receive port for the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
 ```  
 The Messaging Engine failed to add a receive location "<location_name>" with URL "<connection URI>" to the adapter "WCF-Custom".  
 Reason: "Microsoft.Adapters.SAP.RFCException: Details: ErrorCode=RFC_OK. ErrorGroup=RFC_ERROR_COMMUNICATION. SapErrorMessage=Connect to SAP gateway failed  
-Connect_PM  TPNAME=<name>, GWHOST=<host>, GWSERV=<server>  
+Connect_PM  TPNAME=<name>, GWHOST=<host>, GWSERV=<server>  
 ```  
   
  However, you are successfully able to send messages to the SAP system using a WCF-Custom send port.  
@@ -411,7 +411,7 @@ Connect_PM  TPNAME=<name>, GWHOST=<host>, GWSERV=<server>
 ##  <a name="BKMK_SAPRootNode"></a> Error with RootNode TypeName in BizTalk Projects  
  **Problem**  
   
- In a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], if the schemas generated from the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] contains invalid characters or reserved words for the **RootNode TypeName** property, the following error will occur while compiling the project:  
+ In a BizTalk project in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], if the schemas generated from the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] contains invalid characters or reserved words for the <strong>RootNode TypeName</strong> property, the following error will occur while compiling the project:  
   
 ```  
 Node <node reference> - Specify a valid .NET type name for this root node.  
@@ -435,7 +435,7 @@ The element 'bindings' has invalid child element 'sapBinding'. List of possible 
   
  **Cause**  
   
- This warning appears because the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] binding, `sapBinding`, is not a standard binding shipped with the [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)].  
+ This warning appears because the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] binding, `sapBinding`, is not a standard binding shipped with the [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)].  
   
  **Resolution**  
   
@@ -450,13 +450,13 @@ The element 'bindings' has invalid child element 'sapBinding'. List of possible 
   
  This happens because of either of the following:  
   
--   You have generated more than one schema of a generic operation (such as SendIdoc and ReceiveIdoc) in a BizTalk Server project, deployed it to a BizTalk Server application, and then ran the application to perform respective operations on an SAP system. Because the schemas are common, there is a conflict between the schemas that are deployed in the BizTalk Server application.  
+- You have generated more than one schema of a generic operation (such as SendIdoc and ReceiveIdoc) in a BizTalk Server project, deployed it to a BizTalk Server application, and then ran the application to perform respective operations on an SAP system. Because the schemas are common, there is a conflict between the schemas that are deployed in the BizTalk Server application.  
   
--   In case of multiple projects, you have generated a generic operation schema for each of the BizTalk Server projects, deployed each project to a separate BizTalk Server application on the same host, and then ran an application or applications to perform respective operations on an SAP system. Because the schemas and assemblies are accessible across the applications in BizTalk Server, there is a conflict between the common schemas deployed under various BizTalk Server applications and assemblies.  
+- In case of multiple projects, you have generated a generic operation schema for each of the BizTalk Server projects, deployed each project to a separate BizTalk Server application on the same host, and then ran an application or applications to perform respective operations on an SAP system. Because the schemas and assemblies are accessible across the applications in BizTalk Server, there is a conflict between the common schemas deployed under various BizTalk Server applications and assemblies.  
   
- **Resolution**  
+  **Resolution**  
   
- Use a single generic operation schema file for a BizTalk Server application. If you need to use a generic operation schema in multiple BizTalk Server applications on the same host, create an application containing a single generic operation schema, and then use the generic operation schema from all other applications in BizTalk Server.  
+  Use a single generic operation schema file for a BizTalk Server application. If you need to use a generic operation schema in multiple BizTalk Server applications on the same host, create an application containing a single generic operation schema, and then use the generic operation schema from all other applications in BizTalk Server.  
   
 ## See Also  
 [Troubleshoot the SAP adapter](../../adapters-and-accelerators/adapter-sap/troubleshoot-the-sap-adapter.md)

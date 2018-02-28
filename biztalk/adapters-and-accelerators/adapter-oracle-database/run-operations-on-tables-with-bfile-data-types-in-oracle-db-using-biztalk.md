@@ -18,10 +18,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Run operations on Tables with BFILE Data Types in Oracle Database using BizTalk Server
-The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports the BFILE data type in tables and stored procedures. This section provides information on how to perform operations on tables that have a column of BFILE data type. For more information about how the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports BFILE, see [Operations on Tables With BFILE Data Types in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md).  
+The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports the BFILE data type in tables and stored procedures. This section provides information on how to perform operations on tables that have a column of BFILE data type. For more information about how the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports BFILE, see [Operations on Tables With BFILE Data Types in Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-with-bfile-data-types-in-oracle-database.md).  
   
 ## Setting Up Your Oracle Database Server for Operations on BFILE  
- This section demonstrates how to invoke a procedure that inserts a record into the SCOTT.CUSTOMERDOC table. This table contains a column of BFILE data type and is created by running the SQL scripts shipped with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] samples. To know more about the samples and the SQL scripts, see [Samples for the Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md).  
+ This section demonstrates how to invoke a procedure that inserts a record into the SCOTT.CUSTOMERDOC table. This table contains a column of BFILE data type and is created by running the SQL scripts shipped with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] samples. To know more about the samples and the SQL scripts, see [Samples for the Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md).  
   
  After you have run the script to create the CUSTOMERDOC table, you must perform certain actions on the computer running the Oracle database to enable operations on BFILE data types. The tasks that you must perform on the Oracle database are:  
   
@@ -47,24 +47,24 @@ The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] su
     >  The ReadLOB operation is supported on tables with the BFILE data type. The UpdateLOB operation is NOT supported. However, users can alternately use the UPDATE operation.  
   
 ## How to Perform Operations Using BFILE Data Types  
- Performing an operation on an Oracle database using [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Building blocks to develop BizTalk Applications with Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md). To invoke a procedure that inserts a record into the SCOTT.CUSTOMERDOC table, these tasks are:  
+ Performing an operation on an Oracle database using [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Building blocks to develop BizTalk Applications with Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md). To invoke a procedure that inserts a record into the SCOTT.CUSTOMERDOC table, these tasks are:  
   
-1.  Create a BizTalk project and generate schema for the CREATE_CUSTOMERDOC stored procedure.  
+1. Create a BizTalk project and generate schema for the CREATE_CUSTOMERDOC stored procedure.  
   
-2.  Create messages in the BizTalk project for sending and receiving messages from the Oracle database.  
+2. Create messages in the BizTalk project for sending and receiving messages from the Oracle database.  
   
-3.  Create an orchestration to invoke the operation on the Oracle database table or view.  
+3. Create an orchestration to invoke the operation on the Oracle database table or view.  
   
-4.  Build and deploy the BizTalk project.  
+4. Build and deploy the BizTalk project.  
   
-5.  Configure the BizTalk application by creating physical send and receive ports.  
+5. Configure the BizTalk application by creating physical send and receive ports.  
   
-6.  Start the BizTalk application.  
+6. Start the BizTalk application.  
   
- This topic provides instructions to perform these tasks.  
+   This topic provides instructions to perform these tasks.  
   
 ## Sample Based On This Topic  
- A sample, Operate_BFILE, based on this topic is also provided with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Samples for the Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md).  
+ A sample, Operate_BFILE, based on this topic is also provided with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Samples for the Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/samples-for-the-oracle-database-adapter.md).  
   
 ## Generating Schema  
  In this topic, to demonstrate how to perform operations on a table with BFILE columns, we will invoke the CREATE_CUSTOMERDOC procedure. This procedure is created under the SCOTT\Package\ACCOUNT_PKG schema by running the SQL scripts provided with the samples. This procedure takes BFILE record type and adds a record in the CUSTOMERDOC table. For more information about the SQL scripts, see [Schema Samples](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md).  
@@ -101,19 +101,19 @@ The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] su
     |Message Type|From the drop-down list, expand **Schemas**, and then select *BFILE_Operations.OracleDBBindingSchema.CREATE_CUSTOMERDOCResponse*.|  
   
 ## Setting up the Orchestration  
- You must create a BizTalk orchestration to use [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for executing a procedure. In this orchestration, you drop a request message at a defined receive location. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] consumes this message and passes it on to the Oracle database via ODP. The response from the Oracle database is saved to another location. A typical orchestration for performing operations on BFILE columns in an Oracle database table would contain:  
+ You must create a BizTalk orchestration to use [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for executing a procedure. In this orchestration, you drop a request message at a defined receive location. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] consumes this message and passes it on to the Oracle database via ODP. The response from the Oracle database is saved to another location. A typical orchestration for performing operations on BFILE columns in an Oracle database table would contain:  
   
--   Send and Receive shapes to send messages to Oracle database and receive responses.  
+- Send and Receive shapes to send messages to Oracle database and receive responses.  
   
--   A one-way receive port to receive request messages to send to the Oracle database.  
+- A one-way receive port to receive request messages to send to the Oracle database.  
   
--   A two-way send port to send request messages to Oracle database and receive responses.  
+- A two-way send port to send request messages to Oracle database and receive responses.  
   
--   A one-way send port to send the responses from Oracle database to a folder.  
+- A one-way send port to send the responses from Oracle database to a folder.  
   
- A sample orchestration resembles the following:  
+  A sample orchestration resembles the following:  
   
- ![Orchestration to perform operations with BFILE](../../adapters-and-accelerators/adapter-oracle-database/media/5902cf48-0555-4d9a-b902-5208949b6c87.gif "5902cf48-0555-4d9a-b902-5208949b6c87")  
+  ![Orchestration to perform operations with BFILE](../../adapters-and-accelerators/adapter-oracle-database/media/5902cf48-0555-4d9a-b902-5208949b6c87.gif "5902cf48-0555-4d9a-b902-5208949b6c87")  
   
 ### Adding Message Shapes  
  Make sure you specify the following properties for each of the message shapes. The names listed in the Shape column are the names of the message shapes as displayed in the just-mentioned orchestration.  
@@ -146,25 +146,25 @@ The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] su
   
  After you have specified these properties, the message shapes and ports are connected and your orchestration is complete.  
   
- You must now build the BizTalk solution and deploy it to a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).  
+ You must now build the BizTalk solution and deploy it to a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).  
   
 ## Configuring the BizTalk Application  
  After you have deployed the BizTalk project, the orchestration you created earlier is listed under the **Orchestrations** pane in the BizTalk Server Administration console. You must use the BizTalk Server Administration console to configure the application. For a walkthrough, see [Walkthrough: Deploying a Basic BizTalk Application](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md).
   
  Configuring an application involves:  
   
--   Selecting a host for the application.  
+- Selecting a host for the application.  
   
--   Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
+- Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
   
-    -   Define a location on the hard disk and a corresponding file port where you will drop a request message. The BizTalk orchestration will consume the request message and send it to the Oracle database.  
+  - Define a location on the hard disk and a corresponding file port where you will drop a request message. The BizTalk orchestration will consume the request message and send it to the Oracle database.  
   
-    -   Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response message containing the response from the Oracle database.  
+  - Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response message containing the response from the Oracle database.  
   
-    -   Define a physical WCF-Custom or WCF-OracleDB send port to send messages to the Oracle database. You must also specify the action in the send port. For information about how to create WCF-Custom or WCF-OracleDB ports, see [Manually configure physical port binding to the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md).  
+  - Define a physical WCF-Custom or WCF-OracleDB send port to send messages to the Oracle database. You must also specify the action in the send port. For information about how to create WCF-Custom or WCF-OracleDB ports, see [Manually configure physical port binding to the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md).  
   
-        > [!NOTE]
-        >  Generating the schema using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file that contains information about the ports and the actions to be set for those ports. You can import this binding file from the BizTalk Server Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md).  
+    > [!NOTE]
+    >  Generating the schema using the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file that contains information about the ports and the actions to be set for those ports. You can import this binding file from the BizTalk Server Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md).  
   
 ## Starting the Application  
  You must start the BizTalk application for invoking the procedure that creates a record in the CUSTOMERDOC table. For instructions on starting a BizTalk application, see [How to Start an Orchestration](../../core/how-to-start-an-orchestration.md).  
@@ -180,7 +180,7 @@ The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] su
 -   The BizTalk orchestration for the operation is running.  
   
 ## Executing the Operation  
- After you run the application, you must drop a request message to the FILE receive location. The schema for the request message must conform to the schema for the procedure you generated earlier. See [Message Schemas for Functions and Procedures](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md) for more information about the request message schema for invoking procedure using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
+ After you run the application, you must drop a request message to the FILE receive location. The schema for the request message must conform to the schema for the procedure you generated earlier. See [Message Schemas for Functions and Procedures](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md) for more information about the request message schema for invoking procedure using the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
   
  For example, the request message to invoke the CREATE_CUSTOMERDOC procedure is:  
   
@@ -202,12 +202,12 @@ The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] su
 ```  
   
 > [!NOTE]
->  You can create a similar orchestration to read data from tables that have BFILE type fields. The SQL script shipped with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] creates an ACCOUNT_PKG that contains a GET_CUSTOMERDOC procedure. You can use this procedure to retrieve BFILE data from the SCOTT.CUSTOMERDOC table.  
->   
->  A sample, Operate_BFILE, is also included with the samples for [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. This sample demonstrates how to insert records into the SCOTT.CUSTOMERDOC table using the CREATE_CUSTOMERDOC stored procedure (as described in this topic.) The sample also demonstrates how to read BFILE data from the SCOTT.CUSTOMERDOC table using GET_CUSTOMERDOC stored procedure.  
+>  You can create a similar orchestration to read data from tables that have BFILE type fields. The SQL script shipped with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] creates an ACCOUNT_PKG that contains a GET_CUSTOMERDOC procedure. You can use this procedure to retrieve BFILE data from the SCOTT.CUSTOMERDOC table.  
+> 
+>  A sample, Operate_BFILE, is also included with the samples for [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. This sample demonstrates how to insert records into the SCOTT.CUSTOMERDOC table using the CREATE_CUSTOMERDOC stored procedure (as described in this topic.) The sample also demonstrates how to read BFILE data from the SCOTT.CUSTOMERDOC table using GET_CUSTOMERDOC stored procedure.  
   
 ## Possible Exceptions  
- For information about the exceptions you might encounter while performing a DML operation using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Exceptions and error handling](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md).  
+ For information about the exceptions you might encounter while performing a DML operation using [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Exceptions and error handling](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md).  
   
 ## Best Practices  
  After you have deployed and configured the BizTalk project, you can export configuration settings to an XML file called the bindings file. Once you generate a bindings file, you can import the configuration settings from the file so that you do not need to create the send ports, receive ports, etc. for the same orchestration. For more information about binding files, see [Reuse Oracle Database Adapter bindings](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md).  

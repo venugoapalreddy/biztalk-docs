@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Installing the Exception Management Samples Using Install Scripts
-This section describes how you can install the Exception Management samples from the install scripts provided with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+This section describes how you can install the Exception Management samples from the install scripts provided with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)].  
   
  **To install the ESB Exception Management samples from the install scripts**  
   

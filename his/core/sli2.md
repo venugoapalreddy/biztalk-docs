@@ -20,7 +20,7 @@ The **SLI** function provides event notification for all Session Level Interface
   
 ```  
   
-          void WINAPI SLI(   
+          void WINAPI SLI(   
 LUA_VERB_RECORD FAR *lpVCB  );  
 ```  
   

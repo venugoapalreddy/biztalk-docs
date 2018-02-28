@@ -14,11 +14,11 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Tracing for TN3270
-You can enable or disable tracing for TN3270 using the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace application. [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace provides API, internal, and message tracing.  
+You can enable or disable tracing for TN3270 using the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace application. [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace provides API, internal, and message tracing.  
   
- [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] SNA Trace Utility places trace files for TN3270 in the \Host Integration Server\Tracesfolder by default.  
+ [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] SNA Trace Utility places trace files for TN3270 in the \Host Integration Server\Tracesfolder by default.  
   
- The following table illustrates the TN3270 file names used by [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace:  
+ The following table illustrates the TN3270 file names used by [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace:  
   
 |Service|Type of tracing|File names used|File names used|  
 |-------------|---------------------|---------------------|---------------------|  

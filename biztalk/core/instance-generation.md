@@ -28,7 +28,7 @@ BizTalk Editor invokes the **IInstanceGenerator.GenerateInstance** method of an 
   
  Before the **IInstanceValidator.ValidateInstance** method is called, BizTalk Editor generates a sample XML instance message, and then passes it and the file specified in the **Output Instance Filename** property, or a default file name, to that method.  
   
- If errors occur, error messages are returned as an array of **IValidationInfo** objects, and are displayed in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Task List window.  
+ If errors occur, error messages are returned as an array of <strong>IValidationInfo</strong> objects, and are displayed in the [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Task List window.  
   
 ## See Also  
  [Extending BizTalk Editor](../core/extending-biztalk-editor.md)

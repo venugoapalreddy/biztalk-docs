@@ -29,7 +29,7 @@ You use the BizTalk Web Services Publishing Wizard to publish an orchestration a
  Prior to running the BizTalk Web Services Publishing Wizard, you must enable Web services. For more information about enabling Web services for your system, see [Enabling Web Services](../core/enabling-web-services.md).  
   
 > [!NOTE]
->  You must install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] before you can publish an orchestration as a Web service. You don't need to install Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+>  You must install [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] before you can publish an orchestration as a Web service. You don't need to install Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
 ## In This Section  
   

@@ -23,7 +23,7 @@ Microsoft is committed to making its products and services easier for everyone t
 
 \<!--- Previous text
   
- Microsoft [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Help can also be made more accessible for people with disabilities. For example, you can customize the font size and color of dialog boxes and browser settings. The following procedure explains how to find this accessibility information in Microsoft Document Explorer, the user interface in which Help is displayed.  
+ Microsoft [!INCLUDE [HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Help can also be made more accessible for people with disabilities. For example, you can customize the font size and color of dialog boxes and browser settings. The following procedure explains how to find this accessibility information in Microsoft Document Explorer, the user interface in which Help is displayed.  
   
 ### To find information about accessibility options for Microsoft BizTalk Accelerator for HL7 Help  
   

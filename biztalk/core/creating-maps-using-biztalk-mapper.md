@@ -23,7 +23,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Creating Maps Using BizTalk Mapper
-BizTalk Mapper is a tool that runs within the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment. BizTalk Mapper can be used to create and edit maps, which are used for translating or transforming xml messages. Maps are used in orchestrations, as the following figure suggest, and can also be used for processing messages received at a receive port, and then transforming the message to be sent via send port(s).  
+BizTalk Mapper is a tool that runs within the Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] environment. BizTalk Mapper can be used to create and edit maps, which are used for translating or transforming xml messages. Maps are used in orchestrations, as the following figure suggest, and can also be used for processing messages received at a receive port, and then transforming the message to be sent via send port(s).  
   
  ![Business processing diagram with maps.](../core/media/ebiz-dev-busprcsg.gif "ebiz_dev_busprcsg")  
 Maps in Business Processing  

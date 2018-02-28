@@ -18,10 +18,12 @@ manager: "anneta"
 ---
 # SendPortRef (Mapping Node)
 The SendPortRef node of the Mapping node of a binding file lists the names of the send ports referenced by the parent mapping node.  
-  
+
 ## Nodes in the SendPortRef node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|Name|Attribute|xs:string|Specifies the name of a send port that is referenced by the parent mapping node|Not required|Default value: empty|
+
+
+| <strong>Name</strong> | <strong>Node Type</strong> | <strong>Data Type</strong> |                          <strong>Description</strong>                           | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|-----------------------|----------------------------|----------------------------|---------------------------------------------------------------------------------|-------------------------------|---------------------------|
+|         Name          |         Attribute          |         xs:string          | Specifies the name of a send port that is referenced by the parent mapping node |         Not required          |   Default value: empty    |
+

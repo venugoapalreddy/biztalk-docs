@@ -6,7 +6,7 @@ ROBOTS: NOINDEX
 --- 
 
 # How to Create Send Ports for TIBCO Rendezvous
-Follow these steps to create a send port using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+Follow these steps to create a send port using [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
 ### To create a send port  
   

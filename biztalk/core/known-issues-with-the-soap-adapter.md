@@ -56,15 +56,15 @@ This section contains information that may help you avoid errors.
 ##### Resolution  
  To prevent the AppDomain from being unloaded, follow the procedure below:  
   
-1.  Click **Start**, point to **All Programs**, point to **Microsoft BizTalk Server** and then click **BizTalk Server Administration**.  
+1. Click **Start**, point to **All Programs**, point to **Microsoft BizTalk Server** and then click **BizTalk Server Administration**.  
   
-2.  In **BizTalk Server Administration Console**, Expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then click **Hosts**.  
+2. In **BizTalk Server Administration Console**, Expand **BizTalk Server Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then click **Hosts**.  
   
-3.  From the list of Hosts, right-click the required host, and then click **Settings**.  
+3. From the list of Hosts, right-click the required host, and then click **Settings**.  
   
-4.  In the **BizTalk Settings Dashboard**, check **Default application domain for isolated adapter** under **General** tab.  
+4. In the **BizTalk Settings Dashboard**, check **Default application domain for isolated adapter** under **General** tab.  
   
- When you do this, the BizTalk Messaging Engine objects are created in the default AppDomain instead of in their own AppDomains. Because the default AppDomain is never unloaded, the problem no longer occurs.  
+   When you do this, the BizTalk Messaging Engine objects are created in the default AppDomain instead of in their own AppDomains. Because the default AppDomain is never unloaded, the problem no longer occurs.  
   
 #### The SOAP Adapter fails to register  
   
@@ -78,7 +78,7 @@ This section contains information that may help you avoid errors.
  "The Messaging Engine failed to register an adapter "HTTP". Details: "Registering multiple adapter types within the same process is not a supported scenario.  For e.g. HTTP and SOAP receive adapters cannot co-exist in the same process".  
   
 ##### Cause  
- When running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] / IIS 6.x, the SOAP and HTTP adapters cannot execute in the same process space or application pool.  
+ When running [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on [!INCLUDE [btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] / IIS 6.x, the SOAP and HTTP adapters cannot execute in the same process space or application pool.  
   
 ##### Resolution  
  If an installation requires using both the SOAP and HTTP adapters on the same Web server then separate application pools must be created for each adapter.  Once created, the virtual directories for each adapter are each assigned to a different application pool.  

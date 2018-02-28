@@ -18,7 +18,7 @@ manager: "anneta"
 # SAP GUI tasks for the SAP adapter scenarios
 
 ## Overview
-For many scenarios involving the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] and the SAP system, you need to perform certain operations on the SAP system. For example, to receive an RFC call into the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], you first send an RFC from the SAP system. This section lists the high-level steps to complete these tasks on the SAP system.  
+For many scenarios involving the [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)] and the SAP system, you need to perform certain operations on the SAP system. For example, to receive an RFC call into the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)], you first send an RFC from the SAP system. This section lists the high-level steps to complete these tasks on the SAP system.  
   
 > [!IMPORTANT]
 >  To do these tasks, we suggest contacting your SAP administrator, or refer to the SAP guidance.  

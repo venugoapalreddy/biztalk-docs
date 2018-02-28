@@ -15,13 +15,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Modifying EDI Schemas
-You can modify an existing EDI schema that is shipped in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. When you and your trading partners have agreed on modifications to standard schemas, and perhaps changed the relevant Message Implementation Guideline (MIG) file, you can modify the schemas in the BizTalk Editor in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+You can modify an existing EDI schema that is shipped in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. When you and your trading partners have agreed on modifications to standard schemas, and perhaps changed the relevant Message Implementation Guideline (MIG) file, you can modify the schemas in the BizTalk Editor in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
 > [!NOTE]
 >  Some schema modifications (cross-field validation and HIPAA subdocument splitting) involve changes to the annotations in an EDI schema. These changes cannot be made in BizTalk Editor, but can be made in a text editor, such as Notepad.  
   
 ## Prerequisites  
- You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
+ You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
   
 ## Schema Naming Convention  
  An EDI schema is identified by its root name and its namespace. You cannot deploy two schemas in the same BizTalk Group with the same root name and namespace. You cannot modify the root name of any EDI schema, or add to the root name, because the root name must contain the version and the document type in a standard naming convention. As a result, if you want to deploy two schemas in the same BizTalk Group with the same root name, you must use a different namespace for each one.  
@@ -29,7 +29,7 @@ You can modify an existing EDI schema that is shipped in [!INCLUDE[btsBizTalkSer
  It is not uncommon for a company to deploy in the same BizTalk Group a different version of the same schema for two or more different trading partners. In this case, the two schemas would have the same version and the same document type. To deploy these two schemas, you would have to have different namespaces for each schema.  
   
 ## EDI Schema Changes  
- You can make the following changes to an EDI schema in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]:  
+ You can make the following changes to an EDI schema in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]:  
   
 |To do this|Do this|  
 |----------------|-------------|  
@@ -50,30 +50,30 @@ You can modify an existing EDI schema that is shipped in [!INCLUDE[btsBizTalkSer
   
 ### To modify an existing EDI schema in BizTalk Editor  
   
-1.  In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], add the schema that you want to modify to a project and open the schema in BizTalk Editor.  
+1. In [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], add the schema that you want to modify to a project and open the schema in BizTalk Editor.  
   
-    > [!NOTE]
-    >  You can display the schema in graphical form by clicking the **EDI** tab at the bottom of the Schema Editor screen. It is much easier to navigate the nodes of the schema using this tabular format.  
+   > [!NOTE]
+   >  You can display the schema in graphical form by clicking the **EDI** tab at the bottom of the Schema Editor screen. It is much easier to navigate the nodes of the schema using this tabular format.  
   
-2.  To change the properties of a data element or record, click the appropriate node in the left pane of BizTalk Editor and change its properties in the Properties window.  
+2. To change the properties of a data element or record, click the appropriate node in the left pane of BizTalk Editor and change its properties in the Properties window.  
   
-3.  To change the values in an enumeration, select the enumeration in the **Properties** pane, and then click the ellipsis to open the **Enumeration Editor**. Add to or delete from the list of values, as needed, ensuring that there is one value on each line in the **Values** pane. Click **OK**.  
+3. To change the values in an enumeration, select the enumeration in the **Properties** pane, and then click the ellipsis to open the **Enumeration Editor**. Add to or delete from the list of values, as needed, ensuring that there is one value on each line in the **Values** pane. Click **OK**.  
   
-4.  To add a custom field to the schema, right-click a record node in the console tree of BizTalk Editor, point to **Insert Schema Node**, and click **Child Field Element**. Name the data element, and then drag the data element to the appropriate position in the record. Set the properties for the custom field properties as required.  
+4. To add a custom field to the schema, right-click a record node in the console tree of BizTalk Editor, point to **Insert Schema Node**, and click **Child Field Element**. Name the data element, and then drag the data element to the appropriate position in the record. Set the properties for the custom field properties as required.  
   
-    > [!NOTE]
-    >  Adding a child field attribute to a record in an EDI schema is not allowed, because the sequence of the elements would not be guaranteed. Trying to add a child field attribute results in an invalid schema.  
+   > [!NOTE]
+   >  Adding a child field attribute to a record in an EDI schema is not allowed, because the sequence of the elements would not be guaranteed. Trying to add a child field attribute results in an invalid schema.  
   
-5.  To add a custom record to the schema, right-click a record node in the console tree of Schema Editor, point to **Insert Schema Node**, and then click **Child Record**. Name the record, and then drag the record to the appropriate position in the schema. Add at least one data element to the record. Set the properties for the custom record as required.  
+5. To add a custom record to the schema, right-click a record node in the console tree of Schema Editor, point to **Insert Schema Node**, and then click **Child Record**. Name the record, and then drag the record to the appropriate position in the schema. Add at least one data element to the record. Set the properties for the custom record as required.  
   
-6.  After making the desired changes to the schema, you can change the target namespace that applies to the schema property by clicking the root node (\<Schema\>) and then changing the **Target Namespace** property.  
+6. After making the desired changes to the schema, you can change the target namespace that applies to the schema property by clicking the root node (\<Schema\>) and then changing the **Target Namespace** property.  
   
-7.  Save the schema.  
+7. Save the schema.  
   
-8.  Validate the schema by right-clicking the schema in Solution Explorer and clicking **Validate Schema**.  
+8. Validate the schema by right-clicking the schema in Solution Explorer and clicking **Validate Schema**.  
   
-    > [!NOTE]
-    >  The **Validate Schema** command will validate the EDI schema because the **Schema Editor Extension** property of the root node (\<Schema\>) is set to **EDI Schema Editor Extension**.  
+   > [!NOTE]
+   >  The **Validate Schema** command will validate the EDI schema because the **Schema Editor Extension** property of the root node (\<Schema\>) is set to **EDI Schema Editor Extension**.  
   
 ### To modify annotation properties in an existing EDI schema  
   

@@ -20,7 +20,7 @@ The **Extract_Partner_LU_Name** call (function name **cmepln**) returns the part
   
 ```  
   
-CM_ENTRY Extract_Partner_LU_Name(   
+CM_ENTRY Extract_Partner_LU_Name(   
   unsigned char FAR *conversation_ID,    
   unsigned char FAR *partner_LU_name,    
   CM_INT32 FAR *partner_LU_name_length,    

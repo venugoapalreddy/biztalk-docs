@@ -5,7 +5,7 @@ redirect_document_id: TRUE
 ROBOTS: NOINDEX
 --- 
 # How to Create Send Ports for JD Edwards EnterpriseOne
-Using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], create a send port.  
+Using [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], create a send port.  
   
 ### To create a send port  
   

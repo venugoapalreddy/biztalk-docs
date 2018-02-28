@@ -68,7 +68,7 @@ You can achieve this sort of correlation of messages with orchestration instance
      Following correlation sets bound to a send action dictate that the set of properties in the correlation set are promoted in the outbound document.  
   
 ## Inspecting Correlation Sets  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides the ability to inspect correlation sets. You can inspect a correlation set in an Expression Shape using code similar to the following:  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides the ability to inspect correlation sets. You can inspect a correlation set in an Expression Shape using code similar to the following:  
   
 ```  
 MsgLen = Correlation_1(BTS.MessageLength);  

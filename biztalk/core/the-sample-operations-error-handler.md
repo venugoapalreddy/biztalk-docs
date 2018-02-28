@@ -22,7 +22,7 @@ The sample operations error handler has three major assemblies: **OperationsClie
   
  The solution configures the adapter to use the **OpsClient** object in the **OperationsClient** assembly. As you'd expect, the **OpsClient** object implements the **IOpsAIC** interface.  
   
- The **OpsClient** object uses the **IOperationsSystem** interface to call the **OpsHandler** object through the [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] remoting feature. The **IOperationsSystem** interface appears as follows:  
+ The <strong>OpsClient</strong> object uses the <strong>IOperationsSystem</strong> interface to call the <strong>OpsHandler</strong> object through the [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] remoting feature. The <strong>IOperationsSystem</strong> interface appears as follows:  
   
 ```  
 public interface IOperationsSystem  
@@ -33,9 +33,9 @@ public interface IOperationsSystem
   
 ```  
   
- The **OperationsServer**, a console application, listens for requests for the **OpsHandler** object and acts as the server for the [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] remoting feature. Calling the **Execute** method of the **OpsClient** object in turn invokes the **Post** method of the **OpsHandler** object.  
+ The <strong>OperationsServer</strong>, a console application, listens for requests for the <strong>OpsHandler</strong> object and acts as the server for the [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] remoting feature. Calling the <strong>Execute</strong> method of the <strong>OpsClient</strong> object in turn invokes the <strong>Post</strong> method of the <strong>OpsHandler</strong> object.  
   
- The **OpsHandler** methods respond by writing out their argument strings using the **Trace** object. This posts the errors to the console. For more information about the **Trace** object, see "Trace Class" in the [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] Class Library.  
+ The <strong>OpsHandler</strong> methods respond by writing out their argument strings using the <strong>Trace</strong> object. This posts the errors to the console. For more information about the <strong>Trace</strong> object, see "Trace Class" in the [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] Class Library.  
   
 > [!NOTE]
 >  The pattern here is the same as that in the **OrderHandler** in which an interface specifies the method calls between a client and a remoted object. There is, however, an additional layer of indirection here between the **OpsClient** and the **OpsHandler**.  

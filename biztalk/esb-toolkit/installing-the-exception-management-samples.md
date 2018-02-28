@@ -14,14 +14,14 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Installing the Exception Management Samples
-This section describes the process for installing the ESB Exception Management samples into the Microsoft BizTalk Server GlobalBank.ESB application. You can install the ESB Exception Management samples using the install scripts included with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]. This section contains the following topics:  
+This section describes the process for installing the ESB Exception Management samples into the Microsoft BizTalk Server GlobalBank.ESB application. You can install the ESB Exception Management samples using the install scripts included with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)]. This section contains the following topics:  
   
 -   [Installing the Exception Management Samples Using Install Scripts](../esb-toolkit/installing-the-exception-management-samples-using-install-scripts.md)  
   
 -   [Assemblies and Artifacts Installed by the Exception Management Samples](../esb-toolkit/assemblies-and-artifacts-installed-by-the-exception-management-samples.md)  
   
 > [!NOTE]
->  The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] sample applications reside in a BizTalk application named GlobalBank.ESB. To make sure that this application exists, install the Dynamic Resolution sample first.  
+>  The [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] sample applications reside in a BizTalk application named GlobalBank.ESB. To make sure that this application exists, install the Dynamic Resolution sample first.  
   
  For information about how to run the samples and how they work, see the following topics:  
   

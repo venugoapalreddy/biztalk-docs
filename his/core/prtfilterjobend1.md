@@ -20,7 +20,7 @@ The **PrtFilterJobEnd** function is called to inform the print data filter DLL t
   
 ```  
   
-            void * WINAPI PrtFilterJobEnd(   
+            void * WINAPI PrtFilterJobEnd(   
   void *UniqueID,   
   char **pBufPtr,   
   DWORD *pBufLen    

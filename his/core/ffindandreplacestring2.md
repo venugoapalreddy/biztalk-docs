@@ -20,7 +20,7 @@ The **fFindAndReplaceString** function is used to find and replace a substring w
   
 ```  
   
-          BOOL fFindAndReplaceString(   
+          BOOL fFindAndReplaceString(   
 LPSTRszStringBuffer,  
 LPSTRszSearchString,  
 LPSTRszReplaceString);  

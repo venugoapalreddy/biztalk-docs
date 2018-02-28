@@ -24,8 +24,8 @@ The following describes the `SELECT` statement parsing used in the Managed Provi
 ## Examples  
   
 ```  
-SELECT * FROM FILE_NAME   
-SELECT COL_NAME1, COL_NAME2… FROM FILE_NAME   
+SELECT * FROM FILE_NAME   
+SELECT COL_NAME1, COL_NAME2… FROM FILE_NAME   
 ```  
   
 ## See Also  

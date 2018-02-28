@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Syntax for an EXEC Statement in Siebel
-Using the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], ADO.NET clients can also perform an EXEC operation on the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]. The syntax for the EXEC statement is:  
+Using the [!INCLUDE [adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], ADO.NET clients can also perform an EXEC operation on the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]. The syntax for the EXEC statement is:  
   
 ```  
 EXEC  

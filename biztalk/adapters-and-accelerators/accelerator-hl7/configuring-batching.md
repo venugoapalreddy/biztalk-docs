@@ -18,16 +18,16 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring Batching
-You use [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Configuration Explorer to create batch, batch in/batch out batching, and to select available schemas for outbound batching.  
+You use [!INCLUDE [HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Configuration Explorer to create batch, batch in/batch out batching, and to select available schemas for outbound batching.  
   
 > [!NOTE]
 >  You must configure trading partners using BizTalk Explorer before you can configure message batching.  
   
- The following figure shows the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer **Batch Definition** tab.  
+ The following figure shows the [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer <strong>Batch Definition</strong> tab.  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/hl7-ops-batchdef.gif "hl7_ops_batchdef")  
   
- Use the following procedures to open [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer and configure batching.  
+ Use the following procedures to open [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer and configure batching.  
   
 ### To enable message batching for outbound batching (Create Batch)  
   
@@ -51,16 +51,16 @@ You use [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion
   
 ### To configure batching  
   
--   In [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer, in the **BTAHL7 Configuration Explorer** dialog box, on the **Parties** tab, select the party you want to configure, and then on the **Batch Definition** tab, do the following:  
+- In [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer, in the <strong>BTAHL7 Configuration Explorer</strong> dialog box, on the <strong>Parties</strong> tab, select the party you want to configure, and then on the <strong>Batch Definition</strong> tab, do the following:  
   
-    |Use this|To do this|  
-    |--------------|----------------|  
-    |**Fragmentation required**|Select one of the following options:<br /><br /> -   **Yes**. To enable fragmentation.<br />-   **No**. To disable fragmentation. **Note:**  For a new party, **Fragmentation Required** defaults to **No**.|  
-    |**Select Messages**|Select the message types you want to send as a batch from the **Available Messages** window, and then click the Move to the right arrow (**>>**).|  
-    |**Select Message Acknowledgments**|Select the message types for which you want the acknowledgments to send as a batch from the **Available Message Acks** window, and then click the Move to the right (**>>**).|  
+  |Use this|To do this|  
+  |--------------|----------------|  
+  |**Fragmentation required**|Select one of the following options:<br /><br /> -   **Yes**. To enable fragmentation.<br />-   **No**. To disable fragmentation. **Note:**  For a new party, **Fragmentation Required** defaults to **No**.|  
+  |**Select Messages**|Select the message types you want to send as a batch from the **Available Messages** window, and then click the Move to the right arrow (**>>**).|  
+  |**Select Message Acknowledgments**|Select the message types for which you want the acknowledgments to send as a batch from the **Available Message Acks** window, and then click the Move to the right (**>>**).|  
   
-    > [!NOTE]
-    >  You may not see schemas that you add to your In [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] project while In [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer is running. In order to view these files, you may need to restart In [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
+  > [!NOTE]
+  >  You may not see schemas that you add to your In [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] project while In [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer is running. In order to view these files, you may need to restart In [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
   
 ## See Also  
  [Scheduling Batching](../../adapters-and-accelerators/accelerator-hl7/scheduling-batching.md)

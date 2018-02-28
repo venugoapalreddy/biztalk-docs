@@ -14,9 +14,9 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # How to Add or Remove TI Manager for a Remote Computer
-You can use TI (Transaction Integrator) Manager to administer remote environments (RE) on your local client computer if you installed [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Server on that computer. However, TI cannot reside on a computer that has [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Administrator Client or [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] End-User Client installed instead of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Server.  
+You can use TI (Transaction Integrator) Manager to administer remote environments (RE) on your local client computer if you installed [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Server on that computer. However, TI cannot reside on a computer that has [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Administrator Client or [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] End-User Client installed instead of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Server.  
   
- Once you install [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Server on the computer, you can use TI Manager to deploy TI components in COM+ applications on the local computer.  
+ Once you install [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Server on the computer, you can use TI Manager to deploy TI components in COM+ applications on the local computer.  
   
  You can display a TI Manager on your local computer for your local computer and for up to nine remote computers that are currently running TI. This means that, from a single computer, you can administer the remote environment configurations on a maximum of 10 computers.  
   

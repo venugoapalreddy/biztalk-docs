@@ -15,34 +15,35 @@ manager: "anneta"
 ---
 # db2ToSql
 The db2ToSql defines the direction from DB2 to SQL Server.  
-  
+
  \<hostIntegration.drdaAs.drdaService>  
 \<services>  
 \<service>  
 \<conversionFormats>  
 \<dateMasks>  
 \<dateMask>  
-  
+
 ## Syntax  
-  
+
 ```  
-<hostIntegration.drdaAs.drdaService>        <services>                <service>                        <conversionFormats>                                <dateMasks>                                        <dateMask>                                                <db2ToSql>                                                </db2ToSql>                                        </dateMask>                                </dateMasks>                        </conversionFormats>                </service>        </services></hostIntegration.drdaAs.drdaService>  
+<hostIntegration.drdaAs.drdaService>        <services>                <service>                        <conversionFormats>                                <dateMasks>                                        <dateMask>                                                <db2ToSql>                                                </db2ToSql>                                        </dateMask>                                </dateMasks>                        </conversionFormats>                </service>        </services></hostIntegration.drdaAs.drdaService>  
 ```  
-  
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
-  
+
 ### Attributes  
-  
+
 |Attribute|Type|Description|Required|Default Value|  
 |---------------|----------|-----------------|--------------|-------------------|  
 |sourceFormat|drdaas:DateFormats||true|n/a|  
-  
+
 ### Child Elements  
  None  
-  
+
 ### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-||The dateMask element contains a db2ToSql or sqlToDb2 to indicate the direction, and a sourceFormat and a targetFormat to specify the mapping.|
+
+| Element |                                                                  Description                                                                  |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+|         | The dateMask element contains a db2ToSql or sqlToDb2 to indicate the direction, and a sourceFormat and a targetFormat to specify the mapping. |
+

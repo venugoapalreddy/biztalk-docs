@@ -24,7 +24,7 @@ public: ULONGLONG ullErrorCode;
 ```  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SStatus Structure (COM)](../esso/sstatus-structure-com.md)   

@@ -29,7 +29,7 @@ manager: "anneta"
  You can override the default value for a given server by selecting **Use** and typing another port number. You can also override this port number for a given session. TN services listen on multiple ports simultaneously. You can set a default port number for the TN service (assign the port number to the server) and override this number on a per session basis (assign the port number to the LU session), allowing a single client computer to connect to multiple host computers.  
   
 ## Host Integration Server, VTAM, and NCP Parameters for X.25 Connections  
- The following table shows how [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for X.25 connections correspond to VTAM or NCP parameters. Asterisks (*) indicate required parameters.  
+ The following table shows how [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for X.25 connections correspond to VTAM or NCP parameters. Asterisks (*) indicate required parameters.  
   
 |Properties Tab|SNA Parameter|VTAM or NCP Parameter|  
 |--------------------|-------------------|---------------------------|  
@@ -40,7 +40,7 @@ manager: "anneta"
 |Address|**Virtual Circuit Type or Remote X.25 Address**|**DIALNO=** parameter in the PORT definition|  
 |X.25|**Max BTU Length**|**MAXDATA=** parameter in the PU definition (set Max BTU Length less than or equal to MAXDATA)|  
   
--   Required parameter in [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+- Required parameter in [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
 ## See Also  
  [SNA Manager Help](../core/sna-manager-help1.md)

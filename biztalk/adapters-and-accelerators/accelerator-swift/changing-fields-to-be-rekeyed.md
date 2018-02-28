@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Changing Fields to Be Rekeyed
-In the verification step of a message repair workflow, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] removes the data from a number of fields so that the verifier must re-enter, or rekey, that data. You can customize which fields in the RekeyVerify [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form need to be rekeyed. You do so in the MrsrXpathConfig.xml file, which is located in the \<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT\MRSR folder.  
+In the verification step of a message repair workflow, [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] removes the data from a number of fields so that the verifier must re-enter, or rekey, that data. You can customize which fields in the RekeyVerify [!INCLUDE [btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form need to be rekeyed. You do so in the MrsrXpathConfig.xml file, which is located in the \<<em>drive</em>\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT\MRSR folder.  
   
  The MrsrXpathConfig.xml file contains a series of nodes for the message type processed. Each message-type node contains a series of field nodes, one for each field. You can change the fields to be rekeyed by opening MrsrXpathConfig.xml in a text editor, such as Notepad, and adding or removing a \<path\> node for the field.  
   

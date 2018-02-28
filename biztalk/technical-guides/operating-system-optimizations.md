@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Operating System Optimizations
-This topic provides recommendations for optimizing performance of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers used in a production [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment. These optimizations are applied after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has been installed and configured.  
+This topic provides recommendations for optimizing performance of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] computers used in a production [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment. These optimizations are applied after [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has been installed and configured.  
   
 ## General guidelines for improving operating system performance  
  The following recommendations can be used to increase operating system performance:  
@@ -81,7 +81,7 @@ This topic provides recommendations for optimizing performance of the [!INCLUDE[
 -   ”How to configure RPC dynamic port allocation to work with firewalls” at [http://go.microsoft.com/fwlink/?LinkID=76145](http://go.microsoft.com/fwlink/?LinkID=76145).  
   
 ### Use the NTFS file system on all volumes  
- [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] offers multiple file system types for formatting drives, including NTFS, FAT, and FAT32. NTFS should always be the file system of choice for servers.[!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]  
+ [!INCLUDE [btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] offers multiple file system types for formatting drives, including NTFS, FAT, and FAT32. NTFS should always be the file system of choice for servers.[!INCLUDE [btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)]  
   
  NTFS offers considerable performance benefits over the FAT and FAT32 file systems and should be used exclusively on Windows servers. In addition, NTFS offers many security, scalability, stability and recoverability benefits over FAT and FAT32.  
   
@@ -97,7 +97,7 @@ This topic provides recommendations for optimizing performance of the [!INCLUDE[
   
  Configuring larger allocation unit (or cluster or block) sizes will cause disk space to be used less efficiently, but will also provide higher disk I/O performance as the disk head can read in more data during each read activity.  
   
- To determine the optimal setting to configure the controller and format the disks with, you should determine the average disk transfer size on the disk subsystem of a server with similar file system characteristics. Use the [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] Performance Monitor tool to monitor the Logical Disk object counters of Avg. Disk Bytes/Read and Avg. Disk Bytes/Write over a period of normal activity to help determine the best value to use.  
+ To determine the optimal setting to configure the controller and format the disks with, you should determine the average disk transfer size on the disk subsystem of a server with similar file system characteristics. Use the [!INCLUDE [btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] Performance Monitor tool to monitor the Logical Disk object counters of Avg. Disk Bytes/Read and Avg. Disk Bytes/Write over a period of normal activity to help determine the best value to use.  
   
  Although smaller allocation unit sizes may be warranted if the system will be accessing many small files or records, an allocation unit size of 64 KB delivers sound performance and I/O throughput under most circumstances. Improvements in performance with tuned allocation unit sizes can be particularly noted when disk load increases.  
   
@@ -117,9 +117,9 @@ This topic provides recommendations for optimizing performance of the [!INCLUDE[
  Run a defragmenter utility regularly on your disks, including the root drive, to prevent performance degradation. Do this weekly on busy disks. A disk defragmenter is installed with Windows Server and can be run from a Scheduled Task at specified intervals.  
   
 ### Optimize Windows Server performance for background services  
- The BizTalk Server process (BTSNTSVC.exe) runs as a background service. By default, [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] is configured to adjust for best performance of application programs and not for background services.  
+ The BizTalk Server process (BTSNTSVC.exe) runs as a background service. By default, [!INCLUDE [btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] is configured to adjust for best performance of application programs and not for background services.  
   
- [!INCLUDE[btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] uses preemptive multi-tasking to prioritize process threads that will be attended to by the CPU. Preemptive multi-tasking is a methodology whereby the execution of a process is halted and another process is started, at the discretion of the operating system. This scheme prevents a single thread from dominating the CPU.  
+ [!INCLUDE [btsWinSvrNoVersion](../includes/btswinsvrnoversion-md.md)] uses preemptive multi-tasking to prioritize process threads that will be attended to by the CPU. Preemptive multi-tasking is a methodology whereby the execution of a process is halted and another process is started, at the discretion of the operating system. This scheme prevents a single thread from dominating the CPU.  
   
  Switching the CPU from executing one process to the next is known as context-switching. The Windows operating system includes a setting that determines how long individual threads are allowed to run on the CPU before a context-switch occurs and the next thread is serviced. This amount of time is referred to as a quantum. This setting lets you choose how processor quanta are shared between foreground programs and background services. Typically for a server it is not desirable to allow a foreground program to have more CPU time allocated to it than background services. That is, all applications and their processes running on the server should be given equal consideration for CPU time.  
   
@@ -134,15 +134,15 @@ This topic provides recommendations for optimizing performance of the [!INCLUDE[
 ### Manually load Microsoft Certificate Revocation lists  
  When starting a .NET application, the .NET Framework will attempt to download the Certificate Revocation list (CRL) for any signed assembly. If your system does not have direct access to the Internet, or is restricted from accessing the Microsoft.com domain, this may delay startup of BizTalk Server. To avoid this delay at application startup, you can use the following steps to manually download and install the code signing Certificate Revocation Lists on your system.  
   
-1.  Download the latest CRL updates from [http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl](http://go.microsoft.com/fwlink/?LinkID=117794) and [http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl](http://go.microsoft.com/fwlink/?LinkId=117795).  
+1. Download the latest CRL updates from [http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl](http://go.microsoft.com/fwlink/?LinkID=117794) and [http://crl.microsoft.com/pki/crl/products/CodeSignPCA2.crl](http://go.microsoft.com/fwlink/?LinkId=117795).  
   
-2.  Move the CodeSignPCA.crl and CodeSignPCA2.crl files to the isolated system.  
+2. Move the CodeSignPCA.crl and CodeSignPCA2.crl files to the isolated system.  
   
-3.  From a command prompt, enter the following command to use the certutil utility to update the local certificate store with the CRL downloaded in step 1:  
+3. From a command prompt, enter the following command to use the certutil utility to update the local certificate store with the CRL downloaded in step 1:  
   
-     certutil –addstore CA c:\CodeSignPCA.crl  
+    certutil –addstore CA c:\CodeSignPCA.crl  
   
- The CRL files are updated regularly, so you should consider setting a reoccurring task of downloading and installing the CRL updates. To view the next update time, double-click the .crl file and view the value of the **Next Update** field.  
+   The CRL files are updated regularly, so you should consider setting a reoccurring task of downloading and installing the CRL updates. To view the next update time, double-click the .crl file and view the value of the **Next Update** field.  
   
 ### Synchronize time on all servers  
  Many operations involving tickets, receipts and logging rely on the local system clock being accurate. This is especially true in a distributed environment, where time discrepancies between systems may cause logs to be out of sync or tickets issued by one system to be rejected by another as expired or not yet valid.  

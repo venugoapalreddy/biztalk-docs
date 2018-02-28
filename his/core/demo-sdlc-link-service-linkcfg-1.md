@@ -43,8 +43,8 @@ LINKCFG LINKSVC "title" (The quotes must be included.)
  **/SERVER:** *servername*  
  This is the name of the computer on which the link service is to be installed.  
   
- **/SCRIPTFILE:**" *script file*"  
- This is the name of the demonstration script. [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] provides the following scripts:  
+ <strong>/SCRIPTFILE:</strong>" <em>script file</em>"  
+ This is the name of the demonstration script. [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] provides the following scripts:  
   
 -   `"Continuous Demo.dem"` - this is the 3270 continuous demo script..  
   

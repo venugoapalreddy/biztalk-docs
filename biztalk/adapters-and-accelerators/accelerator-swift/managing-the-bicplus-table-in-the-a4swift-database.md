@@ -19,40 +19,40 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Managing the Bicplus Table in the A4SWIFT Database
-[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] uses a table of BIC entries to perform BIC validation. This table can be either the Bicplus table in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database or a table in a custom database.  
+[!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] uses a table of BIC entries to perform BIC validation. This table can be either the Bicplus table in the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database or a table in a custom database.  
   
- To manage this table, you must populate it with BIC values from SWIFT. If you use a custom database, you must also export SQL views in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database into the custom database.  
+ To manage this table, you must populate it with BIC values from SWIFT. If you use a custom database, you must also export SQL views in the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database into the custom database.  
   
 ## Importing BIC data from the SWIFT Bicplus database  
- You must populate the table of BIC entries (either the default or the custom table) with BIC values from SWIFT. The SWIFT BIC data is available in an [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] spreadsheet or in an Oracle database that is updated monthly. For more information about SWIFT BIC data, go to [http://go.microsoft.com/fwlink/?LinkId=27885](http://go.microsoft.com/fwlink/?LinkId=27885).  
+ You must populate the table of BIC entries (either the default or the custom table) with BIC values from SWIFT. The SWIFT BIC data is available in an [!INCLUDE [btsExcel](../../includes/btsexcel-md.md)] spreadsheet or in an Oracle database that is updated monthly. For more information about SWIFT BIC data, go to [http://go.microsoft.com/fwlink/?LinkId=27885](http://go.microsoft.com/fwlink/?LinkId=27885).  
   
  If you use a custom database, you must export BIC data from the SWIFT Bicplus database into the custom database. You must  
   
- You can import data from the BIC [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] spreadsheet provided by SWIFT into the Bicplus table in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, because they are compatible. If you import the data from the SWIFT spreadsheet into a non-[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, make sure that the fields and columns in your database, particularly the BIC column, are compatible with the SWIFT spreadsheet.  
+ You can import data from the BIC [!INCLUDE [btsExcel](../../includes/btsexcel-md.md)] spreadsheet provided by SWIFT into the Bicplus table in the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, because they are compatible. If you import the data from the SWIFT spreadsheet into a non-[!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, make sure that the fields and columns in your database, particularly the BIC column, are compatible with the SWIFT spreadsheet.  
   
  The import operation does not remove any unpublished BIC codes when it updates the destination table with the codes published in the SWIFT table.  
   
- The changes made to the Bicplus table of the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database are logged in the [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] log file.  
+ The changes made to the Bicplus table of the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database are logged in the [!INCLUDE [btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] log file.  
   
 #### To import BIC data from the SWIFT Bicplus database  
   
-1.  Click **Start**, point to **All Programs**, point to the inistalled version of SQL Server, and then click **SQL Server Management Studio**.  
+1. Click **Start**, point to **All Programs**, point to the inistalled version of SQL Server, and then click **SQL Server Management Studio**.  
   
-2.  In the Connect to Server dialog box, click **Connect**.  
+2. In the Connect to Server dialog box, click **Connect**.  
   
-3.  In the Microsoft SQL Server Management Studio window, expand your server node, and then **Databases**.  
+3. In the Microsoft SQL Server Management Studio window, expand your server node, and then **Databases**.  
   
-4.  Right-click **A4SWIFT**, point to **Tasks**, and then click **Import Data**.  
+4. Right-click **A4SWIFT**, point to **Tasks**, and then click **Import Data**.  
   
-5.  On the SQL Server Import and Export Wizard welcome page, click **Next**.  
+5. On the SQL Server Import and Export Wizard welcome page, click **Next**.  
   
-6.  On the **Choose a Data Source** page, if importing BIC data from the SWIFT Bicplus [!INCLUDE[btsExcel](../../includes/btsexcel-md.md)] spreadsheet, select **Microsoft Excel** in the **Data Source** text box. Browse to the location of the spreadsheet, and select the file name of the spreadsheet in the **Excel file path** text box. Click **Next**.  
+6. On the <strong>Choose a Data Source</strong> page, if importing BIC data from the SWIFT Bicplus [!INCLUDE [btsExcel](../../includes/btsexcel-md.md)] spreadsheet, select <strong>Microsoft Excel</strong> in the <strong>Data Source</strong> text box. Browse to the location of the spreadsheet, and select the file name of the spreadsheet in the <strong>Excel file path</strong> text box. Click <strong>Next</strong>.  
   
-     If importing BIC data from the Oracle database, select **Microsoft ODBC Driver for Oracle** in the **Data Source** text box. Enter the server with the Oracle database, and the user name and password required to connect to that server, and then click **Next**.  
+    If importing BIC data from the Oracle database, select **Microsoft ODBC Driver for Oracle** in the **Data Source** text box. Enter the server with the Oracle database, and the user name and password required to connect to that server, and then click **Next**.  
   
-7.  On the **Choose a Destination** page, verify that **Microsoft OLE DB Provider for SQL Server** is entered in the **Destination** text box, and that **Use Windows Authentication** is selected. If you are populating the Bicplus table in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, verify that **A4SWIFT** is entered in the **Database** text box. If you are using a custom database, enter the name of that database in the **Database** text box. Click **Next**.  
+7. On the <strong>Choose a Destination</strong> page, verify that <strong>Microsoft OLE DB Provider for SQL Server</strong> is entered in the <strong>Destination</strong> text box, and that <strong>Use Windows Authentication</strong> is selected. If you are populating the Bicplus table in the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, verify that <strong>A4SWIFT</strong> is entered in the <strong>Database</strong> text box. If you are using a custom database, enter the name of that database in the <strong>Database</strong> text box. Click <strong>Next</strong>.  
   
-8.  On the **Select Table Copy or Query** page, verify that **Copy data from one or more tables or views** is selected. If you need to use a query to specify the data, select **Write a query to specify the data to transfer**. Click **Next**.  
+8. On the **Select Table Copy or Query** page, verify that **Copy data from one or more tables or views** is selected. If you need to use a query to specify the data, select **Write a query to specify the data to transfer**. Click **Next**.  
   
 9. On the **Select Source Tables and Views** page, click **Bicplus** in the **Source** column, select **Bicplus** in the **Destination** column, and then click **Next**.  
   
@@ -61,9 +61,9 @@ manager: "anneta"
 11. On the **Complete the Wizard** page, review the summary and then click **Finish**.  
   
 ## Importing SQL views from the A4SWIFT database into a Custom Database  
- The [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] setup program installs two SQL views in the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database. One view is for eight-character BICs and the other is for 11-character BICs.  
+ The [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] setup program installs two SQL views in the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database. One view is for eight-character BICs and the other is for 11-character BICs.  
   
- If you use a custom database instead of the [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, you must importing these SQL views into the custom database. You do so by executing the CreateBICViews.sql script in the Query Analyzer. This script is in \<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT/Scripts.  
+ If you use a custom database instead of the [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] database, you must importing these SQL views into the custom database. You do so by executing the CreateBICViews.sql script in the Query Analyzer. This script is in \<<em>drive</em>\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT/Scripts.  
   
 #### To import SQL views from the A4SWIFT database into a custom database  
   

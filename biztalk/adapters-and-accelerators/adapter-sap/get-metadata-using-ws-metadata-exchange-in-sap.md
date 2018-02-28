@@ -19,13 +19,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Get Metadata Using WS-Metadata Exchange in SAP
-As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding, the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] exposes a WS-Metadata Exchange (MEX) endpoint that you can use to retrieve metadata for specific operations from the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)].  
+As a [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding, the [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)] exposes a WS-Metadata Exchange (MEX) endpoint that you can use to retrieve metadata for specific operations from the [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)].  
   
  WCF provides a rich infrastructure for exporting, publishing, retrieving and importing metadata about a service. WCF services, like the adapter, use metadata to describe how to interact with the service endpoints so that tools, like svcutil.exe, can automatically generate client code for consuming the service. WCF represents the metadata for a service as an instance of the **MetadataSet** type, which is strongly tied to the metadata serialization format defined in WS-Metadata Exchange (MEX). You can create a **MetadataSet** for targeted operations on the adapter by using a **MetadataExchangeClient**.  
   
  WCF support for metadata exchange is an expansive topic and beyond the scope of this documentation. For more information about support for metadata in WCF, see "Metadata" in the WCF documentation at [http://go.microsoft.com/fwlink/?LinkId=105634](http://go.microsoft.com/fwlink/?LinkId=105634). For a particularly good description of the architecture, classes, and namespaces that WCF exposes for metadata, see "Metadata Architecture Overview" at [http://go.microsoft.com/fwlink/?LinkId=105635](http://go.microsoft.com/fwlink/?LinkId=105635). You should familiarize yourself with the content related to retrieving metadata from a WCF service in these WCF topics before proceeding.  
   
- The following topics contain information about how to use a **MetadataExchangeClient** to retrieve metadata from the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+ The following topics contain information about how to use a <strong>MetadataExchangeClient</strong> to retrieve metadata from the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
 ## Using a MetadataExchangeClient to Retrieve Metadata  
  To use a **MetadataExchangeClient** you must specify a connection URI and a binding (**SAPBinding**). The connection URI identifies the operations for which you want to retrieve metadata.  
@@ -35,11 +35,11 @@ As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincomm
 ### The Connection URI  
  To use the **MetadataExchangeClient** you must supply a SAP connection URI that specifies a MEX endpoint and the operation or operations for which you want to retrieve metadata. You specify a MEX endpoint and target operations in the connection URI in the following manner:  
   
--   You must include the "wsdl" parameter in the query string. If it is the first parameter in the query string, it is specified just after the question mark (?). If it is not the first parameter, it should be preceded with an ampersand (&).  
+- You must include the "wsdl" parameter in the query string. If it is the first parameter in the query string, it is specified just after the question mark (?). If it is not the first parameter, it should be preceded with an ampersand (&).  
   
--   You must follow the "wsdl" parameter by one or more "op" parameters. Each "op" parameter is preceded by an ampersand (&) and specifies the message action (node ID) of a target operation.  
+- You must follow the "wsdl" parameter by one or more "op" parameters. Each "op" parameter is preceded by an ampersand (&) and specifies the message action (node ID) of a target operation.  
   
- For example, the following connection URI targets the Send operation for the SALESORDER_CREATEFROMDAT201 IDOC and the SALESORDER_CREATEFROMDAT202 IDOC. The "wsdl" and "op" parameters are highlighted.  
+  For example, the following connection URI targets the Send operation for the SALESORDER_CREATEFROMDAT201 IDOC and the SALESORDER_CREATEFROMDAT202 IDOC. The "wsdl" and "op" parameters are highlighted.  
   
 ```  
 "sap://User=YourUserName;Passwd=YourPassword;Client=800;Lang=EN;@a/YourSAPHost/00?wsdl&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT201//620/Send&op=http://Microsoft.LobServices.Sap/2007/03/Idoc/3/SALESORDER_CREATEFROMDAT202//620/Send"  
@@ -59,15 +59,15 @@ As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincomm
   
  There are several binding properties that affect how the adapter generates metadata. These properties are:  
   
--   **GenerateFlatfileCompatibleIdocSchema**  
+- **GenerateFlatfileCompatibleIdocSchema**  
   
--   **ReceiveIDocFormat**  
+- **ReceiveIDocFormat**  
   
--   **EnableSafeTyping**  
+- **EnableSafeTyping**  
   
--   **FlatFileSegmentIndicator**  
+- **FlatFileSegmentIndicator**  
   
- You should ensure that these binding properties are set to the values required for your application before you invoke the **GetMetadata** method on the **MetadataExchangeClient**. For more information about the SAP adapter binding properties, see [Read about BizTalk Adapter for mySAP Business Suite Binding Properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).  
+  You should ensure that these binding properties are set to the values required for your application before you invoke the **GetMetadata** method on the **MetadataExchangeClient**. For more information about the SAP adapter binding properties, see [Read about BizTalk Adapter for mySAP Business Suite Binding Properties](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md).  
   
 ### Example  
  The following example uses a **MetadataExchangeClient** to create a service description (WSDL document) for the BAPI_TRANSACTION_COMMIT and BAPI_TRANSACTION_ROLLBACK operations.  

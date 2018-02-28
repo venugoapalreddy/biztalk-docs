@@ -22,10 +22,10 @@ An application program or the NVAlert service can use the CSV **TRANSFER_MS_DATA
  The application or service supplies a complete NMVT, including the header information.  
   
  ALERT_SUBVECTORS  
- The application or service supplies the subvectors required for an alert, but without the NMVT header or major vector header. [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] adds the header information, as described in the next section.  
+ The application or service supplies the subvectors required for an alert, but without the NMVT header or major vector header. [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] adds the header information, as described in the next section.  
   
  PDSTATS_SUBVECTORS  
- The application or service supplies the subvectors required for a Problem Determination Statistics NMVT, but without the NMVT header or major vector header. [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] adds the header information, as described in the next section.  
+ The application or service supplies the subvectors required for a Problem Determination Statistics NMVT, but without the NMVT header or major vector header. [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] adds the header information, as described in the next section.  
   
  USER_DEFINED  
  The application or service supplies data in its own format. This data cannot be sent on the connection designated for NetView, but is logged in the same way as the other data formats.  

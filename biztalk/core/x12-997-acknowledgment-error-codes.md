@@ -17,7 +17,7 @@ manager: "anneta"
 # X12 997 Acknowledgment Error Codes
 This topic lists the error codes used within the segments of an X12 997 acknowledgment. For more information about these segments, see [X12 997 Acknowledgment](../core/x12-997-acknowledgment.md).  
   
- Each table indicates which error codes specified by the X12 specification are supported in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 and which are unsupported.  
+ Each table indicates which error codes specified by the X12 specification are supported in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 and which are unsupported.  
   
  **AK304 Error Codes**  
   

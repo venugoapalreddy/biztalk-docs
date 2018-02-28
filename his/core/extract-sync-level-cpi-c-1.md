@@ -20,7 +20,7 @@ The **Extract_Sync_Level** call (function name **cmesl**) returns the synchroniz
   
 ```  
   
-CM_ENTRY Extract_Sync_Level(   
+CM_ENTRY Extract_Sync_Level(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *sync_level,              
   CM_INT32 FAR *return_code              

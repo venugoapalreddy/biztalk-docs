@@ -14,20 +14,20 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Known Issues with Certificates in BizTalk Server
-This section describes known issues with managing digital certificates used with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This section describes known issues with managing digital certificates used with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## General Certificate Issues  
   
 ### Lack of connectivity to the certificate revocation list will cause a certificate to be rejected  
- This issue involves the following error: “There was an authentication error. The status of the certification authority (CA) that issued the certificate used to sign the message is unknown." This error can occur even when the signing certificate is valid when viewed under MMC (using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] user) on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+ This issue involves the following error: “There was an authentication error. The status of the certification authority (CA) that issued the certificate used to sign the message is unknown." This error can occur even when the signing certificate is valid when viewed under MMC (using the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] user) on the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  This condition can occur if the "Check Certificate Revocation" property is enabled on the S/MIME decoder component in the receive pipeline. When this property is set to true, BizTalk Server will try to query the Certificate Revocation List (CRL) to see if the incoming certificate has been revoked. It does not matter if the certificate itself is not revoked. If BizTalk Server cannot query the corresponding CRL because of connectivity issues, it will not accept the certificate. To troubleshoot this error, display the certificate's properties by double-clicking the certificate that you used. In its Details tab, you will see the attribute "CRL Distribution Point" in the field list. There should be several URLs in this attribute that point to the CRL on your CA server. The BizTalk server must be able to access any of these URLs to retrieve the CRL. Otherwise, the revocation checking will fail and the above error will be posted.  
   
 ### The Other People Certificate store is not initialized until accessed  
- This issue involves the following certificate store error when you try to add or modify send/receive ports/locations using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrator console remotely: “Could not open certificate store.” and “The system cannot find the file specified. (System)”.  
+ This issue involves the following certificate store error when you try to add or modify send/receive ports/locations using the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrator console remotely: “Could not open certificate store.” and “The system cannot find the file specified. (System)”.  
   
-> [!NOTE]  
->  You can modify these artifacts using the administration console if you log on directly to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+> [!NOTE]
+>  You can modify these artifacts using the administration console if you log on directly to the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  On a newly installed computer, the **Other People Certificate** store is not initialized unless you access it once. During the group configuration, you can initialize this **Other People Certificate** store, and as a result not see this error on a computer on which group configuration has been done.  
   

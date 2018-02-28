@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Best Practices for Maintaining Performance
-This topic points you to the best practices that you should follow when resolving performance issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.  
+This topic points you to the best practices that you should follow when resolving performance issues with a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.  
   
 |||  
 |-|-|  

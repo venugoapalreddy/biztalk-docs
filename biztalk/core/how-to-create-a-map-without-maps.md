@@ -17,7 +17,7 @@ manager: "anneta"
 # How to Create a Map without Maps
 If you have XSLT code you have been using to convert instance messages, you can use that code directly instead of creating a map.  
   
- Using your XSLT code involves creating an empty map and setting its **Custom XSLT Path** grid property. If your XSLT code uses external .NET assemblies, you also need to create a custom extension XML file. For information about the structure of a custom extension XML file, see the **Custom Extension XML (Grid Property)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ Using your XSLT code involves creating an empty map and setting its <strong>Custom XSLT Path</strong> grid property. If your XSLT code uses external .NET assemblies, you also need to create a custom extension XML file. For information about the structure of a custom extension XML file, see the <strong>Custom Extension XML (Grid Property)</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Use custom XSLT code in place of a map  
   

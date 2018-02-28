@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring EDIFACT Fallback Agreement Properties for Interchange Processing
-EDIFACT interchange processing properties define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the envelope of an EDIFACT-encoded interchange received from a party.  
+EDIFACT interchange processing properties define how [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes the envelope of an EDIFACT-encoded interchange received from a party.  
   
 ## In This Section  
   

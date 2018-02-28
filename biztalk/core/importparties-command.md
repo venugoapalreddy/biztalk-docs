@@ -20,16 +20,17 @@ Imports the business-to-business parties and agreements from a source XML bindin
   artifacts. For more information, see **Remarks** in this topic.  
 
 > [!IMPORTANT]
-> This command is new starting with **[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, and any newer versions.
-  
+> This command is new starting with <strong><!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/importparties-command.md) contains invalid char.
+> Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --></strong>, and any newer versions.
+> 
 > [!NOTE]
->  Binding files generated in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] do not have an application specified. They are imported into the default application.  
-  
+>  Binding files generated in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] do not have an application specified. They are imported into the default application.  
+
 ## Usage  
   **BTSTask ImportParties -Source**:*value* [**-ExcludeEdiFallbackSettings**] [**-Server**:*value*] [**-Database**:*value*]
-  
+
 ## Parameters  
-  
+
 |Parameter|Required|Value|  
 |---|---|---|  
 |**-Source** | Required | The path and file name of the XML binding file to read.|

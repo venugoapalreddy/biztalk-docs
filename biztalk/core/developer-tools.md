@@ -17,11 +17,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Developer Tools
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes the BizTalk project system design environment for designing, organizing, and building the various elements of BizTalk applications.  
+Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes the BizTalk project system design environment for designing, organizing, and building the various elements of BizTalk applications.  
   
- The BizTalk project system is hosted in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] and provides you with an integrated design experience. It is one of several project systems available for Visual Studio, and you can use many of the standard Visual Studio tools, editors, and other user interfaces. For example, you can use Solution Explorer to manage BizTalk projects within a business solution, and the Properties window to view and edit properties for files, projects, and solutions.  
+ The BizTalk project system is hosted in Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] and provides you with an integrated design experience. It is one of several project systems available for Visual Studio, and you can use many of the standard Visual Studio tools, editors, and other user interfaces. For example, you can use Solution Explorer to manage BizTalk projects within a business solution, and the Properties window to view and edit properties for files, projects, and solutions.  
   
- The content in this section assumes that you are familiar with [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. If you are not familiar with [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], review the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] documentation. The content in this section focuses on the BizTalk project system.  
+ The content in this section assumes that you are familiar with [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]. If you are not familiar with [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], review the [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] documentation. The content in this section focuses on the BizTalk project system.  
   
 ## In This Section  
   

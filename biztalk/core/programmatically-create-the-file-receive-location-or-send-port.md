@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Programmatically create the File receive location or send port
-How to create a File receive port and send port programmatically. To use the [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], go to [Configure the File adapter](../core/configure-the-file-adapter.md).
+How to create a File receive port and send port programmatically. To use the [!INCLUDE [btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], go to [Configure the File adapter](../core/configure-the-file-adapter.md).
 
 The File adapter stores its configuration information in the SSO database. You can configure the receive locations and send ports programmatically using the BizTalk Explorer object model. 
  
@@ -72,17 +72,17 @@ The BizTalk Explorer object model exposes the **ITransportInfo** adapter configu
   
  You can set configuration properties programmatically on a message context. You can set these properties in an orchestration or in a custom pipeline component. The following rules apply when using these properties:  
   
--   If the configuration property is set in an orchestration or in a custom pipeline component in a receive pipeline, then:  
+- If the configuration property is set in an orchestration or in a custom pipeline component in a receive pipeline, then:  
   
-    -   If a message is sent to a static send port, the property value will be overwritten with the value configured for that send port.  
+  -   If a message is sent to a static send port, the property value will be overwritten with the value configured for that send port.  
   
-    -   If a message is sent to a dynamic send port, the property value will not be overwritten.  
+  -   If a message is sent to a dynamic send port, the property value will not be overwritten.  
   
--   If a configuration property is set in a custom pipeline component in a send pipeline, then:  
+- If a configuration property is set in a custom pipeline component in a send pipeline, then:  
   
-    -   The value will not be overwritten regardless of whether the message is sent to a static or dynamic send port.  
+  -   The value will not be overwritten regardless of whether the message is sent to a static or dynamic send port.  
   
- The following code shows the format of the XML string you can use to set the properties:  
+  The following code shows the format of the XML string you can use to set the properties:  
   
 ```  
 <CustomProps>  

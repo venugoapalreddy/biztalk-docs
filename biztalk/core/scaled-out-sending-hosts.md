@@ -31,14 +31,14 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Scaled-Out Sending Hosts
-A scaled-out sending host makes sure that the sending functionality in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is highly available. If you add multiple computers to a host for sending messages, you can run multiple sending host instances for redundancy and high availability.  
+A scaled-out sending host makes sure that the sending functionality in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is highly available. If you add multiple computers to a host for sending messages, you can run multiple sending host instances for redundancy and high availability.  
   
- The following figure shows a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployment that provides high availability for the sending host by having two computers that are running instances of the sending host. Note that in this figure the receiving and processing hosts are not highly available.  
+ The following figure shows a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployment that provides high availability for the sending host by having two computers that are running instances of the sending host. Note that in this figure the receiving and processing hosts are not highly available.  
   
  ![Scaled&#45;Out Sending Host](../core/media/tdi-ha-scalesend.gif "TDI_HA_ScaleSend")  
   
 ## High Availability for Sending Hosts  
- Sending functionality in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is similar to processing functionality in the sense that neither of these activities requires any association between host and data. Just as any processing host instance can retrieve messages from the MessageBox database and process them, any sending host instance can retrieve messages from the MessageBox database and send them. Therefore, providing high availability for the sending hosts means that you use the same techniques as for providing high availability for the processing hosts.  
+ Sending functionality in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is similar to processing functionality in the sense that neither of these activities requires any association between host and data. Just as any processing host instance can retrieve messages from the MessageBox database and process them, any sending host instance can retrieve messages from the MessageBox database and send them. Therefore, providing high availability for the sending hosts means that you use the same techniques as for providing high availability for the processing hosts.  
   
 ## Scaling the BizTalk Server Send Adapters  
   

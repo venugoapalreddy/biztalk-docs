@@ -22,7 +22,7 @@ The BAM infrastructure consists of SQL Server tables, BAM views, stored procedur
   
  This section describes some of these infrastructure processes. For example, once you extract the data of interest from your applications (the BAM definition), you can store it so that it is available for queries. Additionally, you can maintain certain pre-created aggregations of the data for faster aggregated queries.  
   
- Typically, you achieve such functionality by an extensive development effort to implement a data warehouse. BAM in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] greatly simplifies this process, however, by automatically generating the SQL and OLAP infrastructure based on your activity and view definitions.  
+ Typically, you achieve such functionality by an extensive development effort to implement a data warehouse. BAM in Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] greatly simplifies this process, however, by automatically generating the SQL and OLAP infrastructure based on your activity and view definitions.  
   
 ## In This Section  
   

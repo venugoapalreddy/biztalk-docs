@@ -19,10 +19,10 @@ manager: "anneta"
 ## Overview
 Read about what's new in:
 
-* [!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)] 
-* [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013
+* [!INCLUDE [bts2013r2](../includes/bts2013r2-md.md)] 
+* [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013
 
-Also get access to the installation guides, and read about upgrading to [!INCLUDE[bts2013r2](../includes/bts2013r2-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013.  
+Also get access to the installation guides, and read about upgrading to [!INCLUDE [bts2013r2](../includes/bts2013r2-md.md)] and [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013.  
 
 ## In this section
   

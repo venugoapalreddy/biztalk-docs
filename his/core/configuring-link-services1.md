@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Configuring Link Services
-By default, when [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed, all the software files required by all standard link services are copied to the server. After the link services are installed, they must be configured for your host environment.  
+By default, when [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed, all the software files required by all standard link services are copied to the server. After the link services are installed, they must be configured for your host environment.  
   
  The following sections contain procedures detailing how to configure link services.  
   

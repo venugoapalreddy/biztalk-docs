@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Functoid Categories
-BizTalk functoids are divided into categories according to their intended use. For example, database functoids are designed for extracting data from a database at run time, mathematical functoids are used to perform mathematical operations, and so on. In BizTalk Mapper, functoids appear by category in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Toolbox. 
+BizTalk functoids are divided into categories according to their intended use. For example, database functoids are designed for extracting data from a database at run time, mathematical functoids are used to perform mathematical operations, and so on. In BizTalk Mapper, functoids appear by category in the [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Toolbox. 
 
 ## Categories & description
 The following table shows the functoid categories, briefly describes the category, and shows the list of functoids in each category, including links to their corresponding reference pages.  
@@ -34,9 +34,9 @@ The following table shows the functoid categories, briefly describes the categor
   
 > [!NOTE]
 >  The purpose of a functoid is usually obvious from its name.  
-  
+> 
 > [!NOTE]
->  All functoids included with Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are inline C#, except for the **Database** functoids.  
+>  All functoids included with Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are inline C#, except for the <strong>Database</strong> functoids.  
   
 ## See Also  
  [Basic Functoids](../core/basic-functoids.md)   

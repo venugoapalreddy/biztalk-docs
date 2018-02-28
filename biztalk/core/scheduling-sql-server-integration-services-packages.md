@@ -20,19 +20,19 @@ Users create BAM views based on data stored in an online analytical processing (
  You must run this package at least once for the OLAP views to work. For ongoing maintenance, you should schedule the package to run on a regular basis.  
   
 > [!IMPORTANT]
->  If you restored the BAM Star Schema database or stopped [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] before running the Cube Update Integration Services package, you must refresh the data sources in [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Manager or restart the OLAP service before you can run the package successfully.  
+>  If you restored the BAM Star Schema database or stopped [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] before running the Cube Update Integration Services package, you must refresh the data sources in [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Manager or restart the OLAP service before you can run the package successfully.  
   
  You can schedule a saved package to execute at specific times, either once or at recurring intervals. For example:  
   
--   Daily at midnight.  
+- Daily at midnight.  
   
--   Weekly on Sunday at 06:00.  
+- Weekly on Sunday at 06:00.  
   
--   The first or last day of the month.  
+- The first or last day of the month.  
   
- A scheduled package is executed by [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] as a job.  
+  A scheduled package is executed by [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] as a job.  
   
- For information about running [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] packages, see [http://go.microsoft.com/fwlink/?LinkId=125738](http://go.microsoft.com/fwlink/?LinkId=125738).  
+  For information about running [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] packages, see [http://go.microsoft.com/fwlink/?LinkId=125738](http://go.microsoft.com/fwlink/?LinkId=125738).  
   
 > [!NOTE]
 >  By default, logging for archiving and cubing BAM SSIS packages is turned on and is stored in the msdb database. Overtime, this may result in a significant volume of SSIS event log data caused by large number of BAM activities or frequent execution of BAM owned SSIS packages. To resolve this, you can delete the old log entries because these entries are used primarily for debugging.  

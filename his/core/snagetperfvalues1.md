@@ -21,7 +21,7 @@ The **SNAGetPerfValues** function is used to provide pointers to the *ServiceNam
 ```  
   
             USHORT SNAGetPerfValues(  
-            int *pServiceNameIndex,int *pFirstCounterIndex   
+            int *pServiceNameIndex,int *pFirstCounterIndex   
 );  
 ```  
   

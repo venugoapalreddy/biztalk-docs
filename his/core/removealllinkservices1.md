@@ -20,7 +20,7 @@ The **RemoveAllLinkServices** function is used to remove all link services from 
   
 ```  
   
-          __declspec(dllexport) BOOL WINAPI RemoveAllLinkServices(   
+          __declspec(dllexport) BOOL WINAPI RemoveAllLinkServices(   
 LPSTRszComputerName);  
 ```  
   

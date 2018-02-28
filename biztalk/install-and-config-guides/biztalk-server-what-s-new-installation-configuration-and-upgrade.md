@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # BizTalk Server What's New, Install, Configuration, and Upgrade
-Read about what's new, and how to install and configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. 
+Read about what's new, and how to install and configure [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. 
 
 ## BizTalk versions
 
@@ -34,7 +34,7 @@ These topics focus on::
 -   Upgrading BizTalk Server
 
   
- If you're looking for guidance developing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applications, monitoring your environments, learning more about [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and other core tasks, then go to the [BizTalk Server core documentation](../core/biztalk-server-core-documentation.md). 
+ If you're looking for guidance developing [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] applications, monitoring your environments, learning more about [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and other core tasks, then go to the [BizTalk Server core documentation](../core/biztalk-server-core-documentation.md). 
   
 ## Next steps
 

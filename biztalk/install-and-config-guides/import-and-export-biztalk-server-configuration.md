@@ -62,11 +62,11 @@ You can import BizTalk Server configuration files using the BizTalk Server Confi
 > [!NOTE]
 >  Passwords are not saved to the configuration file.    
  
-1.  In the **BizTalk Server Configuration**, click **Export Configuration**.  
+1. In the **BizTalk Server Configuration**, click **Export Configuration**.  
   
-2.  In the **Save As** dialog box, type the file name you want to save, and then click **Save**.  
+2. In the **Save As** dialog box, type the file name you want to save, and then click **Save**.  
 
- You can export BizTalk Server configurations using the BizTalk Server Configuration framework. For more information about working with these files, see [Working with the Configuration Framework](../install-and-config-guides/working-with-the-configuration-framework.md)  
+   You can export BizTalk Server configurations using the BizTalk Server Configuration framework. For more information about working with these files, see [Working with the Configuration Framework](../install-and-config-guides/working-with-the-configuration-framework.md)  
   
 ## Unconfigure features  
  You can unconfigure BizTalk Server features on the machine by removing them in the BizTalk Server Configuration.  
@@ -90,7 +90,7 @@ You can import BizTalk Server configuration files using the BizTalk Server Confi
  You can change the database servers and databases associated with BizTalk Server features by editing them in the BizTalk Server Configuration.  
   
 > [!NOTE]
->  Configuring [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] against SQL Server default instances and named instances is supported.  
+>  Configuring [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] against SQL Server default instances and named instances is supported.  
 > 
 >  This tool allows you to bulk edit the databases.  
   

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Release Notes
-These release notes summarize the most important issues in [!INCLUDE[his2016](../includes/his2016-md.md)].  
+These release notes summarize the most important issues in [!INCLUDE [his2016](../includes/his2016-md.md)].  
   
 ## Software  
  A single Microsoft Installer (MSI) file contains the server software. You can download the software from the [Microsoft TechNet evaluation center](https://www.microsoft.com/evalcenter/evaluate-host-integration-server-2016).  
@@ -37,7 +37,7 @@ These release notes summarize the most important issues in [!INCLUDE[his2016](..
  The setup installation installs the server side-by-side with the client. The installation does not provide the client as a stand-alone option. The HIS team is developing a client-only MSI for x86 and x64 operating systems, which will be available at retail release.  
   
 ## Telemetry  
- HIS 2016 includes technology for telemetry and error reporting. The HIS product team utilizes this data to improve the quality, reliability, and performance of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  Ths includes:  
+ HIS 2016 includes technology for telemetry and error reporting. The HIS product team utilizes this data to improve the quality, reliability, and performance of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  Ths includes:  
   
 -   Installation and Configuration:  
   

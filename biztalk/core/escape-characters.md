@@ -19,21 +19,21 @@ manager: "anneta"
 ## Overview
 An escape character is a single character that suppresses any special meaning of the character that follows it. For example, if you define a flat file record as having the following characteristics:  
   
--   Name = Record1  
+- Name = Record1  
   
--   Delimited  
+- Delimited  
   
--   Child delimiter = comma character (,)  
+- Child delimiter = comma character (,)  
   
--   Child order = prefix  
+- Child order = prefix  
   
--   Escape character = backslash character (\\)  
+- Escape character = backslash character (\\)  
   
--   Tag = RECORD1  
+- Tag = RECORD1  
   
--   Two fields named Field1 and Field2  
+- Two fields named Field1 and Field2  
   
- Then the following flat file data applies for the record.  
+  Then the following flat file data applies for the record.  
   
 ```  
 RECORD1,testfield1\,testfield1,testfield2  
@@ -59,7 +59,7 @@ RECORD1,testfield1\,testfield1,testfield2
   
 ## See Also  
 - [Ways to Interpret Special Characters as Part of a Field Value](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)  
-- Escape character properties  [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]:  
+- Escape character properties  [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]:  
     - Default Escape Character (Node Property of Flat File Schemas)
     - Default Escape Character Type (Node Property of Flat File Schemas)
     - Escape Character (Node Property of Flat File Schemas)  

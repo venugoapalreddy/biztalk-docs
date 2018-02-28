@@ -20,7 +20,7 @@ The SNA National Language Support (SNANLS) **OpenNlsRegistry** function opens a 
   
 ```  
   
-HKEY WINAPI OpenNlsRegistry(   
+HKEY WINAPI OpenNlsRegistry(   
 char *MachineName,  
 HKEY hkey,  
 LPSTR Path  

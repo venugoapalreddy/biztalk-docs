@@ -24,26 +24,26 @@ manager: "anneta"
 # Diagnostic Tracing and Message Logging for the Siebel adapter
 Adapter clients can enable diagnostic tracing to effectively diagnose problems encountered while using the adapters. Adapter clients can activate tracing at three different levels:  
   
--   Between the adapter client and the adapter  
+- Between the adapter client and the adapter  
   
--   Within the adapter  
+- Within the adapter  
   
--   Between the adapter and the line-of-business (LOB) application  
+- Between the adapter and the line-of-business (LOB) application  
   
- This section provides information about activating tracing at these levels.  
+  This section provides information about activating tracing at these levels.  
   
 ## Tracing between the adapter client and the adapter  
  Adapter clients can enable WCF tracing to trace issues between the adapter client and the adapter. WCF tracing is used to trace the input XMLs coming from the adapter client using the WCF service model and is useful in diagnosing serialization issues. WCF tracing is not used for the WCF channel model or for output messages from the adapter to the adapter client. You can activate WCF tracing for BizTalk applications and WCF service model applications by adding an excerpt to the respective configuration files. Also, you can enable tracing both at design-time and run-time.  
   
--   **Tracing at design-time**. For the design-time experience, you may use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], or the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]. All these tools can be used from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. So, to enable tracing for the design-time experience, you must add the excerpt to the devenv.exe.config file located in *\<installation drive\>*:\Program Files\Microsoft Visual Studio *\<version\>*\Common7\IDE.  
+- <strong>Tracing at design-time</strong>. For the design-time experience, you may use the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], or the [!INCLUDE [addadapterwiz](../../includes/addadapterwiz-md.md)]. All these tools can be used from [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. So, to enable tracing for the design-time experience, you must add the excerpt to the devenv.exe.config file located in <em>\<installation drive\></em>:\Program Files\Microsoft Visual Studio <em>\<version\></em>\Common7\IDE.  
   
--   **Tracing at run-time**. For run-time tracing, you must add the excerpt depending on the application you are using.  
+- **Tracing at run-time**. For run-time tracing, you must add the excerpt depending on the application you are using.  
   
-    -   For a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications, you must add the excerpt to the BizTalk configuration file, typically BTSNTSvc.exe.config. For BizTalk Server, this file is available typically under \<installation drive\>:\Program Files\Microsoft BizTalk Server.  
+  - For a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications, you must add the excerpt to the BizTalk configuration file, typically BTSNTSvc.exe.config. For BizTalk Server, this file is available typically under \<installation drive\>:\Program Files\Microsoft BizTalk Server.  
   
-    -   For a WCF service model .NET application, you must add the excerpt to the app.config file of your project.  
+  - For a WCF service model .NET application, you must add the excerpt to the app.config file of your project.  
   
- To enable WCF tracing, you must add the following excerpt within the `<configuration>` tag:
+  To enable WCF tracing, you must add the following excerpt within the `<configuration>` tag:
   
 ```  
 <system.diagnostics>  
@@ -89,17 +89,17 @@ Adapter clients can enable diagnostic tracing to effectively diagnose problems e
 >  Make sure you mitigate potential security threats of exposing sensitive business data by enabling tracing. See [Best practices to secure the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/best-practices-to-secure-the-siebel-adapter.md) 
   
 ## Tracing Within the Adapter  
- The adapters in the BizTalk Adapter Pack log different categories of useful information to the trace file such as errors, warnings, and information. Such information is useful in understanding the process flow within the adapter and diagnosing issues with the adapter. You can activate [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] and adapter tracing for BizTalk applications and WCF service model applications by adding an excerpt to the respective configuration files. Also, you can enable tracing both at design-time and run-time.  
+ The adapters in the BizTalk Adapter Pack log different categories of useful information to the trace file such as errors, warnings, and information. Such information is useful in understanding the process flow within the adapter and diagnosing issues with the adapter. You can activate [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] and adapter tracing for BizTalk applications and WCF service model applications by adding an excerpt to the respective configuration files. Also, you can enable tracing both at design-time and run-time.  
   
--   **Tracing at design-time**. For the design-time experience, you may use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], or the [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]. All these tools can be used from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. So, to enable tracing for the design-time experience, you must add the excerpt to the devenv.exe.config file located in *\<installation drive\>*:\Program Files\Microsoft Visual Studio *\<version\>*\Common7\IDE.  
+- <strong>Tracing at design-time</strong>. For the design-time experience, you may use the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)], [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)], or the [!INCLUDE [addadapterwiz](../../includes/addadapterwiz-md.md)]. All these tools can be used from [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. So, to enable tracing for the design-time experience, you must add the excerpt to the devenv.exe.config file located in <em>\<installation drive\></em>:\Program Files\Microsoft Visual Studio <em>\<version\></em>\Common7\IDE.  
   
--   **Tracing at run-time**. For run-time tracing, you must add the excerpt depending on the application you are using.  
+- **Tracing at run-time**. For run-time tracing, you must add the excerpt depending on the application you are using.  
   
-    -   For a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications, you must add the excerpt to the BizTalk configuration file, typically BTSNTSvc.exe.config. For BizTalk Server, this file is available typically under \<installation drive\>:\Program Files\Microsoft BizTalk Server.  
+  - For a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] applications, you must add the excerpt to the BizTalk configuration file, typically BTSNTSvc.exe.config. For BizTalk Server, this file is available typically under \<installation drive\>:\Program Files\Microsoft BizTalk Server.  
   
-    -   For a WCF service model .NET application, you must add the excerpt to the app.config file of your project.  
+  - For a WCF service model .NET application, you must add the excerpt to the app.config file of your project.  
   
- To enable [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] and adapter tracing, you must add the following excerpt within the `<configuration>` tag:  
+  To enable [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] and adapter tracing, you must add the following excerpt within the `<configuration>` tag:  
   
 ```  
 <system.diagnostics>  
@@ -129,7 +129,7 @@ Adapter clients can enable diagnostic tracing to effectively diagnose problems e
 ## Tracing Between the Adapter and the LOB Application  
  You must enable tracing for communication between the adapter and the LOB application to diagnose issues you suspect within the LOB application. Adapters also depend on LOB tracing (client/server side) to get access to this information. The specifics of turning on LOB tracing are excluded from this document.  
   
- Additionally, the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] provides a binding property (**LogData**), which if set to **True** and if the trace level is set to **Verbose**, the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] logs the information flow between the adapter and the Siebel system. This information is logged along with the adapter traces in the same trace file.  
+ Additionally, the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] provides a binding property (<strong>LogData</strong>), which if set to <strong>True</strong> and if the trace level is set to <strong>Verbose</strong>, the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] logs the information flow between the adapter and the Siebel system. This information is logged along with the adapter traces in the same trace file.  
   
  For more information about this binding property, see [Read about BizTalk Adapter for Siebel Binding Properties](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md).  
   

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Interpreting Traces
-The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace feature provides message, client API, SnaBase, Transaction Integrator, PU 2.1 node, and link service tracing.  
+The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace feature provides message, client API, SnaBase, Transaction Integrator, PU 2.1 node, and link service tracing.  
   
  The following table shows the information needed for interpreting each type.  
   

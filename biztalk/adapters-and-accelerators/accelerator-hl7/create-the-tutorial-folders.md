@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Create the Tutorial Folders
-Create the following folders using [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer:  
+Create the following folders using [!INCLUDE [btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer:  
   
 -   \<*drive*:\>\Batching Tutorial  
   

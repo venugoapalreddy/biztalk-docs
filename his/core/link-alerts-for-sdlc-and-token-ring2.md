@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Link Alerts for SDLC and Token Ring
-When a Synchronous Data Link Control (SDLC) or Token Ring connection fails, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] logs diagnostic information, called link alerts, about the connection failure. The alerts are logged in a log file that can be viewed using the Windows Event Log service. To find a Host Integration Server log, in the Event Log service, on the Log menu, make sure Application is selected. Under the "Source" heading, the application log file will have a name starting with "SNA."  
+When a Synchronous Data Link Control (SDLC) or Token Ring connection fails, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] logs diagnostic information, called link alerts, about the connection failure. The alerts are logged in a log file that can be viewed using the Windows Event Log service. To find a Host Integration Server log, in the Event Log service, on the Log menu, make sure Application is selected. Under the "Source" heading, the application log file will have a name starting with "SNA."  
   
  The link alerts are also used to build a network management vector transport (NMVT) alert, which includes probable causes and suggested actions for the alert. If a connection on the server running Host Integration Server has been designated for NetView, and the connection is active, the NMVT alert will be sent on that connection.  
   

@@ -32,18 +32,18 @@ class MsSna_LuPassThrough : MsSna_Config
 ```  
   
 ## Properties  
- **Connection**  
- Data Type: **String**Qualifiers: **Key, MAXLEN(8)**Access Type: Read-Only  
+ <strong>Connection</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>Key, MAXLEN(8)</strong>Access Type: Read-Only  
   
  The associated downstream connection.  
   
- **Number**  
- Data Type: **sint16**Qualifiers: **Key, MINVALUE(0)**Access Type: Read-Only  
+ <strong>Number</strong>  
+ Data Type: <strong>sint16</strong>Qualifiers: <strong>Key, MINVALUE(0)</strong>Access Type: Read-Only  
   
  The number of the downstream connection.  
   
- **Name**  
- Data Type: **String**Qualifiers: **MAXLEN(8)**Access Type: Read/Write  
+ <strong>Name</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>MAXLEN(8)</strong>Access Type: Read/Write  
   
  The downstream LU or pool name.  
   

@@ -47,8 +47,8 @@ snacfg [#configpath] appcllu /list
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\System\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\System\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of configured local APPC LUs.  
@@ -56,7 +56,7 @@ snacfg [#configpath] appcllu /list
  *servername* **:** *LUalias*  
  Specifies the server name and LU alias of the local APPC LU on which to carry out actions. The server name should be in the format machine_name or \\\machine_name\snaservr (for specifying the primary node on the machine) and \\\machine_name\snasrv02 (or snasrv03, snasrv04, and so on) for specifying the secondary nodes on the machine.  
   
- It is recommended that *servername***:** be included in **snacfg appcllu** commands (other than **/add** commands) that include *LUalias*. Without *servername***:**, if there is more than one local LU called *LUalias* in the subdomain, it is difficult to predict which of these LUs will be affected by the command. The **snacfg appcllu** command does not necessarily default to the local server if *servername* is omitted.  
+ It is recommended that <em>servername</em><strong>:</strong> be included in <strong>snacfg appcllu</strong> commands (other than <strong>/add</strong> commands) that include <em>LUalias</em>. Without <em>servername</em><strong>:</strong>, if there is more than one local LU called <em>LUalias</em> in the subdomain, it is difficult to predict which of these LUs will be affected by the command. The <strong>snacfg appcllu</strong> command does not necessarily default to the local server if <em>servername</em> is omitted.  
   
  See the following paragraphs for details about characters permitted in the LU alias.  
   
@@ -68,7 +68,7 @@ snacfg [#configpath] appcllu /list
  The LU alias can be from one through eight characters long, and can contain alphanumeric characters and the special characters %, $, #, and @. Lowercase letters are converted to uppercase. For a local APPC LU, the LU alias must be unique on the server.  
   
 > [!NOTE]
->  *LUalias* is used as the default LU name if **/luname:***text* is not specified.  
+>  <em>LUalias</em> is used as the default LU name if <strong>/luname:</strong><em>text</em> is not specified.  
   
  If no options are specified after *LUalias*, the configuration settings, partner LUs, and modes are displayed for the specified LU.  
   
@@ -94,7 +94,7 @@ snacfg [#configpath] appcllu /list
  **/netname:**" *text*"  
  Specifies a name for the network of this LU. The name can be from one through eight characters long, and can contain alphanumeric characters and the special characters $, #, and @.  
   
- If **/netname:***text* is not specified, the network name of the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] on which the LU is located is used as the default.  
+ If <strong>/netname:</strong><em>text</em> is not specified, the network name of the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] on which the LU is located is used as the default.  
   
 > [!NOTE]
 >  /luname:*text* also has a default (the LU alias). Therefore, the fully qualified LU name (network name plus LU name) can potentially be created by default, if the LU alias and local network name are configured appropriately. A fully qualified LU name is required for an APPC LU.  
@@ -102,7 +102,7 @@ snacfg [#configpath] appcllu /list
  **/luname:**" *text*"  
  Specifies the LU name. The name can be from one through eight characters long, and can contain alphanumeric characters and the special characters $, #, and @. Lowercase letters are converted to uppercase. For a local APPC LU, the fully qualified LU Name (Network Name plus LU Name) must be unique on the server.  
   
- If **/luname:***text* is not specified, *LUalias* is used as the default LU name.  
+ If <strong>/luname:</strong><em>text</em> is not specified, <em>LUalias</em> is used as the default LU name.  
   
 > [!NOTE]
 >  /netname:*text* also has a default (the network name of the server on which the LU is located). Therefore, the fully qualified LU name (network name plus LU name) can potentially be created by default, if the LU alias and local network name are configured appropriately. A fully qualified LU name is required for an APPC LU.  
@@ -121,16 +121,16 @@ snacfg [#configpath] appcllu /list
  **/impremotelu:** *remoteLUname*  
  Specifies an existing remote LU to be used as an implicit incoming remote LU for the local LU.  
   
- **/tptimeout:** *value*  
- Specifies the number of seconds that [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] should wait for the invokable TP to respond to a start request from the invoking TP.  
+ <strong>/tptimeout:</strong> <em>value</em>  
+ Specifies the number of seconds that [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] should wait for the invokable TP to respond to a start request from the invoking TP.  
   
- **/addpartner:** *LUalias* **,** *mode*[ **,***connection*]  
- Partners the local LU with the specified LU and the specified mode. Both *LUalias* and *mode* must exist before they can be specified as partners. If *LUalias* specifies a remote LU that is not unique on the server, the connection used by the remote LU must also be specified; otherwise, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will randomly choose one of the remote LUs called *LUalias* to act on.  
+ <strong>/addpartner:</strong> <em>LUalias</em> <strong>,</strong> <em>mode</em>[ <strong>,</strong><em>connection</em>]  
+ Partners the local LU with the specified LU and the specified mode. Both <em>LUalias</em> and <em>mode</em> must exist before they can be specified as partners. If <em>LUalias</em> specifies a remote LU that is not unique on the server, the connection used by the remote LU must also be specified; otherwise, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will randomly choose one of the remote LUs called <em>LUalias</em> to act on.  
   
  Only one **/addpartner** option can be used in each command.  
   
- **/delpartner:** *LUalias* **,** *mode*[ **,***connection*]  
- Deletes the pair listing that includes this local LU, the specified partner LU, and the specified mode. (Does not delete any LUs or modes themselves.) If *LUalias* specifies a remote LU that is not unique on the server, the connection used by the remote LU must also be specified; otherwise, Host Integration Server will randomly choose one of the remote LUs called *LUalias* to act on.  
+ <strong>/delpartner:</strong> <em>LUalias</em> <strong>,</strong> <em>mode</em>[ <strong>,</strong><em>connection</em>]  
+ Deletes the pair listing that includes this local LU, the specified partner LU, and the specified mode. (Does not delete any LUs or modes themselves.) If <em>LUalias</em> specifies a remote LU that is not unique on the server, the connection used by the remote LU must also be specified; otherwise, Host Integration Server will randomly choose one of the remote LUs called <em>LUalias</em> to act on.  
   
  Only one **/delpartner** option can be used in each command.  
   

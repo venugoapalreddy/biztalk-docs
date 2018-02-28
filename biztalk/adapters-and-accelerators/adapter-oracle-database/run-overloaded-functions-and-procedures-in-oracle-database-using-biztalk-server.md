@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Invoke Overloaded Functions and Procedures in Oracle Database using BizTalk Server
-Stored procedures and functions can be overloaded in an Oracle database. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports overloaded functions and procedures by changing the target namespace of the operation. For example, the message structure for two overloaded procedures looks like:  
+Stored procedures and functions can be overloaded in an Oracle database. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports overloaded functions and procedures by changing the target namespace of the operation. For example, the message structure for two overloaded procedures looks like:  
   
 ```  
 Stored Procedure Overload 1:  
@@ -37,38 +37,38 @@ Stored Procedure Overload 2:
   
  The SOAP message structure and the SOAP action required to invoke an overloaded function or procedure is similar to invoking a function and procedure, as described under [Message Schemas for Functions and Procedures](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md).  
   
- Invoking an overloaded procedure is similar to invoking any other function as described in [Invoking Functions and Procedures in Oracle Database Using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-biztalk-server.md). However to differentiate overloaded functions, the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] appends a unique string to the node ID and the namespace that it surfaces for overloaded artifact. This string is "overload1" for the first overload, "overload2" for the next overload, and so on.  
+ Invoking an overloaded procedure is similar to invoking any other function as described in [Invoking Functions and Procedures in Oracle Database Using BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-biztalk-server.md). However to differentiate overloaded functions, the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] appends a unique string to the node ID and the namespace that it surfaces for overloaded artifact. This string is "overload1" for the first overload, "overload2" for the next overload, and so on.  
   
 ## How to Invoke Overloaded Functions and Procedures?  
- Performing an operation on an Oracle database using [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Building blocks to develop BizTalk Applications with Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md). To invoke a function in an Oracle database, these tasks are:  
+ Performing an operation on an Oracle database using [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] involves procedural tasks described in [Building blocks to develop BizTalk Applications with Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md). To invoke a function in an Oracle database, these tasks are:  
   
-1.  Create a BizTalk project and generate schema for the overloaded function you want to invoke in an Oracle database.  
+1. Create a BizTalk project and generate schema for the overloaded function you want to invoke in an Oracle database.  
   
-2.  Create messages in the BizTalk project for sending and receiving messages from the Oracle database. You must create messages for each overload.  
+2. Create messages in the BizTalk project for sending and receiving messages from the Oracle database. You must create messages for each overload.  
   
-3.  Create an orchestration to invoke the overloaded function in the Oracle database.  
+3. Create an orchestration to invoke the overloaded function in the Oracle database.  
   
-4.  Build and deploy the BizTalk project.  
+4. Build and deploy the BizTalk project.  
   
-5.  Configure the BizTalk application by creating physical send and receive ports.  
+5. Configure the BizTalk application by creating physical send and receive ports.  
   
-6.  Start the BizTalk application.  
+6. Start the BizTalk application.  
   
- This topic provides instructions to perform these tasks.  
+   This topic provides instructions to perform these tasks.  
   
 ## Sample Based On This Topic  
- A sample, InvokeOverloadedProc, based on this topic is also provided with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Adapter Samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).  
+ A sample, InvokeOverloadedProc, based on this topic is also provided with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]. For more information, see [Adapter Samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).  
   
 ## Generating Schema  
  In this topic, to demonstrate how to invoke an overloaded function or procedure, we will invoke the GET_ACCOUNT procedure under the SCOTT\Package\ACCOUNT_PKG schema. This package is created under the SCOTT schema by running the SQL scripts provided with the samples. This is an overloaded procedure where:  
   
--   One overload takes the account ID as the IN parameter and returns an ACCOUNT%ROWTYPE as OUT parameter.  
+- One overload takes the account ID as the IN parameter and returns an ACCOUNT%ROWTYPE as OUT parameter.  
   
--   Second overload takes the account name as the IN parameter and returns an ACCOUNT%ROWTYPE as OUT parameter.  
+- Second overload takes the account name as the IN parameter and returns an ACCOUNT%ROWTYPE as OUT parameter.  
   
- To know more about the samples and the SQL scripts, see [Schema Samples](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md).  
+  To know more about the samples and the SQL scripts, see [Schema Samples](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md).  
   
- To invoke an overloaded function, we generate schema for both the overloaded procedures, GET_ACCOUNT.1 and GET_ACCOUNT.2. See [Retrieve metadata for Oracle Database operations in Visual Studio](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md) for more information about how to generate schema.  
+  To invoke an overloaded function, we generate schema for both the overloaded procedures, GET_ACCOUNT.1 and GET_ACCOUNT.2. See [Retrieve metadata for Oracle Database operations in Visual Studio](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md) for more information about how to generate schema.  
   
 ## Defining Messages and Message Types  
  The schema that you generated earlier describes the "types" required for the messages in the orchestration. A message is typically a variable, the type for which is defined by the corresponding schema. You must link the schema you generated in the first step to the messages from the Orchestration View window of the BizTalk project.  
@@ -101,21 +101,21 @@ Stored Procedure Overload 2:
     |Response2|*InvokeOverloadedProc.OracleDBBindingSchema1.GET_ACCOUNTResponse*|  
   
 ## Setting up the Orchestration  
- You must create a BizTalk orchestration to use [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for invoking an overloaded procedure in an Oracle database. In this orchestration, you drop two request messages, one corresponding to each overloaded procedure, at the defined receive location. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] consumes the messages and passes them on to the Oracle database via ODP. The response from the Oracle database is saved to another location.  
+ You must create a BizTalk orchestration to use [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for invoking an overloaded procedure in an Oracle database. In this orchestration, you drop two request messages, one corresponding to each overloaded procedure, at the defined receive location. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] consumes the messages and passes them on to the Oracle database via ODP. The response from the Oracle database is saved to another location.  
   
  Because the orchestration picks two requests simultaneously, you need to include a Parallel Actions shape in the orchestration. For each parallel action, you must include Send and Receive shapes to send messages to the Oracle database and receive responses. However, you could use the same ports for sending and receiving messages for both operations. A typical orchestration for invoking the overloaded procedures simultaneously would contain:  
   
--   Send and Receive shapes to send messages to Oracle database and receive responses.  
+- Send and Receive shapes to send messages to Oracle database and receive responses.  
   
--   A one-way receive port to receive request messages to send to the Oracle database.  
+- A one-way receive port to receive request messages to send to the Oracle database.  
   
--   A two-way send port to send request messages to Oracle database and receive responses.  
+- A two-way send port to send request messages to Oracle database and receive responses.  
   
--   A one-way send port to send the responses from Oracle database to a folder.  
+- A one-way send port to send the responses from Oracle database to a folder.  
   
- A sample orchestration to invoke the first and second overloads for GET_ACCOUNT procedure resembles the following:  
+  A sample orchestration to invoke the first and second overloads for GET_ACCOUNT procedure resembles the following:  
   
- ![Orchestration for invoking overloaded packages](../../adapters-and-accelerators/adapter-oracle-database/media/f8e4ad6f-9140-43b1-b931-28c9ba11cc8e.gif "f8e4ad6f-9140-43b1-b931-28c9ba11cc8e")  
+  ![Orchestration for invoking overloaded packages](../../adapters-and-accelerators/adapter-oracle-database/media/f8e4ad6f-9140-43b1-b931-28c9ba11cc8e.gif "f8e4ad6f-9140-43b1-b931-28c9ba11cc8e")  
   
 ### Adding Message Shapes  
  Make sure you specify the following properties for each of the message shapes. The names listed in the Shape column are the names of the message shapes as displayed in the just-mentioned orchestration. The following table lists the shapes you must include for one of the parallel actions.  
@@ -198,32 +198,32 @@ Stored Procedure Overload 2:
   
  After you have specified these properties, the message shapes and ports are connected and your orchestration is complete.  
   
- You must now build the BizTalk solution and deploy it to a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).  
+ You must now build the BizTalk solution and deploy it to a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]. For more information, see [Building and Running Orchestrations](../../core/building-and-running-orchestrations.md).  
   
 ## Configuring the BizTalk Application  
  After you have deployed the BizTalk project, the orchestration you created earlier is listed under the **Orchestrations** pane in the BizTalk Server Administration console. You must use the BizTalk Server Administration console to configure the application. For a walkthrough, see [Walkthrough: Deploying a Basic BizTalk Application](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md).
   
  Configuring an application involves:  
   
--   Selecting a host for the application.  
+- Selecting a host for the application.  
   
--   Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
+- Mapping the ports that you created in your orchestration to physical ports in the BizTalk Server Administration console. For this orchestration you must:  
   
-    -   Define a location on the hard disk and a corresponding file port where you will drop the request messages, one for each overloaded procedure. The BizTalk orchestration will consume the request messages and send it to the Oracle database.  
+  - Define a location on the hard disk and a corresponding file port where you will drop the request messages, one for each overloaded procedure. The BizTalk orchestration will consume the request messages and send it to the Oracle database.  
   
-    -   Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response messages, one for each overloaded procedure, containing the response from the Oracle database.  
+  - Define a location on the hard disk and a corresponding file port where the BizTalk orchestration will drop the response messages, one for each overloaded procedure, containing the response from the Oracle database.  
   
-    -   Define a physical WCF-Custom or WCF-OracleDB send port to send messages to the Oracle database. You must also specify the action in the send port. For information about how to create WCF-Custom or WCF-OracleDB ports, see [Manually configure a physical port binding to the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md). Because the WCF-Custom or WCF-OracleDB send port sends and receive messages conforming to more than one schema and performs two operations, you must set dynamic action for both the operations. For more information about actions, see [Configure the SOAP action for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md). For this orchestration, the action should be set as follows:  
+  - Define a physical WCF-Custom or WCF-OracleDB send port to send messages to the Oracle database. You must also specify the action in the send port. For information about how to create WCF-Custom or WCF-OracleDB ports, see [Manually configure a physical port binding to the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md). Because the WCF-Custom or WCF-OracleDB send port sends and receive messages conforming to more than one schema and performs two operations, you must set dynamic action for both the operations. For more information about actions, see [Configure the SOAP action for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-the-soap-action-for-oracle-database.md). For this orchestration, the action should be set as follows:  
   
-        ```  
-        <BtsActionMapping>  
-          <Operation Name="Overload1" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT/overload1" />  
-          <Operation Name="Overload2" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT/overload2" />  
-        </BtsActionMapping>  
-        ```  
+    ```  
+    <BtsActionMapping>  
+      <Operation Name="Overload1" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT/overload1" />  
+      <Operation Name="Overload2" Action="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT/overload2" />  
+    </BtsActionMapping>  
+    ```  
   
-        > [!NOTE]
-        >  Generating the schema using the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file containing information about the ports and the actions to be set for those ports. You can import this binding file from the BizTalk Server Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md).  
+    > [!NOTE]
+    >  Generating the schema using the [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] also creates a binding file containing information about the ports and the actions to be set for those ports. You can import this binding file from the BizTalk Server Administration console to create send ports (for outbound calls) or receive ports (for inbound calls). For more information, see [Configure a physical port binding using a port binding file to Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md).  
   
 ## Starting the Application  
  You must start the BizTalk application for invoking a function in an Oracle database table. For instructions on starting a BizTalk application, see [How to Start an Orchestration](../../core/how-to-start-an-orchestration.md).  
@@ -239,7 +239,7 @@ Stored Procedure Overload 2:
 -   The BizTalk orchestration for the operation is running.  
   
 ## Executing the Operation  
- After you run the application, you must drop two request messages (one for each overloaded procedure) to the FILE receive location. The schema for the request messages must conform to the schema for the procedure you generated earlier. See [Message Schemas for Functions and Procedures](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md) for more information about the request message schema for invoking functions using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
+ After you run the application, you must drop two request messages (one for each overloaded procedure) to the FILE receive location. The schema for the request messages must conform to the schema for the procedure you generated earlier. See [Message Schemas for Functions and Procedures](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md) for more information about the request message schema for invoking functions using the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
   
  For example, the request message to invoke the first overload of the GET_ACCOUNT procedure is:  
   
@@ -273,7 +273,7 @@ Stored Procedure Overload 2:
 ```  
   
 ## Possible Exceptions  
- For information about the exceptions you might encounter while invoking overloaded packages using [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Exceptions and error handling](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md).  
+ For information about the exceptions you might encounter while invoking overloaded packages using [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], see [Exceptions and error handling](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md).  
   
 ## Best Practices  
  After you have deployed and configured the BizTalk project, you can export configuration settings to an XML file called the bindings file. Once you generate a bindings file, you can import the configuration settings from the file so that you do not need to create the send ports, receive ports, etc. for the same orchestration. For more information about binding files, see [Reuse Oracle Database Adapter bindings](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md).  

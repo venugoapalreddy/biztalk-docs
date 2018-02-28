@@ -15,11 +15,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Receive-Side Processing of an Incoming Non-EDI Message over AS2
-The AS2 pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] can be used to process an EDI message or a non-EDI message over AS2 transport. Different pipelines are used for the two different types of payloads. You use the AS2EdiReceive pipeline to process an incoming EDI message over AS2, and the AS2Send pipeline to return the associated MDN (if enabled). You use the AS2Receive pipeline to process an incoming non-EDI message over AS2, and the AS2Send pipeline to return the associated MDN (if enabled). The non-EDI message can be any binary payload.  
+The AS2 pipelines shipped with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] can be used to process an EDI message or a non-EDI message over AS2 transport. Different pipelines are used for the two different types of payloads. You use the AS2EdiReceive pipeline to process an incoming EDI message over AS2, and the AS2Send pipeline to return the associated MDN (if enabled). You use the AS2Receive pipeline to process an incoming non-EDI message over AS2, and the AS2Send pipeline to return the associated MDN (if enabled). The non-EDI message can be any binary payload.  
   
- The AS2Receive receive pipeline decodes the AS2 message, and then performs disassembly on the AS2 message. An AS2Send send pipeline encodes the MDN. You can include the AS2Receive and AS2Send pipelines in an HTTP two-way solicit response send port (if the MDN is synchronous), or in a one-way HTTP send port and a one-way HTTP receive port (if the MDN is asynchronous). If you need to perform disassembly of a non-EDI payload, you will have to do that in another receive pipeline, because [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] only allows one disassembler in a receive pipeline. This will require a loopback send port and receive location (see the [Processing the Received Non-EDI Payload](../core/receive-side-processing-of-an-incoming-non-edi-message-over-as2.md#BKMK_NonEDI) section below).  
+ The AS2Receive receive pipeline decodes the AS2 message, and then performs disassembly on the AS2 message. An AS2Send send pipeline encodes the MDN. You can include the AS2Receive and AS2Send pipelines in an HTTP two-way solicit response send port (if the MDN is synchronous), or in a one-way HTTP send port and a one-way HTTP receive port (if the MDN is asynchronous). If you need to perform disassembly of a non-EDI payload, you will have to do that in another receive pipeline, because [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] only allows one disassembler in a receive pipeline. This will require a loopback send port and receive location (see the [Processing the Received Non-EDI Payload](../core/receive-side-processing-of-an-incoming-non-edi-message-over-as2.md#BKMK_NonEDI) section below).  
   
- To receive a non-EDI interchange over AS2, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will perform the following steps:  
+ To receive a non-EDI interchange over AS2, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will perform the following steps:  
   
 -   Processing the received AS2 message  
   
@@ -30,30 +30,30 @@ The AS2 pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/
 ## Processing the Received AS2 message  
  The AS2 Decoder in the AS2Receive receive pipeline processes an incoming AS2 message. It does so using the `InboundHTTPHeaders` context property, which the HTTP adapter creates from the HTTP headers in the AS2 message. These headers include the following AS2 headers:  
   
--   AS2-To  
+- AS2-To  
   
--   AS2-From  
+- AS2-From  
   
--   AS2-Version  
+- AS2-Version  
   
--   MessageID  
+- MessageID  
   
--   OriginalMessageID (for MDNs only)  
+- OriginalMessageID (for MDNs only)  
   
--   Disposition-Notification-To (if an MDN is requested)  
+- Disposition-Notification-To (if an MDN is requested)  
   
--   Receipt-Delivery-Option (if an MDN is requested)  
+- Receipt-Delivery-Option (if an MDN is requested)  
   
--   Signed-Receipt-MICalg (if an MDN is requested)  
+- Signed-Receipt-MICalg (if an MDN is requested)  
   
- The AS2 Decoder will promote these headers to the context of the message. It then does the following:  
+  The AS2 Decoder will promote these headers to the context of the message. It then does the following:  
   
--   Performs agreement resolution to determine the properties to be used to process the incoming message. For more information, see [Agreement Resolution for Incoming AS2 Messages](../core/agreement-resolution-for-incoming-as2-messages.md).  
+- Performs agreement resolution to determine the properties to be used to process the incoming message. For more information, see [Agreement Resolution for Incoming AS2 Messages](../core/agreement-resolution-for-incoming-as2-messages.md).  
   
--   Authenticates the sender using the AS2-From and AS2-To properties.  
+- Authenticates the sender using the AS2-From and AS2-To properties.  
   
-    > [!NOTE]
-    >  For more information about the processing that the AS2 receive pipelines perform on incoming AS2 messages, see [Processing an Incoming AS2 Message](../core/processing-an-incoming-as2-message.md).  
+  > [!NOTE]
+  >  For more information about the processing that the AS2 receive pipelines perform on incoming AS2 messages, see [Processing an Incoming AS2 Message](../core/processing-an-incoming-as2-message.md).  
   
 ## Sending an MDN  
  If an MDN was enabled, the AS2Receive pipeline generates an MDN and drops it into the MessageBox. How the MDN is returned to the sender of the original message depends upon whether the AS2 transport is synchronous or asynchronous.  
@@ -63,14 +63,14 @@ The AS2 pipelines shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/
   
  **Synchronous Mode**  
   
- If a non-EDI message is sent over AS2 in synchronous mode, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will return the MDN over that synchronous connection and then close the connection. The MDN will be generated by the AS2Receive pipeline, routed by that pipeline to the MessageBox, and then automatically picked up by the AS2Send pipeline that is part of the request response receive port.  
+ If a non-EDI message is sent over AS2 in synchronous mode, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will return the MDN over that synchronous connection and then close the connection. The MDN will be generated by the AS2Receive pipeline, routed by that pipeline to the MessageBox, and then automatically picked up by the AS2Send pipeline that is part of the request response receive port.  
   
  **Asynchronous Mode**  
   
  If a non-EDI message is sent over HTTP/HTTPS transport in asynchronous mode, you must create a send port to return the MDN separately. If it is a dynamic send port, it will use the address in the Receipt-Delivery-Notification line in the header of the message to route the message to the trading partner. If it is a static send port, it will use the address defined in port properties. This send port subscribes to the asynchronous MDN by using an `EdiIntAS.IsAS2AsynchronousMDN==True` filter expression. In asynchronous processing, the AS2Receive pipeline will generate an HTTP response in addition to the MDN. The receive port returns the HTTP response to the original sender over the HTTP connection between the receive port and the sending party, which closes that connection. This is necessary because the synchronous connection is not closed by the MDN.  
   
 ##  <a name="BKMK_NonEDI"></a> Processing the Received Non-EDI Payload  
- When a message that is not encoded in EDI is received over AS2, and you need to perform disassembly on the payload, you will have to do that in a different receive pipeline than the AS2Receive pipeline. This is required because [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] only allows one disassembler in a receive pipeline. This scenario will require a loopback mechanism using a send port and receive location. In the first pass, the EDIReceive pipeline processes the AS2 message and sends the message in its native format to the MessageBox. In the second pass, a receive pipeline generates XML from the message's native format.  
+ When a message that is not encoded in EDI is received over AS2, and you need to perform disassembly on the payload, you will have to do that in a different receive pipeline than the AS2Receive pipeline. This is required because [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] only allows one disassembler in a receive pipeline. This scenario will require a loopback mechanism using a send port and receive location. In the first pass, the EDIReceive pipeline processes the AS2 message and sends the message in its native format to the MessageBox. In the second pass, a receive pipeline generates XML from the message's native format.  
   
  BizTalk Server will perform the following receive-side processing on a non-EDI message over AS2 BizTalk Server:  
   

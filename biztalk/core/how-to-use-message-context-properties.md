@@ -20,7 +20,7 @@ manager: "anneta"
 # How to Use Message Context Properties
 System properties are mostly used internally by BizTalk Messaging Engine and its components. In general, changing the values set by the engine for those properties is not recommended, because it may affect the execution logic of the engine. However, there are a large number of properties that you can change.  
   
- The following table contains a list of message context properties that the Messaging Engine can promote. You can use these properties for creation of filter expressions on send ports and orchestrations in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. For example,  
+ The following table contains a list of message context properties that the Messaging Engine can promote. You can use these properties for creation of filter expressions on send ports and orchestrations in Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. For example,  
   
 ```  
 PortName = MyMessage(BTS.ReceivePortName);  

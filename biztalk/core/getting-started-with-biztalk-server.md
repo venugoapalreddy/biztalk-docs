@@ -19,10 +19,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Getting started with BizTalk Server
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is a [publish and subscribe architecture](../core/publish-and-subscribe-architecture.md) that [uses adapters](../core/using-adapters.md) to receive and send messages, implements [business processes through orchestration](../core/defining-business-processes.md), and includes [management and tracking](../core/management-and-tracking-architecture.md) of these different parts. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] also includes [trading partner management](../core/trading-partner-management-using-biztalk-server.md) for business-to-business messaging, [high availability](../core/planning-for-high-availability3.md) to maximize uptime, a development platform to [create your own components](../core/developing-custom-components.md),  an administration console to [manage your artifacts](../core/operational-and-administrative-tasks-in-your-biztalk-environment.md), and business activity monitoring to manage [aggregations, alerts, and profiles](../core/using-business-activity-monitoring.md).
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is a [publish and subscribe architecture](../core/publish-and-subscribe-architecture.md) that [uses adapters](../core/using-adapters.md) to receive and send messages, implements [business processes through orchestration](../core/defining-business-processes.md), and includes [management and tracking](../core/management-and-tracking-architecture.md) of these different parts. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] also includes [trading partner management](../core/trading-partner-management-using-biztalk-server.md) for business-to-business messaging, [high availability](../core/planning-for-high-availability3.md) to maximize uptime, a development platform to [create your own components](../core/developing-custom-components.md),  an administration console to [manage your artifacts](../core/operational-and-administrative-tasks-in-your-biztalk-environment.md), and business activity monitoring to manage [aggregations, alerts, and profiles](../core/using-business-activity-monitoring.md).
 
 ## Understanding BizTalk, runtime architecture, and TPM
-If you're looking to get started with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], including learning how it works, then here are some good resources: 
+If you're looking to get started with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], including learning how it works, then here are some good resources: 
 
 * [Understanding BizTalk Server](../core/understanding-biztalk-server.md)
 * [Runtime Architecture](../core/runtime-architecture.md)
@@ -30,7 +30,7 @@ If you're looking to get started with [!INCLUDE[btsBizTalkServerNoVersion](../in
 * Numerous topics on the [TechNet Wiki](http://social.technet.microsoft.com/wiki/contents/articles/2240.biztalk-server-resources-on-the-technet-wiki.aspx)
 
 ## Install, configure, and tutorials
-Read about what's new, install [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and step through some tutorials: 
+Read about what's new, install [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and step through some tutorials: 
   
 * [What's new, installation, configuration, and upgrade](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)  
 * [BizTalk Server tutorials](../core/biztalk-server-tutorials.md)
@@ -47,7 +47,7 @@ If you're starting to architect a solution or are in the planning phase, then th
 * [Security Case Studies for Small to Medium-Sized Companies](../core/security-case-studies-for-small-to-medium-sized-companies.md)
 
 ## Manage existing environments
-If you have an existing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment, then these are good resources: 
+If you have an existing [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment, then these are good resources: 
 
 * [Managing BizTalk Server performance settings](../core/managing-biztalk-server-performance-settings.md)
 * [Post-configuration steps to optimize your environment](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)

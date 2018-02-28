@@ -33,37 +33,37 @@ This topic provides a list of best practices for adapter security.
   
  **Grant the following permissions on the shared folders (the Receive folder and Send folder) that are used to pick up and drop files using the File and EDI adapters:**  
   
--   **Receive  folder**  
+- **Receive  folder**  
   
-     The receive folder for the File adapter is configurable on the receive location. The receive folder for the EDI adapter is configurable on the receive handler. The service account for the BizTalk Host that picks up the file should have the following permissions at the file-system level:  
+   The receive folder for the File adapter is configurable on the receive location. The receive folder for the EDI adapter is configurable on the receive handler. The service account for the BizTalk Host that picks up the file should have the following permissions at the file-system level:  
   
-    -   List Folder / Read Data  
+  - List Folder / Read Data  
   
-    -   Delete SubFolder and Files  
+  - Delete SubFolder and Files  
   
-     If the receive folder is on a network share, the following permissions must be granted at the file-share level:  
+    If the receive folder is on a network share, the following permissions must be granted at the file-share level:  
   
-    -   The service account for the BizTalk Host that picks up the file must have Full Control permissions.  
+  - The service account for the BizTalk Host that picks up the file must have Full Control permissions.  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrators must have Full Control permissions for troubleshooting.  
+  - [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrators must have Full Control permissions for troubleshooting.  
   
-    -   The external user or programs that drop files to this location must have Write permissions.  
+  - The external user or programs that drop files to this location must have Write permissions.  
   
--   **Send folder**  
+- **Send folder**  
   
-     The send folder for the File and EDI adapters are configurable on the send port.  
+   The send folder for the File and EDI adapters are configurable on the send port.  
   
-    -   The service account for the BizTalk Host or Hosts that drop files here must have Write permissions.  
+  - The service account for the BizTalk Host or Hosts that drop files here must have Write permissions.  
   
-    -   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrators must have Full Control permissions.  
+  - [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrators must have Full Control permissions.  
   
-    -   The external user or program that picks up files must have Read permissions.  
+  - The external user or program that picks up files must have Read permissions.  
   
- **Add the user account under which the EDI service is running to the BTS_HOST_USERS SQL role.**  
+  **Add the user account under which the EDI service is running to the BTS_HOST_USERS SQL role.**  
   
- This is required so that you can obtain BizTalk Explorer Object Management (OM) Access without administrative permissions. To do this, add "EDI Subsystem Users" to the BTS_HOST_USERS role in the BizTalk Management database, BizTalkMgmtDb.  
+  This is required so that you can obtain BizTalk Explorer Object Management (OM) Access without administrative permissions. To do this, add "EDI Subsystem Users" to the BTS_HOST_USERS role in the BizTalk Management database, BizTalkMgmtDb.  
   
- To add "EDI Subsystem Users" to the BTS_HOST_USERS role on SQL Server 2005, complete the following steps:  
+  To add "EDI Subsystem Users" to the BTS_HOST_USERS role on SQL Server 2005, complete the following steps:  
   
 1.  Launch SQL Server Management Studio from **Start, Programs, Microsoft SQL Server 2008**.  
   

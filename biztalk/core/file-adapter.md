@@ -42,7 +42,7 @@ Use the File receive adapter to read messages from files, and submit them to the
  The File receive adapter relies on Windows File Change Notifications to determine when to pick up a file from the specified directory or share. If the File receive adapter receives a Windows File Change Notification before the file has been completely written to the specified directory or share then the file will be locked and the File receive adapter will not retrieve the file. In this scenario, the File receive adapter will actively poll the specified directory or share at the **Polling interval (ms)** specified on the **Advanced settings** dialog box available when configuring a File receive location. When the File receive adapter polls a directory or share it retrieves unlocked files from the share and submits the files to the MessageBox database.  
   
 > [!NOTE]
->  The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] File adapter has only been tested on, and is supported on, the NTFS file system.  
+>  The [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] File adapter has only been tested on, and is supported on, the NTFS file system.  
   
  The following Windows File Change Notifications will cause the File receive adapter to pick up a file from the specified location:  
   

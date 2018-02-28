@@ -20,7 +20,7 @@ The **PrtFilterJobStart** function is called to inform the print data filter DLL
   
 ```  
   
-          void * WINAPI PrtFilterJobStart(   
+          void * WINAPI PrtFilterJobStart(   
 char *SessionName,    
 DWORD LUType,         
 char **pBufPtr,       

@@ -29,8 +29,8 @@ class MsSna_LuPrint   : MsSna_Lu3270
 ```  
   
 ## Properties  
- **AssociatedLU**  
- Data Type: **String**Qualifiers: **MAXLEN(8)**Access Type: Read/Write  
+ <strong>AssociatedLU</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>MAXLEN(8)</strong>Access Type: Read/Write  
   
  The associated display LU.  
   

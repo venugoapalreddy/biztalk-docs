@@ -20,7 +20,7 @@ The **DisplayHelpInfo** function is used to generate help information used by th
   
 ```  
   
-          __declspec(dllexport) BOOL WINAPI DisplayHelpInfo(   
+          __declspec(dllexport) BOOL WINAPI DisplayHelpInfo(   
 LPSTR*szHelpInfoBuffer);  
 ```  
   

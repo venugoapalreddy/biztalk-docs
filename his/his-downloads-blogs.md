@@ -19,7 +19,7 @@ ms.author: "hisdocs; plarsen"
 Download the evaluation edition, and other editions using your subscription.
 
 - [HIS 2013 Evaluation Edition](https://www.microsoft.com/download/details.aspx?id=39950)
-- HIS 2013 Enterprise Edition Download on [MSDN](https://msdn.microsoft.com/subscriptions/downloads/) and [TechNet](https://technet.microsoft.com/subscriptions/downloads/)
+- HIS 2013 Enterprise Edition Download on [MSDN](https://msdn.microsoft.com/subscriptions/downloads/) and [TechNet](https://technet.microsoft.com/subscriptions/downloads/)
 
 ## Client installation package
 

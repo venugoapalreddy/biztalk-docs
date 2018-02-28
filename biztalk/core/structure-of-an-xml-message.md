@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Structure of an XML Message
-In the context of Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], an XML instance message is a valid hierarchy of XML tags that together constitute zero or more XML envelopes and one or more XML documents. For example, the following XML instance message consists of a single XML envelope (in regular font) that contains a single XML document (shown in bold type).  
+In the context of Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], an XML instance message is a valid hierarchy of XML tags that together constitute zero or more XML envelopes and one or more XML documents. For example, the following XML instance message consists of a single XML envelope (in regular font) that contains a single XML document (shown in bold type).  
   
 ```  
 <ns0:envelope xmlns:ns0="http://myEnvelopeNamespaceURI.org">  

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # TN3270 Configuration
-This section describes the management and configuration of certificates necessary for running TN3270 on [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+This section describes the management and configuration of certificates necessary for running TN3270 on [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
 ## In This Section  
  [Managing Certificates](../core/managing-certificates1.md)  

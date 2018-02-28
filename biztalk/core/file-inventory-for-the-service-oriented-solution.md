@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # File Inventory for the Service Oriented Solution
-This section lists subdirectories and source files for the Service Oriented solution. The default installation directory for the Service Oriented solution source files is [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO. Descriptions before the following tables replace this path with \<Install Directory\>.  
+This section lists subdirectories and source files for the Service Oriented solution. The default installation directory for the Service Oriented solution source files is [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Scenarios\SO. Descriptions before the following tables replace this path with \<Install Directory\>.  
   
  Files in \<Install Directory\>\BTSSoln  
   

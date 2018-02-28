@@ -15,37 +15,37 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Difference between adapter channel and service in the WCF LOB Adapter SDK
-The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] and [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] each provide a set of APIs that can be used to expose application functionality to consuming applications on the same computer or across a network. To choose the most appropriate framework, you must consider the properties of the target system application you are exposing as well as the business requirements for the exposed functionality. This topic provides guidelines that you can use to choose the appropriate framework.  
+The [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] and [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] each provide a set of APIs that can be used to expose application functionality to consuming applications on the same computer or across a network. To choose the most appropriate framework, you must consider the properties of the target system application you are exposing as well as the business requirements for the exposed functionality. This topic provides guidelines that you can use to choose the appropriate framework.  
   
 ## When to Write an Adapter  
- Consider writing an adapter using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] when:  
+ Consider writing an adapter using the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] when:  
   
--   The target system is an existing, non-*Web services-enabled* system  
+- The target system is an existing, non-*Web services-enabled* system  
   
--   The target system is dynamic and can be enhanced with new operations  
+- The target system is dynamic and can be enhanced with new operations  
   
--   The target system has a large amount of metadata  
+- The target system has a large amount of metadata  
   
--   There is a large, diverse number of users for the target system's data  
+- There is a large, diverse number of users for the target system's data  
   
--   Consuming applications need rich application metadata discovery functionality  
+- Consuming applications need rich application metadata discovery functionality  
   
- For example, if the target system contains hundreds of operations for managing health care claims, and the operations are dynamic (meaning users can add new operations that perform additional tasks), it makes sense to expose this functionality using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. This will ensure that new operations are discoverable by applications using the adapter. With [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)], you would have to modify the service contract because it is static.  
+  For example, if the target system contains hundreds of operations for managing health care claims, and the operations are dynamic (meaning users can add new operations that perform additional tasks), it makes sense to expose this functionality using the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)]. This will ensure that new operations are discoverable by applications using the adapter. With [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)], you would have to modify the service contract because it is static.  
   
 ## When to Write a Service  
  Use the *WCF Service Model* to create a service when:  
   
--   The target system is static and has a fixed set of operations  
+- The target system is static and has a fixed set of operations  
   
--   The target system has little or no metadata  
+- The target system has little or no metadata  
   
--   Service developers have detailed knowledge of the application to be exposed  
+- Service developers have detailed knowledge of the application to be exposed  
   
--   A brand new application is being exposed  
+- A brand new application is being exposed  
   
--   You are creating generic transport adapters  
+- You are creating generic transport adapters  
   
- For example, if the target system contains 20 operations for managing sports teams, you can expose the operations as a static contract using [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]. By doing so, you avoid implementing unnecessary metadata features and you can potentially minimize development time.  
+  For example, if the target system contains 20 operations for managing sports teams, you can expose the operations as a static contract using [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]. By doing so, you avoid implementing unnecessary metadata features and you can potentially minimize development time.  
   
 ## When to Write a Channel  
  Use the *WCF Channel Model* to create a channel when:  

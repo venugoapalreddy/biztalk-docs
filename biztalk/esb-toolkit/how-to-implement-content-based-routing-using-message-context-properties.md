@@ -15,7 +15,7 @@ manager: "anneta"
 ---
 # How to: Implement Content-Based Routing Using Message Context Properties
 ## Goal  
- This section demonstrates how to use the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Itinerary Designer to create an itinerary that selects a message recipient based on the message context property and then routes a message to that recipient using the Itinerary Broker messaging service.  
+ This section demonstrates how to use the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] Itinerary Designer to create an itinerary that selects a message recipient based on the message context property and then routes a message to that recipient using the Itinerary Broker messaging service.  
   
  In this topic, you will complete the following steps:  
   
@@ -58,72 +58,72 @@ manager: "anneta"
   
 #### To define the structure of the itinerary  
   
-1.  From the Toolbox, drag an **On-Ramp** model element to the design surface. In the OnRamp1 Properties window, configure the following properties:  
+1. From the Toolbox, drag an **On-Ramp** model element to the design surface. In the OnRamp1 Properties window, configure the following properties:  
   
-    1.  Click the **Name** property, and then type **ReceiveNAOrder**.  
+   1.  Click the **Name** property, and then type **ReceiveNAOrder**.  
   
-    2.  In the **Extender** drop-down list, click **On-Ramp Extender**.  
+   2.  In the **Extender** drop-down list, click **On-Ramp Extender**.  
   
-    3.  In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.  
+   3.  In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.  
   
-    4.  In the **Receive Port** drop-down list, click **OnRamp.Itinerary**.  
+   4.  In the **Receive Port** drop-down list, click **OnRamp.Itinerary**.  
   
-2.  From the Toolbox, drag an **Itinerary Broker Service** model element to the designer surface, and then place it to the right side of the **On-Ramp** model element. In the **ItineraryBrokerService1**, configure the following properties:  
+2. From the Toolbox, drag an **Itinerary Broker Service** model element to the designer surface, and then place it to the right side of the **On-Ramp** model element. In the **ItineraryBrokerService1**, configure the following properties:  
   
-    1.  Click the **Name** property, and then type **RouteBrokerService**.  
+   1.  Click the **Name** property, and then type **RouteBrokerService**.  
   
-    2.  In the **Extender** drop-down list, click **Messaging Broker Extender**.  
+   2.  In the **Extender** drop-down list, click **Messaging Broker Extender**.  
   
-    3.  In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.  
+   3.  In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.  
   
-    4.  In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Itinerary.Services.Broker.MessagingBroker**.  
+   4.  In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Itinerary.Services.Broker.MessagingBroker**.  
   
-3.  Right-click the **Filter** collection, and then click **Add new Filter**. In the **Filter1** Properties window, configure the following properties:  
+3. Right-click the **Filter** collection, and then click **Add new Filter**. In the **Filter1** Properties window, configure the following properties:  
   
-    1.  Click the **Name** property, and then type **ASMXFilter**.  
+   1. Click the **Name** property, and then type **ASMXFilter**.  
   
-    2.  Click the **Filter** Implementation drop-down list, and then click **XPath Filter**.  
+   2. Click the **Filter** Implementation drop-down list, and then click **XPath Filter**.  
   
-    3.  Click the **Expression** property, and then type **count(/ContextProperties/Property[@name='InboundTransportLocation'][contains(., 'ProcessItinerary.asmx')]) > 0**.  
+   3. Click the <strong>Expression</strong> property, and then type <strong>count(/ContextProperties/Property[<xref href="name=" data-throw-if-not-resolved="False" data-raw-source="@name="></xref>'InboundTransportLocation'][contains(., 'ProcessItinerary.asmx')]) > 0</strong>.  
   
-4.  Right-click the **Filter** collection, and then click **Add new Filter**. In the **Filter1** Properties window, configure the following properties:  
+4. Right-click the **Filter** collection, and then click **Add new Filter**. In the **Filter1** Properties window, configure the following properties:  
   
-    1.  Click the **Name** property, and then type **WCFFilter**.  
+   1. Click the **Name** property, and then type **WCFFilter**.  
   
-    2.  Click the **Filter Implementation** drop-down list, and click **XPath Filter**.  
+   2. Click the **Filter Implementation** drop-down list, and click **XPath Filter**.  
   
-    3.  Click the **Expression** property, and then type **count(/ContextProperties/Property[@name='InboundTransportLocation'][contains(., 'ESB.ItineraryServices.WCF')]) > 0**.  
+   3. Click the <strong>Expression</strong> property, and then type <strong>count(/ContextProperties/Property[<xref href="name=" data-throw-if-not-resolved="False" data-raw-source="@name="></xref>'InboundTransportLocation'][contains(., 'ESB.ItineraryServices.WCF')]) > 0</strong>.  
   
-5.  Right-click the **Resolver** collection of the **RouteBrokerService** model element, and then click **Add new Resolver**. In the **Resolver1** Properties window, configure the following properties:  
+5. Right-click the **Resolver** collection of the **RouteBrokerService** model element, and then click **Add new Resolver**. In the **Resolver1** Properties window, configure the following properties:  
   
-    1.  Click the **Name** property, and then type **ResolverBrokerRoute**.  
+   1.  Click the **Name** property, and then type **ResolverBrokerRoute**.  
   
-    2.  In the **Resolver Implementation** drop-down list, click **MessageContext Resolver Extension**.  
+   2.  In the **Resolver Implementation** drop-down list, click **MessageContext Resolver Extension**.  
   
-6.  In the Toolbox, click **Connector**. Drag a connection from the **ReceiveNAOrder** model element to the **RouteBrokerService** model element.  
+6. In the Toolbox, click **Connector**. Drag a connection from the **ReceiveNAOrder** model element to the **RouteBrokerService** model element.  
   
-7.  From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it under the **RouteBrokerService** model element. In the **ItineraryService1** Properties window, configure the following properties:  
+7. From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it under the **RouteBrokerService** model element. In the **ItineraryService1** Properties window, configure the following properties:  
   
-    1.  Click the **Name** property, and then type **RouteToFileFromASMX**.  
+   1.  Click the **Name** property, and then type **RouteToFileFromASMX**.  
   
-    2.  In the **Itinerary Service Extender** drop-down list, click **Messaging Extender**.  
+   2.  In the **Itinerary Service Extender** drop-down list, click **Messaging Extender**.  
   
-        > [!NOTE]
-        >  This property defines that the process will take place in a pipeline (messaging). Alternately, if the process will take place in an orchestration, set the **Itinerary Service Extender** property to **Orchestration Extender**.  
+       > [!NOTE]
+       >  This property defines that the process will take place in a pipeline (messaging). Alternately, if the process will take place in an orchestration, set the **Itinerary Service Extender** property to **Orchestration Extender**.  
   
-    3.  In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.  
+   3.  In the **Container** drop-down list, expand **ReceiveNAOrder**, and then click **Receive Handlers**.  
   
-    4.  In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Services.Routing**.  
+   4.  In the **Service Name** drop-down list, click **Microsoft.Practices.ESB.Services.Routing**.  
   
-8.  Right-click the **Resolver** collection of the **RouteToFileFromASMX** model element, and then click **Add new Resolver**. In the **Resolver1** Properties window, configure the following properties:  
+8. Right-click the **Resolver** collection of the **RouteToFileFromASMX** model element, and then click **Add new Resolver**. In the **Resolver1** Properties window, configure the following properties:  
   
-    1.  Click the **Name** property, and then type **ResolverFromAsmx**.  
+   1.  Click the **Name** property, and then type **ResolverFromAsmx**.  
   
-    2.  In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.  
+   2.  In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.  
   
-    3.  In the **Transport Name** drop-down list, click **FILE**.  
+   3.  In the **Transport Name** drop-down list, click **FILE**.  
   
-    4.  Click the **Transport Location** property, and then type **c:\howtos\out\asmx%MessageId%.xml**.  
+   4.  Click the **Transport Location** property, and then type **c:\howtos\out\asmx%MessageId%.xml**.  
   
 9. From the Toolbox, drag an **Off-Ramp** model element to the design surface, and then place it to the right of the **RouteToFileFromASMX** model element. In the **OffRamp1** Properties window, configure the following properties:  
   

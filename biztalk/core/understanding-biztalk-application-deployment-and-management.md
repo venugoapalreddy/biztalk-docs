@@ -27,7 +27,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Understanding BizTalk Application Deployment and Management
-This section introduces the new application deployment and management features of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and provides background information that will help you understand how to use these features to deploy and manage BizTalk applications.  
+This section introduces the new application deployment and management features of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and provides background information that will help you understand how to use these features to deploy and manage BizTalk applications.  
   
 ## In This Section  
   

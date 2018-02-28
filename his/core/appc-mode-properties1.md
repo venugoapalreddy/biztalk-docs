@@ -52,12 +52,12 @@ The following tabs are available on the APPC Mode Properties Sheet:
  **Max Send RU Size**  
  Specify the maximum size for RUs sent by the TP(s) on the local system.  
   
- It is not necessary to set a minimum send RU size, which is 256 on [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+ It is not necessary to set a minimum send RU size, which is 256 on [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
  **Max Receive RU Size**  
  Specify the maximum size for RUs received from the TP(s) on the remote system.  
   
- It is not necessary to set a minimum receive RU size, which is 256 on [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+ It is not necessary to set a minimum receive RU size, which is 256 on [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
  **High-Priority Mode**  
  Select to give preference to communication with this mode over communication with a low-priority mode.  

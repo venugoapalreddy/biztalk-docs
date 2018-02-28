@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Known Issues with EDI Security
-This topic describes known issues with the security of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 solutions.  
+This topic describes known issues with the security of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 solutions.  
   
 ## BizTalk Will Not Suspend a Signed Message from a Party for which No Certificate is Set  
  If you do not set a signing certificate on a party (in the Certificate node of the party's Party Properties page), but an incoming message from that party is signed, BizTalk Server will not suspend the message and throw an exception based on the absence of the certificate.  
@@ -26,7 +26,7 @@ This topic describes known issues with the security of [!INCLUDE[btsBizTalkServe
  If the Program Files folder that contains BizTalk Server executables and EDI schemas is available to users who are not authenticated, those users can potentially modify those files. To protect against that threat, you can use Access Control Lists (ACLs) on the Program Files folder to limit access to trusted users.  
   
 ## A Schema with a Long Field Can Be Susceptible to a Denial-of-Service Attack  
- A custom schema that has a field of very great length could potentially be exploited by a denial-of-service attack. Schemas that are shipped with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] do not have fields with great lengths, and therefore are generally not susceptible to such an attack.  
+ A custom schema that has a field of very great length could potentially be exploited by a denial-of-service attack. Schemas that are shipped with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] do not have fields with great lengths, and therefore are generally not susceptible to such an attack.  
   
 ## Message Processing Will Be Aborted If a Control Number Exceeds Its Maximum Length  
  An interchange, group, or transaction set control number has a limited maximum length. If the length of one of these control numbers exceeds the maximum length, the processing of all messages of that encoding type for a single party will be aborted. A message of another encoding type (EDIFACT instead of X12, for example) will not be affected. This could represent a security vulnerability.  

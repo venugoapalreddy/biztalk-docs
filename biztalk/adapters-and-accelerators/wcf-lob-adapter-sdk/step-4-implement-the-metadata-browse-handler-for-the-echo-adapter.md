@@ -21,9 +21,9 @@ manager: "anneta"
   
  In this step, you implement the browse capability of the Echo adapter. This capability allows your adapter to perform a connection-based browse to obtain metadata from the target system. Regardless of your adapter's capabilities, your adapter must support the browse capability.  
   
- According to the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], to support browse capability, you must implement the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler` interface. For the Echo adapter, the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdapterMetadataBrowseHandler.  
+ According to the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)], to support browse capability, you must implement the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler` interface. For the Echo adapter, the [!INCLUDE [afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdapterMetadataBrowseHandler.  
   
- In the following steps, you update this class to get a better understanding of how to implement the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method, how to set various properties of the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object, and how the operation and category nodes supported by the adapter appear in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool.  
+ In the following steps, you update this class to get a better understanding of how to implement the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method, how to set various properties of the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` object, and how the operation and category nodes supported by the adapter appear in the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool.  
   
 ## Prerequisites  
  Before you begin this step, you must have successfully completed [Step 3: Implement the Connection for the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md). You must also understand the following classes:  
@@ -49,12 +49,12 @@ public interface IMetadataBrowseHandler : IConnectionHandler, IDisposable
 > [!NOTE]
 >  The Echo adapter implementation uses only the node ID and ignores the other three parameters, since the Echo adapter supports only a few nodes.  
   
-|**Parameter**|**Definition**|  
-|-------------------|--------------------|  
-|nodeId|Each item in the hierarchy of the metadata explorer (the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and<br /><br /> [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]) has a nodeId. Each node ID must be unique and can be a category or an operation. The category can have subcategories. **Note:**  If null or an empty string (""), operations are retrieved from the root node ("/") by default.|  
-|childStartIndex|The index of the first child to return.<br /><br /> Not supported by the Echo adapter.|  
-|maxChildNodes|The maximum number of result nodes to return. Use Int32.Max to retrieve all result nodes.<br /><br /> Not supported by the Echo adapter.|  
-|timeout|The maximum time allowed for the operation to complete.<br /><br /> Not supported by the Echo adapter.|  
+| <strong>Parameter</strong> |                                                                                                                                                                                                                                <strong>Definition</strong>                                                                                                                                                                                                                                 |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           nodeId           | Each item in the hierarchy of the metadata explorer (the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and<br /><br /> [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]) has a nodeId. Each node ID must be unique and can be a category or an operation. The category can have subcategories. <strong>Note:</strong>  If null or an empty string (""), operations are retrieved from the root node ("/") by default. |
+|      childStartIndex       |                                                                                                                                                                                                   The index of the first child to return.<br /><br /> Not supported by the Echo adapter.                                                                                                                                                                                                   |
+|       maxChildNodes        |                                                                                                                                                                          The maximum number of result nodes to return. Use Int32.Max to retrieve all result nodes.<br /><br /> Not supported by the Echo adapter.                                                                                                                                                                          |
+|          timeout           |                                                                                                                                                                                           The maximum time allowed for the operation to complete.<br /><br /> Not supported by the Echo adapter.                                                                                                                                                                                           |
   
  When implementing the `Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A` method, you must add every category and operation node to the array of `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` objects. To specify a node as category, set the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A` to `false`. To specify a node as operation, set the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.IsOperation%2A` to `true`.  
   
@@ -103,19 +103,19 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
             inOpNode1.IsOperation = true;  
 ```  
   
- When the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] tools explore the Echo adapter metadata, by default, it starts from the root node ("/").  
+ When the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] tools explore the Echo adapter metadata, by default, it starts from the root node ("/").  
   
  The following figure shows that the EchoMainCategory node appears under the root node ("/"):  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
   
- To browse the three outbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Client (Outbound operations)** option. You see those operations in the **Available categories and operations** list box, as shown below:  
+ To browse the three outbound operations, in the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the <strong>Select contract type</strong> drop-down list,select the <strong>Client (Outbound operations)</strong> option. You see those operations in the <strong>Available categories and operations</strong> list box, as shown below:  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/c8755805-cbb0-40f1-887a-a3123f71ae7e.gif "c8755805-cbb0-40f1-887a-a3123f71ae7e")  
   
  In the previous figure, notice that the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A` value appears in the **Name** column of the **Available categories and operations** list box. The parameter passed into the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode` constructor appears in the **Node ID** column of the **Available categories and operations** list box, and the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.Description%2A` value appears as the tool tip that contains the description, when you right-click the `Microsoft.ServiceModel.Channels.MetadataRetrievalNode.DisplayName%2A`.  
   
- To see the inbound operations, in the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the **Select contract type** drop-down list,select the **Service (Inbound operations)** option. You see the inbound OnReceiveEcho operation in the **Available categories and operations** list box, as shown in the following figure:  
+ To see the inbound operations, in the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] tool, in the <strong>Select contract type</strong> drop-down list,select the <strong>Service (Inbound operations)</strong> option. You see the inbound OnReceiveEcho operation in the <strong>Available categories and operations</strong> list box, as shown in the following figure:  
   
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb.gif "26b7b3c7-bc39-46f8-bc73-7d76fd3c02eb")  
   

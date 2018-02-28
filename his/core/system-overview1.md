@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # System Overview
-This topic outlines key points of the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] implementation of the IP-DLC link service.  
+This topic outlines key points of the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] implementation of the IP-DLC link service.  
   
 -   The IP-DLC link service is configured and managed by the Host Integration Server administrator as for any other link service.  
   

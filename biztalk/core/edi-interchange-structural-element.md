@@ -26,4 +26,4 @@ The interchange is the highest-level structural element of an EDI message. It co
  The Interchange Trailer has an element that indicates the number of groups within the interchange.  
   
 > [!NOTE]
->  The functional security header, functional assurance header, functional security value segment, and functional security trailer segments are beyond the scope of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2. If an interchange with these segments is received, it will be suspended with an error log indicating that these are unidentified segments.
+>  The functional security header, functional assurance header, functional security value segment, and functional security trailer segments are beyond the scope of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2. If an interchange with these segments is received, it will be suspended with an error log indicating that these are unidentified segments.

@@ -39,7 +39,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Database Structure and Jobs
-This topic discusses the database structure and database jobs for [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This topic discusses the database structure and database jobs for [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## Database Write Diagram  
  The following figure shows the processes and entities that write to the BizTalk Server databases.  
@@ -49,7 +49,7 @@ This topic discusses the database structure and database jobs for [!INCLUDE[btsB
         Database write diagram showing the processes and entities that write to the BizTalk Server databases  
   
 ## BizTalk Server Database Jobs  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes the following SQL Server Agent jobs to assist you in managing the BizTalk Server databases:  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes the following SQL Server Agent jobs to assist you in managing the BizTalk Server databases:  
   
 > [!NOTE]
 >  The names of the jobs change depending on the database names given during configuration. If you have deployed multiple MessageBox databases in your environment, there will be several jobs for each MessageBox.  

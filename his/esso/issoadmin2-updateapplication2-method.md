@@ -15,53 +15,53 @@ manager: "anneta"
 ---
 # ISSOAdmin2.UpdateApplication2 Method
 The UpdateApplication2 method updates the application information in the Enterprise Single Sign-On (SSO) server database.  
-  
+
 ## Syntax  
-  
+
 ```vb  
-  
+
 UpdateApplication2(  
 applicationName As String,  
 appInfoProps As object  
 );  
 ```  
-  
+
 ```cpp#  
-  
+
 void UpdateApplication2(  
 string applicationName,   
 IPropertyBag appInfoProps  
 );  
 ```  
-  
+
 #### Parameters  
  `applicationName`  
-  
+
  String containing the new application name.  
-  
+
  `appInfoProps`  
-  
+
  IPropertyBag containing additional application information properties. For more information, see below.  
-  
+
 ## Property Value/ Return Value  
  [C++] This method returns an HRESULT indicating whether it completed successfully. For more details, see the Error Values section.  
-  
+
  [Visual Basic] Not Applicable.  
-  
+
 ## Exceptions  
  [C++] This method returns an HRESULT containing one of the values in the following table.  
-  
+
  [Visual Basic] This method indicates errors by setting the Number property of the global Err object to one of the values in the following table.  
-  
+
 |Value|Description|  
 |-----------|-----------------|  
 |S_OK|The method succeeded|  
 |E_ACCESSDENIED|Access is denied to the caller.|  
 |E_INVALIDREG|An invalid parameter was detected.|  
-  
+
 ## Remarks  
  The following table describes the accepted values for appInfoProps:  
-  
+
 |propName|Type|ptrValue|  
 |--------------|----------|--------------|  
 |Contact|VT_BSTR|Contact name|  
@@ -70,9 +70,9 @@ IPropertyBag appInfoProps
 |appUserAccount|VT_BSTR|Application user account|  
 |windowsAccount|VT_BSTR|Windows account|  
 |appTicketTimeout|VT_UI4|Application ticket timeout|  
-  
+
  In addition, individual flags may also use the following values:  
-  
+
 |propName|Type|ptrValue|  
 |--------------|----------|--------------|  
 |enableApp|VT_BOOL|Enable application|  
@@ -98,10 +98,12 @@ IPropertyBag appInfoProps
 |restrictMappingCreate|VT_BOOL|Restrict mapping create|  
 |windowsInitiatedSSO|VT_BOOL|Windows-initiated SSO|  
 |disableCredCache|VT_BOOL|Disable credentials cache|  
-  
+
  In addition, you may directly specify flags using the following properties:  
-  
-|propName|Type|ptrValue|  
-|--------------|----------|--------------|  
-|flags|VT_UI4|Flags to specify|  
-|flagsMask|VT_UI4|Flag mask to specify|
+
+
+| propName  |  Type  |       ptrValue       |
+|-----------|--------|----------------------|
+|   flags   | VT_UI4 |   Flags to specify   |
+| flagsMask | VT_UI4 | Flag mask to specify |
+

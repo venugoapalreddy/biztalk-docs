@@ -58,8 +58,8 @@ class MsSna_PrintSessionAppc : MsSna_PrintSession
   
  The remote LU alias. Valid only if a fully qualified name is not provided.  
   
- **RemoteFQName**  
- Data Type: **String** Qualifiers: **MAXLEN(17)**Access Type: Read/Write  
+ <strong>RemoteFQName</strong>  
+ Data Type: <strong>String</strong> Qualifiers: <strong>MAXLEN(17)</strong>Access Type: Read/Write  
   
  The remote LU fully qualified name. Valid only if **RemoteLUAlias** and **LocalLUAlias** are not provided.  
   
@@ -78,8 +78,8 @@ class MsSna_PrintSessionAppc : MsSna_PrintSession
   
  The name of the mode to use. The default mode name is QPCSUPP.  
   
- **UserId**  
- Data Type: **String** Qualifiers: **MAXLEN(10)**Access Type: Read/Write  
+ <strong>UserId</strong>  
+ Data Type: <strong>String</strong> Qualifiers: <strong>MAXLEN(10)</strong>Access Type: Read/Write  
   
  The remote user name.  
   

@@ -63,11 +63,11 @@ This section contains topics that describe known issues with BizTalk Server AS2 
 ## When Receiving Multipart Messages, the First Part is Considered the Body  
  **Symptom**  
   
- When receiving a multipart AS2 message, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may incorrectly identify one of the attachments as the message body.  
+ When receiving a multipart AS2 message, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may incorrectly identify one of the attachments as the message body.  
   
  **Possible Cause**  
   
- The MIME header of a multipart/related message may contain an optional ‘start’ parameter that indicates which of the parts should be treated as the body of the message by specifying the Content-ID of the part. If the start parameter is not present, the first part should be considered the body of the message. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not honor the start parameter if it is present, and will always treat the first part as the body of the message.  
+ The MIME header of a multipart/related message may contain an optional ‘start’ parameter that indicates which of the parts should be treated as the body of the message by specifying the Content-ID of the part. If the start parameter is not present, the first part should be considered the body of the message. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not honor the start parameter if it is present, and will always treat the first part as the body of the message.  
   
  **Resolution**  
   

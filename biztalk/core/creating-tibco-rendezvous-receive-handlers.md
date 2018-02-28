@@ -16,7 +16,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Create TIBCO Rendezvous Receive artifacts
-Creating notifications or events is similar to creating other calls in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. This section explains how to create a receive location to listen for TIBCO Rendezvous messages.  
+Creating notifications or events is similar to creating other calls in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. This section explains how to create a receive location to listen for TIBCO Rendezvous messages.  
 
 ## Events and Receive Locations
 Any TIBCO Rendezvous system can send messages to their subject name of choice. The concept of *event* is the generation of messages by other TIBCO Rendezvous programs.  
@@ -34,8 +34,8 @@ Any TIBCO Rendezvous system can send messages to their subject name of choice. T
 5.  Receive location receives messages.  
   
 > [!IMPORTANT]
->  Each receive location must have a unique name. Two receive locations cannot have the same name in the same [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployment.  
-  
+>  Each receive location must have a unique name. Two receive locations cannot have the same name in the same [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployment.  
+> 
 > [!IMPORTANT]
 >  It is recommended that you set strong access control lists (ACL) in the receive locations drop locations. For example, you must set strong ACLs for the directory where the file receive location picks up messages, so that only authorized users can drop messages in this location. 
 

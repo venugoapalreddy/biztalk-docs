@@ -92,7 +92,7 @@ svcutil.exe /t:metadata http://service/metadataendpoint
 The channel received an unexpected input message while closing. Your Channel.Close() calls are not synchronized.  
 ```  
   
- You will receive an error message similar to the following when consuming the WCF services specified with the **IsOneWay** property set to **true**. The messages you sent from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will be suspended and resumable.  
+ You will receive an error message similar to the following when consuming the WCF services specified with the <strong>IsOneWay</strong> property set to <strong>true</strong>. The messages you sent from [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will be suspended and resumable.  
   
 ```  
 The request operation at net.tcp://localhost:8088/MyService/tcp did not receive a reply within timeout 00:01:00.  
@@ -130,7 +130,7 @@ System.IO.IOException: Unable to write data to the transport connection: An esta
 8.  You may need to configure additional properties as needed.  
   
 ## BizTalk Server does not work with WCF clients that using ClientViaBehavior for multiple-hop conversations  
- WCF clients use ClientViaBehavior when the immediate network destination is not the intended processor of the message to enable multiple-hop conversations when the calling application does not necessarily know the ultimate destination. If you specify the ClientViaBehavior and set the To address to a remote service where [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will be acting as an intermediary, you will receive the error message similar to the following:  
+ WCF clients use ClientViaBehavior when the immediate network destination is not the intended processor of the message to enable multiple-hop conversations when the calling application does not necessarily know the ultimate destination. If you specify the ClientViaBehavior and set the To address to a remote service where [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will be acting as an intermediary, you will receive the error message similar to the following:  
   
 ```  
 The message with To 'net.tcp://localhost:5555/test.svc' cannot be processed at the receiver, due to an AddressFilter mismatch at the EndpointDispatcher. Check that the sender and receiver's EndpointAddresses agree  

@@ -15,10 +15,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for Insert, Update, Delete, and Select Operations
-The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces basic Insert, Update, Delete, and Select operations for each interface table in Oracle E-Business Suite and each table in the underlying database. The adapter also surfaces the Select operation for each interface view in Oracle E-Business Suite and each view in the underlying database. These operations perform the appropriate SQL statement qualified by a WHERE clause. The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses strongly-typed records and record sets in these operations.  
+The [!INCLUDE [adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces basic Insert, Update, Delete, and Select operations for each interface table in Oracle E-Business Suite and each table in the underlying database. The adapter also surfaces the Select operation for each interface view in Oracle E-Business Suite and each view in the underlying database. These operations perform the appropriate SQL statement qualified by a WHERE clause. The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses strongly-typed records and record sets in these operations.  
   
 ## Message Structure for Basic Operations  
- The following table shows the XML message structure for the basic operations exposed by the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] on Oracle E-Business Suite interface tables and interface views and on the underlying database tables and views. The target object for an operation is specified in the message action and also appears in the target namespace.  
+ The following table shows the XML message structure for the basic operations exposed by the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] on Oracle E-Business Suite interface tables and interface views and on the underlying database tables and views. The target object for an operation is specified in the message action and also appears in the target namespace.  
   
 > [!NOTE]
 >  See attribute descriptions after table.  
@@ -54,7 +54,7 @@ The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinessl
 >  The message structure for the basic operations on interface views, database tables, and database views is the same as that on interface tables, but the namespace for the operation specifies an interface view, database table, or database view rather than an interface table.  
   
 ## Message Actions for Basic Operations  
- The following table shows the message actions that the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses for the basic operations on the interface tables and interface view in Oracle E-Business Suite, and the tables and views in the underlying database. The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the interface table, interface view, database table, or database view specified in the message action to determine the target of the operation.  
+ The following table shows the message actions that the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses for the basic operations on the interface tables and interface view in Oracle E-Business Suite, and the tables and views in the underlying database. The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the interface table, interface view, database table, or database view specified in the message action to determine the target of the operation.  
   
 > [!NOTE]
 >  See entity descriptions after table.  

@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Scripting Using External Assemblies
-Scripting with external assemblies is the preferred way to use scripting in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. External assemblies provide several advantages:  
+Scripting with external assemblies is the preferred way to use scripting in Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. External assemblies provide several advantages:  
   
 -   Easy code sharing  
   
@@ -29,7 +29,7 @@ Scripting with external assemblies is the preferred way to use scripting in Micr
 > [!NOTE]
 >  Test Map fails if the **Scripting** functoid uses an external assembly which is not registered in the GAC. It works if the external assembly is in the same bin folder as the current project's assembly (placed after build).  
   
- Re-using the script only requires setting the **Script** property of the **Scripting** functoid. Because the script is stored outside of the map, you can modify the script without changing the map. And you can use the full array of [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] debugging tools to ensure your script runs correctly.  
+ Re-using the script only requires setting the <strong>Script</strong> property of the <strong>Scripting</strong> functoid. Because the script is stored outside of the map, you can modify the script without changing the map. And you can use the full array of [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] debugging tools to ensure your script runs correctly.  
   
 > [!WARNING]
 >  The code in the external assembly must be thread-safe. Under stress conditions, multiple instances of a map may be running concurrently.  

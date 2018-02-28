@@ -26,7 +26,7 @@ The Business Process Management solution uses two kinds of exceptions: system ex
  The order processing stages (**CableOrder1**, **CableOrder2**) and their satellite orchestrations (**Activate**, **Analyze**, **Cancel**, **Change**, **Complete**, **Validate**) all use **ExceptionHandlerOrch**.  
   
 > [!NOTE]
->  You may want to read this section with the **ExceptionHandlerOrch** orchestration open in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+>  You may want to read this section with the <strong>ExceptionHandlerOrch</strong> orchestration open in Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
 ## Application Errors  
  The exception handler first logs the error by calling the **PostError** method of the **ErrorHandler** object in the **Utilities** assembly. The exception handler then tests whether the error was a system error or an application error. The following screenshot shows the orchestration branch that processes application exceptions:  

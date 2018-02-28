@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Windows SharePoint Services Adapter Walkthroughs
-This section consists of three walkthroughs. The first shows you how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send and receive messages using the Windows SharePoint Services adapter and content-based routing (CBR). The second shows you how to integrate BizTalk Server with Microsoft Office. The third shows you how to access the Windows SharePoint Services context properties of an incoming message at run time and then determine the destination of that message based on a property using dynamic ports in an orchestration.  
+This section consists of three walkthroughs. The first shows you how to configure [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send and receive messages using the Windows SharePoint Services adapter and content-based routing (CBR). The second shows you how to integrate BizTalk Server with Microsoft Office. The third shows you how to access the Windows SharePoint Services context properties of an incoming message at run time and then determine the destination of that message based on a property using dynamic ports in an orchestration.  
   
 ## In This Section  
   

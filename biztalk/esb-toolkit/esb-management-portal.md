@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # ESB Management Portal
-The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes a comprehensive Web-based exception and fault message management framework that promotes consistent handling of both system and business exceptions. The included portal serves as a sample of how a portal application can provide metrics and visibility into ESB activities.  
+The [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] includes a comprehensive Web-based exception and fault message management framework that promotes consistent handling of both system and business exceptions. The included portal serves as a sample of how a portal application can provide metrics and visibility into ESB activities.  
   
  The ESB Management Portal provides exception mediation capabilities through an auditing and tracking mechanism. It also captures messages (including the context properties) that were "in flight" at the time that the exception occurred. This enables powerful exception recovery and "repair and resubmit" patterns.  
   

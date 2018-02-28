@@ -15,11 +15,11 @@ manager: "anneta"
 ---
 # ISSOConfigOM.GetServerStatus
 The **GetServerStatus** method describes the status of the current server.  
-  
+
 ## Syntax  
-  
+
 ```vb  
-  
+
 GetServerStatus(  
 flags As Integer,   
 ssoServerName As String,   
@@ -38,11 +38,11 @@ auditLevelP As Integer,
 passwordSyncAge As Integer,   
 statusFlags As Integer  
 );  
-  
+
 ```  
-  
+
 ```cpp#  
-  
+
 HRESULT GetServerStatus(  
 int flags,   
 BSTR ssoServerName,   
@@ -62,9 +62,9 @@ int passwordSyncAge,
 int statusFlags  
 );  
 ```  
-  
+
 #### Parameters  
-  
+
 |Parameter|Description|  
 |---------------|-----------------|  
 |`flags`|Not used in this version. Should be set to zero.|  
@@ -83,19 +83,21 @@ int statusFlags
 |`auditLevelP`|Returns an integer containing the positive audit level.|  
 |`passwordSyncAge`|Returns an integer containing the password sync age.|  
 |`statusFlags`|Returns an integer containing the status flags. For more information, see SSOStatusFlags.|  
-  
+
 ## Property Value/Return Value  
  [C++] This method returns an HRESULT indicating whether it completed successfully. For more details, see the Error Values section.  
-  
+
  [Visual Basic] Not Applicable.  
-  
+
 ## Exceptions  
  [C++] This method returns an HRESULT containing one of the values in the following table.  
-  
+
  [Visual Basic] This method indicates errors by setting the Number property of the global Err object to one of the values in the following table.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|S_OK|The method succeeded.|  
-|E_ACCESSDENIED|Access is denied to the caller.|  
-|E_INVALIDREG|An invalid parameter was detected.|
+
+
+|     Value      |            Description             |
+|----------------|------------------------------------|
+|      S_OK      |       The method succeeded.        |
+| E_ACCESSDENIED |  Access is denied to the caller.   |
+|  E_INVALIDREG  | An invalid parameter was detected. |
+

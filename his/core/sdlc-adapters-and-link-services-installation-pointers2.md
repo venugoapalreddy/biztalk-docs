@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # SDLC Adapters and Link Services: Installation Pointers
-An SDLC link service enables the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] software to communicate with the SDLC adapter. For detailed information about using a particular SDLC adapter or a particular modem (or DCE), see the adapter, modem, or DCE documentation.  
+An SDLC link service enables the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] software to communicate with the SDLC adapter. For detailed information about using a particular SDLC adapter or a particular modem (or DCE), see the adapter, modem, or DCE documentation.  
   
  The following pointers highlight important steps for installing an SDLC adapter and link service:  
   

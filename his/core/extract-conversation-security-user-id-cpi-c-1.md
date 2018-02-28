@@ -20,7 +20,7 @@ The **Extract_Conversation_Security_User_ID** call (function name **cmecsu**) re
   
 ```  
   
-CM_ENTRY Extract_Conversation_Security_User_ID(   
+CM_ENTRY Extract_Conversation_Security_User_ID(   
   unsigned char FAR *conversation_ID,    
   unsigned char FAR *security_user_ID,    
   CM_INT32 FAR *security_user_ID_length,    

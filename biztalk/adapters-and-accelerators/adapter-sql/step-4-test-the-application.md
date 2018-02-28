@@ -68,7 +68,7 @@ manager: "anneta"
  Tested the SampleApplication application by inserting a record in the **Employee** table.  
   
 ## Next Steps  
- If the test worked, congratulations! You have completed the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] tutorial.  
+ If the test worked, congratulations! You have completed the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] tutorial.  
   
  If the test did not work, carefully check your work to make sure that you added all of the necessary objects and set their properties correctly.  
   

@@ -31,8 +31,8 @@ manager: "anneta"
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of configured downstream LUs.  
@@ -52,8 +52,8 @@ manager: "anneta"
  Causes the display of the **snacfg** command that would create the specified downstream LU. The displayed command does not contain the word **snacfg**, so it can be redirected to a command file. See the information about command files earlier in this section.  
   
 ## Options for Downstream LUs  
- **/connection:**connectionname  
- Specifies the connection to which the downstream LU should be assigned or moved. When **/add** is used, this option is required.  
+ <strong>/connection:</strong>connectionname  
+ Specifies the connection to which the downstream LU should be assigned or moved. When <strong>/add</strong> is used, this option is required.  
   
  **/lunumber:** *value*  
  Specifies the LU number, which identifies the LU on its connection. When **/add** is used, this option is required. Check with the administrator of the host system for the correct value; it should match the LOCADDR= parameter of the LU definition in VTAM or in the NCP Gen.  

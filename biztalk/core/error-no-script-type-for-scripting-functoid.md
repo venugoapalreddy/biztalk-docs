@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then set the appropriate values in the **Configure Functoid Script** dialog box, including the **Script Type** property.
+ Select the indicated <strong>Scripting</strong> functoid, click the ellipsis (<strong>...</strong>) button associated with the <strong>Script</strong> property in the Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then set the appropriate values in the <strong>Configure Functoid Script</strong> dialog box, including the <strong>Script Type</strong> property.

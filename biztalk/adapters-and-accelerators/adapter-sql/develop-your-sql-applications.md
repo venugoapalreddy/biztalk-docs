@@ -18,22 +18,22 @@ manager: "anneta"
 # Develop your SQL applications
 
 ## Overview
-The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] is a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] binding. Client applications can consume the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] to invoke operations on SQL Server artifacts. The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] can be consumed:  
+The [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] is a [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] binding. Client applications can consume the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] to invoke operations on SQL Server artifacts. The [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] can be consumed:  
   
--   Through a physical port binding in a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.  
+- Through a physical port binding in a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.  
   
--   By invoking methods on an instance of a client proxy.  
+- By invoking methods on an instance of a client proxy.  
   
--   As a hosted WCF service.  
+- As a hosted WCF service.  
   
--   By sending SOAP messages over a channel instance in code that uses the WCF channel model.  
+- By sending SOAP messages over a channel instance in code that uses the WCF channel model.  
 
 ## BizTalk vs WCF service vs WCF channel    
  The following table:  
   
--   Lists the different operations that can be performed on SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
+- Lists the different operations that can be performed on SQL Server using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
   
--   Provides links to the topics containing information about performing the task using the chosen approach ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], WCF service model, WCF channel model).  
+- Provides links to the topics containing information about performing the task using the chosen approach ([!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], WCF service model, WCF channel model).  
   
 |Task|BizTalk Server|WCF Service Model|WCF Channel Model|  
 |----------|--------------------|-----------------------|-----------------------|  
@@ -50,7 +50,7 @@ The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] is a [!INCLUDE[first
 |Receiving SQL Server notifications|[Receive SQL Query Notifications using BizTalk Server](receive-sql-query-notifications-using-biztalk-server.md)|[Receive Query Notifications from SQL using the WCF Service Model](receive-query-notifications-from-sql-using-the-wcf-service-model.md)|-|  
 
 ## Next steps  
- The topics in this section provide information, procedures, and examples to help you develop applications that consume the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] in both [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and .NET programming solutions. 
+ The topics in this section provide information, procedures, and examples to help you develop applications that consume the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] in both [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and .NET programming solutions. 
 
 - [Create a connection to SQL Server](create-a-connection-to-sql-server.md)
 - [Get metadata for SQL Server operations in Visual Studio](get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)

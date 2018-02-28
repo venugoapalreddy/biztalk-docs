@@ -23,7 +23,7 @@ manager: "anneta"
 # LOBApplication
 You use the LOBApplication utility to submit an action or response message to a trading partner, simulating an actual line-of-business (LOB) desktop program.  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] provides sample messages in the \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances folder.  
+ [!INCLUDE [btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE [BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] provides sample messages in the \<<em>drive</em>\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances folder.  
   
 ## Location in SDK  
  \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBApplication  
@@ -59,7 +59,7 @@ You use the LOBApplication utility to submit an action or response message to a 
 ## Remarks  
  The LOBApplication utility creates a message with the properties specified, and sends it to the trading partner. This utility writes the service content data in the message to the BTARNDATA database, in the MessageFromLOB table. This utility simulates sending an action message.  
   
- The sample messages in the SampleInstances folder under the LOBApplication folder in the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK are preconfigured to assume the following Global Business Identifiers (GBIs): 123456789 for the home organization and 987654321 for the partner organization. You must change the sample messages in a text editor to use other GBIs.  
+ The sample messages in the SampleInstances folder under the LOBApplication folder in the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK are preconfigured to assume the following Global Business Identifiers (GBIs): 123456789 for the home organization and 987654321 for the partner organization. You must change the sample messages in a text editor to use other GBIs.  
   
  You use the LOBApplication utility to simulate a line-of-business desktop program submitting a message. You use the LOBWebApplication utility to simulate a line-of-business Web application submitting a message.  
   

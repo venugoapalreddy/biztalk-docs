@@ -19,7 +19,7 @@ The **ISSOConfigStore** interface provides administration functions for the Ente
 ## Requirements  
  **Type Library:** SSOConfigStore 1.0 Type Library (SSOConfigStore.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [Programming with Enterprise Single Sign-On](../esso/programming-with-enterprise-single-sign-on.md)

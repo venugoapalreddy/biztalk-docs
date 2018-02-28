@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # SFT in HL7 Messages
-[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] supports adding software segments (SFT) to messages. SFT segments provide additional information about the software products used as sending applications. SFT segments are primarily used for diagnostics. As a part of the HL7 v2.5 standard, SFT segments are displayed in the application acknowledgement.  
+[!INCLUDE [HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] supports adding software segments (SFT) to messages. SFT segments provide additional information about the software products used as sending applications. SFT segments are primarily used for diagnostics. As a part of the HL7 v2.5 standard, SFT segments are displayed in the application acknowledgement.  
   
 ## Message instance with SFT segment  
  Use the following procedure to create an ADT^A01.txt message with an SFT segment.  

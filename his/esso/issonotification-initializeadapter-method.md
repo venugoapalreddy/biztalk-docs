@@ -79,7 +79,7 @@ GUID* guidTrackingId);
  In the case of a reconnect, a new tracking ID is returned from the **InitializeAdapter**. ENTSSO returns a new tracking ID because the tracking ID returned from **InitializeAdapter** can be considered a session ID. Further, ENTSSO reissues any pending (but unconfirmed) notifications to the adapter.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSONotification Interface (COM)](../esso/issonotification-interface-com.md)   

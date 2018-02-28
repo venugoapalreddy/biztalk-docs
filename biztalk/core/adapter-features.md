@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # TIBCO EMS Adapter Features
-Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) enables you to publish and subscribe to queues and topics managed by TIBCO EMS, using BizTalk Server and the TIBCO SDK. The adapter integrates TIBCO EMS messages in a fast, easy, and reliable way. It exchanges XML data formats between TIBCO EMS servers and Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to provide a tightly integrated and reliable application infrastructure. It provides transmit and receive adapter integration operations providing end-to-end business-process management using XML schemas.  
+Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) enables you to publish and subscribe to queues and topics managed by TIBCO EMS, using BizTalk Server and the TIBCO SDK. The adapter integrates TIBCO EMS messages in a fast, easy, and reliable way. It exchanges XML data formats between TIBCO EMS servers and Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to provide a tightly integrated and reliable application infrastructure. It provides transmit and receive adapter integration operations providing end-to-end business-process management using XML schemas.  
   
 ## Data Validation  
  BizTalk Adapter for TIBCO EMS runs in-process with the BizTalk Server host as a native, tightly integrated adapter and validates port configuration at the time of configuration. It validates the data as much as possible--for example, valid name, valid number, valid in range. It does not try to make a connection. Therefore, the host, port destination, user, and password are not validated until there is a run-time call, in which case an error is logged.  
@@ -23,7 +23,7 @@ Microsoft BizTalk Adapter for TIBCO Enterprise Message Service (EMS) enables you
 ## Message Delivery  
  BizTalk Adapter for TIBCO EMS guarantees one-time-only delivery of messages. Messages that do not reach EMS are marked as retryable when suspended. There can be some exceptions to this, for example, when an invalid port configuration exists at the time of execution.  
   
- The adapter accepts text EMS message types.  The adapter supports transactions for messages going to EMS, and the transaction support is controlled by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+ The adapter accepts text EMS message types.  The adapter supports transactions for messages going to EMS, and the transaction support is controlled by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 > [!NOTE]
 >  The connection between BizTalk Adapter for TIBCO EMS and the EMS server is not secure. It is not supported by the provided TIBCO EMS SDK.  

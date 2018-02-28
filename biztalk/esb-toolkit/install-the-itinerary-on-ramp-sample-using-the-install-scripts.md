@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Install the Itinerary On-Ramp Sample Using the Install Scripts
-This section describes how you can install the Itinerary On-Ramp sample from the install scripts provided with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+This section describes how you can install the Itinerary On-Ramp sample from the install scripts provided with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)].  
   
 ### To install the Itinerary On-Ramp sample from the install scripts  
   

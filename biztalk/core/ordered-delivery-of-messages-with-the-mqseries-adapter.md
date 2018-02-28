@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Ordered Delivery of Messages with the MQSeries Adapter
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides an **Ordered Delivery** option for static send ports. Setting the **Ordered Delivery** option on a send port to **True** ensures that BizTalk Server delivers messages to the send port in the same order that they are published to the BizTalk MessageBox database. To provide end-to-end ordered delivery the following conditions must be met:  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides an <strong>Ordered Delivery</strong> option for static send ports. Setting the <strong>Ordered Delivery</strong> option on a send port to <strong>True</strong> ensures that BizTalk Server delivers messages to the send port in the same order that they are published to the BizTalk MessageBox database. To provide end-to-end ordered delivery the following conditions must be met:  
   
 -   Messages must be received with an adapter that preserves the order of the messages when submitting them to BizTalk Server. For example, when receiving messages with the MQSeries receive adapter, the receive location should be configured with the option **Order with Stop** or **Order with Suspend**.  
   

@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Update a Map Using Side-by-Side Versioning
-Some BizTalk artifacts, such as maps, are chosen by fully-qualified strong name (FQSN), in which case the bindings include the version used. This allows two or more maps to coexist side by side in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. As a result, you can select one of the maps for inbound mapping in the receive location properties or outbound mapping in the send port properties.  
+Some BizTalk artifacts, such as maps, are chosen by fully-qualified strong name (FQSN), in which case the bindings include the version used. This allows two or more maps to coexist side by side in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. As a result, you can select one of the maps for inbound mapping in the receive location properties or outbound mapping in the send port properties.  
   
 ## Prerequisites  
  To perform the procedures in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.  

@@ -19,30 +19,30 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Managing BizTalk Hosts and Host Instances
-A [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Host is a logical set of zero or more [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] run-time processes in which you deploy items such as adapter handlers, receive locations (including pipelines), and orchestrations. For more information about hosts, see [Hosts](../core/hosts.md).  
+A [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Host is a logical set of zero or more [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] run-time processes in which you deploy items such as adapter handlers, receive locations (including pipelines), and orchestrations. For more information about hosts, see [Hosts](../core/hosts.md).  
   
- A host instance is the process where the message processing, receiving, and transmitting occurs. You install a host instance on each server running [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] that has one or more hosts mapped to that server. For more information about host instances, see [Host Instances](../core/host-instances.md).  
+ A host instance is the process where the message processing, receiving, and transmitting occurs. You install a host instance on each server running [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] that has one or more hosts mapped to that server. For more information about host instances, see [Host Instances](../core/host-instances.md).  
   
  Hosts have the following characteristics:  
   
--   Hosts are the logical containers of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] objects.  
+- Hosts are the logical containers of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] objects.  
   
--   Only one instance of a specific host can exist on each server.  
+- Only one instance of a specific host can exist on each server.  
   
--   You can map one host to multiple servers.  
+- You can map one host to multiple servers.  
   
- Host instances have the following characteristics:  
+  Host instances have the following characteristics:  
   
--   Host instances are the physical containers of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] objects.  
+- Host instances are the physical containers of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] objects.  
   
--   You create a host instance when you map a server to a host.  
+- You create a host instance when you map a server to a host.  
   
--   Multiple host instances (of different hosts) can exist on a server when load balancing or for failover.  
+- Multiple host instances (of different hosts) can exist on a server when load balancing or for failover.  
   
- The following figure shows the relationship between servers, hosts, and host instances.  
+  The following figure shows the relationship between servers, hosts, and host instances.  
   
- ![Hosts, host instances, and server relationships](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")  
-Relationship between hosts, host instances, and servers  
+  ![Hosts, host instances, and server relationships](../core/media/ebiz-ops-adm01.gif "ebiz_ops_adm01")  
+  Relationship between hosts, host instances, and servers  
   
 ## In This Section  
   

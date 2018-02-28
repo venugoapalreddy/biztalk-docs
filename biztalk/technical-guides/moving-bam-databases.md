@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Moving BAM Databases
-This section describes how to move the BAM-related [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases from one [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer to another.  
+This section describes how to move the BAM-related [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases from one [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer to another.  
   
 ## In This Section  
   

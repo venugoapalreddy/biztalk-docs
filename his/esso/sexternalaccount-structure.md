@@ -19,7 +19,7 @@ Describes an external account.
 ## Requirements  
  **Type Library:** SSOLookup 1.0 Type Library (SSOLookup.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SExternalAccount Members](../esso/sexternalaccount-members.md)   

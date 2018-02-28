@@ -21,9 +21,9 @@ manager: "anneta"
 ## A repaired message cannot be submitted if the envelope schema is not deployed  
   
 ### Symptom  
- When you attempt to submit a message that you have repaired, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] posts the following message:  
+ When you attempt to submit a message that you have repaired, [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] posts the following message:  
   
- "The adapter failed to transmit message going to send port "http://mrsrtest:80/StsWebReceive/default.aspx?PartnerId=Unparsed&FolderType=MessagesInbox". It will be retransmitted after the retry interval specified for this Send Port. Details:"80131600". For more information, see Help and Support Center at [http://go.microsoft.com/fwlink/?LinkId=142493](http://go.microsoft.com/fwlink/?LinkId=142493).  
+ "The adapter failed to transmit message going to send port "<http://mrsrtest:80/StsWebReceive/default.aspx?PartnerId=Unparsed&FolderType=MessagesInbox>". It will be retransmitted after the retry interval specified for this Send Port. Details:"80131600". For more information, see Help and Support Center at [http://go.microsoft.com/fwlink/?LinkId=142493](http://go.microsoft.com/fwlink/?LinkId=142493).  
   
 ### Possible Cause  
  The envelope schema is not deployed. This is true for any MT*xxx* message or any message that has failed parsing.  
@@ -45,7 +45,7 @@ manager: "anneta"
 ## Cannot loop back a message in a two-stage workflow  
   
 ### Symptom  
- If you reject a message in the Repair stage of a workflow that has only a Create stage and a Repair stage, the submission fails. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] routes the message back to the MessageBox and posts the following error message:  
+ If you reject a message in the Repair stage of a workflow that has only a Create stage and a Repair stage, the submission fails. [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] routes the message back to the MessageBox and posts the following error message:  
   
  "Could not reset to the first stage in the workflow."  
   
@@ -85,7 +85,7 @@ manager: "anneta"
 ## A message created in MRSR site on a localized computer is not processed  
   
 ### Symptom  
- When a user working on an English version of A4SWIFT that is running on a localized platform creates a message in an [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form in MRSR, and submits the message successfully, the message appears to be consumed by the Message Repair and New Submission orchestration, but is not successfully processed. The message is submitted to the outbox, but is not picked up by the BizTalk adapter. No error or warning is posted in the Event Viewer, and there is no record of a running orchestration instance in HAT.  
+ When a user working on an English version of A4SWIFT that is running on a localized platform creates a message in an [!INCLUDE [btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form in MRSR, and submits the message successfully, the message appears to be consumed by the Message Repair and New Submission orchestration, but is not successfully processed. The message is submitted to the outbox, but is not picked up by the BizTalk adapter. No error or warning is posted in the Event Viewer, and there is no record of a running orchestration instance in HAT.  
   
 ### Possible Cause  
  The path entered as the URI for the STS.Outbox receive location contains the English name, not the localized name.  
@@ -111,7 +111,7 @@ manager: "anneta"
  When you remove a role in the Profile Web Client, a dialog box is posted indicating that all documents and artifacts associated with the role will be removed. However, the role is not removed from the department in the A4SWIFT Management Console, and the role's document folders (Inbox and Sent Items) are not removed from MRSR. The party, send port, and agreement associated with the role are removed, and the profile of the role is undeployed.  
   
 ### Possible Cause  
- A message is still in the role's inbox in MRSR, and the message is open in its [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form.  
+ A message is still in the role's inbox in MRSR, and the message is open in its [!INCLUDE [btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] form.  
   
 ### Solution  
  Manually delete the message from the MRSR site inbox, and then delete the document library that is associated with the role that you were removing. Close the form and remove the role again.  

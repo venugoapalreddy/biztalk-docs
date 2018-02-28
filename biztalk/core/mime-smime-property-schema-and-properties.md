@@ -40,4 +40,4 @@ The **http://schemas.microsoft.com/BizTalk/2003/mime-properties** namespace cont
  [How to Configure the MIME-SMIME Encoder Pipeline Component](../core/how-to-configure-the-mime-smime-encoder-pipeline-component.md)   
  [Configuring Native Pipeline Components](../core/configuring-native-pipeline-components.md)   
  [MIME (BizTalk Server Sample)](../core/mime-biztalk-server-sample.md)   
- **Message Context Properties** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ <strong>Message Context Properties</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

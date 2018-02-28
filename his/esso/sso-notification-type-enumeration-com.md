@@ -38,7 +38,7 @@ __value public enum SSO_NOTIFICATION_FLAG
   
 ```js  
   
-            public   
+            public   
    Serializable  
 enum SSO_NOTIFICATION_FLAG  
 ```  
@@ -70,7 +70,7 @@ enum SSO_NOTIFICATION_FLAG
 ## Requirements  
  **Type Library:** SSOLookup 1.0 Type Library (SSOLookup.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [Programming with Enterprise Single Sign-On](../esso/programming-with-enterprise-single-sign-on.md)

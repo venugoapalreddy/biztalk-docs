@@ -18,7 +18,7 @@ manager: "anneta"
 The EDI receive pipeline and EDI send pipeline can perform cross field/segment validation on transaction-set data elements in X12-encoded messages. This validation is called relational conditions in X12. Cross field validation is expressed through annotations, and as a result, it is related to EDI validation.  
   
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not support EDIFACT dependency rules.  
+>  [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not support EDIFACT dependency rules.  
   
  For X12-encoded messages, you enable this validation by setting the X12ConditionDesignator_Check flag in the message schema to "Yes". This flag is in an annotation in the “appinfo” section of the schema. By default this flag is set to "No" and cross field\segment validation is not enabled for X12 schemas. For HIPAA schemas the default is set to “Yes” and cross field\segment validation is enabled.  
   

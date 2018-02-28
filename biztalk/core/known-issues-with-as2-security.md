@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Known Issues with AS2 Security
-This topic describes known issues with the security of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] AS2 solutions.  
+This topic describes known issues with the security of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] AS2 solutions.  
   
 ## The AS2 Decoder Will Not Validate that a Certificate Is Configured on the Host or for the Destination Party  
  The AS2 decoder will decrypt a message as long as the private certificate for that message is configured in the certificate store. However, the AS2 decoder will not validate that the decryption certificate is the same as the certificate configured on the host. The received message can be encrypted with more than one certificate.  

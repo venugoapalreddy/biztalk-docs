@@ -45,13 +45,13 @@ class MsSna_Lu3270 : MsSna_Resource
   
  The connection on which this LU is defined.  
   
- **Comment**  
- Data Type: **String**Qualifiers: **MAXLEN(25)**Access Type: Read/Write  
+ <strong>Comment</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>MAXLEN(25)</strong>Access Type: Read/Write  
   
  An optional comment field.  
   
- **PoolName**  
- Data Type: **String**Qualifiers: **MAXLEN(8)**Access Type: Read-Only  
+ <strong>PoolName</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>MAXLEN(8)</strong>Access Type: Read-Only  
   
  The pool name. **PoolName** is valid only if the LU has already been assigned to a pool.  
   

@@ -4,5 +4,5 @@ redirect_document_id: TRUE
 --- 
 
 # Siebel eBusiness Applications Adapter
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] no longer supports the Siebel eBusiness Applications Adapter. We recommend you use Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] to achieve the same functionality.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] no longer supports the Siebel eBusiness Applications Adapter. We recommend you use Microsoft [!INCLUDE [adapterpacknoversion](../includes/adapterpacknoversion-md.md)] to achieve the same functionality.  
   

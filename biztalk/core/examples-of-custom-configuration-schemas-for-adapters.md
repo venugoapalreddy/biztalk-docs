@@ -88,22 +88,22 @@ This section provides the following examples for how to customize configuration 
  This example uses the baf:designer and baf:description extensions to show how to create a custom property value window for the **BatchSize** property that only accepts values between 1 and 99, inclusive.  
   
 ```  
-   <xs:element name="BatchSize">  
-          <xs:simpleType>  
-            <xs:annotation>  
-              <xs:appinfo>  
-                <baf:designer>  
-                  <baf:displayname>Batch Size</baf:displayname>  
-                  <baf:description>Enter the batch size (1-99)</baf:description>  
-                </baf:designer>  
-              </xs:appinfo>  
-            </xs:annotation>  
-            <xs:restriction base="xs:int">  
-              <xs:minInclusive value="1" />  
-              <xs:maxInclusive value="99" />  
-            </xs:restriction>  
-          </xs:simpleType>  
-        </xs:element>  
+   <xs:element name="BatchSize">  
+          <xs:simpleType>  
+            <xs:annotation>  
+              <xs:appinfo>  
+                <baf:designer>  
+                  <baf:displayname>Batch Size</baf:displayname>  
+                  <baf:description>Enter the batch size (1-99)</baf:description>  
+                </baf:designer>  
+              </xs:appinfo>  
+            </xs:annotation>  
+            <xs:restriction base="xs:int">  
+              <xs:minInclusive value="1" />  
+              <xs:maxInclusive value="99" />  
+            </xs:restriction>  
+          </xs:simpleType>  
+        </xs:element>  
 ```  
   
 ## Example 3  
@@ -111,22 +111,22 @@ This section provides the following examples for how to customize configuration 
   
 ```  
 <xs:element name="AdapterPassword">  
-          <xs:simpleType>  
-            <xs:annotation>  
-              <xs:appinfo>  
-                <baf:designer>  
-                  <baf:displayname>Adapter Password</baf:displayname>  
-                  <baf:description>Enter the password (up to 8 characters)</baf:description>  
-                  <baf:editor assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordUITypeEditor</baf:editor>  
-                  <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordTypeConverter</baf:converter>  
-                </baf:designer>  
-              </xs:appinfo>  
-            </xs:annotation>  
-            <xs:restriction base="xs:string">  
-              <xs:maxLength value="8" />  
-            </xs:restriction>  
-          </xs:simpleType>  
-        </xs:element>  
+          <xs:simpleType>  
+            <xs:annotation>  
+              <xs:appinfo>  
+                <baf:designer>  
+                  <baf:displayname>Adapter Password</baf:displayname>  
+                  <baf:description>Enter the password (up to 8 characters)</baf:description>  
+                  <baf:editor assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordUITypeEditor</baf:editor>  
+                  <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordTypeConverter</baf:converter>  
+                </baf:designer>  
+              </xs:appinfo>  
+            </xs:annotation>  
+            <xs:restriction base="xs:string">  
+              <xs:maxLength value="8" />  
+            </xs:restriction>  
+          </xs:simpleType>  
+        </xs:element>  
 ```  
   
 ## Example 4  
@@ -137,17 +137,17 @@ This section provides the following examples for how to customize configuration 
  You can use the following code in the adapter property page configuration schemas.  
   
 ```  
-        <xs:element name="ClientIdentifier" type="xs:string">  
-          <xs:annotation>  
-            <xs:appinfo>  
-              <baf:designer>  
-                <baf:displayname>Adapter Client</baf:displayname>  
-                <baf:description>Enter the Adapter Client (3 digit string)</baf:description>  
-                <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.TestAdapter.dll">Microsoft.BizTalk.TestAdapter.ClientIdentifierConverter</baf:converter>  
-              </baf:designer>  
-            </xs:appinfo>  
-          </xs:annotation>  
-        </xs:element>  
+        <xs:element name="ClientIdentifier" type="xs:string">  
+          <xs:annotation>  
+            <xs:appinfo>  
+              <baf:designer>  
+                <baf:displayname>Adapter Client</baf:displayname>  
+                <baf:description>Enter the Adapter Client (3 digit string)</baf:description>  
+                <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.TestAdapter.dll">Microsoft.BizTalk.TestAdapter.ClientIdentifierConverter</baf:converter>  
+              </baf:designer>  
+            </xs:appinfo>  
+          </xs:annotation>  
+        </xs:element>  
 ```  
   
  You can place the following code in your adapter assembly.  
@@ -160,39 +160,39 @@ using System.Text.RegularExpressions;
   
 namespace Microsoft.BizTalk.TestAdapter  
 {  
-       /// <summary>  
-       /// Summary description for ClientIdentifierConverter.  
-       /// </summary>  
-       public class ClientIdentifierConverter : System.ComponentModel.StringConverter   
-       {  
-              private void Validate(string value)  
-              {  
-                     Regex regex = new Regex(@"^\d{3}$"); // ^=begin, \d=digit, {3}=exactly 3 occurrences, $=end  
-                     Match match = regex.Match((string)value);  
-                     if (!match.Success)  
-                     {  
-                           throw new ApplicationException("Value does not match pattern \"" + regex.ToString() + "\".");  
-                     }  
-              }  
+       /// <summary>  
+       /// Summary description for ClientIdentifierConverter.  
+       /// </summary>  
+       public class ClientIdentifierConverter : System.ComponentModel.StringConverter   
+       {  
+              private void Validate(string value)  
+              {  
+                     Regex regex = new Regex(@"^\d{3}$"); // ^=begin, \d=digit, {3}=exactly 3 occurrences, $=end  
+                     Match match = regex.Match((string)value);  
+                     if (!match.Success)  
+                     {  
+                           throw new ApplicationException("Value does not match pattern \"" + regex.ToString() + "\".");  
+                     }  
+              }  
   
-              public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)  
-              {  
-                     if (value is string)  
-                     {  
-                           this.Validate((string)value);  
-                     }  
-                     return base.ConvertFrom(context, culture, value);  
-              }  
+              public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)  
+              {  
+                     if (value is string)  
+                     {  
+                           this.Validate((string)value);  
+                     }  
+                     return base.ConvertFrom(context, culture, value);  
+              }  
   
-              public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)  
-              {  
-                     if (typeof(string) == destinationType && value is string)  
-                     {  
-                           this.Validate((string)value);  
-                     }  
-                     return base.ConvertTo(context, culture, value, destinationType);  
-              }  
-       }  
+              public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)  
+              {  
+                     if (typeof(string) == destinationType && value is string)  
+                     {  
+                           this.Validate((string)value);  
+                     }  
+                     return base.ConvertTo(context, culture, value, destinationType);  
+              }  
+       }  
 }  
 ```  
   

@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Administrative Operations
-This section documents procedures used by IT Professionals to maintain computer systems that [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] is installed on.  
+This section documents procedures used by IT Professionals to maintain computer systems that [!INCLUDE [A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] is installed on.  
   
  This section contains:  
   

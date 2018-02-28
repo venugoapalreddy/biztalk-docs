@@ -75,8 +75,8 @@ The following tabs are available on the 3270 LUA Properties Sheet:
   
  Printer LUs can be marked as associated instead of generic or specific. To associate a printer LU with a terminal LU, select this option and choose the **Associated LU** from the drop-down list box. When this option is checked, the **terminal name** will default to IBM-3287-1.  
   
- **Sessions**  
- This is the number of TN3270 sessions allowed for the selected LU or pool. The number of TN3270 sessions must not exceed the number of LUs listed under [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Resource Information.  
+ <strong>Sessions</strong>  
+ This is the number of TN3270 sessions allowed for the selected LU or pool. The number of TN3270 sessions must not exceed the number of LUs listed under [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Resource Information.  
   
  If you reduce the TN3270 Sessions limit to 0 (zero) TN3270 service will not assign the LU or pool.  
   

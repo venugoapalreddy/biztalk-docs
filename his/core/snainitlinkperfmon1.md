@@ -20,7 +20,7 @@ The **SNAInitLinkPerfmon** function initializes the Perfmon data structures and 
   
 ```  
   
-            void SNAInitLinkPerfmon(   
+            void SNAInitLinkPerfmon(   
     HANDLE *shrlockmutx,  
         void **shrptr  
 );  

@@ -18,15 +18,15 @@ manager: "anneta"
 # Manage Send Ports and Send Port Groups
 
 ## Overview
-This section provides instructions on using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to create, configure, and manage send ports and send port groups in a BizTalk application. A send port specifies the location to which messages are sent and optionally responses are received. Any time a message is sent to a send port, a new instance of the send port service is created, which is called a *service instance*.  
+This section provides instructions on using the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to create, configure, and manage send ports and send port groups in a BizTalk application. A send port specifies the location to which messages are sent and optionally responses are received. Any time a message is sent to a send port, a new instance of the send port service is created, which is called a <em>service instance</em>.  
   
  A send port group is a logical grouping of send ports. When a message is sent to a send port group, it is routed to all of the associated send ports.  For background information about send ports and send port groups, see [Send Ports and Send Port Groups](../core/send-ports-and-send-port-groups.md).  
   
 > [!NOTE]
->  You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks. For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
-  
+>  You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks. For information about using WMI, see the <strong>WMI Class Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+> 
 > [!NOTE]
->  While developing a BizTalk application, the developer can use BizTalk design tools in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], such as Orchestration Designer, to create and configure send ports and send port groups. For more information, see [Using Ports in Orchestrations](../core/using-ports-in-orchestrations.md).  
+>  While developing a BizTalk application, the developer can use BizTalk design tools in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], such as Orchestration Designer, to create and configure send ports and send port groups. For more information, see [Using Ports in Orchestrations](../core/using-ports-in-orchestrations.md).  
   
 ## Next steps
   

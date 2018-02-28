@@ -20,7 +20,7 @@ The **ExtractNextParameter** function is used to get the next parameter from a b
   
 ```  
   
-          BOOL ExtractNextParameter(   
+          BOOL ExtractNextParameter(   
 LPSTRszSourceBuffer,  
 LPSTRszParameter,  
 LPDWORDdStartIndex);  

@@ -14,14 +14,14 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Best Practices for Avoiding Bottlenecks
-While the default settings in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provide optimal performance for many hardware and software configurations, in some scenarios it may be beneficial to modify the settings or deployment configuration. When configuring [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], consider the following performance guidelines:  
+While the default settings in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provide optimal performance for many hardware and software configurations, in some scenarios it may be beneficial to modify the settings or deployment configuration. When configuring [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], consider the following performance guidelines:  
   
 -   To prevent resource contention, isolate receiving, orchestration, and sending on separate hosts. To further minimize contention, isolate the tracking service from other hosts.  
   
 -   If CPU processing on the computer running BizTalk Server is the bottleneck, scale up the computer running BizTalk Server by including additional CPUs or upgrading to faster CPUs.  
   
 ## SQL Server Guidelines  
- Consider the following performance guidelines when configuring Microsoft SQL Server with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
+ Consider the following performance guidelines when configuring Microsoft SQL Server with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   
 -   Whenever possible, use a fast disk subsystem with SQL Server. Use a redundant array of independent disks type 10 (RAID10/0+1) or a storage area network (SAN) with backup power supply.  
   

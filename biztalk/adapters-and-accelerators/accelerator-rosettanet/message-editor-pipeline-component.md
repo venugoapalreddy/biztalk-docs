@@ -26,21 +26,21 @@ This component lets you edit automatically any part of a multipart message withi
   
 #### To add the Message Editor Pipeline Component to an existing pipeline  
   
-1.  Start Visual Studio.  
+1. Start Visual Studio.  
   
-2.  On the **File** menu, point to **Open**, and then click **Project**.  
+2. On the **File** menu, point to **Open**, and then click **Project**.  
   
-3.  Move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component, select **MessageEditor.csproj**, and then click **Open**.  
+3. Move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component, select **MessageEditor.csproj**, and then click **Open**.  
   
-4.  Start Visual Studio command prompt.  
+4. Start Visual Studio command prompt.  
   
-5.  At the command prompt, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug.  
+5. At the command prompt, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug.  
   
-6.  At the command prompt, type **sn -k MessageEditor.snk** to create a key, and then press ENTER.  
+6. At the command prompt, type **sn -k MessageEditor.snk** to create a key, and then press ENTER.  
   
-7.  In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click **MessageEditor**, and then click **Properties**.  
+7. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click <strong>MessageEditor</strong>, and then click <strong>Properties</strong>.  
   
-8.  In the **MessageEditor Property** page, click **Signing** tab, and then click **Sign the assembly** checkbox.  
+8. In the **MessageEditor Property** page, click **Signing** tab, and then click **Sign the assembly** checkbox.  
   
 9. In **Choose a strong name key file** drop-down, browse to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\ SDK\Message Editor Pipeline Component\obj\debug and select **MessageEditor.snk** and then click **Open**.  
   
@@ -48,11 +48,11 @@ This component lets you edit automatically any part of a multipart message withi
   
 11. Click **Start**, point to **All Programs**, point to **Accessories**, and then click **Windows Explorer**.  
   
-12. In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug, right-click **Microsoft.Solutions.BTARN.SDK.MessageEditor.dll**, and then click **Copy**.  
+12. In [!INCLUDE [btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Editor Pipeline Component\obj\debug, right-click <strong>Microsoft.Solutions.BTARN.SDK.MessageEditor.dll</strong>, and then click <strong>Copy</strong>.  
   
 13. Move to C:\Program Files\Microsoft BizTalk Server 2013\Pipeline Components, right-click **Pipeline Components**, and then click **Paste**.  
   
-14. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the **File** menu, point to **Open**, and then click **Project**.  
+14. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the <strong>File</strong> menu, point to <strong>Open</strong>, and then click <strong>Project</strong>.  
   
 15. Open the project that contains the pipeline to which you want to add the editor.  
   
@@ -69,7 +69,7 @@ This component lets you edit automatically any part of a multipart message withi
     > [!NOTE]
     >  It is recommended that you add the Message Editor Pipeline Component after the Disassemble stage in the receive pipeline component or in the Pre-Assemble stage of the send pipeline component.  
   
-21. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Pipeline Designer, select the **BTARN Message Editor Component** shape.  
+21. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Pipeline Designer, select the <strong>BTARN Message Editor Component</strong> shape.  
   
 22. In the Properties pane, in the text box associated with **XPath Query**, type the name of the XPath element for which you want to change the value.  
   

@@ -27,7 +27,7 @@ public: BSTR psaNewExternalCredentials;
  Must be freed after use.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SPasswordChange Structure (COM)](../esso/spasswordchange-structure-com.md)   

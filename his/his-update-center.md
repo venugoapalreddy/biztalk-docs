@@ -58,7 +58,7 @@ These adapters are updated by the cumulative updates for HIS.
 #### HIS 2016
 
 -   [Cumulative Update 2](https://support.microsoft.com/help/4043569)
--   [Cumulative Update 1](https://support.microsoft.com/help/3216544) 
+-   [Cumulative Update 1](https://support.microsoft.com/help/3216544) 
 
 #### HIS 2013
 

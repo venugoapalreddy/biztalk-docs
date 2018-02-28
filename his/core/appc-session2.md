@@ -69,7 +69,7 @@ The following tabs are available on the Print Session 3270 Properties sheet:
  Select a manufacturer type and model number. If you cannot find the type and model number in the list you can type them in the box. If you do not know the manufacturer type and model number, see your system administrator or see the help on the AS/400.  
   
 > [!IMPORTANT]
->  You must enter an asterisk "**\***" before the manufacturer type and model number. Make sure there are no spaces between the asterisk, manufacturer type and model number, for example: *HPIIISI, or \*IBM3812.  
+>  You must enter an asterisk "<strong>\</strong>*" before the manufacturer type and model number. Make sure there are no spaces between the asterisk, manufacturer type and model number, for example: *HPIIISI, or \*IBM3812.  
   
  **Format Print Job**  
  Print jobs from a host system can be formatted one of two ways:  
@@ -139,8 +139,8 @@ The following tabs are available on the Print Session 3270 Properties sheet:
  **Init Status Delay**  
  Specify time limits. This is the delay between the time when TN3270 service connects to a host session and the time the TN3270 service starts updating the client computer screen. There are often a large number of startup messages when the TN3270 service first connects to a host session, and this option gives the user the opportunity not to receive them all.  
   
- **Message Close Delay**  
- Specify time limits. When TN3270 service forces a client computer to disconnect (for example, when the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] session to the host has been lost), it sends the client computer an error message to be displayed on the screen. This value specifies the time between sending the message to the client computer and closing the socket with the client computer (which causes some client computers to clear the screen, and so erase the message).  
+ <strong>Message Close Delay</strong>  
+ Specify time limits. When TN3270 service forces a client computer to disconnect (for example, when the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] session to the host has been lost), it sends the client computer an error message to be displayed on the screen. This value specifies the time between sending the message to the client computer and closing the socket with the client computer (which causes some client computers to clear the screen, and so erase the message).  
   
  **Refresh Cycle Time**  
  Specify time limits. This is the delay between updates of the status on the display.  

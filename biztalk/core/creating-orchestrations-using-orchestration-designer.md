@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Creating Orchestrations Using Orchestration Designer
-Orchestration in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] workflow  
+Orchestration in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] workflow  
   
  ![Orchestration in BizTalk Server](../core/media/ebiz-dev-busprcsf.gif "ebiz_dev_busprcsf")  
   

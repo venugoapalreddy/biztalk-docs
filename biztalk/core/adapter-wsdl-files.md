@@ -17,7 +17,7 @@ manager: "anneta"
 # Adapter WSDL Files
 In the Add Adapter Metadata Wizard the Web Services Description Language (WSDL) file is selected and input on the **Select Services to Import** page. The wizard reads the WSDL files exposed by the service and selected by the user. It then creates and adds an XSD file and an orchestration in the BizTalk project.  
   
- In the sample file adapter, the Service1.wsdl file contains the XSD definitions that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adds to the project. You may choose to modify the Service1.wsdl file or create your own WSDL file that contains the XSD definitions to add to your BizTalk project.  
+ In the sample file adapter, the Service1.wsdl file contains the XSD definitions that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] adds to the project. You may choose to modify the Service1.wsdl file or create your own WSDL file that contains the XSD definitions to add to your BizTalk project.  
   
  The following code is from the Service1.wsdl file:  
   

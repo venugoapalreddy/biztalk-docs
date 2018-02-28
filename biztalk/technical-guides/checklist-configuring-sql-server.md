@@ -46,11 +46,11 @@ Steps to follow when preparing SQL Server for use in a BizTalk Server production
 <a name="BKMK_Backup"></a>   
 ## Backing Up the BizTalk Server Databases  
   
-|Steps|Reference|  
-|-----------|---------------|  
-|Verify that the Backup BizTalk Server SQL Agent job is configured.|See [Configure the Backup BizTalk Server Job](../core/how-to-configure-the-backup-biztalk-server-job.md)|  
-|Configure the Backup BizTalk Server SQL Agent job to delete backup files that are older than the number of days specified by the @DaysToKeep variable. If the backup files are not deleted they can grow unbounded over time which can fill up the disk(s) that contain the backup files and cause problems that relate to limited disk space.|See [Configure the Backup BizTalk Server Job](../core/how-to-configure-the-backup-biztalk-server-job.md)|  
-|Verify that the Backup BizTalk Server SQL Agent job is enabled and running.|[Monitoring SQL Server Agent Jobs](monitoring-sql-server-agent-jobs.md)|  
+|                                                                                                                                                                     Steps                                                                                                                                                                      |                                                Reference                                                 |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|                                                                                                                                       Verify that the Backup BizTalk Server SQL Agent job is configured.                                                                                                                                       | See [Configure the Backup BizTalk Server Job](../core/how-to-configure-the-backup-biztalk-server-job.md) |
+| Configure the Backup BizTalk Server SQL Agent job to delete backup files that are older than the number of days specified by the @DaysToKeep variable. If the backup files are not deleted they can grow unbounded over time which can fill up the disk(s) that contain the backup files and cause problems that relate to limited disk space. | See [Configure the Backup BizTalk Server Job](../core/how-to-configure-the-backup-biztalk-server-job.md) |
+|                                                                                                                                  Verify that the Backup BizTalk Server SQL Agent job is enabled and running.                                                                                                                                   |                 [Monitoring SQL Server Agent Jobs](monitoring-sql-server-agent-jobs.md)                  |
   
 <a name="BKMK_Disaster"></a>   
 ## Using SQL Server Log Shipping For Disaster Recovery  

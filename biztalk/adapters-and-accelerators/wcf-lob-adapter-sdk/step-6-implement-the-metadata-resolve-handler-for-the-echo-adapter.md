@@ -19,7 +19,7 @@ manager: "anneta"
   
  **Time to complete:** 45 minutes  
   
- In this step, you implement the `Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler` interface to resolve operation and type metadata for the echo adapter. Regardless of your adapter's capability, you must implement this interface. The [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdapterMetadataResolverHandler for you.  
+ In this step, you implement the `Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler` interface to resolve operation and type metadata for the echo adapter. Regardless of your adapter's capability, you must implement this interface. The [!INCLUDE [afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] automatically generates the derived class called EchoAdapterMetadataResolverHandler for you.  
   
  In the following section, you update the EchoAdapterMetadataResolverHandler class to get a better understanding on how to implement this interface. When you complete this step, you have a working metadata resolve handler for the echo adapter.  
   

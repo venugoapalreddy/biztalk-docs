@@ -20,7 +20,7 @@ The **ConfigureLinkService** function is used to add or modify a link service. T
   
 ```  
   
-          __declspec(dllexport) BOOL WINAPI ConfigureLinkService(   
+          __declspec(dllexport) BOOL WINAPI ConfigureLinkService(   
 LPSTR szComputerName,  
 LPSTRszLinkServiceTitle);  
 ```  

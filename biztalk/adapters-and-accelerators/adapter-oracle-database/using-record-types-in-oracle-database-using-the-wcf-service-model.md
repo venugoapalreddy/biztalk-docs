@@ -18,21 +18,21 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Run Operations Using RECORD Types in Oracle Database using the WCF Service Model
-Oracle RECORD types are used to represent hierarchical information in parameters passed to PL/SQL functions and procedures. The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces RECORD types as complex XML types. In the WCF service model, RECORD types are deserialized to strongly-typed .NET classes. The record fields are represented as properties on the class.  
+Oracle RECORD types are used to represent hierarchical information in parameters passed to PL/SQL functions and procedures. The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] surfaces RECORD types as complex XML types. In the WCF service model, RECORD types are deserialized to strongly-typed .NET classes. The record fields are represented as properties on the class.  
   
- The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports the following kinds of RECORD types:  
+ The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports the following kinds of RECORD types:  
   
--   RECORD types that are declared as TABLE%ROWTYPE parameters in stored procedures and functions.  
+- RECORD types that are declared as TABLE%ROWTYPE parameters in stored procedures and functions.  
   
--   RECORD types that are declared as TYPE of RECORD parameters in PL/SQL packages for example, `TYPE rec_type1 IS RECORD(name varchar2(100), age number(3));`  
+- RECORD types that are declared as TYPE of RECORD parameters in PL/SQL packages for example, `TYPE rec_type1 IS RECORD(name varchar2(100), age number(3));`  
   
--   RECORD types that contain nested records.  
+- RECORD types that contain nested records.  
   
--   RECORD types that appear as IN, OUT, or IN OUT parameters to procedures or functions.  
+- RECORD types that appear as IN, OUT, or IN OUT parameters to procedures or functions.  
   
--   RECORD types that are RETURN values of functions.  
+- RECORD types that are RETURN values of functions.  
   
- This topic shows how RECORD types are represented in the WCF service model. For information about how to call Oracle procedures and functions, see [Invoke Functions and Procedures in Oracle Database using the WCF Service Model](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md).  
+  This topic shows how RECORD types are represented in the WCF service model. For information about how to call Oracle procedures and functions, see [Invoke Functions and Procedures in Oracle Database using the WCF Service Model](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md).  
   
 ## About the Examples Used in this Topic  
  The examples in this topic use the /SCOTT/ACCOUNT_PKG Oracle PL/SQL PACKAGE. The following elements are used from ACCOUNT_PKG.  
@@ -47,12 +47,12 @@ TYPE acctinfo_rec_type IS RECORD (acct account%ROWTYPE, address address_rec_type
 FUNCTION get_accountinfo(aid NUMBER) RETURN acctinfo_rec_type;  
 ```  
   
- A script to generate this package is supplied with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] samples. For more information, see the script  
+ A script to generate this package is supplied with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] samples. For more information, see the script  
   
  For more information about the samples, see [Adapter Samples](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md).  
   
 ## RECORD Types in the WCF Service Model  
- Oracle RECORD types are represented as complex XML types by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]. In the WCF service model, complex XML types are represented by a class, and the properties of this class represent the fields of the Oracle RECORD type. The class that represents a RECORD type parameter is generated in a namespace that is qualified by the PACKAGE (if any) and SCHEMA of the function or procedure. This namespace uniquely identifies the function or procedure of the parameter. For example, the RECORD type parameters to the CREATE_ACCOUNT procedure in the Oracle PACKAGE ACCOUNT_PKG are created in the following namespace: `microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CREATE_ACCOUNT`. For more information about the namespaces used in the WCF service model to represent complex types in procedures and functions, see [Invoke Functions and Procedures in Oracle Database using the WCF Service Model](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md).  
+ Oracle RECORD types are represented as complex XML types by the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)]. In the WCF service model, complex XML types are represented by a class, and the properties of this class represent the fields of the Oracle RECORD type. The class that represents a RECORD type parameter is generated in a namespace that is qualified by the PACKAGE (if any) and SCHEMA of the function or procedure. This namespace uniquely identifies the function or procedure of the parameter. For example, the RECORD type parameters to the CREATE_ACCOUNT procedure in the Oracle PACKAGE ACCOUNT_PKG are created in the following namespace: `microsoft.lobservices.oracledb._2007._03.SCOTT.Package.ACCOUNT_PKG.CREATE_ACCOUNT`. For more information about the namespaces used in the WCF service model to represent complex types in procedures and functions, see [Invoke Functions and Procedures in Oracle Database using the WCF Service Model](../../adapters-and-accelerators/adapter-oracle-database/invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model.md).  
   
  While the namespace of a RECORD type parameter is determined by the procedure or function, the name of the class generated for the RECORD type parameter is determined by the way in which the RECORD type is declared. The following table shows how the name of the class is generated based on the two different ways of declaring the Oracle RECORD type parameter.  
   

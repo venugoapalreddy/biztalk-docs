@@ -20,9 +20,9 @@ The **CMDSemWait** function waits until a RAM semaphore is cleared.
   
 ```  
   
-USHORT FAR CMDSemWait(   
-ULONG FAR *ramSem,   
-ULONG timeOut   
+USHORT FAR CMDSemWait(   
+ULONG FAR *ramSem,   
+ULONG timeOut   
 );  
 ```  
   

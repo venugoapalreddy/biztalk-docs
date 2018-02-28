@@ -14,18 +14,18 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Upgrading from an Earlier Version of SSO
-If you are installing the Enterprise Single Sign-on (SSO) feature, and you already have an earlier version deployed on your computer (for example, from [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] CTP, or Microsoft BizTalk Server), you must follow these steps.  
+If you are installing the Enterprise Single Sign-on (SSO) feature, and you already have an earlier version deployed on your computer (for example, from [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] CTP, or Microsoft BizTalk Server), you must follow these steps.  
   
--   Back up the SSODB to a secure location.  
+- Back up the SSODB to a secure location.  
   
--   Back up the master secret key on the master secret server.  
+- Back up the master secret key on the master secret server.  
   
--   Update the master secret server by running [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Setup, selecting **Custom Installation**, and then selecting **Enterprise Single Sign-On**. After selecting **Enable Enterprise Single Sign-On on this computer**, select **Join an existing SSO system**.  
+- Update the master secret server by running [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Setup, selecting <strong>Custom Installation</strong>, and then selecting <strong>Enterprise Single Sign-On</strong>. After selecting <strong>Enable Enterprise Single Sign-On on this computer</strong>, select <strong>Join an existing SSO system</strong>.  
   
- You do not have to update the other SSO servers (non-master secret servers) from your BizTalk Server installation. However, if you want the new Enterprise Single Sign-On features to be available on those servers, you must update them by using the same procedures outlined earlier.  
+  You do not have to update the other SSO servers (non-master secret servers) from your BizTalk Server installation. However, if you want the new Enterprise Single Sign-On features to be available on those servers, you must update them by using the same procedures outlined earlier.  
   
 > [!NOTE]
->  These considerations also apply if you are installing Microsoft BizTalk Server 2006 on a computer that has an existing installation of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Enterprise Single Sign-On, and you want to update the servers.  
+>  These considerations also apply if you are installing Microsoft BizTalk Server 2006 on a computer that has an existing installation of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Enterprise Single Sign-On, and you want to update the servers.  
   
 ## See Also  
  [Upgrading from Host Integration Server 2000 or SNA Server 4.0](../esso/upgrading-from-host-integration-server-2000-or-sna-server-4-0.md)   

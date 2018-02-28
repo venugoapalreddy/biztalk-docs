@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Known Issues with EDI Batching
-This topic describes known issues with batching in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This topic describes known issues with batching in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## Subdocument Splitting Was Not Performed Even Though the Subdocument Annotation Was Set to Yes  
  **Symptom**  
@@ -24,15 +24,15 @@ This topic describes known issues with batching in [!INCLUDE[btsBizTalkServerNoV
   
  **Possible Cause**  
   
--   The Inbound batch processing option for the sending party was set to "Preserve Interchange." A HIPAA document will not be split into subdocuments if this is the case, even though the subdocument_creation_break annotation within the HIPAA schema is set to "Yes."  
+- The Inbound batch processing option for the sending party was set to "Preserve Interchange." A HIPAA document will not be split into subdocuments if this is the case, even though the subdocument_creation_break annotation within the HIPAA schema is set to "Yes."  
   
--   The subdocument_break annotation was set to “Yes”, but the subdocument_creation_break annotation was not set to “Yes”.  
+- The subdocument_break annotation was set to “Yes”, but the subdocument_creation_break annotation was not set to “Yes”.  
   
- **Resolution**  
+  **Resolution**  
   
--   In the **Validation and ACK Generation Settings** page of the **EDI Properties** dialog box for the sending party, set the **Inbound batch processing** option property to either **Split Interchange as Transaction Sets – suspend Transaction Sets on Error** or **Split Interchange as Transaction Sets – suspend Interchange on Error**.  
+- In the **Validation and ACK Generation Settings** page of the **EDI Properties** dialog box for the sending party, set the **Inbound batch processing** option property to either **Split Interchange as Transaction Sets – suspend Transaction Sets on Error** or **Split Interchange as Transaction Sets – suspend Interchange on Error**.  
   
--   A HIPAA document will not be split into subdocuments unless the subdocument_creation_break annotation is set to “Yes.”  
+- A HIPAA document will not be split into subdocuments unless the subdocument_creation_break annotation is set to “Yes.”  
   
 ## Validation of a Batch May Fail if Batch Configuration Settings Are Changed While the Batch Orchestration Is Activated  
  If you change batch configuration settings while the batching orchestration is processing a batch, the new configuration settings will not be picked up for that batch. This can result in validation errors in the send pipeline.  
@@ -69,7 +69,7 @@ This topic describes known issues with batching in [!INCLUDE[btsBizTalkServerNoV
  Characters in some EDIFACT character sets may be double-byte characters, whereas in other EDIFACT character sets they may be single-byte characters. Because of this, when you set the release criteria for batches based upon the number of characters in the interchange, the number of bytes in the interchange may differ depending on the character set used.  
   
 ## The Characters "<" and "&" Must be Represented in Their Encoded Form in the Envelope of a Batch  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not support the following characters in their literal form when creating the envelope fields of a batched EDI interchange: "<" and "&".  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not support the following characters in their literal form when creating the envelope fields of a batched EDI interchange: "<" and "&".  
   
  Using either of these characters literally in the envelope fields of an outgoing batched interchange will result in a suspended message if the EdiSend pipeline is used to serialize the interchange.  
   
@@ -107,7 +107,7 @@ This topic describes known issues with batching in [!INCLUDE[btsBizTalkServerNoV
   
  **Possible Cause**  
   
- In previous versions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], when a message should be processed by multiple batch configurations you would set the EDI.DestinationParties property to a space delimited list of party IDs. The routing orchestration is subscribed to messages with the EDI.ToBeBatched = True and EDI.DestinationParties properties, and would use the list of party IDs contained in the EDI.DestinationParties property to create a message for each ID, and pass the messages to the batching orchestration.  Determining the batch by using the party ID was used because each party configuration could have only one batch configuration.  
+ In previous versions of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], when a message should be processed by multiple batch configurations you would set the EDI.DestinationParties property to a space delimited list of party IDs. The routing orchestration is subscribed to messages with the EDI.ToBeBatched = True and EDI.DestinationParties properties, and would use the list of party IDs contained in the EDI.DestinationParties property to create a message for each ID, and pass the messages to the batching orchestration.  Determining the batch by using the party ID was used because each party configuration could have only one batch configuration.  
   
  In BizTalk Server, each party can have multiple batch configurations, so it is no longer sufficient to use only the pary ID to determine the batch configuration to use.  To indicate that a message must be processed by multiple batch configurations, the message must have the EDI.BatchIDs property set to a space delimited list of batch IDs that the message should be sent to.  
   

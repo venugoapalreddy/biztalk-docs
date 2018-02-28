@@ -28,20 +28,20 @@ manager: "anneta"
 ### Possible Cause  
  One of the following conditions exists:  
   
--   The Runtime Schemas assembly was already deployed when you tried to perform an initial installation of A4SWIFT.  
+- The Runtime Schemas assembly was already deployed when you tried to perform an initial installation of A4SWIFT.  
   
--   [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] was not started on the computer on which you tried to install A4SWIFT.  
+- [!INCLUDE [btsCoName](../../includes/btsconame-md.md)] [!INCLUDE [btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] was not started on the computer on which you tried to install A4SWIFT.  
   
--   The Runtime Schemas assembly was already deployed when you tried to upgrade A4SWIFT, and was referenced by another assembly. This prevented undeployment of the Runtime Schemas assembly by the A4SWIFT upgrade program.  
+- The Runtime Schemas assembly was already deployed when you tried to upgrade A4SWIFT, and was referenced by another assembly. This prevented undeployment of the Runtime Schemas assembly by the A4SWIFT upgrade program.  
   
 ### Solution  
  Proceed as follows, depending upon the nature of the problem:  
   
--   If the Runtime Schemas assembly was already deployed when you attempted to run an initial installation of A4SWIFT, open BizTalk Explorer in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)], right-click the assembly [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.FinancialServices.SWIFT.RuntimeSchemas, and then click Undeploy. Use the BizTalk Deployment Wizard to deploy the latest version of RuntimeSchemas.dll from *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Assemblies.  
+- If the Runtime Schemas assembly was already deployed when you attempted to run an initial installation of A4SWIFT, open BizTalk Explorer in [!INCLUDE [btsCoName](../../includes/btsconame-md.md)][!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE [btsDotNet](../../includes/btsdotnet-md.md)], right-click the assembly [!INCLUDE [btsCoName](../../includes/btsconame-md.md)].Solutions.FinancialServices.SWIFT.RuntimeSchemas, and then click Undeploy. Use the BizTalk Deployment Wizard to deploy the latest version of RuntimeSchemas.dll from <em>%programfiles%</em>\Microsoft BizTalk Accelerator for SWIFT\Assemblies.  
   
--   If [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] was not started, start [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] in the [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] Service Manager. Use the BizTalk Deployment Wizard to deploy the latest version of RuntimeSchemas.dll from *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Assemblies.  
+- If [!INCLUDE [btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] was not started, start [!INCLUDE [btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] in the [!INCLUDE [btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] Service Manager. Use the BizTalk Deployment Wizard to deploy the latest version of RuntimeSchemas.dll from <em>%programfiles%</em>\Microsoft BizTalk Accelerator for SWIFT\Assemblies.  
   
--   If the Runtime Schemas assembly was already deployed when you tried to upgrade A4SWIFT, and was referenced by another assembly, undeploy the referencing assembly in BizTalk Explorer, and undeploy RuntimeSchemas.dll in BizTalk Explorer. Use the BizTalk Deployment Wizard to deploy the latest version of RuntimeSchemas.dll from *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Assemblies.  
+- If the Runtime Schemas assembly was already deployed when you tried to upgrade A4SWIFT, and was referenced by another assembly, undeploy the referencing assembly in BizTalk Explorer, and undeploy RuntimeSchemas.dll in BizTalk Explorer. Use the BizTalk Deployment Wizard to deploy the latest version of RuntimeSchemas.dll from *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Assemblies.  
   
 ## After the Web Components feature is removed, Message Repair and Reconciliation is incorrectly shown as uninstalled  
   
@@ -49,21 +49,21 @@ manager: "anneta"
  After you remove the Web Components for Message Repair and New Submission feature of A4SWIFT, you cannot uninstall, install, or configure the Message Repair and Reconciliation feature (or A4SWIFT Components). If Message Repair and Reconciliation is installed, A4SWIFT does not recognize that the feature is installed. If you attempt to install, modify, or remove Message Repair and Reconciliation from within Add/Remove Programs (displayed from Control Panel), Add/Remove Programs will indicate that the feature is not installed.  
   
 ### Possible Cause  
- You were removed from the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group after you had installed the Web Components for Message Repair and New Submission feature and the Message Repair and Reconciliation feature. If you then remove the Web Components feature (which you can do without being a member of the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group), the A4SWIFT setup program will remove files that the Message Repair and Reconciliation feature has a dependency on. These files include ConfigFramework.exe.  
+ You were removed from the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group after you had installed the Web Components for Message Repair and New Submission feature and the Message Repair and Reconciliation feature. If you then remove the Web Components feature (which you can do without being a member of the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group), the A4SWIFT setup program will remove files that the Message Repair and Reconciliation feature has a dependency on. These files include ConfigFramework.exe.  
   
 ### Solution  
  If you encounter this problem, proceed as follows:  
   
-1.  In the Computer Management window, add yourself back into the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrator group, log off the computer, and then log back on.  
+1. In the Computer Management window, add yourself back into the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrator group, log off the computer, and then log back on.  
   
-2.  Re-install the Web Components for Message Repair and New Submission feature.  
+2. Re-install the Web Components for Message Repair and New Submission feature.  
   
-    > [!NOTE]
-    >  Step 2 adds ConfigFramework.exe back into the A4SWIFT installation.  
+   > [!NOTE]
+   >  Step 2 adds ConfigFramework.exe back into the A4SWIFT installation.  
   
-3.  Re-install the MRSR feature.  
+3. Re-install the MRSR feature.  
   
-4.  If you still do not want the Web Components for Message Repair and New Submission feature, remove it.  
+4. If you still do not want the Web Components for Message Repair and New Submission feature, remove it.  
   
 ## Repairing A4SWIFT to add the Service folder can result in improper access permissions for that folder  
   
@@ -87,7 +87,7 @@ manager: "anneta"
   
  To set these permissions, proceed as follows:  
   
- In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Service.  
+ In [!INCLUDE [btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to <em>%programfiles%</em>\Microsoft BizTalk Accelerator for SWIFT\Service.  
   
 1.  Right-click the Service folder, click **Properties**, and then click the **Security** tab.  
   
@@ -107,31 +107,31 @@ manager: "anneta"
 ## Upgrade results in a side-by-side installation of two versions of A4SWIFT  
   
 ### Symptom  
- When you attempt to upgrade to [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)], previous versions of A4SWIFT may not be fully removed. If you run Add/Remove Programs from the Control Panel, the list of Currently Installed Programs might show the current and the previous versions.  
+ When you attempt to upgrade to [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)], previous versions of A4SWIFT may not be fully removed. If you run Add/Remove Programs from the Control Panel, the list of Currently Installed Programs might show the current and the previous versions.  
   
 ### Possible Cause  
  Any of the following conditions can cause the above to occur:  
   
--   The user attempting to upgrade is not a member of the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
+- The user attempting to upgrade is not a member of the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
   
--   The [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] service (MSSQLSERVER) is stopped.  
+- The [!INCLUDE [btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] service (MSSQLSERVER) is stopped.  
   
--   You performed a silent upgrade using the **setup.exe /addlocal** command.  
+- You performed a silent upgrade using the **setup.exe /addlocal** command.  
   
 ### Solution  
- To prevent a side-by-side installation of [!INCLUDE[btaA4SWIFToldest](../../includes/btaa4swiftoldest-md.md)] and [!INCLUDE[btaA4SWIFT2.3abbrev](../../includes/btaa4swift2-3abbrev-md.md)] occurring during upgrade, ensure that you (the logged-on user) are a member of the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group, and that the [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] service (MSSQLSERVER) is started.  
+ To prevent a side-by-side installation of [!INCLUDE [btaA4SWIFToldest](../../includes/btaa4swiftoldest-md.md)] and [!INCLUDE [btaA4SWIFT2.3abbrev](../../includes/btaa4swift2-3abbrev-md.md)] occurring during upgrade, ensure that you (the logged-on user) are a member of the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administrators group, and that the [!INCLUDE [btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] service (MSSQLSERVER) is started.  
   
- If you end up with a side-by-side installation of [!INCLUDE[btaA4SWIFToldest](../../includes/btaa4swiftoldest-md.md)] or [!INCLUDE[btaA4SWIFT2.1abbrev](../../includes/btaa4swift2-1abbrev-md.md)] and [!INCLUDE[btaA4SWIFT2.3abbrev](../../includes/btaa4swift2-3abbrev-md.md)], proceed as follows:  
+ If you end up with a side-by-side installation of [!INCLUDE [btaA4SWIFToldest](../../includes/btaa4swiftoldest-md.md)] or [!INCLUDE [btaA4SWIFT2.1abbrev](../../includes/btaa4swift2-1abbrev-md.md)] and [!INCLUDE [btaA4SWIFT2.3abbrev](../../includes/btaa4swift2-3abbrev-md.md)], proceed as follows:  
   
-1.  Back up the data in the SWIFT Messages folder.  
+1. Back up the data in the SWIFT Messages folder.  
   
-2.  Log on to the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] as a member of the BTS Administrators group, and ensure that the MSSQLSERVER service is running.  
+2. Log on to the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] as a member of the BTS Administrators group, and ensure that the MSSQLSERVER service is running.  
   
-3.  Remove the previous version of A4SWIFT.  
+3. Remove the previous version of A4SWIFT.  
   
-4.  Upgrade to the latest version of A4SWIFT again. This time the upgrade will work, and no side-by-side installation will be created.  
+4. Upgrade to the latest version of A4SWIFT again. This time the upgrade will work, and no side-by-side installation will be created.  
   
-5.  Using the BizTalk Deployment Utility, manually undeploy [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll, and then redeploy it from the Assemblies folder of your A4SWIFT installation location. For more information about this tool, see [BRE Deployment Utility](../../adapters-and-accelerators/accelerator-swift/bre-deployment-utility.md).  
+5. Using the BizTalk Deployment Utility, manually undeploy [!INCLUDE [btsCoName](../../includes/btsconame-md.md)].Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll, and then redeploy it from the Assemblies folder of your A4SWIFT installation location. For more information about this tool, see [BRE Deployment Utility](../../adapters-and-accelerators/accelerator-swift/bre-deployment-utility.md).  
   
 ## The uninstall or upgrade process may not complete correctly if you do not restart when prompted  
   
@@ -147,35 +147,35 @@ manager: "anneta"
 ## If the IIS Admin Service is stopped during setup, you must reconfigure the WebService feature  
   
 ### Symptom  
- The [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard does not configure the WebService feature correctly. You receive the following error:  
+ The [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard does not configure the WebService feature correctly. You receive the following error:  
   
  "Unable to create MRSR artifacts: Unable to connect to the remote server."  
   
 ### Possible Cause  
- The IIS Admin Service was stopped when you ran the [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard.  
+ The IIS Admin Service was stopped when you ran the [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard.  
   
 ### Solution  
  To complete the configuration process successfully, proceed as follows:  
   
-1.  Close the [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration console.  
+1. Close the [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration console.  
   
-2.  Restart the IIS Admin Service.  
+2. Restart the IIS Admin Service.  
   
-3.  Execute *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Configuration.exe.  
+3. Execute *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Configuration.exe.  
   
-4.  In the [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration console, select **Unconfigure Features** and then select **WebService**.  
+4. In the [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration console, select <strong>Unconfigure Features</strong> and then select <strong>WebService</strong>.  
   
-5.  Ensure that the status of the WebService feature in the Configuration console is shown as unconfigured.  
+5. Ensure that the status of the WebService feature in the Configuration console is shown as unconfigured.  
   
-6.  Select **Apply Configuration**.  
+6. Select **Apply Configuration**.  
   
-    > [!NOTE]
-    >  The A4SWIFT Configuration Wizard will now configure the WebService feature correctly.  
+   > [!NOTE]
+   >  The A4SWIFT Configuration Wizard will now configure the WebService feature correctly.  
   
 ## A4SWIFT configuration will fail if the BizTalkServerApplication host was not created in BizTalk Server configuration  
   
 ### Symptom  
- The [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard does not configure the WebService feature correctly. You receive the following error:  
+ The [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] Configuration Wizard does not configure the WebService feature correctly. You receive the following error:  
   
  "Unable to create MRSR artifacts: Object reference not set to an instance of an object."  
   
@@ -185,11 +185,11 @@ manager: "anneta"
 ### Solution  
  To repair the A4SWIFT configuration, proceed as follows:  
   
--   Create a host in BizTalk Server Administration. There is no need to have a running instance now.  
+- Create a host in BizTalk Server Administration. There is no need to have a running instance now.  
   
--   Run the RepairBAS tool in the *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools folder of the A4SWIFT installation.  
+- Run the RepairBAS tool in the *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools folder of the A4SWIFT installation.  
   
- To do so, proceed as follows:  
+  To do so, proceed as follows:  
   
 1.  Start **BizTalk Server Administration** console.  
   

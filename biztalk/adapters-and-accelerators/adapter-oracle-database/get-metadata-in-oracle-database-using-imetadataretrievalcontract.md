@@ -17,9 +17,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Get Metadata in Oracle Database Using IMetadataRetrievalContract
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes an **IMetadataRetrievalContract**endpoint that you can use to browse and search for Oracle database artifacts and to retrieve metadata for operations in the form of a Web Services Description Language (WSDL) document.  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] exposes an <strong>IMetadataRetrievalContract</strong>endpoint that you can use to browse and search for Oracle database artifacts and to retrieve metadata for operations in the form of a Web Services Description Language (WSDL) document.  
   
- The **IMetadataRetrievalContract** interface is implemented by the [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] and provides metadata browse, search, and retrieval capabilities. In addition to the **IMetadataRetrievalContract** interface, the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] exposes the **MetadataRetrievalClient** class, which implements the interface. You can use either an **IMetadataRetrievalContract** channel or a **MetadataRetrievalClient** to work with metadata; the methods exposed to browse, search, and retrieve metadata are the same in each case.  
+ The <strong>IMetadataRetrievalContract</strong> interface is implemented by the [!INCLUDE [afproductnamelong](../../includes/afproductnamelong-md.md)] and provides metadata browse, search, and retrieval capabilities. In addition to the <strong>IMetadataRetrievalContract</strong> interface, the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] exposes the <strong>MetadataRetrievalClient</strong> class, which implements the interface. You can use either an <strong>IMetadataRetrievalContract</strong> channel or a <strong>MetadataRetrievalClient</strong> to work with metadata; the methods exposed to browse, search, and retrieve metadata are the same in each case.  
   
  The following sections provide information about how to use the **IMetadataRetrievalContract** interface.  
   
@@ -37,11 +37,11 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes an **I
 ### Metadata Node IDs  
  The adapter organizes its metadata as a hierarchical tree of nodes. Within this tree structure there are two types of metadata nodes:  
   
--   **Operation nodes** represent operations that the adapter surfaces on Oracle database artifacts. Operation nodes are the leaves of the tree.  
+- **Operation nodes** represent operations that the adapter surfaces on Oracle database artifacts. Operation nodes are the leaves of the tree.  
   
--   **Category nodes** represent Oracle database artifacts and groupings of Oracle database artifacts that do not directly correspond to an operation on the adapter. Category nodes are the branches of the tree; they contain other category nodes and/or operation nodes. For example, Oracle tables and packages are represented as category nodes.  
+- **Category nodes** represent Oracle database artifacts and groupings of Oracle database artifacts that do not directly correspond to an operation on the adapter. Category nodes are the branches of the tree; they contain other category nodes and/or operation nodes. For example, Oracle tables and packages are represented as category nodes.  
   
- Each metadata node surfaced by the adapter is identified by a unique node ID. For more information about the metadata node IDs surfaced by the adapter, see [Metadata Node IDs](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md). You use these node IDs to specify target Oracle database artifacts when you use the **IMetadataRetrievalContract** interface to browse, search, and retrieve metadata.  
+  Each metadata node surfaced by the adapter is identified by a unique node ID. For more information about the metadata node IDs surfaced by the adapter, see [Metadata Node IDs](../../adapters-and-accelerators/adapter-oracle-database/metadata-node-ids3.md). You use these node IDs to specify target Oracle database artifacts when you use the **IMetadataRetrievalContract** interface to browse, search, and retrieve metadata.  
   
 ### Binding Properties  
  Whether you use an **IMetadataRetrievalContract** channel or an **IMetadataRetrievalClient** to work with metadata, you must specify an **OracleDBBinding** when you create the instance.  
@@ -57,7 +57,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes an **I
 > [!IMPORTANT]
 >  If you want to retrieve metadata for the POLLINGSTMT operation you must set the **PollingStatement** binding property.  
   
- You should ensure that these binding properties are set to the values required for your application before you open the metadata retrieval object. For more information about the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).  
+ You should ensure that these binding properties are set to the values required for your application before you open the metadata retrieval object. For more information about the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).  
   
 ### Browsing Metadata Nodes  
  You use the **Browse** method to return all the metadata nodes that are contained in a parent node. The following example browses for the first three schemas on the Oracle database. In this example, **client** is an instance of **MetadataRetrievalClient**.  
@@ -107,7 +107,7 @@ System.Web.Services.Description.ServiceDescription description = client.GetMetad
 ### Using a MetadataRetrievalClient  
  Creating and using a **MetadataRetrievalClient** is much the same as any other WCF client. You create the client by specifying an endpoint and an instance of **OracleDBBinding**. You can do this either declaratively in configuration or imperatively in your code. You then invoke the methods of the **MetadataRetrievalClient** to browse, search, and retrieve metadata from the adapter.  
   
- The following example shows how to use a **MetadataRetrievalClient** to browse, search, and retrieve metadata from the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]. The example demonstrates:  
+ The following example shows how to use a <strong>MetadataRetrievalClient</strong> to browse, search, and retrieve metadata from the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)]. The example demonstrates:  
   
 -   Browsing the root node of the metadata tree for Oracle Database schemas.  
   

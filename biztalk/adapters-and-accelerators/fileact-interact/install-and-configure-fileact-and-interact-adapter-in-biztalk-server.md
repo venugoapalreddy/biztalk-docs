@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Install and configure FileAct and InterAct adapter in BizTalk Server
-Install and configure the [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] for SWIFT.  Also see some samples messages, and known issues with the installation.
+Install and configure the [!INCLUDE [swift_adapter](../../includes/swift-adapter-md.md)] for SWIFT.  Also see some samples messages, and known issues with the installation.
   
 ## Topics in this section
 

@@ -60,8 +60,8 @@ The following tabs are available on the X.25 Connection Properties sheet:
  **Connection Retry Limits**  
  Supply activation limits for the connection:  
   
- **Maximum Retries**  
- Select the number of attempts for [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] to make when trying to establish the connection. After making this number of attempts, Host Integration Server makes an entry in the event log and stops trying. The range is from 1 through No Limit; the default is **No Limit**.  
+ <strong>Maximum Retries</strong>  
+ Select the number of attempts for [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] to make when trying to establish the connection. After making this number of attempts, Host Integration Server makes an entry in the event log and stops trying. The range is from 1 through No Limit; the default is <strong>No Limit</strong>.  
   
  **Delay After Failure**  
  Select the length of time for Host Integration Server to wait between attempts to establish the connection. The range is from 5 seconds through 255 seconds; the default is **10** seconds.  

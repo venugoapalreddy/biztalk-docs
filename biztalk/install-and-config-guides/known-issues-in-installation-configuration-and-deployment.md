@@ -17,7 +17,7 @@ manager: "anneta"
 ## Some BizTalk EDI/AS2 Artifacts Are Still Active After Unconfiguring  
   
 ##### Problem  
- After you unconfigure the BizTalk EDI/AS2 feature of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], some BizTalk Server artifacts related to EDI and AS2 processing will still be active in the context of the BizTalk group configuration. These artifacts will include EDI and AS2 pipelines and the batching orchestration. As a result, you will still be able to perform basic EDI and AS2 processing even after unconfiguring the BizTalk EDI/AS2 feature.  
+ After you unconfigure the BizTalk EDI/AS2 feature of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], some BizTalk Server artifacts related to EDI and AS2 processing will still be active in the context of the BizTalk group configuration. These artifacts will include EDI and AS2 pipelines and the batching orchestration. As a result, you will still be able to perform basic EDI and AS2 processing even after unconfiguring the BizTalk EDI/AS2 feature.  
   
 ##### Cause  
  There are active ports associated with EDI and AS2 processing. Some artifacts will continue to function while these ports remain active.  
@@ -46,11 +46,11 @@ manager: "anneta"
   
 ### Problem  
   
--   The Business Rules Configuration Wizard fails with the error “Configuration failed for some components and no settings were applied for those components”.  
+- The Business Rules Configuration Wizard fails with the error “Configuration failed for some components and no settings were applied for those components”.  
   
--   On BizTalk Server computers for which the Business Rules Engine has already been successfully configured, the Rules Engine Update service fails to start and cannot be started manually.  
+- On BizTalk Server computers for which the Business Rules Engine has already been successfully configured, the Rules Engine Update service fails to start and cannot be started manually.  
   
- When this problem occurs, an error similar to the following may be generated in the BizTalk Server computer Application log:  
+  When this problem occurs, an error similar to the following may be generated in the BizTalk Server computer Application log:  
   
 ```  
 Service could not be started. : System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it ::1:3132  
@@ -83,9 +83,9 @@ Service could not be started. : System.Net.Sockets.SocketException (10061): No c
 ##### Resolution  
  Add the referenced assemblies in GAC or add them as resources, so that they are stored in Mgmt db and are accessible during enlistment of orchestration.  
 
-## Community blog: BizTalk 2013 R2 bugs, issues & quirks
+## Community blog: BizTalk 2013 R2 bugs, issues & quirks
 
-[BizTalk Server 2013 R2 known bugs, issues, quirks](https://cdijkgraaf.wordpress.com/2016/08/12/biztalk-2013-r2-known-bugs-issues-quirks/)
+[BizTalk Server 2013 R2 known bugs, issues, quirks](https://cdijkgraaf.wordpress.com/2016/08/12/biztalk-2013-r2-known-bugs-issues-quirks/)
   
 ## Additional Configuration Topics  
   

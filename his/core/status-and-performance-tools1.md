@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Status and Performance Tools
-The following information details the status and performance tools available in [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and the Windows operating systems.  
+The following information details the status and performance tools available in [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and the Windows operating systems.  
   
 ## In This Section  
  [Status and Performance Information](../core/status-and-performance-information1.md)  

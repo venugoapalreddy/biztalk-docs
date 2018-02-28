@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Install the Namespace Component Sample Using the Install Scripts
-This section describes how you can install the Namespace Component sample from the Windows Installer file provided with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+This section describes how you can install the Namespace Component sample from the Windows Installer file provided with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)].  
   
  **To install the Namespace Component sample from the install scripts**  
   

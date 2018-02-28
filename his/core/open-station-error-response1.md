@@ -15,9 +15,9 @@ manager: "anneta"
 ---
 # Open(STATION) Error Response
 Flow : DLC ------> NODE  
-  
+
 ### Header  
-  
+
 |Field|Type|Description|  
 |-----------|----------|-----------------|  
 |nxtqptr|PTRBFHDR|Pointer to next buffer header in a queue|  
@@ -35,9 +35,9 @@ Flow : DLC ------> NODE
 |ophdr.opresid|INTEGER|Resource identifier|  
 |ophdr.operr1|INTEGER|Error code|  
 |ophdr.operr2|INTEGER|Reserved|  
-  
+
 ### Element  
-  
+
 |Field|Type|Description|  
 |-----------|----------|-----------------|  
 |hdreptr–>elteptr|PTRBFELT|Pointer to next buffer element (NULL is only one element)|  
@@ -46,15 +46,17 @@ Flow : DLC ------> NODE
 |hdreptr–>dataru|CHAR[SNANBEDA]|Defined as follows, where s = startd - 1|  
 |dataru[s..s+9]|Not applicable|Source name|  
 |dataru[s+10..s+19]|Not applicable|Destination name|  
-  
+
  The error codes are defined as follows:  
-  
-|Symbolic constant|Value|Description|  
-|-----------------------|-----------|-----------------|  
-|ERLKNOTOPEN|0x03|Link not open|  
-|ERSTATOPEN|0x05|Station already open|  
-|ERNOCB|0x06|Station control blocks depleted|  
-|ERINVINDX|0x07|Invalid link index|  
-|ERMAXSTAT|0x08|Limit for number of stations per link reached|  
-|ERDIFADDR|0x09|Address different from that on **Request-Open-Station**|  
-|ERBADADDR|0x0A|Invalid DLC address|
+
+
+| Symbolic constant | Value |                             Description                              |
+|-------------------|-------|----------------------------------------------------------------------|
+|    ERLKNOTOPEN    | 0x03  |                            Link not open                             |
+|    ERSTATOPEN     | 0x05  |                         Station already open                         |
+|      ERNOCB       | 0x06  |                   Station control blocks depleted                    |
+|     ERINVINDX     | 0x07  |                          Invalid link index                          |
+|     ERMAXSTAT     | 0x08  |            Limit for number of stations per link reached             |
+|     ERDIFADDR     | 0x09  | Address different from that on <strong>Request-Open-Station</strong> |
+|     ERBADADDR     | 0x0A  |                         Invalid DLC address                          |
+

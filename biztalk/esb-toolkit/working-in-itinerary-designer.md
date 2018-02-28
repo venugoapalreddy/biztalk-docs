@@ -17,7 +17,7 @@ manager: "anneta"
 After you create a Microsoft Visual C# project, you can create new itinerary models and add existing itineraries to the project. The following steps describe how to create a new itinerary, add an existing itinerary model, or change the name of an itinerary.  
   
 > [!NOTE]
->  Before working with the Itinerary Designer, you must install the Microsoft.Practices.ESB.CORE Windows Installer (.msi file) from the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] install folder. This step installs the required run-time assemblies to the global assembly cache.  
+>  Before working with the Itinerary Designer, you must install the Microsoft.Practices.ESB.CORE Windows Installer (.msi file) from the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] install folder. This step installs the required run-time assemblies to the global assembly cache.  
   
 ## Basic Operations  
 
@@ -54,16 +54,16 @@ On the **File** menu, click **Save \<itinerary name\>**.
   
 #### Set itinerary export properties  
   
-1.  In the Properties window, type a **Name** property.  
+1. In the Properties window, type a **Name** property.  
   
-2.  In the Properties window, type a **Version** property.  
+2. In the Properties window, type a **Version** property.  
   
-3.  In the Properties window, specify the **Is Request Response** property using the drop-down list. Set this property to **true** if the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] client application communicates with an on-ramp using request-response message exchange pattern.  
+3. In the Properties window, specify the <strong>Is Request Response</strong> property using the drop-down list. Set this property to <strong>true</strong> if the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] client application communicates with an on-ramp using request-response message exchange pattern.  
   
-4.  In the Properties window, set the **Export Mode** property to **Default** or **Strict**.  
+4. In the Properties window, set the **Export Mode** property to **Default** or **Strict**.  
   
-    > [!NOTE]
-    >  When creating [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] itineraries using the Itinerary Designer, the **Export Mode** property can be used to define where the service will execute. Setting the **Export Mode** property to **Strict** ensures that the itinerary service executes in its prescribed container; in this case, each itinerary service in the XML itinerary has a stage property that specifies the pipeline in which the service executes. If this property is set to **Default**, an itinerary compatible with Microsoft ESB is created, with no stage specified, and the itinerary service executes in the order prescribed, but not necessarily in the pipeline stage desired.  
+   > [!NOTE]
+   >  When creating [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] itineraries using the Itinerary Designer, the <strong>Export Mode</strong> property can be used to define where the service will execute. Setting the <strong>Export Mode</strong> property to <strong>Strict</strong> ensures that the itinerary service executes in its prescribed container; in this case, each itinerary service in the XML itinerary has a stage property that specifies the pipeline in which the service executes. If this property is set to <strong>Default</strong>, an itinerary compatible with Microsoft ESB is created, with no stage specified, and the itinerary service executes in the order prescribed, but not necessarily in the pipeline stage desired.  
   
 #### Export an itinerary to a file  
   
@@ -73,17 +73,17 @@ On the **File** menu, click **Save \<itinerary name\>**.
   
 #### Export an itinerary to a database  
   
-1.  In the Properties window, click **Database Itinerary Exporter** in the **Model Exporter** drop-down list.  
+1. In the Properties window, click **Database Itinerary Exporter** in the **Model Exporter** drop-down list.  
   
-2.  In the Properties window, set the **Itinerary Database** property connection string to point to the itinerary database.  
+2. In the Properties window, set the **Itinerary Database** property connection string to point to the itinerary database.  
   
-3.  In the Properties window, set the **Itinerary Status** property to **Published** or **Deployed**.  
+3. In the Properties window, set the **Itinerary Status** property to **Published** or **Deployed**.  
   
-    > [!NOTE]
-    >  When an itinerary is exported to a database with **Itinerary Status** set to **Published**, the itinerary will not become effective for the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] run time until after the property is set to **Deployed**.  
+   > [!NOTE]
+   >  When an itinerary is exported to a database with <strong>Itinerary Status</strong> set to <strong>Published</strong>, the itinerary will not become effective for the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] run time until after the property is set to <strong>Deployed</strong>.  
   
 ## Security Operations  
- By using the Itinerary Designer, you can protect sensitive information, such as passwords and other credentials stored in a [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] itinerary, by encrypting this information using X.509 certificates.  
+ By using the Itinerary Designer, you can protect sensitive information, such as passwords and other credentials stored in a [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] itinerary, by encrypting this information using X.509 certificates.  
   
 #### Select the X.509 certificate for an itinerary  
   
@@ -95,11 +95,11 @@ On the **File** menu, click **Save \<itinerary name\>**.
   
 #### Remove the X.509 certificate from an itinerary  
   
--   In the Itinerary Designer Properties window, expand the **Encryption Certificate** property, and then set the **Store Location** property to a different value. This disassociates the old certificate with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] itinerary model.  
+- In the Itinerary Designer Properties window, expand the <strong>Encryption Certificate</strong> property, and then set the <strong>Store Location</strong> property to a different value. This disassociates the old certificate with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] itinerary model.  
   
 #### Disable the X.509 certificate validation  
   
 In the Registry Editor, go to the subkey **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\BizTalk ESB Toolkit\2.0\Designer**, and then set the **RequireX509Certificate** property value to **false**.  
   
 > [!NOTE]
->  If you installed the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] on an operating system that has 64-bit support, the subkey is **HKEY_LOCAL_MACHINE\SOFTWARE\SysWOW64\Microsoft\BizTalk ESB Toolkit\2.0\Designer**.
+>  If you installed the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] on an operating system that has 64-bit support, the subkey is <strong>HKEY_LOCAL_MACHINE\SOFTWARE\SysWOW64\Microsoft\BizTalk ESB Toolkit\2.0\Designer</strong>.

@@ -22,66 +22,66 @@ Enterprise Single Sign-On (SSO) provides services to store and transmit encrypte
 ## How Receive Adapters Work with SSO  
  Receive adapters that support SSO perform the following steps after receiving a message and before publishing it to BizTalk Server:  
   
-1.  The adapter impersonates the sender and obtains the SSO ticket on behalf of the sender by using the **ISSOTicket.IssueTicket** API.  
+1. The adapter impersonates the sender and obtains the SSO ticket on behalf of the sender by using the **ISSOTicket.IssueTicket** API.  
   
-2.  After successfully obtaining an SSO ticket the adapter stores it on the message context property “SSOTicket” under the system namespace.  
+2. After successfully obtaining an SSO ticket the adapter stores it on the message context property “SSOTicket” under the system namespace.  
   
- The following code fragment demonstrates how the ticket is obtained and how it is stored on the message context.  
+   The following code fragment demonstrates how the ticket is obtained and how it is stored on the message context.  
   
 ```  
 public class MyAdapter : IBTTransport,   
-                         IBTTransportConfig,   
-                         IBTTransportControl,  
-                         IPersistPropertyBag,   
-                         IBaseComponent  
+                         IBTTransportConfig,   
+                         IBTTransportControl,  
+                         IPersistPropertyBag,   
+                         IBaseComponent  
 {  
 ...  
-     private string m_SSOToken = null;  
+     private string m_SSOToken = null;  
   
  // Get a ticket for the sender  
-     private void GetSSOTicket(IntPtr token)  
-     {  
-       bool impersonated = false;  
-      WindowsImpersonationContext wic = null;  
+     private void GetSSOTicket(IntPtr token)  
+     {  
+       bool impersonated = false;  
+      WindowsImpersonationContext wic = null;  
   
  if (token != (IntPtr)0)   
  {  
-     try   
+     try   
  {  
-         // Impersonate the user using his security  
+         // Impersonate the user using his security  
  // token  
-            WindowsIdentity wi =   
+            WindowsIdentity wi =   
  new WindowsIdentity(token);  
-            wic = wi.Impersonate();  
-            impersonated = true;  
+            wic = wi.Impersonate();  
+            impersonated = true;  
   
-         // Get an SSO ticket for the impersonated  
+         // Get an SSO ticket for the impersonated  
  // user  
-            ISSOTicket ssoTicket = new ISSOTicket();  
-            m_SSOToken = ssoTicket.IssueTicket(0);  
-         }  
-         finally   
+            ISSOTicket ssoTicket = new ISSOTicket();  
+            m_SSOToken = ssoTicket.IssueTicket(0);  
+         }  
+         finally   
  {  
-           if (impersonated)  
-            // Revert the impersonation  
-            wic.Undo();  
-          }  
+           if (impersonated)  
+            // Revert the impersonation  
+            wic.Undo();  
+          }  
 }  
 }  
 ...  
   
-     private void WriteSSOTicketToContext(  
+     private void WriteSSOTicketToContext(  
  IBaseMessage message )  
-     {  
-         if (m_SSOTicket != null)   
+     {  
+         if (m_SSOTicket != null)   
  {  
  // Write the SSO ticket to the message context  
-          message.Context.Write(  
+          message.Context.Write(  
  “SSOTicket”,  
  http://schemas.microsoft.com/BizTalk/2003/system-properties,   
  m_SSOToken);  
-        }  
-      }  
+        }  
+      }  
 }  
 ```  
   

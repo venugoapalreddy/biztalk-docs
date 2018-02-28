@@ -17,14 +17,14 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshooting Other Issues
-Addresses other issues related to [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)].  
+Addresses other issues related to [!INCLUDE [btsCoName](../../includes/btsconame-md.md)] [!INCLUDE [HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)].  
   
 ## Message rejected by the BTAHL7 engine  
   
 ### Symptom  
  Messages are randomly rejected by the message engine.  
   
-**Possible Cause** : According to the HL7 standard, enumeration values for table 0338 contains the "L&I" value. Field 6 of the PRA segment may contain this value. Since [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] treats the "&" character as a delimiter, the message is rejected.  
+<strong>Possible Cause</strong> : According to the HL7 standard, enumeration values for table 0338 contains the "L&I" value. Field 6 of the PRA segment may contain this value. Since [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] treats the "&" character as a delimiter, the message is rejected.  
   
 **Resolution** : There are three potential resolutions for this issue:  
   
@@ -37,11 +37,11 @@ Addresses other issues related to [!INCLUDE[btsCoName](../../includes/btsconame-
 ## Cannot edit the HL7 schema using Visual Studio  
   
 ### Symptom  
- Cannot edit the HL7 schema using [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].  
+ Cannot edit the HL7 schema using [!INCLUDE [btsCoName](../../includes/btsconame-md.md)][!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)].  
   
-**Possible Cause** : [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] does not support some HL7 schemas.  
+<strong>Possible Cause</strong> : [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] does not support some HL7 schemas.  
   
-**Resolution** : Use other editors, such as [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Notepad, to edit HL7 schemas.  
+<strong>Resolution</strong> : Use other editors, such as [!INCLUDE [btsCoName](../../includes/btsconame-md.md)] Notepad, to edit HL7 schemas.  
   
 ## Message handling fails with no errors logged  
   
@@ -57,7 +57,7 @@ Addresses other issues related to [!INCLUDE[btsCoName](../../includes/btsconame-
 ### Symptom  
  Validation of a header field failed.  
   
- Reason: The [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] serializer validated a promoted property, not the actual header-field context property.  
+ Reason: The [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] serializer validated a promoted property, not the actual header-field context property.  
   
 **Possible Cause** : A change occurred to the promoted property corresponding to the header through an orchestration or a map.  
   
@@ -81,13 +81,13 @@ Addresses other issues related to [!INCLUDE[btsCoName](../../includes/btsconame-
 ## BTAHL7 cannot be uninstalled if BizTalk Server has already been uninstalled  
   
 ### Symptom  
- Uninstalling [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)] results in the following error:  
+ Uninstalling [!INCLUDE [HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)] results in the following error:  
   
 `A network error while attempting to read from file C:\Windows\Installer\Microsoft BizTalk <version\> Accelerator for HL7.msi`
   
-**Possible Cause** : [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)] was uninstalled before uninstallation of [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)] was attempted. You must uninstall [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)] before uninstalling [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)].  
+<strong>Possible Cause</strong> : [!INCLUDE [btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)] was uninstalled before uninstallation of [!INCLUDE [HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)] was attempted. You must uninstall [!INCLUDE [HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)] before uninstalling [!INCLUDE [btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)].  
   
-**Resolution** : Reinstall [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)], then uninstall [!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)], and then uninstall [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)].  
+<strong>Resolution</strong> : Reinstall [!INCLUDE [btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)], then uninstall [!INCLUDE [HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)], and then uninstall [!INCLUDE [btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)].  
   
 ## Messages are still sent after the applicable MLLP send port has been stopped  
   

@@ -20,7 +20,7 @@ The **CMDStartFG** function requests that scheduling of the foreground thread be
   
 ```  
   
-USHORT FAR CMDStartFG();    
+USHORT FAR CMDStartFG();    
 ```  
   
 ## Return Value  

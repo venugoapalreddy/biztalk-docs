@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Managing EDI and AS2 Solutions
-This section shows you how to create parties, business profiles, agreements, and batching using the [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)] console.
+This section shows you how to create parties, business profiles, agreements, and batching using the [!INCLUDE [btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)] console.
 
 These artifacts are used in business-to-business messaging. 
 

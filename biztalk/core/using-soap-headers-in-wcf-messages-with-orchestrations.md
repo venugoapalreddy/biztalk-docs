@@ -44,7 +44,7 @@ xmlDoc.LoadXml("<headers><Origination>Home</Origination><Destination>Work</Desti
 RequestMessageInstance(WCF.OutboundCustomHeaders) = xmlDoc.OuterXml;  
 ```  
   
- For more information about using BizTalk Expression Editor, see [Requirements and Limitations for Expressions](../core/requirements-and-limitations-for-expressions.md). For more information about calling [!INCLUDE[btsDotNet](../includes/btsdotnet-md.md)] classes, see [Constructing Messages in User Code](../core/constructing-messages-in-user-code.md).  
+ For more information about using BizTalk Expression Editor, see [Requirements and Limitations for Expressions](../core/requirements-and-limitations-for-expressions.md). For more information about calling [!INCLUDE [btsDotNet](../includes/btsdotnet-md.md)] classes, see [Constructing Messages in User Code](../core/constructing-messages-in-user-code.md).  
   
 ## See Also  
  [WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md)   

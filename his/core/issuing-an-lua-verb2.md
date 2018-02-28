@@ -44,7 +44,7 @@ The following procedure is required to issue a logical unit application (LUA) ve
     rui_init.common.lua_verb = LUA_VERB_RUI;  
     rui_init.common.lua_verb_length = sizeof(struct LUA_COMMON);  
     rui_init.common.lua_opcode = LUA_OPCODE_RUI_INIT;  
-    memcpy (rui_init.common.lua_luname, "THISLU  ", 8);  
+    memcpy (rui_init.common.lua_luname, "THISLU  ", 8);  
     ```  
   
      The values LUA_VERB_RUI and LUA_OPCODE_RUI_INIT are symbolic constants. These constants are defined in the WINLUA.H header file in the Host Integration Server SDK. To ensure portability between different systems, use symbolic constants and not integer values.  

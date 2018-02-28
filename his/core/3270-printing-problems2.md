@@ -49,8 +49,8 @@ FlushFF:  REG_SZ
  In the macros section:  
   
 ```  
-TOP    EQU 1B 26 6C 30 45    /* Top Margin set to 0 */  
-STL    EQU 1B 26 6C 36 36 46        /* Set Text Length to 66 */  
+TOP    EQU 1B 26 6C 30 45    /* Top Margin set to 0 */  
+STL    EQU 1B 26 6C 36 36 46        /* Set Text Length to 66 */  
   
 ```  
   
@@ -63,13 +63,13 @@ START_JOB = TOP0 STL
   
  Host Print Service is designed to execute a form feed (FF) included in an LU 3 print job when any of the following conditions are met:  
   
--   If the FF is inserted as the first character after the WCC in a 3270 Erase/Write or Erase/Write Alternate command.  
+- If the FF is inserted as the first character after the WCC in a 3270 Erase/Write or Erase/Write Alternate command.  
   
--   If the FF is located after a valid NL (New Line) order.  
+- If the FF is located after a valid NL (New Line) order.  
   
--   If the FF is located after the last printable character position of any print line.  
+- If the FF is located after the last printable character position of any print line.  
   
- A registry entry is available that will force Host Print Service to honor all form feed characters in an LU 3 print job, even if they do not meet the above conditions. To add this entry, find the following key using Regedit.exe:  
+  A registry entry is available that will force Host Print Service to honor all form feed characters in an LU 3 print job, even if they do not meet the above conditions. To add this entry, find the following key using Regedit.exe:  
   
 ```  
 HKEY_LOCAL_MACHINE  

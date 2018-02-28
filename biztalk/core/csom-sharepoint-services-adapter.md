@@ -15,13 +15,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # CSOM: SharePoint Services Adapter
-Using the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] adapter, you can receive messages from [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] and send messages to [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)].  
+Using the [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] adapter, you can receive messages from [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] and send messages to [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)].  
   
- The [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] Adapter uses the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] Client Side Object Model (CSOM), which is ***automatically*** installed when [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is installed. There are no additional installation steps on the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] computer.  
+ The [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] Adapter uses the [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] Client Side Object Model (CSOM), which is <strong><em>automatically</em></strong> installed when [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is installed. There are no additional installation steps on the [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] computer.  
   
- We recommend using the Client Side Object Model (CSOM) of the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] Adapter.  
+ We recommend using the Client Side Object Model (CSOM) of the [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] Adapter.  
   
- [Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) provides more information on the [!INCLUDE[btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] installation.  
+ [Appendix B: Install the Microsoft SharePoint Adapter](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) provides more information on the [!INCLUDE [btsSharePointSvcsNoVersion](../includes/btssharepointsvcsnoversion-md.md)] installation.  
   
 ## In This Section  
   

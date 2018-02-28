@@ -15,23 +15,25 @@ manager: "anneta"
 ---
 # Support for ODBC 2 Level 2 Functions
 The following table lists the ODBC 2.*x* level 2 functions that are supported by the Microsoft ODBC Driver for DB2.  
-  
-|ODBC 2.*x* level 2 functions supported|Functions supported by the Microsoft ODBC Driver for DB2|  
-|--------------------------------------------|--------------------------------------------------------------|  
-|**SQLBrowseConnect**|No|  
-|**SQLColumnPrivileges**|No|  
-|**SQLDataSources**|Yes. This function is actually supported by the ODBC Driver Manager|  
-|**SQLDescribeParam**|No|  
-|**SQLDrivers**|Yes. This function is actually supported by the ODBC Driver Manager|  
-|**SQLExtendedFetch**|Yes, but supports forward scrolling only|  
-|**SQLForeignKeys**|No|  
-|**SQLMoreResults**|Yes|  
-|**SQLNativeSQL**|Yes|  
-|**SQLNumParams**|Yes|  
-|**SQLParamOptions**|Yes|  
-|**SQLPrimaryKeys**|Yes, but SQL grammar conformance varies depending on the version of the DB2 database that is accessed|  
-|**SQLProcedureColumns**|Yes|  
-|**SQLProcedures**|Yes|  
-|**SetPos**|Yes|  
-|**SQLSetScrollOptions**|Yes|  
-|**SQLTablePrivileges**|No|
+
+
+| ODBC 2.<em>x</em> level 2 functions supported |                       Functions supported by the Microsoft ODBC Driver for DB2                        |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------|
+|       <strong>SQLBrowseConnect</strong>       |                                                  No                                                   |
+|     <strong>SQLColumnPrivileges</strong>      |                                                  No                                                   |
+|        <strong>SQLDataSources</strong>        |                  Yes. This function is actually supported by the ODBC Driver Manager                  |
+|       <strong>SQLDescribeParam</strong>       |                                                  No                                                   |
+|          <strong>SQLDrivers</strong>          |                  Yes. This function is actually supported by the ODBC Driver Manager                  |
+|       <strong>SQLExtendedFetch</strong>       |                               Yes, but supports forward scrolling only                                |
+|        <strong>SQLForeignKeys</strong>        |                                                  No                                                   |
+|        <strong>SQLMoreResults</strong>        |                                                  Yes                                                  |
+|         <strong>SQLNativeSQL</strong>         |                                                  Yes                                                  |
+|         <strong>SQLNumParams</strong>         |                                                  Yes                                                  |
+|       <strong>SQLParamOptions</strong>        |                                                  Yes                                                  |
+|        <strong>SQLPrimaryKeys</strong>        | Yes, but SQL grammar conformance varies depending on the version of the DB2 database that is accessed |
+|     <strong>SQLProcedureColumns</strong>      |                                                  Yes                                                  |
+|        <strong>SQLProcedures</strong>         |                                                  Yes                                                  |
+|            <strong>SetPos</strong>            |                                                  Yes                                                  |
+|     <strong>SQLSetScrollOptions</strong>      |                                                  Yes                                                  |
+|      <strong>SQLTablePrivileges</strong>      |                                                  No                                                   |
+

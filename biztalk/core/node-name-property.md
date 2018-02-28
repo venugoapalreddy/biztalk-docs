@@ -24,7 +24,7 @@ As you use BizTalk Editor to insert nodes into the schema tree, some nodes are m
  When you give names to **Record** nodes, **Field Element** nodes, and **Field Attribute** nodes, use names that are descriptive of the role of that element or attribute within the message being defined by the schema. For example, FirstName is probably a good choice for the name of a **Field Element** node that will be used to store the first name of someone in an address structure. In an XML instance message where the first name James occurs, the corresponding element would look like the following.  
   
 ```  
-    <FirstName>James</FirstName>  
+    <FirstName>James</FirstName>  
 ```  
   
  When you are renaming **Record** nodes, **Field Element** nodes, and **Field Attribute** nodes, you should be aware that not all characters are allowed in node names. For information about these disallowed characters, see [Which Node Name Characters Get Encoded](../core/which-node-name-characters-get-encoded.md). Although BizTalk Editor allows you to use disallowed characters by encoding them, it is often simpler to avoid such characters altogether. For information about how disallowed characters are encoded, see [How Node Name Characters Get Encoded](../core/how-node-name-characters-get-encoded.md).  

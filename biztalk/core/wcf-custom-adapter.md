@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # WCF-Custom Adapter
-The WCF-Custom adapter is an in-process adapter to allow configuring receive locations and send ports with any binding and behavior settings for Windows Communication Foundation (WCF) that are applicable to [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. You can use the WCF-Custom adapter for scenarios that the standard WCF adapters do not support. The WCF-Custom adapter also enables you to use the WCF extensibility points in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+The WCF-Custom adapter is an in-process adapter to allow configuring receive locations and send ports with any binding and behavior settings for Windows Communication Foundation (WCF) that are applicable to [!INCLUDE [btsCoName](../includes/btsconame-md.md)][!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. You can use the WCF-Custom adapter for scenarios that the standard WCF adapters do not support. The WCF-Custom adapter also enables you to use the WCF extensibility points in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## In This Section  
   

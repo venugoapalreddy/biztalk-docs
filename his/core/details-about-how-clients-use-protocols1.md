@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Details about How Clients Use Protocols
-The following sections describe how each type of client works with [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. The clients are listed according to the protocol used: Microsoft Networking (Named Pipes) and TCP/IP.  
+The following sections describe how each type of client works with [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. The clients are listed according to the protocol used: Microsoft Networking (Named Pipes) and TCP/IP.  
   
 ## In This Section  
  [Named Pipes Clients](../core/named-pipes-clients2.md)  

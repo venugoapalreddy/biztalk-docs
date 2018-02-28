@@ -22,7 +22,7 @@ A network analyzer, is an important tool for checking the load and throughput on
   
  Looking at the captured messages will give a good indication of problems and where they are. If there are Receiver Not Ready (RNR) frames present, one of the nodes is overloading and then limiting the message flow in. You can minimize an excess number of Receiver Ready (RR) messages by adjusting the DLC level pacing for a larger send and receive window. Long elapsed times between the individual frames can highlight configuration problems. This indicates which of the components, client, gateway, or server, consume most of the processing time. A single client test is a good way to determine where the delays might be.  
   
- A typical time for message transmission in [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is between 1–5 milliseconds, even on almost full CPU loads. A transmission time longer than 1–5 milliseconds indicates a configuration mismatch or lack of available RAM because the system is using the virtual memory on the hard drive.  
+ A typical time for message transmission in [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is between 1–5 milliseconds, even on almost full CPU loads. A transmission time longer than 1–5 milliseconds indicates a configuration mismatch or lack of available RAM because the system is using the virtual memory on the hard drive.  
   
 ## See Also  
  [Status and Performance Information](../core/status-and-performance-information1.md)

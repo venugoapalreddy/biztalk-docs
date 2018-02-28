@@ -15,17 +15,17 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using a JD Edwards OneWorld System
-The JD Edwards OneWorld system is accessible from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the JD Edwards OneWorld adapter. This adapter is one of a group of eight line-of-business (LOB) adapters shipped by Microsoft for use with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+The JD Edwards OneWorld system is accessible from a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the JD Edwards OneWorld adapter. This adapter is one of a group of eight line-of-business (LOB) adapters shipped by Microsoft for use with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
- The JD Edwards OneWorld lab work is divided into two parts. This first lab (Lab 1) allows you to use the JD Edwards OneWorld system without needing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any Microsoft products. You will use the JD Edwards OneWorld Client tool to connect to a JD Edwards OneWorld database and locate a specific record based upon address.  
+ The JD Edwards OneWorld lab work is divided into two parts. This first lab (Lab 1) allows you to use the JD Edwards OneWorld system without needing [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any Microsoft products. You will use the JD Edwards OneWorld Client tool to connect to a JD Edwards OneWorld database and locate a specific record based upon address.  
   
  In the second lab (Lab 2), you will create a BizTalk project and orchestration. After you create the application, you will deploy it and use it to connect to a JD Edwards OneWorld system by using the JD Edwards OneWorld adapter. The goal is to access data through the BizTalk application by using the adapter.  
   
 ## Prerequisites  
- To perform the procedures for this lab, you need to install the JD Edwards OneWorld client software and its latest update. To use any of the client software tools you will need a JD Edwards OneWorld database, network connectivity to that database, and a user account on that system. You do not need [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to complete this lab.  
+ To perform the procedures for this lab, you need to install the JD Edwards OneWorld client software and its latest update. To use any of the client software tools you will need a JD Edwards OneWorld database, network connectivity to that database, and a user account on that system. You do not need [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to complete this lab.  
   
 ## Lab 1 - Using a JD Edwards OneWorld System  
- In this lab, you will use the JD Edwards OneWorld system without using any components of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The goals are to test your connectivity to JD Edwards OneWorld and to ensure that the second lab will work correctly. You will use the JD Edwards OneWorld SQL Plus tool to create and manipulate a data table in a JD Edwards OneWorld database.  
+ In this lab, you will use the JD Edwards OneWorld system without using any components of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The goals are to test your connectivity to JD Edwards OneWorld and to ensure that the second lab will work correctly. You will use the JD Edwards OneWorld SQL Plus tool to create and manipulate a data table in a JD Edwards OneWorld database.  
   
 ## Procedures for Lab 1 - Using a JD Edwards OneWorld System  
   

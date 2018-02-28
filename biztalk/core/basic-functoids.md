@@ -19,7 +19,7 @@ Any functoid not in the **Advanced** category is considered a basic functoid. Ba
   
  For step-by-step instructions about how to add a basic functoid to a BizTalk map, see [How to Add Basic Functoids to a Map](../core/how-to-add-basic-functoids-to-a-map.md).  
   
- For reference information about all functoids, including basic functoids, see the **Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For reference information about all functoids, including basic functoids, see the <strong>Functoid Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Next steps
   

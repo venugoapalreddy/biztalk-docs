@@ -110,4 +110,4 @@ this.control.Leave();
 }  
 ```  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ships with sample code ControlledTermination.cs in the Base Adapter sample, showing the synchronization mechanism described here.
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] ships with sample code ControlledTermination.cs in the Base Adapter sample, showing the synchronization mechanism described here.

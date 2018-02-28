@@ -22,4 +22,4 @@ You can use the **Case** property to perform case conversion of flat file data w
  When the **Case** property is set to **(Default)**, no case conversion is performed.  
   
 ## See Also  
- **Considerations When Creating Flat File Message Schemas** and **Case (Node Property of Flat File Schemas)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ <strong>Considerations When Creating Flat File Message Schemas</strong> and <strong>Case (Node Property of Flat File Schemas)</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

@@ -17,7 +17,7 @@ manager: "anneta"
 # Code Page Specification for Flat File Schemas
 
 ## Overview
-The value in the **Code Page** property is used to create an encoding object that is used during the disassembly and assembly of flat file documents. This encoding object allows the flat file parser to convert the native encoding of an inbound flat file document into the normalized UTF-8 encoding that is used internally by Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The encoding object also allows the flat file serializer to convert the internal UTF-8 encoding back into the native encoding of the flat file document.  
+The value in the <strong>Code Page</strong> property is used to create an encoding object that is used during the disassembly and assembly of flat file documents. This encoding object allows the flat file parser to convert the native encoding of an inbound flat file document into the normalized UTF-8 encoding that is used internally by Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The encoding object also allows the flat file serializer to convert the internal UTF-8 encoding back into the native encoding of the flat file document.  
   
  The setting of the **Code Page** property plays an important, but not exclusive, role in determining the character encoding scheme used by your flat file business documents. You must consider how inbound flat file messages are interpreted by the flat file disassembler as well as how the flat file assembler will encode characters as outbound messages are translated into flat file format.  
 
@@ -47,4 +47,4 @@ The value in the **Code Page** property is used to create an encoding object tha
     2.  Otherwise, use UTF-8.  
   
 ## See Also  
- **Considerations When Creating Flat File Message Schemas** and **Code Page (Node Property of Flat File Schemas)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ <strong>Considerations When Creating Flat File Message Schemas</strong> and <strong>Code Page (Node Property of Flat File Schemas)</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

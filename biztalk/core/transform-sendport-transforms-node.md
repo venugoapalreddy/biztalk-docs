@@ -18,11 +18,13 @@ manager: "anneta"
 ---
 # Transform (SendPort-Transforms Node)
 The Transform node of the Transforms node of a binding file contains specific information about a BizTalk Server map that is exported with the binding file.  
-  
+
 ## Nodes in the Transform node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|FullName|Attribute|xs:string|Specifies the full name of the map.|Not required|Default value: empty|  
-|AssemblyQualifiedName|Attribute|xs:string|Specifies the assembly qualified name of the map.|Not required|Default value: empty|
+
+
+| <strong>Name</strong> | <strong>Node Type</strong> | <strong>Data Type</strong> |           <strong>Description</strong>            | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|-----------------------|----------------------------|----------------------------|---------------------------------------------------|-------------------------------|---------------------------|
+|       FullName        |         Attribute          |         xs:string          |        Specifies the full name of the map.        |         Not required          |   Default value: empty    |
+| AssemblyQualifiedName |         Attribute          |         xs:string          | Specifies the assembly qualified name of the map. |         Not required          |   Default value: empty    |
+

@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How Validation of an EDI Interchange Is Configured
-If the process to look up an agreement determines the agreement to which an incoming or outgoing interchange resolves to, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the agreement properties (not pipeline properties) to determine how validation is performed. If no agreement resolves to an interchange, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses some fallback agreement properties and some pipeline properties in performing validation.  
+If the process to look up an agreement determines the agreement to which an incoming or outgoing interchange resolves to, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the agreement properties (not pipeline properties) to determine how validation is performed. If no agreement resolves to an interchange, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses some fallback agreement properties and some pipeline properties in performing validation.  
   
- The following tables indicate how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] determines the validations to perform on an EDI interchange. For the pipeline and fallback agreement columns in the table, "Yes" means that configuration is used if an agreement has not been determined.  
+ The following tables indicate how [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] determines the validations to perform on an EDI interchange. For the pipeline and fallback agreement columns in the table, "Yes" means that configuration is used if an agreement has not been determined.  
   
 ## General Information  
   

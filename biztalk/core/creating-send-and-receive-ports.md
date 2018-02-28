@@ -26,7 +26,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Creating Send and Receive Ports
-Use the following procedures to create [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send and receive ports for BizTalk Adapter for JD Edwards OneWorld.  
+Use the following procedures to create [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send and receive ports for BizTalk Adapter for JD Edwards OneWorld.  
   
 ## Creating a Port  
   

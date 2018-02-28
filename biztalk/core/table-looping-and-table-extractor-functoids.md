@@ -21,7 +21,7 @@ In a map, you commonly have one structure in the output instance message for eac
   
  Table-driven looping uses the **Table Looping** functoid and the **Table Extractor** functoid. The **Table Looping** functoid has an internal table you configure. For each input record or field, the **Table Looping** functoid outputs the rows of the table, one at a time. For example, if there are ten records in the input instance message and two rows in the internal table of the **Table Looping**, the functoid outputs a total of twenty rows, two for each of the ten records. The **Table Extractor** functoid extracts the desired item from a row and passes it on to the output instance message.  
   
- For more details, see the **Table Looping Functoid Reference** and **Table Extractor Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For more details, see the <strong>Table Looping Functoid Reference</strong> and <strong>Table Extractor Functoid Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Next steps
   

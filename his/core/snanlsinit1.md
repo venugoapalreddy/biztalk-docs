@@ -20,7 +20,7 @@ The **SnaNlsInit** function is called to determine if the code page needed is su
   
 ```  
   
-int WINAPI SnaNlsInit(   
+int WINAPI SnaNlsInit(   
 UINTCodePage  
 );  
 ```  

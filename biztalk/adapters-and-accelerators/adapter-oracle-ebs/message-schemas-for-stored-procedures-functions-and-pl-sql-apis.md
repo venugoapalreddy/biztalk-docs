@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for Stored Procedures, Functions, and PL/SQL APIs
-The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces the underlying Oracle database stored procedures, functions, and PL/SQL APIs (stored procedures and functions within a package) as operations. This section describes the message structure and actions used to invoke stored procedures, functions, and PL/SQL APIs.  
+The [!INCLUDE [adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces the underlying Oracle database stored procedures, functions, and PL/SQL APIs (stored procedures and functions within a package) as operations. This section describes the message structure and actions used to invoke stored procedures, functions, and PL/SQL APIs.  
   
 ## Message Structure of Stored Procedures, Functions, and PL/SQL APIs  
  The operations surfaced for functions and stored procedures follow a request-response message exchange pattern. The following table shows the structure of these request and response messages.  
@@ -46,7 +46,7 @@ The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinessl
   
  [PACKAGE_NAME] = The name of the package that contains the targeted procedure or function.  
   
- The Oracle database supports overloading for stored procedures and functions. The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] supports this capability by appending an overload string to the target namespace for each overloaded artifact. The value of this string is "overload1" for the first overload, "overload2" for the second overload, and so on. The following example shows the message structure for two overloaded stored procedures.  
+ The Oracle database supports overloading for stored procedures and functions. The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] supports this capability by appending an overload string to the target namespace for each overloaded artifact. The value of this string is "overload1" for the first overload, "overload2" for the second overload, and so on. The following example shows the message structure for two overloaded stored procedures.  
   
 ```  
 Stored Procedure Overload 1:  
@@ -65,7 +65,7 @@ Stored Procedure Overload 2:
 ```  
   
 ## Message Actions of Stored Procedures, Functions, and PL/SQL APIs  
- The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the following message actions for stored procedure, function, and PL/SQL API operations.  
+ The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the following message actions for stored procedure, function, and PL/SQL API operations.  
   
 > [!NOTE]
 >  See entity descriptions after the table.  

@@ -24,7 +24,7 @@ manager: "anneta"
 Business analysts use the BAM Add-In for Excel to define the events and data to be tracked, along with the logical groupings and aggregations of the tracked data views that users are able to access.  
   
 ## BAM Add-In for Excel requirements  
- You can run the BAM Add-In for Excel on any computer, whether [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is installed on that computer or not. However, you must first install the files listed here for the BAM Add-In for Excel to work. Refer to Microsoft Excel documentation on where to locate these files.  
+ You can run the BAM Add-In for Excel on any computer, whether [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] is installed on that computer or not. However, you must first install the files listed here for the BAM Add-In for Excel to work. Refer to Microsoft Excel documentation on where to locate these files.  
   
 -   Excel.exe  
   

@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Development Activities
-This section describes development activities for [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] scenarios that use the Itinerary Designer and contains the following topics:  
+This section describes development activities for [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] scenarios that use the Itinerary Designer and contains the following topics:  
   
 -   [Prerequisites for the Development Activities](../esb-toolkit/prerequisites-for-the-development-activities.md)  
   

@@ -23,4 +23,4 @@ manager: "anneta"
   
  **User Action**  
   
- Select the relevant schema file in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Solution Explorer, and then in the Properties window, change the **Build Action** property to a **Compile**. Then attempt the **Validate Instance**, **Generate Instance**, or **Validate Schema** command again.
+ Select the relevant schema file in Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Solution Explorer, and then in the Properties window, change the <strong>Build Action</strong> property to a <strong>Compile</strong>. Then attempt the <strong>Validate Instance</strong>, <strong>Generate Instance</strong>, or <strong>Validate Schema</strong> command again.

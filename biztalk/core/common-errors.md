@@ -20,7 +20,7 @@ This topic lists out common error messages you may encounter while creating maps
 ## You receive error event ID 324 when parsing dates  
   
 ### Problem  
- When you use the Database **Value Extractor** functoid in a map to extract a date field, your document may fail validation against the outbound document definition. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may log a validation error similar to the following in the event log:  
+ When you use the Database <strong>Value Extractor</strong> functoid in a map to extract a date field, your document may fail validation against the outbound document definition. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] may log a validation error similar to the following in the event log:  
   
  Event Source: BizTalk Server  
   
@@ -46,11 +46,11 @@ This topic lists out common error messages you may encounter while creating maps
 ### Resolution  
  To resolve this issue, do one of the following:  
   
--   Edit your outbound document definition to use a string datatype instead of a date datatype.  
+- Edit your outbound document definition to use a string datatype instead of a date datatype.  
   
--   Create a custom [!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsVBNoVersion](../includes/btsvbnoversion-md.md)]**Script** functoid that will convert the output of the Database **Value Extractor** functoid into the ISO 8601 format.  
+- Create a custom [!INCLUDE [btsCoName](../includes/btsconame-md.md)][!INCLUDE [btsVBNoVersion](../includes/btsvbnoversion-md.md)]<strong>Script</strong> functoid that will convert the output of the Database <strong>Value Extractor</strong> functoid into the ISO 8601 format.  
   
- For more information, see KB article [278737](http://support.microsoft.com/kb/278737/en-us).  
+  For more information, see KB article [278737](http://support.microsoft.com/kb/278737/en-us).  
   
 ## You receive Internal Compiler Error (0xc0000005 at address 53624FD6) when compiling the maps  
   
@@ -60,7 +60,7 @@ This topic lists out common error messages you may encounter while creating maps
  Internal Compiler Error (0xc0000005 at address 53624FD6): likely culprit is 'CODEGEN'.  
   
 ### Cause  
- The [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] compiler has a 16-megabyte limitation on the total size of all strings in a single project. While compiling BizTalk projects, the compiler serializes schemas, maps, and orchestrations for creating the assemblies, and this increases the total size of all strings, which may exceed the limitation.  
+ The [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] compiler has a 16-megabyte limitation on the total size of all strings in a single project. While compiling BizTalk projects, the compiler serializes schemas, maps, and orchestrations for creating the assemblies, and this increases the total size of all strings, which may exceed the limitation.  
   
 ### Resolution  
  To resolve this issue, you can separate schemas or maps into different BizTalk projects.  

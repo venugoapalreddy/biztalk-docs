@@ -14,68 +14,69 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Install HIS 2016
-This installation guide provides basic instructions for using the [!INCLUDE[his2016](../includes/his2016-md.md)] setup installation and configuration.  
-  
+This installation guide provides basic instructions for using the [!INCLUDE [his2016](../includes/his2016-md.md)] setup installation and configuration.  
+
 ## Before you begin  
-  
+
 -   Read the [Release Notes](../install-and-config-guides/release-notes.md)  
-  
+
 -   Refer to the [System Requirements](../install-and-config-guides/system-requirements.md)  
-  
+
 ## Installation  
-  
-1.  Double-click the **HIS2016_Server_EN.msi** file.  
-  
-2.  In the **License Agreement**, accept the **End User License Agreement**. To customize your installation (optional):  
-  
-    1.  Select **Advanced**.  
-  
-    2.  In **Destination Folder**, you can optionally change the installation drive and directory.  
-  
-    3.  In **Product Features**, you can optionally choose the feature areas, tools, and sub features.  
-  
-     Select **Install** to continue.  
-  
-3.  When complete, select **Finish**.  
-  
+
+1. Double-click the **HIS2016_Server_EN.msi** file.  
+
+2. In the **License Agreement**, accept the **End User License Agreement**. To customize your installation (optional):  
+
+   1. Select **Advanced**.  
+
+   2. In **Destination Folder**, you can optionally change the installation drive and directory.  
+
+   3. In **Product Features**, you can optionally choose the feature areas, tools, and sub features.  
+
+      Select **Install** to continue.  
+
+3. When complete, select **Finish**.  
+
 ## Configuration  
  After you successfully install HIS, run configuration to:  
-  
+
 -   Define security groups  
-   
+
 -   Enter service credentials  
-  
+
 -   Enable (configures) or disable (un-configures) features and tools. For example, configuration registers BizTalk Adapters and Visual Studio design tools.  
-  
+
 ## Uninstall  
-  
-1.  Open **Programs and Features**.  
-  
-2.  In the list, select **Microsoft [!INCLUDE[his2016](../includes/his2016-md.md)]**, and then select **Uninstall**.  
-  
-3.  When prompted if you're sure, select **Yes**.  
-  
+
+1. Open **Programs and Features**.  
+
+2. In the list, select <strong>Microsoft <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[his2016](../includes/his2016-md.md)]: Path(D:/a/1/s/target_repo/his/install-and-config-guides/installing-his-2016.md) contains invalid char.
+   Parameter name: path -->[!INCLUDE[his2016](../includes/his2016-md.md)]<!--END ERROR INCLUDE --></strong>, and then select <strong>Uninstall</strong>.  
+
+3. When prompted if you're sure, select **Yes**.  
+
 ## Unattended Installation  
  **Install using the following command**:  
-  
+
 ```Output  
 msiexec /i HIS2016_Server_EN.msi /quiet 
 ```  
 *Note: A setup log will be written to the %temp% folder* 
- 
+
  Verify the installation by going to ***drive*:\Program Files\Microsoft Host Integration Server 2016**, and confirming the HIS files are there.  
-  
+
  **Uninstall using the following command**:  
-  
+
 ```Output  
 msiexec /x HIS2016_Server_EN.msi /quiet  
 ```  
 *Note: A setup log will be written to the %temp% folder*
-  
+
  Verify the uninstallation by going to ***drive*:\Program Files\Microsoft Host Integration Server 2016**, and confirming the files are removed.  
-  
+
  For a list of MSIEXEC command line options, read the [Installer documentation](http://go.microsoft.com/fwlink/p/?LinkId=799793) (http://go.microsoft.com/fwlink/p/?LinkId=799793).
- 
+
 ## Unattended Configuration  
 **Configure using the command:**
 
@@ -98,4 +99,3 @@ ConfigurationWizard.exe /u
 msiexec /i HIS2016_Server_EN.msi /quiet CONFIGURATIONFILE= HIS2016.configurationfile.config  
 ```  
 
- 

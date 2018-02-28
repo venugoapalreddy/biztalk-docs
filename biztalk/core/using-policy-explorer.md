@@ -21,9 +21,9 @@ manager: "anneta"
 ---
 # Using Policy Explorer
 You can use the Policy Explorer to manage policies and rules in the rule store. You can create, modify, and delete policies and rules, and you can test, publish, deploy, and undeploy policies.  
-  
+
  The following table describes the commands within the Policy Explorer that can be used in the process of developing new policies and rules.  
-  
+
 |Use this|To do this|  
 |--------------|----------------|  
 |**Add New Policy**|Create a new policy (rule set).|  
@@ -43,10 +43,10 @@ You can use the Policy Explorer to manage policies and rules in the rule store. 
 |**Deploy**|Deploy a published policy version. You must deploy a policy version to make it available to rule-based applications.|  
 |**Undeploy**|Undeploy a policy version. After a version is undeployed, it is no longer available to rule-based applications.|  
 |**Test Policy**|Test the selected policy version before deployment.|  
-  
+
 ## Properties window  
  The following table describes the properties for a policy version.  
-  
+
 |Property|Value|  
 |--------------|-----------|  
 |**Name**|Name of the policy.<br /><br /> You can only change this value by changing the **Name** property of the policy (not policy version).|  
@@ -56,11 +56,13 @@ You can use the Policy Explorer to manage policies and rules in the rule store. 
 |**Translator**|Information about the translator used to translate the rules.|  
 |**Current Version**|The version of policy currently selected in the Policy Explorer.|  
 |**Version Description**|The description of the current version.|  
-  
+
  The following table describes the properties for a rule.  
-  
-|Property|Value|  
-|--------------|-----------|  
-|**Active**|Indicates whether the rule is enabled or disabled|  
-|**Name**|Name of the rule.|  
-|**Priority**|Priority of the rule within the policy. The higher the index, the higher the rule priority. Actions of a higher priority rule will fire first.<br /><br /> The default is 0 and represents the middle priority.|
+
+
+|         Property          |                                                                                                      Value                                                                                                      |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Active</strong>  |                                                                                Indicates whether the rule is enabled or disabled                                                                                |
+|   <strong>Name</strong>   |                                                                                                Name of the rule.                                                                                                |
+| <strong>Priority</strong> | Priority of the rule within the policy. The higher the index, the higher the rule priority. Actions of a higher priority rule will fire first.<br /><br /> The default is 0 and represents the middle priority. |
+

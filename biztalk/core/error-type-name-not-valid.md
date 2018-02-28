@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- Select the relevant schema file in Microsoft® [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Solution Explorer, and then in the Properties window, change the **Type Name** property to a value that is a valid C# identifier and is not a reserved BizTalk keyword.
+ Select the relevant schema file in Microsoft® [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Solution Explorer, and then in the Properties window, change the <strong>Type Name</strong> property to a value that is a valid C# identifier and is not a reserved BizTalk keyword.

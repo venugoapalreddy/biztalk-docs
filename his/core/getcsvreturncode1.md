@@ -20,7 +20,7 @@ The **GetCsvReturnCode** function converts the primary and secondary return code
   
 ```  
   
-    int WINAPI GetCsvReturnCode(   
+    int WINAPI GetCsvReturnCode(   
 struct csv_hdr FAR * vpb,  
 UINTbuffer_length,  
 unsigned char FAR * buffer_addr);  

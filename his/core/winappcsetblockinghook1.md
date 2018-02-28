@@ -20,7 +20,7 @@ The **WinAPPCSetBlockingHook** function allows a Windows APPC implementation to 
   
 ```  
   
-    FARPROC WINAPI WinAPPCSetBlockingHook (   
+    FARPROC WINAPI WinAPPCSetBlockingHook (   
 FARPROC lpBlockFunc);  
 ```  
   

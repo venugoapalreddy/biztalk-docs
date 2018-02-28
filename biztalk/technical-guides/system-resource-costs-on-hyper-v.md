@@ -98,32 +98,32 @@ manager: "anneta"
 |M:|MSDTC|5|RAID 0 + 1|  
   
 #### IOMeter Configuration  
- The IOMeter tool can be used as a benchmark and troubleshooting tool by replicating the read/write performance of applications. IOMeter is a configurable tool that can be used to simulate many different types of performance. For purposes of this test scenario, IOMeter configuration parameters were set as described in the table below on both the physical [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer that was tested and on the guest operating system that was running [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] in a Hyper-V virtual machine:  
+ The IOMeter tool can be used as a benchmark and troubleshooting tool by replicating the read/write performance of applications. IOMeter is a configurable tool that can be used to simulate many different types of performance. For purposes of this test scenario, IOMeter configuration parameters were set as described in the table below on both the physical [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] computer that was tested and on the guest operating system that was running [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] in a Hyper-V virtual machine:  
   
 ### IOMeter – Passthrough Disk Comparison Test Configuration  
   
-|||  
-|-|-|  
-|**Test length**|10 minutes|  
-|**Ramp up time**|30 seconds|  
-|**Number of workers**|4|  
-|**Transfer request size**|2 KB|  
-|**Read/write distribution**|66% read, 33% write|  
-|**Burst length**|1 I/Os|  
-|**Target Drive**|K:\|  
+|                                          |                     |
+|------------------------------------------|---------------------|
+|       <strong>Test length</strong>       |     10 minutes      |
+|      <strong>Ramp up time</strong>       |     30 seconds      |
+|    <strong>Number of workers</strong>    |          4          |
+|  <strong>Transfer request size</strong>  |        2 KB         |
+| <strong>Read/write distribution</strong> | 66% read, 33% write |
+|      <strong>Burst length</strong>       |       1 I/Os        |
+|      <strong>Target Drive</strong>       |         K:\         |
   
 #### Test Description  
- The [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] service was stopped on both servers to ensure that IOMeter was the only process performing I/O against the disk. The LUN’s used in this test were both located on the same SAN which was dedicated to this lab environment. No other I/O activity was performed against the SAN during the test to ensure that the results were not skewed. The test was then run by executing the IOMeter tool locally from each [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] and the following performance monitor counters were collected:  
+ The [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] service was stopped on both servers to ensure that IOMeter was the only process performing I/O against the disk. The LUN’s used in this test were both located on the same SAN which was dedicated to this lab environment. No other I/O activity was performed against the SAN during the test to ensure that the results were not skewed. The test was then run by executing the IOMeter tool locally from each [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] and the following performance monitor counters were collected:  
   
  **Collected from both Virtual_SQL01 and Physical_SQL01**:  
   
--   \LogicalDisk(*)\\\*  
+- \LogicalDisk(*)\\\*  
   
--   \PhysicalDisk(*)\\\*  
+- \PhysicalDisk(*)\\\*  
   
- **Collected from virtual machine Hyper-V_02**:  
+  **Collected from virtual machine Hyper-V_02**:  
   
--   \Hyper-V Virtual Storage Device\\*  
+- \Hyper-V Virtual Storage Device\\*  
   
 ### Results  
  The passthrough disk was able to attain over 90% of the throughput of the SAN LUN connected directly to Physical_SQL01.  Total, read and write I/Os per second were all within 10% as was the total MB transferred per second.  Response times for healthy disks should be between 1-15 ms for read and write. Average I/O response times were less than 4 ms on both disks. Random reads response time was 5.4 ms on the physical and 5.7 ms on the pass-through disk. Write response time was less than 0.5 ms on both the physical and virtual environments.  

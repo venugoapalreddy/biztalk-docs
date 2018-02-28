@@ -15,20 +15,20 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Select a URI scheme and addressing format when using the WCF LOB Adapter SDK
-A Uniform Resource Identifier (URI) uniquely identifies resources like a Web service or, in the case of an adapter developed with the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)], the system to connect to as well as the action to perform. This section provides a recommendation on how to construct a URI to uniquely describe the endpoint address and the action for your adapter.  
+A Uniform Resource Identifier (URI) uniquely identifies resources like a Web service or, in the case of an adapter developed with the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)], the system to connect to as well as the action to perform. This section provides a recommendation on how to construct a URI to uniquely describe the endpoint address and the action for your adapter.  
   
 ## Anatomy of a URI  
  A URI consists of the following three components:  
   
--   **Scheme name** is the lead part of the URI string and is the first level of the naming structure; examples include http, urn, and contoso.  
+- **Scheme name** is the lead part of the URI string and is the first level of the naming structure; examples include http, urn, and contoso.  
   
--   **Hierarchical part** consists of information that is usually hierarchical and can contain optional authority, hostname, and port information. Examples include www.microsoft.com and UserName=User@microsoft.com:4099.  
+- <strong>Hierarchical part</strong> consists of information that is usually hierarchical and can contain optional authority, hostname, and port information. Examples include www.microsoft.com and UserName=User@microsoft.com:4099.  
   
--   **Query** contains optional information marked with a question mark (?) and typically grouped as key/value pairs separated by an ampersand (&). For example, contoso://microsoft.com/functions?name=Find.  
+- **Query** contains optional information marked with a question mark (?) and typically grouped as key/value pairs separated by an ampersand (&). For example, contoso://microsoft.com/functions?name=Find.  
   
--   **Fragment** is used to store extra identifying information that may be needed by the adapter. The fragment is separated by a hash (#); for example, contoso://microsoft.com/functions?name=Find#public.  
+- **Fragment** is used to store extra identifying information that may be needed by the adapter. The fragment is separated by a hash (#); for example, contoso://microsoft.com/functions?name=Find#public.  
   
- You might not use all of the features provided by the URI syntax.  
+  You might not use all of the features provided by the URI syntax.  
   
 ## Designing the URI  
  As an adapter developer, you will have to devise an appropriate URI for your target line-of-business system. When designing your URI, it is important to make it unique and meaningful.  

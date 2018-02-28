@@ -20,8 +20,8 @@ The application calls the **sbpibegt** function to get a buffer element to appen
   
 ```  
   
-VOID sbpibegt(   
-PTRBFELT *eltptr   
+VOID sbpibegt(   
+PTRBFELT *eltptr   
 );  
 ```  
   

@@ -23,14 +23,14 @@ The configuration cache refresh interval defines the time period in which BizTal
   
 ### To adjust the cache refresh interval  
   
-1.  Click **Start**, click **All Programs**, click **Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], and then click **BizTalk Server Administration**.  
+1. Click <strong>Start</strong>, click <strong>All Programs</strong>, click <strong>Microsoft</strong> [!INCLUDE [btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)], and then click <strong>BizTalk Server Administration</strong>.  
   
-2.  In the console tree, expand [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **Administration**, right-click **BizTalk Group**, and then click **Settings**.  
+2. In the console tree, expand [!INCLUDE [btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] <strong>Administration</strong>, right-click <strong>BizTalk Group</strong>, and then click <strong>Settings</strong>.  
   
-3.  In the **BizTalk Settings Dashboard** dialog box, select the **General** tab. For the **Configuration refresh interval** property, type or select the time (in seconds) that all items in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administration cache must wait between configuration cache refreshes, and then click **OK**.  
+3. In the <strong>BizTalk Settings Dashboard</strong> dialog box, select the <strong>General</strong> tab. For the <strong>Configuration refresh interval</strong> property, type or select the time (in seconds) that all items in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administration cache must wait between configuration cache refreshes, and then click <strong>OK</strong>.  
   
-    > [!NOTE]  
-    >  Items involved in the refresh include the MessageBox databases, server properties, adapters, and connections to the Tracking database.  
+   > [!NOTE]  
+   >  Items involved in the refresh include the MessageBox databases, server properties, adapters, and connections to the Tracking database.  
   
-    > [!NOTE]  
-    >  By default, all objects in the configuration cache are refreshed every 60 seconds, except for the server database connections and server properties.
+   > [!NOTE]  
+   >  By default, all objects in the configuration cache are refreshed every 60 seconds, except for the server database connections and server properties.

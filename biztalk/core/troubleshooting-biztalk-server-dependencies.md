@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshooting BizTalk Server Dependencies
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] makes extensive use of several other Microsoft products for design time and run-time operations. This section contains troubleshooting guidelines for resolving problems that can occur in these underlying technologies.  
+Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] makes extensive use of several other Microsoft products for design time and run-time operations. This section contains troubleshooting guidelines for resolving problems that can occur in these underlying technologies.  
   
 ## In This Section  
   

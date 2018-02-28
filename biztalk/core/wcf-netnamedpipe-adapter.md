@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # WCF-NetNamedPipe Adapter
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetNamedPipe adapter when receiving and sending WCF service requests through the [NetNamedPipeBinding](http://go.microsoft.com/fwlink/?LinkId=82588). The WCF-NetNamedPipe adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the **NetNamedPipeBinding**.  
+[!INCLUDE [btsCoName](../includes/btsconame-md.md)] [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetNamedPipe adapter when receiving and sending WCF service requests through the [NetNamedPipeBinding](http://go.microsoft.com/fwlink/?LinkId=82588). The WCF-NetNamedPipe adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the <strong>NetNamedPipeBinding</strong>.  
   
 ## In This Section  
   

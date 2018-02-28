@@ -67,7 +67,7 @@ interface IOpsAIC
   
  Notice that the adapter requires the fully qualified name of the assembly. The fully qualified name is the name given to an assembly when you add it to the GAC. The fully qualified name is a string containing the assembly's name, version, culture, and public key token. You can see the fully qualified names of assemblies by using the Global Assembly Cache Tool, gacutil.exe.  
   
- For more information about fully qualified assembly names, see "Assembly Names" in the .NET Framework Developer's Guide. For more information about gacutil.exe, see "Global Assembly Cache Tool (Gacutil.exe)" in the [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] Developer's Guide.  
+ For more information about fully qualified assembly names, see "Assembly Names" in the .NET Framework Developer's Guide. For more information about gacutil.exe, see "Global Assembly Cache Tool (Gacutil.exe)" in the [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] Developer's Guide.  
   
  You must provide the namespace with the class name. For example, if the class is **OpsHandler** in the **OperationsHandler** namespace, you would give the class name as **OperationsHandler.OpsHandler**.  
   

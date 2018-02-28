@@ -26,22 +26,22 @@ Enterprise Single Sign-On (SSO) provides services to store and transmit encrypte
   
 ```  
 public class MyAdapter : IBTTransport,   
-                         IBTTransportConfig,   
-                         IBTTransportControl,  
-                        IPersistPropertyBag,   
-                         IBaseComponent  
+                         IBTTransportConfig,   
+                         IBTTransportControl,  
+                        IPersistPropertyBag,   
+                         IBaseComponent  
 {  
 ...  
-     private string m_UserName = null;  
-     private string m_UserPassword = null;  
+     private string m_UserName = null;  
+     private string m_UserPassword = null;  
   
  // Get user credentials from SSO  
  // AffiliateAppVal is the name of SSO affiliate   
  // application for the specific destination endpoint  
-     private void GetUserCredentials(  
+     private void GetUserCredentials(  
  IBaseMessage message,   
  string AffiliateAppVal )  
-     {  
+     {  
  string creds[] = null;  
  string externalUserName = null;  
   
@@ -54,7 +54,7 @@ public class MyAdapter : IBTTransport,
   
  m_UserName = externalUserName;  
  m_UserPassword = creds[0];  
-     }  
+     }  
 ...  
 }  
 ```  

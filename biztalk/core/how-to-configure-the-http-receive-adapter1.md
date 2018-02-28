@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Configure the HTTP Receive Adapter
-You can use the HTTP receive adapter to submit messages to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The HTTP receive adapter is an Internet Information Services (IIS) ISAPI extension that is hosted in the IIS process.  
+You can use the HTTP receive adapter to submit messages to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The HTTP receive adapter is an Internet Information Services (IIS) ISAPI extension that is hosted in the IIS process.  
   
 ### To configure the HTTP receive adapter  
   

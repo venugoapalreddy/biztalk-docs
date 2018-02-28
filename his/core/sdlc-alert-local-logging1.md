@@ -14,13 +14,13 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # SDLC Alert Local Logging
-Before [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] attempts to build and send an SDLC link alert, information about the outage that caused the alert is recorded in a log file that can be viewed using the Windows Event Log service. Message 182 is always logged, as follows:  
+Before [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] attempts to build and send an SDLC link alert, information about the outage that caused the alert is recorded in a log file that can be viewed using the Windows Event Log service. Message 182 is always logged, as follows:  
   
 ```  
 182I:  Connection failure, code = (outagecode)  
-Cause Data                          = hh...hh  
-Link Role                           = hh  
-Remote Node Type                    = hh  
+Cause Data                          = hh...hh  
+Link Role                           = hh  
+Remote Node Type                    = hh  
 ```  
   
  The Outage Code (outagecode) is also reported on Message 23. For a complete list of these codes, the conditions they represent, and the specific link alerts on which they are used, see the next section.  
@@ -32,8 +32,8 @@ Remote Node Type                    = hh
 ```  
 183I:  
 Detailed diagnostic data for station (stationaddress):  
-SBSY   CFTX   CFRX   V(S)   V(R)   N(R)   OSFC   T1CT  
-hh   hhhh   hhhh   hh     hh     hh     hh     hhhh  
+SBSY   CFTX   CFRX   V(S)   V(R)   N(R)   OSFC   T1CT  
+hh   hhhh   hhhh   hh     hh     hh     hh     hhhh  
 ```  
   
  The value (stationaddress) is the station address as given in the Detail qualifier subvector in the alert.  

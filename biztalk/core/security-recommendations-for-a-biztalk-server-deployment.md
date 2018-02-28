@@ -37,7 +37,7 @@ This section contains high-level, feature-agnostic recommendations to secure you
   
 If using Internet Explorer, we recommend you turn on the enhanced security of Internet Explorer.  
   
- **Install service packs and updates**. We recommend always installing the latest product service packs and Microsoft updates on all servers that have [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] resources, including [!INCLUDE[btsSQLServerNoVersion_md](../includes/btssqlservernoversion-md.md)].  
+ <strong>Install service packs and updates</strong>. We recommend always installing the latest product service packs and Microsoft updates on all servers that have [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] resources, including [!INCLUDE [btsSQLServerNoVersion_md](../includes/btssqlservernoversion-md.md)].  
   
  **Do not save passwords in clear-text in scripts or binding files.** You should save scripts in locations with strong discretionary access control lists (DACLs) so that only the BizTalk Server administrators have permissions to view, modify and run these scripts. When the scripts and binding files require passwords, ensure you mask the passwords as soon as you use the scripts for configuration or deployment. Do not leave passwords in these files in clear text.  
   

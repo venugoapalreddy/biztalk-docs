@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Deploying Host Integration Server
-This section describes the concepts and considerations necessary for successfully deploying [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+This section describes the concepts and considerations necessary for successfully deploying [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
 ## In This Section  
  [Connecting Servers](../core/connecting-servers2.md)  

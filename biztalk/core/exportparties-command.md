@@ -18,11 +18,12 @@ manager: "anneta"
 Exports all the parties and agreements to an XML bindings file.
 
 > [!IMPORTANT]
-> This command is new starting with **[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, and any newer versions.
+> This command is new starting with <strong><!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/exportparties-command.md) contains invalid char.
+> Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --></strong>, and any newer versions.
 
 ## Usage
   **BTSTask ExportParties -Destination**:*value* [**-Server**:*value*] [**-Database**:*value*]
-  
+
 ## Parameters
 
 |Parameter|Required|Value|  

@@ -20,8 +20,8 @@ The **CMDSemSet** function sets a RAM semaphore.
   
 ```  
   
-USHORT FAR CMDSemSet(   
-ULONG FAR *ramSem   
+USHORT FAR CMDSemSet(   
+ULONG FAR *ramSem   
 );  
 ```  
   

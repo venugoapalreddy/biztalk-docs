@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # ListTypes Command
-Lists all of the artifact types that you can add to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] by using the **AddResource** command. For more information about the **AddResource** command, see [AddResource Command](../core/addresource-command.md).  
+Lists all of the artifact types that you can add to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] by using the <strong>AddResource</strong> command. For more information about the <strong>AddResource</strong> command, see [AddResource Command](../core/addresource-command.md).  
   
  The fully qualified names of the supported artifact types are as follows:  
   

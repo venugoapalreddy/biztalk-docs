@@ -18,9 +18,9 @@ manager: "anneta"
 # Messages and Message Schemas for BizTalk Adapter for Siebel eBusiness Applications
 
 ## Overview
-The [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] is a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding. It exposes operations that applications can invoke on a Siebel system. These operations are invoked by sending SOAP messages over a channel. If a response is required, it is returned in a SOAP message over the same channel.  
+The [!INCLUDE [adaptersiebel](../../includes/adaptersiebel-md.md)] is a [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding. It exposes operations that applications can invoke on a Siebel system. These operations are invoked by sending SOAP messages over a channel. If a response is required, it is returned in a SOAP message over the same channel.  
   
- As a [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] service, the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] exposes metadata for its operations and data types by using standard [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] mechanisms. The sections in this topic describe the XML structure of the messages and data types that the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] uses.  
+ As a [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] service, the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] exposes metadata for its operations and data types by using standard [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] mechanisms. The sections in this topic describe the XML structure of the messages and data types that the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] uses.  
   
 ## In This Section  
   

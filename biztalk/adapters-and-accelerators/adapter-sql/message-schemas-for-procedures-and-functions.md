@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for Procedures and Functions
-The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces SQL Server database stored procedures and scalar and table valued functions as operations. This section describes the message structure and actions used to invoke procedures and functions.  
+The [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] surfaces SQL Server database stored procedures and scalar and table valued functions as operations. This section describes the message structure and actions used to invoke procedures and functions.  
   
 ## Message Structure of Procedures and Functions  
  The operations surfaced for procedures and functions follow a request-response message exchange pattern. The following table shows the structure of these request and response messages.  
@@ -44,7 +44,7 @@ The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] surfaces SQL Server 
  [PRM_NAME] = The name of the SQL Server parameter.  
   
 ## Message Actions of Functions and Procedures  
- The [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] uses the following message actions for stored procedure and function operations.  
+ The [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] uses the following message actions for stored procedure and function operations.  
   
 |Message|Action|Example|  
 |-------------|------------|-------------|  

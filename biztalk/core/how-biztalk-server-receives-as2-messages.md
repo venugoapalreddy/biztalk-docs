@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How BizTalk Server Receives AS2 Messages
-This section describes how the AS2 components in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process outgoing AS2 messages.  
+This section describes how the AS2 components in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process outgoing AS2 messages.  
   
 ## In This Section  
   

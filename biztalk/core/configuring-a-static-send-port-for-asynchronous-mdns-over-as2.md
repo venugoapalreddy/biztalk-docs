@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring a Static Send Port for Asynchronous MDNs over AS2
-This topic describes how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send an asynchronous EDIINT/AS2-encoded MDN message over a static send port. This configuration includes creating the static send port and if required, setting up an encryption certificate to be used by the send port.  
+This topic describes how to configure [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send an asynchronous EDIINT/AS2-encoded MDN message over a static send port. This configuration includes creating the static send port and if required, setting up an encryption certificate to be used by the send port.  
   
 > [!NOTE]
 >  You can configure a dynamic send port to send MDN messages, instead of a static send port. For more information, see [Configuring a Dynamic Send Port for Asynchronous MDNs over AS2](../core/configuring-a-dynamic-send-port-for-asynchronous-mdns-over-as2.md).  

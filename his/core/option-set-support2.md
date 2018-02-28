@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Option Set Support
-The following table lists the option sets supported by [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. The reference numbers are those specified in IBM documentation.  
+The following table lists the option sets supported by [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. The reference numbers are those specified in IBM documentation.  
   
 |Ref No.|Option Set|  
 |-------------|----------------|  

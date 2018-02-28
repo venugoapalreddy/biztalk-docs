@@ -20,7 +20,7 @@ The SNA National Language Support (SNANLS) **FindNextCodePage** function finds t
   
 ```  
   
-BOOL WINAPI FindNextCodePage(   
+BOOL WINAPI FindNextCodePage(   
         const HANDLE hInfo  
 struct CodePage *pPage  
 );  

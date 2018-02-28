@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # MDN Messages
-The Message Disposition Notification (MDN) is the acknowledgment sent in response to an AS2 message. If an MDN is enabled, the AS2 transmission is not complete until the MDN has been received and verified. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will always attempt to return an MDN to indicate the status of message processing, even if an error occurred in processing the AS2 message.  
+The Message Disposition Notification (MDN) is the acknowledgment sent in response to an AS2 message. If an MDN is enabled, the AS2 transmission is not complete until the MDN has been received and verified. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will always attempt to return an MDN to indicate the status of message processing, even if an error occurred in processing the AS2 message.  
   
  The MDN provides verification of the following:  
   
@@ -41,20 +41,20 @@ The Message Disposition Notification (MDN) is the acknowledgment sent in respons
 ## MDN Context Properties  
  Context properties used in processing MDN messages include properties that can be promoted as well as properties that are not publicly exposed, but can be viewed in suspended and tracked messages. For a list of these context properties, see [AS2 Context Properties](../core/as2-context-properties.md).  
   
- Both the DispositionMode and DispositionType context properties must be promoted in order for an MDN to be generated. If an error occurs in the AS2 or EDI payload, the DispositionType property will indicate the error. You can see this property in the **Message Details** dialog box that is displayed (via the Service Details dialog box) from the Suspended service instances in the **Group Hub** page of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console. If an error occurs in the header, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will indicate the error in the DispositionType property, and will attempt to send the MDN, but depending on the error, may not be able to do so.  
+ Both the DispositionMode and DispositionType context properties must be promoted in order for an MDN to be generated. If an error occurs in the AS2 or EDI payload, the DispositionType property will indicate the error. You can see this property in the <strong>Message Details</strong> dialog box that is displayed (via the Service Details dialog box) from the Suspended service instances in the <strong>Group Hub</strong> page of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console. If an error occurs in the header, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will indicate the error in the DispositionType property, and will attempt to send the MDN, but depending on the error, may not be able to do so.  
   
 ## MDN Headers  
  The MDN contains the following headers:  
   
--   **HTTP/AS2 headers**. For more information, see [AS2 Messages](../core/as2-messages.md).  
+- **HTTP/AS2 headers**. For more information, see [AS2 Messages](../core/as2-messages.md).  
   
--   **Transfer Layer**. This includes the Content-Type header that includes the signed multipart message, the algorithm for the MIC, the signature formatting protocol, and the outermost multipart boundary sub-headers.  
+- **Transfer Layer**. This includes the Content-Type header that includes the signed multipart message, the algorithm for the MIC, the signature formatting protocol, and the outermost multipart boundary sub-headers.  
   
--   **First Part**. The first part of the multipart signed message is the embedded MDN. It is human readable.  
+- **First Part**. The first part of the multipart signed message is the embedded MDN. It is human readable.  
   
--   **Second Part**. The second part of the multipart signed message contains the digital signature, a reference to the original message, the disposition type and status, and the MIC value. It is machine readable.  
+- **Second Part**. The second part of the multipart signed message contains the digital signature, a reference to the original message, the disposition type and status, and the MIC value. It is machine readable.  
   
- The AS2-From header, AS2-To header, and MessageID context property are used to correlate an MDN to the AS2 message that it is responding to. The Original-Message-ID header in an MDN comes from the Message-ID header of the AS2 message that the MDN is responding to.  
+  The AS2-From header, AS2-To header, and MessageID context property are used to correlate an MDN to the AS2 message that it is responding to. The Original-Message-ID header in an MDN comes from the Message-ID header of the AS2 message that the MDN is responding to.  
   
 ## MIC  
  The Message Integrity Check (MIC) is used to verify that an MDN correlates to the original sent message payload. The MIC digest is included in the Received-Content-MIC extension field in the second part of the multipart signed MDN message.  

@@ -20,7 +20,7 @@ To add a .NET assembly (which includes managed COM or COM+ components) to a BizT
  If an assembly has the same full name as an assembly that already exists in the application, you can specify the Overwrite parameter. The full name consists of the name, public key token, culture, and version. In this case, the existing assembly is overwritten. For more information about dependencies, see [Dependencies and Application Deployment](../core/dependencies-and-application-deployment.md).  
   
 ## Usage  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Assembly**[**/Overwrite**] **/Source:***value* [**/Destination:***value*] [**/Options:GacOnAdd***&#124;***GacOnInstall***&#124;***GacOnImport**&#124;**RegasmOnInstall**&#124;**RegsvcsOnInstall**] [**/Server:***value*] [**/Database:***value*]  
+ <strong>BTSTask AddResource</strong> [<strong>/ApplicationName:</strong><em>value</em>] <strong>/Type:System.BizTalk:Assembly</strong>[<strong>/Overwrite</strong>] <strong>/Source:</strong><em>value</em> [<strong>/Destination:</strong><em>value</em>] [<strong>/Options:GacOnAdd</strong><em>&#124;</em><strong>GacOnInstall</strong><em>&#124;</em><strong>GacOnImport</strong>&#124;<strong>RegasmOnInstall</strong>&#124;<strong>RegsvcsOnInstall</strong>] [<strong>/Server:</strong><em>value</em>] [<strong>/Database:</strong><em>value</em>]  
   
 ## Parameters  
   

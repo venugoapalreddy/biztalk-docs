@@ -26,7 +26,7 @@ The business process management solution provides for retrying, in a generic way
  The **Recaller** object has a single, static method, **Invoke**. Because it is static, you never need to create an instance of the **Recaller** object. You can use the **Invoke** method in three ways: to construct an object, to call a static method for an object, or to call a non-static method for an object.  
   
 > [!NOTE]
->  The **Invoke** method serves as a wrapper for the **Type.InvokeMember** method in the [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] Class Library.  
+>  The <strong>Invoke</strong> method serves as a wrapper for the <strong>Type.InvokeMember</strong> method in the [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] Class Library.  
   
 ### Arguments for the Invoke Method  
  The following table describes arguments for the **Invoke** method:  
@@ -45,7 +45,7 @@ The business process management solution provides for retrying, in a generic way
  To call a non-static method, supply all of the arguments.  
   
 > [!NOTE]
->  Using **null** as the value of the Type argument, *t*, causes **Invoke** to throw an **ArgumentNullException** exception. The argument *t* should not be null because the **Invoke** method uses the **Type.InvokeMember** [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] method.  
+>  Using <strong>null</strong> as the value of the Type argument, <em>t</em>, causes <strong>Invoke</strong> to throw an <strong>ArgumentNullException</strong> exception. The argument <em>t</em> should not be null because the <strong>Invoke</strong> method uses the <strong>Type.InvokeMember</strong> [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] method.  
   
 ## Calling Invoke  
  In the solution, only the **ExceptionHandler** orchestration uses the **Recaller** object. The **ExceptionHandler** is, in turn, used by other orchestrations. The values passed to the **Invoke** method come from these other orchestrations. For example, the following code appears in the **Activate** orchestration in the **InitialException** Expression shape:  

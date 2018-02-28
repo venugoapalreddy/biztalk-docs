@@ -18,15 +18,15 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshoot performance issues with the Oracle Database adapter
-This section discusses using troubleshooting techniques to resolve performance issues that you might encounter when using [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].  
+This section discusses using troubleshooting techniques to resolve performance issues that you might encounter when using [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)].  
   
 ## Known Issue  
- The following is the most common performance issue you might encounter when using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], along with its probable cause and resolution.  
+ The following is the most common performance issue you might encounter when using the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)], along with its probable cause and resolution.  
   
 ##  <a name="BKMK_Slowdown"></a> Slowdown or stall in throughput when using the adapter with BizTalk Server  
  **Problem**  
   
- When using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the number of messages sent or received by the adapter slows down or comes to a stall.  
+ When using the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the number of messages sent or received by the adapter slows down or comes to a stall.  
   
  **Cause**  
   
@@ -39,7 +39,7 @@ This section discusses using troubleshooting techniques to resolve performance i
 ### Possible memory leak on a 64-bit computer when using the Oracle database adapter to perform operations involving FLOAT data type  
  **Problem**  
   
- You may experience a memory leak when using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] on a 64-bit computer to perform operations that involve FLOAT data types.  
+ You may experience a memory leak when using the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] on a 64-bit computer to perform operations that involve FLOAT data types.  
   
  **Resolution**  
   

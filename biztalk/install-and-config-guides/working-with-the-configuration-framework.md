@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Working with the Configuration Framework
-The Configuration Framework enables you to quickly and easily change Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] configuration at setup. In conjunction with the Microsoft Windows Installer (MSI), the Configuration Framework reads and reports the state of your computer and the configuration tasks requiring action.  
+The Configuration Framework enables you to quickly and easily change Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] configuration at setup. In conjunction with the Microsoft Windows Installer (MSI), the Configuration Framework reads and reports the state of your computer and the configuration tasks requiring action.  
   
  When you configure BizTalk Server for the first time using the Configuration Wizard, the Configuration Framework generates an XML file (a configuration snapshot) that you can then modify (that is, change user names, passwords, and so on) and export to other computers. You save your configuration snapshot on the Configuration Summary page, part of the Configuration Wizard. You can use this snapshot to replicate your configuration as part of a scripted installation. This file is located at \<*BizTalk Installation Path*\>\ConfigMain.xml.  
   
@@ -32,7 +32,7 @@ The Configuration Framework enables you to quickly and easily change Microsoft [
 |**/H**|-   Shows the valid command line parameters.|  
   
 ## Sample Configuration XML File  
- The following is a sample configuration XML file with all features installed. To create your own configuration file, use the Custom configuration option on a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], confirm all the components complete successfully, and then choose **Export Configuration** in the Configuration window. You can then use the exported configuration file to configure other [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]s.  
+ The following is a sample configuration XML file with all features installed. To create your own configuration file, use the Custom configuration option on a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], confirm all the components complete successfully, and then choose <strong>Export Configuration</strong> in the Configuration window. You can then use the exported configuration file to configure other [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]s.  
   
 ```  
 <Configuration>  

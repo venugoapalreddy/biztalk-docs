@@ -37,7 +37,7 @@ This topic describes known validation issues.
   
  **Possible Cause**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] caches schemas with unlimited timeouts.  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] caches schemas with unlimited timeouts.  
   
  **Resolution**  
   
@@ -67,7 +67,7 @@ This topic describes known validation issues.
 -   EDIFACT group or transaction set control number: UNG and UNH Segment Definition page (in the Party as Interchange Receiver node for EDIFACT Properties)  
   
 ## BizTalk Server validates with schemas that have UNH segments with seven data elements  
- In earlier versions of EDIFACT, the UNH segment has four elements, rather than the seven elements (three of which are optional) that the UNH segment has in later versions. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the later version with seven elements for validation.  
+ In earlier versions of EDIFACT, the UNH segment has four elements, rather than the seven elements (three of which are optional) that the UNH segment has in later versions. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the later version with seven elements for validation.  
   
 ## Error messages generated for multiple cross-field validation rules will not be specific to the rule  
  If a schema contains multiple cross-field validation rules for a data element in a message, and an error occurs with the data element, a separate error will be generated for each validation rule. However, each of these errors will have the same error code and description; the errors will not be specific to the validation rule.  
@@ -114,10 +114,10 @@ This topic describes known validation issues.
  If you use UNH2.5 (the Association assigned code) for schema resolution of an incoming EDIFACT interchange, you will need to update the relevant document schema in the \Program Files\Microsoft BizTalk Server 20xx\Schema folder. You will need to append the value of UNH2.5 to the existing values for the root_reference, display_reference, and xs:element name. For example, if UNH2.5 is "EAN008" and you are using the EFACT_D96A_INVOIC schema, you would set root_reference, display_reference, and xs:element name to "EFACT_D96A_INVOIC_EAN008".  
   
 ## The compressed file of schemas will be replaced when an upgrade is performed  
- If you upgrade Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to a later build, the MicrosoftEdiXSDTemplates.exe file in your installation will be replaced with the MicrosoftEdiXSDTemplates.exe file associated with the upgrade. If you plan to continue to use the schemas from the old compressed file, you will no longer have access to the compressed file after the upgrade unless you back up the old compressed file.  
+ If you upgrade Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to a later build, the MicrosoftEdiXSDTemplates.exe file in your installation will be replaced with the MicrosoftEdiXSDTemplates.exe file associated with the upgrade. If you plan to continue to use the schemas from the old compressed file, you will no longer have access to the compressed file after the upgrade unless you back up the old compressed file.  
   
 ## If a group contains multiple X12 transaction sets, all must be of the same type  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not support mixing different transaction sets within the same group. When a group contains multiple transactions, the value of ST01 must be the same for all transactions.  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] does not support mixing different transaction sets within the same group. When a group contains multiple transactions, the value of ST01 must be the same for all transactions.  
   
 ## Receiving X12 interchanges that contain non-ASCII delimiters may result in the message becoming suspended  
  **Symptom**  

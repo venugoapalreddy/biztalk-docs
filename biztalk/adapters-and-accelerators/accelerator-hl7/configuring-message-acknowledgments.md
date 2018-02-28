@@ -19,13 +19,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring Message Acknowledgments
-You use the [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Configuration Explorer **Acknowledgment** tab to specify the acknowledgment properties for inbound and generated acknowledgments.  
+You use the [!INCLUDE [HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] Configuration Explorer <strong>Acknowledgment</strong> tab to specify the acknowledgment properties for inbound and generated acknowledgments.  
   
- The following figure shows the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer **Acknowledgment** tab.  
+ The following figure shows the [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer <strong>Acknowledgment</strong> tab.  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/hl7-ops-ack.gif "hl7_ops_ack")  
   
- Use the following procedures to open [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer and configure message acknowledgments.  
+ Use the following procedures to open [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer and configure message acknowledgments.  
   
 ### To open BTAHL7 Configuration Explorer  
   

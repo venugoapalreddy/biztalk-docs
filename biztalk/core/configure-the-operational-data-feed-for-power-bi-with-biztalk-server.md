@@ -17,10 +17,12 @@ manager: "anneta"
 ---
 # Configure the Power BI operational data feed in BizTalk Server
 
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, send tracking to Power BI using the Power BI template provided, or create your own. 
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/configure-the-operational-data-feed-for-power-bi-with-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --> <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[featurepack1](../includes/featurepack1.md)]: Path(D:/a/1/s/target_repo/biztalk/core/configure-the-operational-data-feed-for-power-bi-with-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[featurepack1](../includes/featurepack1.md)]<!--END ERROR INCLUDE --></strong>, send tracking to Power BI using the Power BI template provided, or create your own. 
 
 ## What is operational data
-Operational data is information on the instances and messages flowing through your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environment. The operational data feed is the same data you get looking at Group Hub in [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]. The data is accessed and queried using visualization tools, including Power BI. 
+Operational data is information on the instances and messages flowing through your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environment. The operational data feed is the same data you get looking at Group Hub in [!INCLUDE [btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]. The data is accessed and queried using visualization tools, including Power BI. 
 
 The feed includes the following data tables:
 * Application data
@@ -39,9 +41,9 @@ The feed includes the following data tables:
 > [PowerBI.com](http://powerbi.microsoft.com) is a great resource to understand and learn more about Power BI.
 
 ## Prerequisites
-* Download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) on any computer that has network access to your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
-* Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
-* Install IIS on the [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. In most [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environments, IIS is already installed. See [Hardware and Software Requirements for BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md). Confirm IIS is installed by opening **Internet Information Services Manager**. 
+* Download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) on any computer that has network access to your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* Install IIS on the [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. In most [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] environments, IIS is already installed. See [Hardware and Software Requirements for BizTalk Server 2016](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md). Confirm IIS is installed by opening <strong>Internet Information Services Manager</strong>. 
 * Optional. Install and configure a [Power BI Gateway](https://powerbi.microsoft.com/gateway/) to connect [PowerBI.com](http://powerbi.microsoft.com) with your on-premises BizTalk Server. If you're not using an on-premises BizTalk Server, then you don't need the gateway.
 
 ## Step 1: Enable operational data
@@ -54,21 +56,21 @@ The feed includes the following data tables:
     FeaturePack.ConfigureServices.ps1 -Service operationaldata -WebSiteName '<Default Web Site>' -ApplicationPool <operationalDataServiceAppPool> -ApplicationPoolUser <domain>\<user\> -ApplicationPoolUserPassword <password> -AuthorizationRoles '<domain>\<group1\>, <domain>\<group2\>, <domain>\<user\>, <domain>\<user2\>'
     ```
 
-    * **Service**: The service to be configured (**OperationalData** for Power BI)
-    * **WebSiteName**: The existing IIS web site that hosts the service. The default value is **Default Web Site**.
-    * **ApplicationPool**: The Application Pool used by the service. If it exists, a new one is not created. The default value is **DefaultAppPool**.
-    * **ApplicationPoolUser**: Configures the application pool to run as this user identity. Must have BizTalk Server Operator, or higher privileges.
-    * **ApplicationPoolUserPassword**: Password for the ApplicationPoolUser
-    * **AuthorizationAccount**: List of authorized Groups or Users that can use this service
+   * **Service**: The service to be configured (**OperationalData** for Power BI)
+   * **WebSiteName**: The existing IIS web site that hosts the service. The default value is **Default Web Site**.
+   * **ApplicationPool**: The Application Pool used by the service. If it exists, a new one is not created. The default value is **DefaultAppPool**.
+   * **ApplicationPoolUser**: Configures the application pool to run as this user identity. Must have BizTalk Server Operator, or higher privileges.
+   * **ApplicationPoolUserPassword**: Password for the ApplicationPoolUser
+   * **AuthorizationAccount**: List of authorized Groups or Users that can use this service
 
-    In the following example, we use the `Default Web Site`, create an application pool named `PowerBIAppPool`, run the appPool as the `bootcampbts2016\btsservice` account, use `BIZTALK-serviceacct` as the user account password, and give the `BizTalk Server Administrators` group permissions. Be sure to enter the following, including the single quotes surrounding values with spaces: 
+     In the following example, we use the `Default Web Site`, create an application pool named `PowerBIAppPool`, run the appPool as the `bootcampbts2016\btsservice` account, use `BIZTALK-serviceacct` as the user account password, and give the `BizTalk Server Administrators` group permissions. Be sure to enter the following, including the single quotes surrounding values with spaces: 
 
-    ```Powershell
-    FeaturePack.ConfigureServices.ps1 -Service operationaldata -WebSiteName 'Default Web Site' -ApplicationPool PowerBIAppPool -ApplicationPoolUser bootcampbts2016\btsservice -ApplicationPoolUserPassword  BIZTALK-serviceacct -AuthorizationRoles 'BOOTCAMPBTS2016\BizTalk Server Administrators'
-    ```
+     ```Powershell
+     FeaturePack.ConfigureServices.ps1 -Service operationaldata -WebSiteName 'Default Web Site' -ApplicationPool PowerBIAppPool -ApplicationPoolUser bootcampbts2016\btsservice -ApplicationPoolUserPassword  BIZTALK-serviceacct -AuthorizationRoles 'BOOTCAMPBTS2016\BizTalk Server Administrators'
+     ```
 
-    When complete, the BizTalkOperationalDataService application is created within IIS:  
-    ![BizTalkMOperationalDataServer application](../core/media/biztalkmanagementservice-apppool.png)
+     When complete, the BizTalkOperationalDataService application is created within IIS:  
+     ![BizTalkMOperationalDataServer application](../core/media/biztalkmanagementservice-apppool.png)
 
 
 4. To confirm it’s working, browse to `http://localhost/BizTalkOperationalDataService`. 

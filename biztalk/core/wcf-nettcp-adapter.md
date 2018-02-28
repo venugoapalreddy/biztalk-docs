@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # WCF-NetTcp Adapter
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetTcp adapter when receiving and sending WCF service requests through the [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087). The WCF-NetTcp adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the **NetTcpBinding**.  
+[!INCLUDE [btsCoName](../includes/btsconame-md.md)] [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetTcp adapter when receiving and sending WCF service requests through the [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087). The WCF-NetTcp adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the <strong>NetTcpBinding</strong>.  
   
 ## In This Section  
   

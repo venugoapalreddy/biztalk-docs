@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring a Static Send Port for Messages over AS2
-This topic describes how to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send AS2 messages over a static send port. This configuration includes creating the static send port and configuring the agreement. If required, you will also set up an encryption certiticate to be used by the send port.  
+This topic describes how to configure [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to send AS2 messages over a static send port. This configuration includes creating the static send port and configuring the agreement. If required, you will also set up an encryption certiticate to be used by the send port.  
   
 > [!NOTE]
 >  You can configure a dynamic send port to send AS2 messages, instead of a static send port. For more information, see [Configuring a Dynamic Send Port for Messages over AS2](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md).  
@@ -38,18 +38,18 @@ This topic describes how to configure [!INCLUDE[btsBizTalkServerNoVersion](../in
 |**Send Port Properties: Certificates**|Common Name  and thumbprint|Enter the certificate name and thumbprint if using an encryption certificate for the outbound AS2 message.|  
   
 ## Prerequisites  
- You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
+ You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
   
 ### To configure BizTalk Server to send AS2 messages over a static send port  
   
-1.  In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, create a static one-way or solicit response send port with the above configuration.  
+1. In the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console, create a static one-way or solicit response send port with the above configuration.  
   
-2.  In the send ports list on the **Send Ports** page of the one-way agreement tab in the **Agreement Properties** dialog box, enter the name of the static send port.  
+2. In the send ports list on the **Send Ports** page of the one-way agreement tab in the **Agreement Properties** dialog box, enter the name of the static send port.  
   
-    > [!NOTE]
-    >  Setting the send port enables [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to perform agreement resolution for an outbound AS2 message.  
+   > [!NOTE]
+   >  Setting the send port enables [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to perform agreement resolution for an outbound AS2 message.  
   
-3.  In the **Identifiers** page of the one-way agreement tab of the **Agreement Properties** dialog box, set the AS2-To property to the destination and then set other agreement properties as required in the different pages of the **Agreement Properties** dialog box.  
+3. In the **Identifiers** page of the one-way agreement tab of the **Agreement Properties** dialog box, set the AS2-To property to the destination and then set other agreement properties as required in the different pages of the **Agreement Properties** dialog box.  
   
 ## Functionality  
  The send port and pipeline does the following to send a synchronous EDI or non-EDI message or acknowledgment over AS2 and process the returned MDN:  

@@ -90,7 +90,7 @@ This topic describes known issues with processing in the EDI receive pipeline.
  When BizTalk Server receives a KEDIFACT-encoded interchange with Korean characters, it will use the code page/character set value in the UNB2 field to process the interchange. However, if you modify a KEDIFACT schema by adding a Korean character with an ID data type to an enumeration, you must add the value in UTF-16 UNICODE, as specified at the top of the schema.  
   
 ## Executing an EDI Receive Pipeline from within an Orchestration Is Not Supported  
- In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can typically execute receive pipelines within an Expression shape in an orchestration. This functionality has not been tested for the EDIReceive pipeline or the AS2EdiReceive pipeline, so is not supported.  
+ In [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can typically execute receive pipelines within an Expression shape in an orchestration. This functionality has not been tested for the EDIReceive pipeline or the AS2EdiReceive pipeline, so is not supported.  
   
 ## BizTalk EDI Application Must Not Be Modified  
  Artifacts in the BizTalk EDI Application must not be modified or deleted. If this application is modified, there is no way for you to revert to the original application by unconfiguring and reconfiguring the EDI and AS2 features.  

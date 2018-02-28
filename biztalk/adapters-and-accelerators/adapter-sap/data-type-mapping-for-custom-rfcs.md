@@ -17,10 +17,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Data Type Mapping for Custom RFCs
-The following table provides information about SAP data types and how they are mapped to .NET data types for the Z_EXTRACT_DATA_OO RFC. This custom RFC is used by the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)].  
+The following table provides information about SAP data types and how they are mapped to .NET data types for the Z_EXTRACT_DATA_OO RFC. This custom RFC is used by the [!INCLUDE [adoprovidersapshort](../../includes/adoprovidersapshort-md.md)].  
   
 > [!NOTE]
->  For the Z_EXECUTE_SAP_QUERY, which is used by the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] to execute the EXECQUERY command, all SAP data types are converted to .NET string types.  
+>  For the Z_EXECUTE_SAP_QUERY, which is used by the [!INCLUDE [adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] to execute the EXECQUERY command, all SAP data types are converted to .NET string types.  
   
 |SAP Data Type|.NET Data Type|  
 |-------------------|--------------------|  

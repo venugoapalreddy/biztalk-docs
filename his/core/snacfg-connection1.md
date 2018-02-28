@@ -33,8 +33,8 @@ manager: "anneta"
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of configured connections.  
@@ -105,8 +105,8 @@ manager: "anneta"
  **/remotenodeno:** *hexdigits*  
  Specifies the remote node number, a five-digit hexadecimal number. The remote node number forms the last part of the Remote Node ID, an eight-digit hexadecimal number that identifies the remote system.  
   
- **/xidtype:{ format0 &#124; format3 }**  
- Specifies the XID type, the type of identifying information for [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] to send. The choices are **format0** (Format 0) and **format3** (Format 3). Format 0 sends only the Node ID. Format 3 sends up to 100 bytes of identifying information, including the local node ID and control point name.  
+ <strong>/xidtype:{ format0 &#124; format3 }</strong>  
+ Specifies the XID type, the type of identifying information for [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] to send. The choices are <strong>format0</strong> (Format 0) and <strong>format3</strong> (Format 3). Format 0 sends only the Node ID. Format 3 sends up to 100 bytes of identifying information, including the local node ID and control point name.  
   
  If no XID type has been specified, the default is **format3**.  
   

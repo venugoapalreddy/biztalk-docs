@@ -19,4 +19,4 @@ The **ISSOMapper2** interface creates mappings between users and applications
 ## Requirements  
  **Type Library**: SSOMapper 1.0 Type Library (SSOMapper.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]

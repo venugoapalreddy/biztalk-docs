@@ -40,7 +40,7 @@ The **Tracing Global Properties** tab has several items that can be modified to 
 ## Write Traces on a Background Thread  
  Check this box to run tracing in the background. If the box is cleared (blank), tracing runs in the foreground.  
   
- To reduce performance impacts caused by tracing [!INCLUDE[hisHostIntegrationServerProduct](../includes/hishostintegrationserverproduct-md.md)] components, traces can be queued and written by a background thread when this box is checked. Otherwise, trace files will be written immediately.  
+ To reduce performance impacts caused by tracing [!INCLUDE [hisHostIntegrationServerProduct](../includes/hishostintegrationserverproduct-md.md)] components, traces can be queued and written by a background thread when this box is checked. Otherwise, trace files will be written immediately.  
   
 ## Background Thread Priority  
  If you select **Write Traces on a Background Thread**, check only one item to set the level of priority for tracing to run within the Microsoft Windows operating system. Highest gives tracing the highest level of priority, which means that tracing takes precedence over other jobs. Idle means that tracing runs when the CPU is idle.  

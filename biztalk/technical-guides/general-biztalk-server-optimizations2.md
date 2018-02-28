@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # General BizTalk Server Optimizations
-The following recommendations can be used to increase [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] performance. The optimizations listed in this topic are applied after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has been installed and configured.  
+The following recommendations can be used to increase [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] performance. The optimizations listed in this topic are applied after [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] has been installed and configured.  
   
 ## Create multiple BizTalk Server hosts and separate host instances by functionality  
  Separate hosts should be created for sending, receiving, processing, and tracking functionality. Creating multiple BizTalk hosts provides flexibility when configuring the workload in your BizTalk group and is the primary means of distributing processing across the BizTalk Servers in a BizTalk group. Multiple hosts also allow you to stop one host without affecting other hosts. For example, you may want to stop sending messages to let them queue up in the Messagebox database, while still allowing the inbound receiving of messages to occur. Separating host instances by functionality also provides the following benefits:  
@@ -37,23 +37,23 @@ The following recommendations can be used to increase [!INCLUDE[btsBizTalkServer
   
  Using a dedicated tracking host also allows you to stop other BizTalk hosts without interfering with BizTalk Server tracking. The movement of tracking data out of the Messagebox database is critical for a healthy BizTalk Server system. If the BizTalk Host responsible for moving tracking data in the BizTalk group is stopped, the Tracking Data Decode service will not run. The impact of this is as follows:  
   
--   HAT tracking data will not be moved from the Messagebox database to the BizTalk Tracking database.  
+- HAT tracking data will not be moved from the Messagebox database to the BizTalk Tracking database.  
   
--   BAM tracking data will not be moved from the Messagebox database to the BAM Primary Import database.  
+- BAM tracking data will not be moved from the Messagebox database to the BAM Primary Import database.  
   
--   Because data is not moved, it cannot be deleted from the Messagebox database.  
+- Because data is not moved, it cannot be deleted from the Messagebox database.  
   
--   When the Tracking Data Decode service is stopped, tracking interceptors will still fire and write tracking data to the Messagebox database. If the data is not moved, this will cause the Messagebox database to become bloated, which will impact performance over time. Even if custom properties are not tracked or BAM profiles are not set up, by default some data is tracked (such as pipeline receive / send events and orchestration events). If you do not want to run the Tracking Data Decode service, turn off all tracking so that no interceptors save data to the database. To disable global tracking, see "How to Turn Off Global Tracking" in the BizTalk Server help at [http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589). Use the BizTalk Server Administration console to selectively disable tracking events.  
+- When the Tracking Data Decode service is stopped, tracking interceptors will still fire and write tracking data to the Messagebox database. If the data is not moved, this will cause the Messagebox database to become bloated, which will impact performance over time. Even if custom properties are not tracked or BAM profiles are not set up, by default some data is tracked (such as pipeline receive / send events and orchestration events). If you do not want to run the Tracking Data Decode service, turn off all tracking so that no interceptors save data to the database. To disable global tracking, see "How to Turn Off Global Tracking" in the BizTalk Server help at [http://go.microsoft.com/fwlink/?LinkId=101589](http://go.microsoft.com/fwlink/?LinkId=101589). Use the BizTalk Server Administration console to selectively disable tracking events.  
   
- The tracking host should be run on at least two computers running BizTalk Server (for redundancy in case one fails). For optimal performance, you should have at least one tracking host instance per Messagebox database. The actual number of tracking host instances should be (N + 1), where N = the number of Messagebox databases. The "+ 1" is for redundancy, in case one of the computers hosting tracking fails.  
+  The tracking host should be run on at least two computers running BizTalk Server (for redundancy in case one fails). For optimal performance, you should have at least one tracking host instance per Messagebox database. The actual number of tracking host instances should be (N + 1), where N = the number of Messagebox databases. The "+ 1" is for redundancy, in case one of the computers hosting tracking fails.  
   
- A tracking host instance moves tracking data for specific Messagebox databases, but there will never be more than one tracking host instance moving data for a specific Messagebox database. For example, if you have three Messagebox databases, and only two tracking host instances, then one of the host instances needs to move data for two of the Messagebox databases. Adding a third tracking host instance distributes the tracking host work to another computer running BizTalk Server. In this scenario, adding a fourth tracking host instance would not distribute any more tracking host work, but would provide an extra tracking host instance for fault tolerance.  
+  A tracking host instance moves tracking data for specific Messagebox databases, but there will never be more than one tracking host instance moving data for a specific Messagebox database. For example, if you have three Messagebox databases, and only two tracking host instances, then one of the host instances needs to move data for two of the Messagebox databases. Adding a third tracking host instance distributes the tracking host work to another computer running BizTalk Server. In this scenario, adding a fourth tracking host instance would not distribute any more tracking host work, but would provide an extra tracking host instance for fault tolerance.  
   
- For more information about the BAM Event Bus service, see the following topics in the BizTalk Server help:  
+  For more information about the BAM Event Bus service, see the following topics in the BizTalk Server help:  
   
--   "Managing the BAM Event Bus Service" at [http://go.microsoft.com/fwlink/?LinkId=101590](http://go.microsoft.com/fwlink/?LinkId=101590).  
+- "Managing the BAM Event Bus Service" at [http://go.microsoft.com/fwlink/?LinkId=101590](http://go.microsoft.com/fwlink/?LinkId=101590).  
   
--   "Creating Instances of the BAM Event Bus Service" at [http://go.microsoft.com/fwlink/?LinkId=101591](http://go.microsoft.com/fwlink/?LinkId=101591).  
+- "Creating Instances of the BAM Event Bus Service" at [http://go.microsoft.com/fwlink/?LinkId=101591](http://go.microsoft.com/fwlink/?LinkId=101591).  
   
 ## Manage ASP.NET thread usage or concurrently executing requests for Web applications that host orchestrations published as a Web or WCF Service  
  The number of worker and I/O threads (IIS 6.0 and IIS 7.0 in classic mode) or the number of concurrently executing requests (IIS 7.0 integrated mode) for an ASP.NET Web application that hosts an orchestration published as a Web service should be modified under the following conditions:  
@@ -86,7 +86,7 @@ The following recommendations can be used to increase [!INCLUDE[btsBizTalkServer
   
 ```  
 <!-- <processModel autoConfig="true" /> -->  
-    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
+    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
 ```  
   
 > [!NOTE]  
@@ -148,38 +148,38 @@ The following recommendations can be used to increase [!INCLUDE[btsBizTalkServer
   
  **To modify the number of threads available in the .NET thread pool associated with each instance of a BizTalk host, follow these steps:**  
   
-1.  Stop the BizTalk host instance.  
+1. Stop the BizTalk host instance.  
   
-2.  Click **Start**, click **Run**, type **regedit.exe**, and then click **OK** to start Registry Editor.  
-    Navigate to **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc$***hostname*] where *hostname* is the name of the host associated with the host instance.  
+2. Click <strong>Start</strong>, click <strong>Run</strong>, type <strong>regedit.exe</strong>, and then click <strong>OK</strong> to start Registry Editor.  
+   Navigate to <strong>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc$</strong><em>hostname</em>] where <em>hostname</em> is the name of the host associated with the host instance.  
   
-    > [!NOTE]  
-    >  If you have upgraded your BizTalk Server 2006 installation from BizTalk Server 2004, this registry key may be represented as **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc***guid*] where *guid* is a GUID unique to each instance of a BizTalk Server host.  
+   > [!NOTE]  
+   >  If you have upgraded your BizTalk Server 2006 installation from BizTalk Server 2004, this registry key may be represented as **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc***guid*] where *guid* is a GUID unique to each instance of a BizTalk Server host.  
   
-3.  Locate the **CLR Hosting** key. If this key does not exist, then create the key by following these steps:  
+3. Locate the **CLR Hosting** key. If this key does not exist, then create the key by following these steps:  
   
-    1.  On the **Edit** menu, click **New**, and then click **Key**.  
+   1.  On the **Edit** menu, click **New**, and then click **Key**.  
   
-    2.  Type **CLR Hosting**, and then press **ENTER**.  
+   2.  Type **CLR Hosting**, and then press **ENTER**.  
   
-4.  Under the **CLR Hosting** key, create the following DWORD entries with the indicated values.  
+4. Under the **CLR Hosting** key, create the following DWORD entries with the indicated values.  
   
-    |DWORD entry|Default value|Recommended value|  
-    |-----------------|-------------------|-----------------------|  
-    |MaxIOThreads|20|100|  
-    |MaxWorkerThreads|25|100 **Important:**  Increasing this value beyond 100 can have an adverse effect on the performance of the SQL Server computer hosting the BizTalk Server MessageBox database. When this problem occurs, SQL Server may encounter a deadlock condition. It is recommended this parameter is not increased beyond a value of 100.|  
-    |MinIOThreads|1|25|  
-    |MinWorkerThreads|1|25|  
+   |DWORD entry|Default value|Recommended value|  
+   |-----------------|-------------------|-----------------------|  
+   |MaxIOThreads|20|100|  
+   |MaxWorkerThreads|25|100 **Important:**  Increasing this value beyond 100 can have an adverse effect on the performance of the SQL Server computer hosting the BizTalk Server MessageBox database. When this problem occurs, SQL Server may encounter a deadlock condition. It is recommended this parameter is not increased beyond a value of 100.|  
+   |MinIOThreads|1|25|  
+   |MinWorkerThreads|1|25|  
   
-    > [!NOTE]  
-    >  These recommended values will be sufficient for most scenarios but may need to be increased depending on how many adapter handlers or orchestrations are running in each host instance.  
+   > [!NOTE]  
+   >  These recommended values will be sufficient for most scenarios but may need to be increased depending on how many adapter handlers or orchestrations are running in each host instance.  
   
-    > [!NOTE]  
-    >  These values are implicitly multiplied by the number of processors on the server. For example, setting the MaxWorkerThreads entry to a value of 100 would effectively set a value of 400 on a 4 CPU server.  
+   > [!NOTE]  
+   >  These values are implicitly multiplied by the number of processors on the server. For example, setting the MaxWorkerThreads entry to a value of 100 would effectively set a value of 400 on a 4 CPU server.  
   
-5.  Close Registry Editor.  
+5. Close Registry Editor.  
   
-6.  Restart the BizTalk host instance.  
+6. Restart the BizTalk host instance.  
   
 ## Disable tracking for orchestrations, send ports, receive ports, and pipelines when tracking is not required  
  Tracking incurs performance overhead within BizTalk Server as data has to be written to the MessageBox database and then asynchronously moved to the BizTalk Tracking database. If tracking is not a business requirement, then disable tracking to reduce overhead and increase performance. For more information about configuring tracking, see “Configuring Tracking Using the BizTalk Server Administration Console” in the BizTalk Server help at [http://go.microsoft.com/fwlink/?LinkID=106742](http://go.microsoft.com/fwlink/?LinkID=106742).  
@@ -193,7 +193,7 @@ The following recommendations can be used to increase [!INCLUDE[btsBizTalkServer
  The latest service packs for both BizTalk Server and the .NET Framework should be installed, as these contain fixes that can correct performance issues you may encounter.  
   
 ## Do not cluster BizTalk hosts unless absolutely necessary  
- While [!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] and subsequent versions of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] allow you to configure a BizTalk host as a cluster resource, you should only consider doing this if you need to provide high availability to a resource that cannot be hosted across multiple BizTalk computers. As an example, ports using the FTP adapter should only reside on one host instance, as the FTP protocol does not provide file locking, however, this introduces a single point of failure which would benefit from clustering. Hosts that contain adapters, such as file, SQL, HTTP or processing only hosts, can be internally load balanced across machines and do not benefit from clustering.  
+ While [!INCLUDE [btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)] and subsequent versions of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] allow you to configure a BizTalk host as a cluster resource, you should only consider doing this if you need to provide high availability to a resource that cannot be hosted across multiple BizTalk computers. As an example, ports using the FTP adapter should only reside on one host instance, as the FTP protocol does not provide file locking, however, this introduces a single point of failure which would benefit from clustering. Hosts that contain adapters, such as file, SQL, HTTP or processing only hosts, can be internally load balanced across machines and do not benefit from clustering.  
   
 ## Performance optimizations in the BizTalk Server documentation  
  Apply the following recommendations from the BizTalk Server documentation as appropriate:  

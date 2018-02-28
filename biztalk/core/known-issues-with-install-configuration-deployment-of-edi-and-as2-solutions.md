@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Known Issues with Installation, Configuration, and Deployment of EDI and AS2 Solutions
-This topic describes known issues with deployment and management of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 solutions.  
+This topic describes known issues with deployment and management of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 solutions.  
   
 ## Blank Strings Were Imported for Party Properties  
  **Symptom**  
@@ -31,10 +31,10 @@ This topic describes known issues with deployment and management of [!INCLUDE[bt
  You must manually set the values for EDI sensitive fields after importing the bindings onto another computer.  
   
 ## FTP Adapter Is Not Supported Natively in 64-bit Mode  
- The FTP adapter cannot run in native 64-bit mode. If you use an FTP adapter in your EDI solution in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you will have to run it on WOW64 on 64-bit Windows.  
+ The FTP adapter cannot run in native 64-bit mode. If you use an FTP adapter in your EDI solution in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you will have to run it on WOW64 on 64-bit Windows.  
   
 ## Some EDI/AS2 Artifacts Are Still Active After Unconfiguring  
- After you unconfigure the Microsoft EDI/AS2 feature of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], some BizTalk Server artifacts related to EDI and AS2 processing will still be active in the context of the BizTalk group configuration. These artifacts will include EDI and AS2 pipelines and the batching orchestration. As a result, you will still be able to perform basic EDI and AS2 processing even after unconfiguring the Microsoft EDI/AS2 feature. To disable this functionality, you should disable, stop, or delete the ports associated with EDI and AS2 processing.  
+ After you unconfigure the Microsoft EDI/AS2 feature of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], some BizTalk Server artifacts related to EDI and AS2 processing will still be active in the context of the BizTalk group configuration. These artifacts will include EDI and AS2 pipelines and the batching orchestration. As a result, you will still be able to perform basic EDI and AS2 processing even after unconfiguring the Microsoft EDI/AS2 feature. To disable this functionality, you should disable, stop, or delete the ports associated with EDI and AS2 processing.  
   
 ## You Receive the Error "Failed to Configure EDI/AS2 Status Reporting Functionalities"  
  **Symptom**  
@@ -62,7 +62,7 @@ This topic describes known issues with deployment and management of [!INCLUDE[bt
 ## Control Numbers are Reset to 1 After Upgrade  
  After upgrading, you may notice that all control numbers displayed in the EDI Properties of a party have been reset to the default minimum value of 1 and display a default maximum value of 999999999 (X12) or 99999999999999 (EDIFACT). Any prefix or suffix values will remain the same after upgrade.  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] shows the minimum and maximum values to be used for the control number. The current control number will be preserved during upgrade; however it is not displayed in the EDI Properties of the party.  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] shows the minimum and maximum values to be used for the control number. The current control number will be preserved during upgrade; however it is not displayed in the EDI Properties of the party.  
   
 ## See Also  
  [Troubleshooting EDI and AS2 Solutions](../core/troubleshooting-edi-and-as2-solutions.md)   

@@ -22,7 +22,7 @@ In this use case, a call to a Web service performs real-time transformation of a
   
  **Transforming a message without persisting to the Microsoft BizTalk Server Message Box database**  
   
- The Transformation Service sample included with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] demonstrates this use case. By using it, you can call the ESB Transformation Service; this enables you to test transformations and mappings as you are developing components and policies in the BizTalk Server Business Rules Engine.  
+ The Transformation Service sample included with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] demonstrates this use case. By using it, you can call the ESB Transformation Service; this enables you to test transformations and mappings as you are developing components and policies in the BizTalk Server Business Rules Engine.  
   
  For more information, see [Installing and Running the Transformation Service Sample](../esb-toolkit/installing-and-running-the-transformation-service-sample.md).  
   

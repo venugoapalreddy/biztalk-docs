@@ -23,7 +23,7 @@ manager: "anneta"
  A silent installation is supported by the A4SWIFT Setup program, but is not recommended because of the complexity of the additional configuration steps that are required.  
   
 ## A4SWIFT setup runs with the /InstallPlatform argument that overwrites DLLs for VisualStudio.Net  
- The A4SWIFT setup program always runs with the /InstallPlatform argument. As a result, A4SWIFT setup always installs msvcr71.dll, mfc71u.dll, msvcp71.dll, and atl71.dll, which are required for [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. A4SWIFT setup installs these DLL files into the %WINDIR%\System32 folder, whether the DLLs have been previously installed or not.  
+ The A4SWIFT setup program always runs with the /InstallPlatform argument. As a result, A4SWIFT setup always installs msvcr71.dll, mfc71u.dll, msvcp71.dll, and atl71.dll, which are required for [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]. A4SWIFT setup installs these DLL files into the %WINDIR%\System32 folder, whether the DLLs have been previously installed or not.  
   
 ## Canceling A4SWIFT configuration will fail  
  Clicking **Cancel** during A4SWIFT configuration will not cancel configuration. The configuration process will continue until complete.  
@@ -79,7 +79,7 @@ manager: "anneta"
 ## BREDeployment utility cannot deploy or undeploy policies if A4SWIFT vocabularies are not correctly configured  
  If you try to undeploy A4SWIFT Business Rule Engine policies by using the BREDeployment.exe tool, and the BREDeployment.exe configuration file does not point to the correct vocabulary file location, then the tool may report an error. You will have this problem if you change the location in the BREDeployment.exe configuration file and the new location does not contain the vocabulary files. The error informs you that the vocabularies were not found and the configuration stops deploying and/or undeploying policies.  
   
- To resolve this issue, use the standard **Business Rules Engine Deployment Wizard**. UI details are [!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)].
+ To resolve this issue, use the standard <strong>Business Rules Engine Deployment Wizard</strong>. UI details are [!INCLUDE [ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)].
   
 ## See Also  
  [Known Issues](../../adapters-and-accelerators/accelerator-swift/known-issues5.md)

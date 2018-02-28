@@ -18,22 +18,22 @@ manager: "anneta"
 # Develop your Oracle Database applications
 
 ## Overview
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] is a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding. Client applications can consume the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to invoke operations on Oracle database artifacts. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] can be consumed:  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] is a [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding. Client applications can consume the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] to invoke operations on Oracle database artifacts. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] can be consumed:  
   
--   Through a physical port binding in a [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.  
+- Through a physical port binding in a [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] solution.  
   
--   By invoking methods on an instance of a [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] client proxy.  
+- By invoking methods on an instance of a [!INCLUDE [btsDotNet](../../includes/btsdotnet-md.md)] client proxy.  
   
--   As a hosted [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] service.  
+- As a hosted [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] service.  
   
--   By sending SOAP messages over a channel instance in code that uses the [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] channel model.  
+- By sending SOAP messages over a channel instance in code that uses the [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] channel model.  
 
 ## BizTalk vs WCF service vs WCF channel  
  The following table:  
   
--   Lists the different operations that can be performed on an Oracle database using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
+- Lists the different operations that can be performed on an Oracle database using the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
   
--   Provides links to the topics containing information about performing the task using the chosen approach ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], WCF service model, or WCF channel model).  
+- Provides links to the topics containing information about performing the task using the chosen approach ([!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], WCF service model, or WCF channel model).  
   
 |Task|BizTalk Server|WCF Service Model|WCF Channel Model|  
 |----------|--------------------|-----------------------|-----------------------|  
@@ -52,7 +52,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] is a [!INCLUDE
 
   
 ## Next steps
- The topics in this section provide information, procedures, and examples to help you develop applications that consume the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] in both [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] programming solutions. 
+ The topics in this section provide information, procedures, and examples to help you develop applications that consume the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] in both [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] and [!INCLUDE [btsDotNet](../../includes/btsdotnet-md.md)] programming solutions. 
   
 -   [Create a connection to the Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/create-a-connection-to-the-oracle-database.md)
   

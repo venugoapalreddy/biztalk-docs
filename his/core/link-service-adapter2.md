@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Link Service Adapter
-Link service enables [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] to communicate with host, peer, or downstream computers over token ring and Ethernet Local Area Networks.  
+Link service enables [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] to communicate with host, peer, or downstream computers over token ring and Ethernet Local Area Networks.  
   
 ## See Also  
  [SNA Manager Help](../core/sna-manager-help1.md)

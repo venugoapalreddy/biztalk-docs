@@ -18,11 +18,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Streaming Oracle Database LOB Data Types Using the WCF Channel Model
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports end-to-end streaming of LOB data for certain operations. The sections in this topic describe how to implement streaming for LOB data when you use the WCF channel model.  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] supports end-to-end streaming of LOB data for certain operations. The sections in this topic describe how to implement streaming for LOB data when you use the WCF channel model.  
   
  For background information about how the adapter supports streaming of LOB data types, see [Streaming large object data types in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md). You should read this topic before proceeding.  
   
- A sample that demonstrates LOB data streaming is available in the SDK samples included with the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]. For more information, see [Samples in the SDK](../../core/samples-in-the-sdk.md).  
+ A sample that demonstrates LOB data streaming is available in the SDK samples included with the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)]. For more information, see [Samples in the SDK](../../core/samples-in-the-sdk.md).  
   
 ## Streaming Outbound Messages to the Adapter  
  The adapter supports end-to-end LOB data streaming for the request message for the UpdateLOB operation.  
@@ -38,7 +38,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports end-t
 4.  Create the **System.ServiceModel.Message** used to invoke the operation by supplying the message body with this **BodyWriter** using an appropriate overload of the **Message.Create** method.  
   
 ### Setting the UseAmbientTransaction Binding Property  
- The following example shows how to create a binding for the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and set the **UseAmbientTransaction** binding property.  
+ The following example shows how to create a binding for the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] and set the <strong>UseAmbientTransaction</strong> binding property.  
   
 ```  
 // Create binding  
@@ -163,21 +163,21 @@ using(TransactionScope tx = new TransactionScope())
 ## Streaming Inbound Messages from the Adapter  
  The adapter supports end-to-end LOB data streaming for the following inbound messages:  
   
--   Response message for functions with OUT or IN OUT parameters that contain LOB data. Note that RECORD TYPE parameters can contain LOB data columns.  
+- Response message for functions with OUT or IN OUT parameters that contain LOB data. Note that RECORD TYPE parameters can contain LOB data columns.  
   
--   Response message for functions with OUT REF CURSOR parameters (or return values) that contain LOB data. This includes the output side of IN OUT REF CURSOR parameters.  
+- Response message for functions with OUT REF CURSOR parameters (or return values) that contain LOB data. This includes the output side of IN OUT REF CURSOR parameters.  
   
--   Response message for procedures with IN or IN OUT parameters that contain LOB data. Note that RECORD TYPE parameters can contain LOB data columns.  
+- Response message for procedures with IN or IN OUT parameters that contain LOB data. Note that RECORD TYPE parameters can contain LOB data columns.  
   
--   Response message for procedures with OUT REF CURSOR parameters that contain LOB data. This includes the output side of IN OUT REF CURSOR parameters  
+- Response message for procedures with OUT REF CURSOR parameters that contain LOB data. This includes the output side of IN OUT REF CURSOR parameters  
   
--   Response message for SQLEXECUTE operations that return result sets that contain LOB data.  
+- Response message for SQLEXECUTE operations that return result sets that contain LOB data.  
   
--   Response message for Table or view Select operations that return LOB data in the result set.  
+- Response message for Table or view Select operations that return LOB data in the result set.  
   
--   Request message for the (inbound) POLLINGSTMT operation  
+- Request message for the (inbound) POLLINGSTMT operation  
   
- To support end-to-end streaming on an inbound message in the WCF channel model, you must:  
+  To support end-to-end streaming on an inbound message in the WCF channel model, you must:  
   
 1.  Implement a **System.Xml.XmlDictionaryWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).  
   

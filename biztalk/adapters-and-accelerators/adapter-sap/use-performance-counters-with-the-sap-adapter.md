@@ -18,10 +18,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Use Performance Counters with the SAP adapter
-Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] clients can use performance counters to gauge the performance of the adapters. The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program creates the performance counter category "[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]" along installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].  
+Microsoft [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] clients can use performance counters to gauge the performance of the adapters. The [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program creates the performance counter category "[!INCLUDE [adaptersap](../../includes/adaptersap-md.md)]" along installing the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].  
   
 ## LOB Time (Cumulative) Performance Counter  
- The **BizTalk .NET Adapter for SAP** category has one performance counter called the "LOB Time (Cumulative)". This performance counter denotes the time, in milliseconds, that the LOB client library takes to complete an action that the adapter initiates. The [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] creates an instance of the performance counter in the following pattern:  
+ The <strong>BizTalk .NET Adapter for SAP</strong> category has one performance counter called the "LOB Time (Cumulative)". This performance counter denotes the time, in milliseconds, that the LOB client library takes to complete an action that the adapter initiates. The [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] creates an instance of the performance counter in the following pattern:  
   
 ```  
 <process id>:<app domain id>:<endpoint id>:<action id>  
@@ -29,27 +29,27 @@ Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md
   
  The endpoint ID could be:  
   
--   For calls from the adapter to the SAP system (outbound)  
+- For calls from the adapter to the SAP system (outbound)  
   
-    -   A,\<application server host\>,\<system number\>  
+  -   A,\<application server host\>,\<system number\>  
   
-    -   B,\<message server host\>,\<R3NAME\>  
+  -   B,\<message server host\>,\<R3NAME\>  
   
-    -   D,\<destination\>  
+  -   D,\<destination\>  
   
--   For calls from the SAP system to the adapter (inbound)  
+- For calls from the SAP system to the adapter (inbound)  
   
-    -   I,\<gateway host\>,\<gateway server\>  
+  -   I,\<gateway host\>,\<gateway server\>  
   
-    -   ID,\<destination\>  
+  -   ID,\<destination\>  
   
- The action ID could be:  
+  The action ID could be:  
   
--   \<RFC name\> (for an RFC call)  
+- \<RFC name\> (for an RFC call)  
   
--   T,\<RFC name\> (for a tRFC call)  
+- T,\<RFC name\> (for a tRFC call)  
   
- The performance counter is initialized only after the adapter makes the first call to the SAP system. Also, the [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx) property of the performance counter is set to 'Process', which means that the performance counter ceases to exist as soon as the program that creates the counter terminates.
+  The performance counter is initialized only after the adapter makes the first call to the SAP system. Also, the [InstanceLifetime](https://msdn.microsoft.com/library/system.diagnostics.performancecounter.instancelifetime.aspx) property of the performance counter is set to 'Process', which means that the performance counter ceases to exist as soon as the program that creates the counter terminates.
   
 > [!NOTE]
 >  The precision of the LOB Time (Cumulative) performance counter is 16 milliseconds.  
@@ -58,7 +58,7 @@ Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md
  The performance counters can be enabled or disabled by setting the binding property *EnablePerformanceCounters*. To enable performance counters, set the *EnablePerformanceCounters* binding property to **True**. To disable performance counters, set *EnablePerformanceCounters* to **False**. By default, *EnablePerformanceCounters* is set to **False**.  
   
 ## Performance Counters and the WCF LOB Adapter SDK  
- Changing the value of the *EnablePerformanceCounters* binding property also changes the value of the corresponding performance counter for the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. Also, the binding property for the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] is static, whereas that for the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] is dynamic. Hence, if there are two instances of the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] binding in the AppDomain, and the *EnablePerformanceCounters* binding property is set to **True** in one and **False** in the other, the adapter-specific performance counter will be enabled in one and disabled in the other. However, because the binding property for [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] is static, it will either be set to **True** or **False** depending on what value was specified last.  
+ Changing the value of the <em>EnablePerformanceCounters</em> binding property also changes the value of the corresponding performance counter for the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)]. Also, the binding property for the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] is static, whereas that for the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] is dynamic. Hence, if there are two instances of the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] binding in the AppDomain, and the <em>EnablePerformanceCounters</em> binding property is set to <strong>True</strong> in one and <strong>False</strong> in the other, the adapter-specific performance counter will be enabled in one and disabled in the other. However, because the binding property for [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] is static, it will either be set to <strong>True</strong> or <strong>False</strong> depending on what value was specified last.  
   
 ## See Also  
 

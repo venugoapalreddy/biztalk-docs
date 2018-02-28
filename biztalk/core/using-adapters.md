@@ -18,7 +18,7 @@ manager: "anneta"
 # Available adapters in BizTalk Server
 
 ## Overview
-This section contains comprehensive information about adapters. It describes how adapters are used in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and how to configure adapter handlers, send ports, and receive locations for each adapter. It provides batching support information to help you understand and use the native adapters in your BizTalk solution.  
+This section contains comprehensive information about adapters. It describes how adapters are used in Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and how to configure adapter handlers, send ports, and receive locations for each adapter. It provides batching support information to help you understand and use the native adapters in your BizTalk solution.  
   
  For information about using the keyboard shortcuts for the adapter property pages, see [Adapter Property Page Keyboard Shortcuts](../core/adapter-property-page-keyboard-shortcuts.md).  
   

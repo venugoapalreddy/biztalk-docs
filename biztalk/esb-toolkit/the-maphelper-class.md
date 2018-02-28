@@ -16,7 +16,7 @@ manager: "anneta"
 # The MapHelper Class
 Use the **MapHelper** class to perform transformations directly without using the transformation Web service.  
   
- The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] installer installs and registers the assembly **Microsof.Practices.ESB.Transform.dll** with the **MapHelper** class in the global assembly cache.  
+ The [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] installer installs and registers the assembly <strong>Microsof.Practices.ESB.Transform.dll</strong> with the <strong>MapHelper</strong> class in the global assembly cache.  
   
  The **MapHelper** class exposes two public methods:  
   

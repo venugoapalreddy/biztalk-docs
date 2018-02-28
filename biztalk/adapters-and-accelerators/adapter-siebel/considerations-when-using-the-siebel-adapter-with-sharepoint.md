@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Considerations when using the Siebel adapter with SharePoint
-This topic contains information about the issues you might encounter while using the [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)] with Microsoft Office SharePoint Server, along with resolutions. The issues are divided into two categories:  
+This topic contains information about the issues you might encounter while using the [!INCLUDE [adaptersiebel](../../includes/adaptersiebel-md.md)] with Microsoft Office SharePoint Server, along with resolutions. The issues are divided into two categories:  
   
 -   General issues  
   
@@ -45,7 +45,7 @@ This topic contains information about the issues you might encounter while using
  **Resolution**: Use the Business Data Catalog Definition Editor to limit the number of fields of the complex type parameter to less than or equal to 300. Depending on your requirement, you can delete the fields of the complex type parameter in the Business Data Catalog Definition Editor that you do not require to be displayed in Microsoft Office SharePoint Server.  Alternatively, you can also export the application definition file from Business Data Catalog Definition Editor with all the fields, and then modify the application definition file in a notepad or any XML authoring application to delete the fields that are not required in order to limit the number of fields to 300.  
   
 ##  <a name="Custom_Web_Part"></a> Issues Involving Custom Web Parts  
- This section contains issues that require the use of custom Web Parts for resolution. For detailed information about using a custom Web Part to resolve issues that might come up while working with [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and Microsoft Office SharePoint Server, see [Use a Custom Web Part with the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md).  
+ This section contains issues that require the use of custom Web Parts for resolution. For detailed information about using a custom Web Part to resolve issues that might come up while working with [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] and Microsoft Office SharePoint Server, see [Use a Custom Web Part with the Siebel adapter](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md).  
   
 ### Issue 1: Index of an enumerator is displayed instead of the value for the enum data type  
  **Explanation**: If a Business Data List or Business Data Item Web Part in Microsoft Office SharePoint Server contains data of enum type (a distinct type consisting of a set of named constants called the enumerators), the index of the enumerator is displayed instead of its value in Microsoft Office SharePoint Server. This is because the Business Data List and Business Data Item Web Parts incorrectly print the values of the enum type data to the SharePoint portal.  
@@ -166,7 +166,7 @@ namespace CustomWebpart
 ```  
   
 ### Issue 3: Limitation with specifying NULL values to complex type parameters  
- **Explanation**: If you do not specify any value for a complex type parameter from a Web Part in Microsoft Office SharePoint Server, NULL should be passed on as the value for the complex type parameter to the WCF service. However, a non-NULL value is passed for the complex type parameter, and NULL is passed for its children elements (of simple type). This causes a mismatch between the expected message schema and the message schema that is passed on to the WCF service. As a result, the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] might display an error message.  
+ <strong>Explanation</strong>: If you do not specify any value for a complex type parameter from a Web Part in Microsoft Office SharePoint Server, NULL should be passed on as the value for the complex type parameter to the WCF service. However, a non-NULL value is passed for the complex type parameter, and NULL is passed for its children elements (of simple type). This causes a mismatch between the expected message schema and the message schema that is passed on to the WCF service. As a result, the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] might display an error message.  
   
 > [!NOTE]
 >  To find out the default value of a complex type parameter when no value is passed from a Web Part in Microsoft Office SharePoint Server, use step 2 in the code sample mentioned in “Issue 1: Index of an enumerator is displayed instead of the value for the enum data type.”  

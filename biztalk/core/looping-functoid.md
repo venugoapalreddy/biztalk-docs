@@ -96,4 +96,4 @@ The **Looping** functoid combines multiple records or fields in the source schem
 -   [Loop Paths](../core/loop-paths.md)  
   
 ## See Also  
- **Table Looping Functoid Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ <strong>Table Looping Functoid Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

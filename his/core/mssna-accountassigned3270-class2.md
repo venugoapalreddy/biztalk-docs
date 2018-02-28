@@ -38,18 +38,18 @@ class MsSna_AccountAssigned3270 : MsSna_Assigned
 ```  
   
 #### Parameters  
- **Wks**  
- Data Type: **String** Qualifiers**: MAXLEN(20)**Access Type: Read/Write  
+ <strong>Wks</strong>  
+ Data Type: <strong>String</strong> Qualifiers<strong>: MAXLEN(20)</strong>Access Type: Read/Write  
   
  The workstation name. By default, returns LUs assigned to all workstations.  
   
- **IPAddress**  
- Data Type: **String** Qualifiers: **MAXLEN(20)**Access Type: Read/Write  
+ <strong>IPAddress</strong>  
+ Data Type: <strong>String</strong> Qualifiers: <strong>MAXLEN(20)</strong>Access Type: Read/Write  
   
  The workstation IP. By default, returns LUs assigned to all workstations.  
   
- **MacAddress**  
- Data Type: **String** Qualifiers: **MAXLEN(20)**Access Type: Read/Write  
+ <strong>MacAddress</strong>  
+ Data Type: <strong>String</strong> Qualifiers: <strong>MAXLEN(20)</strong>Access Type: Read/Write  
   
  A value that returns LUs configured to a specific media access control (MAC) address.  
   

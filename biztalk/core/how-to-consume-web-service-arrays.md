@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Consume Web Service Arrays
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides the ability to consume arrays that are exposed in Web services from a BizTalk Orchestration.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides the ability to consume arrays that are exposed in Web services from a BizTalk Orchestration.  
   
  **To configure an Orchestration to consume an array exposed in a Web service:**  
   
@@ -62,7 +62,7 @@ manager: "anneta"
 > [!NOTE]
 >  Use the SOAP Adapter to send messages to or receive messages from a Web service. For more information about configuring the SOAP Adapter see [Configuring the SOAP Adapter](../core/configuring-the-soap-adapter.md).  
   
- The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Orchestration Engine provides support for consuming both one dimensional and jagged arrays that are exposed by Web services. If you add a Web reference to a Web service that exposes arrays, the Orchestration Designer will generate a Web message type that describes the array. You can then send and receive messages of this type like any other message. BizTalk Server does not limit the sending of Web messages containing arrays to only Web ports.  
+ The [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Orchestration Engine provides support for consuming both one dimensional and jagged arrays that are exposed by Web services. If you add a Web reference to a Web service that exposes arrays, the Orchestration Designer will generate a Web message type that describes the array. You can then send and receive messages of this type like any other message. BizTalk Server does not limit the sending of Web messages containing arrays to only Web ports.  
   
  For an example of consuming Web service arrays, see the SDK sample "Consume Web Services" and "Consuming Web Services with Array Parameters" at [http://go.microsoft.com/fwlink/?LinkId=73703](http://go.microsoft.com/fwlink/?LinkId=73703).  
   

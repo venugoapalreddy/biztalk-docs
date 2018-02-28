@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Connect to SQL Server using Windows Authentication with the SQL adapter
-The [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)] enables adapter clients to use Windows Authentication to establish a connection with SQL Server. To use Windows Authentication, adapter clients must enter an empty user name and password. 
+The [!INCLUDE [adaptersql_md](../../includes/adaptersql-md.md)] enables adapter clients to use Windows Authentication to establish a connection with SQL Server. To use Windows Authentication, adapter clients must enter an empty user name and password. 
 
 To connect to SQL Server using Windows Authentication within Visual Studio, see [Connect to SQL Server in Visual Studio using the Consume Adapter Service Add-in](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-in-visual-studio-using-the-consume-adapter-service-add-in.md).  
   
@@ -52,9 +52,9 @@ To connect to SQL Server using Windows Authentication within Visual Studio, see 
     > [!NOTE]
     > [Server and Database Roles in SQL Server](https://msdn.microsoft.com/library/bb669065.aspx) provides good info on the roles. 
   
-6.  Select **OK** to save your changes.
+6. Select **OK** to save your changes.
   
- After you have added the user, the user can connect and authenticate to SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], logging in with a blank username and password.  
+   After you have added the user, the user can connect and authenticate to SQL Server using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)], logging in with a blank username and password.  
 
 
 

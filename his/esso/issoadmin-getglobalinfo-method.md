@@ -128,7 +128,7 @@ As String
  To access this method, you must be an SSO Administrator.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [Programming with Enterprise Single Sign-On](../esso/programming-with-enterprise-single-sign-on.md)   

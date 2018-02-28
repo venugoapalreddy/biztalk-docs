@@ -63,7 +63,7 @@ This section contains information that may help you avoid errors.
   
  After you receive this error message, the service for the BizTalk host instance is stopped. However, the SC tool may need two minutes or more to shut down the service.  
   
- This problem occurs when a Microsoft Message Queuing receive location is enabled in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+ This problem occurs when a Microsoft Message Queuing receive location is enabled in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  Additionally, an error message that resembles the following may be logged in the System log:  
   

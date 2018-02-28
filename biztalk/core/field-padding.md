@@ -29,7 +29,7 @@ Pad characters are used in fields within both delimited and positional records w
  When the field to be padded in an outbound instance message is contained within a positional record, the **Positional Offset** and **Positional Length** properties of the corresponding **Field Element** or **Field Attribute** node, combined with the number of data characters that the field must contain, determine whether any pad characters are required, and if so, how many. When the field to be padded in an outbound instance message is contained within a delimited record, pad characters are only inserted when the value of the **Minimum Length with Pad Character** property of the corresponding **Field Element** or **Field Attribute** node exceeds the number of data characters.  
 
 ## 
-More details on these properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+More details on these properties [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
 
 ## See Also  
  [Field Considerations](../core/field-considerations.md)   

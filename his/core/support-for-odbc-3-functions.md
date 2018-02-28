@@ -15,27 +15,29 @@ manager: "anneta"
 ---
 # Support for ODBC 3 Functions
 The following table lists the ODBC 3.0 functions that are supported by the Microsoft ODBC Driver for DB2.  
-  
-|ODBC 3.0 functions|Functions supported by the Microsoft ODBC Driver for DB2|  
-|------------------------|--------------------------------------------------------------|  
-|**SQLAllocHandle**|Yes|  
-|**SQLBulkOperations**|No|  
-|**SQLCloseCursor**|Yes|  
-|**SQLColAttribute**|Yes|  
-|**SQLCopyDesc**|Yes|  
-|**SQLEndTran**|Yes|  
-|**SQLFetchScroll**|Yes, but supports forward scrolling only|  
-|**SQLFreeHandle**|Yes|  
-|**SQLGetConnectAttr**|Yes|  
-|**SQLGetDescField**|Yes|  
-|**SQLDescRec**|Yes|  
-|**SQLGetDiagField**|Yes|  
-|**SQLGetDiagRec**|Yes|  
-|**SQLGetEnvAttr**|Yes|  
-|**SQLGetStmtAttr**|Yes|  
-|**SQLRowCount**|Yes|  
-|**SQLSetConnectAttr**|Yes|  
-|**SQLSetDescField**|Yes|  
-|**SQLSetDescRec**|Yes|  
-|**SQLSetEnvAttr**|Yes|  
-|**SQLSetStmtAttr**|Yes|
+
+
+|         ODBC 3.0 functions         | Functions supported by the Microsoft ODBC Driver for DB2 |
+|------------------------------------|----------------------------------------------------------|
+|  <strong>SQLAllocHandle</strong>   |                           Yes                            |
+| <strong>SQLBulkOperations</strong> |                            No                            |
+|  <strong>SQLCloseCursor</strong>   |                           Yes                            |
+|  <strong>SQLColAttribute</strong>  |                           Yes                            |
+|    <strong>SQLCopyDesc</strong>    |                           Yes                            |
+|    <strong>SQLEndTran</strong>     |                           Yes                            |
+|  <strong>SQLFetchScroll</strong>   |         Yes, but supports forward scrolling only         |
+|   <strong>SQLFreeHandle</strong>   |                           Yes                            |
+| <strong>SQLGetConnectAttr</strong> |                           Yes                            |
+|  <strong>SQLGetDescField</strong>  |                           Yes                            |
+|    <strong>SQLDescRec</strong>     |                           Yes                            |
+|  <strong>SQLGetDiagField</strong>  |                           Yes                            |
+|   <strong>SQLGetDiagRec</strong>   |                           Yes                            |
+|   <strong>SQLGetEnvAttr</strong>   |                           Yes                            |
+|  <strong>SQLGetStmtAttr</strong>   |                           Yes                            |
+|    <strong>SQLRowCount</strong>    |                           Yes                            |
+| <strong>SQLSetConnectAttr</strong> |                           Yes                            |
+|  <strong>SQLSetDescField</strong>  |                           Yes                            |
+|   <strong>SQLSetDescRec</strong>   |                           Yes                            |
+|   <strong>SQLSetEnvAttr</strong>   |                           Yes                            |
+|  <strong>SQLSetStmtAttr</strong>   |                           Yes                            |
+

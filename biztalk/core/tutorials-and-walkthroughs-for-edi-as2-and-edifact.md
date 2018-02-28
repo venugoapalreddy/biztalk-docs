@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Tutorials and walkthroughs for EDI, AS2, and EDIFACT
-Step through X12, EDIFACT, and AS2 tutorials to learn how to enable business-to-business messaging within [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. 
+Step through X12, EDIFACT, and AS2 tutorials to learn how to enable business-to-business messaging within [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. 
 
 ## X12 tutorials
 [Tutorial: EDI Interface Developer Tutorial](../core/tutorial-2-edi-interface-developer-tutorial.md)  

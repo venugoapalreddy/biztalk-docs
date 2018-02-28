@@ -64,7 +64,7 @@ GUID* pguidTrackingId
  It is possible that multiple threads could be calling **ReceiveNotification** for the same adapter name. In this case, the request is single-threaded at the ENTSSO service, and only one **ReceiveNotification** completes with valid information. The threads complete with either the next notification or NONE. The reason is that each of these threads waits for the same event.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSONotification Interface (COM)](../esso/issonotification-interface-com.md)   

@@ -45,7 +45,7 @@ Client application using Transaction Integrator and DTC to coordinate a two-phas
  The transaction program (TP) Manager is a system service that is responsible for coordinating the outcome of transactions to be able to achieve atomicity. The TP Managers ensure that the resource managers reach a consistent decision on whether the transaction should commit or abort. The Windows TP Manager is MS DTC.  
   
  Resync service  
- The LU6.2 Resync Service is a component of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] that works with MS DTC to perform automatic recovery to a consistent state as a result of failures at any point in a 2PC transaction. The LU6.2 Resync Service is installed by default when installing [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+ The LU6.2 Resync Service is a component of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] that works with MS DTC to perform automatic recovery to a consistent state as a result of failures at any point in a 2PC transaction. The LU6.2 Resync Service is installed by default when installing [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
  Resource Manager  
  The resource manager is a system service that manages durable data. Server applications use resource managers to maintain the durable state of the application, such as a record of available inventory, pending orders, and accounts receivable. The resource managers work in cooperation with the transaction manager to provide the application with a guarantee of atomicity and isolation (by using the 2PC protocol). Microsoft SQL Server™ and TI are examples of resource managers.  

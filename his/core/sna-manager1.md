@@ -17,9 +17,9 @@ manager: "anneta"
 # SNA Manager
 
 ## What is it
-SNA Manager provides an interface for configuration and operation of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] components. SNA Manager allows flexibility in viewing and managing SNA server subdomains, computers, link services, connections, logical units (LUs), sessions, and users. It integrates the administration of TN3720 service, TN5250 service and Host Print service.  
+SNA Manager provides an interface for configuration and operation of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] components. SNA Manager allows flexibility in viewing and managing SNA server subdomains, computers, link services, connections, logical units (LUs), sessions, and users. It integrates the administration of TN3720 service, TN5250 service and Host Print service.  
   
- You can view all [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers in an SNA server subdomain and manage multiple subdomains at the same time. This allows for central configuration and administration of all servers in an enterprise. You can remotely configure and manage Host Integration Server computers across all popular protocols, including TCP/IP and Microsoft Networking.  
+ You can view all [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers in an SNA server subdomain and manage multiple subdomains at the same time. This allows for central configuration and administration of all servers in an enterprise. You can remotely configure and manage Host Integration Server computers across all popular protocols, including TCP/IP and Microsoft Networking.  
   
  SNA Manager can be installed on any computer that is running Windows operating systems enabling management of the entire Host Integration Server network from a single computer. In addition, SNA Manager allows more than one administrator to simultaneously view and manage the same SNA server subdomain.  
   
@@ -36,7 +36,7 @@ SNA Manager provides an interface for configuration and operation of [!INCLUDE[h
  SNA Manager also simplifies administrative tasks by providing wizards to step you through many of the more complicated tasks, such as configuring AS/400 connectivity, configuring 3270 display LUs, and creating a range of LUs.  
 
 ## Open a Subdomain
-Before you can configure [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] components, open a subdomain. **Start Subdomain** is used to change  local SNA subdomain, remote SNA Subdomain, and Offline Configuration.  
+Before you can configure [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] components, open a subdomain. <strong>Start Subdomain</strong> is used to change  local SNA subdomain, remote SNA Subdomain, and Offline Configuration.  
 
 1.  Start SNA Manager.  
   

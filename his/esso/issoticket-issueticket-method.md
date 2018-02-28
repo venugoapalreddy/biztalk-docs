@@ -52,7 +52,7 @@ BSTR* pbstrTicket
  To access this method, you must be an Application User. You can only issue a ticket for yourself.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOTicket Interface (COM)](../esso/issoticket-interface-com.md)   

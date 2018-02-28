@@ -37,7 +37,7 @@ transformType = resolverDictionary.Item("Resolver.TransformType");
   
  In the preceding listing, the **Resolve** method of the **ResolverMgr** class returns a **Dictionary** object that contains all the default resolution properties and their resolved values. Any custom resolver can add custom properties to the **Dictionary** object; doing this makes those properties available to any custom itinerary service.  
   
- The following table shows the properties that can be optionally populated by the resolvers included in the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]. Any itinerary service can retrieve these property values by extracting them from the returned **Dictionary** object.  
+ The following table shows the properties that can be optionally populated by the resolvers included in the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)]. Any itinerary service can retrieve these property values by extracting them from the returned <strong>Dictionary</strong> object.  
   
  **Properties**:  
   

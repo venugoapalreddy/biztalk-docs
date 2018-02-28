@@ -19,23 +19,23 @@ manager: "anneta"
 This section provides information about deploying BizTalk Adapter for PeopleSoft Enterprise.  
 
 ## Overview
-Using [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can duplicate ports and assemblies on a target computer. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] exports the send ports/receive location configuration into an XML file.  
+Using [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you can duplicate ports and assemblies on a target computer. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] exports the send ports/receive location configuration into an XML file.  
   
- You use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to perform these tasks:  
+ You use the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to perform these tasks:  
   
--   Deploy or remove [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] assemblies in a BizTalk Configuration database.  
+- Deploy or remove [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] assemblies in a BizTalk Configuration database.  
   
--   Install or uninstall the assemblies in the global assembly cache (GAC).  
+- Install or uninstall the assemblies in the global assembly cache (GAC).  
   
--   Import or export [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] assembly binding information to and from binding files.  
+- Import or export [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] assembly binding information to and from binding files.  
   
-To use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to deploy ports and assemblies, see [How to Export Bindings for a BizTalk Application](../core/how-to-export-bindings-for-a-biztalk-application.md).  
+To use [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to deploy ports and assemblies, see [How to Export Bindings for a BizTalk Application](../core/how-to-export-bindings-for-a-biztalk-application.md).  
   
 > [!NOTE]
 >  The Microsoft BizTalk Adapter for PeopleSoft Enterprise only requires that you have Visual Studio on a source (development) computer. Visual Studio is not required on the production computer.  
 
 ## Confirm your setup
-Before you use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to import a binding file, verify the following:  
+Before you use [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to import a binding file, verify the following:  
   
 -   The CLASSPATH is pointing to a specific location for the PeopleSoft-specific files. Verify that the location of these files is the same on the new computer—or edit the binding file.  
   
@@ -51,7 +51,7 @@ Before you use [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserver
 ## Clean the target computer
 To clean the target computer for deploying the new application, remove send ports and receive locations bound to the orchestration.  
   
-If you do not have Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] installed on the target computer, you may remove the ports by running these scripts:  
+If you do not have Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] installed on the target computer, you may remove the ports by running these scripts:  
   
 **\<Microsoft BizTalk Server\>\SDK\Samples\Admin\WMI\Remove Send Port\VBScript\RemoveSendPort.vbs**  
   
@@ -64,7 +64,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ```
 
 ## Limitations
-The Transport Adapter password is stored as asterisks (******) in the binding file that is exported by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and it passes to the management component in the same format.  
+The Transport Adapter password is stored as asterisks (******) in the binding file that is exported by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and it passes to the management component in the same format.  
   
  When you export binding information, the resultant binding file does not contain any of the passwords that were used by transport adapters in receive locations/send ports. This prevents password information from appearing in clear text. The next time that you use the file to import the binding information, you must enter the passwords by using transport property pages user interface. Alternatively, you can temporarily modify the binding file before importing by typing the passwords into it. In this case, you must delete the passwords from the binding file after the import operation finishes.  
   
@@ -73,15 +73,15 @@ The Transport Adapter password is stored as asterisks (******) in the binding fi
 
 **Option 1**   
   
--   Before you import, update the binding file by replacing the asterisks with plain text.  
+- Before you import, update the binding file by replacing the asterisks with plain text.  
   
-    > [!CAUTION]
-    >  This practice is not recommended for security reasons.  
+  > [!CAUTION]
+  >  This practice is not recommended for security reasons.  
   
--   Before you import, update the binding fileby replacing the asterisks with some junk value (that is, not the correct password). After you import, enter the correct password in the **Transport Properties** in BizTalk Server Administration.  
+- Before you import, update the binding fileby replacing the asterisks with some junk value (that is, not the correct password). After you import, enter the correct password in the **Transport Properties** in BizTalk Server Administration.  
   
-    > [!NOTE]
-    >  This work-around can be used only if Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] is installed on the target computer, or if you develop a custom tool.  
+  > [!NOTE]
+  >  This work-around can be used only if Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] is installed on the target computer, or if you develop a custom tool.  
   
 **Option 2**  
   

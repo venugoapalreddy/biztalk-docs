@@ -16,29 +16,29 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Terms used by the SQL adapter
-The following terms and definitions are used in [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] Help.  
-  
-  
+The following terms and definitions are used in [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] Help.  
+
+
 ## A  
-  
+
 **adapter**  
 A WCF-based component that helps exchange messages between applications (for example, a line-of-business system) and BizTalk Server. The adapter consists of design-time components and run-time components for receive and send operations.
 
 **adapter client**  
 An application that interacts with a line-of-business (LOB) system through the adapter.    
 
-  
+
 ## B  
-  
+
 **binding**  
 A process by which software components and layers are linked together. When a network component is installed, the binding relationships and dependencies for the components are established. Binding allows components to communicate with each other. In BizTalk Server, an established mapping between an orchestration adapter-agnostic endpoint (port or role link) and physical adapter-specific endpoints (send/receive ports or party).
 
 **BizTalk Server**  
 Connects diverse software. BizTalk Server enables you to create and modify process logic that uses that software. BizTalk Server also enables information workers to monitor running processes, interact with trading partners, and perform other business-oriented tasks.
-  
- 
+
+
 ## C  
-  
+
 **channel**  
 A concrete implementation of a binding element. The binding represents the configuration, and the channel is the implementation associated with that configuration. Therefore, there is a channel associated with each binding element. Channels stack on top of each other to create the concrete implementation of the binding: the channel stack.
 
@@ -47,17 +47,17 @@ A string that identifies a resource in a distributed environment. Adapters use a
 
 **contract**  
 Specifies the collection and structure of messages required to access the operations offered by the service.  
-  
+
 ## D  
-  
+
 **data manipulation language (DML)**  
 The subset of SQL statements that is used to retrieve and manipulate data. DML statements typically start with SELECT, INSERT, UPDATE, or DELETE.
 
 **design-time experience**  
 Procedures and operations that a developer performs during design time; for example, using the Consume Adapter Service BizTalk Project Add-in to retrieve message schemas. 
-  
+
 ## E  
-  
+
 **endpoint address**  
 A network address that identifies the location of a Windows Communication Foundation (WCF) service endpoint. For an adapter, the endpoint address is expressed as a connection Uniform Resource Identifier (URI) that contains location and connection parameters. The adapter can use these to establish a connection to the underlying line-of-business (LOB) system.
 
@@ -67,28 +67,29 @@ An SSO database, a master secret server, and one or more Enterprise Single Sign-
 **Extensible Markup Language (XML)**  
 A markup language designed to describe data. XML tags are not predefined.  
 
-  
+
 ## G  
-  
+
 **global assembly cache (GAC)**  
 A machine-wide code cache that stores assemblies specifically installed to be shared by many applications on the computer. Applications deployed in the global assembly cache must have a strong name.
-  
+
 ## I  
-  
+
 **inbound operation**  
 An operation that is invoked by a line-of-business (LOB) system on the adapter.  
-  
-  
+
+
 ## M  
-  
+
 **metadata**  
 In WCF, refers to a description of the contract exposed by a service. This is known as the service description and is expressed in a WSDL document. The metadata exposed by an adapter describes the (interface to) the operations that it can perform on the underlying LOB system.
 
-**[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]**  
+<strong><!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]: Path(D:/a/1/s/target_repo/biztalk/adapters-and-accelerators/adapter-sql/glossary4.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]<!--END ERROR INCLUDE --></strong>  
 The specifications for building BizTalk adapters using open standards based on Web services.  
-  
+
 ## O  
-  
+
 **one-way**  
 A message exchange pattern (MEP) in which the sender sends a message, but no response is returned by the receiver. In BizTalk Server, MEPs are referred to as communication patterns.
 
@@ -98,16 +99,16 @@ An operation that is invoked by the adapter on the line-of-business system (LOB)
 **output.cs**  
 The default output file created by the ServiceModel Metadata Utility tool (svcutil.exe). 
 
-  
+
 ## P  
-  
+
 **polling**  
 A technique that device drivers use to find out from multiple devices whether they contain data to transmit. The devices are polled one at a time.
 
 **proxy**  
 In WCF, refers to a managed-code object that implements the service contract exposed by a service. The WCF service model is based on the use of such proxies. In the WCF service model, the service contract is expressed as a .NET interface.
 
-  
+
 ## R    
 
 **request-response**  
@@ -118,7 +119,7 @@ Procedures and operations performed by a developer during run time or when deplo
 
 
 ## S  
-  
+
 **schema**  
 The structure for a message. A schema can contain multiple subschema.
 
@@ -139,8 +140,8 @@ A data set or result set that is bound to an underlying object type. Each row in
 
 **synonym**  
 An alternative name for a schema-scoped object.  
-  
- 
+
+
 ## W  
 **WCF channel model**  
 A programming model that relies on several interfaces and other types. Channels provide a low-level programming model for sending and receiving messages.
@@ -167,6 +168,6 @@ An XML-based language that describes a service as a set of endpoints that operat
 A Microsoft service-oriented communication infrastructure. The framework inherently provides clients with a service programming model and a channel programming model for finer control of message exchanges.
 
 ## X   
-  
+
 **XML Schema definition language (XSD)**  
 A schema language. An XML Schema defines the elements, attributes, and data types that comply with the World Wide Web Consortium (W3C) XML Schema Part 1: Structures Recommendation for the XML Schema Definition Language. The W3C XML Schema Part 2: Datatypes Recommendation is the recommendation for defining data types that are used in XML schemas. The XML Schema definition language enables you to define the structure and data types for XML messages.

@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring X12 Fallback Agreement Properties
-The properties described in this section apply whenever X12-encoded interchanges (including HIPAA) are exchanged and [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cannot determine the agreement that the interchanges (inbound or outbound) resolve to. This section also describes general fallback settings common to both X12 and EDIFACT encoded messages.  
+The properties described in this section apply whenever X12-encoded interchanges (including HIPAA) are exchanged and [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] cannot determine the agreement that the interchanges (inbound or outbound) resolve to. This section also describes general fallback settings common to both X12 and EDIFACT encoded messages.  
   
 ## In This Section  
   

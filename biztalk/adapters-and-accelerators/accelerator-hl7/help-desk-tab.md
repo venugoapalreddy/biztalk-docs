@@ -18,20 +18,21 @@ manager: "anneta"
 ---
 # Help Desk Tab
 You use the Help Desk tab to enter data about the destination or source party. Having the party information in the Help Desk tab is helpful if there are any errors generated and you need to contact the party. If there is an error in a message, the party information will be in the ACK message.  
-  
+
 ## UIElement List  
-  
-|Use this|To do this|  
-|--------------|----------------|  
-|**Telephone Number**|Type the source party Help desk telephone number. (Maximum 10 characters)|  
-|**Telecommunication Use Code**|Type the source party Help desk telecommunication use code. (Maximum 5 characters)|  
-|**Telecommunication Equipment Type**|Type the source party Help desk telecommunication equipment type. (Maximum 10 characters)|  
-|**Email Address**|Type the source party Help desk e-mail address. (Maximum 180 characters)|  
-|**Country Code**|Type the source party Help desk country code. (Maximum 5 characters)|  
-|**Area/City Code**|Type the source party Help desk area or country code. (Maximum 10 characters)|  
-|**Local Number**|Type the source party Help desk local telephone number. (Maximum 10 characters)|  
-|**Extension**|Type the source party Help desk telephone extension number. (Maximum 10 characters)|  
-|**Any Text**|Type any notes about the source party Help desk. (Maximum 180 characters)|  
-|**Extension Prefix**|Type the source party Help desk telephone extension prefix number. (Maximum 15 characters)|  
-|**Speed Dial Code**|Type the source party Help desk speed dial code. (Maximum 10 characters)|  
-|**Unformatted Telephone number**|Type the source party Help desk telephone number without formatting. (Maximum 20 characters)|
+
+|                     Use this                      |                                          To do this                                          |
+|---------------------------------------------------|----------------------------------------------------------------------------------------------|
+|         <strong>Telephone Number</strong>         |          Type the source party Help desk telephone number. (Maximum 10 characters)           |
+|    <strong>Telecommunication Use Code</strong>    |      Type the source party Help desk telecommunication use code. (Maximum 5 characters)      |
+| <strong>Telecommunication Equipment Type</strong> |  Type the source party Help desk telecommunication equipment type. (Maximum 10 characters)   |
+|          <strong>Email Address</strong>           |           Type the source party Help desk e-mail address. (Maximum 180 characters)           |
+|           <strong>Country Code</strong>           |             Type the source party Help desk country code. (Maximum 5 characters)             |
+|          <strong>Area/City Code</strong>          |        Type the source party Help desk area or country code. (Maximum 10 characters)         |
+|           <strong>Local Number</strong>           |       Type the source party Help desk local telephone number. (Maximum 10 characters)        |
+|            <strong>Extension</strong>             |     Type the source party Help desk telephone extension number. (Maximum 10 characters)      |
+|             <strong>Any Text</strong>             |          Type any notes about the source party Help desk. (Maximum 180 characters)           |
+|         <strong>Extension Prefix</strong>         |  Type the source party Help desk telephone extension prefix number. (Maximum 15 characters)  |
+|         <strong>Speed Dial Code</strong>          |           Type the source party Help desk speed dial code. (Maximum 10 characters)           |
+|   <strong>Unformatted Telephone number</strong>   | Type the source party Help desk telephone number without formatting. (Maximum 20 characters) |
+

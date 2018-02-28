@@ -20,7 +20,7 @@ The **ConvertHexStringToDWORD** function is used to convert a hexadecimal string
   
 ```  
   
-          BOOL ConvertHexStringToDWORD(   
+          BOOL ConvertHexStringToDWORD(   
 LPSTRszHexString,  
 LPDWORDdHexValue);  
 ```  

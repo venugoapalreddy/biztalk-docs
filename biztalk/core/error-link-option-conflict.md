@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- Select one or both of the links leading to the indicated nodes in the destination schema and then in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, change their compiler directives so that they are compatible.
+ Select one or both of the links leading to the indicated nodes in the destination schema and then in the Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, change their compiler directives so that they are compatible.

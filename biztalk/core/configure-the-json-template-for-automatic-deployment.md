@@ -34,55 +34,55 @@ This topic shows you how to update the json file.
 2. The template includes the following sections: 
 
     | | |
-	|---|---|
-	|BizTalkAssemblies | The assemblies used in your applications |
-	|BindingFiles | The binding files you are referencing|
-	| DeploymentSequence | The sequence for the elements to be installed|
-	
-	Sample template: 
-	
-	![FP1 Json template image 1](../core/media/fp1-json-template-image-1.png)
+    |---|---|
+    |BizTalkAssemblies | The assemblies used in your applications |
+    |BindingFiles | The binding files you are referencing|
+    | DeploymentSequence | The sequence for the elements to be installed|
+    
+    Sample template: 
+    
+    ![FP1 Json template image 1](../core/media/fp1-json-template-image-1.png)
 
     > [!IMPORTANT]
-	> Depending on the complexity of your solution, the elements you want in the build must be referenced in this JSON template file.
+    > Depending on the complexity of your solution, the elements you want in the build must be referenced in this JSON template file.
 
 3. In `BizTalkAssemblies`, add the assemblies used by your BizTalk applications: 
 
-	```
-	"BizTalkAssemblies": [
-		{
-			"Name": "AssemblyName"
-			"Path": "PathToAssembly
-		}
-	]
-	```
+    ```
+    "BizTalkAssemblies": [
+        {
+            "Name": "AssemblyName"
+            "Path": "PathToAssembly
+        }
+    ]
+    ```
 
 4. In `BindingsFiles`, add the binding files for your BizTalk applications: 
 
-	```
-	"BindingsFiles": [
-		{
-			"Name": "Binding File Name"
-			"Path": "PathToBindingFile
-		}
-	]
-	```
+    ```
+    "BindingsFiles": [
+        {
+            "Name": "Binding File Name"
+            "Path": "PathToBindingFile
+        }
+    ]
+    ```
 
-5. In `DeploymentSequence`, add the application names in the order you want them deployed and installed on the [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]: 
+5. In `DeploymentSequence`, add the application names in the order you want them deployed and installed on the [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]: 
 
-	```
-	"DeploymentSequence": [
-		{
-			"NameOfFirst", "NameOfSecond", "NameOfThird"
-		}
-	]
-	```
-	
+    ```
+    "DeploymentSequence": [
+        {
+            "NameOfFirst", "NameOfSecond", "NameOfThird"
+        }
+    ]
+    ```
+    
 6. **Save** your changes. 
 
 Once completed, the Visual Studio Team Service deployment task honors the required files and the install sequence. 
 
 ## Next step
-[Configure tokens and variables](../core/configure-environmental-tokens-and-variables-for-automatic-deployment.md) in your binding file to deploy the same BizTalk application to multiple [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]s.
+[Configure tokens and variables](../core/configure-environmental-tokens-and-variables-for-automatic-deployment.md) in your binding file to deploy the same BizTalk application to multiple [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]s.
 
  

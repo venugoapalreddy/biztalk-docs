@@ -15,11 +15,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Developing EDI Schemas
-The topics in this section describe how to modify EDI Schemas for use with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+The topics in this section describe how to modify EDI Schemas for use with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
- To use a document schema in your solution, you need to deploy the schema by adding it to a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], and then building and deploying the project. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] will deploy the project in the default BizTalk Application 1. You can see the schemas that are deployed by opening the **Schemas** node under **BizTalk Application 1** node the **Applications** node in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. You can deploy an assembly into a different application by using the command-line deployment tool `BTSTask`.  
+ To use a document schema in your solution, you need to deploy the schema by adding it to a BizTalk project in [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], and then building and deploying the project. [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] will deploy the project in the default BizTalk Application 1. You can see the schemas that are deployed by opening the <strong>Schemas</strong> node under <strong>BizTalk Application 1</strong> node the <strong>Applications</strong> node in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console. You can deploy an assembly into a different application by using the command-line deployment tool `BTSTask`.  
   
- The service and control schemas are automatically deployed by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] configuration wizard. To see them, click the **Schemas** node in the **BizTalk EDI Application** node in the Administration Console. For more information about these schemas, see [EDI Service and Control Schemas](../core/edi-service-and-control-schemas.md).  
+ The service and control schemas are automatically deployed by the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] configuration wizard. To see them, click the <strong>Schemas</strong> node in the <strong>BizTalk EDI Application</strong> node in the Administration Console. For more information about these schemas, see [EDI Service and Control Schemas](../core/edi-service-and-control-schemas.md).  
   
 ## In This Section  
   

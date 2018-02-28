@@ -14,11 +14,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # On-Ramps and Off-Ramps
-In an environment where [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] is deployed, a BizTalk receive location responsible for receiving ESB-destined messages is referred to as an "on-ramp." To configure a standard BizTalk receive location to an ESB on-ramp, associate the receive location with one of the pipelines provided as part of the toolkit, and then correctly configure the components of that pipeline to determine or read the itinerary for the inbound message, depending on your scenario.  
+In an environment where [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] is deployed, a BizTalk receive location responsible for receiving ESB-destined messages is referred to as an "on-ramp." To configure a standard BizTalk receive location to an ESB on-ramp, associate the receive location with one of the pipelines provided as part of the toolkit, and then correctly configure the components of that pipeline to determine or read the itinerary for the inbound message, depending on your scenario.  
   
  An ESB "off-ramp" corresponds to a BizTalk dynamic send port. As an itinerary is being processed, values are promoted to the context properties of the associated message using the System-Properties.xsd schema. The BizTalk publish-subscribe mechanism uses these promoted properties to route a message through a dynamic send port (off-ramp) to complete a message delivery.  
   
- The following table lists the on-ramps that are provided by the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+ The following table lists the on-ramps that are provided by the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)].  
   
 |Name|Message exchange pattern|**Description**|  
 |----------|------------------------------|---------------------|  
@@ -29,4 +29,4 @@ In an environment where [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] is 
 |ESB.ItineraryServices.Generic.WCF|One-Way|WCF on-ramp; expects request message only.|  
 |ESB.ItineraryServices.Generic.Response.WCF|Request-Response|WCF on-ramp; expects request message only.|  
   
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] on-ramps that are not ASMX should be configured to select ESB itineraries. For more information about how to select an ESB itinerary, see [Using a Pipeline Component to Select an Existing Itinerary](../esb-toolkit/using-a-pipeline-component-to-select-an-existing-itinerary.md).
+ [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] on-ramps that are not ASMX should be configured to select ESB itineraries. For more information about how to select an ESB itinerary, see [Using a Pipeline Component to Select an Existing Itinerary](../esb-toolkit/using-a-pipeline-component-to-select-an-existing-itinerary.md).

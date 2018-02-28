@@ -14,11 +14,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using the BizTalk ESB Toolkit Utilities
-This section describes various utilities included as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+This section describes various utilities included as part of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)].  
   
  **ESB Itinerary Import Utility**  
   
- This utility is located under the \bin directory of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] and is named EsbImportUtil.exe. This utility can be used to publish or deploy the itinerary XML into the ESBItineraryDB database.  
+ This utility is located under the \bin directory of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] and is named EsbImportUtil.exe. This utility can be used to publish or deploy the itinerary XML into the ESBItineraryDB database.  
   
  The syntax for the utility is as follows:  
   
@@ -56,7 +56,7 @@ This section describes various utilities included as part of the [!INCLUDE[esbTo
   
  **SSO Configuration Persist Utility**  
   
- This utility is located under the \bin directory of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] and is named Microsoft.Practices.ESB.PersistConfigurationTool.exe. This utility can be used to persist the ESB configuration information into the BizTalk SSO database. This can also be used to view configuration information and remove the configuration information from the SSO database.  
+ This utility is located under the \bin directory of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] and is named Microsoft.Practices.ESB.PersistConfigurationTool.exe. This utility can be used to persist the ESB configuration information into the BizTalk SSO database. This can also be used to view configuration information and remove the configuration information from the SSO database.  
   
  The syntax for the utility is as follows:  
   

@@ -31,38 +31,38 @@ After you add Web services to your orchestration using the **Add Web Reference**
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://SOAPHeaderWS.ItemAvailability" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://SOAPHeaderWS.ItemAvailability" xmlns="http://schemas.xmlsoap.org/wsdl/">  
-       <types>  
-             <s:schema elementFormDefault="qualified" targetNamespace="http://SOAPHeaderWS.ItemAvailability">  
+       <types>  
+             <s:schema elementFormDefault="qualified" targetNamespace="http://SOAPHeaderWS.ItemAvailability">  
   
-                    <s:element name="OrigDest" type="s0:OrigDest"/>  
-                    <s:complexType name="OrigDest">  
-                           <s:sequence>  
-                                 <s:element minOccurs="0" maxOccurs="1" name="Origination" type="s:string"/>  
-                                 <s:element minOccurs="0" maxOccurs="1" name="Destination" type="s:string"/>  
-                           </s:sequence>  
-                    </s:complexType>  
-             </s:schema>  
-       </types>  
+                    <s:element name="OrigDest" type="s0:OrigDest"/>  
+                    <s:complexType name="OrigDest">  
+                           <s:sequence>  
+                                 <s:element minOccurs="0" maxOccurs="1" name="Origination" type="s:string"/>  
+                                 <s:element minOccurs="0" maxOccurs="1" name="Destination" type="s:string"/>  
+                           </s:sequence>  
+                    </s:complexType>  
+             </s:schema>  
+       </types>  
   
-       <binding name="ItemAvailabilityServiceSoap" type="s0:ItemAvailabilityServiceSoap">  
-             <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>  
-             <operation name="ItemAvailability">  
-                    <soap:operation soapAction="http://SOAPHeaderWS.ItemAvailability/ItemAvailability" style="document"/>  
-                    <input>  
-                           <soap:body use="literal"/>  
-                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
-                    </input>  
-                    <output>  
-                           <soap:body use="literal"/>  
-                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
-                    </output>  
-             </operation>  
-       </binding>  
-       <service name="ItemAvailabilityService">  
-             <port name="ItemAvailabilityServiceSoap" binding="s0:ItemAvailabilityServiceSoap">  
-                    <soap:address location="http://localhost/SOAPHeaderWS/ItemAvailability.asmx"/>  
-             </port>  
-       </service>  
+       <binding name="ItemAvailabilityServiceSoap" type="s0:ItemAvailabilityServiceSoap">  
+             <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>  
+             <operation name="ItemAvailability">  
+                    <soap:operation soapAction="http://SOAPHeaderWS.ItemAvailability/ItemAvailability" style="document"/>  
+                    <input>  
+                           <soap:body use="literal"/>  
+                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
+                    </input>  
+                    <output>  
+                           <soap:body use="literal"/>  
+                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
+                    </output>  
+             </operation>  
+       </binding>  
+       <service name="ItemAvailabilityService">  
+             <port name="ItemAvailabilityServiceSoap" binding="s0:ItemAvailabilityServiceSoap">  
+                    <soap:address location="http://localhost/SOAPHeaderWS/ItemAvailability.asmx"/>  
+             </port>  
+       </service>  
 </definitions>  
 ```  
   

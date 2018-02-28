@@ -14,16 +14,16 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Operations Checklists
-This section contains checklists for deploying and maintaining [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This section contains checklists for deploying and maintaining [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## Operational Readiness Checklists  
- The Operational Readiness checklists are arguably the heart of the operations guide. The Operational Readiness checklists are a product of many contributors, including the BizTalk Customer Advisory Team (previously known as the BizTalk Rangers), Microsoft Customer Service and Support (CSS), Microsoft Consulting Services (MCS), Microsoft partners, and customers. As such, the checklists represent some of the most important lessons learned and best practices compiled through experience with hundreds of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installations. The Operational Readiness checklists cover platform configuration (including the applications that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] depends on for services), deployment, availability, monitoring, and testing.  
+ The Operational Readiness checklists are arguably the heart of the operations guide. The Operational Readiness checklists are a product of many contributors, including the BizTalk Customer Advisory Team (previously known as the BizTalk Rangers), Microsoft Customer Service and Support (CSS), Microsoft Consulting Services (MCS), Microsoft partners, and customers. As such, the checklists represent some of the most important lessons learned and best practices compiled through experience with hundreds of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] installations. The Operational Readiness checklists cover platform configuration (including the applications that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] depends on for services), deployment, availability, monitoring, and testing.  
   
 ## Routine Maintenance Checklists  
- These checklists describe tasks and procedures that are the basis for a preventative maintenance program you should follow throughout the life of your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.  
+ These checklists describe tasks and procedures that are the basis for a preventative maintenance program you should follow throughout the life of your [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.  
   
 ## Routine Performance Checklists  
- These checklists describe tasks and procedures that are the basis for a preventative maintenance program to track the performance of your [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solutions.  
+ These checklists describe tasks and procedures that are the basis for a preventative maintenance program to track the performance of your [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solutions.  
   
 ## In This Section  
   

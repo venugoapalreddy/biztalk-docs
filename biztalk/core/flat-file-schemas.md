@@ -25,7 +25,7 @@ Flat file schemas serve two purposes. They define all of the same record and fie
   
  To see the additional node properties associated with the characteristics of flat files, you need to specify the **Flat File Extension** by using the **Schema Editor Extensions** property of the **Schema** node. They do not appear by default.  
   
- For detailed information about the node properties that are specific to flat file schemas, see the **Supplemental Node Properties for Flat File Schemas** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For detailed information about the node properties that are specific to flat file schemas, see the <strong>Supplemental Node Properties for Flat File Schemas</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## See Also  
  [Different Types of BizTalk Schemas](../core/different-types-of-biztalk-schemas.md)

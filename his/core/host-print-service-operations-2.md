@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Host Print Service (Operations)
-Host Print service provides server-based 3270 and 5250 print emulation, allowing mainframe and AS/400 applications to print to a LAN printer supported by Windows operating system. [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Host Print service enables centralized control of LU print resources. You can administer all Host Print service functions using SNA Manager, including margin control, fonts, and characters per line. Host Print service also supports print-to-file with auto-incrementing file names. You can configure the file naming scheme for each printer LU.  
+Host Print service provides server-based 3270 and 5250 print emulation, allowing mainframe and AS/400 applications to print to a LAN printer supported by Windows operating system. [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Host Print service enables centralized control of LU print resources. You can administer all Host Print service functions using SNA Manager, including margin control, fonts, and characters per line. Host Print service also supports print-to-file with auto-incrementing file names. You can configure the file naming scheme for each printer LU.  
   
  The following three methods of printing host information are available:  
   

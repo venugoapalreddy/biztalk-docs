@@ -140,62 +140,62 @@ This walkthrough provides step-by-step procedures for testing the policy you cre
   
  When you click **Test**, the following things happen:  
   
-1.  The Business Rule Composer creates a **RuleEngine.Policy** object, which in turn creates a new rule engine instance or acquires a rule engine instance from the rule engine cache.  
+1. The Business Rule Composer creates a **RuleEngine.Policy** object, which in turn creates a new rule engine instance or acquires a rule engine instance from the rule engine cache.  
   
-2.  The Business Rule Composer creates a **TypedXmlDocument** object based on the SamplePO.xml file.  
+2. The Business Rule Composer creates a **TypedXmlDocument** object based on the SamplePO.xml file.  
   
-3.  The Business Rule Composer invokes the **Policy.Execute** method with the **TypedXmlDocument** object as a parameter.  
+3. The Business Rule Composer invokes the **Policy.Execute** method with the **TypedXmlDocument** object as a parameter.  
   
-4.  The **Policy.Execute** method asserts (adds) the **TypedXmlDocument** object as a fact into the working memory of the rule engine.  
+4. The **Policy.Execute** method asserts (adds) the **TypedXmlDocument** object as a fact into the working memory of the rule engine.  
   
-5.  The rule engine uses the **TypedXmlDocument** object as a fact and executes the **ProcessPurchaseOrder** policy.  
+5. The rule engine uses the **TypedXmlDocument** object as a fact and executes the **ProcessPurchaseOrder** policy.  
   
- **FACT ACTIVITY 8/31/2006 1:33:10 PM**  
+   **FACT ACTIVITY 8/31/2006 1:33:10 PM**  
   
- **Rule Engine Instance Identifier: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
+   **Rule Engine Instance Identifier: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
   
- **Ruleset Name: ProcessPurchaseOrder**  
+   **Ruleset Name: ProcessPurchaseOrder**  
   
- **Operation: Assert**  
+   **Operation: Assert**  
   
- **Object Type: TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
+   **Object Type: TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
   
- **Object Instance Identifier: 64530307**  
+   **Object Instance Identifier: 64530307**  
   
- **FACT ACTIVITY 8/31/2006 1:33:10 PM**  
+   **FACT ACTIVITY 8/31/2006 1:33:10 PM**  
   
- **Rule Engine Instance Identifier: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
+   **Rule Engine Instance Identifier: bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
   
- **Ruleset Name: ProcessPurchaseOrder**  
+   **Ruleset Name: ProcessPurchaseOrder**  
   
- **Operation: Assert**  
+   **Operation: Assert**  
   
- **Object Type: TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item**  
+   **Object Type: TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item**  
   
- **Object Instance Identifier: 43901854**  
+   **Object Instance Identifier: 43901854**  
   
-1.  The rule engine determines which child **TypedXmlDocument** objects to create based on the XPath selectors defined in the rules. When you build rules in the Business Rule Composer, the XPath selector value defaults to the node above the node selected in the **XML Schemas** tab in Facts Explorer. The XPath field value defaults to the selected node itself, relative to its parent node. However, if the node you selected has children, only an XPath selector binding is created to point to the node that you selected, and no XPath field binding is created.  
+6. The rule engine determines which child **TypedXmlDocument** objects to create based on the XPath selectors defined in the rules. When you build rules in the Business Rule Composer, the XPath selector value defaults to the node above the node selected in the **XML Schemas** tab in Facts Explorer. The XPath field value defaults to the selected node itself, relative to its parent node. However, if the node you selected has children, only an XPath selector binding is created to point to the node that you selected, and no XPath field binding is created.  
   
-2.  The following table shows the XPath Selector and XPath Field binding values for the fields used in the **ProcessPurchaseOrder** policy. (The policy has only one rule, ApprovalRule.)  
+7. The following table shows the XPath Selector and XPath Field binding values for the fields used in the **ProcessPurchaseOrder** policy. (The policy has only one rule, ApprovalRule.)  
   
-|Field name|XPath Selector|XPath Field|XPath Selector (simplified form)|XPath Field<br /><br /> (simplified form)|  
-|----------------|--------------------|-----------------|----------------------------------------|-----------------------------------------|  
-|Quantity|/*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']/\*[local-name()='Item' and namespace-uri()='']|*[local-name()='Quantity' and namespace-uri()='']|/PurchaseOrder/Item|Quantity|  
-|Status|/*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']|*[local-name()='Status' and namespace-uri()='']|/PurchaseOrder|Status|  
+| Field name |                                                             XPath Selector                                                             |                    XPath Field                    | XPath Selector (simplified form) | XPath Field<br /><br /> (simplified form) |
+|------------|----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|----------------------------------|-------------------------------------------|
+|  Quantity  | /*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']/\*[local-name()='Item' and namespace-uri()=''] | *[local-name()='Quantity' and namespace-uri()=''] |       /PurchaseOrder/Item        |                 Quantity                  |
+|   Status   |                       /*[local-name()='PurchaseOrder' and namespace-uri()='<http://EAISolution.PurchaseOrder>']                        |  *[local-name()='Status' and namespace-uri()='']  |          /PurchaseOrder          |                  Status                   |
   
 #### To view the Xpath Selector and Xpath Field bindings for the Quantity and Status fields  
   
-1.  In the Policy Explorer window, expand **Policies**, expand **ProcessPurchaseOrder**, and then expand **Version 1.0**.  
+1. In the Policy Explorer window, expand **Policies**, expand **ProcessPurchaseOrder**, and then expand **Version 1.0**.  
   
-2.  Click **ApprovalRule**.  
+2. Click **ApprovalRule**.  
   
-3.  In the IF pane on the right, click **PO:/PurchaseOrder/Item/Quantity**.  
+3. In the IF pane on the right, click **PO:/PurchaseOrder/Item/Quantity**.  
   
-4.  Verify that you see the value shown in the preceding table for the **XPath Selector** and **XPath Field** bindings in the Properties window.  
+4. Verify that you see the value shown in the preceding table for the **XPath Selector** and **XPath Field** bindings in the Properties window.  
   
-5.  Repeat steps 3 and 4 for the **PO:/PurchaseOrder/Status** field.  
+5. Repeat steps 3 and 4 for the **PO:/PurchaseOrder/Status** field.  
   
- The rule engine creates a child **TypedXmlDocument** object from the original **TypedXmlDocument** you submitted for each XPath selector. Because there are two distinct XPath selectors used in the policy (**/PurchaseOrder/Item** for the **Quantity** field and **/PurchaseOrder** for the **Status** field), the rule engine creates two child **TypedXmlDocument** objects and asserts them into the working memory of the rule engine.  
+   The rule engine creates a child **TypedXmlDocument** object from the original **TypedXmlDocument** you submitted for each XPath selector. Because there are two distinct XPath selectors used in the policy (**/PurchaseOrder/Item** for the **Quantity** field and **/PurchaseOrder** for the **Status** field), the rule engine creates two child **TypedXmlDocument** objects and asserts them into the working memory of the rule engine.  
   
 > [!NOTE]
 >  To see the trace output again, click **Version 1.0** in the Policy Explorer window.  

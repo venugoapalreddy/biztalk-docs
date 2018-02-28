@@ -44,7 +44,7 @@ Derivation by restriction is similar to derivation by extension, in terms of Biz
             </xs:complexType>  
         </xs:element>  
         <xs:complexType name="GlobalAddrType">  
-        [Address structure defined globally here.]  
+        [Address structure defined globally here.]  
         </xs:complexType>  
     </xs:schema>  
     ```  
@@ -61,10 +61,10 @@ Derivation by restriction is similar to derivation by extension, in terms of Biz
                         <xs:complexType>  
                             <xs:complexContent mixed="false">  
                                 <xs:restriction base="GlobalAddrType">  
-                   [Duplicate of address structure now appears  
-                   here, ready to be restricted with additional  
-                   attributes, set using the properties of the  
-                   relevant nodes in the schema tree.]  
+                   [Duplicate of address structure now appears  
+                   here, ready to be restricted with additional  
+                   attributes, set using the properties of the  
+                   relevant nodes in the schema tree.]  
                                 </xs:restriction>  
                             </xs:complexContent>  
                         </xs:complexType>  
@@ -73,7 +73,7 @@ Derivation by restriction is similar to derivation by extension, in terms of Biz
             </xs:complexType>  
         </xs:element>  
         <xs:complexType name="GlobalAddrType">  
-        [Address structure defined globally here.]  
+        [Address structure defined globally here.]  
         </xs:complexType>  
     </xs:schema>  
     ```  

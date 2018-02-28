@@ -18,7 +18,7 @@ ms.author: "mandia"
 
 # Microsoft BizTalk Accelerator for RosettaNet documentation
 
- Built as a solution on top of Microsoft BizTalk Server, [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] provides the necessary applications and platform to develop RNIF-compliant solutions. These solutions let users automate their e-business processes, such as order management and inventory management. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] takes advantage of the existing [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] functionality to process XML and electronic data interchange (EDI) communication among businesses.  
+ Built as a solution on top of Microsoft BizTalk Server, [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] provides the necessary applications and platform to develop RNIF-compliant solutions. These solutions let users automate their e-business processes, such as order management and inventory management. [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] takes advantage of the existing [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] functionality to process XML and electronic data interchange (EDI) communication among businesses.  
 
 This topic provides an overview of the topics covered in this documentation, including how to install RosettaNet, provides step-by-step tutorials, read how the accelerator works, use the SDK samples and tools, and more.
 

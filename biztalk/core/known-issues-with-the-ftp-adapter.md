@@ -22,10 +22,10 @@ This section contains information that may help you avoid errors.
 #### Data may be duplicated or lost when you receive data in BizTalk Server by using the FTP adapter  
   
 ##### Problem  
- Data is duplicated or lost when you receive data in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] by using the FTP Adapter.  
+ Data is duplicated or lost when you receive data in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] by using the FTP Adapter.  
   
 ##### Cause  
- The [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP adapter uses the FTP client protocol to poll the designated FTP server and retrieves data from the server "as is." The FTP adapter does not validate any data that it retrieves. The FTP adapter sends the retrieved document to the BizTalk Messaging Engine for processing and then it deletes the original document from the FTP server. If the FTP adapter retrieves a document from the FTP server that is still being written to by the host application, the retrieved document will be incomplete. If the FTP adapter retrieves an incomplete copy of the original document, data duplication or data loss may occur in the following scenarios:  
+ The [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP adapter uses the FTP client protocol to poll the designated FTP server and retrieves data from the server "as is." The FTP adapter does not validate any data that it retrieves. The FTP adapter sends the retrieved document to the BizTalk Messaging Engine for processing and then it deletes the original document from the FTP server. If the FTP adapter retrieves a document from the FTP server that is still being written to by the host application, the retrieved document will be incomplete. If the FTP adapter retrieves an incomplete copy of the original document, data duplication or data loss may occur in the following scenarios:  
   
 -   If the original document is still being written to the FTP server by the host application, the FTP adapter cannot delete the document and will retrieve another copy of the document at the next polling interval that is configured for the receive location. This behavior causes document duplication to occur.  
   
@@ -34,9 +34,9 @@ This section contains information that may help you avoid errors.
 ##### Resolution  
  To work around this behavior, use one of the following methods:  
   
--   Configure the host application to write to a temporary folder on the same hard disk as the public FTP folder and to periodically move the contents of the temporary folder to the FTP folder. The temporary folder should be on the same hard disk as the public FTP folder to make sure that the move operation is atomic. An atomic operation is an operation that is functionally indivisible. If you write data to the public FTP folder by using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP adapter, you can do this by specifying a Temporary Folder property in the FTP Transport Properties dialog box when you configure a send port. If you specify a Temporary Folder property, make sure that this folder is on the same physical disk as the public FTP folder.  
+- Configure the host application to write to a temporary folder on the same hard disk as the public FTP folder and to periodically move the contents of the temporary folder to the FTP folder. The temporary folder should be on the same hard disk as the public FTP folder to make sure that the move operation is atomic. An atomic operation is an operation that is functionally indivisible. If you write data to the public FTP folder by using the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP adapter, you can do this by specifying a Temporary Folder property in the FTP Transport Properties dialog box when you configure a send port. If you specify a Temporary Folder property, make sure that this folder is on the same physical disk as the public FTP folder.  
   
--   Configure the FTP receive location to operate within a service window when the host application is not writing data to the FTP server. You can specify the service window when you configure the receive location properties.  
+- Configure the FTP receive location to operate within a service window when the host application is not writing data to the FTP server. You can specify the service window when you configure the receive location properties.  
   
 #### FTP Adapter does not support revocation checks on the server certificates  
   

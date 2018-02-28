@@ -156,7 +156,7 @@ Str=Msg.PartName(myPartContextProperty); //assumes myPartContextProperty is of t
 MyMessage(MySchemaNamespace.MyProperty)=True;  
 ```  
   
- In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] you can refer to and assign values to the MIME properties of a multi-part message:  
+ In [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] you can refer to and assign values to the MIME properties of a multi-part message:  
   
 ```  
 Message_Out.MessagePart_1(MIME.FileName)="document.doc";  

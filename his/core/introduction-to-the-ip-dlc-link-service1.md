@@ -14,9 +14,9 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Introduction to the IP-DLC Link Service
-This section describes the overall architecture of the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] system with IP-DLC link service functionality.  
+This section describes the overall architecture of the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] system with IP-DLC link service functionality.  
   
- IP-DLC is a [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] feature that provides SNA connectivity for applications using dependent and independent sessions over a native IP network. It implements the HPR/IP protocol, which is also known as HPR over IP or Enterprise Extender. Each SNA packet is transmitted natively across the IP network as a UDP datagram.  
+ IP-DLC is a [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] feature that provides SNA connectivity for applications using dependent and independent sessions over a native IP network. It implements the HPR/IP protocol, which is also known as HPR over IP or Enterprise Extender. Each SNA packet is transmitted natively across the IP network as a UDP datagram.  
   
 ## In This Section  
  [System Overview](../core/system-overview1.md)  

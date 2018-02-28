@@ -34,8 +34,8 @@ manager: "anneta"
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of 3270 print sessions.  
@@ -43,15 +43,15 @@ manager: "anneta"
  **/print**  
  Displays a list of the configuration settings of a print session. The displayed command does not contain the word **snacfg**, so that it can be redirected to a command file. Command files are discussed earlier in this section.  
   
- **/add**  
- Adds a print session to the Host Print Service. To configure the print session, you must specify the server name and the configured 3270 printer LU name after the **/add** using the **/server:***servername* and **/luname:***Luname* options.  
+ <strong>/add</strong>  
+ Adds a print session to the Host Print Service. To configure the print session, you must specify the server name and the configured 3270 printer LU name after the <strong>/add</strong> using the <strong>/server:</strong><em>servername</em> and <strong>/luname:</strong><em>Luname</em> options.  
   
  **/delete**  
  Deletes the printer session. To delete the print session, you must specify the server name and the configured 3270 printer LU name after the **/delete**.  
   
 ## Options for 3270 Print Sessions  
- **/autoactivate:{ yes &#124; no }**  
- Specifies whether the printer session will automatically activate when [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is started. The default is yes.  
+ <strong>/autoactivate:{ yes &#124; no }</strong>  
+ Specifies whether the printer session will automatically activate when [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is started. The default is yes.  
   
  **/bestfit:{ yes &#124; no }**  
  Specifies whether to scale the output to the paper size. The default is **yes**.  
@@ -59,7 +59,7 @@ manager: "anneta"
  **/codepage: {Country &#124; Custom}**  
  This defines the host code page language in which the print jobs are output. The default is **Country** and the default language is **English (United States) [037]**. To change the default language, provide the number of the host code page of the country/region you want with the **/country** option.  
   
- If you want to use a custom file for the host code page, you must use **/customfile:***text,* where the *text* value is the name of the file containing the specifications for the print job.  
+ If you want to use a custom file for the host code page, you must use <strong>/customfile:</strong><em>text,</em> where the <em>text</em> value is the name of the file containing the specifications for the print job.  
   
  **Host Code Page Numbers and Corresponding Language**  
   
@@ -299,7 +299,7 @@ manager: "anneta"
  **/paperlength:** *value*  
  Specifies the length of the paper for printing. The values for paperlength and paperwidth are in tenths of a millimeter, and override the papersize setting.  
   
- **/paperwidth:**value  
+ <strong>/paperwidth:</strong>value  
  Specifies the width of the paper. The values for paperlength and paperwidth are in tenths of a millimeter, and override the papersize setting.  
   
  **/pdtfile:**" *text*"  

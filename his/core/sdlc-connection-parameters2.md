@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # SDLC Connection Parameters
-The following table shows how [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for Synchronous Data Link Control (SDLC) connections correspond to VTAM or Network Control Program (NCP) parameters. Asterisks (*) indicate required parameters.  
+The following table shows how [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for Synchronous Data Link Control (SDLC) connections correspond to VTAM or Network Control Program (NCP) parameters. Asterisks (*) indicate required parameters.  
   
 |Host Integration Server parameter|VTAM or NCP parameter|  
 |---------------------------------------|---------------------------|  
@@ -26,7 +26,7 @@ The following table shows how [!INCLUDE[hisHostIntServNoVersion](../includes/his
 |**Encoding** (NRZ or NRZI).|**NRZI=** setting in the LINE/GROUP definition (defaults to YES on host)|  
 |**Local Poll Address**.|**ADDR**= parameter in the PU definition|  
   
- \* Required parameter in [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]  
+ \* Required parameter in [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]  
   
 ## See Also  
  [Host Configuration](../core/host-configuration1.md)

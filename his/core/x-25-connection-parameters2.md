@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # X.25 Connection Parameters
-The following table shows how [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for X.25 connections correspond to VTAM or Network Control Program (NCP) parameters. Asterisks (*) indicate required parameters.  
+The following table shows how [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for X.25 connections correspond to VTAM or Network Control Program (NCP) parameters. Asterisks (*) indicate required parameters.  
   
 |Host Integration Server parameter|VTAM or NCP parameter|  
 |---------------------------------------|---------------------------|  
@@ -25,7 +25,7 @@ The following table shows how [!INCLUDE[hisHostIntServNoVersion](../includes/his
 |**Remote X.25 Address***.|**DIALNO=** parameter in the PORT definition|  
 |**Max BTU Length**.|**MAXDATA=** parameter in the PU definition (set Max BTU Length ≤ MAXDATA)|  
   
- \* Required parameter in [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]  
+ \* Required parameter in [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]  
   
 ## See Also  
  [Host Configuration](../core/host-configuration1.md)

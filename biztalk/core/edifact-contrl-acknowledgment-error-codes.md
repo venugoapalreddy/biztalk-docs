@@ -16,13 +16,13 @@ manager: "anneta"
 ---
 # EDIFACT CONTRL Acknowledgment Error Codes
 This topic lists the error codes used within the segments of an EDIFACT CONTRL acknowledgment. For more information about these segments, see [EDIFACT CONTRL Acknowledgment](../core/edifact-contrl-acknowledgment.md).  
-  
+
  These errors apply to the interchange, group, message, and data level. On encountering a supported error, the entire interchange, group, or transaction set is rejected. There is no "accepted with errors" condition for EDIFACT-encoded interchanges.  
-  
+
  **Standard EDIFACT Error Codes**  
-  
+
  The following table lists the error codes used in the UCI5 field of the EDIFACT CONTRL ACK. This table indicates which error codes specified by the EDIFACT specification are supported in BizTalk Server EDI and AS2 and which are unsupported.  
-  
+
 |Error Code|Condition|Cause|Supported?|  
 |----------------|---------------|-----------|----------------|  
 |2|Syntax version or level not supported|Notification that the syntax version and/or level is not supported by the recipient.|No|  
@@ -63,17 +63,19 @@ This topic lists the error codes used within the segments of an EDIFACT CONTRL a
 |46|Character set not supported|Notification that one or more characters used are not in the character set defined by the syntax identifier; or the character set identified by the escape sequence for the code extension technique is not supported by the recipient.|Yes|  
 |47|Envelope functionality not supported|Notification that the envelope structure encountered is not supported by the recipient.|Yes|  
 |48|Dependency Notes condition violated|Notification that an error condition has occurred as the result of a dependency condition violation.|No|  
-  
+
  **BizTalk Server Specific EDIFACT Error Codes**  
-  
- The following table lists error codes used in the UCI5 field of the EDIFACT CONTRL ACK that are not part of the EDIFACT specification. These are custom codes that are specific to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
-  
-|Error Code|Condition|Cause|  
-|----------------|---------------|-----------|  
-|70|Transaction set missing or invalid transaction set Identifier|Notification that the transaction set identifier is missing or invalid.|  
-|71|Transaction set or group control number mismatch|Notification that there is a mismatch with the transaction set or group control numbers.|  
-|72|Unrecognized segment ID|Notification that the segment ID is not recognized.|  
-|73|XML not at correct position|Notification that a problem has occurred when serializing the XML root element.|  
-|74|Too few segment group repetitions|Notification that a segment group repeats less than the required amount.|  
-|75|Too few segment repetitions|Notification that a segment repeats less than the required amount.|  
-|76|Too few data elements found|Notification that there were not enough data elements found.|
+
+ The following table lists error codes used in the UCI5 field of the EDIFACT CONTRL ACK that are not part of the EDIFACT specification. These are custom codes that are specific to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+
+
+| Error Code |                           Condition                           |                                          Cause                                           |
+|------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------|
+|     70     | Transaction set missing or invalid transaction set Identifier |         Notification that the transaction set identifier is missing or invalid.          |
+|     71     |       Transaction set or group control number mismatch        | Notification that there is a mismatch with the transaction set or group control numbers. |
+|     72     |                    Unrecognized segment ID                    |                   Notification that the segment ID is not recognized.                    |
+|     73     |                  XML not at correct position                  |     Notification that a problem has occurred when serializing the XML root element.      |
+|     74     |               Too few segment group repetitions               |         Notification that a segment group repeats less than the required amount.         |
+|     75     |                  Too few segment repetitions                  |            Notification that a segment repeats less than the required amount.            |
+|     76     |                  Too few data elements found                  |               Notification that there were not enough data elements found.               |
+

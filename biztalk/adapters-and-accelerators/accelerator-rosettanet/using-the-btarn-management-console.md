@@ -42,22 +42,22 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using the BTARN Management Console
-This topic describes how to administer [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] from the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Management Console.  
+This topic describes how to administer [!INCLUDE [BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] from the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Management Console.  
   
- Open the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Management Console by clicking **Start**, pointing to **Programs**, pointing to **Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], and then clicking [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] **Management Console**.  
+ Open the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Management Console by clicking <strong>Start</strong>, pointing to <strong>Programs</strong>, pointing to <strong>Microsoft</strong> [!INCLUDE [btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], and then clicking [!INCLUDE [btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] <strong>Management Console</strong>.  
   
- The scope (left) pane of the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Management Console includes all [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration nodes. The results (right) pane includes all the specific instances of whatever configuration items you have selected in the scope pane.  
+ The scope (left) pane of the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Management Console includes all [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] configuration nodes. The results (right) pane includes all the specific instances of whatever configuration items you have selected in the scope pane.  
   
 ## Operations in the Scope Pane  
  You can perform the following operations on nodes in the scope pane:  
   
--   Set the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] send and receive pipelines that you want to use for partner send ports. For more information, see [Setting BTARN Send and Receive Pipelines](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md).  
+- Set the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] send and receive pipelines that you want to use for partner send ports. For more information, see [Setting BTARN Send and Receive Pipelines](../../adapters-and-accelerators/accelerator-rosettanet/setting-btarn-send-and-receive-pipelines.md).  
   
--   Enable Business Activity Monitoring (BAM) tracking. For more information, see [Enabling BAM Tracking](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md).  
+- Enable Business Activity Monitoring (BAM) tracking. For more information, see [Enabling BAM Tracking](../../adapters-and-accelerators/accelerator-rosettanet/enabling-bam-tracking.md).  
   
--   Make sure that any newly imported configuration is visible in the console by right-clicking the configuration node in the scope pane, and then clicking **Refresh**.  
+- Make sure that any newly imported configuration is visible in the console by right-clicking the configuration node in the scope pane, and then clicking **Refresh**.  
   
--   View additional columns in the results pane by right-clicking the **Process Configuration Settings** or **Agreement** node in the scope pane, pointing to **View**, and then clicking **Add/Remove columns**. Move columns between the available columns and displayed columns by using the **Add or Remove** button. This command is especially useful for agreements that have many available columns that [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not display by default.  
+- View additional columns in the results pane by right-clicking the <strong>Process Configuration Settings</strong> or <strong>Agreement</strong> node in the scope pane, pointing to <strong>View</strong>, and then clicking <strong>Add/Remove columns</strong>. Move columns between the available columns and displayed columns by using the <strong>Add or Remove</strong> button. This command is especially useful for agreements that have many available columns that [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not display by default.  
   
 ## Process Configurations  
  You can perform the following operations on a process configuration:  

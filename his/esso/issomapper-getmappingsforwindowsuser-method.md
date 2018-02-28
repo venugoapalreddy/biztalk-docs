@@ -82,7 +82,7 @@ As Variant
  Users described as Application User can only access their own mappings. They cannot access the mappings for another user.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapper Interface (COM)](../esso/issomapper-interface-com.md)   

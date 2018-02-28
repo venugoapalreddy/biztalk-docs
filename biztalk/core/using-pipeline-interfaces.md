@@ -33,7 +33,7 @@ A pipeline component is a .NET or COM component that implements a set of predefi
  All pipeline components need to implement this interface to provide basic information about the component.  
   
 ## IComponent  
- All pipeline components except assemblers and disassemblers implement this interface to get messages from the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine for processing and to pass processed messages back to the engine.  
+ All pipeline components except assemblers and disassemblers implement this interface to get messages from the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine for processing and to pass processed messages back to the engine.  
   
  **Execute.** Method called by the engine to pass the input message to the component and retrieve the processed message from the component.  
   
@@ -41,7 +41,7 @@ A pipeline component is a .NET or COM component that implements a set of predefi
  Pipeline components need to implement **IPersistPropertyBag** to receive its configuration information. This interface and **IPropertyBag** are the standard interfaces. For more information about these interfaces, refer to the Microsoft .NET Framework Software Development Kit (SDK) documentation.  
   
 ## IDisassemblerComponent  
- A disassembling component is a pipeline component that receives one message on input and produces zero or more messages on output. Disassembling components are used to split interchanges of messages into individual documents. A disassembler component must implement the methods of the **IDisassemblerComponent** interface to get messages from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] for processing and to pass disassembled documents back to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+ A disassembling component is a pipeline component that receives one message on input and produces zero or more messages on output. Disassembling components are used to split interchanges of messages into individual documents. A disassembler component must implement the methods of the <strong>IDisassemblerComponent</strong> interface to get messages from [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] for processing and to pass disassembled documents back to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 |Method|Description|  
 |------------|-----------------|  
@@ -60,9 +60,9 @@ A pipeline component is a .NET or COM component that implements a set of predefi
  An assembling component is a pipeline component that receives several messages on input and produces one message on output. Assembling components are used to collect individual documents into the message interchange batch.  
   
 > [!NOTE]
->  In this release of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], assembling functionality is not used, so [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] always passes one document to the component input.  
+>  In this release of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], assembling functionality is not used, so [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] always passes one document to the component input.  
   
- An assembler component implements the **IAssemblerComponent** methods that are called by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine at run time.  
+ An assembler component implements the <strong>IAssemblerComponent</strong> methods that are called by the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] engine at run time.  
   
 |Method|Description|  
 |------------|-----------------|  
@@ -70,7 +70,7 @@ A pipeline component is a .NET or COM component that implements a set of predefi
 |**Assemble**|Builds the interchange from the messages that were added by the previous method. Returns a pointer to the assembled message.|  
   
 ## IProbeMessage  
- Any pipeline component (general, assembling, or disassembling) can implement **IProbeMessage** if it requires message probing functionality. A probing component is used in the pipeline stages that have **FirstMatch** execution mode. In such stages, [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] gives the message to the component, and the **Probe** method examines the beginning of the message to determine if the component recognizes the format of the message.  
+ Any pipeline component (general, assembling, or disassembling) can implement <strong>IProbeMessage</strong> if it requires message probing functionality. A probing component is used in the pipeline stages that have <strong>FirstMatch</strong> execution mode. In such stages, [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] gives the message to the component, and the <strong>Probe</strong> method examines the beginning of the message to determine if the component recognizes the format of the message.  
   
 |Method|Description|  
 |------------|-----------------|  
@@ -117,7 +117,7 @@ public IntPtr Icon
 }  
 ```  
   
- For more information, see **IComponentUI Interface (COM)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
+ For more information, see <strong>IComponentUI Interface (COM)</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
   
 ## See Also  
  [Developing Custom Pipeline Components](../core/developing-custom-pipeline-components.md)   

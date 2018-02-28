@@ -22,55 +22,55 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Walkthrough: Creating a BizTalk Application That Uses the POP3 Adapter
-This section takes you through creating a simple Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application using the POP3 adapter.  
+This section takes you through creating a simple Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application using the POP3 adapter.  
   
 > [!NOTE]
->  The application assumes that you have access to a computer running Microsoft [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] with Email Services installed and configured. For information about configuring [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] with Email Services see Windows Server Help.  
-  
+>  The application assumes that you have access to a computer running Microsoft [!INCLUDE [btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE [btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] with Email Services installed and configured. For information about configuring [!INCLUDE [btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE [btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] with Email Services see Windows Server Help.  
+> 
 > [!NOTE]
->  In this example Microsoft Outlook Express is used as the e-mail client and [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] is used as the e-mail server. However, any POP3 e-mail client and RFC-compliant POP3 server could be used for this scenario.  
+>  In this example Microsoft Outlook Express is used as the e-mail client and [!INCLUDE [btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE [btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] is used as the e-mail server. However, any POP3 e-mail client and RFC-compliant POP3 server could be used for this scenario.  
   
  This application assumes that you have not yet created any send ports or receive locations. If you have existing send ports or receive locations, substitute appropriate names when you work through the steps.  
   
- The application is a simple content-based routing application using only a receive location and a send port. The receive location reads from a mailbox on the server running [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]("the Windows server"\). The send port takes the message from the receive location and sends it to a folder on the local file system of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+ The application is a simple content-based routing application using only a receive location and a send port. The receive location reads from a mailbox on the server running [!INCLUDE [btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] or [!INCLUDE [btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]("the Windows server"\). The send port takes the message from the receive location and sends it to a folder on the local file system of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
- To create the application, you have to create the mailbox, set up the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location and send port, start the send port and enable the receive location, and send a test message to the mailbox. Follow the steps below to create the application.  
+ To create the application, you have to create the mailbox, set up the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location and send port, start the send port and enable the receive location, and send a test message to the mailbox. Follow the steps below to create the application.  
   
 ## Create a mailbox on Windows Server 2003  
  To create a mailbox on Windows Server 2003 with Email Services installed, follow these steps:  
   
-1.  Click **Start**, point to **Programs**, point to **Administrative Tools**, and then click **POP3 Service**.  
+1. Click **Start**, point to **Programs**, point to **Administrative Tools**, and then click **POP3 Service**.  
   
-2.  Expand *\<servername\>* and click the domain where you would like to create a mailbox.  
+2. Expand *\<servername\>* and click the domain where you would like to create a mailbox.  
   
-3.  In the **POP3 Service** dialog box, in the right pane, click the **Add Mailbox** option.  
+3. In the **POP3 Service** dialog box, in the right pane, click the **Add Mailbox** option.  
   
-4.  In the **Add Mailbox** dialog box, in the **Mailbox Name** box, type **EmailTest**.  
+4. In the **Add Mailbox** dialog box, in the **Mailbox Name** box, type **EmailTest**.  
   
-5.  Select the **Create associated user for this mailbox** check box.  
+5. Select the **Create associated user for this mailbox** check box.  
   
-6.  In the **Password** and **Confirm Password** boxes, type a password, and then click **OK**.  
+6. In the **Password** and **Confirm Password** boxes, type a password, and then click **OK**.  
   
-7.  Make a note of the **Account name** and **Mail Server** log on information displayed for use with clear text authentication in the **POP3 Service** dialog box, and then click **OK**. This information will be used by the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location that you configure with the POP3 transport type.  
+7. Make a note of the <strong>Account name</strong> and <strong>Mail Server</strong> log on information displayed for use with clear text authentication in the <strong>POP3 Service</strong> dialog box, and then click <strong>OK</strong>. This information will be used by the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receive location that you configure with the POP3 transport type.  
   
 ## Create the receive location  
  Follow these steps to create the receive location:  
   
-1.  In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console double-click the default database **\<***machine_name***\>.BizTalkMgmtDb.dbo**, where *machine_name* is the name of your computer. Click **Applications**, then click **BizTalk.Application.1**.  
+1. In the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console double-click the default database <strong>\<</strong><em>machine_name</em><strong>\>.BizTalkMgmtDb.dbo</strong>, where <em>machine_name</em> is the name of your computer. Click <strong>Applications</strong>, then click <strong>BizTalk.Application.1</strong>.  
   
-2.  Right-click **Receive Ports**, click **New**, click **One-way receive port**.  
+2. Right-click **Receive Ports**, click **New**, click **One-way receive port**.  
   
-3.  In the **Receive Port Properties** dialog box, in the **Name** box, type **POP3Receive**.  
+3. In the **Receive Port Properties** dialog box, in the **Name** box, type **POP3Receive**.  
   
-4.  Click **Receive Locations**, and then click **New**.  In the **Receive Location Properties** dialog box, in the **Name** box, type **POP3Receive**.  
+4. Click **Receive Locations**, and then click **New**.  In the **Receive Location Properties** dialog box, in the **Name** box, type **POP3Receive**.  
   
-5.  In the **Transport Type** box, select **POP3**.  
+5. In the **Transport Type** box, select **POP3**.  
   
-6.  In the **Receive Handler** box, select **BizTalkServerApplication**.  
+6. In the **Receive Handler** box, select **BizTalkServerApplication**.  
   
-7.  In the **Receive Pipeline** box, select **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**.  
+7. In the **Receive Pipeline** box, select **Microsoft.BizTalk.DefaultPipelines.PassThruReceive**.  
   
-8.  In the **Transport** box, click the **Configure** button.  
+8. In the **Transport** box, click the **Configure** button.  
   
 9. In the **POP3 Transport Properties** dialog box, in the **Apply MIME Decoding** box, select **False**.  
   
@@ -85,23 +85,23 @@ This section takes you through creating a simple Microsoft [!INCLUDE[btsBizTalkS
 14. In the **Polling Interval** box, type **1**, click **OK**, and then click **OK** again.  
   
 ## Create the send port and destination folder on the BizTalk server  
- Follow these steps to create the send port and destination folder on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
+ Follow these steps to create the send port and destination folder on the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   
-1.  Create a folder on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] file system. This will be the destination for the send port.  
+1. Create a folder on the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] file system. This will be the destination for the send port.  
   
-2.  Right-click **Send Ports**, click **New,** then click **Static one-way Send Port.**  
+2. Right-click **Send Ports**, click **New,** then click **Static one-way Send Port.**  
   
-3.  In the **Send Port Properties** dialog box, in the **Transport Type** box, select **FILE**.  
+3. In the **Send Port Properties** dialog box, in the **Transport Type** box, select **FILE**.  
   
-4.  In the **Name** box, type **SendToFile**.  
+4. In the **Name** box, type **SendToFile**.  
   
-5.  In the **Transport** box, click the **Configure** button.  
+5. In the **Transport** box, click the **Configure** button.  
   
-6.  Next to the **Destination folder** box, click **Browse**, select the folder that you created on the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and then click **OK**.  
+6. Next to the <strong>Destination folder</strong> box, click <strong>Browse</strong>, select the folder that you created on the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], and then click <strong>OK</strong>.  
   
-7.  In the **File name** box, type **%MessageID%.txt**, and then click **OK**.  
+7. In the **File name** box, type **%MessageID%.txt**, and then click **OK**.  
   
-8.  In the **Send Pipeline** box, select **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**.  
+8. In the **Send Pipeline** box, select **Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**.  
   
 9. Click **Filters**.  
   
@@ -112,11 +112,11 @@ This section takes you through creating a simple Microsoft [!INCLUDE[btsBizTalkS
 ## Enable the receive location and start the send port  
  Follow these steps to enable the receive location and start the send port:  
   
-1.  Right-click the **POP3Receive** receive location, and then click **Enable**.  
+1. Right-click the **POP3Receive** receive location, and then click **Enable**.  
   
-2.  Right-click the **SendToFile** send port, and then click **Start**.  
+2. Right-click the **SendToFile** send port, and then click **Start**.  
   
- The next step is to test the application by sending a test message to the mailbox monitored by the receive location.  
+   The next step is to test the application by sending a test message to the mailbox monitored by the receive location.  
   
 ## Configure Outlook Express to send an e-mail message to the mailbox  
  Follow these steps to configure Outlook Express to send an e-mail message to the mailbox:  

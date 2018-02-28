@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # BizTalk Server AS2 Functionality
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes AS2 messages using a combination of core BizTalk Server features and AS2-specific BizTalk Server features. This enables BizTalk Server to perform the processing that is unique to AS2 messaging, while leveraging its core messaging functionality. If EDI documents are transported over AS2, some of the EDI-specific functionality in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will also be used.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] processes AS2 messages using a combination of core BizTalk Server features and AS2-specific BizTalk Server features. This enables BizTalk Server to perform the processing that is unique to AS2 messaging, while leveraging its core messaging functionality. If EDI documents are transported over AS2, some of the EDI-specific functionality in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] will also be used.  
   
- This section describes basic AS2 messaging and how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implements it. It also describes how a trading partner agreement definition can be leveraged for AS2 processing, receive-side AS2 processing, and send-side AS2 processing.  
+ This section describes basic AS2 messaging and how [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implements it. It also describes how a trading partner agreement definition can be leveraged for AS2 processing, receive-side AS2 processing, and send-side AS2 processing.  
   
 ## In This Section  
   

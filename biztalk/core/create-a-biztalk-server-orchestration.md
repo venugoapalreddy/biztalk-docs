@@ -18,10 +18,10 @@ manager: "anneta"
 > [!NOTE]
 >  This tutorial applies to BizTalk Server only.  
   
- Create a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration that, when deployed, receives a JSON purchase order message, transforms it to an XML invoice, and then sends out a JSON invoice.  
+ Create a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] orchestration that, when deployed, receives a JSON purchase order message, transforms it to an XML invoice, and then sends out a JSON invoice.  
   
 ## Define message and message types  
- This solution works with two basic messages – purchase order and invoice. We already generated the schema of the purchase order from a JSON message using the JSON schema wizard. The sample provided for this tutorial already has the schema for the invoice message. We use these schemas to create the message types in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
+ This solution works with two basic messages – purchase order and invoice. We already generated the schema of the purchase order from a JSON message using the JSON schema wizard. The sample provided for this tutorial already has the schema for the invoice message. We use these schemas to create the message types in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application.  
   
 1.  Add an orchestration to the BizTalk project and open the Orchestration view.  
   

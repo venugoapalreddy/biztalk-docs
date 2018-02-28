@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Creating and Processing Acknowledgments
-The following topics provide information about ACK message schemas, and how BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) processes acknowledgments.  
+The following topics provide information about ACK message schemas, and how BizTalk Accelerator for HL7 ([!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) processes acknowledgments.  
   
 ## In This Section  
   

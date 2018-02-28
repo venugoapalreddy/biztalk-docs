@@ -18,18 +18,20 @@ manager: "anneta"
 ---
 # Error - Second Input for Table Extractor Functoid Not Valid
 **Error Code**  
-  
+
  btm1073  
-  
+
  **Explanation**  
-  
+
  The second input parameter to the relevant **Table Extractor** functoid is not valid. This parameter must be a positive integer constant that indicates a valid column in the table looping grid configured for the **Table Looping** functoid that is indicated by the first input parameter.  
-  
+
  **User Action**  
-  
+
  Ensure that the input parameters to the relevant **Table Extractor** functoid, as accessed through its **Input Parameters** property and the **Configure \<Functoid\> Functoid** dialog box, are as shown in the following table.  
-  
-|Table Extractor functoid input parameter number|Description|  
-|-----------------------------------------------------|-----------------|  
-|1|Link from the **Table Looping** functoid from which this **Table Extractor** functoid will pull column data as indicated by its second parameter.|  
-|2|The number of a valid column in the data table configured through the **Table Looping Grid** property of the **Table Looping** functoid specified by the first input parameter.|
+
+
+| Table Extractor functoid input parameter number |                                                                                                Description                                                                                                |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                        1                        |                Link from the <strong>Table Looping</strong> functoid from which this <strong>Table Extractor</strong> functoid will pull column data as indicated by its second parameter.                |
+|                        2                        | The number of a valid column in the data table configured through the <strong>Table Looping Grid</strong> property of the <strong>Table Looping</strong> functoid specified by the first input parameter. |
+

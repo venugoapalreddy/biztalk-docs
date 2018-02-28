@@ -18,7 +18,7 @@ manager: "anneta"
 This topic describes the enabling of EDI and AS2 status reporting, and the configuration of status report filters and display columns for EDI, batching, and AS2 status reports.  
   
 ## Enabling Status Reporting  
- EDI status reporting will only be available on a server if [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] with the EDI and BAM subsystems is installed on that server. EDI/AS2 status reporting cannot be enabled if the BAM infrastructure is not installed. The server must also be a member of the EDI Processing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] group so that it has access to the EDI status report data store.  
+ EDI status reporting will only be available on a server if [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] with the EDI and BAM subsystems is installed on that server. EDI/AS2 status reporting cannot be enabled if the BAM infrastructure is not installed. The server must also be a member of the EDI Processing [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] group so that it has access to the EDI status report data store.  
   
  EDI message entries will be entered for a party's interchanges in the status report UI if the **Turn ON reporting** property is selected in the **General Properties** page of the **General** tab in the **Agreement Properties** dialog box. If the party sending or being sent interchanges is not determined, EDI message entries will be entered for those interchanges only if the **Activate EDI reporting** property is selected in the fallback agreement for both X12 and EDIFACT. This applies to the EDI Interchange and Correlated ACK Status report. The Batch Status report is enabled only if an agreement has been determined and the **Turn ON reporting** property is selected in **General Properties** page of the **General** tab in the **Agreement Properties** dialog box.  
   
@@ -31,7 +31,7 @@ This topic describes the enabling of EDI and AS2 status reporting, and the confi
  For more information about enabling status reporting, see [Enabling EDI and AS2 Status Reports](../core/enabling-edi-and-as2-status-reports.md).  
   
 ## Status Report Filters and Display Columns  
- EDI and AS2 status reporting enables you to customize the range of the data that is saved for the status report. You do so in the **Group Hub** page of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console. Once you have displayed the status report pane for any of the status reports, you can select the range of data that you want to see in the report. You do so by selecting the filter values to include in the status report query expression.  
+ EDI and AS2 status reporting enables you to customize the range of the data that is saved for the status report. You do so in the <strong>Group Hub</strong> page of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console. Once you have displayed the status report pane for any of the status reports, you can select the range of data that you want to see in the report. You do so by selecting the filter values to include in the status report query expression.  
   
  You can also customize the type of data that is displayed in the status report.  
   

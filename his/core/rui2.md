@@ -20,7 +20,7 @@ The **RUI** function provides event notification for all Request Unit Interface 
   
 ```  
   
-          void WINAPI RUI(   
+          void WINAPI RUI(   
 LUA_VERB_RECORD FAR *lpVCB  );  
 ```  
   

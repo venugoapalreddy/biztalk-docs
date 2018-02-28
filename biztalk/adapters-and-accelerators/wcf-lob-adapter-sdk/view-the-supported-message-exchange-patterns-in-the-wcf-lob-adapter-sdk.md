@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # View the supported message exchange patterns in the WCF LOB Adapter SDK
-The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] supports several of the messaging patterns supported by the underlying [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] including request-reply, and one-way communication. Different transports support different messaging patterns, and thus affect the types of interactions that they support.  
+The [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] supports several of the messaging patterns supported by the underlying [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] including request-reply, and one-way communication. Different transports support different messaging patterns, and thus affect the types of interactions that they support.  
   
- The patterns listed in the following table are handled by the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
+ The patterns listed in the following table are handled by the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)].  
   
 |Pattern|Description|  
 |-------------|-----------------|  
@@ -33,7 +33,7 @@ The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] supp
 ## Planning for Sessions  
  A messaging pattern may use a session when it wants to ensure that all messages exchanged between the adapter and the line-of-business system must be part of the same conversation. Typically sessions are used when delivery guarantee is needed, but they can also be used to support other requirements that an adapter developer may have for message exchange.  
   
- The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] relies on the [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] for session support. For more information about sessions, see [Sessions, Instancing, and Concurrency](https://msdn.microsoft.com/library/ms731193.aspx). 
+ The [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] relies on the [!INCLUDE [nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] for session support. For more information about sessions, see [Sessions, Instancing, and Concurrency](https://msdn.microsoft.com/library/ms731193.aspx). 
   
 ## See Also  
  [Plan and design an adapter using the WCF LOB Adapter SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/plan-and-design-an-adapter-using-the-wcf-lob-adapter-sdk.md)

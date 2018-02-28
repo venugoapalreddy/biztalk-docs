@@ -27,19 +27,19 @@ ms.author: "mandia"
 #### Editions and sample
 
 -   [HIS 2013 Evaluation Edition](https://www.microsoft.com/download/details.aspx?id=39950)
--   HIS 2013 Enterprise Edition Download on [MSDN](https://msdn.microsoft.com/subscriptions/downloads/) and  [TechNet](https://technet.microsoft.com/subscriptions/downloads/)
+-   HIS 2013 Enterprise Edition Download on [MSDN](https://msdn.microsoft.com/subscriptions/downloads/) and  [TechNet](https://technet.microsoft.com/subscriptions/downloads/)
 -   [HIS 2010 - Evaluation](https://www.microsoft.com/download/details.aspx?id=18969)
 -   [HIS 2010 - .NET Managed C++ Extensions Sample for CPI-C](https://www.microsoft.com/download/details.aspx?id=28581)
 
 #### SDKs
 
--   [HIS 2016 SDK](https://aka.ms/his2016sdk)
--   [HIS 2013 Software Development Kit (SDK)](https://www.microsoft.com/download/details.aspx?id=41557)
--   
-#### Management packs
+- [HIS 2016 SDK](https://aka.ms/his2016sdk)
+- [HIS 2013 Software Development Kit (SDK)](https://www.microsoft.com/download/details.aspx?id=41557)
+- 
+  #### Management packs
 
--   [HIS 2013 Management Pack](https://www.microsoft.com/download/details.aspx?id=39978)
--   [HIS 2010 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=23657)
+- [HIS 2013 Management Pack](https://www.microsoft.com/download/details.aspx?id=39978)
+- [HIS 2010 Monitoring Management Pack](https://www.microsoft.com/download/details.aspx?id=23657)
 
 #### Best practices analyzer
 

@@ -17,15 +17,15 @@ manager: "anneta"
 # Error getting binding extensions from machine.config
 ## Details  
   
-|||  
-|-|-|  
-|Product Name|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|Product Version|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|Event ID|0|  
-|Event Source|0|  
-|Component|0|  
-|Symbolic Name|0|  
-|Message Text|Error getting binding extensions from machine.config|  
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+|  Product Name   | [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| Product Version |             [!INCLUDE [btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    Event ID     |                                          0                                          |
+|  Event Source   |                                          0                                          |
+|    Component    |                                          0                                          |
+|  Symbolic Name  |                                          0                                          |
+|  Message Text   |                Error getting binding extensions from machine.config                 |
   
 ## Explanation  
  This error occurs when a  receive location or send port binding configuration has a user defined binding extension, but it is not defined in machine.config file. This situation occurs primarily with the WCF-Custom and WCF-CustomIsolated adapters.  
@@ -44,16 +44,16 @@ manager: "anneta"
     3.  Copy and paste the **system.servicemodel** extensions section in a similar section in machine.config. If **system.servicemodel** section is not present in machine.config, your must create one. The following is an example from the configuration section of a machine.config file:  
   
         ```  
-          <system.serviceModel>  
-            <extensions>  
-              <behaviorExtensions>  
-                <add name="BizTalkWcfContractNamespaceTestServiceBehaviorExtension" type="ASB.BizTalk.Samples.BizTalkWcfContractNamespaceTestServiceBehaviorExtension, CustomBizTalkWcfBehaviors, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7631521c07cf34b4" />  
-              </behaviorExtensions>  
-            </extensions>  
-          </system.serviceModel>  
+          <system.serviceModel>  
+            <extensions>  
+              <behaviorExtensions>  
+                <add name="BizTalkWcfContractNamespaceTestServiceBehaviorExtension" type="ASB.BizTalk.Samples.BizTalkWcfContractNamespaceTestServiceBehaviorExtension, CustomBizTalkWcfBehaviors, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7631521c07cf34b4" />  
+              </behaviorExtensions>  
+            </extensions>  
+          </system.serviceModel>  
         ```  
   
 > [!NOTE]
->  The above code can also be added to the WCF Extensions tab. If the extension needs to be on the receive side, see the **\<Host Name\> Properties Dialog Box, WCF Extensions** tab (WCF-Custom or WCF-CustomIsolated Adapter Receive Handler) [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. If the extension needs to be on the send side, see **\<Host Name\> Properties Dialog Box, WCF Extensions** tab (WCF-Custom Adapter Send Handler) [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
+>  The above code can also be added to the WCF Extensions tab. If the extension needs to be on the receive side, see the <strong>\<Host Name\> Properties Dialog Box, WCF Extensions</strong> tab (WCF-Custom or WCF-CustomIsolated Adapter Receive Handler) [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. If the extension needs to be on the send side, see <strong>\<Host Name\> Properties Dialog Box, WCF Extensions</strong> tab (WCF-Custom Adapter Send Handler) [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
   
  3. Close and reopen your admin console. You should be able to see your custom behavior in the WCF-Custom adapter, and the port should stay enabled when you enable it.

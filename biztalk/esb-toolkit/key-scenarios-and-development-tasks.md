@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Key Scenarios and Development Tasks
-This topic describes the key scenarios for using the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] and demonstrates how developers can accomplish the key development activities. This topic includes the following scenarios:  
+This topic describes the key scenarios for using the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] and demonstrates how developers can accomplish the key development activities. This topic includes the following scenarios:  
   
 -   [Using Itinerary-Based Routing](../esb-toolkit/using-itinerary-based-routing.md)  
   

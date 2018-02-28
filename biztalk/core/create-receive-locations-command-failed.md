@@ -17,15 +17,15 @@ manager: "anneta"
 # Create receive locations command failed
 ## Details  
   
-|||  
-|-|-|  
-|Product Name|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|Product Version|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|Event ID|0|  
-|Event Source|0|  
-|Component|0|  
-|Symbolic Name|0|  
-|Message Text|Create receive locations command failed: FileName={0} Arguments={1} ExitCode={2}|  
+|                 |                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------|
+|  Product Name   | [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| Product Version |             [!INCLUDE [btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    Event ID     |                                          0                                          |
+|  Event Source   |                                          0                                          |
+|    Component    |                                          0                                          |
+|  Symbolic Name  |                                          0                                          |
+|  Message Text   |  Create receive locations command failed: FileName={0} Arguments={1} ExitCode={2}   |
   
 ## Explanation  
  The publishing wizard failed to create a receive location.  
@@ -33,7 +33,7 @@ manager: "anneta"
 ## User Action  
  To resolve this error, do the following: In the BizTalk Administration console, make sure that the receive location specified by the receiveLocationName attribute in the Web.config file that the BizTalk WCF Publishing Wizard generated exists and is started.  
   
- For additional information on creating receive locations, see the following resources in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:  
+ For additional information on creating receive locations, see the following resources in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help:  
   
 -   [Publishing WCF Services with the Isolated WCF Receive Adapters](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   

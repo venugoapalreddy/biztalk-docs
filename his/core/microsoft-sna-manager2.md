@@ -16,7 +16,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Microsoft SNA Manager
-[!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Microsoft Management Console application is also called the SNA Manager.  
+[!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Microsoft Management Console application is also called the SNA Manager.  
   
 ## See Also  
  [SNA Manager Help](../core/sna-manager-help1.md)

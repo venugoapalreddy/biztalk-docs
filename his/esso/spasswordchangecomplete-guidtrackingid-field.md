@@ -24,7 +24,7 @@ public: GUID guidTrackingId;
 ```  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SPasswordChangeComplete Structure (COM)](../esso/spasswordchangecomplete-structure-com.md)   

@@ -20,10 +20,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Deploying Published Web Services on a Non-Visual Studio Computer
-To deploy your published Web service on a computer that does not have [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] installed, you need to create a Web setup project, distribute the Web setup package (.msi file), install the package on the non-[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] computer, and configure the installed Web service.  
+To deploy your published Web service on a computer that does not have [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] installed, you need to create a Web setup project, distribute the Web setup package (.msi file), install the package on the non-[!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] computer, and configure the installed Web service.  
   
 > [!NOTE]
->  You can also use BizTalk Server Administration Console to create MSI files packaging BizTalk Applications containing the published Web service projects. This MSI files can be used to deploy the Web service projects on a Non [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Computer. For more information about how to create MSI files using BizTalk Server Administration console, see [How to Export a BizTalk Application](../core/how-to-export-a-biztalk-application.md).  
+>  You can also use BizTalk Server Administration Console to create MSI files packaging BizTalk Applications containing the published Web service projects. This MSI files can be used to deploy the Web service projects on a Non [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Computer. For more information about how to create MSI files using BizTalk Server Administration console, see [How to Export a BizTalk Application](../core/how-to-export-a-biztalk-application.md).  
   
 ## In This Section  
   

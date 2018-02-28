@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using the Pipeline Support Components
-The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes the following pipeline components:  
+The [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] includes the following pipeline components:  
   
 -   **ESB Itinerary Selector**. You can use this component on the receive side (in a receive pipeline) to select a server-side itinerary for a message to follow. For more information, see [The ESB Itinerary Selector Component](../esb-toolkit/the-esb-itinerary-selector-component.md).  
   

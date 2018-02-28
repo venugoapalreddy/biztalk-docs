@@ -17,7 +17,7 @@ manager: "anneta"
 # Plan and design your adapter using the WCF LOB Adapter SDK
 
 ## Overview
-Planning is an important part of any development effort, including adapters developed with the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. Failure to adequately plan strategies for interacting with the line-of-business system and the different implementation details involved when developing an adapter could cause your adapter to behave unexpectedly, to lack certain key features provided by the API and expected by the user, or to require frequent update and repair.  
+Planning is an important part of any development effort, including adapters developed with the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)]. Failure to adequately plan strategies for interacting with the line-of-business system and the different implementation details involved when developing an adapter could cause your adapter to behave unexpectedly, to lack certain key features provided by the API and expected by the user, or to require frequent update and repair.  
   
  This section contains the information needed to design your adapter. Using this information, you can plan a design that meets the needs of your users.  
   

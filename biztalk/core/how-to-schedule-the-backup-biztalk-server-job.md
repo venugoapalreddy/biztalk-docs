@@ -16,45 +16,45 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Schedule the Backup BizTalk Server Job
-The Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job runs as scheduled by the SQL Server Agent service. If you want to create more frequent or less frequent backups, you can change the schedule of the Backup [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job by using SQL Server Management Studio.  
+The Backup [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job runs as scheduled by the SQL Server Agent service. If you want to create more frequent or less frequent backups, you can change the schedule of the Backup [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] job by using SQL Server Management Studio.  
   
 ## Prerequisites  
 Sign in with an account that is a member of the SQL Server sysadmin fixed server role.  
   
 ## Schedule the Backup BizTalk Server job
   
-1.  On the SQL Server that hosts the BizTalk Management database, open **SQL Server Management Studio**.
+1. On the SQL Server that hosts the BizTalk Management database, open **SQL Server Management Studio**.
 
-2.  In **Connect to Server**, enter the name of the SQL Server where the BizTalk Server databases reside, select the authentication type, and then **Connect**.  
+2. In **Connect to Server**, enter the name of the SQL Server where the BizTalk Server databases reside, select the authentication type, and then **Connect**.  
   
-3.  In the Object Explorer, double-click **SQL Server Agent**, and then select **Jobs**.  
+3. In the Object Explorer, double-click **SQL Server Agent**, and then select **Jobs**.  
   
-4.  In the details pane, right-click **Backup BizTalk Server (BizTalkMgmtDb)**, and then select **Properties**.  
+4. In the details pane, right-click **Backup BizTalk Server (BizTalkMgmtDb)**, and then select **Properties**.  
   
-5.  In the **Job Properties - Backup BizTalk Server (BizTalkMgmtDb)**, under **Select a page**, select **Steps**.  
+5. In the **Job Properties - Backup BizTalk Server (BizTalkMgmtDb)**, under **Select a page**, select **Steps**.  
   
-6.  In the **Job step list**, select **BackupFull**, and then select **Edit**.  
+6. In the **Job step list**, select **BackupFull**, and then select **Edit**.  
   
-7.  In the **Job Step Properties - BackupFull**, in the **Command** box, update the command by changing the frequency to run a full backup: **'h'** (hourly), **'d'** (daily), **'w'** (weekly), **'m'** (monthly), **'y'** (yearly). Select **OK**.  
+7. In the **Job Step Properties - BackupFull**, in the **Command** box, update the command by changing the frequency to run a full backup: **'h'** (hourly), **'d'** (daily), **'w'** (weekly), **'m'** (monthly), **'y'** (yearly). Select **OK**.  
   
-    > [!NOTE]
-    >  The first time the Backup BizTalk Server job runs, it completes a full backup.  
+   > [!NOTE]
+   >  The first time the Backup BizTalk Server job runs, it completes a full backup.  
     
-8.  Configure additional **@frequency** parameters:  
+8. Configure additional <strong><xref href="frequency" data-throw-if-not-resolved="False" data-raw-source="@frequency"></xref></strong> parameters:  
   
-    - **@ForceFullBackupAfterPartialSetFailure**: The default value is **false**. When **false**, if the full backup fails, the system waits for the next cycle until the full backup is made.  
+   - <strong><xref href="ForceFullBackupAfterPartialSetFailure" data-throw-if-not-resolved="False" data-raw-source="@ForceFullBackupAfterPartialSetFailure"></xref></strong>: The default value is <strong>false</strong>. When <strong>false</strong>, if the full backup fails, the system waits for the next cycle until the full backup is made.  
     
-        > [!NOTE]
-        >  If your **@frequency** setting is long (like weekly, monthly, yearly), then setting this parameter to **false** could be dangerous. In this scenario, it may be best to set this flag to **true**. When **true**, every time there is a failure, the system forces itself to create a full backup. There may be a small performance impact, but it’s safter to have a recoverable system.
+     > [!NOTE]
+     >  If your <strong><xref href="frequency" data-throw-if-not-resolved="False" data-raw-source="@frequency"></xref></strong> setting is long (like weekly, monthly, yearly), then setting this parameter to <strong>false</strong> could be dangerous. In this scenario, it may be best to set this flag to <strong>true</strong>. When <strong>true</strong>, every time there is a failure, the system forces itself to create a full backup. There may be a small performance impact, but it’s safter to have a recoverable system.
   
-    - **@BackupHour**: The default valueis NULL. This parameter is directly related to **@Frequency**. When you set the frequency to **h** (hourly), you set which hour of the day you want the full backup to run. You can choose a value between 0 (midnight) to 23 (11 PM). If left blank, the full backup runs every hour.  
+   - <strong><xref href="BackupHour" data-throw-if-not-resolved="False" data-raw-source="@BackupHour"></xref></strong>: The default valueis NULL. This parameter is directly related to <strong><xref href="Frequency" data-throw-if-not-resolved="False" data-raw-source="@Frequency"></xref></strong>. When you set the frequency to <strong>h</strong> (hourly), you set which hour of the day you want the full backup to run. You can choose a value between 0 (midnight) to 23 (11 PM). If left blank, the full backup runs every hour.  
     
-       > [!NOTE]
-        >  If you set this parameter with a number outside the 0 to 23 range (for example, 100 or -1), the system forces it to 0.
+      > [!NOTE]
+       >  If you set this parameter with a number outside the 0 to 23 range (for example, 100 or -1), the system forces it to 0.
   
-    - **@UseLocalTime**: An extra parameter that states to use local time. By default, the job works with UTC time. So if you live in Australia (which is UTC + 10 hours), your backup runs at 10am rather than midnight. As a best practice, it is recommended to set this to **1** (true).  
+   - <strong><xref href="UseLocalTime" data-throw-if-not-resolved="False" data-raw-source="@UseLocalTime"></xref></strong>: An extra parameter that states to use local time. By default, the job works with UTC time. So if you live in Australia (which is UTC + 10 hours), your backup runs at 10am rather than midnight. As a best practice, it is recommended to set this to <strong>1</strong> (true).  
   
-9.  In the **Job Properties - Backup BizTalk Server (BizTalkMgmtDb)**, under **Select a page**, click **Schedules**.  
+9. In the **Job Properties - Backup BizTalk Server (BizTalkMgmtDb)**, under **Select a page**, click **Schedules**.  
   
 10. In the **Schedule list**, click **MarkAndBackupLogSched**, and then click **Edit**.  
   

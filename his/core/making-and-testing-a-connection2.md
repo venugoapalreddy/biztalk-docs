@@ -14,13 +14,13 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Making and Testing a Connection
-Procedures used to make successful connections. Several steps are required to connect your host system to [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+Procedures used to make successful connections. Several steps are required to connect your host system to [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
  One way to remember the four steps required to make a successful connection is with the acronym **LCLUA** that stands for **L**-Link Service, **C**-Connection, **LU**-LUs and **A**-Adding and Assigning Users.  
   
  For information on the IP-DLC Link Service, see [IP-DLC Link Service](./ip-dlc-link-service2.md).  
   
- For information about configuring [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] for your enterprise environment, see [Configuring Your Enterprise](../core/configuring-your-enterprise1.md).  
+ For information about configuring [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] for your enterprise environment, see [Configuring Your Enterprise](../core/configuring-your-enterprise1.md).  
   
 ## Next steps
  [Make a connection](making-a-connection2.md)  

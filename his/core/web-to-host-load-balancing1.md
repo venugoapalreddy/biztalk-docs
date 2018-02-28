@@ -16,7 +16,7 @@ manager: "anneta"
 # Web-to-Host Load Balancing
 Internet Information Services (IIS) can use Windows Network Load Balancing (NLB) to provide load balancing and fail-over support for incoming HTTP requests. NLB is a TCP/IP-based load balancing solution that load balances incoming TCP/IP packets to all nodes in a cluster or to a single node in a cluster. NLB distributes the load across identical servers.  
   
- The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] clients and Web browsers go through IIS to gain access to the Active Server Pages (ASP) that invoke the Transaction Integrator (TI) methods that call the CICS or IMS transaction program (TP).  
+ The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] clients and Web browsers go through IIS to gain access to the Active Server Pages (ASP) that invoke the Transaction Integrator (TI) methods that call the CICS or IMS transaction program (TP).  
   
  NLB provides high availability on enterprise systems. It detects connection failures and automatically redirects requests to other nodes in the server farm. NLB also improves performance when all incoming packets are load balanced between various nodes in the server farm based on server load.  
   

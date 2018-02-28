@@ -19,17 +19,17 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Overview of BizTalk Adapter for Oracle Database
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes the Oracle database as a WCF service. Adapter clients can perform operations on the Oracle database by exchanging SOAP messages with the adapter. The adapter consumes the WCF message and makes appropriate ODP.NET calls to perform the operation. The adapter returns the response from the Oracle database back to the client in the form of SOAP messages.  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] exposes the Oracle database as a WCF service. Adapter clients can perform operations on the Oracle database by exchanging SOAP messages with the adapter. The adapter consumes the WCF message and makes appropriate ODP.NET calls to perform the operation. The adapter returns the response from the Oracle database back to the client in the form of SOAP messages.  
   
- The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces metadata of Oracle database artifacts (tables, functions, procedures, etc.) that describes the structure of a SOAP message in the form of WSDL. The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] uses [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)], [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], and [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)] to enable adapter clients to retrieve metadata for operations and generates programming artifacts that can be used in your programming solution.  
+ The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces metadata of Oracle database artifacts (tables, functions, procedures, etc.) that describes the structure of a SOAP message in the form of WSDL. The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] uses [!INCLUDE [addadapterservreflong](../../includes/addadapterservreflong-md.md)], [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)], and [!INCLUDE [addadapterwiz](../../includes/addadapterwiz-md.md)] to enable adapter clients to retrieve metadata for operations and generates programming artifacts that can be used in your programming solution.  
   
- The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] uses the Oracle Data Provider for .NET (ODP.NET) to communicate with the Oracle database. You can use the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to communicate with the Oracle database in the following ways:  
+ The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] uses the Oracle Data Provider for .NET (ODP.NET) to communicate with the Oracle database. You can use the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] to communicate with the Oracle database in the following ways:  
   
--   By developing BizTalk applications. See [Develop your BizTalk applications](../../core/develop-your-biztalk-applications.md) for more information.  
+- By developing BizTalk applications. See [Develop your BizTalk applications](../../core/develop-your-biztalk-applications.md) for more information.  
   
--   By using the [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] service model. See [Develop Oracle Database applications using the WCF Service model](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md) for more information.  
+- By using the [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] service model. See [Develop Oracle Database applications using the WCF Service model](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md) for more information.  
   
--   By using the WCF channel model. See [Develop Oracle Database applications using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md) for more information.  
+- By using the WCF channel model. See [Develop Oracle Database applications using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md) for more information.  
   
 ## In This Section  
   

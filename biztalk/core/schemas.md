@@ -25,7 +25,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Schemas
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the XML Schema definition (XSD) language to define the structure of all messages that it processes, and refers to these definitions of message structure as *schemas*. With few exceptions, structured messages are the core of any application. These structured messages can take any form, large or small, and target a wide array of back-end systems and data stores. Systems that create and consume the structured messages frequently use different formats. Two of the most common formats for structured messages are XML and flat files.  
+Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the XML Schema definition (XSD) language to define the structure of all messages that it processes, and refers to these definitions of message structure as <em>schemas</em>. With few exceptions, structured messages are the core of any application. These structured messages can take any form, large or small, and target a wide array of back-end systems and data stores. Systems that create and consume the structured messages frequently use different formats. Two of the most common formats for structured messages are XML and flat files.  
   
  BizTalk Server supports the following four types of schemas:  
   

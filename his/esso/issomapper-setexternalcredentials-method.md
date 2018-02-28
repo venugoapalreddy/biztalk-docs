@@ -76,7 +76,7 @@ externalCredentials As String
  Users described as Application User can only set their own credentials. Also, the number of external credentials provided must match the number of fields expected by the external application.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapper Interface (COM)](../esso/issomapper-interface-com.md)   

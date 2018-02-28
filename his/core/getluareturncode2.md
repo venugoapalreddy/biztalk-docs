@@ -20,9 +20,9 @@ The **GetLuaReturnCode** function converts the primary and secondary return code
   
 ```  
   
-        int WINAPI GetLuaReturnCode(   
+        int WINAPI GetLuaReturnCode(   
 struct LUA_COMMON FAR *vpb,    
-    UINT buffer_length,            
+    UINT buffer_length,            
     unsigned char FAR *buffer_addr );  
 ```  
   

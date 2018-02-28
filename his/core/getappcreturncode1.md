@@ -20,7 +20,7 @@ The **GetAppcReturnCode** function converts the primary and secondary return cod
   
 ```  
   
-    int WINAPI GetAppcReturnCode(   
+    int WINAPI GetAppcReturnCode(   
 struct appc_hdr FAR * vpb,  
 UINTbuffer_length,  
 unsigned char FAR * buffer_addr);  

@@ -19,9 +19,9 @@ manager: "anneta"
 
 ## Overview
 
-Adapter developers design and develop WCF-based adapters to line-of-business systems using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] API and tools as well as the Microsoft .NET Framework.  
+Adapter developers design and develop WCF-based adapters to line-of-business systems using the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] API and tools as well as the Microsoft .NET Framework.  
   
- To help adapter developers be as effective as possible, the following lists provide links for tutorials and general information about developing adapters using [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)].  
+ To help adapter developers be as effective as possible, the following lists provide links for tutorials and general information about developing adapters using [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)].  
   
 **Concepts**  
   

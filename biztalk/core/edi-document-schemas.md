@@ -18,7 +18,7 @@ manager: "anneta"
 Document schemas define the body of an EDI transaction document type.  
   
 ## Schema Delivery and Setup  
- EDI document schemas are delivered in a compressed state in a self-extracting executable, [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\MicrosoftEdiXSDTemplates.exe. The self-extracting executable ensures that an appropriate folder structure is created (per the encoding type and version/release sub types). When executed, the executable deposits EANCOM, EDIFACT, HIPAA, and X12 schemas into subfolders in the same directory as the executable.  
+ EDI document schemas are delivered in a compressed state in a self-extracting executable, [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\MicrosoftEdiXSDTemplates.exe. The self-extracting executable ensures that an appropriate folder structure is created (per the encoding type and version/release sub types). When executed, the executable deposits EANCOM, EDIFACT, HIPAA, and X12 schemas into subfolders in the same directory as the executable.  
   
  The default schema namespaces are:  
   
@@ -27,7 +27,7 @@ Document schemas define the body of an EDI transaction document type.
 -   For EDIFACT – `http://schemas.microsoft.com/BizTalk/EDI/EDIFACT/2006`  
   
 ## Schema Naming Convention  
- The naming convention for the X12 and EDIFACT encoding type is \<Encoding\>_\<Version\>\<Release\>\_\<Doctype\>. Examples are the X12_00401_864.xsd schema for the X12 864 document type (version 004, release 01) and the EDIFACT_D01C_AUTHOR.xsd schema for the EDIFACT AUTHOR document type (version D01, release C).  
+ The naming convention for the X12 and EDIFACT encoding type is \<Encoding\><em>\<Version\>\<Release\>\</em>\<Doctype\>. Examples are the X12_00401_864.xsd schema for the X12 864 document type (version 004, release 01) and the EDIFACT_D01C_AUTHOR.xsd schema for the EDIFACT AUTHOR document type (version D01, release C).  
   
 > [!NOTE]
 >  The schema name of an EDIFACT schema is case-sensitive. For example, EFACT_D98B_ORDERS and EFACT_d98B_Orders would be two different schemas.  

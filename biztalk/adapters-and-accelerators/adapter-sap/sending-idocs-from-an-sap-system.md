@@ -36,12 +36,12 @@ High-level tasks to complete on the SAP system to send an IDOC from the SAP syst
 7.  Generate an IDOC within SAP. For example, use BD10 transaction to trigger a MATMAS IDOC. Contact your SAP administrator for information about other transactions to trigger specific IDOCs.  
 
 ## View Transaction IDs in SAP
-When the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] invokes a tRFC or sends an IDOC to an SAP system, the SAP system registers a transaction ID (TID) in response. In some scenarios, you might need to know the TID that is registered with the SAP system in response to a call from the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]. For example, you might want to identify the logical unit of work (LUW) on the SAP system to troubleshoot an issue.  
+When the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] invokes a tRFC or sends an IDOC to an SAP system, the SAP system registers a transaction ID (TID) in response. In some scenarios, you might need to know the TID that is registered with the SAP system in response to a call from the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)]. For example, you might want to identify the logical unit of work (LUW) on the SAP system to troubleshoot an issue.  
   
  To view the TIDs in an SAP system, you must use transaction SM58. Contact your SAP administrator or refer to the SAP guidance for more information about this transaction. 
 
 ## View details about IDOCs sent and received from SAP
-Using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)], you can send an IDOC to an SAP system or receive an IDOC from an SAP system. To track the status and view the data of an IDOC sent or received by an SAP system, you can use transaction WE02. Contact your SAP administrator, or refer to the SAP guidance for more information about this transaction.  
+Using the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)], you can send an IDOC to an SAP system or receive an IDOC from an SAP system. To track the status and view the data of an IDOC sent or received by an SAP system, you can use transaction WE02. Contact your SAP administrator, or refer to the SAP guidance for more information about this transaction.  
 
   
 ## See Also  

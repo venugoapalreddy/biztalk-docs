@@ -15,15 +15,15 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Save, Rename, and Close Schemas
-In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], schemas are XML Schema definition (XSD) language files and reside on the file system with .xsd extensions. When you use BizTalk Editor to develop schemas, you will routinely need to save and close schema files, and occasionally you may need to rename them. This topic describes the steps required to perform these basic operations.  
+In [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], schemas are XML Schema definition (XSD) language files and reside on the file system with .xsd extensions. When you use BizTalk Editor to develop schemas, you will routinely need to save and close schema files, and occasionally you may need to rename them. This topic describes the steps required to perform these basic operations.  
   
 ### To save a schema  
   
-1.  If necessary, activate BizTalk Editor for the schema to be saved by clicking the appropriate tab at the top of the main editing window in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+1. If necessary, activate BizTalk Editor for the schema to be saved by clicking the appropriate tab at the top of the main editing window in Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
-2.  On the **File** menu, click **Save *\<Name of Schema\>***.  
+2. On the <strong>File</strong> menu, click <strong>Save *\<Name of Schema\></strong>*.  
   
-     If the schema had unsaved changes, its name as displayed on the tab at the top of the main editing window will no longer end with an asterisk (*), which is used to indicate unsaved changes.  
+    If the schema had unsaved changes, its name as displayed on the tab at the top of the main editing window will no longer end with an asterisk (*), which is used to indicate unsaved changes.  
   
 > [!NOTE]
 >  You can save the schema under a new name by clicking **Save *\<Name of Schema\>* As** on the **File** menu.  
@@ -48,11 +48,11 @@ In [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md
   
 #### To close a schema  
   
-1.  If necessary, activate BizTalk Editor for the schema to be closed by clicking the appropriate tab at the top of the main editing window in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
+1. If necessary, activate BizTalk Editor for the schema to be closed by clicking the appropriate tab at the top of the main editing window in Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)].  
   
-2.  On the **File** menu, click **Close**.  
+2. On the **File** menu, click **Close**.  
   
-     BizTalk Editor closes for the schema that has been closed.  
+    BizTalk Editor closes for the schema that has been closed.  
   
 ## See Also  
  [Managing Schemas Within Projects](../core/managing-schemas-within-projects.md)

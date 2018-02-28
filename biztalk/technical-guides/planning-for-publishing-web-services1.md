@@ -14,12 +14,12 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Planning for Publishing Web Services
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides built-in support for Web services. It enables you to reuse and aggregate your existing Web services within your orchestrations.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides built-in support for Web services. It enables you to reuse and aggregate your existing Web services within your orchestrations.  
 
 ## Overview
  You can also publish (expose) your orchestrations as Web services to separate the Web service logic from the business process logic, which allows you to update or replace the business logic as needed without touching the code used for the Web service logic. This functionality is referred to as implementing "modular code." In general it is considered a best practice to implement modular code where possible. Publishing Web services requires that you enable Web services and that you publish an orchestration or schema as a Web service using the BizTalk Web Services Publishing Wizard.  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implements support for native adapters in Web services through the use of the SOAP adapter. Native adapter support provides scalability, fault tolerance, and tracking capabilities for Web services without writing a single line of code. For more information about the SOAP adapter, see [SOAP Adapter](../core/soap-adapter.md).  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] implements support for native adapters in Web services through the use of the SOAP adapter. Native adapter support provides scalability, fault tolerance, and tracking capabilities for Web services without writing a single line of code. For more information about the SOAP adapter, see [SOAP Adapter](../core/soap-adapter.md).  
   
 Planning for Web services can be divided into two categories, planning for publishing Web services and planning for consuming Web services. This topic describes the steps that you should follow for publishing Web services.  
   
@@ -32,9 +32,9 @@ Planning for Web services can be divided into two categories, planning for publi
  IIS uses application pools for processing Web service requests. IIS supports multiple application pools and each application pool process can run under a different user context.  
   
 ### BizTalk Isolated Hosts  
- To enable Web services, you must create at least one isolated host in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Isolated hosts represent external processes, such as ISAPI extensions and ASP.NET processes that BizTalk Server does not create or control. These types of external processes must host certain adapters, such as HTTP/S and SOAP.  
+ To enable Web services, you must create at least one isolated host in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. Isolated hosts represent external processes, such as ISAPI extensions and ASP.NET processes that BizTalk Server does not create or control. These types of external processes must host certain adapters, such as HTTP/S and SOAP.  
   
- The BizTalk Server Configuration Manager creates the BizTalkServerIsolatedHost that [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses as the default isolated host. The BizTalk Isolated Host Users group is the name of the Windows group associated with this host by default. For more information about hosts and host instances, see [Managing BizTalk Hosts and Host Instances](../core/managing-biztalk-hosts-and-host-instances.md).  
+ The BizTalk Server Configuration Manager creates the BizTalkServerIsolatedHost that [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses as the default isolated host. The BizTalk Isolated Host Users group is the name of the Windows group associated with this host by default. For more information about hosts and host instances, see [Managing BizTalk Hosts and Host Instances](../core/managing-biztalk-hosts-and-host-instances.md).  
   
  An isolated host instance can run only one adapter. If you configure the receive handlers of HTTP and SOAP adapters with the one isolated host, you must create two application pools, one application pool for each adapter.  
   
@@ -94,9 +94,9 @@ See [How to Enable ASP.NET 4.0 for Published Web Services](../core/how-to-enable
  For more information about publishing schemas as a Web service, see [Publishing Schemas as a Web Service](../core/publishing-schemas-as-a-web-service.md).  
   
 ## Planning for Publishing WCF Services  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] introduces built-in support for Windows Communication Foundation (WCF). [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to reuse and aggregate all your existing WCF services within your orchestrations. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] also implements support for native adapters in WCF services. Native adapter support provides scalability, fault tolerance, and tracking capabilities for WCF services without requiring you to write code. For information about the WCF adapters, see [WCF Adapters](../core/wcf-adapters.md).  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] introduces built-in support for Windows Communication Foundation (WCF). [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] enables you to reuse and aggregate all your existing WCF services within your orchestrations. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] also implements support for native adapters in WCF services. Native adapter support provides scalability, fault tolerance, and tracking capabilities for WCF services without requiring you to write code. For information about the WCF adapters, see [WCF Adapters](../core/wcf-adapters.md).  
   
- For more information about planning for WCF Services in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], see [Publishing WCF Services](../core/publishing-wcf-services.md).  
+ For more information about planning for WCF Services in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], see [Publishing WCF Services](../core/publishing-wcf-services.md).  
   
 ## See Also  
  [Planning for Consuming Web Services](../technical-guides/planning-for-consuming-web-services.md)

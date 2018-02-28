@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Step 8: Configure Party Information_hl7_main
-In this step, you configure the party information for each of the message receivers (ADT and HIS) and assign send ports to enable message header transformations for the outgoing message using [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
+In this step, you configure the party information for each of the message receivers (ADT and HIS) and assign send ports to enable message header transformations for the outgoing message using [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer.  
   
 ## In This Section  
  This step consists of the following sub steps, which you must perform in the following order:  

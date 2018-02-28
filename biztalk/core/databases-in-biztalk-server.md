@@ -36,7 +36,7 @@ manager: "anneta"
 Microsoft BizTalk Server installs several databases in SQL Server. This topic describes these databases, and the SQL logic groups used by these databases.  
 
 ## Database descriptions
-The following table describes the typical usage characteristics for the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.  
+The following table describes the typical usage characteristics for the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] databases.  
   
 BizTalk Server runtime operations typically use the first four databases: BizTalk Server Management database, MessageBox databases, Tracking database, and SSO database. Depending on the BizTalk Server functionality that you use, you may have some or all of the other databases in the table.  
   
@@ -58,7 +58,7 @@ BizTalk Server runtime operations typically use the first four databases: BizTal
 
 ## Database login accounts
 
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] creates SQL login groups, and maps them to the SQL Server roles and database roles listed in the following table:  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] creates SQL login groups, and maps them to the SQL Server roles and database roles listed in the following table:  
   
 |Group|Description|SQL Server Roles or Database Roles|  
 |-----------|-----------------|----------------------------------------|  
@@ -68,7 +68,7 @@ BizTalk Server runtime operations typically use the first four databases: BizTal
 |BizTalk Server Operators|Has a low privilege role with access only to monitoring and troubleshooting actions<br /><br /> Contains no service accounts|BTS_OPERATORS SQL Server Database Role in the following databases:<br /><br /> BizTalkDTADb<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb|  
 |SSO Administrators|Top-level administrators of the Enterprise Single Sign-On (SSO) service.<br /><br /> Contains user account used to run BizTalk Configuration must be in this group.<br /><br /> Contains Enterprise Single Sign-On Service account and any users/groups that need to be able to configure and administer BizTalk Server and SSO.|db_owner SQL Server Database Role for the SSO<br /><br /> securityadmin SQL Server Role for the SQL Server where SSO is located|  
 
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] creates SQL login accounts, and maps them to the SQL Server database roles listed in the following table:  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] creates SQL login accounts, and maps them to the SQL Server database roles listed in the following table:  
   
 |User Account|Description|SQL Database Roles|  
 |------------------|-----------------|------------------------|  

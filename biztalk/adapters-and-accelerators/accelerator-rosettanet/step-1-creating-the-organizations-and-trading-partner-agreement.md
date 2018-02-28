@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Step 1: Creating the Organizations and Trading Partner Agreement
-In this step, you add the organization information using the [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Management Console. After you add the contact information for both organizations, the final step is to set up a trading partner agreement for the 3A2 Partner Interface Process (PIP). If you completed the Double Action Tutorial, you have already performed the required steps and can continue on to [Step 2: Creating the Fabrikam LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-lobwebapplication.md). To create the organizations and the trading partner agreement, see the following:  
+In this step, you add the organization information using the [!INCLUDE [btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Management Console. After you add the contact information for both organizations, the final step is to set up a trading partner agreement for the 3A2 Partner Interface Process (PIP). If you completed the Double Action Tutorial, you have already performed the required steps and can continue on to [Step 2: Creating the Fabrikam LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-lobwebapplication.md). To create the organizations and the trading partner agreement, see the following:  
   
 -   [Step 1: Creating the Fabrikam Home Organization](../../adapters-and-accelerators/accelerator-rosettanet/step-1-creating-the-fabrikam-home-organization.md)  
   

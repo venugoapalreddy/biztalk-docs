@@ -17,7 +17,7 @@ ms.author: "mandia"
 ---
 
 # Manage configuration, certificates, databases, and security
-This section provides conceptual and procedural information that lets you effectively configure, monitor, and maintain your [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] application environment.  
+This section provides conceptual and procedural information that lets you effectively configure, monitor, and maintain your [!INCLUDE [BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] application environment.  
   
 ## Next steps
   

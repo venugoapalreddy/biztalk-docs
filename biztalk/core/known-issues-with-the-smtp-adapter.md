@@ -26,8 +26,8 @@ This section contains information that may help you avoid errors.
   
 ```  
 Event Type:Error  
-Event Source:BizTalk Server 2009  
-Event Category:BizTalk Server 2009   
+Event Source:BizTalk Server 2009  
+Event Category:BizTalk Server 2009   
 Event ID:5754  
 Date:9/1/2006  
 Time:10:50:11 AM  

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Creating Connections
-With [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], you can create connections with wizards or manually. Host Integration Server provides you with three wizards to aid you in installing and configuring connections to your host environment (HE).  
+With [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], you can create connections with wizards or manually. Host Integration Server provides you with three wizards to aid you in installing and configuring connections to your host environment (HE).  
   
  These tools step you through configuring connection properties, creating 3270 display LUs and an LU pool, and assigning the LUs to the LU pool.  
   

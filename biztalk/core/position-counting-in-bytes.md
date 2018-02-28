@@ -31,7 +31,7 @@ By default, these values are interpreted as a number of characters. But when the
   
  An example of this type of parsing decision concerns lead bytes in MBCS character encodings. Lead bytes are well-known byte values that are used to begin multibyte character encodings, and which should never occur on their own. When specifying the length of the fields using bytes rather than character, situations may arise in which the last byte in a field is found to be a lead byte, which cannot constitute an entire character on its own. In such cases, the flat file disassembler will treat the character occurring just prior to the lead byte as the last character in the previous field, and begin parsing the next field starting with the lead byte.  
 
-More details on these properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
+More details on these properties [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
   
 ## See Also  
  [Positional Record Considerations](../core/positional-record-considerations.md)   

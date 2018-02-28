@@ -90,7 +90,7 @@ RequestMessageInstance(SOAPHeader.OrigDest) = xmlDoc.OuterXml;
  The following code shows how to access the response SOAP headers:  
   
 ```  
-stringVar = ResponseMessageInstance(SOAPHeader.OrigDest);  
+stringVar = ResponseMessageInstance(SOAPHeader.OrigDest);  
 ```  
   
  The values contained in the context properties are strings containing XML data. You set these strings using BizTalk Expression Editor in a **Message Assignment** or **Expression** shape. You load the string in an **XmlDocument** and use XPath queries to access specific fields.  

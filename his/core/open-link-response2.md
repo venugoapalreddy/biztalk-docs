@@ -15,9 +15,9 @@ manager: "anneta"
 ---
 # Open(LINK) Response
 Flow : DLC ------> NODE  
-  
+
 ### Header  
-  
+
 |Field|Type|Description|  
 |-----------|----------|-----------------|  
 |nxtqptr|PTRBFHDR|Pointer to next buffer header in a queue|  
@@ -42,18 +42,20 @@ Flow : DLC ------> NODE
 |dataru[s..s+9]|Not applicable|Source name—same as destination name from **Open(LINK) Request**|  
 |dataru[s+10..s+19]|Not applicable|Destination name—name of local node; same as source name from **Open(LINK) Request**|  
 |dataru[s+22..s+23]|Not applicable|The maximum BTU size supported by SNALink. This size is 65,536 (largest number in an unsigned short) for channel connections and 32,768 for non-channel connections.<br /><br /> Note that this limit does not guarantee that the SNA connection will actually use this value. The individual link service or the host can negotiate it downward.|  
-  
+
  The error codes (for an ERROR-RESPONSE) are defined as follows in SNA_CNST.H:  
-  
-|Symbolic constant|Value|Description|  
-|-----------------------|-----------|-----------------|  
-|ERINIFAIL|0x01|Hardware initialization failed|  
-|ERINVXID|0x08|Invalid XID length|  
-|ERLINKOPN|0x09|Link already open|  
-|ERLLCERR|0x0A|LCC error; fatal hardware failure|  
-|ERBADINDX|0x0B|Invalid link index|  
-|ERBADOPN|0x0C|**Open(LINK)** has insufficient data|  
-|ERCONNTO|0x0D|Link connection time-out|  
-|ERNORES|0x0E|Maximum connection count reached                      –or– No more internal control blocks|  
-|EROPNPND|0x11|**Close(LINK)** arrived while **Open(LINK)** pending|  
-|ERDUPREQ|0x12|Duplicate request|
+
+
+| Symbolic constant | Value |                                        Description                                         |
+|-------------------|-------|--------------------------------------------------------------------------------------------|
+|     ERINIFAIL     | 0x01  |                               Hardware initialization failed                               |
+|     ERINVXID      | 0x08  |                                     Invalid XID length                                     |
+|     ERLINKOPN     | 0x09  |                                     Link already open                                      |
+|     ERLLCERR      | 0x0A  |                             LCC error; fatal hardware failure                              |
+|     ERBADINDX     | 0x0B  |                                     Invalid link index                                     |
+|     ERBADOPN      | 0x0C  |                     <strong>Open(LINK)</strong> has insufficient data                      |
+|     ERCONNTO      | 0x0D  |                                  Link connection time-out                                  |
+|      ERNORES      | 0x0E  | Maximum connection count reached                      –or– No more internal control blocks |
+|     EROPNPND      | 0x11  |       <strong>Close(LINK)</strong> arrived while <strong>Open(LINK)</strong> pending       |
+|     ERDUPREQ      | 0x12  |                                     Duplicate request                                      |
+

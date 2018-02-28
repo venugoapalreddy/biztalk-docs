@@ -20,7 +20,7 @@ The **WinCPICSetEvent** function associates an event handle with a verb completi
   
 ```  
   
-        VOID WINAPI WinCPICSetEvent(   
+        VOID WINAPI WinCPICSetEvent(   
 unsigned char FAR* conversation_ID,HANDLE FAR* event_handle,  
 CM_INT32 FAR*return_code);  
 ```  

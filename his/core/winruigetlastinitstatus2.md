@@ -20,7 +20,7 @@ The **WinRUIGetLastInitStatus** function enables an application to determine the
   
 ```  
   
-          int WINAPI WinRUIGetLastInitStatus(   
+          int WINAPI WinRUIGetLastInitStatus(   
 DWORD dwSid,             
  HANDLE hStatusHandle,    
 DWORD dwNotifyType,      

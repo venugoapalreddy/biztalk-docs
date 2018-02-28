@@ -15,29 +15,31 @@ manager: "anneta"
 ---
 # Support for ODBC 2 Core Functions
 The following table lists the ODBC 2.*x* Core functions that are supported by the Microsoft ODBC Driver for DB2.  
-  
-|ODBC 2.*x* Core Functions|Functions Supported by the Microsoft ODBC Driver for DB2|  
-|-------------------------------|--------------------------------------------------------------|  
-|**SQLAllocConnect**|Yes|  
-|**SQLAllocEnv**|Yes|  
-|**SQLAllocStmt**|Yes|  
-|**SQLBindCol**|Yes|  
-|**SQLCancel**|Yes|  
-|**SQLColAttributes**|Yes|  
-|**SQLConnect**|Yes|  
-|**SQLDescribeCol**|Yes|  
-|**SQLDisconnect**|Yes|  
-|**SQLError**|Yes|  
-|**SQLExecDirect**|Yes|  
-|**SQLExecute**|Yes|  
-|**SQLFetch**|Yes|  
-|**SQLFreeConnect**|Yes|  
-|**SQLFreeEnv**|Yes|  
-|**SQLFreeStmt**|Yes|  
-|**SQLGetCursorName**|Yes|  
-|**SQLNumResultCols**|Yes|  
-|**SQLPrepare**|Yes|  
-|**SQLRowCount**|Yes|  
-|**SQLSetCursorName**|Yes|  
-|**SQLSetParam**|In ODBC 2.0, the ODBC 1.0 **SQLSetparam** function was replaced by **SQLBindParameter**|  
-|**SQLTransact**|Yes|
+
+
+| ODBC 2.<em>x</em> Core Functions  |                             Functions Supported by the Microsoft ODBC Driver for DB2                              |
+|-----------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| <strong>SQLAllocConnect</strong>  |                                                        Yes                                                        |
+|   <strong>SQLAllocEnv</strong>    |                                                        Yes                                                        |
+|   <strong>SQLAllocStmt</strong>   |                                                        Yes                                                        |
+|    <strong>SQLBindCol</strong>    |                                                        Yes                                                        |
+|    <strong>SQLCancel</strong>     |                                                        Yes                                                        |
+| <strong>SQLColAttributes</strong> |                                                        Yes                                                        |
+|    <strong>SQLConnect</strong>    |                                                        Yes                                                        |
+|  <strong>SQLDescribeCol</strong>  |                                                        Yes                                                        |
+|  <strong>SQLDisconnect</strong>   |                                                        Yes                                                        |
+|     <strong>SQLError</strong>     |                                                        Yes                                                        |
+|  <strong>SQLExecDirect</strong>   |                                                        Yes                                                        |
+|    <strong>SQLExecute</strong>    |                                                        Yes                                                        |
+|     <strong>SQLFetch</strong>     |                                                        Yes                                                        |
+|  <strong>SQLFreeConnect</strong>  |                                                        Yes                                                        |
+|    <strong>SQLFreeEnv</strong>    |                                                        Yes                                                        |
+|   <strong>SQLFreeStmt</strong>    |                                                        Yes                                                        |
+| <strong>SQLGetCursorName</strong> |                                                        Yes                                                        |
+| <strong>SQLNumResultCols</strong> |                                                        Yes                                                        |
+|    <strong>SQLPrepare</strong>    |                                                        Yes                                                        |
+|   <strong>SQLRowCount</strong>    |                                                        Yes                                                        |
+| <strong>SQLSetCursorName</strong> |                                                        Yes                                                        |
+|   <strong>SQLSetParam</strong>    | In ODBC 2.0, the ODBC 1.0 <strong>SQLSetparam</strong> function was replaced by <strong>SQLBindParameter</strong> |
+|   <strong>SQLTransact</strong>    |                                                        Yes                                                        |
+

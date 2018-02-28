@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Lesson 5: Deploy the Solution
-In this lesson, you deploy the BizTalk solution using the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. In the BizTalk orchestration designer, you created logical ports. You will now create the physical ports and then configure the BizTalk application by mapping the logical ports to the physical ports.  
+In this lesson, you deploy the BizTalk solution using the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console. In the BizTalk orchestration designer, you created logical ports. You will now create the physical ports and then configure the BizTalk application by mapping the logical ports to the physical ports.  
   
  After you have configured the application, you will start and test the application.  
   

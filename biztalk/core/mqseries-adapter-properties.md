@@ -32,7 +32,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # MQSeries Adapter Properties
-To access MQSeries header properties from a BizTalk orchestration, you must add a reference to the MQSeries.dll assembly to your project. This assembly is located where you installed the MQSeries adapter, for example, [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].  
+To access MQSeries header properties from a BizTalk orchestration, you must add a reference to the MQSeries.dll assembly to your project. This assembly is located where you installed the MQSeries adapter, for example, [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].  
   
  After you reference the MQSeries property schema, additional context properties are available to various BizTalk Server development tools (for example, the **Message Assignment** shape in Orchestration Designer).  
   

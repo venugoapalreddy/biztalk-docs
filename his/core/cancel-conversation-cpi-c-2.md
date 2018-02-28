@@ -20,7 +20,7 @@ The **Cancel_Conversation** call (function name **cmcanc**) cancels any outstand
   
 ```  
   
-CM_ENTRY Cancel_Conversation(   
+CM_ENTRY Cancel_Conversation(   
   unsigned char FAR *conversation_ID,    
     CM_INT32 FAR *return_code              
 );  

@@ -20,7 +20,7 @@ The **SnaNlsMapString** function is called to translate a string from one code p
   
 ```  
   
-int WINAPI SnaNlsMapString(   
+int WINAPI SnaNlsMapString(   
 LPCTSTR lpSrcStr,  
 LPTSTR lpDestStr,  
 UINT inCodePage,  

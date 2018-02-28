@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Schema Resolver Component (BizTalk Server Sample)
-The Schema Resolver Component sample demonstrates how to extend the functionality of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] flat file disassembler component.  
+The Schema Resolver Component sample demonstrates how to extend the functionality of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] flat file disassembler component.  
   
  The flat file disassembler component normally requires you to define a parsing schema at design time. So if you expect to receive different flat file documents on the same receive location, you typically include several flat file disassemblers in the receive pipeline, one for each schema. At run time, the correct disassembler component is selected using a pipeline probing mechanism. However, this approach is expensive if you have many flat file schemas because probing for every corresponding disassembler component degrades pipeline performance.  
   

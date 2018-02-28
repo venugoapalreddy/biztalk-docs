@@ -15,11 +15,11 @@ manager: "anneta"
 ---
 # ISSOWrapper.ReceiveNotification Method
 Receives a notification to the adapter from the ENTSSO service.  
-  
+
 ## Syntax  
-  
+
 ```cpp#  
-  
+
 void ReceiveNotification(  
 ULONG ulNotificationFlagsIn,  
 GUID guidTrackingIdIn,  
@@ -36,9 +36,9 @@ out BSTR *pbstrAdapterName,
 out GUID *pguidTrackingIdOut  
 );  
 ```  
-  
+
 #### Parameters  
-  
+
 |Parameter|Description|  
 |---------------|-----------------|  
 |`ulNotificationFlagsIn`|The notification flags. Specify SSO_NOTIFICATION_FLAG_WAIT if you want your call to block waiting for a notification, or SSO_NOTIFICATION_FLAG_NONE.|  
@@ -54,22 +54,24 @@ out GUID *pguidTrackingIdOut
 |`ppsaAdapters`|On return, contains an array of adapter names.|  
 |`pbstrAdapterName`|On return, contains the adapter name.|  
 |`pbuidTrackingIdOut`|On return, contains the tracking ID.|  
-  
+
 ## Return Value  
  This method returns an HRESULT indicating whether it completed correctly. For more information, see the Exceptions section.  
-  
+
 ## Exceptions  
  E_ACCESS_DENIED  
  Access is denied.  
-  
+
 ## Remarks  
  ReceiveNotification uses different parameters to return information depending on the notificationType. The following table describes the relationship between the different parameters and types of notifications.  
-  
-|notificationType|Parameters|  
-|----------------------|----------------|  
-|SSO_NOTIFICATION_TYPE_PASSWORD_CHANGE|externalAccount<br /><br /> newExternalPassword<br /><br /> oldExternalPassword<br /><br /> timestamp|  
-|SSO_NOTIFICATION_TYPE_PASSWORD_CHANGE_COMPLETE|trackingIdIn<br /><br /> errorCode<br /><br /> errorMessage|  
-|SSO_NOTIFICATION_TYPE_STATUS_OFFLINE|errorCode<br /><br /> errorMessage|  
-|SSO_NOTIFICATION_TYPE_PASSWORD_EXPIRED|externalAccount|  
-|SSO_NOTIFICATION_TYPE_STATUS_REQUEST|None|  
-|SSO_NOTIFICATION_TYPE_STATUS_ONLINE|None|
+
+
+|                notificationType                |                                              Parameters                                               |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+|     SSO_NOTIFICATION_TYPE_PASSWORD_CHANGE      | externalAccount<br /><br /> newExternalPassword<br /><br /> oldExternalPassword<br /><br /> timestamp |
+| SSO_NOTIFICATION_TYPE_PASSWORD_CHANGE_COMPLETE |                      trackingIdIn<br /><br /> errorCode<br /><br /> errorMessage                      |
+|      SSO_NOTIFICATION_TYPE_STATUS_OFFLINE      |                                  errorCode<br /><br /> errorMessage                                   |
+|     SSO_NOTIFICATION_TYPE_PASSWORD_EXPIRED     |                                            externalAccount                                            |
+|      SSO_NOTIFICATION_TYPE_STATUS_REQUEST      |                                                 None                                                  |
+|      SSO_NOTIFICATION_TYPE_STATUS_ONLINE       |                                                 None                                                  |
+

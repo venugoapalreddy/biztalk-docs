@@ -23,7 +23,7 @@ Positional records can include a well-known sequence of characters, known as a t
   
  The **Positional Offset** property also allows you to treat the tag separately from the data in the record. For example, if the tag occurs at the beginning of the record and is four characters in length, you could set the value of the **Positional Offset** property of the first field in the record to four, thereby effectively skipping over the positional record tag when the value of the first field is translated in the equivalent XML format of the record.  
 
-More details on these properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
+More details on these properties [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
   
 ## See Also  
  [Positional Record Considerations](../core/positional-record-considerations.md)   

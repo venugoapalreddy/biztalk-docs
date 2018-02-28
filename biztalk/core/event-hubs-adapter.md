@@ -17,7 +17,8 @@ manager: "anneta"
 # Event Hub adapter in BizTalk
 
 ## Overview
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2**, you can send and receive messages between BizTalk Server and Azure Event Hubs. 
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/event-hubs-adapter.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --> Feature Pack 2</strong>, you can send and receive messages between BizTalk Server and Azure Event Hubs. 
 
 Azure Event Hubs is a highly scalable data streaming platform, and can receive and process millions of events per second. [What is Event Hubs?](https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs) provides more details.
 
@@ -68,7 +69,7 @@ Your event hub is now created, and you have the connection strings you need to s
 
 You can use a simple File receive port and location to send messages to your Azure Event Hub. 
 
-1. Create a receive port using the File adapter. Within your receive location,  set the **Receive folder** to **C:\Temp\In\**, and set the file mask to **\*.xml**.
+1. Create a receive port using the File adapter. Within your receive location,  set the <strong>Receive folder</strong> to <strong>C:\Temp\In\</strong>, and set the file mask to <strong>\*.xml</strong>.
 2. In your Event Hub send port properties, set the **Filters** to `BTS.ReceivePortName == FileReceivePort`.
 3. Paste the following into a text editor, and save the file as **EventHubMessage.xml**. This is your sample message. 
 
@@ -135,7 +136,7 @@ You can use a simple File receive port and location to send messages to your Azu
 
 You can use a simple File send port to receive messages from your Azure Event Hub. 
 
-1. Create a send port using the File adapter. Within your send port properties, set the **Destination folder** to **C:\Temp\Out\**, and set the and **File name** to **%MessageID%.xml**.
+1. Create a send port using the File adapter. Within your send port properties, set the <strong>Destination folder</strong> to <strong>C:\Temp\Out\</strong>, and set the and <strong>File name</strong> to <strong>%MessageID%.xml</strong>.
 2. In your File send port properties, set the **Filters** to  `BTS.ReceivePortName == EHReceivePort`.
 3. Start the Event Hub receive location and the File send port.
 4. Look for messages in the destination folder (c:\temp\out).

@@ -15,12 +15,12 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Tutorial 1: Presenting Data From a Siebel System on a SharePoint Site
-This tutorial provides detailed instructions on using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Microsoft Office SharePoint Server to present business data from a Siebel system on a SharePoint portal. To demonstrate how to use the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Office SharePoint Server, we create an application in Office SharePoint Server to retrieve a list of customer accounts from the Siebel repository using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
+This tutorial provides detailed instructions on using the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Microsoft Office SharePoint Server to present business data from a Siebel system on a SharePoint portal. To demonstrate how to use the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Office SharePoint Server, we create an application in Office SharePoint Server to retrieve a list of customer accounts from the Siebel repository using the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)].  
   
  To extract this information from the Siebel system, the example invokes the Query method on the **Account** business components.  
   
 > [!NOTE]
->  Before proceeding with the tutorial, make sure you have installed all the prerequisites for using the [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Office SharePoint Server. For more information about the prerequisites, see the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation guide, typically installed at \<installation drive\>:\Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
+>  Before proceeding with the tutorial, make sure you have installed all the prerequisites for using the [!INCLUDE [adaptersiebel_short](../../includes/adaptersiebel-short-md.md)] with Office SharePoint Server. For more information about the prerequisites, see the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation guide, typically installed at \<installation drive\>:\Program Files\Microsoft [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents.  
   
 ## In This Section  
   

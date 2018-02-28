@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Administration with the BizTalk ESB Toolkit
-This section discusses an important area of administrative activity related to applications based on the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] and Microsoft BizTalk Server; specifically, it discusses the ESB Management Portal. The ESB Management Portal is a Web-based utility for monitoring BizTalk Server applications that generates alerts when exceptions arise and manages certain features of the BizTalk ESB Toolkit, such as the registration of Universal Description, Discovery, and Integration (UDDI) entries.  
+This section discusses an important area of administrative activity related to applications based on the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] and Microsoft BizTalk Server; specifically, it discusses the ESB Management Portal. The ESB Management Portal is a Web-based utility for monitoring BizTalk Server applications that generates alerts when exceptions arise and manages certain features of the BizTalk ESB Toolkit, such as the registration of Universal Description, Discovery, and Integration (UDDI) entries.  
   
  This section includes the following topics:  
   

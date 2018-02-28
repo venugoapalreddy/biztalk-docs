@@ -18,11 +18,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for the Polling Operations
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces various inbound operations related to polling depending on the target object on the Oracle database. To poll tables and views, a single POLLINGSTMT operation is surfaced whereas each stored procedure, functions, and packaged procedures and functions are exposed as inbound operations for polling.  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] surfaces various inbound operations related to polling depending on the target object on the Oracle database. To poll tables and views, a single POLLINGSTMT operation is surfaced whereas each stored procedure, functions, and packaged procedures and functions are exposed as inbound operations for polling.  
   
  You can specify a **PollingId** parameter in the query string of the connection URI to qualify the namespace of the POLLINGSTMT operation. Setting this parameter only qualifies the namespace of the POLLINGSTMT operation; it does not change the message action. For more information about the Oracle Database adapter connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).  
   
- You configure the polling operations by setting binding properties in the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]. For more information about these binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md). You set the **PollingStatement** binding property to specify a SQL statement, stored procedure, function or a procedure within a package for the polling query. The result set of this query is returned as data to your code in the polling operation.  
+ You configure the polling operations by setting binding properties in the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)]. For more information about these binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md). You set the <strong>PollingStatement</strong> binding property to specify a SQL statement, stored procedure, function or a procedure within a package for the polling query. The result set of this query is returned as data to your code in the polling operation.  
   
 ## Message Structure for the Polling Operations  
  The following table shows the XML message structure for the various polling operations.  

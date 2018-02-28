@@ -20,7 +20,7 @@ The SNA National Language Support (SNANLS) **GetCodePageDisplayStr** function co
   
 ```  
   
-BOOL WINAPI GetCodePageDisplayStr(   
+BOOL WINAPI GetCodePageDisplayStr(   
 Int nKey  
 WCHAR *szDisplayStr  
 Int IDisplayStr  

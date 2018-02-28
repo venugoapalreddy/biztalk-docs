@@ -51,7 +51,7 @@ public InterruptException(SerializationInfo info,
                   StreamingContext context) : base(info, context) { }  
 ```  
   
- For more detailed information about custom serialization, see Custom Serialization in the [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)] Developer's Guide.  
+ For more detailed information about custom serialization, see Custom Serialization in the [!INCLUDE [btsDotNetFramework](../includes/btsdotnetframework-md.md)] Developer's Guide.  
   
 ## Nested Exception Handlers and Compensation Blocks  
  In addition to serving as specialized exceptions, the custom exceptions in several places also serve as a sort flag. In the **Change** orchestration, there are two places that the Cancel operation must be rolled back.  

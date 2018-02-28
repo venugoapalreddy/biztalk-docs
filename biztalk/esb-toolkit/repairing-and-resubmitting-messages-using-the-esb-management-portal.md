@@ -22,6 +22,6 @@ In this use case, a preconfigured send port uses the ESB Fault Processor send pi
   
  **Repairing and resubmitting messages using the ESB Management Portal**  
   
- The ESB Management Portal included as a sample with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] demonstrates this use case. It provides a full graphical environment for editing and resubmitting messages; it also supports alerts, notifications, and message resubmission auditing.  
+ The ESB Management Portal included as a sample with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] demonstrates this use case. It provides a full graphical environment for editing and resubmitting messages; it also supports alerts, notifications, and message resubmission auditing.  
   
  For more information, see [Working with Exceptions and Fault Messages](../esb-toolkit/working-with-exceptions-and-fault-messages.md).

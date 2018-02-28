@@ -20,7 +20,7 @@ The **Set_Fill** call (function name **cmsf**) specifies whether programs will r
   
 ```  
   
-CM_ENTRY Set_Fill(   
+CM_ENTRY Set_Fill(   
   unsigned char FAR *conversation_ID,    
   CM_INT32 FAR *fill,                    
   CM_INT32 FAR *return_code              
@@ -50,12 +50,12 @@ CM_ENTRY Set_Fill( 
  CM_PROGRAM_PARAMETER_CHECK  
  Primary return code; one of the following occurred:  
   
--   The value specified by *conversation_ID* or *fill* is invalid.  
+- The value specified by *conversation_ID* or *fill* is invalid.  
   
--   The current conversation is mapped.  
+- The current conversation is mapped.  
   
- CM_PRODUCT_SPECIFIC_ERROR  
- Primary return code; a product-specific error occurred and has been logged in the products error log.  
+  CM_PRODUCT_SPECIFIC_ERROR  
+  Primary return code; a product-specific error occurred and has been logged in the products error log.  
   
 ## State Changes  
  The conversation can be in any state except RESET.  

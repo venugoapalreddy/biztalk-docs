@@ -20,25 +20,25 @@ Most BizTalk Server runtime operations require Microsoft Distributed Transaction
 ## Errors that can occur if MSDTC transaction support is not configured correctly  
  Errors similar to the following may occur on BizTalk Server when MSDTC transaction support is not configured correctly on the computers in a BizTalk environment:  
   
--   "A Microsoft Distributed Transaction Coordinator problem prevented connection to the Configuration database. The transaction manager has disabled its support for remote/network transactions".  
+- "A Microsoft Distributed Transaction Coordinator problem prevented connection to the Configuration database. The transaction manager has disabled its support for remote/network transactions".  
   
--   "A Microsoft Distributed Transaction Coordinator problem prevented connection to the Configuration database. The transaction has already been implicitly or explicitly committed or aborted".  
+- "A Microsoft Distributed Transaction Coordinator problem prevented connection to the Configuration database. The transaction has already been implicitly or explicitly committed or aborted".  
   
--   "Error Code: 0x8004d00a, New transaction cannot enlist in the specified transaction coordinator".  
+- "Error Code: 0x8004d00a, New transaction cannot enlist in the specified transaction coordinator".  
   
--   "Could not retrieve transport type data for Receive Location 'MySample ReceiveLocation' from config store. Primary SSO Server 'MyServer' failed. The RPC server is unavailable".  
+- "Could not retrieve transport type data for Receive Location 'MySample ReceiveLocation' from config store. Primary SSO Server 'MyServer' failed. The RPC server is unavailable".  
   
--   "Error Code: 0x8004d025, The partner transaction manager has disabled its support for remote/network transactions".  
+- "Error Code: 0x8004d025, The partner transaction manager has disabled its support for remote/network transactions".  
   
--   "Error Code: 0xc0002a24, Could not import a DTC transaction. Please check that MSDTC is configured correctly for remote operation".  
+- "Error Code: 0xc0002a24, Could not import a DTC transaction. Please check that MSDTC is configured correctly for remote operation".  
   
--   "0x8004d01c  
+- "0x8004d01c  
   
-     [0x1705] There was a failure creating the internal work item.  
+   [0x1705] There was a failure creating the internal work item.  
   
-     Make sure that SQL Server is running."  
+   Make sure that SQL Server is running."  
   
- To resolve MSDTC configuration errors, follow the steps below.  
+  To resolve MSDTC configuration errors, follow the steps below.  
   
 ## Ensure NetBIOS name resolution between the BizTalk Server and remote servers is successful  
  Successful MSDTC transactions between computers require that the client computer is able to resolve the NetBIOS name of the server computer to the correct IP address and the server computer is able to resolve the NetBIOS name of the client computer to the correct IP address. To verify that NetBIOS name resolution works in both directions (client to server and server to client) follow these steps:  
@@ -153,47 +153,47 @@ Most BizTalk Server runtime operations require Microsoft Distributed Transaction
   
  To change the users or groups that are granted the "Access this computer from the network" user right, follow these steps:  
   
-1.  Click **Start**, click **Run**, type **Gpedit.msc**, and then click **OK**.  
+1. Click **Start**, click **Run**, type **Gpedit.msc**, and then click **OK**.  
   
-2.  Expand the following items in the Local Computer Policy list:  
+2. Expand the following items in the Local Computer Policy list:  
   
-    -   Computer Configuration  
+   -   Computer Configuration  
   
-    -   Windows Settings  
+   -   Windows Settings  
   
-    -   Security Settings  
+   -   Security Settings  
   
-    -   Local Policies  
+   -   Local Policies  
   
-3.  Click **User Rights Assignment**.  
+3. Click **User Rights Assignment**.  
   
-4.  Double-click **Access this computer from the network**, and then click **Add User or Group**.  
+4. Double-click **Access this computer from the network**, and then click **Add User or Group**.  
   
-5.  Click **Object Types**, select **Computers** and click **OK**.  
+5. Click **Object Types**, select **Computers** and click **OK**.  
   
-6.  Add the computer name or the group name in the **Enter the object names to select** area.  
+6. Add the computer name or the group name in the **Enter the object names to select** area.  
   
-7.  Click **Check Names** to verify the entry.  
+7. Click **Check Names** to verify the entry.  
   
-8.  Click **OK** twice.  
+8. Click **OK** twice.  
   
- To change the users or groups that are included in the **Deny access to this computer from the network** user right, follow these steps:  
+   To change the users or groups that are included in the **Deny access to this computer from the network** user right, follow these steps:  
   
-1.  Expand the following items in the Local Computer Policy list:  
+9. Expand the following items in the Local Computer Policy list:  
   
-    -   Computer Configuration  
+   -   Computer Configuration  
   
-    -   Windows Settings  
+   -   Windows Settings  
   
-    -   Security Settings  
+   -   Security Settings  
   
-    -   Local Policies  
+   -   Local Policies  
   
-2.  Click **User Rights Assignment**.  
+10. Click **User Rights Assignment**.  
   
-3.  Double-click **Deny access this computer from the network**, and then click to select the computer name or group that you want to remove from this user right.  
+11. Double-click **Deny access this computer from the network**, and then click to select the computer name or group that you want to remove from this user right.  
   
-4.  Click **Remove** and then click **OK**.  
+12. Click **Remove** and then click **OK**.  
   
 ## Set the appropriate values for the EnableAuthEpResolution and RestrictRemoteClients options  
  Windows enhances security by requiring authenticated calls to the RPC interface. This functionality is configurable through the **EnableAuthEpResolution** and **RestrictRemoteClients** registry keys. To ensure that remote computers are able to access the RPC interface, follow these steps:  
@@ -280,10 +280,10 @@ For more information, see [Error message when you try to start a transaction in 
   
 > [!IMPORTANT]
 >  Reinstalling MSDTC may change the default behavior of the Distributed Transaction Coordinator service. Follow these steps after reinstalling MSDTC to ensure that the Distributed Transaction Coordinator service works correctly:  
->   
->  -   Reinstalling MSDTC may reset MSDTC Security Configuration options back to default values. Verify that the MSDTC Security Configuration options are set to the appropriate values after reinstalling MSDTC.  
-> -   Reinstalling MSDTC may change the **Startup Type** value for the Distributed Transaction Coordinator service. Verify that the **Startup Type** value for the Distributed Transaction Coordinator service is set to **Automatic** after reinstalling MSDTC.  
-> -   Reinstalling MSDTC may require a reboot of the computer. To ensure that the Distributed Transaction Coordinator service works correctly, reboot the computer after reinstalling MSDTC.  
+> 
+> - Reinstalling MSDTC may reset MSDTC Security Configuration options back to default values. Verify that the MSDTC Security Configuration options are set to the appropriate values after reinstalling MSDTC.  
+>   -   Reinstalling MSDTC may change the **Startup Type** value for the Distributed Transaction Coordinator service. Verify that the **Startup Type** value for the Distributed Transaction Coordinator service is set to **Automatic** after reinstalling MSDTC.  
+>   -   Reinstalling MSDTC may require a reboot of the computer. To ensure that the Distributed Transaction Coordinator service works correctly, reboot the computer after reinstalling MSDTC.  
   
 ## See Also  
  [Tools and Utilities to Use for Troubleshooting](../core/tools-and-utilities-to-use-for-troubleshooting.md)   

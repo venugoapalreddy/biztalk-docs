@@ -20,7 +20,7 @@ The **Extract_Conversation_Security_Type** call (function name **xcecst**) retur
   
 ```  
   
-CM_ENTRY Extract_Conversation_Security_Type(   
+CM_ENTRY Extract_Conversation_Security_Type(   
   unsigned char FAR *conversation_ID,          
     CM_INT32 FAR *conversation_security_type,    
     CM_INT32 FAR *return_code                    

@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # About the SAPDiscoveredObjects.xml File in SAP
-If you chose to install the [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) along with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation, the setup program copies the SAPDiscoveredObjects.xml file typically at \<installation drive\>:\Program Files\Common Files\Microsoft Shared\Adapters\SAP. The contents of the file, after a fresh installation of the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], resemble the following.  
+If you chose to install the [!INCLUDE [adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] ([!INCLUDE [adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]) along with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] installation, the setup program copies the SAPDiscoveredObjects.xml file typically at \<installation drive\>:\Program Files\Common Files\Microsoft Shared\Adapters\SAP. The contents of the file, after a fresh installation of the [!INCLUDE [adoprovidersapshort](../../includes/adoprovidersapshort-md.md)], resemble the following.  
   
 ```  
 <DiscoveredObjects>  
@@ -29,7 +29,7 @@ If you chose to install the [!INCLUDE[adoprovidersaplong](../../includes/adoprov
 </DiscoveredObjects>  
 ```  
   
- The purpose of the SAPDiscoveredObjects.xml file is to store the SAP objects (tables and RFCs) that you discover using the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX plug-in. Once you have used the DDEX plug-in to add more SAP objects, they are added to this XML file. The XML file looks like this.  
+ The purpose of the SAPDiscoveredObjects.xml file is to store the SAP objects (tables and RFCs) that you discover using the [!INCLUDE [adoprovidersapshort](../../includes/adoprovidersapshort-md.md)][!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] DDEX plug-in. Once you have used the DDEX plug-in to add more SAP objects, they are added to this XML file. The XML file looks like this.  
   
 ```  
 <DiscoveredObjects>  

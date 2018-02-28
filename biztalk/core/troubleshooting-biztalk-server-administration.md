@@ -126,15 +126,15 @@ A transport-level error has occurred when sending the request to the server. (pr
 -   After the failover is complete, you attempt to stop a running instance of an orchestration using the BizTalk Administration console.  
   
 ##### Cause  
- The BizTalk Administration console maintains a connection to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management database. When the connection to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management database has been broken during the failover, some management tasks may return a "Failed to connect" or "Failed to execute" error until the BizTalk Administration console has been closed and reopened.  
+ The BizTalk Administration console maintains a connection to the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management database. When the connection to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management database has been broken during the failover, some management tasks may return a "Failed to connect" or "Failed to execute" error until the BizTalk Administration console has been closed and reopened.  
   
 ##### Resolution  
- Close and reopen the BizTalk Administration console. When the BizTalk Administration console is reopened it creates a new connection to the specified [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management database.  
+ Close and reopen the BizTalk Administration console. When the BizTalk Administration console is reopened it creates a new connection to the specified [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] management database.  
   
 #### Windows group names that were previously deleted do not have access to the BizTalk Server databases  
   
 ##### Problem  
- If, when reinstalling [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you use a Windows group name that was previously deleted, the Windows group will not have access to the BizTalk Server databases.  
+ If, when reinstalling [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], you use a Windows group name that was previously deleted, the Windows group will not have access to the BizTalk Server databases.  
   
 ##### Cause  
  Deleting a Windows group and then creating a Windows group with the same name produces a new Security Identifier (SID) for the Windows group. However the old SID is still cached in SQL Server, so the new Windows group cannot log on to SQL Server.  
@@ -167,7 +167,7 @@ A transport-level error has occurred when sending the request to the server. (pr
 #### Creating or configuring a host instance on an X64 computer with the 32-bit only option selected fails  
   
 ##### Problem  
- In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, creating a BizTalk Host instance on an X64 computer with the 32-bit only option selected (default) may fail.  
+ In the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, creating a BizTalk Host instance on an X64 computer with the 32-bit only option selected (default) may fail.  
   
  In BizTalk Server Configuration Manager, when configuring the BizTalk Server Runtime on an X64 computer, creating an in-process or isolated host instance with the 32-bit only option selected can cause the service to fail to start.  
   
@@ -193,11 +193,11 @@ A transport-level error has occurred when sending the request to the server. (pr
 ##### Problem  
  You may not be able to delete a MessageBox database. If the deletion fails, one of the following issues may be responsible:  
   
--   The cache refresh interval has not expired.  
+- The cache refresh interval has not expired.  
   
--   The MessageBox database contains incomplete instances.  
+- The MessageBox database contains incomplete instances.  
   
- If the cache refresh interval has not yet expired, the following error message appears when the deletion fails: "MessageBox cannot be deleted since there could be remaining work in the MessageBox. Please ensure that there are no more incomplete instances in the MessageBox, and try again."  
+  If the cache refresh interval has not yet expired, the following error message appears when the deletion fails: "MessageBox cannot be deleted since there could be remaining work in the MessageBox. Please ensure that there are no more incomplete instances in the MessageBox, and try again."  
   
 ##### Cause  
  The cache refresh interval must expire between the time you disable new message publication in the MessageBox database and the time you delete the database. By default, the cache refresh interval is 60 seconds.  

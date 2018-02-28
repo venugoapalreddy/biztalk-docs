@@ -17,19 +17,19 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Step 4: Creating the HeaderHelper Project
-In this step, you create a [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] class library. When a private process orchestration receives an incoming message, the HeaderHelper library determines whether a document conversion is required and if it is required, performs that conversion. This lets your orchestration work with different versions of RosettaNet Implementation Framework (RNIF) documents. Additionally, when a 3A2 response message is sent, the HeaderHelper library performs an additional document conversion before transmitting the message.  
+In this step, you create a [!INCLUDE [btsDotNet](../../includes/btsdotnet-md.md)] class library. When a private process orchestration receives an incoming message, the HeaderHelper library determines whether a document conversion is required and if it is required, performs that conversion. This lets your orchestration work with different versions of RosettaNet Implementation Framework (RNIF) documents. Additionally, when a 3A2 response message is sent, the HeaderHelper library performs an additional document conversion before transmitting the message.  
   
 ### To create the HeaderHelper project  
   
-1.  In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click the Contoso solution, point to **Add**, and then click **New Project**.  
+1. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click the Contoso solution, point to <strong>Add</strong>, and then click <strong>New Project</strong>.  
   
-2.  In the Add New Project dialog box, in the Project Types pane, select **Visual C#**.  
+2. In the Add New Project dialog box, in the Project Types pane, select **Visual C#**.  
   
-3.  In the Templates pane, select the **Class Library** template.  
+3. In the Templates pane, select the **Class Library** template.  
   
-4.  In the **Name** box, type **HeaderHelper**, and then click **OK** to create the project.  
+4. In the **Name** box, type **HeaderHelper**, and then click **OK** to create the project.  
   
-5.  In Solution Explorer, right click the **Class1.cs** file in the **HeaderHelper** project, click **Rename**, type **HeaderHelper.cs**, and then press **Enter**.  
+5. In Solution Explorer, right click the **Class1.cs** file in the **HeaderHelper** project, click **Rename**, type **HeaderHelper.cs**, and then press **Enter**.  
   
 ### To create the Helper class  
   

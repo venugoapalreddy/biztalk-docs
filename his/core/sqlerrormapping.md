@@ -15,21 +15,21 @@ manager: "anneta"
 ---
 # sqlErrorMapping
 The sqlErrorMapping element contains the definition of a SQL Server error message mapped to a DRDA reply message.  
-  
+
  \<hostIntegration.drda.sqlErrorMappings>  
 \<sqlErrorMappings>  
-  
+
 ## Syntax  
-  
+
 ```  
-<hostIntegration.drda.sqlErrorMappings>        <sqlErrorMappings>                <sqlErrorMapping>                </sqlErrorMapping>        </sqlErrorMappings></hostIntegration.drda.sqlErrorMappings>  
+<hostIntegration.drda.sqlErrorMappings>        <sqlErrorMappings>                <sqlErrorMapping>                </sqlErrorMapping>        </sqlErrorMappings></hostIntegration.drda.sqlErrorMappings>  
 ```  
-  
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
-  
+
 ### Attributes  
-  
+
 |Attribute|Type|Description|Required|Default Value|  
 |---------------|----------|-----------------|--------------|-------------------|  
 |msSqlMessageId|xs:int|The msSqlMessageId attribute represents the identifier (ID) of the message and is a unique value across the server. This required attribute accepts an integer value.|true|n/a|  
@@ -41,12 +41,13 @@ The sqlErrorMapping element contains the definition of a SQL Server error messag
 |drdaMessageText|xs:string|The drdaMessageText attribute denotes the IBM DB2 message text. This required attribute accepts a string value.|true|n/a|  
 |drdaExplanationText|xs:string|The drdaExplanationText attribute denotes the IBM DB2 explanation text. This optional attribute accepts a string value.|false|n/a|  
 |drdaActionText|xs:string|The drdaActionText attribute denotes the IBM DB2 action text. This optional attribute accepts a string value.|false|n/a|  
-  
+
 ### Child Elements  
  None  
-  
+
 ### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-||The sqlErrorMappings element contains sqlErrorMapping definition elements.|
+
+| Element |                                Description                                 |
+|---------|----------------------------------------------------------------------------|
+|         | The sqlErrorMappings element contains sqlErrorMapping definition elements. |
+

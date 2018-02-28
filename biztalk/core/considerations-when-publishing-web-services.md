@@ -25,11 +25,11 @@ This topic provides information that you should consider before you publish your
 ## Publishing schemas and the include element  
  There are a few scenarios where schemas that contain the **include** element cannot be published as a Web service. An error will occur when you complete the BizTalk Web Services Publishing Wizard. These restrictions include the following:  
   
--   Circular includes (the included schema has an **include** element to the including schema)  
+- Circular includes (the included schema has an **include** element to the including schema)  
   
--   An unresolved **schemaLocation** attribute will cause an error  
+- An unresolved **schemaLocation** attribute will cause an error  
   
- For more information about the limitation of include element, see "Include Element Binding Support" at [http://go.microsoft.com/fwlink/?LinkId=62312](http://go.microsoft.com/fwlink/?LinkId=62312).  
+  For more information about the limitation of include element, see "Include Element Binding Support" at [http://go.microsoft.com/fwlink/?LinkId=62312](http://go.microsoft.com/fwlink/?LinkId=62312).  
   
 ## Publishing schemas and the import element  
  BizTalk Web Services Publishing Wizard has the same limitation as XSD.exe included in .NET Framework. For more information, see "Import Element Binding Support" at [http://go.microsoft.com/fwlink/?LinkId=62311](http://go.microsoft.com/fwlink/?LinkId=62311).  
@@ -66,14 +66,14 @@ This topic provides information that you should consider before you publish your
  Web services do not support Chinese/Japanese/Korean (CJK) Unified Ideograph Extension A characters.  
   
 ## Republishing Web services using the BizTalk Web Services Publishing Wizard  
- You can use the BizTalk Web Services Publishing Wizard to republish a published Web service. On the **Web****Service****Project** page, you can select the **Overwrite****Web****Service** option.  
+ You can use the BizTalk Web Services Publishing Wizard to republish a published Web service. On the <strong>Web</strong><strong>Service</strong><strong>Project</strong> page, you can select the <strong>Overwrite</strong><strong>Web</strong><strong>Service</strong> option.  
   
  The wizard does not store previously used settings. If you make changes in the settings when you rerun the wizard, any Web clients that consume (call) the published Web service may fail. You should update the Web references of any clients that consume (call) a republished Web service.  
   
 ## Clients of published Web services may not receive Server script timeout errors  
- Web services generated with the Web Services Publishing Wizard in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are configured by default with a script timeout value of **110** seconds. This is the default value for the .NET Framework. **HttpServerUtility.ScriptTimeout** property. Web clients that use .NET Framework are configured by default with a request timeout value of **100** seconds. This is the default value for the .NET Framework **HttpWebRequest.Timeout** property.  
+ Web services generated with the Web Services Publishing Wizard in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are configured by default with a script timeout value of <strong>110</strong> seconds. This is the default value for the .NET Framework. <strong>HttpServerUtility.ScriptTimeout</strong> property. Web clients that use .NET Framework are configured by default with a request timeout value of <strong>100</strong> seconds. This is the default value for the .NET Framework <strong>HttpWebRequest.Timeout</strong> property.  
   
- If Web clients that use .NET framework are calling a Web Service generated with the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web Services Publishing Wizard, it is possible that the client cannot receive server script timeout errors because the client request timeout occurs first by default. To resolve this problem you can do one of the following:  
+ If Web clients that use .NET framework are calling a Web Service generated with the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Web Services Publishing Wizard, it is possible that the client cannot receive server script timeout errors because the client request timeout occurs first by default. To resolve this problem you can do one of the following:  
   
 -   Increase the client request timeout to a value greater than the server script timeout by increasing the value for the **HttpWebRequest.Timeout** property on the client.  
   

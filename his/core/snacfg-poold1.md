@@ -17,7 +17,7 @@ manager: "anneta"
 ## Purpose  
  Allows you to view, add, or delete downstream LU pools. Also allows you to view the command that would create a specified downstream LU pool.  
   
- To assign existing downstream LUs to a downstream LU pool, first configure the pool with the **snacfg poold** command; then add the LUs with the **snacfg lud** command (using the **/pool:***poolname* option).  
+ To assign existing downstream LUs to a downstream LU pool, first configure the pool with the <strong>snacfg poold</strong> command; then add the LUs with the <strong>snacfg lud</strong> command (using the <strong>/pool:</strong><em>poolname</em> option).  
   
 ## Syntax  
   
@@ -29,8 +29,8 @@ manager: "anneta"
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of configured downstream LU pools.  

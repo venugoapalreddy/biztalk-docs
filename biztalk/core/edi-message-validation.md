@@ -17,7 +17,7 @@ manager: "anneta"
 # EDI Message Validation
 EDI data is transmitted as delimited files (without self describing tags) and therefore the encoding rules enforce strict formatting rules to ensure the destination application is able to successfully parse and consume the information for downstream processing.  
   
- The EDI receive pipeline and EDI send pipeline in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 perform a series of validations. Some are always performed; others are performed if enabled in agreement properties or in the schema. For more information about how validation is configured, see [How Validation of an EDI Interchange Is Configured](../core/how-validation-of-an-edi-interchange-is-configured.md).  
+ The EDI receive pipeline and EDI send pipeline in Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI and AS2 perform a series of validations. Some are always performed; others are performed if enabled in agreement properties or in the schema. For more information about how validation is configured, see [How Validation of an EDI Interchange Is Configured](../core/how-validation-of-an-edi-interchange-is-configured.md).  
   
  Validation of an EDI interchange involves several different kinds of validation, as described in the following topics.  
   

@@ -19,7 +19,7 @@ The **ISSONotification** interface handles password changes to and from the clie
 ## Requirements  
  **Type Library:** SSOLookup 1.0 Type Library (SSOLookup.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSONotification Members](../esso/issonotification-members.md)   

@@ -20,7 +20,7 @@ The **ConfigureLinkServiceEx** function is used to add or modify a link service.
   
 ```  
   
-          __declspec(dllexport) BOOL WINAPI ConfigureLinkServiceEx(   
+          __declspec(dllexport) BOOL WINAPI ConfigureLinkServiceEx(   
 LPSTRszComputerName,  
 LPSTRszLinkServiceTitle,  
 LPSTR* pvConfigInfo,  

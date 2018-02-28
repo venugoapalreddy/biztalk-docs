@@ -16,7 +16,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # BTAHL7 Configuration Explorer UI Help
-How to use the [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer, including Parties and the Global Settings.
+How to use the [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer, including Parties and the Global Settings.
   
 ## Next steps
   

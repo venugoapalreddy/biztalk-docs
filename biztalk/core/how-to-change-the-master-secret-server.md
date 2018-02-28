@@ -58,9 +58,9 @@ After you set up the master secret server and configure the SSO database, you ca
   
     ```  
     <sso>  
-      <globalInfo>  
-         <secretServer>SSO Server name</secretServer>  
-      </globalInfo>  
+      <globalInfo>  
+         <secretServer>SSO Server name</secretServer>  
+      </globalInfo>  
     </sso>  
     ```  
   

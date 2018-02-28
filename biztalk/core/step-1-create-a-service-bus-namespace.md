@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Step 1: Create a Service Bus Namespace
-In this step, you create a [!INCLUDE[winazure](../includes/winazure-md.md)][!INCLUDE[sb](../includes/sb-md.md)] namespace. You will use this namespace to host a relay endpoint for receiving opportunity notifications from Salesforce. Later in the process of creating this solution, you will use this relay endpoint to receive the notification message into a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.  
+In this step, you create a [!INCLUDE [winazure](../includes/winazure-md.md)][!INCLUDE [sb](../includes/sb-md.md)] namespace. You will use this namespace to host a relay endpoint for receiving opportunity notifications from Salesforce. Later in the process of creating this solution, you will use this relay endpoint to receive the notification message into a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.  
   
-### To create a [!INCLUDE[sb](../includes/sb-md.md)] namespace  
+### To create a [!INCLUDE [sb](../includes/sb-md.md)] namespace  
   
 1.  Log on to [http://manage.windowsazure.com](http://manage.windowsazure.com) using your Microsoft account.  
   

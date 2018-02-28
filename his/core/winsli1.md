@@ -20,7 +20,7 @@ The **WinSLI** function provides asynchronous message notification for all Micro
   
 ```  
   
-          int WINAPI WinSLI(   
+          int WINAPI WinSLI(   
 HWND hWnd,                    
   LUA_VERB_RECORD FAR *lpVCB  );  
 ```  

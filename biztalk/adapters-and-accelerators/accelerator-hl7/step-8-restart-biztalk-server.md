@@ -15,14 +15,14 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Step 8: Restart BizTalk Server
-In this step, you restart the [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] in order for the changes you made in this tutorial to take effect.  
+In this step, you restart the [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] in order for the changes you made in this tutorial to take effect.  
   
 ### To restart BizTalk Server  
   
-1.  Start **BizTalk Server Administration**.  
+1. Start **BizTalk Server Administration**.  
   
-2.  In the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, expand **BizTalk Server Administration**, expand **BizTalk Group**, and then expand **Platform Settings**. Click **Hosts**, and then click **BizTalkServerApplication**.  
+2. In the [!INCLUDE [btsCoName](../../includes/btsconame-md.md)][!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, expand <strong>BizTalk Server Administration</strong>, expand <strong>BizTalk Group</strong>, and then expand <strong>Platform Settings</strong>. Click <strong>Hosts</strong>, and then click <strong>BizTalkServerApplication</strong>.  
   
-3.  Right-click your server, and then click **Restart**.  
+3. Right-click your server, and then click **Restart**.  
   
- Proceed to [Step 9: Verify the Fragmented Inbound Batch Scenario](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md).
+   Proceed to [Step 9: Verify the Fragmented Inbound Batch Scenario](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md).

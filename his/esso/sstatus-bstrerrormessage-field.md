@@ -27,7 +27,7 @@ public: BSTR bstrErrorMessage;
  **bstrErrorMessage** Can be NULL. You must free **bstrEerrorMessage** after every use.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SStatus Structure (COM)](../esso/sstatus-structure-com.md)   

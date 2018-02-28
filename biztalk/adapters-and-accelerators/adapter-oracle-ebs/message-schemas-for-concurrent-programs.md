@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for Concurrent Programs
-The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces concurrent programs as operations. Along with the concurrent programs exposed as operations, the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] also surfaces the following three standard operations: Get_Status, Wait_For_Request, and Submit_Request. For information about these operations related to concurrent programs, see [Operations on Concurrent Programs](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md).  
+The [!INCLUDE [adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]surfaces concurrent programs as operations. Along with the concurrent programs exposed as operations, the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] also surfaces the following three standard operations: Get_Status, Wait_For_Request, and Submit_Request. For information about these operations related to concurrent programs, see [Operations on Concurrent Programs](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md).  
   
 ## Message Structure of Concurrent Program Operations  
  The operations surfaced for concurrent programs follow a request-response message exchange pattern. The following table shows the structure of these request and response messages.  
@@ -43,7 +43,7 @@ The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinessl
  [CONCURRENT_PROGRAM_ARGUMENT] = Argument expected by the concurrent program as defined in Oracle E-Business Suite  
   
 ## Message Actions for Concurrent Programs  
- The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the following message actions for concurrent programs.  
+ The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] uses the following message actions for concurrent programs.  
   
 > [!NOTE]
 >  See entity descriptions after the table.  

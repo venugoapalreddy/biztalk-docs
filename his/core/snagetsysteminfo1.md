@@ -20,7 +20,7 @@ SNALink calls the **SNAGetSystemInfo** function to obtain information about the 
   
 ```  
   
-INTEGER SNAGetSystemInfo(   
+INTEGER SNAGetSystemInfo(   
 struct cs_info *pCSInfo  
 );  
 ```  

@@ -23,13 +23,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # BtarnClean
-You use the BtarnClean utility to clean [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] artifacts off a computer. This includes the following actions:  
+You use the BtarnClean utility to clean [!INCLUDE [btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE [BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] artifacts off a computer. This includes the following actions:  
   
--   Stopping and unenlisting all the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] orchestrations  
+- Stopping and unenlisting all the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] orchestrations  
   
--   Stopping and deleting all the associated ports  
+- Stopping and deleting all the associated ports  
   
--   Undeploying all the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)].Solutions.BTARN.* assemblies  
+- Undeploying all the [!INCLUDE [btsCoName](../../includes/btsconame-md.md)].Solutions.BTARN.* assemblies  
   
 ## Location in SDK  
  \<*drive*\>\Program Files\ Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK  
@@ -55,7 +55,7 @@ You use the BtarnClean utility to clean [!INCLUDE[btsCoName](../../includes/btsc
   
  The BtarnClean utility will not remove a primary receive location if a user's artifact uses that receive location. If this is the case, you must delete the receive port.  
   
- If you want to unconfigure [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] after running the utility, run Configuration.exe /u from the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] folder.  
+ If you want to unconfigure [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] after running the utility, run Configuration.exe /u from the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] folder.  
   
 ## See Also  
  [Utilities](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

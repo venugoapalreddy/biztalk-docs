@@ -16,12 +16,12 @@ manager: "anneta"
 ---
 # Use binding files to import or export
 
-Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], you can export and import binding files at the **Parties** and **Agreement** levels. For previous BizTalk versions, you export at the application level, as described at: 
+Starting with [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], you can export and import binding files at the <strong>Parties</strong> and <strong>Agreement</strong> levels. For previous BizTalk versions, you export at the application level, as described at: 
 
 * [How to Export Bindings for an EDI-AS2 Solution](../core/how-to-export-bindings-for-an-edi-as2-solution.md)
 * [How to Import Bindings for an EDI-AS2 Solution](../core/how-to-import-bindings-for-an-edi-as2-solution.md)
 
-This topic shows you how to import and exports parties, their profiles, agreements, fallback settings, and more using [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)] and BTSTask. 
+This topic shows you how to import and exports parties, their profiles, agreements, fallback settings, and more using [!INCLUDE [btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)] and BTSTask. 
 
 ## Overview
 
@@ -42,7 +42,8 @@ Some of the import and export features include:
 * You must have added a reference to the **BizTalk EDI Application** from a BizTalk application that will be used as an EDI application. See [Post-configuration steps](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md).
 
 ## Import or export all the trading partners
-1. Open **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**, and expand the BizTalk group.
+1. Open <strong><!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/use-binding-files-to-import-or-export.md) contains invalid char.
+   Parameter name: path -->[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]<!--END ERROR INCLUDE --></strong>, and expand the BizTalk group.
 2. Right-click **Parties**, and select **Export**. 
 
     When you export at the **parties**-level, you are exporting all the trading partners. This also exports everything used by the trading partners, including business profiles, and agreements into an XML file. 
@@ -57,9 +58,10 @@ Some of the import and export features include:
 
 See [ImportParties command](../core/importparties-command.md).
 
-    
+
 ## Export individual partners
-1. In **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**, select **Parties**.
+1. In <strong><!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/use-binding-files-to-import-or-export.md) contains invalid char.
+   Parameter name: path -->[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]<!--END ERROR INCLUDE --></strong>, select <strong>Parties</strong>.
 2. In the **Parties and business profiles** pane, right-click a party, and select **Export**.
 
     When you export a specific party, you are given the choice to export all the parties, and all the agreements used by that party. You can uncheck **Export selected parties and all the agreements within the selected parties** to only export the party you select.
@@ -80,7 +82,8 @@ See [ExportParties command](../core/exportparties-command.md).
 
 At the application-level, you can import a binding file with EDI and AS2 parties. 
 
-1. In **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**, expand **Applications**
+1. In <strong><!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/use-binding-files-to-import-or-export.md) contains invalid char.
+   Parameter name: path -->[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]<!--END ERROR INCLUDE --></strong>, expand <strong>Applications</strong>
 2. Right-click your application, and select **Import**.
 3. **Import Tracking Settings** and **Exclude Parties** options are available. Using these options, you can choose to import any existing tracking settings, or exclude any EDI/AS2 parties within the binding file.
 
@@ -89,10 +92,10 @@ At the application-level, you can import a binding file with EDI and AS2 parties
     |**Import Tracking Settings** | Imports the tracking settings enabled on the different artifacts within the application, such as track message bodies, and track events. <br/><br/>Enabled by default to ensure backwards-compatibility. |
     | **Exclude Parties**|Does not import parties, profiles, and agreements that existing within the file. <br/><br/>Disabled by default to ensure backwards-compatibility.|
 
-     > [!IMPORTANT] 
-     > The global tracking settings override **Import Tracking Settings**. So if you've disabled tracking at the global level, any tracking settings are not imported, even if **Import Tracking Settings** is checked.
-     > 
-     > **BizTalk Settings Dashboard, Group Page** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)] explains the **Allow import of tracking settings** global setting.
+   > [!IMPORTANT]
+   > The global tracking settings override **Import Tracking Settings**. So if you've disabled tracking at the global level, any tracking settings are not imported, even if **Import Tracking Settings** is checked.
+   > 
+   > <strong>BizTalk Settings Dashboard, Group Page</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)] explains the <strong>Allow import of tracking settings</strong> global setting.
 
 ### BTSTask example
 

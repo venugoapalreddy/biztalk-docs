@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Running the Namespace Component Tests
-The following procedure shows how you can run all four of the test scenarios for the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] Namespace Component sample.  
+The following procedure shows how you can run all four of the test scenarios for the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] Namespace Component sample.  
   
  **To run the Namespace Component sample test scenarios**  
   

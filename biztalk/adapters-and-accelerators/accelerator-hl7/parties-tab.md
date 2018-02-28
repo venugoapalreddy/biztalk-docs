@@ -16,30 +16,30 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Parties in BTAHL7 Configuration Explorer
-You use the **Parties** tab to view the available parties and specify [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] configuration for a particular party that you choose, and to configure properties for acknowledgments. 
+You use the <strong>Parties</strong> tab to view the available parties and specify [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] configuration for a particular party that you choose, and to configure properties for acknowledgments. 
 
 ## Parties UI explained
 The **Parties** tab contains both a left and right pane. The available parties appear in the left pane. The right pane contains the following tabs for the selected party:  
   
--   **Party Aliases**. Use this tab to view information about the party you have selected from the left pane.  
+- **Party Aliases**. Use this tab to view information about the party you have selected from the left pane.  
   
-    > [!NOTE]
-    >  You use BizTalk Explorer to create parties.  
+  > [!NOTE]
+  >  You use BizTalk Explorer to create parties.  
   
--   **Batch Definition**. Use this tab to configure [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] batching.  
+- <strong>Batch Definition</strong>. Use this tab to configure [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] batching.  
   
--   **Batch Schedule**. Use this tab to activate outbound batches.  
+- **Batch Schedule**. Use this tab to activate outbound batches.  
   
--   **Acknowledgment**. Use this tab to specify the properties for inbound and generated acknowledgments.  
+- **Acknowledgment**. Use this tab to specify the properties for inbound and generated acknowledgments.  
   
--   **Validation**. Use this tab to select the message validation options for inbound and generated messages.  
+- **Validation**. Use this tab to select the message validation options for inbound and generated messages.  
   
--   **MSH Map**. Use this tab to enable message header transformations for inbound messages.  
+- **MSH Map**. Use this tab to enable message header transformations for inbound messages.  
   
-    > [!NOTE]
-    >  You must configure party aliases, batch definitions, batch schedules, and acknowledgment information for all trading parties.  
-    > 
-    >  You can refresh the parties list by pressing F5, or by right-clicking the parties list, and select **Refresh**.  
+  > [!NOTE]
+  >  You must configure party aliases, batch definitions, batch schedules, and acknowledgment information for all trading parties.  
+  > 
+  >  You can refresh the parties list by pressing F5, or by right-clicking the parties list, and select **Refresh**.  
   
 ## Next steps  
   

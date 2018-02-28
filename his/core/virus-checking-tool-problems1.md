@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Virus-Checking Tool Problems
-When you are running [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] with some independent software vendor virus checking tools, SNA link services might fail to start due to the following error:  
+When you are running [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] with some independent software vendor virus checking tools, SNA link services might fail to start due to the following error:  
   
  Event 128: "Can't load IHV DLL xxx.dll"  
   

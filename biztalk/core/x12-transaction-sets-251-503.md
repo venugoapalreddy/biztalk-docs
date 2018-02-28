@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # X12 Transaction Sets 251-503
-This topic lists the X12 documents and versions that are supported by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This topic lists the X12 documents and versions that are supported by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
 
 ##  <a name="trns251"></a> Transaction Sets 251-264  
   

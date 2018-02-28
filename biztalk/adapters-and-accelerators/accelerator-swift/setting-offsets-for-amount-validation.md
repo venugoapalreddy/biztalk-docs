@@ -22,7 +22,7 @@ manager: "anneta"
 # Setting Offsets for Amount Validation
 The usage rules for Amount fields in message types MT102, MT103, and MT103PLUS are validated by rules in their respective validation policies. The Amount fields can be matched exactly or can be validated to be within a range of amounts.  
   
- To enable validation within a range, you specify an offset percentage in the method call in the relevant validation policy. For example, if the amount that you set for the field is 100, and the offset percentage is 10 percent, a valid amount would be any value from 90 to 110, inclusive. [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] provides this support for the MT102, MT102PLUS, and MT103 message types.  
+ To enable validation within a range, you specify an offset percentage in the method call in the relevant validation policy. For example, if the amount that you set for the field is 100, and the offset percentage is 10 percent, a valid amount would be any value from 90 to 110, inclusive. [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] provides this support for the MT102, MT102PLUS, and MT103 message types.  
   
  The offset percentage is specified in either the **IsValidSettlementAmount** or **IsValidInterbankSettledAmount** method in the validation policy. The **IsValidSettlementAmount** method implements the usage rule for Amount fields of MT102 and MT102PLUS messages. The **IsValidInterbankSettledAmount** method implements the usage rule for Amount fields of MT103 messages. You specify the offset percentage in the OffsetPercent argument, which is the tenth argument of either of those methods.  
   

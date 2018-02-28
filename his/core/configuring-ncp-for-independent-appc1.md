@@ -14,23 +14,23 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Configuring NCP for Independent APPC
-Parameters on Network Control Program (NCP) must match Advanced Program-to-Program Communications (APPC) parameters on [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. To configure the needed parameters, consult with the host administrator for the matching NCP parameters.  
+Parameters on Network Control Program (NCP) must match Advanced Program-to-Program Communications (APPC) parameters on [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. To configure the needed parameters, consult with the host administrator for the matching NCP parameters.  
   
  This section provides information about NCP definitions used for supporting and defining independent LUs. The section is not intended to provide comprehensive information about NCP, which is described more thoroughly in IBM manuals such as:  
   
--   *Planning and Reference for NetView, NCP, VTAM* (CN4D1200)  
+- *Planning and Reference for NetView, NCP, VTAM* (CN4D1200)  
   
--   *NCP, SSP, and EP Resource Definition Guide* (CXDG7200)  
+- *NCP, SSP, and EP Resource Definition Guide* (CXDG7200)  
   
--   *NCP, SSP, and EP Resource Definition Reference* (CXDH1200)  
+- *NCP, SSP, and EP Resource Definition Reference* (CXDH1200)  
   
- You may need to study other IBM documentation as well. Some of the topics to study are:  
+  You may need to study other IBM documentation as well. Some of the topics to study are:  
   
--   Independent LUs  
+- Independent LUs  
   
--   Type 2.1 node support  
+- Type 2.1 node support  
   
--   Dynamic reconfiguration  
+- Dynamic reconfiguration  
   
 ## Table of NCP Parameters That Affect Independent APPC  
  The following table shows basic recommendations for setting NCP parameters for independent APPC with Host Integration Server. The next sections describe the parameters in more detail.  
@@ -93,11 +93,11 @@ Parameters on Network Control Program (NCP) must match Advanced Program-to-Progr
  **LOCADDR=0**  
  For independent LUs configured by an administrator (as contrasted with LUs dynamically configured by NCP), specify LOCADDR=0.  
   
- **PACING=** *value*  
- Specifies the number of frames for NCP to send to an independent LU before NCP waits for a pacing response. The value for PACING should generally be greater than or equal to the corresponding Host Integration Server mode parameter, Pacing Receive Count. This ensures a smooth flow of data from the host to the Host Integration Server. ([!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] does not support adaptive pacing.)  
+ <strong>PACING=</strong> <em>value</em>  
+ Specifies the number of frames for NCP to send to an independent LU before NCP waits for a pacing response. The value for PACING should generally be greater than or equal to the corresponding Host Integration Server mode parameter, Pacing Receive Count. This ensures a smooth flow of data from the host to the Host Integration Server. ([!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] does not support adaptive pacing.)  
   
- **VPACING=** *value*  
- Specifies the number of frames for NCP to receive from an independent LU before NCP sends a pacing response; sometimes called the receive window size. The value for VPACING should generally be less than or equal to the corresponding Host Integration Server mode parameter, Pacing Send Count. This prevents delays in sending from the Host Integration Server to the host. ([!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] does not support adaptive pacing.)  
+ <strong>VPACING=</strong> <em>value</em>  
+ Specifies the number of frames for NCP to receive from an independent LU before NCP sends a pacing response; sometimes called the receive window size. The value for VPACING should generally be less than or equal to the corresponding Host Integration Server mode parameter, Pacing Send Count. This prevents delays in sending from the Host Integration Server to the host. ([!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] does not support adaptive pacing.)  
   
 ## See Also  
  [Sample VTAM Parameters](../core/sample-vtam-parameters1.md)

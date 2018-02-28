@@ -15,9 +15,9 @@ manager: "anneta"
 ---
 # Trace Viewer
 As in any standard Microsoft Windows application, you can use keyboard shortcuts in Trace Viewer to access commands that are otherwise available by using menus. The following table describes the available keyboard shortcuts.  
-  
+
 ## File Menu Keyboard Shortcuts  
-  
+
 |||  
 |-|-|  
 |**Menu Action**|**Shortcut**|  
@@ -26,9 +26,9 @@ As in any standard Microsoft Windows application, you can use keyboard shortcuts
 |Display save file as text dialog box|ALT+F,S,T|  
 |Display save file as CSV dialog box|ALT+F,S,T|  
 |Exit Trace Viewer|ALT+F4|  
-  
+
 ## Edit Menu Keyboard Shortcuts  
-  
+
 |||  
 |-|-|  
 |**Menu Action**|**Shortcut**|  
@@ -41,14 +41,15 @@ As in any standard Microsoft Windows application, you can use keyboard shortcuts
 |Next bookmark|F2|  
 |Previous bookmark|SHIFT+F2|  
 |Clear bookmarks|CTRL+SHIFT+F2|  
-  
+
 ## Tools Menu Keyboard Shortcuts  
-  
-|||  
-|-|-|  
-|**Menu Action**|**Shortcut**|  
-|Display filter dialog|ALT+T,F|  
-|Display tracing font options dialog|ALT+T,O,T|  
-|Display editor font options dialog|ALT+T,O,E|  
-|Display column options|ALT+T,O,C|  
-|Display split a large trace file dialog|ALT+T,O,L|
+
+|                                         |                           |
+|-----------------------------------------|---------------------------|
+|      <strong>Menu Action</strong>       | <strong>Shortcut</strong> |
+|          Display filter dialog          |          ALT+T,F          |
+|   Display tracing font options dialog   |         ALT+T,O,T         |
+|   Display editor font options dialog    |         ALT+T,O,E         |
+|         Display column options          |         ALT+T,O,C         |
+| Display split a large trace file dialog |         ALT+T,O,L         |
+

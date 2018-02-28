@@ -4,6 +4,6 @@ redirect_document_id: TRUE
 --- 
 
 # SAP Adapter
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] no longer supports the SAP Adapter. We recommend you use [!INCLUDE[adaptersap](../includes/adaptersap-md.md)] to achieve the same functionality.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] no longer supports the SAP Adapter. We recommend you use [!INCLUDE [adaptersap](../includes/adaptersap-md.md)] to achieve the same functionality.  
   
  

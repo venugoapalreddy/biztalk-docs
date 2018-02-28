@@ -20,7 +20,7 @@ The **Accept_Conversation** call (function name **cmaccp**) is issued by the inv
   
 ```  
   
-CM_ENTRY Accept_Conversation(   
+CM_ENTRY Accept_Conversation(   
    unsigned char FAR *conversation_ID,    
       CM_INT32 FAR *return_code              
 );  

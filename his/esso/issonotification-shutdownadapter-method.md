@@ -21,7 +21,7 @@ Indicates that the password sync adapter is shutting down.
 ```cpp#  
   
 HRESULT ShutDownAdapter(  
-GUID* pguidTrackingId   
+GUID* pguidTrackingId   
 );  
 ```  
   
@@ -50,7 +50,7 @@ GUID* pguidTrackingId 
  **ShutdownAdapter** is single-threaded. ENTSSO blocks all other threads calling **ShutdownAdapter** until **ShutdownAdapter** has completed. **ShutdownAdapter** is also synchronized with the **InitializeAdapter** method.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSONotification Interface (COM)](../esso/issonotification-interface-com.md)   

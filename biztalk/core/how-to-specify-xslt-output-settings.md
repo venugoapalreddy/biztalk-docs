@@ -23,7 +23,8 @@ This topic shows you how to set these properties on your map.
 
 ## Set the map-level compilation
 
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, you choose the `XslTransform` or the `XslCompiledTransform` class to compile your maps. 
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/how-to-specify-xslt-output-settings.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --></strong>, you choose the `XslTransform` or the `XslCompiledTransform` class to compile your maps. 
 
 1. Open your map in the Grid view.
 2. Right-click anywhere in the mapper grid, and select **Properties**.  
@@ -35,11 +36,11 @@ This topic shows you how to set these properties on your map.
     | True | The map level compilation property is set to `XslTransform` (legacy behavior) | 
     | False | The map level compilation property is set to `XslCompiledTransform` | 
 
-> [!NOTE] 
+> [!NOTE]
 > Starting with BizTalk Server 2013, the mapper compilation behavior was changed from `XslTransform` to `XslCompiledTransform`. The [What the Mapper Updates Mean for You](http://www.quicklearn.com/blog/2013/05/24/what-the-biztalk-server-2013-mapper-updates-mean-for-you/) blog post provides a great explanation of the behavior, and its potential impact. 
 > 
-> Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], you can choose which class to compile your maps. 
-  
+> Starting with [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], you can choose which class to compile your maps. 
+
 ## Include or exclude an XML declaration  
 You can choose whether an XML declaration is output or not. 
 
@@ -48,18 +49,18 @@ You can choose whether an XML declaration is output or not.
 3. In the drop-down list for the **Omit XML Declaration** property, select **Yes** to omit an XML declaration. Select **No** not to omit an XML declaration.  
 
 An XML declaration would appear (if you selected **No**) similar to the following.  
-  
+
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 ```  
-  
+
 ## Set encoding for output instance data  
 Encoding provides the run-time engine with the information it needs to determine which character set to use when creating the output result of a map.  
-   
+
 1. Open your map in the Grid view.
 2. Right-click anywhere in the mapper grid, and select **Properties**.    
 3.  In the drop-down list for the **XSLT Encoding** property, select the character set you want used for the output instance data.  
-  
+
 ## See Also  
  [Compiling and Testing Maps](../core/compiling-and-testing-maps.md)   
  [Using BizTalk Mapper](../core/using-biztalk-mapper.md)   

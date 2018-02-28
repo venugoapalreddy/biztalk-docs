@@ -15,10 +15,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Before You Begin the Tutorial
-Before you begin the tutorial, you must install BizTalk Server on a single computer, and also install the tutorial files. The tutorial does not provide instructions for a multicomputer environment. If you are working in a distributed [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment, you must take that into consideration when you perform the steps in the tutorials.  
+Before you begin the tutorial, you must install BizTalk Server on a single computer, and also install the tutorial files. The tutorial does not provide instructions for a multicomputer environment. If you are working in a distributed [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment, you must take that into consideration when you perform the steps in the tutorials.  
   
 ## How do I install BizTalk Server?  
- The following two topics contain information about installing and configuring [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on a single computer:  
+ The following two topics contain information about installing and configuring [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on a single computer:  
   
 -   [BizTalk Server 2016: What's New, and Installation](../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md)
 

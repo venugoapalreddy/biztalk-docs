@@ -30,21 +30,21 @@ You use the SchemaValidator utility to troubleshoot problems with a message inst
   
 #### To build the SchemaValidator utility  
   
-1.  Open a command prompt.  
+1. Open a command prompt.  
   
-2.  Move to \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator.  
+2. Move to \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator.  
   
-3.  At the command prompt, type **sn -k SchemaValidator.snk**, and then press ENTER.  
+3. At the command prompt, type **sn -k SchemaValidator.snk**, and then press ENTER.  
   
-4.  Start **Microsoft Visual Studio 2012**.  
+4. Start **Microsoft Visual Studio 2012**.  
   
-5.  On the **File** menu, point to **Open**, and then click **Open Solution**.  
+5. On the **File** menu, point to **Open**, and then click **Open Solution**.  
   
-6.  Move to \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator, select **SchemaValidator.sln**, and then click **Open**.  
+6. Move to \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator, select **SchemaValidator.sln**, and then click **Open**.  
   
-7.  In Solution Explorer, right-click **SchemaValidator**, and then click **Properties**.  
+7. In Solution Explorer, right-click **SchemaValidator**, and then click **Properties**.  
   
-8.  In the **MessageInspector Property**  page, click **Signing** tab, and then click **Sign the assembly** checkbox. Select **SchemaValidator.snk** in **Choose a strong name key file**.  
+8. In the **MessageInspector Property**  page, click **Signing** tab, and then click **Sign the assembly** checkbox. Select **SchemaValidator.snk** in **Choose a strong name key file**.  
   
 9. Click **SchemaValidator.cs**.  
   
@@ -69,10 +69,10 @@ You use the SchemaValidator utility to troubleshoot problems with a message inst
     > [!NOTE]
     >  For an example of a schema ready to be validated by the SchemaValidator utility, see Sample3A4.xml in \<*drive*\>\Program Files\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\SchemaValidator.  
   
-15. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], click **SchemaValidator.cs**, and then press CTRL and F5 to run the utility.  
+15. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], click <strong>SchemaValidator.cs</strong>, and then press CTRL and F5 to run the utility.  
   
 ## Remarks  
- Because the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK includes the SchemaValidator code, you can add logic to the utility. For example, you can make it a command-line utility.  
+ Because the [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK includes the SchemaValidator code, you can add logic to the utility. For example, you can make it a command-line utility.  
   
 ## See Also  
  [Utilities](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)

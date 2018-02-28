@@ -24,7 +24,7 @@ The RosettaNet Implementation Framework (RNIF) standard defines how systems tran
   
  The standard defines message structure, the need for acknowledgements, Multipurpose Internet Mail Extensions (MIME) encoding, and the digital signature. The core standard includes requirements for authentication, authorization, encryption, and non-repudiation. The RNIF standard is based on HTTP, MIME, and XML standards. The RNIF standard does not specify a platform or an enabling application.  
   
- [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] implements two versions of RNIF: RNIF Specification v02.00.01 and RNIF Specification v1.1. RNIF 2.01 added significant functionality beyond that supported by RNIF 1.1, including encryption, attachments, and synchronous transactions. RNIF 2.0 is not backward compatible with RNIF 1.1.  
+ [!INCLUDE [BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] implements two versions of RNIF: RNIF Specification v02.00.01 and RNIF Specification v1.1. RNIF 2.01 added significant functionality beyond that supported by RNIF 1.1, including encryption, attachments, and synchronous transactions. RNIF 2.0 is not backward compatible with RNIF 1.1.  
   
 ## Messaging Framework Patterns  
  The following table shows RNIF support for messaging framework patterns and synchronous message exchange. A single-action message is one that does not involve a response, whereas a double-action message includes a request and response.  
@@ -42,7 +42,7 @@ The RosettaNet Implementation Framework (RNIF) standard defines how systems tran
  RNIF 1.1 and RNIF 2.01 define the RosettaNet message differently. These differences include how they handle attachments, the Secure/Multipurpose Internet Mail Extensions (SMIME) envelope, delivery header, and MIME packaging. RNIF 2.01 specifically includes attachments; RNIF 2.01 adds a delivery header, while RNIF 1.1 does not.  
   
 > [!NOTE]
->  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not support the *Technical Recommendations for RNIF 1.1* published by the RosettaNet organization (one for attachment support, and one for synchronous responses).  
+>  [!INCLUDE [btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] does not support the <em>Technical Recommendations for RNIF 1.1</em> published by the RosettaNet organization (one for attachment support, and one for synchronous responses).  
   
  Systems use the parts of RNIF 1.1 and RNIF 2.01 messages for party identification, routing, and service-level identification purposes. Before reading and replying to a body of service content, which is the main content of the message, each party must successfully populate or interpret the header values.  
   

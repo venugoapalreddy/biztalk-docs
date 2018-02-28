@@ -17,7 +17,7 @@ manager: "anneta"
 # AS2 Solution Architecture
 AS2 processing is performed separately from EDI processing. AS2 messages are received, processed, and an acknowledgment sent apart from the processing of the EDI payload. As a result, AS2 processing is designed and configured apart from EDI processing. In addition, you can use AS2 to transport either EDI messages or non-EDI messages.  
   
- This section describes the architecture of AS2 solutions on [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], including end-to-end, receive-side, and send-side processing.  
+ This section describes the architecture of AS2 solutions on [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], including end-to-end, receive-side, and send-side processing.  
   
 ## In This Section  
   

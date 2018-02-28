@@ -19,7 +19,7 @@ The **ISSOMapping** interface manages the state of a mapping instance.
 ## Requirements  
  **Type Library:** SSOMapper 1.0 Type Library (SSOMapper.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapping Members](../esso/issomapping-members.md)   

@@ -21,7 +21,7 @@ manager: "anneta"
 This section describes how to create, configure, and manage receive ports for a BizTalk application by using the BizTalk Server Administration console. A receive port is logical grouping of similar receive locations. For background information on receive ports, see [Receive Ports](../core/receive-ports.md).  
   
 > [!NOTE]
->  You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks. For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+>  You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks. For information about using WMI, see the <strong>WMI Class Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
 ## Next steps
   

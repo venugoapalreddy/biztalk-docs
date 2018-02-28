@@ -22,13 +22,13 @@ manager: "anneta"
   
  **Time to complete:** 5 minutes  
   
- **Objective:** In this step, you will test the migrated application by receiving a flat-file IDOC using the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+ <strong>Objective:</strong> In this step, you will test the migrated application by receiving a flat-file IDOC using the WCF-based [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
 ## Prerequisites  
   
--   Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.  
+- Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.  
   
--   Configure the BizTalk application to use the WCF-Custom receive port for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+- Configure the BizTalk application to use the WCF-Custom receive port for the WCF-based [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
 ### To test the migrated application  
   

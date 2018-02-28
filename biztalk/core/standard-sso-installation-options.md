@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Standard SSO Installation Options
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] leverages the Enterprise Single Sign-On (SSO) capabilities for securely storing credentials to enable single sign-on scenarios.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] leverages the Enterprise Single Sign-On (SSO) capabilities for securely storing credentials to enable single sign-on scenarios.  
   
  BizTalk Server also uses SSO to store custom configuration data of Adapters securely. To do this, BizTalk Server runtime and administration features install SSO as a dependent feature. The default installation of BizTalk Server installs Enterprise SSO.  
   
@@ -27,21 +27,21 @@ manager: "anneta"
 >   
 >  We also recommend that any computer running Enterprise Single Sign-On have a time synchronization service running. This keeps the computer time in sync with the rest of the system, which is necessary for SSO ticketing services to function properly.  
   
- **List of installation options**: Run the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup program. Select **Custom Installation**, and then select the appropriate option from the following list:  
+ <strong>List of installation options</strong>: Run the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] setup program. Select <strong>Custom Installation</strong>, and then select the appropriate option from the following list:  
   
--   **Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.  
+- **Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.  
   
--   **Enterprise Single Sign-On Master Secret Server ―** Acts as the Master Secret Server in the SSO System. This is the first server in the SSO System that needs to deployed and this allows you to create the SSO database.  
+- **Enterprise Single Sign-On Master Secret Server ―** Acts as the Master Secret Server in the SSO System. This is the first server in the SSO System that needs to deployed and this allows you to create the SSO database.  
   
- You can also add the following after setup, by using the Add or Remove Programs utility:  
+  You can also add the following after setup, by using the Add or Remove Programs utility:  
   
--   **Server Runtime ―** Core services to enable single sign-on and to store/access configuration data securely.  
+- **Server Runtime ―** Core services to enable single sign-on and to store/access configuration data securely.  
   
--   **Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.  
+- **Enterprise Single Sign-On Administration ―** Administration and client tools for mapping and connecting to Enterprise Single Sign-On Services.  
   
--   **Enterprise Single Sign-On Services with Password Synchronization ―** Services to enable the Password Synchronization feature in the Enterprise SSO System. These services also integrate with the Microsoft Password Change Notification Service. Once you have installed the core Enterprise Single Sign-On services, you can install the Password Synchronization feature of Enterprise SSO from the BizTalk Server package by launching the \Platform\SSO\Setup.exe and selecting the Password Synchronization feature.  
+- **Enterprise Single Sign-On Services with Password Synchronization ―** Services to enable the Password Synchronization feature in the Enterprise SSO System. These services also integrate with the Microsoft Password Change Notification Service. Once you have installed the core Enterprise Single Sign-On services, you can install the Password Synchronization feature of Enterprise SSO from the BizTalk Server package by launching the \Platform\SSO\Setup.exe and selecting the Password Synchronization feature.  
   
--   **Software Development Kit** Programming and Reference information.  
+- **Software Development Kit** Programming and Reference information.  
   
 ## In This Section  
   

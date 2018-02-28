@@ -1,1 +1,1 @@
-​BizTalk ESB Toolkit
+ BizTalk ESB Toolkit

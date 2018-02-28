@@ -20,7 +20,7 @@ The **fDisconnectRegistry** function is used to disconnect from a remote compute
   
 ```  
   
-          BOOL fDisconnectRegistry(   
+          BOOL fDisconnectRegistry(   
 HKEY *hGlobalKey);  
 ```  
   

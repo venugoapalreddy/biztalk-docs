@@ -20,7 +20,7 @@ The **fAddRegistryEntry** function is used to add a new registry value to the re
   
 ```  
   
-          BOOL fAddRegistryEntry(   
+          BOOL fAddRegistryEntry(   
 HKEY *hGlobalKey,  
 char *szRegistryValue,  
 char *szRegistryData,  

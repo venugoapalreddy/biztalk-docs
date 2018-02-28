@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # X.25 Adapters and Link Services: Installation Pointers
-An X.25 link service enables the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] software to communicate with the X.25 adapter. The following pointers highlight important steps for installing an X.25 adapter and link service:  
+An X.25 link service enables the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] software to communicate with the X.25 adapter. The following pointers highlight important steps for installing an X.25 adapter and link service:  
   
 -   When choosing an X.25 adapter, pay close attention to the speed capabilities. Greater speed allows an adapter to carry greater loads. Note that an adapter that lacks a coprocessor cannot handle high-speed transmission with full duplexing; the duplexing type used by Host Integration Server X.25 connections. (Examples of adapters lacking a coprocessor are the IBM SDLC and IBM MPCA adapters. For these adapters, the transmission speed must be 9600 baud or less.)  
   

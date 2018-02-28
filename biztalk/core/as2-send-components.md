@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # AS2 Send Components
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses several components to send AS2 messages.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses several components to send AS2 messages.  
   
 ## AS2 Send Pipelines  
  Most AS2 send processing is performed in the following AS2 send pipelines. These pipelines are installed in `Microsoft.BizTalk.Edi.EdiIntPipelines.dll` in \Program Files\Microsoft BizTalk Server 20xx\Pipeline Components.  
@@ -27,11 +27,11 @@ manager: "anneta"
   
  This pipeline generates and sends EDI messages over AS2. The pipeline consists of the following pipeline components:  
   
--   EDI Assembler  
+- EDI Assembler  
   
--   AS2 Encoder  
+- AS2 Encoder  
   
- This pipeline is not used to generate and send MDNs over AS2, because the MDN does not need to be processed by the EDI Assembler. Use the AS2SendPipeline to send MDNs.  
+  This pipeline is not used to generate and send MDNs over AS2, because the MDN does not need to be processed by the EDI Assembler. Use the AS2SendPipeline to send MDNs.  
   
 > [!NOTE]
 >  Running the AS2EDISend pipeline from an orchestration is not supported.  
@@ -40,9 +40,9 @@ manager: "anneta"
   
  This pipeline sends messages over AS2 when the messages are not encoded in EDI. It also sends MDNs over AS2. The pipeline consists of the following pipeline components:  
   
--   AS2 Encoder.  
+- AS2 Encoder.  
   
- If the messages to be sent over AS2 are neither EDI nor XML messages, you can create a customized AS2Send pipeline to handle these messages. This pipeline must have a customized assembler to convert the intermediate XML in BizTalk Server into the other format before encoding the message in EDIINT/AS2.  
+  If the messages to be sent over AS2 are neither EDI nor XML messages, you can create a customized AS2Send pipeline to handle these messages. This pipeline must have a customized assembler to convert the intermediate XML in BizTalk Server into the other format before encoding the message in EDIINT/AS2.  
   
 > [!NOTE]
 >  Running the AS2Send pipeline from an orchestration is not supported.  
@@ -78,10 +78,10 @@ manager: "anneta"
     >  Eight-bit encoding is used on AS2 messages. Base64 encoding is only applied to signatures in AS2 messages and MDNs.  
   
 ## HTTP Adapter  
- The send ports used for EDIINT AS2 processing use the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP Adapter. The HTTP Adapter is configured in both one-way and solicit-response transmission.  
+ The send ports used for EDIINT AS2 processing use the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP Adapter. The HTTP Adapter is configured in both one-way and solicit-response transmission.  
   
 ## Non-Repudiation Database  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the non-repudiation database (the EdiMessageContent table of the BizTalkDTADb database) to do the following:  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the non-repudiation database (the EdiMessageContent table of the BizTalkDTADb database) to do the following:  
   
 > [!NOTE]
 >  The EdiMessageContent table exists in the BizTalkDTADb database only if one of the non-repudiation storage agreement properties are checked.  

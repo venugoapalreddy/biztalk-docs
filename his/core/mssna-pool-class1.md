@@ -30,13 +30,13 @@ class MsSna_Pool : MsSna_Resource
 ```  
   
 ## Properties  
- **Name**  
- Data Type: **String**Qualifiers: **Key, MAXLEN(8)**Access Type: Read-Only  
+ <strong>Name</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>Key, MAXLEN(8)</strong>Access Type: Read-Only  
   
  The pool name.  
   
- **Comment**  
- Data Type: **String**Qualifiers: **MAXLEN(25)**Access Type: Read/Write  
+ <strong>Comment</strong>  
+ Data Type: <strong>String</strong>Qualifiers: <strong>MAXLEN(25)</strong>Access Type: Read/Write  
   
  An optional comment field.  
   

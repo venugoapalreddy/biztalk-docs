@@ -20,7 +20,7 @@ The **SNAModemAddLink** function should be called once per link initialization. 
   
 ```  
   
-            void SNAModemAddLink(   
+            void SNAModemAddLink(   
 MODEM_STATUS **ppModemStatus);  
 ```  
   

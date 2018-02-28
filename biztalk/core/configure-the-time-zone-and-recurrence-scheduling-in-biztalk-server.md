@@ -15,14 +15,16 @@ ms.author: mandia
 manager: "anneta"
 ---
 # Configure the time zone and recurrence scheduling in BizTalk Server
-Set the timezone and configure a recurrence schedule on your receive locations in [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. 
+Set the timezone and configure a recurrence schedule on your receive locations in [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]. 
 
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, the advanced scheduling feature on receive locations includes some options. Using the advanced scheduling options, set the time zone, and also set a recurrence schedule.
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/configure-the-time-zone-and-recurrence-scheduling-in-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --> <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[featurepack1](../includes/featurepack1.md)]: Path(D:/a/1/s/target_repo/biztalk/core/configure-the-time-zone-and-recurrence-scheduling-in-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[featurepack1](../includes/featurepack1.md)]<!--END ERROR INCLUDE --></strong>, the advanced scheduling feature on receive locations includes some options. Using the advanced scheduling options, set the time zone, and also set a recurrence schedule.
 
 This topic shows you how to configure these features.
 
 ## Prerequisites
-Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
+Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)].
 
 ## Time zone
 
@@ -56,7 +58,7 @@ You can also adjust for daylight saving time (DST). When checked, the schedule a
         ![Weekly schedule](../core/media/weekly-shcedule.png)
 
     3. Use the **Monthly** recurrence to run the receive port on a monthly schedule. The **Days** and **On** options are available. 
-	
+
         Use the **Days** recurrence to run the receive port on specific dates within the **months** you choose: 
 
         ![Monthly schedule](../core/media/monthly-shcedule.PNG)

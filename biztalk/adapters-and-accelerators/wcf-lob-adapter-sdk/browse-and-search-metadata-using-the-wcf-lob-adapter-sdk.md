@@ -20,7 +20,7 @@ This section provides information about how to expose browse and search function
 ## IMetadataBrowseHandler  
  When adding an adapter to a project, IMetadataBrowseHandler allows browsing of the categories and operations that the adapter supports. This allows the adapter consumer to view metadata information at design time, and to select only the operations that the client process requires.  
   
- When using the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to add an adapter to a project, the IMetadataBrowseHandler populates the **Select contract type**, **Select a Category**, and **Available categories and operations** boxes.  
+ When using the [!INCLUDE [addadapterservreflong](../../includes/addadapterservreflong-md.md)] or [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to add an adapter to a project, the IMetadataBrowseHandler populates the <strong>Select contract type</strong>, <strong>Select a Category</strong>, and <strong>Available categories and operations</strong> boxes.  
   
  ![Browse Operations](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")  
   
@@ -98,7 +98,7 @@ public class EchoAdapterMetadataBrowseHandler : EchoAdapterHandlerBase, IMetadat
 ## IMetadataSearchHandler  
  Implementing IMetadataSearchHandler within an adapter provides the ability to search for available operations at design time by entering a search term, such as a portion of an operation name. This is very useful if your adapter contains many operations, since you can enter search values to limit the operations returned.  
   
- When using the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to add an adapter to a project, the IMetadataSearchHandler resolves search strings entered in the **Search in category** box, and returns a list of matching items in the **Available categories and operations** box.  
+ When using the [!INCLUDE [addadapterservreflong](../../includes/addadapterservreflong-md.md)] or [!INCLUDE [consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] to add an adapter to a project, the IMetadataSearchHandler resolves search strings entered in the <strong>Search in category</strong> box, and returns a list of matching items in the <strong>Available categories and operations</strong> box.  
   
  ![Search Operations](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/48dc9ca6-8697-42bf-9419-5fa35a19937f.gif "48dc9ca6-8697-42bf-9419-5fa35a19937f")  
   
@@ -110,7 +110,7 @@ svcutil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op
 ```  
   
 > [!NOTE]
->  The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] does not provide a default wildcard search functionality such as Echo* or %Echo%. It is up to the adapter author to implement wildcard or pattern matching functionality.  
+>  The [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] does not provide a default wildcard search functionality such as Echo* or %Echo%. It is up to the adapter author to implement wildcard or pattern matching functionality.  
   
  The following example demonstrates how to implement IMetadataSearchHandler. It constructs a MetadataRetrievalNode array containing information about the categories and operations that the adapter supports.  
   

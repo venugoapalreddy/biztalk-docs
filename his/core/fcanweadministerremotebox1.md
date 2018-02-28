@@ -20,7 +20,7 @@ The **fCanWeAdministerRemoteBox** function is used to determine if the caller ha
   
 ```  
   
-          BOOL fCanWeAdministerRemoteBox(   
+          BOOL fCanWeAdministerRemoteBox(   
 HKEY *hGlobalKey);  
 ```  
   

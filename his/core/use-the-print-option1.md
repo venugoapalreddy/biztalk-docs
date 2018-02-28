@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Use the /print Option
-The **/print** option can make it easier to carry out repetitive configuration actions, if you have a detailed understanding of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] configurations and of the **snacfg** command. Here are some ways of using the **/print** option:  
+The <strong>/print</strong> option can make it easier to carry out repetitive configuration actions, if you have a detailed understanding of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] configurations and of the <strong>snacfg</strong> command. Here are some ways of using the <strong>/print</strong> option:  
   
  **Creating a new configuration**  
  You can generate a **snacfg** command file corresponding to an entire configuration file, modify the command file, and use it to create a new configuration file for another subdomain or site. To generate the commands for an entire configuration file, use the syntax shown in the first example in the previous section; that is, omit all **snacfg** modifiers (such as **connection** or **lu**).  

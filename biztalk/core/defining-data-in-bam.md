@@ -31,7 +31,7 @@ You use the BAM Excel Add-in to define the data you want BAM to collect, and def
 ## Activities  
  You create a BAM activity to define information about a business process that you want to monitor with BAM. A BAM activity represents a specific business process in the business, such as handling purchase orders or shipping a product. A business process has a defined set of milestones and business data. For example, a purchase order process might have milestones such as Approved, Denied, and Delivered along with business data like Customer Name and Product.  
   
- The intention of a BAM activity is to show the history (milestones) and data about a process to information workers. BAM activities are high-level abstractions that are independent of the actual implementation of BizTalk Server. For a conceptual overview of BAM, see the topic "Business Activity Monitoring" in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help.  
+ The intention of a BAM activity is to show the history (milestones) and data about a process to information workers. BAM activities are high-level abstractions that are independent of the actual implementation of BizTalk Server. For a conceptual overview of BAM, see the topic "Business Activity Monitoring" in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Help.  
   
  You use the BAM Activity Wizard to define BAM activities that contain at least one activity item. You group related activity items in an activity, and you use activity items to describe the type of data you want to make available from a business process.  
   
@@ -119,21 +119,21 @@ You use the BAM Excel Add-in to define the data you want BAM to collect, and def
 ### Dimensions and Measures  
  You use dimensions and measures to create data aggregations:  
   
--   Dimensions describe a fact.  
+- Dimensions describe a fact.  
   
--   Measures are fact values.  
+- Measures are fact values.  
   
- For example, a fact could be “3 red cars” in inventory. The description of the product: "car" and "red" are dimensions. The value of the fact "3" is a measure. If the price of each car is included in the fact, the car price is a dimension, but the average price of cars in inventory is a measure. Microsoft SQL Server Books Online describes a measure as "the central values that are aggregated and analyzed." In other words, if you can count it, average it, or otherwise perform mathematical functions to get it, it is a measure.  
+  For example, a fact could be “3 red cars” in inventory. The description of the product: "car" and "red" are dimensions. The value of the fact "3" is a measure. If the price of each car is included in the fact, the car price is a dimension, but the average price of cars in inventory is a measure. Microsoft SQL Server Books Online describes a measure as "the central values that are aggregated and analyzed." In other words, if you can count it, average it, or otherwise perform mathematical functions to get it, it is a measure.  
   
- You can create the following types of dimensions:  
+  You can create the following types of dimensions:  
   
--   Progress dimension  
+- Progress dimension  
   
--   Data dimension  
+- Data dimension  
   
--   Time dimension  
+- Time dimension  
   
--   Numeric range dimension  
+- Numeric range dimension  
   
 ## Progress dimensions  
  BAM introduces a new type of dimension: the progress dimension. You create progress dimensions to create aggregations that relate to the progress of activities still in process.  

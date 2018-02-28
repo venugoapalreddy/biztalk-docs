@@ -6,4 +6,4 @@ redirect_document_id: TRUE
 
 # Oracle E-Business Suite ODBC Adapter
 
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] no longer supports the Oracle E-Business Suite ODBC Adapter. We recommend you use Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] to achieve the same functionality.  
+[!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] no longer supports the Oracle E-Business Suite ODBC Adapter. We recommend you use Microsoft [!INCLUDE [adapterpacknoversion](../includes/adapterpacknoversion-md.md)] to achieve the same functionality.  

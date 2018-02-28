@@ -34,7 +34,7 @@ Performance counters enable you to monitor specific aspects of work performed on
  To modify BTSNtSvc.exe.config or Web.config, open the configuration file, and then configure WCF tracing, as indicated in the following configuration example:  
   
 > [!NOTE]
->  The BTSNTSvc.exe.config file is always located in the same directory as the BTSNTSvc.exe file, which is usually [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].  
+>  The BTSNTSvc.exe.config file is always located in the same directory as the BTSNTSvc.exe file, which is usually [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)].  
   
 ```  
 <configuration>  
@@ -46,13 +46,13 @@ Performance counters enable you to monitor specific aspects of work performed on
   
  The **performanceCounters** attribute can be set to enable a specific type of performance counters. Valid values are  
   
--   **All**: All category counters (**ServiceModelService**, **ServiceModelEndpoint**, and **ServiceModelOperation**) are enabled.  
+- **All**: All category counters (**ServiceModelService**, **ServiceModelEndpoint**, and **ServiceModelOperation**) are enabled.  
   
--   **ServiceOnly**: Only **ServiceModelService** category counters are enabled.  
+- **ServiceOnly**: Only **ServiceModelService** category counters are enabled.  
   
--   **Off**: ServiceModel* performance counters are disabled. This is the default value.  
+- **Off**: ServiceModel* performance counters are disabled. This is the default value.  
   
- After modifying the BTSNTSvc.exe.config file, you must restart the host instances running the in-process WCF receive locations.  
+  After modifying the BTSNTSvc.exe.config file, you must restart the host instances running the in-process WCF receive locations.  
   
 ## Types of Performance Counters  
  WCF performance counters are scoped to three different levels: service, endpoint, and operation.  
@@ -65,7 +65,7 @@ Performance counters enable you to monitor specific aspects of work performed on
 biztalkserviceinstance@<URI of a receive location>  
 ```  
   
- Because the WCF adapters create a separate service host for each receive location, a performance counter instance is created for each receive location. For more information about the service class implementing the WCF service contracts, see the **BizTalkServiceInstance Class** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
+ Because the WCF adapters create a separate service host for each receive location, a performance counter instance is created for each receive location. For more information about the service class implementing the WCF service contracts, see the <strong>BizTalkServiceInstance Class</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]. 
   
  **Endpoint performance counters**  
   
@@ -75,7 +75,7 @@ biztalkserviceinstance@<URI of a receive location>
 biztalkserviceinstance.<WCF service contract>@<URI of a receive location>  
 ```  
   
- A performance counter instance is created for each receive location. In the preceding pattern, the name of the WCF service contract represents the service contract that the WCF adapters choose to receive messages through the receive location. For more information about how the WCF adapters choose a service contract from the available WCF service contracts, see **WCF Adapters Service Contract Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
+ A performance counter instance is created for each receive location. In the preceding pattern, the name of the WCF service contract represents the service contract that the WCF adapters choose to receive messages through the receive location. For more information about how the WCF adapters choose a service contract from the available WCF service contracts, see <strong>WCF Adapters Service Contract Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].  
   
  **Operation performance counters**  
   
@@ -88,7 +88,7 @@ biztalkserviceinstance.<WCF service contract>biztalksubmit@<URI of a receive loc
  In the preceding pattern, the name of the WCF service contract represents the service contract that the WCF adapters choose to receive messages through the receive location. **biztalksubmit** is an operation name declared in the service contract, and causes the runtime to create WSDL operations in the metadata.  
   
 > [!NOTE]
->  For more information about how the WCF adapters choose a service contract from the available WCF service contracts, see **WCF Adapters Service Contract Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+>  For more information about how the WCF adapters choose a service contract from the available WCF service contracts, see <strong>WCF Adapters Service Contract Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
   
  The other object instance is named using the following pattern:  
   

@@ -16,7 +16,7 @@ manager: "anneta"
 # Network Considerations
 Your network adapter can have a large impact on the overall network performance. Advanced adapters provide good setup options to optimize the network I/O performance. Look for I/O buffering on the card itself, direct memory access (DMA) (adjustable data link control (DLC) (maximum frame size, and local area network (LAN) speed setting parameters.  
   
- [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] performance tuning involves adjusting the frame size, BTU size, and DLC-level pacing on the connection properties, as well as the request/response unit (RU) size and session-level pacing on the mode properties.  
+ [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] performance tuning involves adjusting the frame size, BTU size, and DLC-level pacing on the connection properties, as well as the request/response unit (RU) size and session-level pacing on the mode properties.  
   
  Additional tips:  
   

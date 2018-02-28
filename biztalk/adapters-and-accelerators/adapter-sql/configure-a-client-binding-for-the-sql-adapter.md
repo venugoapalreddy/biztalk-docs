@@ -15,11 +15,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configure a Client Binding for the SQL Adapter
-After you have generated the WCF client class, you can create a WCF client (instance) and invoke its methods to consume the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]. For information about how to generate the WCF client class and helper code for operations that the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] exposes, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).  
+After you have generated the WCF client class, you can create a WCF client (instance) and invoke its methods to consume the [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)]. For information about how to generate the WCF client class and helper code for operations that the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] exposes, see [Generate a WCF Client or WCF Service Contract for SQL Server Artifacts](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md).  
   
  To create the WCF client, you must specify an endpoint address and a binding. The endpoint address must contain a valid SQL connection URI, and the binding must be an instance of a SQL Binding (**sqlBinding**). For more information about the SQL connection URI, see [Create the SQL Server connection URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md). You must specify the user credentials as part of the connection URI. You may use the **ClientCredentials** property of the WCF client, as explained in this topic.  
   
- You can specify the SQL binding and the endpoint address in your code or in a configuration file. When you use the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate the WCF client class, a configuration file (app.config) is also created for your project. This file contains configuration settings that reflect the binding properties and connection information (except credentials) that you specified when you connected to the SQL database with the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
+ You can specify the SQL binding and the endpoint address in your code or in a configuration file. When you use the [!INCLUDE [addadapterservreflong](../../includes/addadapterservreflong-md.md)] to generate the WCF client class, a configuration file (app.config) is also created for your project. This file contains configuration settings that reflect the binding properties and connection information (except credentials) that you specified when you connected to the SQL database with the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].  
   
 ## Specifying the Binding and Endpoint Address in Code  
  The following code shows how to create a WCF client by specifying the binding and endpoint address in code by using the **ClientCredentials** property of the WCF client.  
@@ -48,7 +48,7 @@ client.ClientCredentials.UserName.Password = "PASSWORD";
 client.Open();  
 ```  
   
- The following XML shows the configuration file created for the Customer table by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. This file contains the client endpoint configuration referenced in the preceding example.  
+ The following XML shows the configuration file created for the Customer table by the [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]. This file contains the client endpoint configuration referenced in the preceding example.  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

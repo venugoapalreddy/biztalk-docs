@@ -17,7 +17,7 @@ manager: "anneta"
 ## Purpose  
  Allows you to view, add, delete, or modify LUA LU pools.  
   
- To assign existing LUA LUs to an LUA LU pool, first configure the pool with the **snacfg poola** command (including options), then add the LUs with the **snacfg lua** command (using the **/pool:***poolname* option).  
+ To assign existing LUA LUs to an LUA LU pool, first configure the pool with the <strong>snacfg poola</strong> command (including options), then add the LUs with the <strong>snacfg lua</strong> command (using the <strong>/pool:</strong><em>poolname</em> option).  
   
 > [!NOTE]
 >  Configuration settings specified with snacfg poola correspond to LUA LU pool settings configured with the SNA Manager.  
@@ -33,8 +33,8 @@ manager: "anneta"
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of configured LUA LU pools.  

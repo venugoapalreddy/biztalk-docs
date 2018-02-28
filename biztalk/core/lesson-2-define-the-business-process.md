@@ -19,7 +19,7 @@ manager: "anneta"
 # Lesson 2: Define the Business Process
 In this lesson, you create the second project in the Enterprise Application Integration(EAI) solution. This project contains an orchestration.  
   
- In the EAI scenario, the warehouse application sends an inventory replenishment message to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] for processing. [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the orchestration you create to automate the business process. The orchestration provides the workflow, actions, and expressions to move messages through the system and process their contents.  
+ In the EAI scenario, the warehouse application sends an inventory replenishment message to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] for processing. [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the orchestration you create to automate the business process. The orchestration provides the workflow, actions, and expressions to move messages through the system and process their contents.  
   
  Finally you build the project before starting [Lesson 3: Deploy the Solution](../core/lesson-3-deploy-the-solution.md).  
   

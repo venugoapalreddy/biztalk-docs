@@ -48,7 +48,7 @@ This section shows how to insert a record into an Oracle database by using a cha
 ```  
   
 ## Specifying the Message Action  
- You must specify a message action when you send a SOAP message to the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]. You can specify the message action when you create the message as in the following example.  
+ You must specify a message action when you send a SOAP message to the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)]. You can specify the message action when you create the message as in the following example.  
   
 ```  
 Message messageIn2 = Message.CreateMessage(MessageVersion.Default, "http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES/Insert", readerIn2);  
@@ -57,7 +57,7 @@ Message messageIn2 = Message.CreateMessage(MessageVersion.Default, "http://Micro
  The message action in this example, "/HR/Table/EMPLOYEES/Insert", specifies that an Insert operation on the HR.EMPLOYEES table is to be performed  
   
 ## Sending the Insert Message  
- This example shows how to perform an Insert operation on an Oracle table over a channel. The code uses the SQLEXECUTE operation exposed by the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to return the next value of an Oracle SEQUENCE. This value is then written to the EMPLOYEE_ID field in the Insert record. This pattern enables you to insert rows into databases that have an auto-generated primary key value. For more information about invoking the SQLEXECUTE operation over a channel, see [Run a SQLEXECUTE Operation by Using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md).  
+ This example shows how to perform an Insert operation on an Oracle table over a channel. The code uses the SQLEXECUTE operation exposed by the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] to return the next value of an Oracle SEQUENCE. This value is then written to the EMPLOYEE_ID field in the Insert record. This pattern enables you to insert rows into databases that have an auto-generated primary key value. For more information about invoking the SQLEXECUTE operation over a channel, see [Run a SQLEXECUTE Operation by Using the WCF Channel Model](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md).  
   
 ```  
 using System;  

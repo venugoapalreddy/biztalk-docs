@@ -15,17 +15,17 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using a PeopleSoft System
-The PeopleSoft system is accessible from a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the PeopleSoft adapter. This adapter is one of a group of eight line-of-business (LOB) adapters shipped by Microsoft for use with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+The PeopleSoft system is accessible from a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system by using the PeopleSoft adapter. This adapter is one of a group of eight line-of-business (LOB) adapters shipped by Microsoft for use with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
- The PeopleSoft lab work is divided into two parts. This first lab (Lab 1) allows you to use the PeopleSoft system without needing [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any Microsoft products (except perhaps Internet Explorer, but you can use any browser). In this lab, you will connect to the PeopleSoft system to locate and modify a simple data record.  
+ The PeopleSoft lab work is divided into two parts. This first lab (Lab 1) allows you to use the PeopleSoft system without needing [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any Microsoft products (except perhaps Internet Explorer, but you can use any browser). In this lab, you will connect to the PeopleSoft system to locate and modify a simple data record.  
   
  In the second lab (Lab 2), you will create a BizTalk project and orchestration. After you create the application, you will deploy it and use it to connect to a PeopleSoft system by using the PeopleSoft adapter. The goal is to access data through the BizTalk application by using the adapter.  
   
 ## Prerequisites  
- To perform the procedures for this lab, you need a browser and an Internet connection, along with a user account on a PeopleSoft system. You need to know the location to browse to for gaining Web access to your PeopleSoft system. You do not need [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any other Microsoft technologies.  
+ To perform the procedures for this lab, you need a browser and an Internet connection, along with a user account on a PeopleSoft system. You need to know the location to browse to for gaining Web access to your PeopleSoft system. You do not need [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] or any other Microsoft technologies.  
   
 ## Lab 1 - Using a PeopleSoft System  
- In this lab, you will use the PeopleSoft system without using any components of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The goal is to test your connectivity to PeopleSoft to ensure that the second lab will work correctly. Initially you connect to the PeopleSoft system through its Web interface that allows you to log on by using a browser such as Internet Explorer.  
+ In this lab, you will use the PeopleSoft system without using any components of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. The goal is to test your connectivity to PeopleSoft to ensure that the second lab will work correctly. Initially you connect to the PeopleSoft system through its Web interface that allows you to log on by using a browser such as Internet Explorer.  
   
 ## Procedures for Lab 1 - Using a PeopleSoft System  
   

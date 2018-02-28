@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Monitoring BizTalk Server
-This section describes essential tasks for monitoring BizTalk applications and infrastructure. Monitoring [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on a regular basis and resolving any issues that you find helps to keep your BizTalk applications accessible. The goal of monitoring is to minimize the amount of time that an issue goes undetected and therefore, unresolved. Additionally, you can use monitoring to help detect situations that might cause an issue.  
+This section describes essential tasks for monitoring BizTalk applications and infrastructure. Monitoring [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] on a regular basis and resolving any issues that you find helps to keep your BizTalk applications accessible. The goal of monitoring is to minimize the amount of time that an issue goes undetected and therefore, unresolved. Additionally, you can use monitoring to help detect situations that might cause an issue.  
   
 ## In This Section  
   

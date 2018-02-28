@@ -31,7 +31,7 @@ SAFEARRAY contactInfo
   
 Sub GetApplications(  
 applications As String,  
-descriptions As String,   
+descriptions As String,   
 contactInfo As String  
 )  
 ```  
@@ -71,7 +71,7 @@ contactInfo As String
 |E_INVALIDARG|An invalid parameter was detected.|  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapper Interface (COM)](../esso/issomapper-interface-com.md)   

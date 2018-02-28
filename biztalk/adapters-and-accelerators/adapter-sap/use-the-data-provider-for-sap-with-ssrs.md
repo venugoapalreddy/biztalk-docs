@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Use the Data Provider for SAP with SSRS
-You can use the [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] along with SQL Server Reporting Services (SSRS) to create reports based on SAP data. For more information about SSRS, see [http://go.microsoft.com/fwlink/?LinkId=125922](http://go.microsoft.com/fwlink/?LinkId=125922).  
+You can use the [!INCLUDE [adoprovidersaplong](../../includes/adoprovidersaplong-md.md)] along with SQL Server Reporting Services (SSRS) to create reports based on SAP data. For more information about SSRS, see [http://go.microsoft.com/fwlink/?LinkId=125922](http://go.microsoft.com/fwlink/?LinkId=125922).  
   
- To create reports based on SAP data, you must use [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to create a Report Server project and use the [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] to extract data from an SAP system.  
+ To create reports based on SAP data, you must use [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to create a Report Server project and use the [!INCLUDE [adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] to extract data from an SAP system.  
   
  The topics in this section provide information about how to create a Report Server project to generate reports based on SAP data.  
   

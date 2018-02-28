@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using the PIP Specification to Create a Process Configuration
-After you download a Partner Interface Process (PIP) from the RosettaNet organization (from RosettaNet.org), the download package includes a PIP specification document. This document contains guidance on what settings to use when you create a process configuration in the [!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Management Console.  
+After you download a Partner Interface Process (PIP) from the RosettaNet organization (from RosettaNet.org), the download package includes a PIP specification document. This document contains guidance on what settings to use when you create a process configuration in the [!INCLUDE [btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)] Management Console.  
   
 ## How PIP Settings Map to the PIP Specification  
  The following table describes how PIP settings map to information in the RosettaNet PIP specification.  

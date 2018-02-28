@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Optimizing Performance
-If more than one [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer is currently in use, you can evaluate the demand and performance on the servers in order to obtain a benchmark, and to estimate hardware requirements for future growth. The two primary tools for this kind of evaluation are the [System Monitor](../core/system-monitor1.md), which is part of Windows, and the [Host Integration Server Status](../core/host-integration-server-status1.md) available through the SNA manager.  
+If more than one [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer is currently in use, you can evaluate the demand and performance on the servers in order to obtain a benchmark, and to estimate hardware requirements for future growth. The two primary tools for this kind of evaluation are the [System Monitor](../core/system-monitor1.md), which is part of Windows, and the [Host Integration Server Status](../core/host-integration-server-status1.md) available through the SNA manager.  
   
  System Monitor is a graphical tool included in Windows. The System Monitor allows you to collect performance data on your computer or on other computers in the network. For detailed instructions for using System Monitor, see the Windows documentation.  
   

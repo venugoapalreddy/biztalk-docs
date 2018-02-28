@@ -17,7 +17,7 @@ manager: "anneta"
 # Property Schemas
 
 ## Promoted properties
-In Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], promoted properties enable various BizTalk Server components to access key items of data, known in this context as distinguished fields and property fields that arrive within an instance message without needing to know how to look for them within the message itself. For different types of messages, you can determine which items of data require promotion to a more visible level. Depending on how you choose to promote such fields, you may need to create and define an associated property schema.  
+In Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], promoted properties enable various BizTalk Server components to access key items of data, known in this context as distinguished fields and property fields that arrive within an instance message without needing to know how to look for them within the message itself. For different types of messages, you can determine which items of data require promotion to a more visible level. Depending on how you choose to promote such fields, you may need to create and define an associated property schema.  
   
 > [!NOTE]
 >  Promoted properties are restricted to non-repeating elements/attributes.  
@@ -55,7 +55,7 @@ In Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkserverno
   
  When the **propSchFieldBase** attribute is set to **MessageDataPropertyBase**, it means that the value of the promoted property corresponds to data in the message, such as the value of some field. When the **propSchFieldBase** attribute is set to **MessageContextPropertyBase**, it means that the value of the promoted property may be from somewhere else, such as an envelope, or that it may be set by a pipeline component.  
   
- **Field Element** nodes in property schemas also have a property called **Sensitive Information**, which when set to **Yes**, will keep the corresponding value from being visible from within BizTalk Explorer and message event and service instance tracking, thereby preserving its sensitive nature.  See **Sensitive Information** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)] for more details.
+ <strong>Field Element</strong> nodes in property schemas also have a property called <strong>Sensitive Information</strong>, which when set to <strong>Yes</strong>, will keep the corresponding value from being visible from within BizTalk Explorer and message event and service instance tracking, thereby preserving its sensitive nature.  See <strong>Sensitive Information</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)] for more details.
   
  The following XML Schema definition (XSD) language representation of a property schema contains an annotation associated with the schema element that identifies this schema as a property schema (schema_type="property"). It also contains three **Field Element** nodes below the **Schema** node. The first **Field Element** node, named PromProp1, does not have a value defined for its **Property Schema Base** property, but the latter two **Field Element** nodes have that property set to **MessageDataPropertyBase** and **MessageContextPropertyBase**, respectively.  
   

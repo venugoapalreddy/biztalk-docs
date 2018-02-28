@@ -18,20 +18,20 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshooting Acknowledgments
-Addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] acknowledgments.  
+Addresses issues related to [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] acknowledgments.  
   
 ## Acknowledgments are not generated  
  There are several potential causes for acknowledgments (ACKs) not being generated or received. Review the following list of potential problems.  
   
 ### Symptom  
- Acknowledgments are not generated when you update party information in [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer to generate acknowledgments.  
+ Acknowledgments are not generated when you update party information in [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] Configuration Explorer to generate acknowledgments.  
   
-**Possible cause** : [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] caches and refreshes party configuration information every 15 minutes.  
+<strong>Possible cause</strong> : [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] caches and refreshes party configuration information every 15 minutes.  
   
-**Resolution** : Wait for at least 15 minutes for the cache to refresh, or restart [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for changes to take effect immediately.  
+<strong>Resolution</strong> : Wait for at least 15 minutes for the cache to refresh, or restart [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] for changes to take effect immediately.  
   
 ### Symptom  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] does not generate ACKs and event errors appear in the event log.  
+ [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] does not generate ACKs and event errors appear in the event log.  
   
 **Possible cause** : An ACK cannot be generated when a batch in/batch out message contains an empty FHS11 field.  
   
@@ -40,14 +40,14 @@ Addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes
 ### Symptom  
  Your application cannot generate or receive an ACK.  
   
-**Possible cause** : Incorrect information in the MSH3 field of your message prevents [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] from sending the message ACKs.  
+<strong>Possible cause</strong> : Incorrect information in the MSH3 field of your message prevents [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] from sending the message ACKs.  
   
 **Resolution** : Ensure that your messages have a correctly formatted and populated MSH3 field.  
   
 ## Acknowledgments are suspended or not routed to the send party  
   
 ### Symptom  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] sends messages to a two-way adapter without generating acknowledgments.  
+ [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] sends messages to a two-way adapter without generating acknowledgments.  
   
 **Possible cause** : The message subscription is not configured correctly.  
   
@@ -58,7 +58,7 @@ Addresses issues related to [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes
 ### Symptom  
  Acknowledgments are suspended with the error message "Delimiter found in the field" when you have configured the party to have encoding characters containing delimiter characters such as @-!$.  
   
-**Possible cause** : The message contains characters such as a period (.) or a hyphen (-). When generating the ACKs, [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] includes "." and "-" for the timestamp value.  
+<strong>Possible cause</strong> : The message contains characters such as a period (.) or a hyphen (-). When generating the ACKs, [!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] includes "." and "-" for the timestamp value.  
   
 **Resolution** : Disable validation in the send pipeline to avoid these errors.  
   

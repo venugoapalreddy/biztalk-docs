@@ -15,11 +15,11 @@ manager: "anneta"
 ---
 # ISSOMapper2.GetApplications2 Method
 The GetApplications2 method retrieves the available applications for a Microsoft Windows user.  
-  
+
 ## Syntax  
-  
+
 ```vb  
-  
+
 Sub GetApplications2(  
 applications As String,   
 descriptions As String,   
@@ -29,9 +29,9 @@ adminAccounts As String,
 flags As Long  
 );  
 ```  
-  
+
 ```csharp  
-  
+
 HRESULT GetApplications2(  
 SAFEARRAY applications,   
 SAFEARRAY descriptions,   
@@ -41,9 +41,9 @@ SAFEARRAY adminAccounts,
 SAFEARRAY flags  
 );  
 ```  
-  
+
 #### Parameters  
-  
+
 |Parameter|Description|  
 |---------------|-----------------|  
 |`applications`|String array that returns the application name.|  
@@ -52,19 +52,21 @@ SAFEARRAY flags
 |`userAccounts`|String array that returns all user accounts for the application. GetApplications2 returns a null in this parameter when called by an application user.|  
 |`adminAccounts`|String array that returns all administration accounts for the application. GetApplications2 returns a null in this parameter when called by an application user.|  
 |`flags`|Integer array that returns the flags for the application.|  
-  
+
 ## Property Value/Return Value  
  [C++] This method returns an HRESULT indicating whether it completed successfully. For more details, see the Error Values section.  
-  
+
  [Visual Basic] Not Applicable.  
-  
+
 ## Exceptions  
  [C++] This method returns an HRESULT containing one of the values in the following table.  
-  
+
  [Visual Basic] This method indicates errors by setting the Number property of the global Err object to one of the values in the following table.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|S_OK|The method succeeded.|  
-|E_ACCESSDENIED|Access is denied to the caller.|  
-|E_INVALIDREG|An invalid parameter was detected.|
+
+
+|     Value      |            Description             |
+|----------------|------------------------------------|
+|      S_OK      |       The method succeeded.        |
+| E_ACCESSDENIED |  Access is denied to the caller.   |
+|  E_INVALIDREG  | An invalid parameter was detected. |
+

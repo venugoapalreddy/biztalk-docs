@@ -15,22 +15,22 @@ manager: "anneta"
 ---
 # database
 The database element contains the network settings for managing out-bound SQL client connections.  
-  
+
  \<hostIntegration.drdaAs.drdaService>  
 \<services>  
 \<service>  
-  
+
 ## Syntax  
-  
+
 ```  
-<hostIntegration.drdaAs.drdaService>        <services>                <service>                        <database>                        </database>                </service>        </services></hostIntegration.drdaAs.drdaService>  
+<hostIntegration.drdaAs.drdaService>        <services>                <service>                        <database>                        </database>                </service>        </services></hostIntegration.drdaAs.drdaService>  
 ```  
-  
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
-  
+
 ### Attributes  
-  
+
 |Attribute|Type|Description|Required|Default Value|  
 |---------------|----------|-----------------|--------------|-------------------|  
 |type|xs:string|The database type is the Microsoft.HostIntegration.Drda.RDB.SqlDatabase, which defines the network settings for out-bound SQL client connections.|true|n/a|  
@@ -49,12 +49,13 @@ The database element contains the network settings for managing out-bound SQL cl
 |createPackageProcedureWithExtendedProperties|xs:boolean|The createPackageProcedureWithExtendedProperties attribute instructs the DRDA Service to preserve the BGNBND package bind options as extended properties on the SQL Server stored procedure. This optional attribute accepts a Boolean value. The default value is false.|false|false|  
 |packageProcedureCacheFlush|xs:duration|The packageProcedureCacheFlush attribute instructs the DRDA Server to flush the package procedure cache after a specified interval of time. This optional attribute accepts a duration value. The default value is P1D (Period of Time is 1 Day). The duration value is specified in the form PnYnMnDTnHnMnS.|false|P1D|  
 |packageProcedureLastInvoke|xs:duration|The packageProcedureLastInvoke attribute instructs the DRDA Server to write the names of objects in the package procedure cache to a text file, %DRDAROOT%\LastInvokePackageProcedures.txt, after a specified interval of time. This optional attribute accepts a duration value. The default value is P7D (Period of Time is 7 Days). At service startup, the DRDA Service will load this text file to pre-fetch schema for procedures listed in the file. The duration value is specified in the form PnYnMnDTnHnMnS.|false|P7D|  
-  
+
 ### Child Elements  
  None  
-  
+
 ### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-||The service element defines the configuration for the DrdaService1 service.|
+
+| Element |                                 Description                                 |
+|---------|-----------------------------------------------------------------------------|
+|         | The service element defines the configuration for the DrdaService1 service. |
+

@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Deploy BAM Definitions
-Administrators use the **deploy-all** BAM Management utility command to deploy a BAM definition from the Excel workbook or the XML definitions file exported from the workbook. When you perform a complete installation of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], the Configuration Wizard automatically configures the BAM Configuration XML.  
+Administrators use the <strong>deploy-all</strong> BAM Management utility command to deploy a BAM definition from the Excel workbook or the XML definitions file exported from the workbook. When you perform a complete installation of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], the Configuration Wizard automatically configures the BAM Configuration XML.  
   
 > [!NOTE]
 >  If multiple users are working with the BAM Add-In for Excel, we recommend that they have the same version of Microsoft Data Access Components (MDAC). Otherwise, compatibility issues may arise. Specifically, if you create a template on a computer with a newer version of MDAC and then attempt to open it on a computer with an older version of MDAC, a compiler error will occur.  

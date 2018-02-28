@@ -27,7 +27,7 @@ If you backed up your BAMAnalysis and BAMStarSchema databases, in the event of a
  To restore the BAM Analysis Server or BAMStarSchema databases, perform the steps in [How to Restore Your Databases](../core/how-to-restore-your-databases.md). In addition, you must update the BAM Data Transformation Services (DTS) packages with the new server name and database name.  
   
 ## Prerequisites  
- You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group to perform this procedure.  
+ You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group to perform this procedure.  
   
 ### To update references to the BAM Analysis Server and BAM Star Schema database name (SQL Server 2008 R2/SP1)  
   

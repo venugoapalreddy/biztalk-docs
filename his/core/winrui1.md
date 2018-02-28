@@ -20,7 +20,7 @@ The **WinRUI** function provides asynchronous message notification for all Micro
   
 ```  
   
-int WINAPI WinRUI(   
+int WINAPI WinRUI(   
 HWND hWnd,    
 LUA_VERB_RECORD FAR *lpVCB  
 );  

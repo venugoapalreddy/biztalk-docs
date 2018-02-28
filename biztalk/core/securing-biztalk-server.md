@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Securing BizTalk Server
-This section provides information about managing security, configuring user rights, and implementing Enterprise Single Sign-On in Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This section provides information about managing security, configuring user rights, and implementing Enterprise Single Sign-On in Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  Fore more information about secure deployment of BizTalk Server, see [Securing Your BizTalk Server Deployment](../install-and-config-guides/securing-your-biztalk-server-deployment.md).  
   

@@ -18,9 +18,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # WCF Adapter Walkthroughs
-The walkthroughs in this section will help you learn how to use the WCF adapters in  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. These walkthroughs provide step-by-step instructions for performing a task by using the WCF adapters, or for using a feature of the adapters.  
+The walkthroughs in this section will help you learn how to use the WCF adapters in  [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. These walkthroughs provide step-by-step instructions for performing a task by using the WCF adapters, or for using a feature of the adapters.  
   
- You can download the walkthroughs as a part of the entire [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] Adapter Walkthrough package by using the file WCFAdapterWalkthroughs.exe.  This file is available for download at [http://go.microsoft.com/fwlink/?LinkId=146121](http://go.microsoft.com/fwlink/?LinkId=146121). For additional code samples, go to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Developer Center at [http://go.microsoft.com/fwlink/?LinkId=194140](http://go.microsoft.com/fwlink/?LinkId=194140).  
+ You can download the walkthroughs as a part of the entire [!INCLUDE [nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] Adapter Walkthrough package by using the file WCFAdapterWalkthroughs.exe.  This file is available for download at [http://go.microsoft.com/fwlink/?LinkId=146121](http://go.microsoft.com/fwlink/?LinkId=146121). For additional code samples, go to the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Developer Center at [http://go.microsoft.com/fwlink/?LinkId=194140](http://go.microsoft.com/fwlink/?LinkId=194140).  
   
 ## In This Section  
   

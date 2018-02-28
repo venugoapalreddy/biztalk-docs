@@ -15,18 +15,18 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Read the installation known issues
-[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] have known issues listed in the following sections.  
+[!INCLUDE [swift_adapter](../../includes/swift-adapter-md.md)] have known issues listed in the following sections.  
   
 ## SWIFT Does Not Support Stress Testing on Integration Test Bed (ITB) and SWIFTNet Stub Environment  
  The ITB does not provide Service Level Agreement (SLA) in terms of throughput, and cannot guarantee that data is completely transmitted or consistent. You should stress test your implementation on the production network in the Pilot environment.  
   
  Additionally, you must ensure that all of the nodes (server, lines, and bandwidth) are properly configured to avoid any data loss. Following are typical sample throughputs:  
   
--   Interact/Fileact Send under stressed computer: 20 messages/minute  
+- Interact/Fileact Send under stressed computer: 20 messages/minute  
   
--   Interact/Fileact Receive under stressed computer: 300-400 messages/minute  
+- Interact/Fileact Receive under stressed computer: 300-400 messages/minute  
   
- For more information, see your SWIFT documentation.  
+  For more information, see your SWIFT documentation.  
   
 ## Messages Not Pushed When Queue Is Open  
  When you are using InterAct or FileAct Store and Forward (SnF) mode, if the session with the queue is open and messages are not being pushed, then you must restart SNLreceiver.exe. This avoids an issue with SWIFT that can occur occasionally.  

@@ -20,7 +20,7 @@ The **LoadStringResource** function is used to load a string from a string resou
   
 ```  
   
-          void LoadStringResource (   
+          void LoadStringResource (   
 DWORDdStringResource,  
 LPSTRpszString);  
 ```  

@@ -27,11 +27,11 @@ A Trading Partner Agreement (TPA) is defined as a definitive and binding agreeme
 ## Bi-directional agreements  
  Each agreement between two business profiles is bi-directional. For example, the agreement between “Shipping” and “Invoice” business profiles will contain properties to process messages:  
   
--   Received by “Shipping” profile from “Invoice” profile, and  
+- Received by “Shipping” profile from “Invoice” profile, and  
   
--   Sent by “Shipping” profile to “Invoice” profile  
+- Sent by “Shipping” profile to “Invoice” profile  
   
- In simpler terms, a bi-directional agreement is a collection of two one-way agreements. One one-way agreement can be considered as a collection of properties that define how message transaction happens from party A to party B. The other one-way agreement can be considered as a collection of properties that define how message transaction happens from party B to party A.  
+  In simpler terms, a bi-directional agreement is a collection of two one-way agreements. One one-way agreement can be considered as a collection of properties that define how message transaction happens from party A to party B. The other one-way agreement can be considered as a collection of properties that define how message transaction happens from party B to party A.  
   
 ## Considerations when defining an agreement  
  You must consider the following points while creating a Trading Partner Agreement:  
@@ -43,9 +43,9 @@ A Trading Partner Agreement (TPA) is defined as a definitive and binding agreeme
 -   The encoding agreement for X12 and EDIFACT messages and transport agreement (for AS2) cannot be part of one agreement. You must create separate agreements for both.  
   
 ## Global or fallback agreement  
- Certain business organizations may choose to have a singular set of B2B processing mechanism without differentiating on the partners involved in specific B2B messaging. In effect, such business organizations have just one common B2B protocol setting that is shared with all other trading partners. Also, because such organizations do not need to have specific settings for specific partners, the B2B protocol settings are defined for the trading partner itself and not for a trading business profile. In [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)], such business organizations are reflected as **Global Trading Partners**. Other businesses that need to trade with a business represented as a global trading partner use agreements with the global trading partner that are called **Global Trading Partner Agreement**. These agreements conform to the message encoding and protocol settings defined for the global trading partner.  
+ Certain business organizations may choose to have a singular set of B2B processing mechanism without differentiating on the partners involved in specific B2B messaging. In effect, such business organizations have just one common B2B protocol setting that is shared with all other trading partners. Also, because such organizations do not need to have specific settings for specific partners, the B2B protocol settings are defined for the trading partner itself and not for a trading business profile. In [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)], such business organizations are reflected as <strong>Global Trading Partners</strong>. Other businesses that need to trade with a business represented as a global trading partner use agreements with the global trading partner that are called <strong>Global Trading Partner Agreement</strong>. These agreements conform to the message encoding and protocol settings defined for the global trading partner.  
   
- The settings defined at the global level can also be useful in scenarios when the profile-specific protocol settings between two trading partners do not formulate a trading partner agreement. In this scenario, the organization hosting [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] can use the protocol settings defined for the partner to formulate an agreement with another trading business profile. In such cases, the agreement arrived at using the global protocol settings defined for the partner is called the **Fallback Trading Partner Agreement**.  
+ The settings defined at the global level can also be useful in scenarios when the profile-specific protocol settings between two trading partners do not formulate a trading partner agreement. In this scenario, the organization hosting [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] can use the protocol settings defined for the partner to formulate an agreement with another trading business profile. In such cases, the agreement arrived at using the global protocol settings defined for the partner is called the <strong>Fallback Trading Partner Agreement</strong>.  
 
 ## Learn next
 

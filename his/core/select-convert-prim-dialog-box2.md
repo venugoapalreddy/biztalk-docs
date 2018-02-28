@@ -17,7 +17,9 @@ manager: "anneta"
 ---
 # Select Convert Prim Dialog Box
 Use the **Select Convert Prim** dialog box to provide a Convert PrimEx class that is missing from your server library.  
-  
-|Use this|To do this|  
-|--------------|----------------|  
-|**Convert prim class**|Select the conversion class to use with the host environment (HE). The available classes are:<br /><br /> -   **Transaction Integrator - ConvertPrim for OS390** (default)<br />-   **Transaction Integrator - ConvertPrim for AS400**|
+
+
+|              Use this               |                                                                                                                            To do this                                                                                                                            |
+|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Convert prim class</strong> | Select the conversion class to use with the host environment (HE). The available classes are:<br /><br /> -   <strong>Transaction Integrator - ConvertPrim for OS390</strong> (default)<br />-   <strong>Transaction Integrator - ConvertPrim for AS400</strong> |
+

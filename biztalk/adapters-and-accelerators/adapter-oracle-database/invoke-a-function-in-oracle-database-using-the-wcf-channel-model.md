@@ -23,7 +23,7 @@ manager: "anneta"
 This section demonstrates how to execute a function in an Oracle database using the channel created in [Create a Channel using Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md).  
   
 ## Executing a Function Using the Channel  
- You can execute a function on an Oracle database by passing an XML message to [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]. The input XML resembles the following:  
+ You can execute a function on an Oracle database by passing an XML message to [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)]. The input XML resembles the following:  
   
 ```  
 <CREATE_ACCOUNT xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG" xmlns:ns0="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG/CREATE_ACCOUNT">  

@@ -48,7 +48,7 @@ Sub Delete()
  After the mapping has been deleted, the mapping object can no longer be used and should be released.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOMapping Interface (COM)](../esso/issomapping-interface-com.md)   

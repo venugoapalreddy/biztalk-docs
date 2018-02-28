@@ -36,11 +36,11 @@ The Enlist Orchestration sample demonstrates how to enlist a BizTalk Server orch
 ## Where to Find This Sample  
  The samples are located in the following SDK locations:  
   
--   VBScript version: \<*Samples Path*\>\Admin\WMI\Enlist Orchestration\VBScript\  
+- VBScript version: \<*Samples Path*\>\Admin\WMI\Enlist Orchestration\VBScript\  
   
--   Visusal C# version: \<*Samples Path*\>\Admin\WMI\Enlist Orchestration\CSharp\  
+- Visusal C# version: \<*Samples Path*\>\Admin\WMI\Enlist Orchestration\CSharp\  
   
- The following table shows the files in this sample and describes their purpose.  
+  The following table shows the files in this sample and describes their purpose.  
   
 |File(s)|Description|  
 |---------------|-----------------|  
@@ -52,9 +52,9 @@ The Enlist Orchestration sample demonstrates how to enlist a BizTalk Server orch
   
 #### To build the Visual C# version of the Enlist Orchestration sample  
   
-1.  In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file BTSampleEnlistOrc.sln.  
+1. In [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file BTSampleEnlistOrc.sln.  
   
-2.  In the **Build** menu, click **Build Solution**.  
+2. In the **Build** menu, click **Build Solution**.  
   
 #### To run the Enlist Orchestration sample.  
   
@@ -85,7 +85,7 @@ The Enlist Orchestration sample demonstrates how to enlist a BizTalk Server orch
         ```  
   
 ## Comments  
- All tasks that you can perform in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console can also be performed by using script that accesses the Windows WMI object model and by using Visual C# that accesses the **System.Management** objects provided by the .NET Framework.  
+ All tasks that you can perform in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console can also be performed by using script that accesses the Windows WMI object model and by using Visual C# that accesses the <strong>System.Management</strong> objects provided by the .NET Framework.  
   
  The script file EnlistOrch.vbs and the Visual C# source file EnlistOrc.cs contain detailed comments with further explanation about the operations that they perform. For more information, see Windows Management Instrumentation at [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102).  
   

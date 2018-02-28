@@ -15,10 +15,11 @@ manager: "anneta"
 ---
 # ISSOConfigOM Members
 The following table shows the **ISSOConfigOM** members.  
-  
+
 ## Public Methods  
-  
-|Method|Description|  
-|------------|-----------------|  
-|[ISSOConfigOM.DiscoverServer Method](../esso/issoconfigom-discoverserver-method.md)|Discovers the currently-available servers.|  
-|[ISSOConfigOM.GetServerStatus](../esso/issoconfigom-getserverstatus.md)|Describes the status of the current server.|
+
+|                                       Method                                        |                 Description                 |
+|-------------------------------------------------------------------------------------|---------------------------------------------|
+| [ISSOConfigOM.DiscoverServer Method](../esso/issoconfigom-discoverserver-method.md) | Discovers the currently-available servers.  |
+|       [ISSOConfigOM.GetServerStatus](../esso/issoconfigom-getserverstatus.md)       | Describes the status of the current server. |
+

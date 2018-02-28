@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Linkcfg Reference
-Allows you to install and delete link services from the command prompt. Linkcfg allows you to build script files to add link services. If you need to uninstall or reinstall [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], you can reinstall link services by running the Linkcfg script files.  
+Allows you to install and delete link services from the command prompt. Linkcfg allows you to build script files to add link services. If you need to uninstall or reinstall [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], you can reinstall link services by running the Linkcfg script files.  
   
  To view the list of link services you can install using Linkcfg, type the command linkcfg. The following appears:  
   

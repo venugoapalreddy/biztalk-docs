@@ -20,7 +20,7 @@ The **PrtFilterAlloc** function is called to obtain a data buffer from the user 
   
 ```  
   
-            void * WINAPI PrtFilterAlloc(   
+            void * WINAPI PrtFilterAlloc(   
   DWORD BufLen    
 );  
 ```  

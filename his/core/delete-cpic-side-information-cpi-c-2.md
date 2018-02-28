@@ -20,7 +20,7 @@ The **Delete_CPIC_Side_Information** call (function name **xcmdsi**) deletes an 
   
 ```  
   
-CM_ENTRY Delete_CPIC_Side_Information(   
+CM_ENTRY Delete_CPIC_Side_Information(   
   unsigned char FAR *key_lock,         
     unsigned char FAR *sym_dest_name,    
     CM_INT32 FAR *return_code            

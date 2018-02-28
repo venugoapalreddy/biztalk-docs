@@ -20,7 +20,7 @@ The **bStopService** function is used to stop a service running on a computer fo
   
 ```  
   
-          BOOL bStopService(   
+          BOOL bStopService(   
 LPSTRszServiceName,  
 LPSTRszComputerName);  
 ```  

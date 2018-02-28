@@ -24,7 +24,7 @@ This topic describes known issues with XML Tools in BizTalk Server.
  When an instance is generated from a schema, and the enumeration values for a data element in the schema do not meet the length requirement, the instance may be generated with a data element that will subsequently fail XSD validation because of the length requirement. Schema validation will not check whether a value in the generated instance that was pulled from an enum list in the schema fulfills the min/max length requirement.  
   
 ## Validate Schema may not detect an invalid transaction set ID code  
- When you validate a schema with the Validate Schema command in the Solution Explorer window of [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], the check of the root node may not detect an invalid transaction set ID code in the last part of the root-reference node (in the format X12_\<VersionRelease\>_TSID). If the TSID in the root-reference node of the schema is invalid, but it is the same as the TSID in the enumeration node of the ST01 element in the schema, the Validate Schema operation will not detect that the TSID is invalid.  
+ When you validate a schema with the Validate Schema command in the Solution Explorer window of [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], the check of the root node may not detect an invalid transaction set ID code in the last part of the root-reference node (in the format X12_\<VersionRelease\>_TSID). If the TSID in the root-reference node of the schema is invalid, but it is the same as the TSID in the enumeration node of the ST01 element in the schema, the Validate Schema operation will not detect that the TSID is invalid.  
   
 ## Visual Studio must be restarted to make an enum change in a schema effective for instance validation  
  If you change an enumeration list in a schema, save the schema, and then run instance validation, BizTalk Server will perform validation based upon the previous version of the schema, not the latest version. BizTalk Server will not use the latest version of the schema until you restart Visual Studio.  
@@ -44,7 +44,7 @@ This topic describes known issues with XML Tools in BizTalk Server.
  If you use the Instance Generation command to generate an XML instance from a 278 HIPAA schema, and then use the Instance Validation command to validate that instance, BizTalk Server will post an error.  
   
 ## A native instance generated from a 837 schema incorrectly sets GS08  
- When generating a native instance using a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution that contains the X12_BatchSchema as well as an 837I, 837D or 837P schema, the value of GS08 will contain 00401. Before processing this instance, you must change the value of GS08 to the correct value for the schema instance.  The following table contains the correct GS08 value for each 837 schema:  
+ When generating a native instance using a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] solution that contains the X12_BatchSchema as well as an 837I, 837D or 837P schema, the value of GS08 will contain 00401. Before processing this instance, you must change the value of GS08 to the correct value for the schema instance.  The following table contains the correct GS08 value for each 837 schema:  
   
 |HIPAA Schema|GS08 Value|  
 |------------------|----------------|  

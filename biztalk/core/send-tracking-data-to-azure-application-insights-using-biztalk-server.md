@@ -17,9 +17,12 @@ manager: "anneta"
 ---
 # Send BizTalk tracking data to Azure Application Insights or Event Hubs
 
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] [!INCLUDE[featurepack1](../includes/featurepack1.md)]**, you can process and send your tracking data to Azure Application Insights. 
-  		  
-**Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] Feature Pack 2**:
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/send-tracking-data-to-azure-application-insights-using-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --> <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[featurepack1](../includes/featurepack1.md)]: Path(D:/a/1/s/target_repo/biztalk/core/send-tracking-data-to-azure-application-insights-using-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[featurepack1](../includes/featurepack1.md)]<!--END ERROR INCLUDE --></strong>, you can process and send your tracking data to Azure Application Insights. 
+
+<strong>Starting with <!-- BEGIN ERROR INCLUDE: Unable to resolve [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]: Path(D:/a/1/s/target_repo/biztalk/core/send-tracking-data-to-azure-application-insights-using-biztalk-server.md) contains invalid char.
+Parameter name: path -->[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]<!--END ERROR INCLUDE --> Feature Pack 2</strong>:
 
 * Application Insights supports SQL default instances, and SQL named instances
 * You can process and send tracking data to Azure Event Hubs
@@ -29,7 +32,7 @@ Use these Azure services to track your instances from receive ports, send ports,
 ## Prerequisites
 * Create a new instance of [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-create-new-resource). BizTalk Server uses the **Instrumentation Key** to authenticate.
 * Create an [Azure Event Hubs namespace and event hub](https://docs.microsoft.com/azure/event-hubs/event-hubs-create). BizTalk Server uses the SAS (namespace-level) or event hub-level policy to authenticate.
-* Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
+* Install [Feature Pack 2](https://aka.ms/bts2016fp2) on your [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 
 ## Enable analytics for your environment
 
@@ -52,13 +55,13 @@ Use these Azure services to track your instances from receive ports, send ports,
 
 5. Select **OK** to save your changes. 
 
-Once enabled, [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] is ready to transmit data to your Azure resource. Next, enable analytics on your ports and orchestrations. 
+Once enabled, [!INCLUDE [btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] is ready to transmit data to your Azure resource. Next, enable analytics on your ports and orchestrations. 
 
 ## Enable analytics on your artifacts
 
 1. In BizTalk Server Administration, right-click a **receive port**, **send port** or **orchestration**, and select **Tracking**.
 2. Under **Analytics**, check **Enable Analytics**, similar to the following. This setting starts tracking and transmitting data from the artifact to your Azure resource.
-    
+
     ![Tracking data for Orchestration](../core/media/orchestrationsettingsapplicationinsight.PNG)
 
 3. Select **OK** to save your changes.
@@ -102,6 +105,6 @@ Some possible resolutions:
     2. Create a new host named **Tracking**, and check **Allow Host Tracking**. Create a host instance, and start it.
 
 Now, query the BizTalkMsgBoxDb TrackingData_2_x tables again. If the tables are empty, then the data was moved, and should start displaying in Application Insights.
-    
+
 ## See also
  [Install & configure the Feature Pack](../core/configure-the-feature-pack.md)

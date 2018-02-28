@@ -15,10 +15,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configure dynamic ports in the SQL adapter
-In [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you can configure dynamic ports for a [!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]. Because the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] is a WCF-based adapter, you can dynamically configure a port for the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] by using message context properties.  
+In [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], you can configure dynamic ports for a [!INCLUDE [wcfadapter_short](../../includes/wcfadapter-short-md.md)]. Because the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] is a WCF-based adapter, you can dynamically configure a port for the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] by using message context properties.  
 
 ## Use an expression shape  
- For the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], the URI, action, and binding may be determined from a property on an incoming message, and then specified in the **Expression** shape, as shown in the following example:  
+ For the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)], the URI, action, and binding may be determined from a property on an incoming message, and then specified in the <strong>Expression</strong> shape, as shown in the following example:  
   
 ```  
 Request2=Request1;  
@@ -32,17 +32,17 @@ SendPort(Microsoft.XLANGs.BaseTypes.TransportType)="WCF-Custom";
 ```  
   
 > [!NOTE]
->  If you are using a WCF-SQL adapter in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you can also specify the transport type as `SendPort(Microsoft.XLANGs.BaseTypes.TransportType)="SQLAdapter"`, where **SQLAdapter** is the name with which you added the WCF-SQL adapter in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.  
+>  If you are using a WCF-SQL adapter in [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you can also specify the transport type as `SendPort(Microsoft.XLANGs.BaseTypes.TransportType)="SQLAdapter"`, where <strong>SQLAdapter</strong> is the name with which you added the WCF-SQL adapter in [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console.  
   
  In the preceding example,  
   
--   Request2 message is being created from Request1 message. Both messages map to an operation schema, which is generated using the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].  
+- Request2 message is being created from Request1 message. Both messages map to an operation schema, which is generated using the [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)].  
   
--   SendPort is the name of the logical send port in the BizTalk orchestration.  
+- SendPort is the name of the logical send port in the BizTalk orchestration.  
   
- The **Expression** shape is part of the BizTalk orchestration. Deploying the orchestration also creates a WCF-Custom send port.  
+  The **Expression** shape is part of the BizTalk orchestration. Deploying the orchestration also creates a WCF-Custom send port.  
   
- For more information about configuring dynamic ports, see [Configuring Dynamic Send Ports Using WCF Adapters Context Properties](../../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md).
+  For more information about configuring dynamic ports, see [Configuring Dynamic Send Ports Using WCF Adapters Context Properties](../../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md).
   
 ## See Also  
 [Building blocks to develop BizTalk applications with the SQL adapter](../../adapters-and-accelerators/adapter-sql/building-blocks-to-develop-biztalk-applications-with-the-sql-adapter.md)

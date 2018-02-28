@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # SQL Adapter Tutorials
-The first of the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] tutorials contains detailed instructions on how to migrate BizTalk projects created using the previous version of the SQL adapter to use the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]. The other [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] contains, scenario-based, step-by-step instructions on performing operations on SQL Server using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
+The first of the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] tutorials contains detailed instructions on how to migrate BizTalk projects created using the previous version of the SQL adapter to use the WCF-based [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)]. The other [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] contains, scenario-based, step-by-step instructions on performing operations on SQL Server using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)].  
   
- Also, the topics in the [Develop BizTalk applications](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md) section provide detailed instructions on how to use the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
+ Also, the topics in the [Develop BizTalk applications](../../adapters-and-accelerators/adapter-sql/develop-biztalk-applications-using-the-sql-adapter.md) section provide detailed instructions on how to use the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
 ## In This Section  
   

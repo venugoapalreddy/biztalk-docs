@@ -42,10 +42,10 @@ struct Data {
     INTEGER   dfhdr.fhseqno;  
 };   
 struct Data {  
-    PTRBFELT   hdreptr->elteptr   
-    INTEGER    hdreptr->startd   
-    INTEGER    hdreptr->endd   
-    CHAR       hdreptr->trpad;   
+    PTRBFELT   hdreptr->elteptr   
+    INTEGER    hdreptr->startd   
+    INTEGER    hdreptr->endd   
+    CHAR       hdreptr->trpad;   
     CHAR[268]  hdreptr->dataru;  
 };   
 ```  

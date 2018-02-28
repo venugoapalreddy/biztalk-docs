@@ -17,15 +17,15 @@ manager: "anneta"
 # Single Sign-On: Event 10819
 ## Details  
   
-|||  
-|-|-|  
-|Product Name|Enterprise Single Sign-On|  
-|Product Version|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|Event ID|10819|  
-|Event Source|ENTSSO|  
-|Component|N/A|  
-|Symbolic Name|ENTSSO_E_MAPPING_CONFLICT|  
-|Message Text|The external account was not updated because there is a mapping conflict.|  
+|                 |                                                                           |
+|-----------------|---------------------------------------------------------------------------|
+|  Product Name   |                         Enterprise Single Sign-On                         |
+| Product Version |        [!INCLUDE [btsSSOVersion](../includes/btsssoversion-md.md)]        |
+|    Event ID     |                                   10819                                   |
+|  Event Source   |                                  ENTSSO                                   |
+|    Component    |                                    N/A                                    |
+|  Symbolic Name  |                         ENTSSO_E_MAPPING_CONFLICT                         |
+|  Message Text   | The external account was not updated because there is a mapping conflict. |
   
 ## Explanation  
  The external account was not updated because there is a mapping conflict.  
@@ -33,4 +33,4 @@ manager: "anneta"
 ## User Action  
  If this is expected behavior then no action is required, this message is informational only. If mapping conflicts should be allowed then configure the application accordingly.  
   
- For more information on mapping conflicts, see **Password Sync Adapter Properties: Options** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].
+ For more information on mapping conflicts, see <strong>Password Sync Adapter Properties: Options</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].

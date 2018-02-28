@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configure BizTalk Server in a Cluster
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides functionality that allows you to configure a BizTalk host as a clustered resource within a Windows Server Failover cluster. For more information about this functionality, see [Using Windows Server Cluster to Provide High Availability for BizTalk Server Hosts](../core/use-windows-cluster-to-provide-high-availability-for-biztalk-hosts.md).  
+Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides functionality that allows you to configure a BizTalk host as a clustered resource within a Windows Server Failover cluster. For more information about this functionality, see [Using Windows Server Cluster to Provide High Availability for BizTalk Server Hosts](../core/use-windows-cluster-to-provide-high-availability-for-biztalk-hosts.md).  
   
 ## Additional Configuration Topics  
   

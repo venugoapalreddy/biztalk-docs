@@ -18,12 +18,12 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshoot Performance Issues with the SAP adapter
-This section discusses using troubleshooting techniques to resolve performance issues that you might encounter when using [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)].  
+This section discusses using troubleshooting techniques to resolve performance issues that you might encounter when using [!INCLUDE [adaptersap](../../includes/adaptersap-md.md)].  
   
 ##  <a name="BKMK_SAPSlowdown"></a> Slowdown or stall in throughput when using the adapter with BizTalk Server  
  **Problem**  
   
- When using the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the number of messages sent or received by the adapter slows down or comes to a stall.  
+ When using the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)], the number of messages sent or received by the adapter slows down or comes to a stall.  
   
  **Cause**  
   

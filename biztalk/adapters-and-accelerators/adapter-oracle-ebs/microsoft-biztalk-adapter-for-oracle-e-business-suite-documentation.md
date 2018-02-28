@@ -16,7 +16,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Microsoft BizTalk Adapter for Oracle E-Business Suite documentation
-The [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, learn to create applications, and more.  
+The [!INCLUDE [adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] includes a variety of resources to help you understand how the adapter works, how to create applications that use the adapter, describes the different connection options, learn to create applications, and more.  
 
 ## Get started  
 ![Getting started icon](../../adapters-and-accelerators/adapter-oracle-database/media/f397b0c1-6fe1-4247-a868-9efcab4a5f55.gif "f397b0c1-6fe1-4247-a868-9efcab4a5f55")  [Get started](../../adapters-and-accelerators/adapter-oracle-ebs/get-started-with-the-biztalk-adapter-for-oracle-e-business-suite.md) includes information about new features, limitations, prerequisites, and topics for users who are new to the adapter.
@@ -37,4 +37,4 @@ Also includes some [Samples](../../adapters-and-accelerators/adapter-oracle-ebs/
 
 
 ## Troubleshooting
-![Adapter Troubleshooting icon](../../adapters-and-accelerators/adapter-oracle-database/media/383a7392-2eb9-485d-b6a8-0187cd5c709d.gif "383a7392-2eb9-485d-b6a8-0187cd5c709d") [Troubleshooting](../../adapters-and-accelerators/adapter-oracle-ebs/troubleshooting-the-oracle-ebs-adapter.md) shows you how to enable tracing, and provides info on troubleshooting issues with the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] and with the adapter.
+![Adapter Troubleshooting icon](../../adapters-and-accelerators/adapter-oracle-database/media/383a7392-2eb9-485d-b6a8-0187cd5c709d.gif "383a7392-2eb9-485d-b6a8-0187cd5c709d") [Troubleshooting](../../adapters-and-accelerators/adapter-oracle-ebs/troubleshooting-the-oracle-ebs-adapter.md) shows you how to enable tracing, and provides info on troubleshooting issues with the [!INCLUDE [adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] and with the adapter.

@@ -15,10 +15,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Basic SQL Server Data Types
-This topic describes how the [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]surfaces basic SQL Server data types.  
+This topic describes how the [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)]surfaces basic SQL Server data types.  
   
 ## Supported SQL Server Data Types  
- The following table shows how the SQL Server data types are surfaced by the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]:  
+ The following table shows how the SQL Server data types are surfaced by the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)]:  
   
 |SQL Server Data Type|XSD type|.NET type|Comments|  
 |--------------------------|--------------|---------------|--------------|  

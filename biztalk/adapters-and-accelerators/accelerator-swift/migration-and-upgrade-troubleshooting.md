@@ -34,21 +34,21 @@ manager: "anneta"
 ### Solution  
  Manually undeploy the four A4SWIFT assemblies in the following order:  
   
--   Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration  
+- Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration  
   
--   Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas  
+- Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas  
   
--   Microsoft.Solutions.FinancialServices.SWIFT.MrsrService.  
+- Microsoft.Solutions.FinancialServices.SWIFT.MrsrService.  
   
- After you have upgraded, redeploy these assemblies (using **BTSTask.exe**) in the reverse order.  
+  After you have upgraded, redeploy these assemblies (using **BTSTask.exe**) in the reverse order.  
   
 ## An upgrade removes access permissions for the Service folder  
   
 ### Symptom  
- After an upgrade to [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)], the access permission for the %programfiles%\Microsoft BizTalk Accelerator for SWIFT\Service folder is incorrect.  
+ After an upgrade to [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)], the access permission for the %programfiles%\Microsoft BizTalk Accelerator for SWIFT\Service folder is incorrect.  
   
 ### Possible Cause  
- When you upgrade to [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)], the upgrade process removes access permissions for the A4SWIFT Administrators and A4SWIFT Users groups from the %programfiles%\Microsoft BizTalk Accelerator for SWIFT\Service folder.  
+ When you upgrade to [!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)], the upgrade process removes access permissions for the A4SWIFT Administrators and A4SWIFT Users groups from the %programfiles%\Microsoft BizTalk Accelerator for SWIFT\Service folder.  
   
 ### Solution  
  If you encounter this problem, manually set the following access permissions for the Service folder:  
@@ -60,7 +60,7 @@ manager: "anneta"
   
  To set these permissions, proceed as follows:  
   
- In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to *%programfiles%*\Microsoft BizTalk Accelerator for SWIFT\Service.  
+ In [!INCLUDE [btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to <em>%programfiles%</em>\Microsoft BizTalk Accelerator for SWIFT\Service.  
   
 1.  Right-click the Service folder, click **Properties**, and then click the **Security** tab.  
   

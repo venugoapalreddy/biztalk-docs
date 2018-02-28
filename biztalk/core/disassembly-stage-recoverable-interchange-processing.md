@@ -39,13 +39,13 @@ Interchanges are processed at the disassembly stage in two modes:
   
  This interchange contains five messages, all of which the disassembler successfully extracts from the interchange. They are processed as follows:  
   
--   The first, second, and third messages propagate through the pipeline and are ready to be published.  
+- The first, second, and third messages propagate through the pipeline and are ready to be published.  
   
--   The fourth message fails processing at the disassembling stage in the pipeline. This causes all the messages that have already been processed to roll back and the original interchange message to be suspended as resumable.  
+- The fourth message fails processing at the disassembling stage in the pipeline. This causes all the messages that have already been processed to roll back and the original interchange message to be suspended as resumable.  
   
- The result of submission is:  
+  The result of submission is:  
   
--   Nothing is published. The original interchange is suspended because in standard interchange processing, any extracted message that fails at any point during or after interchange processing results in all extracted messages being discarded and the original interchange being placed on the Suspended queue as resumable.  
+- Nothing is published. The original interchange is suspended because in standard interchange processing, any extracted message that fails at any point during or after interchange processing results in all extracted messages being discarded and the original interchange being placed on the Suspended queue as resumable.  
   
 ### Example 2  
  The example uses the same interchange processing and propagation scenario as the previous example, except that the disassembly stage is configured to do recoverable interchange processing.  
@@ -61,7 +61,7 @@ Interchanges are processed at the disassembly stage in two modes:
 -   After all messages are extracted from the interchange, messages 1, 2, 3, and 5 are published into the MessageBox database, and message 4 is placed on the Suspended queue. Message 2 is also redirected to the Suspended queue because of a routing failure due to no matching subscriber.  
   
 ## Configuring Recoverable Interchange Processing  
- Recoverable interchange processing is a property of the disassembler component of a receive pipeline. Not all disassembler components allow you to specify recoverable interchange processing; for example, the native BizTalk Framework disassembler does not. If a disassembler supports recoverable interchange processing, then you specify this behavior in Pipeline Designer within [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] when you add the disassembler component to the Disassemble stage of the pipeline being designed. After you drag the selected disassembler onto the Disassemble stage of the pipeline, you set the recoverable interchange processing property of that disassembler component to `true`.  
+ Recoverable interchange processing is a property of the disassembler component of a receive pipeline. Not all disassembler components allow you to specify recoverable interchange processing; for example, the native BizTalk Framework disassembler does not. If a disassembler supports recoverable interchange processing, then you specify this behavior in Pipeline Designer within [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] when you add the disassembler component to the Disassemble stage of the pipeline being designed. After you drag the selected disassembler onto the Disassemble stage of the pipeline, you set the recoverable interchange processing property of that disassembler component to `true`.  
   
 ### Party Resolution  
  Messages that are successfully extracted in recoverable interchange processing have their sending party identified according to the party configured for the receive port on which the parent interchange arrived. If party resolution fails for any message extracted from a given interchange, then party resolution is considered to have failed for the entire interchange.  

@@ -24,28 +24,28 @@ This pipeline component lets you examine all the parts of a multi-part message, 
   
  The pipeline component drops XML files into a directory that you designate. Each of these files contains one of the four parts of an RNIFv2.0 message (Preamble Header, Delivery Header, Service Header, and Service Content) or the three parts of an RNIFv1.1 message (Preamble Header, Service Header, and Service Content). Another XML file contains the message context.  
   
- You build this component into a custom pipeline and attach it to a send port. You create a filter in the send port to subscribe to the messages that you want to monitor. This troubleshooting occurs in addition to the standard processing that [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] already performs.  
+ You build this component into a custom pipeline and attach it to a send port. You create a filter in the send port to subscribe to the messages that you want to monitor. This troubleshooting occurs in addition to the standard processing that [!INCLUDE [btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE [BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] already performs.  
   
 ## Building a Custom Pipeline Using the Message Inspector Pipeline Component  
  To use the Message Inspector Pipeline Component, you have to build and deploy a custom pipeline that includes the component. For more information, see "Creating Pipelines with Pipeline Designer" in BizTalk Server Help.  
   
 #### To deploy the Message Inspector Pipeline Component  
   
-1.  Start Visual Studio.  
+1. Start Visual Studio.  
   
-2.  On the **File** menu, point to **Open**, and then click **Project**.  
+2. On the **File** menu, point to **Open**, and then click **Project**.  
   
-3.  Move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component, select **MessageInspector.csproj**, and then click **Open**.  
+3. Move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component, select **MessageInspector.csproj**, and then click **Open**.  
   
-4.  Open the Visual Studio command prompt.  
+4. Open the Visual Studio command prompt.  
   
-5.  At the command prompt, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug.  
+5. At the command prompt, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug.  
   
-6.  At the command prompt, type **"sn -k MessageInspector.snk"** to create a key, and then press ENTER.  
+6. At the command prompt, type **"sn -k MessageInspector.snk"** to create a key, and then press ENTER.  
   
-7.  In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click **MessageInspector**, and then click **Properties**.  
+7. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click <strong>MessageInspector</strong>, and then click <strong>Properties</strong>.  
   
-8.  In the **MessageInspector Property**  page, click **Signing** tab, and then click **Sign the assembly** checkbox.  
+8. In the **MessageInspector Property**  page, click **Signing** tab, and then click **Sign the assembly** checkbox.  
   
 9. In **Choose a strong name key file** drop-down, browse to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug and select **MessageInspector.snk** and then click **Open**.  
   
@@ -53,11 +53,11 @@ This pipeline component lets you examine all the parts of a multi-part message, 
   
 11. Click **Start**, point to **All Programs**, point to **Accessories**, and then click **Windows Explorer**.  
   
-12. In [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug, right-click **Microsoft.Solutions.BTARN.SDK.MessageInspector.dll**, and then click **Copy**.  
+12. In [!INCLUDE [btsWinNoVersion](../../includes/btswinnoversion-md.md)] Explorer, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug, right-click <strong>Microsoft.Solutions.BTARN.SDK.MessageInspector.dll</strong>, and then click <strong>Copy</strong>.  
   
 13. Move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\Pipeline Components, right-click **Pipeline Components**, and then click **Paste**.  
   
-14. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the **File** menu, point to **New**, and then click **Project**.  
+14. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the <strong>File</strong> menu, point to <strong>New</strong>, and then click <strong>Project</strong>.  
   
 15. In the **New Project** dialog box, in the Templates pane, select **Empty BizTalk Server Project**, in the **Name** box, type a name for the project. In the **Location** box, move to the folder that you want to save the project in, and then click **OK**.  
   
@@ -74,21 +74,21 @@ This pipeline component lets you examine all the parts of a multi-part message, 
   
 20. In the BizTalk Pipeline Components pane of the Toolbox pane, click and hold **BTARN Message Inspector Component**, and then drag the component on a **Drop Here!** box.  
   
-21. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click the name of the pipeline project, and then click **Properties**.  
+21. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], in Solution Explorer, right-click the name of the pipeline project, and then click <strong>Properties</strong>.  
   
 22. In the **Property Pages** dialog box, click **Common Properties**, and then click **Assembly**.  
   
 23. In the right pane, in the text box associated with **Assembly Key File**, click the ellipses, move to C:\Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\SDK\Message Inspector Pipeline Component\obj\debug, select **MessageInspector.snk**, and then click **OK**.  
   
-24. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Pipeline Designer, select the **BTARN Message Inspector Component** shape.  
+24. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Pipeline Designer, select the <strong>BTARN Message Inspector Component</strong> shape.  
   
-25. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Properties window, in the **Directory** box, type the name of the directory to which you want to drop the XML files.  
+25. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] Properties window, in the <strong>Directory</strong> box, type the name of the directory to which you want to drop the XML files.  
   
 26. In Solution Explorer, right-click the project name, and then click **Build**. Verify that the build succeeds.  
   
 27. In Solution Explorer, right-click the project name, and then click **Deploy**. Verify that the deployment succeeds.  
   
-28. In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the **View** menu, click **BizTalk Explorer**.  
+28. In [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the <strong>View</strong> menu, click <strong>BizTalk Explorer</strong>.  
   
 29. Right-click **Send Ports**, and then click **Add Send Port**.  
   

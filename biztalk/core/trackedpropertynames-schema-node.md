@@ -18,10 +18,12 @@ manager: "anneta"
 ---
 # TrackedPropertyNames (Schema Node)
 The TrackedPropertyNames node of a binding file contains elements that specify which properties in the parent schema are to be tracked.  
-  
+
 ## Nodes in the TrackedPropertyName node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|string|Element|xs:string|Specifies a property name that will be tracked.|Not required|Default value: empty|
+
+
+| <strong>Name</strong> | <strong>Node Type</strong> | <strong>Data Type</strong> |          <strong>Description</strong>           | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|-----------------------|----------------------------|----------------------------|-------------------------------------------------|-------------------------------|---------------------------|
+|        string         |          Element           |         xs:string          | Specifies a property name that will be tracked. |         Not required          |   Default value: empty    |
+

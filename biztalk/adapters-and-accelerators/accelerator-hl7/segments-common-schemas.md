@@ -26,7 +26,7 @@ The **segments_\<*version*\>.xsd** file includes datatypes_\<*version*\>.xsd and
 <xxx>_<nnn>_<vaa>_GLO_DEF.xsd  
 ```  
   
- Where *xxx* is the message type, *nnn* is the trigger event, *vaa* is the version number, GLO indicates globalize, and DEF indicates default. The schema file *\<xxx\>*_*\<nnn\>*\_*\<vaa\>*\_*\<glo\>*\_*\<def\>*.xsdis generated from the EventMessageTypeSegments and SegmentDataElements Access database tables and includes a pointer to the Segments\_\<*version*\>.xsd schema file.  
+ Where <em>xxx</em> is the message type, <em>nnn</em> is the trigger event, <em>vaa</em> is the version number, GLO indicates globalize, and DEF indicates default. The schema file <em>\<xxx\></em><em><em>\<nnn\></em>\</em><em>\<vaa\></em>\_<em>\<glo\></em>\_<em>\<def\></em>.xsdis generated from the EventMessageTypeSegments and SegmentDataElements Access database tables and includes a pointer to the Segments\_\<<em>version</em>\>.xsd schema file.  
   
 ## See Also  
  [HL7 2.X Common Schema Files](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md)   

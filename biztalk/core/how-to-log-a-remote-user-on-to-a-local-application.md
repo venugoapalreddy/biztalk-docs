@@ -35,4 +35,4 @@ The other main feature of Enterprise Single Sign-On service (ENTSSO) is supporti
   
 ## See Also  
  [How to Log a Local User on to a Non-Windows Application](../core/how-to-log-a-local-user-on-to-a-non-windows-application.md)   
- **ISSOLookup2.LogonExternalUser Method** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ <strong>ISSOLookup2.LogonExternalUser Method</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

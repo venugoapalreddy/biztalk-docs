@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Link Statistics
-For SDLC (Synchronous Data Link Control) and Token Ring connections, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] maintains statistics on link usage and errors. Host Integration Server logs this information when a connection ends or when the counter for a particular error or timeout reaches its maximum value.  
+For SDLC (Synchronous Data Link Control) and Token Ring connections, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] maintains statistics on link usage and errors. Host Integration Server logs this information when a connection ends or when the counter for a particular error or timeout reaches its maximum value.  
   
  This section contains:  
   

@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Setting the FRR Delay Time-Out
-You must configure the FRR orchestration to time out after some duration, so it will not wait for the FNN response indefinitely. If the time-out duration expires, [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] publishes the timed-out messages to a custom time-out handler.  
+You must configure the FRR orchestration to time out after some duration, so it will not wait for the FNN response indefinitely. If the time-out duration expires, [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] publishes the timed-out messages to a custom time-out handler.  
   
 ### To set the FRR delay time-out  
   

@@ -14,25 +14,25 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Print Tracing Problems
-[!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] incorporates extensive tracing within the Host Print Service components and the messages that flow between them. The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Print Service communicates over two well-defined SNA APIs - FMI (Functional Management Interface) and the APPC (Application Program to Program Communication) API FMI is used for 3270 printing, while APPC API is used for AS/400 printing.  
+[!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] incorporates extensive tracing within the Host Print Service components and the messages that flow between them. The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Print Service communicates over two well-defined SNA APIs - FMI (Functional Management Interface) and the APPC (Application Program to Program Communication) API FMI is used for 3270 printing, while APPC API is used for AS/400 printing.  
   
 #### For problems where the output is not correct  
   
-1.  If possible, isolate this print job by stopping all printing to other printer sessions. This will make it easier for support personnel to analyze when viewing traces.  
+1. If possible, isolate this print job by stopping all printing to other printer sessions. This will make it easier for support personnel to analyze when viewing traces.  
   
-2.  Stop the print session(s) in question.  
+2. Stop the print session(s) in question.  
   
-3.  Enable the following traces using the SNA Manager Trace Utility:  
+3. Enable the following traces using the SNA Manager Trace Utility:  
   
-4.  Select **SNAPrint**: Internal Trace Tab (Custom Events), Message Trace (all). Custom Events enables a new type of tracing called Advanced Job Logging. It traces each byte of the data stream.  
+4. Select **SNAPrint**: Internal Trace Tab (Custom Events), Message Trace (all). Custom Events enables a new type of tracing called Advanced Job Logging. It traces each byte of the data stream.  
   
-     Select **SNAServer**. Message Trace (Data Link Control, 3270 Messages, LU 6.2 Messages).  
+    Select **SNAServer**. Message Trace (Data Link Control, 3270 Messages, LU 6.2 Messages).  
   
-     Reproduce the problem.  
+    Reproduce the problem.  
   
-     Turn the traces off **immediately** by selecting Clear All Traces button in the Tracing Items Tab.  
+    Turn the traces off **immediately** by selecting Clear All Traces button in the Tracing Items Tab.  
   
- Print another job to this Print Session, this time changing the Destination to File. This can be done in the Printing Tab for this Print Session.  
+   Print another job to this Print Session, this time changing the Destination to File. This can be done in the Printing Tab for this Print Session.  
   
 #### For all other problems  
   

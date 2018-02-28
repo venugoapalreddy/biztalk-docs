@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Sample Host Definitions
-This section presents some sample host definitions used for establishing a [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer connection to IBM S/370 (host) systems. The samples show configuration values for [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer connections of the following types:  
+This section presents some sample host definitions used for establishing a [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer connection to IBM S/370 (host) systems. The samples show configuration values for [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computer connections of the following types:  
   
 |Connection type|Connection use|Host system|  
 |---------------------|--------------------|-----------------|  

@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Trace an adapter with the WCF LOB Adapter SDK
-[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] tracing is built on top of Systems.Diagnostics. You use Microsoft.ServiceModel.Channels trace source for the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] runtime.  You use Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse trace source for [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. WCF traces are written to the source named System.ServiceModel.  
+[!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] tracing is built on top of Systems.Diagnostics. You use Microsoft.ServiceModel.Channels trace source for the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] runtime.  You use Microsoft.ServiceModel.Channels.Tools.MetadataSearchBrowse trace source for [!INCLUDE [addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] and [!INCLUDE [consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]. WCF traces are written to the source named System.ServiceModel.  
   
- The adapter developer can provide a trace source name for the adapter using Microsoft.ServiceModel.Channels.Common.AdapterTrace class. The [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] generates a trace wrapper class that can be used by the adapter developer to provide instrumentation in the adapter code.  
+ The adapter developer can provide a trace source name for the adapter using Microsoft.ServiceModel.Channels.Common.AdapterTrace class. The [!INCLUDE [afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)] generates a trace wrapper class that can be used by the adapter developer to provide instrumentation in the adapter code.  
   
  For information about WCF tracing, see [Tracing](https://msdn.microsoft.com/library/ms730342.aspx).
   
@@ -48,7 +48,7 @@ public class EchoAdapterUtilities
  EchoAdapterUtilities.Trace.Trace(System.Diagnostics.TraceEventType.Information, "EchoAdapterConnection::Open", "Connection successfully opened!");  
   
 ## Enable Tracing for the Adapter and WCF LOB Adapter SDK Runtime  
- You can enable tracing provided in the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] by adding the following section in the app.config file of the application using the adapter.  
+ You can enable tracing provided in the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)] by adding the following section in the app.config file of the application using the adapter.  
   
 ```  
 <system.diagnostics>  

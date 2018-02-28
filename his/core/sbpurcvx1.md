@@ -20,9 +20,9 @@ The **sbpurcvx** function processes Open responses from a routing procedure. An 
   
 ```  
   
-USHORT sbpurcvx(   
-BUFHDR * *msgptr,   
-INTEGER locl,   
+USHORT sbpurcvx(   
+BUFHDR * *msgptr,   
+INTEGER locl,   
 INTEGER retstat  
 );  
 ```  

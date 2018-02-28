@@ -20,7 +20,7 @@ The **Initialize_Conversation** call (function name **cminit**) is issued by the
   
 ```  
   
-CM_ENTRY Initialize_Conversation(   
+CM_ENTRY Initialize_Conversation(   
   unsigned char FAR *conversation_ID,    
   unsigned char FAR *sym_dest_name,    
   CM_INT32 FAR *return_code            
@@ -36,20 +36,20 @@ CM_ENTRY Initialize_Conversation( 
   
  This parameter is an 8-byte ASCII character string. The allowed characters are as follows:  
   
--   Uppercase letters  
+- Uppercase letters  
   
--   Numerals from 0 through 9  
+- Numerals from 0 through 9  
   
- This parameter can also be set to eight spaces. In this case, the invoking program must issue the following calls before issuing [Allocate](../core/allocate-cpi-c-2.md):  
+  This parameter can also be set to eight spaces. In this case, the invoking program must issue the following calls before issuing [Allocate](../core/allocate-cpi-c-2.md):  
   
--   [Set_Mode_Name](../core/set-mode-name-cpi-c-2.md)  
+- [Set_Mode_Name](../core/set-mode-name-cpi-c-2.md)  
   
--   [Set_Partner_LU_Name](../core/set-partner-lu-name-cpi-c-2.md)  
+- [Set_Partner_LU_Name](../core/set-partner-lu-name-cpi-c-2.md)  
   
--   [Set_TP_Name](../core/set-tp-name-cpi-c-1.md)  
+- [Set_TP_Name](../core/set-tp-name-cpi-c-1.md)  
   
- *return_code*  
- The code returned from this call. The valid return codes are listed later in this topic.  
+  *return_code*  
+  The code returned from this call. The valid return codes are listed later in this topic.  
   
 ## Return Codes  
  CM_OK  

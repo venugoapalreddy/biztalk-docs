@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Install the JMS MQRFH2 Sample Using the Install Scripts
-This section describes how you can install the JMS MQRFH2 sample using the install scripts provided with the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)].  
+This section describes how you can install the JMS MQRFH2 sample using the install scripts provided with the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)].  
   
  **To install the JMS MQRFH2 samples from the install scripts**  
   

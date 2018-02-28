@@ -15,19 +15,19 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Configure Navigation Between Distributed Activities
-Distributed navigation allows users to view activities that exist in remote BAM deployments. When you enable distributed navigation, users of the BAM portal on one computer will be able to view activities in the BAM portal on another deployment of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+Distributed navigation allows users to view activities that exist in remote BAM deployments. When you enable distributed navigation, users of the BAM portal on one computer will be able to view activities in the BAM portal on another deployment of [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  The procedure in this topic describes how to enable distributed navigation in the following scenario:  
   
--   A sales department with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployed on computer 1.  
+- A sales department with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployed on computer 1.  
   
--   A shipping department with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployed on computer 2.  
+- A shipping department with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] deployed on computer 2.  
   
--   A view called myBusinessView with an activity called Sales Data deployed on computer 1.  
+- A view called myBusinessView with an activity called Sales Data deployed on computer 1.  
   
--   A view called myBusinessView with an activity called Shipping Data installed on computer 2.  
+- A view called myBusinessView with an activity called Shipping Data installed on computer 2.  
   
--   A business user in the sales department with a business need to see the activities on both computers.  
+- A business user in the sales department with a business need to see the activities on both computers.  
   
 ### How to set up distributed navigation for remote activities  
   

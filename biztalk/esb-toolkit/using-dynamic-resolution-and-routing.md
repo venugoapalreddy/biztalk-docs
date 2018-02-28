@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using Dynamic Resolution and Routing
-In addition to itinerary-based routing, the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] supports dynamic resolution as configuration-based routing to avoid the requirement for hard-coded routing information in components and services. This section contains the following topics:  
+In addition to itinerary-based routing, the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] supports dynamic resolution as configuration-based routing to avoid the requirement for hard-coded routing information in components and services. This section contains the following topics:  
   
 -   [Dynamic Resolution and Routing Overview](../esb-toolkit/dynamic-resolution-and-routing-overview.md)  
   

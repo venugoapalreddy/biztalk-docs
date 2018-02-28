@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Session Support
-[!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] supports many types of SNA communications sessions:  
+[!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] supports many types of SNA communications sessions:  
   
 -   A System Services Control Point – physical unit (SSCP-PU)  
   

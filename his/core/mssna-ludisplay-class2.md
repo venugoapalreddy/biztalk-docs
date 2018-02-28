@@ -46,8 +46,8 @@ class MsSna_LuDisplay : MsSna_Lu3270
   
  **true** to indicate whether the default model can be overridden; otherwise, **false**. Some emulators can only emulate certain display models.  
   
- **AssociatedLU**  
- Data Type: **String**Qualifiers:**MAXLEN(8)**Access Type: Read-Only  
+ <strong>AssociatedLU</strong>  
+ Data Type: <strong>String</strong>Qualifiers:<strong>MAXLEN(8)</strong>Access Type: Read-Only  
   
  Associates a printer LU with the current object.  
   

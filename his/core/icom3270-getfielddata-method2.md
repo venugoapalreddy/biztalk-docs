@@ -15,11 +15,11 @@ manager: "anneta"
 ---
 # Icom3270.getFieldData Method
 Extracts the data contents of the specified field.  
-  
+
 ## Syntax  
-  
+
 ```  
-  
+
 void GetFieldData(  
    ushort position,  
    ushort dataRequested,  
@@ -29,9 +29,9 @@ void GetFieldData(
    out System.Array eabuf  
 )  
 ```  
-  
+
 #### Parameters  
-  
+
 |Parameter|Description|  
 |---------------|-----------------|  
 |`position`|The 0-based screen offset of a character in the specified field.|  
@@ -40,24 +40,26 @@ void GetFieldData(
 |`dbuf`|When this method returns, contains the screen data buffer data, if necessary.|  
 |`abuf`|When this method returns, contains the screen character attribute buffer data, if necessary.|  
 |`eabuff`|When this method returns, contains the screen extended attribute buffer data, if necessary.|  
-  
+
 ## Property Value/Return Value  
-  
+
 ## Exceptions  
-  
+
 ## Remarks  
  getFieldData does not extract the Field Attribute character.  
-  
+
  You may request any combination of the displayable characters, character attributes, and extended attributes of the field.  
-  
+
  You are responsible for releasing the SAFEARRAYs that the method returns the specified data in.  
-  
+
  For the purpose of getFieldData the field attribute character, which immediately precedes the field data, is considered part of the field.  
-  
+
  The following table describes the possible values for `dataRequested`.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|1|Display buffer data|  
-|2|Character attribute buffer data|  
-|4|Extended attribute buffer data|
+
+
+| Value |           Description           |
+|-------|---------------------------------|
+|   1   |       Display buffer data       |
+|   2   | Character attribute buffer data |
+|   4   | Extended attribute buffer data  |
+

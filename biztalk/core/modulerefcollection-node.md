@@ -18,10 +18,12 @@ manager: "anneta"
 ---
 # ModuleRefCollection Node
 The ModuleRefCollection section of a binding file is the parent node for all of the ModuleRef nodes which contain specific information about .NET assemblies exported with the binding file.  
-  
+
 ## Entries in the ModuleRefCollection section  
  The following table lists the properties that can be set for the nodes in this section of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[ModuleRef](../core/moduleref-modulerefcollection-node.md)|Record|ModuleRef (ComplexType)|Container node for a .NET assembly module exported with the binding file.|Not required|Default value: None|
+
+
+|                   <strong>Name</strong>                    | <strong>Node Type</strong> | <strong>Data Type</strong> |                       <strong>Description</strong>                        | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|------------------------------------------------------------|----------------------------|----------------------------|---------------------------------------------------------------------------|-------------------------------|---------------------------|
+| [ModuleRef](../core/moduleref-modulerefcollection-node.md) |           Record           |  ModuleRef (ComplexType)   | Container node for a .NET assembly module exported with the binding file. |         Not required          |    Default value: None    |
+

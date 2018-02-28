@@ -43,7 +43,7 @@ Orchestration Design Surface
   
  **Zoom Support**  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides the ability to zoom in or zoom out of the Orchestration designer surface. You can use zoom support by completing one of the following steps:  
+ [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] provides the ability to zoom in or zoom out of the Orchestration designer surface. You can use zoom support by completing one of the following steps:  
   
 -   Right-click the Orchestration designer surface and click the **Zoom** menu option. You can then select the percentage of magnification that you would like to apply.  
   

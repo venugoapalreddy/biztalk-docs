@@ -16,14 +16,14 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Glossary
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for SWIFT uses the following glossary terms and definitions.  
+[!INCLUDE [btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for SWIFT uses the following glossary terms and definitions.  
   
 ## A  
- **assembler**  
- A [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] send pipeline component that is invoked during the assemble stage of outbound pipeline processing. An assembler typically does the job of serializing an outbound message from XML into some flat-file format.  
+ <strong>assembler</strong>  
+ A [!INCLUDE [btsCoName](../../includes/btsconame-md.md)][!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] send pipeline component that is invoked during the assemble stage of outbound pipeline processing. An assembler typically does the job of serializing an outbound message from XML into some flat-file format.  
   
- **assembly**  
- The primary building block of a [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)] application. It is the basic unit of reuse, versioning, security, and deployment. It is a collection of files that appear to the programmer to be a single-dynamic link library (DLL) or executable (EXE).  
+ <strong>assembly</strong>  
+ The primary building block of a [!INCLUDE [btsCoName](../../includes/btsconame-md.md)][!INCLUDE [btsDotNetFramework](../../includes/btsdotnetframework-md.md)] application. It is the basic unit of reuse, versioning, security, and deployment. It is a collection of files that appear to the programmer to be a single-dynamic link library (DLL) or executable (EXE).  
   
  **assembly cache**  
  A machine-wide code cache used for side-by-side storage of assemblies. There are two parts to the cache. The global assembly cache contains assemblies that are explicitly installed to be shared among many applications on the computer. The download cache stores code downloaded from Internet or intranet sites, isolated to the application that triggered the download so that code downloaded on behalf of one application or page does not affect other applications.  
@@ -43,8 +43,8 @@ manager: "anneta"
  A rule specifying a relationship among fields of a SWIFT message type. Conditional rules are defined in the SWIFT Standards Release Guide.  
   
 ## D  
- **disassembler**  
- A [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] receive pipeline component that is invoked during the disassemble stage of inbound pipeline processing. A dissembler typically does the job of parsing an inbound message from some flat-file format into XML.  
+ <strong>disassembler</strong>  
+ A [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] receive pipeline component that is invoked during the disassemble stage of inbound pipeline processing. A dissembler typically does the job of parsing an inbound message from some flat-file format into XML.  
   
 ## E  
  **error code**  
@@ -53,8 +53,8 @@ manager: "anneta"
  **Extensible Markup Language (XML)**  
  A specification developed by the World Wide Web Consortium (W3C) that enables designers to create customized tags beyond the capabilities of standard HTML. While HTML uses only predefined tags to describe elements within the page, XML enables tags to be defined by the developer of the page. Tags for virtually any data item, such as a product or an amount due, can be used for specific applications. This enables Web pages to function as database records.  
   
- **Extensible Stylesheet Language (XSL)**  
- A style sheet format for Extensible Markup Language (XML) documents. XSL is used to define the display of XML in the same way that cascading style sheets (CSS) are used to define the display of Hypertext Markup Language (HTML). [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] uses XSL as the translation language between two specifications.  
+ <strong>Extensible Stylesheet Language (XSL)</strong>  
+ A style sheet format for Extensible Markup Language (XML) documents. XSL is used to define the display of XML in the same way that cascading style sheets (CSS) are used to define the display of Hypertext Markup Language (HTML). [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] uses XSL as the translation language between two specifications.  
   
 ## F  
  **FIN**  
@@ -69,12 +69,12 @@ manager: "anneta"
  Hypertext Transfer Protocol (HTTP) using the Secure Sockets Layer (SSL) encryption protocol.  
   
 ## I  
- **interchange**  
- A complete message made up of smaller message parts or blocks. For example, a SWIFT interchange in [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] is defined as the concatenation of a SWIFT header part (SWIFT blocks 1, 2, 3), followed by a SWIFT body part (SWIFT block 4), followed by a SWIFT trailer part (SWIFT block 5).  
+ <strong>interchange</strong>  
+ A complete message made up of smaller message parts or blocks. For example, a SWIFT interchange in [!INCLUDE [btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] is defined as the concatenation of a SWIFT header part (SWIFT blocks 1, 2, 3), followed by a SWIFT body part (SWIFT block 4), followed by a SWIFT trailer part (SWIFT block 5).  
   
 ## M  
- **map**  
- An XML file that defines the correspondence between the records and fields in one specification and the records and fields in another specification. A map contains an Extensible Stylesheet Language (XSL) style sheet that [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] uses to perform the transformation described in the map. You create maps in BizTalk Mapper.  
+ <strong>map</strong>  
+ An XML file that defines the correspondence between the records and fields in one specification and the records and fields in another specification. A map contains an Extensible Stylesheet Language (XSL) style sheet that [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] uses to perform the transformation described in the map. You create maps in BizTalk Mapper.  
   
  **message type**  
  One of the message formats defined in the SWIFT Standards Release Guide, such as "Receive Against Payment". Message types are often denoted by "MT" followed by a three-digit code.  
@@ -103,8 +103,8 @@ manager: "anneta"
  **Society for Worldwide Interbank Financial Telecommunication (SWIFT)**  
  Society for Worldwide Interbank Financial Telecommunication. An organization that provides messaging services to banks, broker-dealers, investment managers, and market infrastructures in payments, treasury, securities, and trade. SWIFT creates a shared worldwide data processing and communications link and a common language for international financial transactions.  
   
- **specification**  
- A [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]-specific XML schema. Specifications are created in BizTalk Editor and can be based on industry standards (such as SWIFT, EDIFACT, X12, and XML) or on flat files (delimited, positional, or delimited and positional). BizTalk Mapper uses specifications, opened as source specifications and destination specifications, to create maps.  
+ <strong>specification</strong>  
+ A [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]-specific XML schema. Specifications are created in BizTalk Editor and can be based on industry standards (such as SWIFT, EDIFACT, X12, and XML) or on flat files (delimited, positional, or delimited and positional). BizTalk Mapper uses specifications, opened as source specifications and destination specifications, to create maps.  
   
  **strong name**  
  A name that consists of an assembly's identity—its simple text name, version number, and culture information (if provided)—strengthened by a public key and a digital signature generated over the assembly. Because the assembly manifest contains file hashes for all the files that constitute the assembly implementation, it is sufficient to generate the digital signature over just the one file in the assembly that contains the assembly manifest. Assemblies with the same strong name are expected to be identical.  
@@ -124,8 +124,8 @@ manager: "anneta"
   
 ## X  
   
- **XML-Data Reduced (XDR)**  
- An early language used to create a schema, which identifies the structure and constraints of a particular XML document. XML-Data Reduced refers to the subset of the XML-Data schema specification that was made available in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] XML Parser (MSXML) 3.0 and later. It carries out the same basic tasks as DTD, but with more power and flexibility. Unlike DTD, which requires its own language and syntax, XDR uses XML syntax for its language. Unlike XSD, which has only recently been recommended as a standard, XDR was implemented and made available by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] well ahead of the existence of XSD as a recommended standard by the W3C XML Schema Working Group.  
+ <strong>XML-Data Reduced (XDR)</strong>  
+ An early language used to create a schema, which identifies the structure and constraints of a particular XML document. XML-Data Reduced refers to the subset of the XML-Data schema specification that was made available in [!INCLUDE [btsCoName](../../includes/btsconame-md.md)] XML Parser (MSXML) 3.0 and later. It carries out the same basic tasks as DTD, but with more power and flexibility. Unlike DTD, which requires its own language and syntax, XDR uses XML syntax for its language. Unlike XSD, which has only recently been recommended as a standard, XDR was implemented and made available by [!INCLUDE [btsCoName](../../includes/btsconame-md.md)] well ahead of the existence of XSD as a recommended standard by the W3C XML Schema Working Group.  
   
- **XML Schema Definition (XSD)**  
- A language proposed by the W3C XML Schema Working Group for use in defining schemas. Schemas are useful for enforcing structure and/or constraining the types of data that can be used validly within other XML documents. XML Schema Definition refers to the fully specified and currently recommended standard for use in authoring XML schemas. Because the XSD specification was only recently finalized, support for it was only made available with the release of [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] XML Core Services (MSXML) 4.0. It carries out the same basic tasks as DTD, but with more power and flexibility. Unlike DTD, which requires its own language and syntax, XSD uses XML syntax for its language. XSD closely resembles and extends the capabilities of XDR. The W3C now recommends the use of XSD as a standard for defining XML schemas.
+ <strong>XML Schema Definition (XSD)</strong>  
+ A language proposed by the W3C XML Schema Working Group for use in defining schemas. Schemas are useful for enforcing structure and/or constraining the types of data that can be used validly within other XML documents. XML Schema Definition refers to the fully specified and currently recommended standard for use in authoring XML schemas. Because the XSD specification was only recently finalized, support for it was only made available with the release of [!INCLUDE [btsCoName](../../includes/btsconame-md.md)] XML Core Services (MSXML) 4.0. It carries out the same basic tasks as DTD, but with more power and flexibility. Unlike DTD, which requires its own language and syntax, XSD uses XML syntax for its language. XSD closely resembles and extends the capabilities of XDR. The W3C now recommends the use of XSD as a standard for defining XML schemas.

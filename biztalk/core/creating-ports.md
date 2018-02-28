@@ -24,7 +24,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Creating Ports
-Use the following procedures to create [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send and receive ports for Single Sign-on.  
+Use the following procedures to create [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] send and receive ports for Single Sign-on.  
   
 ## Creating a Send Port  
   

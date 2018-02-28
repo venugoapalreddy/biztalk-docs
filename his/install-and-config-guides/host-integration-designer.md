@@ -15,18 +15,20 @@ manager: "anneta"
 ---
 # Host Integration Designer
 As in any standard Microsoft Windows application, you can navigate through the design surface by using your keyboard instead of your mouse. The following table describes the available keyboard shortcuts.  
-  
-|||  
-|-|-|  
-|**Keyboard shortcut**|**Effect**|  
-|DOWN ARROW|Moves the cursor focus to the next item down in the current active pane.|  
-|UP ARROW|Moves the cursor focus to the next item up in the current active pane.|  
-|PAGE UP|Moves the cursor focus to the first item in the active pane.|  
-|PAGE DOWN|Moves the cursor focus to the last item in the active pane.|  
-|HOME|Moves the cursor focus to the first item in the active pane.|  
-|END|Moves the cursor focus to the last item in the active pane.|  
-|PF4|Move to the property window|  
-|RIGHT ARROW|Expand an item in the tree view|  
-|LEFT ARROW|Collapse an item  in the tree view|  
-|TAB|Move from an item  in tree view pane to the details view pane|  
-|SHIFT TAB|Move back from an  item  in detail view pane to the previous item in the details view pane|
+
+
+|                                    |                                                                                            |
+|------------------------------------|--------------------------------------------------------------------------------------------|
+| <strong>Keyboard shortcut</strong> |                                  <strong>Effect</strong>                                   |
+|             DOWN ARROW             |          Moves the cursor focus to the next item down in the current active pane.          |
+|              UP ARROW              |           Moves the cursor focus to the next item up in the current active pane.           |
+|              PAGE UP               |                Moves the cursor focus to the first item in the active pane.                |
+|             PAGE DOWN              |                Moves the cursor focus to the last item in the active pane.                 |
+|                HOME                |                Moves the cursor focus to the first item in the active pane.                |
+|                END                 |                Moves the cursor focus to the last item in the active pane.                 |
+|                PF4                 |                                Move to the property window                                 |
+|            RIGHT ARROW             |                              Expand an item in the tree view                               |
+|             LEFT ARROW             |                             Collapse an item  in the tree view                             |
+|                TAB                 |               Move from an item  in tree view pane to the details view pane                |
+|             SHIFT TAB              | Move back from an  item  in detail view pane to the previous item in the details view pane |
+

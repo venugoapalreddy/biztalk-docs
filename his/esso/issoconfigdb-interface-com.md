@@ -18,4 +18,4 @@ The **ISSOConfigDB** object allows you to create and configure an SSO database.
   
  **Type Library**: SSOConfigDB 1.0 Type Library (SSOConfigDB.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]

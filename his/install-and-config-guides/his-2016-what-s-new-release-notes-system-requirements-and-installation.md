@@ -16,7 +16,7 @@ manager: "anneta"
 # HIS 2016 - What's New, Release Notes, System Requirements, and Installation
 
 ## Overview
-Read about what's new in [!INCLUDE[his2016](../includes/his2016-md.md)]. You can also read the release notes, view the system requirements, and install HIS.  
+Read about what's new in [!INCLUDE [his2016](../includes/his2016-md.md)]. You can also read the release notes, view the system requirements, and install HIS.  
   
 ## Next steps
  [What's New in HIS 2016](../install-and-config-guides/what-s-new-in-his-2016.md)  

@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Lesson 1: Generate Schemas and Create Messages
-In this lesson, you create a BizTalk project in [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], generate the schemas for the operations you perform on the SQL Server database using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], and then create messages for those schemas.  
+In this lesson, you create a BizTalk project in [!INCLUDE [btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], generate the schemas for the operations you perform on the SQL Server database using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)], and then create messages for those schemas.  
   
 ## In This Section  
   

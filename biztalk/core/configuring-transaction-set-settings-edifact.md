@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring Transaction Set Settings (EDIFACT)
-EDIFACT transaction set properties define how [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process the transaction sets being exchanged between two parties.  
+EDIFACT transaction set properties define how [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] process the transaction sets being exchanged between two parties.  
   
 ## In This Section  
   

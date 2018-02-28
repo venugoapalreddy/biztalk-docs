@@ -16,7 +16,7 @@ manager: "anneta"
 # How to Configure a Range of 3270 LUs
 You can create a consecutively numbered range of logical units (LU). To do so, you must identify the base LU name limited to eight characters on which the numbered range of names will be built.  
   
- After identifying the base LU name, you can create the LUs by identifying the number of LUs in the range and the number the range will start with. [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will create LUs using the sequential numbering scheme.  
+ After identifying the base LU name, you can create the LUs by identifying the number of LUs in the range and the number the range will start with. [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will create LUs using the sequential numbering scheme.  
   
 ### To configure a range of 3270 LUs  
   

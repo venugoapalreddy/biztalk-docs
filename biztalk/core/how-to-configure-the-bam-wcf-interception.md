@@ -52,86 +52,86 @@ To configure BAM for WCF interception, you must modify the interceptor configura
   
 ```  
 <ic:OnEvent IsBegin="true" IsEnd ="false" Name ="WCFServiceRequest" Source="WCFService">  
-      <ic:Filter>  
-        <ic:Expression>  
-          <wcf:Operation Name="GetServiceContractCallPoint"/>  
-          <ic:Operation Name ="Constant">  
-            <ic:Argument>ServiceRequest</ic:Argument>  
-          </ic:Operation>  
-          <ic:Operation Name ="Equals" />  
-          <wcf:Operation Name ="XPath">  
-            <wcf:Argument>//s:Header/a:Action</wcf:Argument>  
-          </wcf:Operation>  
-          <ic:Operation Name ="Constant">  
-            <ic:Argument>Operation1</ic:Argument>  
-          </ic:Operation>  
-          <ic:Operation Name ="Equals" />  
-          <ic:Operation Name ="And" />  
-        </ic:Expression>  
-      </ic:Filter>  
+      <ic:Filter>  
+        <ic:Expression>  
+          <wcf:Operation Name="GetServiceContractCallPoint"/>  
+          <ic:Operation Name ="Constant">  
+            <ic:Argument>ServiceRequest</ic:Argument>  
+          </ic:Operation>  
+          <ic:Operation Name ="Equals" />  
+          <wcf:Operation Name ="XPath">  
+            <wcf:Argument>//s:Header/a:Action</wcf:Argument>  
+          </wcf:Operation>  
+          <ic:Operation Name ="Constant">  
+            <ic:Argument>Operation1</ic:Argument>  
+          </ic:Operation>  
+          <ic:Operation Name ="Equals" />  
+          <ic:Operation Name ="And" />  
+        </ic:Expression>  
+      </ic:Filter>  
   
-      <ic:CorrelationID>  
-        <ic:Expression>  
-          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
-        </ic:Expression>  
-      </ic:CorrelationID>  
+      <ic:CorrelationID>  
+        <ic:Expression>  
+          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
+        </ic:Expression>  
+      </ic:CorrelationID>  
   
-      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
-        <ic:Expression>  
-          <wcf:Operation Name ="GetContextProperty">  
-            <wcf:Argument>EventTime</wcf:Argument>  
-          </wcf:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
+        <ic:Expression>  
+          <wcf:Operation Name ="GetContextProperty">  
+            <wcf:Argument>EventTime</wcf:Argument>  
+          </wcf:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-      <ic:Update DataItemName ="Source" Type ="NVARCHAR">  
-        <ic:Expression>  
-          <ic:Operation Name="Constant">  
-            <ic:Argument>WcfAdapter_ServiceRequest</ic:Argument>  
-          </ic:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Source" Type ="NVARCHAR">  
+        <ic:Expression>  
+          <ic:Operation Name="Constant">  
+            <ic:Argument>WcfAdapter_ServiceRequest</ic:Argument>  
+          </ic:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-    </ic:OnEvent>  
+    </ic:OnEvent>  
 ```  
   
 ### ServiceReply  
   
 ```  
 <ic:OnEvent IsBegin="true" IsEnd ="false" Name ="WCFServiceReply" Source="WCFService">  
-      <ic:Filter>  
-        <ic:Expression>  
-          <wcf:Operation Name="GetServiceContractCallPoint"/>  
-          <ic:Operation Name ="Constant">  
-            <ic:Argument>ServiceReply</ic:Argument>  
-          </ic:Operation>  
-          <ic:Operation Name ="Equals" />  
-        </ic:Expression>  
-      </ic:Filter>  
+      <ic:Filter>  
+        <ic:Expression>  
+          <wcf:Operation Name="GetServiceContractCallPoint"/>  
+          <ic:Operation Name ="Constant">  
+            <ic:Argument>ServiceReply</ic:Argument>  
+          </ic:Operation>  
+          <ic:Operation Name ="Equals" />  
+        </ic:Expression>  
+      </ic:Filter>  
   
-      <ic:CorrelationID>  
-        <ic:Expression>  
-          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
-        </ic:Expression>  
-      </ic:CorrelationID>  
+      <ic:CorrelationID>  
+        <ic:Expression>  
+          <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
+        </ic:Expression>  
+      </ic:CorrelationID>  
   
-      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
-        <ic:Expression>  
-          <wcf:Operation Name ="GetContextProperty">  
-            <wcf:Argument>EventTime</wcf:Argument>  
-          </wcf:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Activity Date" Type ="DATETIME">  
+        <ic:Expression>  
+          <wcf:Operation Name ="GetContextProperty">  
+            <wcf:Argument>EventTime</wcf:Argument>  
+          </wcf:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-      <ic:Update DataItemName ="Name" Type ="NVARCHAR">  
-        <ic:Expression>  
-          <ic:Operation Name="Constant">  
-            <ic:Argument>WcfAdapter_ServiceReply</ic:Argument>  
-          </ic:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName ="Name" Type ="NVARCHAR">  
+        <ic:Expression>  
+          <ic:Operation Name="Constant">  
+            <ic:Argument>WcfAdapter_ServiceReply</ic:Argument>  
+          </ic:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-    </ic:OnEvent>  
+    </ic:OnEvent>  
 ```  
   
 ## See Also  

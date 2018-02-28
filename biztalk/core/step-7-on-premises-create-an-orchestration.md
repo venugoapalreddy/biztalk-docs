@@ -15,13 +15,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Step 7 (On Premises): Create an Orchestration
-According to the business scenario, after [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives the sales order message from the Service Bus Queue, it needs to check whether the quantity ordered in the message is greater than 100. If the quantity is greater than 100, the message is inserted into the **SalesOrder** table. Otherwise, the message is sent to a shared file location. Northwind achieves this business logic by creating an orchestration. This topic provides step-by-step guidance on how to create the orchestration.  
+According to the business scenario, after [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] receives the sales order message from the Service Bus Queue, it needs to check whether the quantity ordered in the message is greater than 100. If the quantity is greater than 100, the message is inserted into the <strong>SalesOrder</strong> table. Otherwise, the message is sent to a shared file location. Northwind achieves this business logic by creating an orchestration. This topic provides step-by-step guidance on how to create the orchestration.  
   
-### To add an orchestration to the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] project  
+### To add an orchestration to the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] project  
   
-1.  In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] you already created, right-click the project, point to **Add**, and then click **New Item**.  
+1. In the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] you already created, right-click the project, point to <strong>Add</strong>, and then click <strong>New Item</strong>.  
   
-2.  In the **New Item** dialog box, select **BizTalk Orchestration**, enter the map name as `OrderProcessing.odx`, and then click **Add**.  
+2. In the **New Item** dialog box, select **BizTalk Orchestration**, enter the map name as `OrderProcessing.odx`, and then click **Add**.  
   
 ## Create Messages for the Orchestration  
  The schema that you generated earlier describes the “types” required for the messages in the orchestration. A message is typically a variable, the type for which defined by the corresponding schema. You must now create messages for the orchestration and link them to schemas you generated earlier. You need to create following three messages:  
@@ -55,7 +55,7 @@ According to the business scenario, after [!INCLUDE[btsBizTalkServerNoVersion](.
     |Message1_SO_Outbound|-   Set **Identifier** to `Message1_SO_Outound`<br />-   Set **Message Type** to *OrderProcessingDemo.TableOperation_dbo_SalesOrder.Insert*|  
   
 ## Add Shapes to the Orchestration  
- Orchestration shapes define the flow of a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application. In this section, you add the required shapes to the orchestration.  
+ Orchestration shapes define the flow of a [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] application. In this section, you add the required shapes to the orchestration.  
   
 #### To add shapes to the orchestration  
   

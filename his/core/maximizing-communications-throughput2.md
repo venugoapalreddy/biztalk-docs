@@ -14,9 +14,9 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Maximizing Communications Throughput
-Servers used primarily for communications need to provide fast throughput, but do not need to provide fast file access as a file server would. Faster throughput will result if portions of memory are set aside for communications programs such as [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] or Microsoft SQL Server.  
+Servers used primarily for communications need to provide fast throughput, but do not need to provide fast file access as a file server would. Faster throughput will result if portions of memory are set aside for communications programs such as [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] or Microsoft SQL Server.  
   
- Such dedicated memory includes nonpaged memory, or portions of memory that are never switched to disk, but remain available for immediate use at all times. This helps support fast throughput. If more memory is dedicated to [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] or similar programs, less memory is available for file sharing.  
+ Such dedicated memory includes nonpaged memory, or portions of memory that are never switched to disk, but remain available for immediate use at all times. This helps support fast throughput. If more memory is dedicated to [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] or similar programs, less memory is available for file sharing.  
   
  With Windows operating systems, you can view or change network throughput options. For Host Integration Server, you may not need to change the throughput option. Setup automatically sets the option to maximize throughput for network applications.  
   
@@ -26,13 +26,13 @@ Servers used primarily for communications need to provide fast throughput, but d
   
  The options available for tasking are:  
   
--   Best Foreground Application Response Time  
+- Best Foreground Application Response Time  
   
--   Foreground Application More Responsive than Background  
+- Foreground Application More Responsive than Background  
   
--   Foreground and Background Applications Equally Responsive  
+- Foreground and Background Applications Equally Responsive  
   
- Choose the one that is best suited to your network configuration.  
+  Choose the one that is best suited to your network configuration.  
   
 ## See Also  
  [System Monitor Overview](../core/system-monitor-overview1.md)   

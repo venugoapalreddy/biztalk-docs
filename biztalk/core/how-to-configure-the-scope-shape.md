@@ -25,7 +25,7 @@ manager: "anneta"
 The **Scope** shape provides a contextual framework for its contents. The first block of a **Scope** shape is the context block, or body, in which the basic actions of the scope take place; it is analogous to the try block in a try/catch statement. Following the body, the **Scope** shape may also include one or more exception-handler blocks and a compensation block.  
   
 > [!NOTE]
->  In a multiple machine environment where [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and SQL Server are located on different machines, if the Coordinated Universal Time (UTC) is different on the two machines then the **Timeout** property you configure for the **Scope** shape may get triggered earlier than expected because of the UTC time on [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and SQL Server machines is unsynchronized. Note that this is not a time zones issue as Coordinated Universal Time is unaffected by time zones.  
+>  In a multiple machine environment where [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and SQL Server are located on different machines, if the Coordinated Universal Time (UTC) is different on the two machines then the <strong>Timeout</strong> property you configure for the <strong>Scope</strong> shape may get triggered earlier than expected because of the UTC time on [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and SQL Server machines is unsynchronized. Note that this is not a time zones issue as Coordinated Universal Time is unaffected by time zones.  
   
 ### To configure a Scope shape as a transaction boundary  
   

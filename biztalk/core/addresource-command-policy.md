@@ -20,7 +20,7 @@ To add a policy to a BizTalk application, you use the **AddResource** command an
  For this command to succeed, the policy must exist in the Rule Engine database. For instructions on importing a policy into the Rule Engine database, see [How to Import a Policy](../core/how-to-import-a-policy.md). When you add a policy by using AddResource command, any vocabularies used by the policy are automatically added as well.  
   
 ## Usage  
- **BTSTask AddResource** [**/ApplicationName:***value*] **/Type:System.BizTalk:Rules** [**/Overwrite**] **/Name:***value***/Version:***value* [**/Server:***value*] [**/Database:***value*]  
+ <strong>BTSTask AddResource</strong> [<strong>/ApplicationName:</strong><em>value</em>] <strong>/Type:System.BizTalk:Rules</strong> [<strong>/Overwrite</strong>] <strong>/Name:</strong><em>value</em><strong>/Version:</strong><em>value</em> [<strong>/Server:</strong><em>value</em>] [<strong>/Database:</strong><em>value</em>]  
   
 ## Parameters  
   

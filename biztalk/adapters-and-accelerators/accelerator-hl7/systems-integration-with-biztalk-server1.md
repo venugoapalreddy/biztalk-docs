@@ -17,7 +17,7 @@ manager: "anneta"
 # Systems Integration with BizTalk Server
 Microsoft BizTalk Server is an integration server designed for eBusiness applications. It is built on the  Windows Server, SQL Server, and SharePoint, and leverages the functionality of  Visual Studio. This technology stack provides a range of functionality and features for developing, implementing, operating, and maintaining your solution.  
   
- BizTalk Server provides the following integration services that you can use in conjunction with BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]).  
+ BizTalk Server provides the following integration services that you can use in conjunction with BizTalk Accelerator for HL7 ([!INCLUDE [btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]).  
   
 ## Message Integration  
  BizTalk Server integrates different entities (departments, business partners, vendors, and so on) by automating message exchange. It uses Extensible Markup Language (XML) as a common communication protocol. It uses XML Schema Definition (XSD) schemas to describe and validate messages, and XSL Transformations (XSLT) to transform data from one message to another.  

@@ -15,22 +15,22 @@ manager: "anneta"
 ---
 # connectionManager
 The connectionManager element contains the network, security and failover settings for managing in-bound DRDA client connections.  
-  
+
  \<hostIntegration.drdaAs.drdaService>  
 \<services>  
 \<service>  
-  
+
 ## Syntax  
-  
+
 ```  
-<hostIntegration.drdaAs.drdaService>        <services>                <service>                        <connectionManager>                        </connectionManager>                </service>        </services></hostIntegration.drdaAs.drdaService>  
+<hostIntegration.drdaAs.drdaService>        <services>                <service>                        <connectionManager>                        </connectionManager>                </service>        </services></hostIntegration.drdaAs.drdaService>  
 ```  
-  
+
 ## Attributes and Elements  
  The following sections describe attributes, child elements, and parent elements.  
-  
+
 ### Attributes  
-  
+
 |Attribute|Type|Description|Required|Default Value|  
 |---------------|----------|-----------------|--------------|-------------------|  
 |type|xs:string|The connectionManager type is the Microsoft.HostIntegration.Drda.Server.TcpConnectionManager, which supports in-bound DRDA AR client connections across a TCP/IP network connection.|true|n/a|  
@@ -42,12 +42,13 @@ The connectionManager element contains the network, security and failover settin
 |pingInterval|xs:int|The pingInterval attribute instructs the DRDA Service how frequently to monitor the health of partner server computers, by executing an EXCSAT (Exchange Server Attribute) flow and checking for an EXCSATRD (EXCSAT Reply Data). This optional attribute accepts an integer value. The default value is 10000 milliseconds (10 seconds).|false|10000|  
 |performanceCountersOn|xs:boolean|The peformanceCountersOn attribute instructs the DRDA Service to collect information into performance counters. This optional attribute accepts a Boolean value. The default value is false.|false|false|  
 |clientIpAddressesAllowed|xs:string|The clientIpAddressesAllowed attribute restricts the DRDA Service to accepting in-bound TCP/IP network connections from a list of known DRDA AR client computers. This optional attribute accepts a string value. The default value is an empty string, which allows the DRDA Service to respond to all in-bound client connection requests. The list is comprised of a TCP/IP address or alias semi-colon delimited. The TCP/IP address can be defined in either IPv4 or IPv6 format.|false|n/a|  
-  
+
 ### Child Elements  
  None  
-  
+
 ### Parent Elements  
-  
-|Element|Description|  
-|-------------|-----------------|  
-||The service element defines the configuration for the DrdaService1 service.|
+
+| Element |                                 Description                                 |
+|---------|-----------------------------------------------------------------------------|
+|         | The service element defines the configuration for the DrdaService1 service. |
+

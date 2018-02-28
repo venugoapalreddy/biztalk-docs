@@ -18,29 +18,29 @@ manager: "anneta"
 # Update BizTalk host settings
 
 ## Overview
-Using the Settings Dashboard, you can modify the configuration information of a given host, across a BizTalk group. This topic provides the step-by-step procedure to modify the host-level performance settings in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+Using the Settings Dashboard, you can modify the configuration information of a given host, across a BizTalk group. This topic provides the step-by-step procedure to modify the host-level performance settings in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 > [!NOTE]
 >  You can also modify the group and host instance settings. For information about how to modify the settings, see [Using Settings Dashboard for BizTalk Server Performance Tuning](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md).  
   
- The current BizTalk Server settings can be exported to an XML file. Later, you can import those settings to the Settings Dashboard instead of setting up new values. For information on importing the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] settings, see [Import or export BizTalk Settings Using Settings Dashboard](how-to-import-biztalk-settings-using-settings-dashboard.md) and [Import or export BizTalk Settings Using BTSTask](how-to-import-biztalk-settings-using-btstask.md). 
+ The current BizTalk Server settings can be exported to an XML file. Later, you can import those settings to the Settings Dashboard instead of setting up new values. For information on importing the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] settings, see [Import or export BizTalk Settings Using Settings Dashboard](how-to-import-biztalk-settings-using-settings-dashboard.md) and [Import or export BizTalk Settings Using BTSTask](how-to-import-biztalk-settings-using-btstask.md). 
   
 ## Prerequisites  
  To perform this operation, you must be signed in as a member of the BizTalk Server Administrators group.  
   
 ## Update the host-level settings  
   
-1.  In the **BizTalk Server Administration Console**, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], right-click **BizTalk Group**, and then click **Settings**.  
+1. In the <strong>BizTalk Server Administration Console</strong>, expand [!INCLUDE [btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], right-click <strong>BizTalk Group</strong>, and then click <strong>Settings</strong>.  
   
-2.  In the **BizTalk Settings Dashboard** dialog box, on the **Hosts** page, do one or more of the following.  
+2. In the **BizTalk Settings Dashboard** dialog box, on the **Hosts** page, do one or more of the following.  
   
-    -   Modify the general performance settings of the BizTalk host. See [How to Modify General Settings](../core/how-to-modify-general-settings.md).  
+   -   Modify the general performance settings of the BizTalk host. See [How to Modify General Settings](../core/how-to-modify-general-settings.md).  
   
-    -   Modify the resource-based throttling settings of the BizTalk host. See [How to Modify Resource Based Throttling Settings](../core/how-to-modify-resource-based-throttling-settings.md).  
+   -   Modify the resource-based throttling settings of the BizTalk host. See [How to Modify Resource Based Throttling Settings](../core/how-to-modify-resource-based-throttling-settings.md).  
   
-    -   Modify the rate-based throttling settings of the BizTalk host. See [How to Modify Rate Based Throttling Settings](../core/how-to-modify-rate-based-throttling-settings.md).  
+   -   Modify the rate-based throttling settings of the BizTalk host. See [How to Modify Rate Based Throttling Settings](../core/how-to-modify-rate-based-throttling-settings.md).  
   
-    -   Modify the orchestration throttling settings of the BizTalk host. See [How to Modify Orchestration Throttling Settings](../core/how-to-modify-orchestration-throttling-settings.md).  
+   -   Modify the orchestration throttling settings of the BizTalk host. See [How to Modify Orchestration Throttling Settings](../core/how-to-modify-orchestration-throttling-settings.md).  
   
 ## See Also  
  [Use Settings Dashboard for BizTalk Server Performance Tuning](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

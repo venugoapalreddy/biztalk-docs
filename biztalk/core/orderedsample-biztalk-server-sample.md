@@ -23,7 +23,7 @@ manager: "anneta"
 The OrderedSample sample demonstrates how to use an orchestration to receive and send an ordered series of messages in a round-trip fashion.  
   
 ## What This Sample Does  
- The sample assumes there are messages in the MQSeries queue from which it receives messages. When the adapter reads the messages from MQSeries queue, it reads them in-order and submits them to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+ The sample assumes there are messages in the MQSeries queue from which it receives messages. When the adapter reads the messages from MQSeries queue, it reads them in-order and submits them to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
  The receive port in the orchestration, **mqreceive**, has its **Ordered Delivery** property set to **True**.  
   

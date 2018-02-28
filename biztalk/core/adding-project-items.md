@@ -25,7 +25,7 @@ In the context of the BizTalk project system, a project item is a configured ite
 >  When you add a schema, map, or pipeline to a folder, the **Fully Qualified Name** property is automatically generated and includes the namespace and type.  
   
 ## Orchestrations  
- An orchestration is a representation of a business process expressed in the XLANG/s language. XLANG/s can be used to complement existing procedural languages such as Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] and Microsoft [!INCLUDE[btsVBNet](../includes/btsvbnet-md.md)].  
+ An orchestration is a representation of a business process expressed in the XLANG/s language. XLANG/s can be used to complement existing procedural languages such as Microsoft [!INCLUDE [btsVCSharp](../includes/btsvcsharp-md.md)] and Microsoft [!INCLUDE [btsVBNet](../includes/btsvbnet-md.md)].  
   
  You can use Orchestration Designer to create the orchestrations that you want to include in a BizTalk project. All orchestrations that you create in Orchestration Designer have an .odx file extension.  
   

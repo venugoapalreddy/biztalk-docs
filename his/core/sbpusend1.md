@@ -20,8 +20,8 @@ The **sbpusend** function sends a message from an application to a partner on an
   
 ```  
   
-VOID sbpusend(   
-PTRBFHDR msgptr   
+VOID sbpusend(   
+PTRBFHDR msgptr   
 );  
 ```  
   

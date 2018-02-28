@@ -20,7 +20,7 @@ The **WinCPICStartup** function allows an application to specify the version of 
   
 ```  
   
-        INT WINAPI WinCPICStartup(   
+        INT WINAPI WinCPICStartup(   
 WORDwVersionRequired,  
     LPWCPICDATAlpwcpicdata);  
 ```  

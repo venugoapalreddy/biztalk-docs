@@ -29,7 +29,7 @@ If you backed up your BAMArchive databases, in the event of a system or data fai
 -   Update the BAM DTS packages with the new server name and database name.  
   
 ## Prerequisites  
- You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group to perform this procedure.  
+ You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group to perform this procedure.  
   
 ### To update references to the BAM Archive database name (SQL Server 2008 R2/SP1)  
   

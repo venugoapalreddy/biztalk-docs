@@ -20,28 +20,28 @@ manager: "anneta"
  In this topic you test your inbound processing and view the EDI-Interchange Status Report for processing information.  
   
 ## Prerequisites  
- You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
+ You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group.  
   
 ### Testing the solution  
   
-1.  In Windows Explorer, move to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations. Copy the **SamplePO.txt** file.  
+1. In Windows Explorer, move to [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations. Copy the <strong>SamplePO.txt</strong> file.  
   
-2.  Paste the **SamplePO.txt** file into the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\fromTHEM folder.  
+2. Paste the <strong>SamplePO.txt</strong> file into the [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\fromTHEM folder.  
   
-3.  Move to the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem folder. Confirm that the folder contains an output txt file.  
+3. Move to the [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem folder. Confirm that the folder contains an output txt file.  
   
-4.  Open the output file in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem and the SamplePO.txt input file in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations. Verify that the data in the output message corresponds to the data in the original **SamplePO.txt** file.  
+4. Open the output file in [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem and the SamplePO.txt input file in [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations. Verify that the data in the output message corresponds to the data in the original <strong>SamplePO.txt</strong> file.  
   
-    > [!NOTE]
-    >  You can verify that the data in the output file has been transformed from the data in the input file by opening the Inbound4010850_to_OrderFile.btm file in Visual Studio, and checking the mappings.  
+   > [!NOTE]
+   >  You can verify that the data in the output file has been transformed from the data in the input file by opening the Inbound4010850_to_OrderFile.btm file in Visual Studio, and checking the mappings.  
   
-5.  Move to the [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\toTHEM_997 folder. Confirm that the folder contains an output 997 acknowledgment txt file in which the ST01 data element is "997".  
+5. Move to the [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\toTHEM_997 folder. Confirm that the folder contains an output 997 acknowledgment txt file in which the ST01 data element is "997".  
   
-6.  In the console tree of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, click **BizTalk Group**. At the bottom of the right pane, click **EDI Interchange and Correlated ACK Status**.  
+6. In the console tree of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, click <strong>BizTalk Group</strong>. At the bottom of the right pane, click <strong>EDI Interchange and Correlated ACK Status</strong>.  
   
-7.  In the query expression, change the operator for the **Status** field to **Equals** and change the **Value** field for the **Status** field to **All**. Delete the **Interchange Date Time field** (select the row and press DELETE on the key board).  
+7. In the query expression, change the operator for the **Status** field to **Equals** and change the **Value** field for the **Status** field to **All**. Delete the **Interchange Date Time field** (select the row and press DELETE on the key board).  
   
-8.  Click **Run Query**.  
+8. Click **Run Query**.  
   
 9. Verify that two messages are displayed in the status report, one in the receive direction from THEM (Fabrikam) to US (OrderSystem) (the 850 message), the other in the send direction from the US (OrderSystem) to THEM (Fabrikam) (the 997 acknowledgment).  
   
@@ -51,7 +51,7 @@ manager: "anneta"
   
 12. Close the Interchange status and ack details dialog box.  
   
-13. In the **Interchange/ACK Status** pane, right-click the message from THEM to US, and then click **Transaction Set Details**. Right-click the entry in the **Query results** pane, and then click **View Transaction Set Content**. Verify that the transaction set data is displayed in the **Message Details** dialog box. In Windows Explorer, open the SamplePO.txt file in [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations. Verify that the transaction set displayed in the **Message Details** dialog box is the same as that in the input message, without the interchange and group headers and trailers.  
+13. In the <strong>Interchange/ACK Status</strong> pane, right-click the message from THEM to US, and then click <strong>Transaction Set Details</strong>. Right-click the entry in the <strong>Query results</strong> pane, and then click <strong>View Transaction Set Content</strong>. Verify that the transaction set data is displayed in the <strong>Message Details</strong> dialog box. In Windows Explorer, open the SamplePO.txt file in [!INCLUDE [btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations. Verify that the transaction set displayed in the <strong>Message Details</strong> dialog box is the same as that in the input message, without the interchange and group headers and trailers.  
   
 ## Next Steps  
  You have completed the EDI Interface Developer Tutorial.  

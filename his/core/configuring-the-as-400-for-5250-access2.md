@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Configuring the AS/400 for 5250 Access
-When setting [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for an AS/400 connection, you must match values set on the host. Check with the host administrator to obtain required information for AS/400 access.  
+When setting [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] parameters for an AS/400 connection, you must match values set on the host. Check with the host administrator to obtain required information for AS/400 access.  
   
  The administrator of the AS/400 may allow configurations to be created automatically in response to incoming requests. Alternatively, the administrator may disable this feature, to ensure a higher level of security. Work with the documentation for the AS/400 or with the administrator to determine the appropriate methods for configuring the AS/400.  
   
@@ -28,16 +28,16 @@ When setting [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnovers
   
  If the configuration is not automatic, specify the following:  
   
--   APPN-capable *YES  
+- APPN-capable *YES  
   
--   A Control Point Name and network identifier that match corresponding parameters in Host Integration Server  
+- A Control Point Name and network identifier that match corresponding parameters in Host Integration Server  
   
--   APPN CP session support *YES  
+- APPN CP session support *YES  
   
- Communications > Network configuration > Configure communications  and remote hardware > Work with communications controllers  
- In this context, communications controller means the Host Integration Server.  
+  Communications > Network configuration > Configure communications  and remote hardware > Work with communications controllers  
+  In this context, communications controller means the Host Integration Server.  
   
- If the configuration is not automatic, specify the local address of the Host Integration Server computer.  
+  If the configuration is not automatic, specify the local address of the Host Integration Server computer.  
   
 |Connection<br /><br /> type|Address as<br /><br /> specified in AS/400<br /><br /> configuration|Method for finding out<br /><br /> address on Host Integration Server|  
 |-------------------------|-----------------------------------------------------------|-------------------------------------------------------------------|  

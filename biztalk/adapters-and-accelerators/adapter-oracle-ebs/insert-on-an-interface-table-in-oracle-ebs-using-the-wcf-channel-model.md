@@ -15,12 +15,12 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Run an insert operation on an interface table in Oracle E-Business Suite using the WCF channel model
-The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] discovers a set of Insert, Select, Update, and Delete operations on Oracle E-Business Suite interface tables. By using these operations, you can perform simple Insert, Select, Update, and Delete statements qualified by a Where clause on a target interface table. This topic provides instructions on how to perform an Insert operation on an interface table using the WCF channel model.  
+The [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] discovers a set of Insert, Select, Update, and Delete operations on Oracle E-Business Suite interface tables. By using these operations, you can perform simple Insert, Select, Update, and Delete statements qualified by a Where clause on a target interface table. This topic provides instructions on how to perform an Insert operation on an interface table using the WCF channel model.  
   
  For more information on how the adapter supports these operations, see [Operations on Interface Tables and Interface Views](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md). For more information about how to perform operations on Oracle E-Business Suite using the WCF Channel model, see [Overview of the WCF channel model with the Oracle E-Business Suite adapter](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter.md).  
   
 ## About the Examples Used in this Topic  
- The example in this topic performs operations on the MS_SAMPLE_EMPLOYEE interface table. The table is created by running the script provided with the samples. For more information about samples, see [Samples for the Oracle EBS adapter](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md). A sample, **InsertOperation**, which is based on this topic, is also provided with the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] samples.  
+ The example in this topic performs operations on the MS_SAMPLE_EMPLOYEE interface table. The table is created by running the script provided with the samples. For more information about samples, see [Samples for the Oracle EBS adapter](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md). A sample, <strong>InsertOperation</strong>, which is based on this topic, is also provided with the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] samples.  
   
 ## The Insert Message  
  To perform operations on the Oracle E-Business Suite using the WCF channel model, you must have the request message specific to the operation. The request message to perform an Insert operation on the MS_SAMPLE_EMPLOYEE interface table resembles the following:  
@@ -48,7 +48,7 @@ Designation = Manager
 Salary = 500000  
 ```  
   
- You must copy the message to a file, e.g. InsertRequest.xml. This file is used in this example to send the request message to Oracle E-Business Suite using the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]. For more information about the message schema for operations on table, see [Message Schemas for Insert, Update, Delete, and Select Operations](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md).  
+ You must copy the message to a file, e.g. InsertRequest.xml. This file is used in this example to send the request message to Oracle E-Business Suite using the [!INCLUDE [adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]. For more information about the message schema for operations on table, see [Message Schemas for Insert, Update, Delete, and Select Operations](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md).  
   
 ## Creating a WCF Channel Application  
  This section provides instructions on how to create a WCF channel application to perform an Insert operation on the MS_SAMPLE_EMPLOYEE interface table.  

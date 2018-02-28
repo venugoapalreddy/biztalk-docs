@@ -19,12 +19,12 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Use the Data Provider for Siebel with SSIS
-You can use the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) along with SQL Server Integration Services (SSIS) to import data from a Siebel system into SQL Server database tables, flat files, or other compatible destination types. Specifically, you can create an SSIS package that can be executed to import this data.  
+You can use the [!INCLUDE [adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE [adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) along with SQL Server Integration Services (SSIS) to import data from a Siebel system into SQL Server database tables, flat files, or other compatible destination types. Specifically, you can create an SSIS package that can be executed to import this data.  
   
- To import data into the SQL Server database, use the SQL Server Import and Export Wizard, and provide a SELECT query to specify the data to be imported. The query must confirm to the semantics supported by the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]. For more information about the grammar for a SELECT query for the [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], see [Syntax for a SELECT Statement in Siebel](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md).  
+ To import data into the SQL Server database, use the SQL Server Import and Export Wizard, and provide a SELECT query to specify the data to be imported. The query must confirm to the semantics supported by the [!INCLUDE [adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]. For more information about the grammar for a SELECT query for the [!INCLUDE [adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)], see [Syntax for a SELECT Statement in Siebel](../../adapters-and-accelerators/adapter-siebel/syntax-for-a-select-statement-in-siebel.md).  
   
 > [!NOTE]
->  The [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] does not support using an EXEC statement with SSIS.  
+>  The [!INCLUDE [adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] does not support using an EXEC statement with SSIS.  
   
  You can start the SQL Server Import and Export wizard either from the SQL Server Management Studio or from an Integration Service project in Visual Studio. This section provides instructions on running the wizard from both the SQL Server Management Studio and Visual Studio interfaces.  
   

@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Connection Methods
-[!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] supports many different connection methods. However, not all may be available in your environment. When you choose a connection method, you should keep in mind:  
+[!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] supports many different connection methods. However, not all may be available in your environment. When you choose a connection method, you should keep in mind:  
   
 -   Deployment model you are implementing  
   

@@ -19,14 +19,14 @@ manager: "anneta"
 The following tabs are available for the SNA Subdomain Properties sheet:  
   
 ## Domain Properties: NetView  
- NetView sends alerts back and forth between a host system and the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and associated client computers.  
+ NetView sends alerts back and forth between a host system and the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and associated client computers.  
   
  **Send NetView Management Data to this Connection**  
  Select a connection to which NetView data should be sent. This can be any host connection.  
   
 ## Domain Properties: Display Verb  
- **Default Connection for Display**  
- Select a connection for use by Display Verbs. When the Display Verb is used but does not specify a connection, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] uses the connection you specify in **Display Verb Properties**. If you do not specify a default Display connection, Host Integration Server randomly selects a connection for the verb to use.  
+ <strong>Default Connection for Display</strong>  
+ Select a connection for use by Display Verbs. When the Display Verb is used but does not specify a connection, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] uses the connection you specify in <strong>Display Verb Properties</strong>. If you do not specify a default Display connection, Host Integration Server randomly selects a connection for the verb to use.  
   
 ## Domain Properties: Server Broadcasts  
  Servers communicate with each other using server broadcasts.  

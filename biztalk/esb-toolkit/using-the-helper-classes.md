@@ -14,11 +14,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Using the Helper Classes
-[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] includes a set of helper classes used by the other processes, services, and components in the toolkit. Because these helper classes are also public, you can use them in your own code as required.  
+[!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] includes a set of helper classes used by the other processes, services, and components in the toolkit. Because these helper classes are also public, you can use them in your own code as required.  
   
  In some cases, you must use them to provide parameters of the appropriate type for methods of other classes in the ESB. For example, the Resolver Web service methods return a generic collection of instances of the **Resolver** class.  
   
- The following sections describe the helper classes are included in [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]:  
+ The following sections describe the helper classes are included in [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)]:  
   
 -   [The MapHelper Class](../esb-toolkit/the-maphelper-class.md)  
   

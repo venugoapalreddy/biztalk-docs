@@ -15,10 +15,10 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Known Issues with EDI Acknowledgments
-This topic describes known issues with EDI acknowledgments in [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+This topic describes known issues with EDI acknowledgments in [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ## AK102 in a 997 Acknowledgment Can Be Negative  
- The AK102 data element (group control number) in an X12 997 acknowledgment can be a negative value. An acknowledgment with a negative AK102 data element will pass the validation performed by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], even though a negative group control number is not meaningful.  
+ The AK102 data element (group control number) in an X12 997 acknowledgment can be a negative value. An acknowledgment with a negative AK102 data element will pass the validation performed by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], even though a negative group control number is not meaningful.  
   
 ## A CONTRL Receipt May Report a Status of Accepted when Part of the Message Is Rejected  
  A CONTRL receipt (EDIFACT technical acknowledgment) reports a status of “Rejected” only when the incoming EDIFACT message is a duplicate or there are errors in the envelope (for example, an issue with the character set). EDIFACT does not report a state of “Interchange accepted with errors” in the CONTRL technical acknowledgment, as X12 does in the TA104 field in a TA1 acknowledgment. If part of the EDIFACT message is accepted, the CONTRL technical acknowledgment will report “Accepted”. In some scenarios, part of the message will be rejected, but the CONTRL acknowledgment will still report a status of “Accepted”. In such scenarios, the UCI5 element may report the error.  

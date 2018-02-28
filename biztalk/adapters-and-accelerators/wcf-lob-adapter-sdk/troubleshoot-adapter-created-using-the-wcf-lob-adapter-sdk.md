@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Troubleshoot adapter created using the WCF LOB Adapter SDK
-This section describes troubleshooting information for the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]. It includes problems and resolutions for performance counters and for tracing.  
+This section describes troubleshooting information for the [!INCLUDE [afproductnameshort](../../includes/afproductnameshort-md.md)]. It includes problems and resolutions for performance counters and for tracing.  
   
 ## In This Section  
   

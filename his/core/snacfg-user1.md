@@ -15,7 +15,7 @@ manager: "anneta"
 ---
 # Snacfg User
 ## Purpose  
- Enables you to view, modify settings for, or delete users recognized by [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. Also lets you assign LUs or LU pools to 3270 users, or assign default LUs to 5250 users.  
+ Enables you to view, modify settings for, or delete users recognized by [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. Also lets you assign LUs or LU pools to 3270 users, or assign default LUs to 5250 users.  
   
  In addition, **snacfg user** enables you to add users to the list recognized by Host Integration Server. However, it is recommended that you use the SNA Manager, not **snacfg user**, when adding users.  
   
@@ -38,8 +38,8 @@ manager: "anneta"
   
  where  
   
- **#** *configpath*  
- Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
+ <strong>#</strong> <em>configpath</em>  
+ Specifies the path of the configuration file to view or change. If the configuration path is omitted, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] will attempt to access the configuration file on the local system, using the path \Program Files\Host Integration Server\SYSTEM\CONFIG\COM.CFG.  
   
  **/list**  
  Generates a list of the 3270 users recognized by Host Integration Server.  

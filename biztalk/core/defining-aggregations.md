@@ -30,7 +30,7 @@ Pre-calculated Aggregation Data
  The above figure summarizes the numbers of each product, shipped to specific locations over a two-month time period. Excel typically defines this data as **measure**. The data used for filtering and categorization, Excel defines as **dimension**.  
   
 > [!NOTE]
->  BAM does not support using named instances for [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Services.  
+>  BAM does not support using named instances for [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Services.  
   
  For the user experience of browsing multidimensional data, see the Pivot table topic in Excel Help.  
   

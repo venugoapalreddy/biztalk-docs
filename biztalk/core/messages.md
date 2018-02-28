@@ -114,7 +114,7 @@ TextMessage={
 ## Body  
  EMS supports all messages enumerated in the JMS specification: text, byte, stream, map, and object. The BizTalk Adapter for TIBCO EMS supports only the text message type.  
   
- JMS does not require that messages of type text contain XML-formatted bodies. The adapter does not process the body of the message; it is provided to [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] as received.  Therefore, messages submitted to BizTalk by the adapter may not always parse as XML data.  
+ JMS does not require that messages of type text contain XML-formatted bodies. The adapter does not process the body of the message; it is provided to [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] as received.  Therefore, messages submitted to BizTalk by the adapter may not always parse as XML data.  
   
 ## Persistent Messages  
  Messages can be persisted on the EMS server to guarantee exactly one-time delivery to a subscriber; however, this can have a significant impact on the adapter's performance. When you send messages, EMS stores the message in local storage before acknowledging reception of the message to the adapter. You can set this property on a per-message basis in the orchestration or for all messages processed by the port.  

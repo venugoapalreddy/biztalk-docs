@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Required Manual Updates
-After the Update2XMLSchema tool transforms the HL7 schemas into versions that [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] can use, you must manually update some fields of the resulting schemas.  
+After the Update2XMLSchema tool transforms the HL7 schemas into versions that [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] can use, you must manually update some fields of the resulting schemas.  
   
 ## In This Section  
   

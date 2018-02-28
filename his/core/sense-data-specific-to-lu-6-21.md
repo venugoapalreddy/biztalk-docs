@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Sense Data Specific to LU 6.2
-The LU 6.2 sense codes are specified and interpreted by SNA components within [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], and, in general, are presented as return codes and as parameters to specific verbs.  
+The LU 6.2 sense codes are specified and interpreted by SNA components within [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)], and, in general, are presented as return codes and as parameters to specific verbs.  
   
  The following sense codes are carried on responses flowing on LU 6.2 sessions.  
   

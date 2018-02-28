@@ -27,7 +27,7 @@ public: BSTR bstrExternalAccount;
  BSTR must be freed after use.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SExternalAccount Structure](../esso/sexternalaccount-structure.md)   

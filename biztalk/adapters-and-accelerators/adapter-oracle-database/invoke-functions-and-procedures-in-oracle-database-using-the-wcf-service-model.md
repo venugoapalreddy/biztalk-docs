@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Invoke Functions and Procedures in Oracle Database using the WCF Service Model
-The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces procedures, functions, and packages as operations. In the WCF service model these operations are represented as methods on a WCF client. The WCF service model and the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
+The [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] surfaces procedures, functions, and packages as operations. In the WCF service model these operations are represented as methods on a WCF client. The WCF service model and the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
   
 -   **Support functions**. The RETURN value of the Oracle function is surfaced as the return value of the WCF client method. Oracle parameters are surfaced as parameters (with the appropriate direction as defined below) to the WCF client method.  
   
@@ -38,7 +38,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces proce
  The examples in this topic use the /SCOTT/Package/ACCOUNT_PKG/GET_ACCOUNT overloaded procedure. This procedure reads a record from the SCOTT/ACCOUNT table based on either an account ID or an account name. A script to generate this procedure and table is supplied with the SDK samples. For more information about the SDK samples, see [Samples in the SDK](../../core/samples-in-the-sdk.md).  
   
 ## The WCF Client Class  
- The following table shows the name of the WCF client and the method generated for procedures, functions and packages that the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces. Unless a function or procedure is overloaded, a single WCF client is used to invoke all of the functions in a schema, all of the procedures in a schema, or all of the functions and procedures in a package.  
+ The following table shows the name of the WCF client and the method generated for procedures, functions and packages that the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] surfaces. Unless a function or procedure is overloaded, a single WCF client is used to invoke all of the functions in a schema, all of the procedures in a schema, or all of the functions and procedures in a package.  
   
 |Oracle Artifact|WCF Client Operation Name|Example|  
 |---------------------|-------------------------------|-------------|  
@@ -54,7 +54,7 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces proce
   
  [PACKAGE_NAME] = The name of an Oracle package.  
   
- The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] represents Oracle RECORD type parameters and return values as well as the result sets returned by REF CURSOR parameters as complex XML types that contain the row data (or fields) of an Oracle record. In the WCF service model, each of these XML types is represented as a .NET class; the properties of the class represent the fields of the RECORD type or REF CURSOR result set. Oracle RECORD types are always represented as strongly-typed .NET classes. A REF CURSOR result set, however, can be represented as either strongly-typed or weakly-typed records based on whether the REF CURSOR itself is declared as strongly-typed or weakly-typed. The classes that represent REF CURSOR or RECORD type parameters (or return values) are generated in a unique namespace based on the procedure, function, or package. The following table shows these namespaces.  
+ The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] represents Oracle RECORD type parameters and return values as well as the result sets returned by REF CURSOR parameters as complex XML types that contain the row data (or fields) of an Oracle record. In the WCF service model, each of these XML types is represented as a .NET class; the properties of the class represent the fields of the RECORD type or REF CURSOR result set. Oracle RECORD types are always represented as strongly-typed .NET classes. A REF CURSOR result set, however, can be represented as either strongly-typed or weakly-typed records based on whether the REF CURSOR itself is declared as strongly-typed or weakly-typed. The classes that represent REF CURSOR or RECORD type parameters (or return values) are generated in a unique namespace based on the procedure, function, or package. The following table shows these namespaces.  
   
 |Oracle Artifact|Namespace|Example|  
 |---------------------|---------------|-------------|  
@@ -78,21 +78,21 @@ The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] surfaces proce
   
  In general, the Oracle parameters and return values are mapped as follows in the WCF client method:  
   
--   Oracle IN parameters are mapped to .NET (input) parameters.  
+- Oracle IN parameters are mapped to .NET (input) parameters.  
   
--   Oracle OUT parameters are mapped to .NET **out** parameters.  
+- Oracle OUT parameters are mapped to .NET **out** parameters.  
   
--   Oracle IN OUT parameters are mapped to .NET **ref** parameters.  
+- Oracle IN OUT parameters are mapped to .NET **ref** parameters.  
   
--   Function RETURN values are mapped to the method return value.  
+- Function RETURN values are mapped to the method return value.  
   
- However, two important exceptions exist:  
+  However, two important exceptions exist:  
   
--   Oracle IN OUT REF CURSOR parameters are split into an input string and an output (**out**) record set. This is because the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] represents IN REF CUSROR parameters as strings and OUT REF CURSOR parameters as complex types (record sets), these cannot be combined into a single parameter.  
+- Oracle IN OUT REF CURSOR parameters are split into an input string and an output (<strong>out</strong>) record set. This is because the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] represents IN REF CUSROR parameters as strings and OUT REF CURSOR parameters as complex types (record sets), these cannot be combined into a single parameter.  
   
--   The first OUT parameter in an Oracle procedure is mapped to the return value of the WCF client method. This is standard WCF behavior.  
+- The first OUT parameter in an Oracle procedure is mapped to the return value of the WCF client method. This is standard WCF behavior.  
   
- The following example shows part of a simple Oracle procedure (loaded in the SCOTT schema) and the signature of the WCF client method that is generated to invoke it. The Oracle procedure has three IN parameters, three IN OUT parameters, and three OUT parameters; however, the WCF client method does not map a parameter for the first OUT parameter. Instead it is mapped to the method return value.  
+  The following example shows part of a simple Oracle procedure (loaded in the SCOTT schema) and the signature of the WCF client method that is generated to invoke it. The Oracle procedure has three IN parameters, three IN OUT parameters, and three OUT parameters; however, the WCF client method does not map a parameter for the first OUT parameter. Instead it is mapped to the method return value.  
   
 ```  
 CREATE or REPLACE PROCEDURE Sample_Procedure   
@@ -133,7 +133,7 @@ public partial class SCOTTProcedureClient : System.ServiceModel.ClientBase<SCOTT
 ```  
   
 ### Support for Overloaded Procedures, Functions and Packages  
- The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports overloaded procedures, functions, and packages by appending a unique string to the node ID and the namespace that it surfaces for each overloaded artifact. This string is "overload1" for the first overload, "overload2" for the next overload, and so on.  
+ The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] supports overloaded procedures, functions, and packages by appending a unique string to the node ID and the namespace that it surfaces for each overloaded artifact. This string is "overload1" for the first overload, "overload2" for the next overload, and so on.  
   
  In the WCF service model each overloaded procedure or function is represented by a unique WCF client. This is different from the non-overloaded case in which all of the functions in a SCHEMA, all of the procedures in a SCHEMA, or all of the procedures and functions in a PACKAGE are invoked by the same WCF client. The following table shows the WCF client name and method generated for overloaded procedures, functions, and packages.  
   
@@ -199,16 +199,16 @@ public partial class SCOTTPackageACCOUNT_PKGGET_ACCOUNToverload2Client : System.
 ## Invoking Functions and Procedures  
  To invoke a function or a procedure by using a WCF client, perform the following steps.  
   
-1.  Generate a WCF client class for the target function, procedure, or package. This class should contain methods for the operations that you will invoke on the target artifact.  
+1. Generate a WCF client class for the target function, procedure, or package. This class should contain methods for the operations that you will invoke on the target artifact.  
   
-    > [!NOTE]
-    >  In the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)], overloaded functions and procedures appear in the **Available categories and operations** box as [NAME].1, [NAME].2, [NAME].3, and so on, where [NAME] is the name of the overloaded artifact and the numeric value is the overload ID on the Oracle database.  
+   > [!NOTE]
+   >  In the [!INCLUDE [addadapterservreflong](../../includes/addadapterservreflong-md.md)], overloaded functions and procedures appear in the <strong>Available categories and operations</strong> box as [NAME].1, [NAME].2, [NAME].3, and so on, where [NAME] is the name of the overloaded artifact and the numeric value is the overload ID on the Oracle database.  
   
-2.  Create an instance of the WCF client class and call its methods to invoke the function or procedure.  
+2. Create an instance of the WCF client class and call its methods to invoke the function or procedure.  
   
- For more detailed information about how to create a WCF client class and invoke operations on the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Overview of the WCF Service Model with the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md).  
+   For more detailed information about how to create a WCF client class and invoke operations on the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)], see [Overview of the WCF Service Model with the Oracle Database Adapter](../../adapters-and-accelerators/adapter-oracle-database/overview-of-the-wcf-service-model-with-the-oracle-database-adapter.md).  
   
- The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] executes each operation inside of a transaction on the Oracle database.  
+   The [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] executes each operation inside of a transaction on the Oracle database.  
   
 > [!IMPORTANT]
 >  The classes that represent REF CURSOR and RECORD type parameters or return values in functions or procedures (and packages) are declared in a unique namespace for each function or procedure. This means, for example, that a PACKAGE REF CURSOR type that is used as a return value in two different functions will be declared in a unique namespace for each WCF client method. You must either declare separate variables to hold these different return values or appropriately cast the variable when you invoke one of the WCF client methods.  

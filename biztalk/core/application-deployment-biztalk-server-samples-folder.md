@@ -20,7 +20,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Application Deployment (BizTalk Server Samples Folder)
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes several application deployment samples in its software development kit (SDK). This section provides detailed information about the functionality demonstrated by each sample, instructions for building and running the sample, and the results you can expect.  
+Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] includes several application deployment samples in its software development kit (SDK). This section provides detailed information about the functionality demonstrated by each sample, instructions for building and running the sample, and the results you can expect.  
   
 ## In This Section  
   

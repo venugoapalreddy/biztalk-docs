@@ -27,4 +27,4 @@ manager: "anneta"
   
  **User Action**  
   
- Unless there is a good reason not to, select the **Schema** node of this schema, and then in the Microsoft® [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, provide a value for the **Target Namespace** property that is unique to this schema.
+ Unless there is a good reason not to, select the <strong>Schema</strong> node of this schema, and then in the Microsoft® [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, provide a value for the <strong>Target Namespace</strong> property that is unique to this schema.

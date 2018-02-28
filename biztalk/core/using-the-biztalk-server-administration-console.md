@@ -73,7 +73,7 @@ The BizTalk Server Administration Console is a Microsoft Management Console (MMC
 ## Tips and tricks
 
 #### Update settings for multiple hosts and host instances simultaneously
-Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], you can select multiple hosts and host instances, and update some of the settings in **Settings Dashboard**.
+Starting with [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], you can select multiple hosts and host instances, and update some of the settings in <strong>Settings Dashboard</strong>.
 
 **Steps**:
 
@@ -87,7 +87,7 @@ Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], you can select 
 > You can select multiple host and host instances that are the same Host Type. If the host type is different, the **Settings** option is grayed out. For example, if you multi-select an in-process host and an isolated host, then **Settings** is grayed out.
 
 #### Filter artifacts in your application
-Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], you can search for artifacts in your application. For example, you can search for a specific schema or an orchestration in an application. 
+Starting with [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], you can search for artifacts in your application. For example, you can search for a specific schema or an orchestration in an application. 
 
 **Steps**:
 
@@ -99,7 +99,7 @@ Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], you can search 
 You can use this Search to find or filter any artifacts with your application, including send ports, resources, maps, and so on. 
 
 #### Save multiple suspended messages simultaneously to a file within Group Hub 
-Starting with [!INCLUDE[bts2016_md](../includes/bts2016-md.md)], you can save multiple suspended messages simultaneously to a file.
+Starting with [!INCLUDE [bts2016_md](../includes/bts2016-md.md)], you can save multiple suspended messages simultaneously to a file.
 
 **Steps**:
 

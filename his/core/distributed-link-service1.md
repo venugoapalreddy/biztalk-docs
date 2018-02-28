@@ -52,14 +52,14 @@ LINKCFG LINKSVC "title"
  **/ALTLIST:** \\\server\service[;\\\server\service;]  
  These are the names of alternate (backup) link services using the preceding format and example.  
   
- **/DOMAIN:** *domain*  
- Enter the name of the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] subdomain.  This is a required parameter if [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed on a system account, not a local account.  
+ <strong>/DOMAIN:</strong> <em>domain</em>  
+ Enter the name of the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] subdomain.  This is a required parameter if [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed on a system account, not a local account.  
   
- **/USERID:** *userid*  
- Enter the name of the userid for the system account.  This is a required parameter if [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed on a system account, not a local account.  
+ <strong>/USERID:</strong> <em>userid</em>  
+ Enter the name of the userid for the system account.  This is a required parameter if [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed on a system account, not a local account.  
   
- **/PASSWORD:** *password*  
- Enter the password of the system account.  This is a required parameter if [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed on a system account, not a local account.  
+ <strong>/PASSWORD:</strong> <em>password</em>  
+ Enter the password of the system account.  This is a required parameter if [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] is installed on a system account, not a local account.  
   
 ## See Also  
  [Linkcfg Reference](../core/linkcfg-reference2.md)

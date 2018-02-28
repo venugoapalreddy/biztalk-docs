@@ -20,7 +20,7 @@ The **WinAPPCCancelAsyncRequest** function cancels an outstanding [WinAsyncAPPC]
   
 ```  
   
-    int WINAPI WinAPPCCancelAsyncRequest(   
+    int WINAPI WinAPPCCancelAsyncRequest(   
 HANDLE hAsyncTaskID);  
 ```  
   

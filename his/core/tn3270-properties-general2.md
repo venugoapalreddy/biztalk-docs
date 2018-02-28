@@ -37,8 +37,8 @@ manager: "anneta"
  **Log Normal Audit Events**  
  If this is set, audit messages are logged. These are messages that log successful client connection and successful client termination.  
   
- **Use SNA Event Log**  
- If this is selected, all TN3270 service event messages are written to the event log being used by the [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] system. If this is not set, all TN3270 service event messages are written to the Windows event log on the local machine.  
+ <strong>Use SNA Event Log</strong>  
+ If this is selected, all TN3270 service event messages are written to the event log being used by the [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] system. If this is not set, all TN3270 service event messages are written to the Windows event log on the local machine.  
   
 ## TN3270 Properties: Port/Security  
  This property page contains two groups.  
@@ -75,17 +75,17 @@ manager: "anneta"
   
  The client requires a valid Certificate with the following properties:  
   
--   Type X509  
+- Type X509  
   
--   Client Authentication  
+- Client Authentication  
   
--   Associated private key  
+- Associated private key  
   
- These certificate settings may match some of those you would not choose to grant access to. It is therefore recommended that you check the list of default Trusted Root Certification Authorities in the TN3270 Service Store, and remove any you do not want to be there.  
+  These certificate settings may match some of those you would not choose to grant access to. It is therefore recommended that you check the list of default Trusted Root Certification Authorities in the TN3270 Service Store, and remove any you do not want to be there.  
   
- TN services listen on multiple ports simultaneously. You can set a default port number for the TN service (assign the port number to the server) and override this number on a per session basis (assign the port number to the LU session), allowing a single client computer to connect to multiple host computers.  
+  TN services listen on multiple ports simultaneously. You can set a default port number for the TN service (assign the port number to the server) and override this number on a per session basis (assign the port number to the LU session), allowing a single client computer to connect to multiple host computers.  
   
- You can also add the TN3270 port by using the SnaCfg tool, with the command and parameters shown below:  
+  You can also add the TN3270 port by using the SnaCfg tool, with the command and parameters shown below:  
   
 ```  
 TN3PORT tn3270Server:PortNumber /ADD  

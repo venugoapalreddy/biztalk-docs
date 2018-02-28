@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Test the JMS MQRFH2 Sample Installation
-You can check for successful installation and operation of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 sample before you execute any of the sample scenarios.  
+You can check for successful installation and operation of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] JMS MQRFH2 sample before you execute any of the sample scenarios.  
   
  **To test the JMS MQRFH2 sample installation**  
   

@@ -15,13 +15,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Message Schemas for Composite Operations
-The [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] enables you to execute composite operations on the SQL Server database. A composite operation can contain multiple operations including the Insert, Update, and Delete operations on the tables and views, and operations on stored procedures. A composite operation can include these operations in any order.  
+The [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)] enables you to execute composite operations on the SQL Server database. A composite operation can contain multiple operations including the Insert, Update, and Delete operations on the tables and views, and operations on stored procedures. A composite operation can include these operations in any order.  
   
  For more information about:  
   
--   Composite operations, see [Support for Composite Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md).  
+- Composite operations, see [Support for Composite Operations](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md).  
   
--   How to perform composite operations using the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Run composite operations in SQL Server  using the SQL adapter](../../adapters-and-accelerators/adapter-sql/run-composite-operations-in-sql-server-using-the-sql-adapter.md).  
+- How to perform composite operations using the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)], see [Run composite operations in SQL Server  using the SQL adapter](../../adapters-and-accelerators/adapter-sql/run-composite-operations-in-sql-server-using-the-sql-adapter.md).  
   
 ## Message Structure for the Composite Operation  
  Since a composite operation contains multiple individual operations; the message structure of a composite operation contains message structures of the individual operations. As a composite operation contains operations on tables, views, and stored procedures, the composite operation message follows a request-response message exchange pattern.  

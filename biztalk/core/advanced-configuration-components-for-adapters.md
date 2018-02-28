@@ -17,7 +17,7 @@ manager: "anneta"
 # Advanced Configuration Components for Adapters
 The BizTalk Adapter Framework supports a custom drop-down editor, a custom modal dialog editor, and a custom type converter. These custom design components are especially useful when taking user name and password information as input.  
   
- You can invoke a custom editor or type converter for a specific data field (element or attribute) in the configuration schema. As described in Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Help, the editor must be derived from **System.Drawing.Design.UITypeEditor** and the type converter from **System.ComponentModel.TypeConverter**.  
+ You can invoke a custom editor or type converter for a specific data field (element or attribute) in the configuration schema. As described in Microsoft [!INCLUDE [btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Help, the editor must be derived from <strong>System.Drawing.Design.UITypeEditor</strong> and the type converter from <strong>System.ComponentModel.TypeConverter</strong>.  
   
  An editor minimally overrides the **GetEditStyle** method to specify the kind of editor (**Modal** dialog, **DropDown** control, or **None** of the above) and the **EditValue** method to change the value with the editor.  
   

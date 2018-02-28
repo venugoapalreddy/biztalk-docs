@@ -19,7 +19,7 @@ Message transformation patterns define proven guidelines for transforming messag
 ## Message Translator  
  The Message Translator pattern defines a solution for communication between systems that use incompatible data formats. For example, a client application may send a flat file request message that must be converted to XML before additional processing can occur. For a detailed description of this pattern, see [Message Translator](http://go.microsoft.com/fwlink/?LinkId=186845) ([http://go.microsoft.com/fwlink/?LinkId=186845](http://go.microsoft.com/fwlink/?LinkId=186845)) on the Enterprise Integration Patterns site.  
   
- The implementation of this pattern in Itinerary Designer is a combination of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] transformation service and a single resolver. The itinerary transformation service is responsible for transforming a message using resolver properties that define the artifacts required for transformation. The resolver implementation is responsible for providing transformation settings, which can be defined statically or dynamically, depending on the resolver configuration.  
+ The implementation of this pattern in Itinerary Designer is a combination of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] transformation service and a single resolver. The itinerary transformation service is responsible for transforming a message using resolver properties that define the artifacts required for transformation. The resolver implementation is responsible for providing transformation settings, which can be defined statically or dynamically, depending on the resolver configuration.  
   
  For an example implementation of the Message Translator pattern, see the following resources:  
   
@@ -30,7 +30,7 @@ Message transformation patterns define proven guidelines for transforming messag
 ## Normalizer  
  The Normalizer pattern is an extension of the Data Model Transformation pattern. This pattern defines a solution in which messages received from multiple sources are semantically equivalent, but the messages arrive in different formats. For a detailed description of this pattern, see [Normalizer](http://go.microsoft.com/fwlink/?LinkId=186847) ([http://go.microsoft.com/fwlink/?LinkId=186847](http://go.microsoft.com/fwlink/?LinkId=186847)) on the Enterprise Integration Patterns site.  
   
- The implementation of this pattern in Itinerary Designer is a combination of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] transformation service and a single resolver. The itinerary transformation service is responsible for transforming a message using resolver properties that define the artifacts required for transformation. The resolver implementation is responsible for dynamically resolving the appropriate Microsoft BizTalk map for a specified type of message.  
+ The implementation of this pattern in Itinerary Designer is a combination of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)] transformation service and a single resolver. The itinerary transformation service is responsible for transforming a message using resolver properties that define the artifacts required for transformation. The resolver implementation is responsible for dynamically resolving the appropriate Microsoft BizTalk map for a specified type of message.  
   
  For an example implementation of the Normalizer pattern, see the [Installing and Running the Itinerary On-Ramp Sample](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md).  
   

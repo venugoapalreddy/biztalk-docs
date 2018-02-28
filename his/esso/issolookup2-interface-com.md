@@ -19,7 +19,7 @@ The **ISSOLookup2** interface provides a lookup for user credentials associated 
 ## Requirements  
  **Type Library:** SSOLookup 1.0 Type Library (SSOLookup.dll)  
   
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOLookup2 Members](../esso/issolookup2-members.md)   

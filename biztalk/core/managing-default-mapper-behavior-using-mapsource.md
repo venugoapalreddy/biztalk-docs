@@ -35,10 +35,10 @@ You can modify certain default behaviors of BizTalk Mapper by modifying attribut
 ```  
 <xsl:if test="string($var:v4)='true'">  
      <xsl:variable name="var:v5" select="ScriptNS0:FormatMessage(…)" />  
-     <xsl:variable name="var:v6" select="string($var:v5)" />  
-     <ns0:text>  
-          <xsl:value-of select="$var:v6" />  
-     </ns0:text>  
+     <xsl:variable name="var:v6" select="string($var:v5)" />  
+     <ns0:text>  
+          <xsl:value-of select="$var:v6" />  
+     </ns0:text>  
 </xsl:if>  
 ```  
   
@@ -80,7 +80,7 @@ You can modify certain default behaviors of BizTalk Mapper by modifying attribut
 ## Preserving the Order When Mapping a Repeating Sequence Group  
  Sequence groups in XSD schemas do not provide a looping context because they are not represented in the message instance. Without looping possibilities on the sequence group, the Mapper compiler does not generate the appropriate XSLT to maintain the segment order. As a result, relative context that is present in the input instance is lost, which makes the output instances useless for further processing that depends on the relative context.  
   
- You can use the **PreserveSequenceOrder** flag to maintain record order when mapping a repeating sequence to another repeating sequence. By default, the value of the flag is set to **No** to preserve the functionality of existing maps created in earlier [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] versions where the flag is not present. In the newly created maps, the flag will be present with its value set to **No**. To maintain segment order, you must explicitly set the value to **Yes** in the .btm files as shown:  
+ You can use the <strong>PreserveSequenceOrder</strong> flag to maintain record order when mapping a repeating sequence to another repeating sequence. By default, the value of the flag is set to <strong>No</strong> to preserve the functionality of existing maps created in earlier [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] versions where the flag is not present. In the newly created maps, the flag will be present with its value set to <strong>No</strong>. To maintain segment order, you must explicitly set the value to <strong>Yes</strong> in the .btm files as shown:  
   
 ```  
 <mapsource Name="BizTalk Map" BizTalkServerMapperTool_Version="2.0" Version="2" XRange="100" YRange="420" OmitXmlDeclaration="Yes" TreatElementsAsRecords="No" OptimizeValueMapping="No" GenerateDefaultFixedNodes="Yes" PreserveSequenceOrder="Yes" CopyPIs="No" method="xml" xmlVersion="1.0" IgnoreNamespacesForLinks="Yes">  

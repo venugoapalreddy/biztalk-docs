@@ -20,7 +20,7 @@ The **WinSLIStartup** function allows an application using the Session Level Int
   
 ```  
   
-int WINAPI WinSLIStartup(   
+int WINAPI WinSLIStartup(   
 WORD wVersionRequired,   
 LUADATA FAR *lpLuaData  
 );  

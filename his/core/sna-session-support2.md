@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # SNA Session Support
-This section lists and explains the types and numbers of SNA sessions supported by [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
+This section lists and explains the types and numbers of SNA sessions supported by [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)].  
   
 ## In This Section  
  [LU Support](../core/lu-support1.md)  

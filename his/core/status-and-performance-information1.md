@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Status and Performance Information
-This section details the status and performance features of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and the Windows operating systems.  
+This section details the status and performance features of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and the Windows operating systems.  
   
 ## In This Section  
  [Status and Performance](../core/status-and-performance1.md)  

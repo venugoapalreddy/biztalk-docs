@@ -25,9 +25,9 @@ DWORD ( *proc_addr,)
 (BUFHDR *, USHORT, USHORT  
 );  
   
-DWORD sepdrout(   
-    DWORD *proc_addr,   
-    (BUFHDR *, USHORT, USHORT   
+DWORD sepdrout(   
+    DWORD *proc_addr,   
+    (BUFHDR *, USHORT, USHORT   
    );  
 ```  
   

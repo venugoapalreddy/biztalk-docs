@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Run a SELECT Query on Business Components with Siebel
-This section demonstrates how to select data from a Siebel business component using the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)].  
+This section demonstrates how to select data from a Siebel business component using the [!INCLUDE [adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)].  
   
 ## Selecting Data from a Siebel Business Component  
  This section demonstrates how to select data from the "Account" business component in the Siebel repository.  

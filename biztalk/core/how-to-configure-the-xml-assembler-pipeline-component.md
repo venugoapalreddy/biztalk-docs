@@ -21,7 +21,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How to Configure the XML Assembler Pipeline Component
-The XML Assembler pipeline component is used to wrap the XML documents into the XML envelopes before sending a message from [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
+The XML Assembler pipeline component is used to wrap the XML documents into the XML envelopes before sending a message from [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].  
   
 ### To configure the properties for the XML Assembler pipeline component  
   

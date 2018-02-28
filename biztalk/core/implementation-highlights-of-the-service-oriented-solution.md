@@ -19,7 +19,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Implementation Highlights of the Service Oriented Solution
-A solution solves a particular problem in a specific context. The Service Oriented solution is no exception and is specific to Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the scenario. For more information about the Woodgrove Bank scenario, see [Understanding the Service Oriented Solution](../core/understanding-the-service-oriented-solution.md).  
+A solution solves a particular problem in a specific context. The Service Oriented solution is no exception and is specific to Microsoft [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and the scenario. For more information about the Woodgrove Bank scenario, see [Understanding the Service Oriented Solution](../core/understanding-the-service-oriented-solution.md).  
   
  While developing the scenario, several areas proved to be bottlenecks in reducing response times to an acceptable level. Sending messages to the backend systems using the adapters introduces significant latency in getting back responses. In general, adapters by themselves offer very low latency. However, the distributed architecture of BizTalk requires adapters to communicate with the orchestration host instances using the message box. This introduces round trips to the database and affects latency times. For this reason, the inline version of the solution (the fastest version) builds the adapter functionality in the orchestration itself calls the back-end systems directly. With three different back-end systems, that means potentially three different mechanisms to communicate with the back-end systems.  
   

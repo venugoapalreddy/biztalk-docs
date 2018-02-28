@@ -29,7 +29,7 @@ How to update an orchestration that is running in a production environment when 
 >  When upgrading to a new orchestration, some orchestration instances can become Suspended (resumable) under high stress because of the race condition between the old orchestration and the new orchestration during the upgrade. To manually resume these orchestration instances, see [How to Resume Suspended Orchestration Instances](../core/how-to-resume-suspended-orchestration-instances.md).
 
 ## Prerequisites  
-Sign in with an account that is a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group. Your account also must have Read/Write permission on the local file system, and the global assembly cache. The Administrators account on the local computer has this permission.  
+Sign in with an account that is a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators group. Your account also must have Read/Write permission on the local file system, and the global assembly cache. The Administrators account on the local computer has this permission.  
 
 For more detailed information about permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md), and [Minimum Security Rights ](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx). 
  

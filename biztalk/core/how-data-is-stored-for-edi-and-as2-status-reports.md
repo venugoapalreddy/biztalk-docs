@@ -15,7 +15,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # How Data Is Stored for EDI and AS2 Status Reports
-This section describes how BizTalk [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] stores data for the EDI and AS2 status reports.  
+This section describes how BizTalk [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] stores data for the EDI and AS2 status reports.  
   
 ## In This Section  
   

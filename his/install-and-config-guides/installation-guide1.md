@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Installation Guide
-This document contains information about the basic installation process for [!INCLUDE[his2013](../includes/his2013-md.md)].  
+This document contains information about the basic installation process for [!INCLUDE [his2013](../includes/his2013-md.md)].  
   
  You can download the latest version of this topic at [http://go.microsoft.com/fwlink/p/?LinkId=296408](http://go.microsoft.com/fwlink/p/?LinkId=296408).  
   

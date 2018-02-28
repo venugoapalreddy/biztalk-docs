@@ -20,7 +20,7 @@ The **bDeleteService** function is used to delete a service on a computer for a 
   
 ```  
   
-          BOOL bDeleteService(   
+          BOOL bDeleteService(   
 LPSTRszComputerName,  
 LPSTRszServiceName);  
 ```  

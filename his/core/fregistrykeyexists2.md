@@ -20,9 +20,9 @@ The **fRegistryKeyExists** function is used to determine if a registry key alrea
   
 ```  
   
-            BOOL fRegistryKeyExists (   
+            BOOL fRegistryKeyExists (   
   HKEY *hGlobalKey,  
-  LPSTRszRegistryKey   
+  LPSTRszRegistryKey   
 );  
 ```  
   

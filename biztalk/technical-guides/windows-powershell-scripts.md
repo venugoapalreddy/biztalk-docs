@@ -16,13 +16,13 @@ manager: "anneta"
 # Windows PowerShell Scripts
 This topic contains Windows PowerShell scripts that can be run on the computers in a BizTalk Server environment to apply registry settings described in this guide.  
   
-> [!IMPORTANT]  
->  These scripts should only be run on [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)], not on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]. While these scripts will execute successfully on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], lab testing has indicated that these scripts do not provide any significant performance advantage on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]. These scripts should only be run on a [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] production environment after thorough testing and evaluation.  
+> [!IMPORTANT]
+>  These scripts should only be run on [!INCLUDE [btsWinSvr2k3](../includes/btswinsvr2k3-md.md)], not on [!INCLUDE [btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]. While these scripts will execute successfully on [!INCLUDE [btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], lab testing has indicated that these scripts do not provide any significant performance advantage on [!INCLUDE [btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]. These scripts should only be run on a [!INCLUDE [btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] production environment after thorough testing and evaluation.  
   
 ## Optimizing operating system performance through registry settings  
  The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md).  
   
- Copy the script below into Notepad and save as Set-OSRegSettings.ps1. Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md):  
+ Copy the script below into Notepad and save as Set-OSRegSettings.ps1. Then run the script on each computer in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md):  
   
 ```  
 #Set-OSRegSettings.ps1  
@@ -118,7 +118,7 @@ SetProperty "HKLM:\System\CurrentControlSet\Control\Session Manager\Memory Manag
 ## Optimizing network performance through registry settings  
  The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md).  
   
- Copy the script below into Notepad and save as Set-NetworkRegSettings.ps1. Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md):  
+ Copy the script below into Notepad and save as Set-NetworkRegSettings.ps1. Then run the script on each computer in the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md):  
   
 ```  
 #Set-NetworkRegSettings.ps1  

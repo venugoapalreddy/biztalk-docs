@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # How to Assign Remote APPC LUs to Configured Users
-Although [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] uses the User accounts of the Windows Active Directory directory service, users must be configured to use [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] resources such as LUs.  
+Although [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] uses the User accounts of the Windows Active Directory directory service, users must be configured to use [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] resources such as LUs.  
   
 ### To assign remote APPC LUs to a configured user  
   

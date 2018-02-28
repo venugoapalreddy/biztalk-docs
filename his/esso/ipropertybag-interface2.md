@@ -19,4 +19,4 @@ The IPropertyBag interface acts as a parameter for ISSOConfigStore, and also all
 ## Requirements  
  **Type Library:** SSOAdminLib 1.0 Type Library (SSOAdminLib.dll), SSOConfigStoreLib 1.0 Type Library (SSOConfigStoreLib), and SSOPSAdmin 1.0 Type Library (SSOPSAdmin.dll)  
   
- **Platforms:** [!INCLUDE[hisCOMplatform](../includes/hiscomplatform-md.md)]
+ <strong>Platforms:</strong> [!INCLUDE [hisCOMplatform](../includes/hiscomplatform-md.md)]

@@ -19,21 +19,21 @@ manager: "anneta"
 ## Overview
 A wrap character is a single character that is used to wrap the data characters in a field for the purpose of suppressing any special meaning that any of those data characters would otherwise have. For example, if you define a flat file record as having the following characteristics:  
   
--   Name = Record1  
+- Name = Record1  
   
--   Delimited  
+- Delimited  
   
--   Child delimiter = comma character (,)  
+- Child delimiter = comma character (,)  
   
--   Child order = infix  
+- Child order = infix  
   
--   Escape character = backslash character (\\)  
+- Escape character = backslash character (\\)  
   
--   Tag = RECORD1  
+- Tag = RECORD1  
   
--   Three fields named Field1, Field2, and Field3, each defined to use the number sign character (#) as their wrap character.  
+- Three fields named Field1, Field2, and Field3, each defined to use the number sign character (#) as their wrap character.  
   
- Then the following flat file data applies for the record.  
+  Then the following flat file data applies for the record.  
   
 ```  
 RECORD1#field1#,#field2#,#field3#  
@@ -77,7 +77,7 @@ RECORD1#field1#,#field2#,#field3#
   
 ## See Also  
 - [Ways to Interpret Special Characters as Part of a Field Value](../core/ways-to-interpret-special-characters-as-part-of-a-field-value.md)  
-- Wrap character properties [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]:  
+- Wrap character properties [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]:  
     -  Default Wrap Character (Node Property of Flat File Schemas
     -  Default Wrap Character Type (Node Property of Flat File Schemas
     -  Wrap Character (Node Property of Flat File Schemas  

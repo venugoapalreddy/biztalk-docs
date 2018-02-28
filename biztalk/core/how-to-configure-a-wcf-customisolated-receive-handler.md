@@ -18,9 +18,9 @@ manager: "anneta"
 You must configure the receive handler properties if you want the WCF-CustomIsolated adapter to lookup the custom behavior extension from locations other than machine.config.  
   
 ## Why Should WCF-CustomIsolated Adapter Look up Custom Behavior Extensions from Locations Other than machine.config?  
- Custom behavior extensions used by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are registered in the machine.config. Before loading the behavior extensions, the WCF-CustomIsolated adapter looks for the behavior extensions in machine.config. However, machine.config is ideally used to store configuration information that is required across all applications running on a particular computer. On the other hand, WCF custom behavior extensions may be required only by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and not by all the applications running on the computer. So, while storing the custom behavior extensions in machine.config serves the purpose, it is not the most optimal location.  
+ Custom behavior extensions used by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] are registered in the machine.config. Before loading the behavior extensions, the WCF-CustomIsolated adapter looks for the behavior extensions in machine.config. However, machine.config is ideally used to store configuration information that is required across all applications running on a particular computer. On the other hand, WCF custom behavior extensions may be required only by [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and not by all the applications running on the computer. So, while storing the custom behavior extensions in machine.config serves the purpose, it is not the most optimal location.  
   
- With [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], the adapter handler properties provide an additional location from which the WCF-CustomIsolated adapter can look up the custom behavior extensions. Note that this does not replace the behavior extensions already available in machine.config.  
+ With [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)], the adapter handler properties provide an additional location from which the WCF-CustomIsolated adapter can look up the custom behavior extensions. Note that this does not replace the behavior extensions already available in machine.config.  
   
 ### Additional Considerations  
  Keep the following points in mind while configuring the WCF-CustomIsolated receive handler properties:  
@@ -38,19 +38,19 @@ You must configure the receive handler properties if you want the WCF-CustomIsol
   
 #### To configure the adapter handler properties  
   
-1.  In the BizTalk Administration Console, expand [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then expand **Adapters**.  
+1. In the BizTalk Administration Console, expand [!INCLUDE [btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]<strong>Administration</strong>, expand <strong>BizTalk Group</strong>, expand <strong>Platform Settings</strong>, and then expand <strong>Adapters</strong>.  
   
-2.  In the expanded adapter list, click **WCF-CustomIsolated**, in the right pane, right-click the receive handler that you want to configure, and then click **Properties**.  
+2. In the expanded adapter list, click **WCF-CustomIsolated**, in the right pane, right-click the receive handler that you want to configure, and then click **Properties**.  
   
-3.  In the **Adapter Handler Properties** dialog box, on the **General** tab, in the **Host Name** list, select the host with which the receive handler will be associated, and then click **Properties**.  
+3. In the **Adapter Handler Properties** dialog box, on the **General** tab, in the **Host Name** list, select the host with which the receive handler will be associated, and then click **Properties**.  
   
-4.  In the **WCF-CustomIsolated Transport Properties** dialog box, on the **WCF Extensions** tab, do the following:  
+4. In the **WCF-CustomIsolated Transport Properties** dialog box, on the **WCF Extensions** tab, do the following:  
   
-    |Use this|To do this|  
-    |--------------|----------------|  
-    |**Import**|Imports a WCF configuration file with WCF custom behavior extensions. Clicking this button opens the **Import WCF configuration** dialog box to browse and locate a WCF configuration file. Note that the file should be a valid WCF configuration file. For more information about WCF configuration schema, see “Windows Communication Foundation Configuration Schema” at [http://go.microsoft.com/fwlink/?LinkId=163953](http://go.microsoft.com/fwlink/?LinkId=163953).|  
-    |**Export**|Exports the WCF custom behavior extension to a WCF configuration file. Clicking this button opens the **Export WCF configuration** dialog box to browse and save the WCF configuration file.|  
-    |**Clear**|Clears the existing WCF custom behavior extension from the adapter handler properties.|  
+   |Use this|To do this|  
+   |--------------|----------------|  
+   |**Import**|Imports a WCF configuration file with WCF custom behavior extensions. Clicking this button opens the **Import WCF configuration** dialog box to browse and locate a WCF configuration file. Note that the file should be a valid WCF configuration file. For more information about WCF configuration schema, see “Windows Communication Foundation Configuration Schema” at [http://go.microsoft.com/fwlink/?LinkId=163953](http://go.microsoft.com/fwlink/?LinkId=163953).|  
+   |**Export**|Exports the WCF custom behavior extension to a WCF configuration file. Clicking this button opens the **Export WCF configuration** dialog box to browse and save the WCF configuration file.|  
+   |**Clear**|Clears the existing WCF custom behavior extension from the adapter handler properties.|  
   
 ## See Also  
  [Configuring the WCF-CustomIsolated Adapter](../core/configuring-the-wcf-customisolated-adapter.md)

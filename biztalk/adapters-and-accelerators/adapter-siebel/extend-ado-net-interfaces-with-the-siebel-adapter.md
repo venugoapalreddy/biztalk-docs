@@ -18,7 +18,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Extend ADO.NET Interfaces with the Siebel adapter
-The [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] extends various ADO.NET interfaces. The ADO.NET clients can use these to interface with the Siebel system. This section provides more information about these interfaces.  
+The [!INCLUDE [adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] extends various ADO.NET interfaces. The ADO.NET clients can use these to interface with the Siebel system. This section provides more information about these interfaces.  
   
 ## In This Section  
   

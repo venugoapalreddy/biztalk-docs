@@ -26,7 +26,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Configuring the WCF Adapters
-The BizTalk Adapters for Windows Communication Foundation (WCF) allow  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to communicate with WCF-based applications. The BizTalk WCF adapters include five physical adapters that represent the WCF predefined bindings—**BasicHttpBinding**, **WsHttpBinding**, **NetTcpBinding**, **NetNamedPipeBinding**, and **NetMsmqBinding**. The WCF adapters for the predefined bindings are provided to enable you to easily configure necessary information for most application requirements.  
+The BizTalk Adapters for Windows Communication Foundation (WCF) allow  [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to communicate with WCF-based applications. The BizTalk WCF adapters include five physical adapters that represent the WCF predefined bindings—<strong>BasicHttpBinding</strong>, <strong>WsHttpBinding</strong>, <strong>NetTcpBinding</strong>, <strong>NetNamedPipeBinding</strong>, and <strong>NetMsmqBinding</strong>. The WCF adapters for the predefined bindings are provided to enable you to easily configure necessary information for most application requirements.  
   
  The BizTalk WCF adapters also include two adapters that enable you to freely configure WCF binding and behavior information for the receive location and send port.  
   

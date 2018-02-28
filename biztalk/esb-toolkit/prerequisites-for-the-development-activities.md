@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Prerequisites for the Development Activities
-This section describes how to prepare your environment to complete the steps in the development activities that are included as part of the [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]. Complete the following setup before you attempt any of the procedures in the development activities:  
+This section describes how to prepare your environment to complete the steps in the development activities that are included as part of the [!INCLUDE [esbToolkit](../includes/esbtoolkit-md.md)]. Complete the following setup before you attempt any of the procedures in the development activities:  
   
 ## Set up your computer to perform the procedures in the BizTalk ESB Toolkit development activities  
   

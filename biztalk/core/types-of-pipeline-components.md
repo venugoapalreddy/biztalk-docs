@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Types of Pipeline Components
-Three types of pipeline components are included with [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]: general, assembling, and disassembling. Any of these three types can also implement probing functionality. This topic describes each type of component and the stages in which each component is generally used.  
+Three types of pipeline components are included with [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]: general, assembling, and disassembling. Any of these three types can also implement probing functionality. This topic describes each type of component and the stages in which each component is generally used.  
   
 ## General  
  General components take one message, process the message, and produce zero or one message.  

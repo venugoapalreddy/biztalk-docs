@@ -18,13 +18,15 @@ manager: "anneta"
 ---
 # DistributionListRef (Port Node)
 The DistributionListRef node of the Port node of a binding file contains information about a distribution list that is referenced by a service.  
-  
+
 > [!NOTE]
 >  Distribution lists are referred to as send port groups in the BizTalk Server Administration Console.  
-  
+
 ## Nodes in the DistributionListRef node  
  The following table lists the properties that can be set for this node of a binding file:  
-  
-|**Name**|**Node Type**|**Data Type**|**Description**|**Restrictions**|**Comments**|  
-|--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|Name|Attribute|xs:string|Specifies the name of a distribution list that is referenced by a service.|Not required|Default value: empty|
+
+
+| <strong>Name</strong> | <strong>Node Type</strong> | <strong>Data Type</strong> |                        <strong>Description</strong>                        | <strong>Restrictions</strong> | <strong>Comments</strong> |
+|-----------------------|----------------------------|----------------------------|----------------------------------------------------------------------------|-------------------------------|---------------------------|
+|         Name          |         Attribute          |         xs:string          | Specifies the name of a distribution list that is referenced by a service. |         Not required          |   Default value: empty    |
+

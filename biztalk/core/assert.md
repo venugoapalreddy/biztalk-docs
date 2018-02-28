@@ -105,7 +105,7 @@ THEN A.Status = "good"
 </root>  
 ```  
   
- Each object has access to three fields—@name, @quantity, and @cost. Because the object is a reference into the original document, you can refer to parent fields (for example, "../@customer").  
+ Each object has access to three fields—@name, @quantity, and @"cost". Because the object is a reference into the original document, you can refer to parent fields (for example, "../@customer").  
   
  You can use multiple selectors within the same document. This enables you to view different parts of the document (for example, if one section is the order and another section contains the shipping address). However, keep in mind that the objects that are created are defined by the XPath string that created them. Using a different XPath expression, even if it resolves to the same node, results in a unique **TypedXmlDocument**.  
   

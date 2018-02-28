@@ -20,11 +20,11 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # SWIFT Schemas
-[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] sends and receives SWIFT financial (FIN) messages as individual flat files over the SWIFT network. Each individual message consists of a set of header blocks, a text block made up of a predefined set of labeled fields and positional or ordered subfields, and a set of trailers inside a trailer block. The content of the text block varies by message type.  
+[!INCLUDE [A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] sends and receives SWIFT financial (FIN) messages as individual flat files over the SWIFT network. Each individual message consists of a set of header blocks, a text block made up of a predefined set of labeled fields and positional or ordered subfields, and a set of trailers inside a trailer block. The content of the text block varies by message type.  
   
  There are also many applications, which exchange batches of SWIFT financial (FIN) messages—a set of messages contained in a single file. The file may be delivered locally or may be transmitted through FileAct (over the SWIFT IP Network—SIPN), or through FTP.  
   
- To simplify the manipulation of the data associated with these messages, regardless of whether they are batched or submitted individually, [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] provides an XSD schema defining each message type. This schema promotes the message type so that messages can be automatically associated with the proper schema, and automatically transformed between the external flat file representation, used by the SWIFT network, to and from XML.  
+ To simplify the manipulation of the data associated with these messages, regardless of whether they are batched or submitted individually, [!INCLUDE [btsCoName](../../includes/btsconame-md.md)][!INCLUDE [A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)] provides an XSD schema defining each message type. This schema promotes the message type so that messages can be automatically associated with the proper schema, and automatically transformed between the external flat file representation, used by the SWIFT network, to and from XML.  
   
  The schema includes all of the blocks including headers, text, and trailers. This schema is an interchange schema, because it is comprehensive enough to transmit messages over the SWIFT network using the FIN message-level protocols, and to contain all of the information associated with a message received through the SWIFT network.  
   

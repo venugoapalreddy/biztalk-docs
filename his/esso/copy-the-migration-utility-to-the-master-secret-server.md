@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Copy the Migration Utility to the Master Secret Server
-The Migration Utility is not installed with the rest of [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. You must manually copy it to the master secret server.  
+The Migration Utility is not installed with the rest of [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)]. You must manually copy it to the master secret server.  
   
 ### To copy the Migration Utility  
   

@@ -80,7 +80,7 @@ As String
  To access this method, you must be an Application User. You can only retrieve your own credential.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [ISSOLookup1 Interface (COM)](../esso/issolookup1-interface-com.md)   

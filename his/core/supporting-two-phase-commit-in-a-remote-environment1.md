@@ -21,7 +21,7 @@ Only the SNA protocols support two-phase commit (2PC). The TCP/IP protocol does 
  To activate Sync Level 2 support, follow the procedure in [How to Define a Transactional SNA CICS or SNA IMS Remote Environment](../core/how-to-define-a-transactional-sna-cics-or-sna-ims-remote-environment2.md).  
   
 > [!NOTE]
->  The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] LU 6.2 Resync TP Service only compares logs with CICS and IMS regions when the RE has been set to support Sync Level 2.  
+>  The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] LU 6.2 Resync TP Service only compares logs with CICS and IMS regions when the RE has been set to support Sync Level 2.  
   
 ## See Also  
  [Creating and Managing Remote Environments with TI Manager](../core/creating-and-managing-remote-environments-with-ti-manager1.md)   

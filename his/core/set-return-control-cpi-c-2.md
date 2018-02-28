@@ -20,7 +20,7 @@ The **Set_Return_Control** call (function name **cmsrc**) is issued by the invok
   
 ```  
   
-CM_ENTRY Set_Return_Control(   
+CM_ENTRY Set_Return_Control(   
   unsigned char FAR *conversation_ID,    
     CM_INT32 FAR *return_control,          
   CM_INT32 FAR *return_code              

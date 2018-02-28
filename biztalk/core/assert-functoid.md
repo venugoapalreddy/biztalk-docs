@@ -22,4 +22,4 @@ The **Assert** functoid either outputs a string value or throws an exception bas
  ![Assert Functoid](../core/media/assertfunctoid.gif "AssertFunctoid")  
   
 ## See Also  
- **Assert Functoid Reference** and **Logical Functoids Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+ <strong>Assert Functoid Reference</strong> and <strong>Logical Functoids Reference</strong> [!INCLUDE [ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

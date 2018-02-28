@@ -36,11 +36,11 @@ In this step, you complete the port configuration process by defining the physic
   
 ### To start the BizTalk runtime process  
   
-1.  Click **Start**, point to **All Programs**, point to **Microsoft**[!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] and then click **BizTalk Server Administration**.  
+1. Click <strong>Start</strong>, point to <strong>All Programs</strong>, point to <strong>Microsoft</strong>[!INCLUDE [btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] and then click <strong>BizTalk Server Administration</strong>.  
   
-2.  In the BizTalk Administration Console, in the left pane, expand [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] **Administration**, expand **BizTalk Group**, expand **Platform Settings**, and then expand **Host Instances**.  
+2. In the BizTalk Administration Console, in the left pane, expand [!INCLUDE [btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] <strong>Administration</strong>, expand <strong>BizTalk Group</strong>, expand <strong>Platform Settings</strong>, and then expand <strong>Host Instances</strong>.  
   
-3.  Verify that the status of the **BizTalkServerApplication** service is **Running**.  
+3. Verify that the status of the **BizTalkServerApplication** service is **Running**.  
   
 ### To enlist and start the orchestration  
   

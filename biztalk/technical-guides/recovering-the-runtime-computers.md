@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Recovering the Runtime Computers
-After the steps in the topic [Restoring the BizTalk Group](../technical-guides/restoring-the-biztalk-group.md) have been completed, the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime computers can be restored.  
+After the steps in the topic [Restoring the BizTalk Group](../technical-guides/restoring-the-biztalk-group.md) have been completed, the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] runtime computers can be restored.  
   
 > [!NOTE]  
 >  This section assumes that the steps in the topics [Preparing the Disaster Recovery BizTalk Servers](../technical-guides/preparing-the-disaster-recovery-biztalk-servers.md) and [Preparing Applications for Disaster Recovery](../technical-guides/preparing-applications-for-disaster-recovery.md) have already been completed.  

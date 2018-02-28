@@ -18,13 +18,13 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Get Metadata Using WS-Metadata Exchange in Oracle Database
-As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding, the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] exposes a WS-Metadata Exchange (MEX) endpoint that you can use to retrieve metadata for specific operations from the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)].  
+As a [!INCLUDE [firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] custom binding, the [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)] exposes a WS-Metadata Exchange (MEX) endpoint that you can use to retrieve metadata for specific operations from the [!INCLUDE [adapteroracle](../../includes/adapteroracle-md.md)].  
   
  WCF provides a rich infrastructure for exporting, publishing, retrieving and importing metadata about a service. WCF services, like the adapter, use metadata to describe how to interact with the service endpoints so that tools, like svcutil.exe, can automatically generate client code for consuming the service. WCF represents the metadata for a service as an instance of the **MetadataSet** type, which is strongly tied to the metadata serialization format defined in WS-Metadata Exchange (MEX). You can create a **MetadataSet** for targeted operations on the adapter by using a **MetadataExchangeClient**.  
   
  WCF support for metadata exchange is an expansive topic and beyond the scope of this documentation. For more information about support for metadata in WCF, see [Metadata](https://msdn.microsoft.com/library/ms731823.aspx). For a particularly good description of the architecture, classes, and namespaces that WCF exposes for metadata, see [Metadata Architecture Overview](https://msdn.microsoft.com/library/ms730243.aspx). You should familiarize yourself with the content related to retrieving metadata from a WCF service in these WCF topics before proceeding.  
   
- The following topics contain information about how to use a **MetadataExchangeClient** to retrieve metadata from the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
+ The following topics contain information about how to use a <strong>MetadataExchangeClient</strong> to retrieve metadata from the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)].  
   
 ## Using a MetadataExchangeClient to Retrieve Metadata  
  To use a **MetadataExchangeClient** you must specify a connection URI and a binding (**OracleDBBinding**). The connection URI identifies the operations for which you want to retrieve metadata.  
@@ -34,11 +34,11 @@ As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincomm
 ### The Connection URI  
  To use the **MetadataExchangeClient** you must supply an Oracle connection URI that specifies a MEX endpoint and the operation or operations for which you want to retrieve metadata. You specify a MEX endpoint and target operations in the connection URI in the following manner:  
   
--   You must include the "wsdl" parameter in the query string. If it is the first parameter in the query string, it is specified just after the question mark (?). If it is not the first parameter, it should be preceded with an ampersand (&).  
+- You must include the "wsdl" parameter in the query string. If it is the first parameter in the query string, it is specified just after the question mark (?). If it is not the first parameter, it should be preceded with an ampersand (&).  
   
--   You must follow the "wsdl" parameter by one or more "op" parameters. Each "op" parameter is preceded by an ampersand (&) and specifies the message action (node ID) of a target operation.  
+- You must follow the "wsdl" parameter by one or more "op" parameters. Each "op" parameter is preceded by an ampersand (&) and specifies the message action (node ID) of a target operation.  
   
- For example, the following connection URI targets the Insert and Delete operations for the SCOTT.EMP table. The "wsdl" and "op" parameters are highlighted.  
+  For example, the following connection URI targets the Insert and Delete operations for the SCOTT.EMP table. The "wsdl" and "op" parameters are highlighted.  
   
 ```  
 "oracledb://ADAPTER?wsdl&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert&op=http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete"  
@@ -65,7 +65,7 @@ As a [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincomm
 > [!IMPORTANT]
 >  If you want to retrieve metadata for the POLLINGSTMT operation you must set the **PollingStatement** binding property.  
   
- You should ensure that these binding properties are set to the values required for your application before you invoke the **GetMetadata** method on the **MetadataExchangeClient**. For more information about the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).  
+ You should ensure that these binding properties are set to the values required for your application before you invoke the <strong>GetMetadata</strong> method on the <strong>MetadataExchangeClient</strong>. For more information about the [!INCLUDE [adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties, see [Read about the Oracle Database adapter binding properties](../../adapters-and-accelerators/adapter-oracle-database/read-about-the-oracle-database-adapter-binding-properties.md).  
   
 ### Example  
  The following example uses a **MetadataExchangeClient** to create a service description (WSDL document) for the Insert, Update, Delete, and Select operations on the SCOTT.EMP table. The WSDL is saved to a file, EmpOperations.wsdl.  

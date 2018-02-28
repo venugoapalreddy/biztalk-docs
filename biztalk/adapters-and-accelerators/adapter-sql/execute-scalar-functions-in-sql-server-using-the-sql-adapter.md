@@ -15,9 +15,9 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Execute Scalar Functions in SQL Server using the SQL adapter
-The Transact-SQL and CLR scalar functions in SQL Server are surfaced as operations in [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]. The operation name in the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] is the same as the name of the scalar function in SQL Server.  
+The Transact-SQL and CLR scalar functions in SQL Server are surfaced as operations in [!INCLUDE [adaptersql](../../includes/adaptersql-md.md)]. The operation name in the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] is the same as the name of the scalar function in SQL Server.  
   
- All the parameters in the scalar function are exposed in the corresponding operation. The return value of the operation in the [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] is the same as the return value defined in the scalar function in SQL Server.  
+ All the parameters in the scalar function are exposed in the corresponding operation. The return value of the operation in the [!INCLUDE [adaptersqlshort](../../includes/adaptersqlshort-md.md)] is the same as the return value defined in the scalar function in SQL Server.  
   
  For more information about executing scalar functions, see [Invoke Scalar Functions in SQL Server using BizTalk Server](../../adapters-and-accelerators/adapter-sql/invoke-scalar-functions-in-sql-server-using-biztalk-server.md).  
   

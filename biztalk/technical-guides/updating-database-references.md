@@ -14,7 +14,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # Updating Database References
-This section describes how to update references to various [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Services databases and BAM databases after the databases have been restored.  
+This section describes how to update references to various [!INCLUDE [btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] Analysis Services databases and BAM databases after the databases have been restored.  
   
 ## In This Section  
   

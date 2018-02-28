@@ -27,7 +27,7 @@ public: ULONGLONG ullTimeStamp;
  If zero, then Enterprise Single Sign-On (ENTSSO) uses the current time.  
   
 ## Requirements  
- **Platforms:**  [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
+ <strong>Platforms:</strong>  [!INCLUDE [btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
 ## See Also  
  [SPasswordChange Structure (COM)](../esso/spasswordchange-structure-com.md)   

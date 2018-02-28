@@ -14,7 +14,7 @@ ms.author: "hisdocs; plarsen"
 manager: "anneta"
 ---
 # Status and Performance
-[!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and the Windows operating system offer several tools for helping you evaluate the demand on, and performance of, [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers and components.  
+[!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] and the Windows operating system offer several tools for helping you evaluate the demand on, and performance of, [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] computers and components.  
   
  You can use the following tools to quickly isolate problems:  
   
@@ -23,7 +23,7 @@ manager: "anneta"
   
  [Host Integration Server Status](../core/host-integration-server-status1.md) (using the SNA Manager)  
   
- The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] SNA Manager provides information about the current status of Host Integration Server resources, including logical units (LU), connections, and print sessions. This shared console provides a convenient and consistent environment for Host Integration Server, Transaction Integrator, and other console administration tools.  
+ The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] SNA Manager provides information about the current status of Host Integration Server resources, including logical units (LU), connections, and print sessions. This shared console provides a convenient and consistent environment for Host Integration Server, Transaction Integrator, and other console administration tools.  
   
  [System Monitor](../core/system-monitor1.md)  
  This Windows application enables you to measure the performance data for computers on the network. You can also monitor connections, LU sessions, and adapters.  
@@ -32,7 +32,7 @@ manager: "anneta"
 >  In Windows, the name of this utility is **System Monitor**, although it appears on the **Start** menu as **Performance**.  
   
  [SNA Trace Utility](../core/sna-trace-utility1.md)  
- The [!INCLUDE[hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace utility records activity between or within Host Integration Server components. Tracing provides detailed information of internal activities on Host Integration Server. It is helpful in isolating problems and is frequently used by product support personnel.  
+ The [!INCLUDE [hisHostIntServNoVersion](../includes/hishostintservnoversion-md.md)] Trace utility records activity between or within Host Integration Server components. Tracing provides detailed information of internal activities on Host Integration Server. It is helpful in isolating problems and is frequently used by product support personnel.  
   
 ## See Also  
  [Status and Performance Information](../core/status-and-performance-information1.md)

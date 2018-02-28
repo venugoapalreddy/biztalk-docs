@@ -17,7 +17,7 @@ ms.author: "mandia"
 manager: "anneta"
 ---
 # WCF-NetMsmq Adapter
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetMsmq adapter when receiving and sending WCF service requests through the [NetMsmqBinding](http://go.microsoft.com/fwlink/?LinkId=82589). The WCF-NetMsmq adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the **NetMsmqBinding**.  
+[!INCLUDE [btsCoName](../includes/btsconame-md.md)] [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses the WCF-NetMsmq adapter when receiving and sending WCF service requests through the [NetMsmqBinding](http://go.microsoft.com/fwlink/?LinkId=82589). The WCF-NetMsmq adapter enables you to publish orchestrations and schemas as WCF services and to consume external WCF services with the <strong>NetMsmqBinding</strong>.  
   
 ## In This Section  
   

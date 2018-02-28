@@ -20,9 +20,9 @@ manager: "anneta"
 ---
 # SAP Adapter Tutorials
 ## Overview
-The first of the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tutorials contains a step-by-step demonstration of how to present data from an SAP system on a Microsoft SharePoint portal. The remainder of the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] tutorials contains detailed instructions on how to migrate BizTalk projects that were created using the previous version of the SAP adapter to the current WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].  
+The first of the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] tutorials contains a step-by-step demonstration of how to present data from an SAP system on a Microsoft SharePoint portal. The remainder of the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] tutorials contains detailed instructions on how to migrate BizTalk projects that were created using the previous version of the SAP adapter to the current WCF-based [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)].  
   
- In addition to the tutorials, the topics in the [Develop BizTalk applications](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md) section provide detailed instructions on how to use the [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] with [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
+ In addition to the tutorials, the topics in the [Develop BizTalk applications](../../adapters-and-accelerators/adapter-sap/develop-biztalk-applications-using-the-sap-adapter.md) section provide detailed instructions on how to use the [!INCLUDE [adaptersap_short](../../includes/adaptersap-short-md.md)] with [!INCLUDE [btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)].  
   
 ## In this section  
   

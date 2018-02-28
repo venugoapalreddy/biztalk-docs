@@ -21,17 +21,17 @@ The local host settings govern how the EDI interchanges are processed. The setti
 >  The settings described here also apply to HIPAA interchanges.  
   
 ## Prerequisites  
- You must be logged on as a member of the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.  
+ You must be logged on as a member of the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators or [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators group.  
   
 ### To configure local host – receiver’s settings  
   
-1.  In the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the **Parties** node, and then click **X12 Fallback Settings**.  
+1. In the [!INCLUDE [btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration Console, right-click the <strong>Parties</strong> node, and then click <strong>X12 Fallback Settings</strong>.  
   
-2.  In the **X12 Fallback Settings** dialog box, in the **X12 Agreement Pages** tab, under the **Interchange Settings** section, click **Local Host Settings**.  
+2. In the **X12 Fallback Settings** dialog box, in the **X12 Agreement Pages** tab, under the **Interchange Settings** section, click **Local Host Settings**.  
   
-3.  To designate the range of transaction set control numbers used in an acknowledgment, enter values in the **ACK Control number (ST02)** fields. Enter a numeric value for the middle two fields, and an alphanumeric value (if desired) for the prefix and suffix fields. The middle fields are required and contain the minimum and maximum values for the control number; the prefix and suffix are optional. The maximum length for all three fields is nine characters.  
+3. To designate the range of transaction set control numbers used in an acknowledgment, enter values in the **ACK Control number (ST02)** fields. Enter a numeric value for the middle two fields, and an alphanumeric value (if desired) for the prefix and suffix fields. The middle fields are required and contain the minimum and maximum values for the control number; the prefix and suffix are optional. The maximum length for all three fields is nine characters.  
   
-     To reset the current transaction set control number to the minimum value, click **Reset**. Check **Reset to lower limit when out of bound** to reset the control number to the lower limit once the maximum value has been exceeded.  
+    To reset the current transaction set control number to the minimum value, click **Reset**. Check **Reset to lower limit when out of bound** to reset the control number to the lower limit once the maximum value has been exceeded.  
   
 ### To configure local host – sender’s settings  
   
