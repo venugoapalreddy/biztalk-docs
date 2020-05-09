@@ -50,7 +50,7 @@ In a publish/subscribe design, you have three components:
 ## Creating Subscriptions  
  Subscriptions are created by service classes in BizTalk Server, which are listed in the adm_ServiceClass table in the BizTalk Server Management database. These services include the caching service; in-process and isolated messaging, hosted by the Endpoint Manager; and orchestrations/XLANG hosted by the XLANG subservice. Each of these service classes can create subscriptions and receive published messages.  
   
- A subscription is a collection of comparison statements, known as predicates, involving message context properties and the values specific to the subscription. For example, Message Type is a context property of messages and many subscriptions specify the message type in their subscription. General information about the subscription is inserted into the subscriptions table by the Message Agent while the specific predicates go into one of the following predicate tables, depending on the type of operation specified for the subscription:  
+ A subscription is a collection of comparison statements, known as predicates, involving message context properties and the values specific to the subscription. For example, Message Type is a context property of messages and many subscriptions specify the message type in their subscription. General information about the subscription is inserted into the subscription table by the Message Agent while the specific predicates go into one of the following predicate tables, depending on the type of operation specified for the subscription:  
   
 - BitwiseANDPredicates  
   
